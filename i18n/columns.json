@@ -1,0 +1,435 @@
+{
+ "version": 1,
+ "tables": {
+  "active_mission/active_mission": {
+   "translate": [
+    2,
+    4
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "active_mission/active_mission_event": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "active_mission/real_incentive_mission_ingame_reward": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "INTERNAL? Real-money campaign (cash, gift codes) reward labels. Never offered by this server; medium confidence."
+  },
+  "active_mission/real_incentive_mission_real_reward": {
+   "translate": [
+    1,
+    4
+   ],
+   "reading": [],
+   "note": "INTERNAL? Real-money campaign prize labels ('現金100万円'). Never offered by this server; medium confidence."
+  },
+  "battle/boss/funnel/general_funnel": {
+   "translate": [],
+   "reading": [],
+   "note": "INTERNAL? Funnel pattern labels ('壊せ！', 'ダイ・オア・ダイ', 'おしおき！'): look like in-battle taunts/notes, but cols 59-64 are not known to be displayed. Low confidence; left out of translate."
+  },
+  "battle/boss/general_boss": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Col 1 is the boss move/quest name (shown). Cols 69-108 are attack-name slots ('通常1', '必殺技名04', '特殊技名01', '召喚技名05', 'フィーバー突入でダウン'): developer placeholders, probably not shown, left out of translate; confidence medium. Verify on device if boss attack names ever show."
+  },
+  "battle/boss/standard_boss": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "battle/boss/water_sphere_micronucleus": {
+   "translate": [],
+   "reading": [],
+   "note": "INTERNAL? Only 'ーー' dashes in boss pattern slots. Nothing to translate; sure."
+  },
+  "bonus/login_bonus": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Login bonus titles (col 3), mostly with no kanji left after the font drop. Likely shown on the bonus dialog; medium confidence."
+  },
+  "campaign/multi_special_exchange/multi_special_exchange_campaign": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "INTERNAL? Campaign name ('みんなでキャラチョイス1回目'); the exchange screen probably shows other texts. Low confidence."
+  },
+  "campaign/special_exchange/special_exchange_campaign": {
+   "translate": [
+    1,
+    12
+   ],
+   "reading": [],
+   "note": "Col 1 is an admin campaign name with a date ('...キャンペーン5（2021_9'), probably internal; col 12 is the ticket name shown ('【ギフト】キャラ交換チケット'). Medium confidence."
+  },
+  "character/character": {
+   "translate": [
+    18
+   ],
+   "reading": [],
+   "note": "Col 18 is a Japanese name-like title of the 22 late units. Fairly sure it is shown; check on device."
+  },
+  "character/character_speech": {
+   "translate": [
+    3,
+    8,
+    13,
+    18,
+    23,
+    28,
+    33,
+    38,
+    43
+   ],
+   "reading": [],
+   "note": "Voice-line texts in cols 3, 8, 13, ... (every 5th). Shown on the unit's detail screen; fairly sure."
+  },
+  "character/character_tag": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "character/character_text": {
+   "translate": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "reading": [
+    1
+   ],
+   "note": "Col 0 name, 2 profile, 3 title, 4/6 skill names, 5/7 skill texts, 8 leader/special name, 9 voice actor; col 1 is the hidden kana reading (glossary source for names). '仮' (placeholder) cells in 4-7 are unused. Sure."
+  },
+  "character/unique_condition": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "degree/degree": {
+   "translate": [
+    2,
+    4
+   ],
+   "reading": [
+    3
+   ],
+   "note": "Col 2 title name, col 4 acquisition condition text; col 3 is the hidden kana reading. Sure."
+  },
+  "encyclopedia/encyclopedia": {
+   "translate": [
+    8,
+    16,
+    19
+   ],
+   "reading": [
+    17
+   ],
+   "note": "Col 16 name, col 19 description, col 8 voice actor (romanised in EN rows); col 17 is the hidden kana reading (the glossary source for names). Sure."
+  },
+  "encyclopedia/encyclopedia_tag": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "equipment_enhancement/equipment_enhancement": {
+   "translate": [
+    2,
+    6
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "equipment_enhancement/equipment_enhancement_shop_category": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "feature_banner/feature_banner_dialog": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "feature_banner/feature_guide_dialog": {
+   "translate": [
+    1,
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "gacha/gacha_campaign": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Campaign titles (e.g. 'ゴールデンウィーク記念！1日1回ガチャ無料キャンペーン'); probably shown on the gacha screen, medium confidence."
+  },
+  "item/equipment": {
+   "translate": [
+    1,
+    7
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "item/item": {
+   "translate": [
+    1,
+    4
+   ],
+   "reading": [],
+   "note": "Col 1 name, col 4 description. Shown; sure."
+  },
+  "mail/reason": {
+   "translate": [
+    0,
+    1
+   ],
+   "reading": [],
+   "note": "INTERNAL? Reason names/texts of mails. Mail uses customMailReasonId=0, so these rows never show (docs/i18n.md). Sure for current server."
+  },
+  "mission/collect_item_event_mission": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "mission/daily_mission": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "mission/degree_mission": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "mission/event_mission": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Mission text with ::x_count:: placeholders. Shown; sure."
+  },
+  "quest/character_quest": {
+   "translate": [
+    3,
+    123
+   ],
+   "reading": [],
+   "note": "Col 3 quest title, col 123 synopsis (character story quests of the late units). Shown; sure."
+  },
+  "quest/event/advent_event": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/advent_event_quest": {
+   "translate": [
+    2,
+    125
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/carnival_event_quest": {
+   "translate": [
+    3,
+    4
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/carnival_event_quest_folder": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/daily_challenge_point": {
+   "translate": [
+    4,
+    6
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/hard_multi_event": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/hard_multi_event_quest": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/raid_event_quest": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/rush_event_quest": {
+   "translate": [
+    4
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/score_attack_border_reward": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Reward tier label ('ボーダー001'..), shown on the quest list (seen as 'ボダ001' on the emulator). Row-per-tier template: translate as 'Border 001'. Sure it is shown."
+  },
+  "quest/event/score_attack_event": {
+   "translate": [
+    1
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/score_attack_event_quest": {
+   "translate": [
+    3
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/story_event": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "quest/event/story_event_single_quest": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "reward/event/collect_item_event": {
+   "translate": [
+    5
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "reward/periodic_reward_point": {
+   "translate": [
+    4,
+    6
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "shop/event_item_shop": {
+   "translate": [
+    6,
+    7,
+    11
+   ],
+   "reading": [],
+   "note": "Col 6 section label, col 7 item name, col 11 item description. Shown; sure."
+  },
+  "shop/general_shop": {
+   "translate": [
+    1,
+    5
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "skill/action_skill": {
+   "translate": [
+    0,
+    1
+   ],
+   "reading": [],
+   "note": "Skill name (col 0) and text (col 1), mostly '仮' placeholders; mirrors character_text. Probably overridden by character_text on screen; medium confidence."
+  },
+  "skill_preview/skill_preview_quest": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "INTERNAL? Dev label of preview quests ('スキルプレビュー1', 'ガチャ_カリオストロ', 'キャラ紹介画面用'). Probably never shown; fairly sure."
+  },
+  "story/story_character": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "Speaker names of scenarios (col 0). Shown in the story window; sure. Names must match the glossary."
+  },
+  "string/custom_ability_string": {
+   "translate": [
+    0
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  },
+  "string/ui_string": {
+   "translate": [
+    2
+   ],
+   "reading": [],
+   "note": "Col 2 is string_en (the only column the en client shows). Cols 0 (ja), 1 (ko), 3-7 (de/es/fr/id/pt placeholders, copies of ja) and 8 (th) are other languages and are left alone; 31 rows have Japanese in col 2. Sure."
+  },
+  "tutorial/triggered_tutorial": {
+   "translate": [
+    19
+   ],
+   "reading": [],
+   "note": "Player-facing text by its content (names, descriptions, quest titles); not checked on a device, fairly sure."
+  }
+ }
+}

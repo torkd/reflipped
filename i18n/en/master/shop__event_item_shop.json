@@ -1,0 +1,661 @@
+{
+  "5001": {
+    "7": {
+      "srcHash": "sha256:bd13f64cd9af6522e249911de8a13bb273a56785c0edccb9bec99b0ce6d5f04c",
+      "text": "Lilac Lilie Award",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:9a79c5493d36f3987050d7bc25e14095039916dc7ed77072ae0286373f2bb52a",
+      "text": "An award from Pur Lilie for adventurers who have shown outstanding ability.\n\nArmament Augmentation Material.\n\nMaximum Capacity: 9999",
+      "status": "machine"
+    }
+  },
+  "5002": {
+    "7": {
+      "srcHash": "sha256:624da6519159da2866aa3aba06254afc1a8769efbbbfea32c17e9cd5596bd333",
+      "text": "Obsidian Lilie Award",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:b53b6d1ff361b3e4c218e89bdd00a2b29459a213d44cc894a1bbdb74199bccd1",
+      "text": "An award from Pur Lilie for adventurers who have shown truly exceptional ability.\n\nArmament Augmentation Material.\n\nMaximum Capacity: 9999",
+      "status": "machine"
+    }
+  },
+  "310013": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:11cff136237eb5d64073c7ce8ce0e08871a178e278fdeb7b8ce1dab4d2b3cd96",
+      "text": "[New] Neptune Element",
+      "status": "machine"
+    }
+  },
+  "310014": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:e1619f05efdefcc21470041177485208276beb89c636ca423eea5d8e194deb00",
+      "text": "[New] Tidalwave Element",
+      "status": "machine"
+    }
+  },
+  "310015": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:00fc81c42b6cc12872ecd39732043b644670bfdc9275a807bf70c02b61051139",
+      "text": "[New] Deluge Element",
+      "status": "machine"
+    }
+  },
+  "310016": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:b7ffac5b7923cb5de31805c90db773e7480fc953600f620641e2b62cd1f984f4",
+      "text": "[New] Water Element",
+      "status": "machine"
+    }
+  },
+  "310017": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:8e9975718e0e4d00ad2cc9a74aa88c19be69b492817d44178ad26937deb09d7b",
+      "text": "[New] Uranus Element",
+      "status": "machine"
+    }
+  },
+  "310018": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:122b508c5432ff8a733ecf26d55e166f39777d0da6b7f7ad03043f2b46ca8818",
+      "text": "[New] Gale Element",
+      "status": "machine"
+    }
+  },
+  "310019": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:42c63b717b8d5a019abd7b242a66b4261e1fe7461d27f1930ef41f4b45a2f97b",
+      "text": "[New] Gust Element",
+      "status": "machine"
+    }
+  },
+  "310020": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:38830a5e40014249a27a6f059ab1f6f584034759992aa4eb21bf93c6f3d2c292",
+      "text": "[New] Breeze Element",
+      "status": "machine"
+    }
+  },
+  "310021": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:ccbbbd432e8b706dc034a4c92beb77f87ed1c770210d1c25e99bc609ef5d17f0",
+      "text": "[New] Mana × 1200",
+      "status": "machine"
+    }
+  },
+  "310022": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:e6970077959c1a52251fd41cefae2553e4aba5ef30e1d269b5b04bdf875ddb33",
+      "text": "[New] Staminade Swig",
+      "status": "machine"
+    }
+  },
+  "310023": {
+    "6": {
+      "srcHash": "sha256:ea9d4fe85955e6a75fc55f1b04988332de2c527b0e04a05ae06fe72c6f4e0902",
+      "text": "[New]",
+      "status": "machine",
+      "note": "tsuika (added) = stock added later in the run; official EN has no label for it"
+    },
+    "7": {
+      "srcHash": "sha256:cf02ee788c776087a36b2d0ed7fa8ca78c34c97061625468fc5ef938c6465d35",
+      "text": "[New] Staminade Flask",
+      "status": "machine"
+    }
+  },
+  "10000798": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:adef796d85c213f4bf7060963d44b53b70ee8e09b2725db259f421f56af60fd3",
+      "text": "[Daily Deal] Uranus Element",
+      "status": "machine"
+    }
+  },
+  "10000930": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:c2dd69415a07c26a42b071124be41a1faef59bb634425d0bee82eeacb0503505",
+      "text": "[Daily Deal] Neptune Element",
+      "status": "machine"
+    }
+  },
+  "10000991": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:adef796d85c213f4bf7060963d44b53b70ee8e09b2725db259f421f56af60fd3",
+      "text": "[Daily Deal] Uranus Element",
+      "status": "machine"
+    }
+  },
+  "10001000": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001001": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001002": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001003": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001004": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001005": {
+    "7": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "10001042": {
+    "7": {
+      "srcHash": "sha256:d76c9aa55f876e0f868401cc4957d4371ececbfa3f219a286273e7e8aa7926b8",
+      "text": "Gold Windwrath Steambot Denarius × 5",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:5687718e5848c4ca43c1f6f81c2f80af2eae6a527b55c14416173a5240ae9a98",
+      "text": "A gold denarius coin engraved with a relief of Windwrath Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10001043": {
+    "7": {
+      "srcHash": "sha256:328f694dbc3563eafe9ddeb158a8afc2893d0b85846446e97a07379272b553b2",
+      "text": "Lilac Windwrath Steambot Denarius × 3",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:9f602062a475d27c292766291bca298d9246b68bc3024ea69dcc41fc3a6a6180",
+      "text": "A lilac denarius coin engraved with a relief of Windwrath Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10001083": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:2fadbc9ce73950b7bdd594d49029a2d766c131ff276096704e185b3a2f7897c6",
+      "text": "[Daily Deal] Sun Element",
+      "status": "machine"
+    }
+  },
+  "10001415": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:b172b4c910bbb2a1242d011abf83b1e268a16e26cc1ecad4e32a51f8fd596dc4",
+      "text": "[Daily Deal] Jupiter Element",
+      "status": "machine"
+    }
+  },
+  "10001567": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:bdb72add6ac006f4101ec225f51b269b81dc7066a1385a0fcbe4f6e92e148169",
+      "text": "[Daily Deal] Mars Element",
+      "status": "machine"
+    }
+  },
+  "10001667": {
+    "7": {
+      "srcHash": "sha256:17071d86327c1d0830dd46ef675bc5d72e5467fdb9bfc036619a5a961b68ba95",
+      "text": "Kugui's Scroll (Pine) × 3",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:4cffce6ac4447c61b39546816d827306af93d1733d71f331a7f7a2524e79e4d8",
+      "text": "A lilac coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10001668": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:c2dd69415a07c26a42b071124be41a1faef59bb634425d0bee82eeacb0503505",
+      "text": "[Daily Deal] Neptune Element",
+      "status": "machine"
+    }
+  },
+  "10001677": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001678": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001679": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001680": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001681": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001682": {
+    "7": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "10001719": {
+    "7": {
+      "srcHash": "sha256:f5201273705dc716ebc3ede88a5cf379f5f00e0746282b3932615939a7395496",
+      "text": "Gold Maelstrom Steambot Denarius × 5",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:97e145d2258286db371c19f53ecf23eaa3b4d16b603cf46109b311f8e427af18",
+      "text": "A gold denarius coin engraved with a relief of Maelstrom Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10001720": {
+    "7": {
+      "srcHash": "sha256:3a1b8893a5422a08189927e5f43dd3f1e636990b46c36f283d542b5368ed521f",
+      "text": "Lilac Maelstrom Steambot Denarius × 3",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:90667e897bd629cb6be1054c099333ee8d783e2a5a893ab77e28831073a0601b",
+      "text": "A lilac denarius coin engraved with a relief of Maelstrom Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10002302": {
+    "7": {
+      "srcHash": "sha256:17071d86327c1d0830dd46ef675bc5d72e5467fdb9bfc036619a5a961b68ba95",
+      "text": "Kugui's Scroll (Pine) × 3",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:4cffce6ac4447c61b39546816d827306af93d1733d71f331a7f7a2524e79e4d8",
+      "text": "A lilac coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10002303": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:2fadbc9ce73950b7bdd594d49029a2d766c131ff276096704e185b3a2f7897c6",
+      "text": "[Daily Deal] Sun Element",
+      "status": "machine"
+    }
+  },
+  "10003237": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:bdb72add6ac006f4101ec225f51b269b81dc7066a1385a0fcbe4f6e92e148169",
+      "text": "[Daily Deal] Mars Element",
+      "status": "machine"
+    }
+  },
+  "10003298": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:adef796d85c213f4bf7060963d44b53b70ee8e09b2725db259f421f56af60fd3",
+      "text": "[Daily Deal] Uranus Element",
+      "status": "machine"
+    }
+  },
+  "10003359": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:2fadbc9ce73950b7bdd594d49029a2d766c131ff276096704e185b3a2f7897c6",
+      "text": "[Daily Deal] Sun Element",
+      "status": "machine"
+    }
+  },
+  "10003368": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003369": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003370": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003371": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003372": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003373": {
+    "7": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  },
+  "10003410": {
+    "7": {
+      "srcHash": "sha256:72c428e5e11e70341c4f3cc514624a7ec3059d964e036b7df533f1e04dd80a7c",
+      "text": "Gold Radiant Steambot Denarius × 5",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:bf7d2d30566aa6a7224471fd074f62b7b56bd7852c42452e353cc15f8d35e98d",
+      "text": "A gold denarius coin engraved with a relief of Radiant Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10003411": {
+    "7": {
+      "srcHash": "sha256:234d300124e45c29a868368fe710698584174f1f604e77409aa2e4e24f6e709c",
+      "text": "Lilac Radiant Steambot Denarius × 3",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:433e84dc1be45adac93c5e854558a8661452a9ee22d0f5a80027923afb6ce071",
+      "text": "A lilac denarius coin engraved with a relief of Radiant Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "10003485": {
+    "6": {
+      "srcHash": "sha256:573db6aef6a801728ee5f49f260df9e092b3ab5f40464333f4065aa4164d303e",
+      "text": "[Daily Deal]",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:2fadbc9ce73950b7bdd594d49029a2d766c131ff276096704e185b3a2f7897c6",
+      "text": "[Daily Deal] Sun Element",
+      "status": "machine"
+    }
+  },
+  "10003770": {
+    "7": {
+      "srcHash": "sha256:08754d3ea8a5c88910f228db0d432faceae3b5fcd073de1d5980da7ab3aee6c3",
+      "text": "Hanimitts",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:869056cf7f0b47e7c9d3b3999cd824b5c0cfb95bee4be897ca6423b09287a4b0",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. These mysterious gloves, a gift from a Hani in an apron, keep out every last bit of heat.",
+      "status": "machine"
+    }
+  },
+  "10003771": {
+    "7": {
+      "srcHash": "sha256:3ac0c10f5d098487789157fc95b3330c5b548d32be9641a3c39f807bcbff9ec8",
+      "text": "Hanifridge",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:3882200b4279169992d412823ae8482c135af7463eebe2a9bbc6dd15932be0b9",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. One of many swords found stuck in what seemed to be a storeroom, it gives off an intense chill.",
+      "status": "machine"
+    }
+  },
+  "10003772": {
+    "7": {
+      "srcHash": "sha256:f7531a34d934d05cc9e4dc8f9d5c496c78e4623aba3701dfd3af9fe3cf074e6d",
+      "text": "Hanirocket",
+      "status": "machine"
+    },
+    "11": {
+      "srcHash": "sha256:53861ad7f64a47434866747b334d64a5215835a22775b69e213ab8f7e461cd8a",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. A great bow made to fire not arrows, but sticks packed with gunpowder.",
+      "status": "machine"
+    }
+  }
+}

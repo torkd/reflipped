@@ -1,0 +1,366 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:7be203386a13f2e83c683b0c41430bcae2cae902cb372cbf24985e366ccd89c7",
+      "text": "Hey, Chenxi. What are you read—",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:defeef85db8672ec8847345f9a5d0354b78b9050f4a725aff2771270b17bbcad",
+      "text": "WAAAAAAAAAAAH!",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:c088886a439ad4923dd926479340980306fb13f08c8d01e7fcc314273737b539",
+      "text": "Whoa!? S-sorry, I didn't mean to\nscare you...!",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:16a5ab6db3dc867a71118357d3cf1aea062df0845f8f64ccbb1209aaf8addb00",
+      "text": "N-n-no, I'm the one who's sorry!\nI was too absorbed...!",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:f2521769a6e2278810c580ee671166aa3ec8ec37c1e31c2448f35f8123a0f9a7",
+      "text": "Are these... books on horror? They\nall seem to be about things you\nfear...",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:41ce3726b2139ba7e39e8d2b730d7c492c2d8c70e7215e173d8f012f57a1129c",
+      "text": "Ah... More of your usual\n\"get used to it\" training?",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:9b890d5e320f33e2c7ffc3fae0396ffe285e8c32aa4536884a3300625050224c",
+      "text": "Y-yes! First, get familiar with\nwhat scares you! I think that's the\nfirst step to overcoming it.",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:e041768d1968fc60f8e92eb3e6df67a82e9ce38e811b62cb6b14d42e18ea47d1",
+      "text": "Actually, even my outfit is based on\na jiangshi, an undead from back\nhome!",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:8a1d251db5121be7d7f4d8bffffb9bd2bc6a5f3953c8031195b9661bd69ab091",
+      "text": "It's cute.",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:405ee3acdab7a8211724fcb3f8ff9c455dfa6a4dd08ca2a74b56c3f2db74f235",
+      "text": "Th-thank you...",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:46c6066e3356fedf0e7bad1d1da2d267a9dfcc19939608fe050e1ac1aa48cba2",
+      "text": "Well, yeah. It suits you, but...\nhow's it going?",
+      "status": "machine"
+    }
+  },
+  "55": {
+    "5": {
+      "srcHash": "sha256:2a10bba9060f2c4f04372af8fb21584c414e6617566e2489dfe15a405c69c5d0",
+      "text": "Not at all... The more I read, the\nmore things I find to be scared of...",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:652315ea3120c3b7527651b19671292946a4af50a5f1bd6c74fddda406253f2a",
+      "text": "Figured...",
+      "status": "machine"
+    }
+  },
+  "64": {
+    "5": {
+      "srcHash": "sha256:3d98ea8acb889452d737ca73ade4291262c0d31cabb692e69ba51b3567449eb2",
+      "text": "Waaaaah! I can't go on like this!",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:1bbfd71ed086edb782454cbdbfefe9f8e69d43994f7cb80eee248f7e37d228e2",
+      "text": "In that case...\nthere's nothing for it but\nspecial training!",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:32d91236db7d93b816c40135e60b99bac99d78f1d6f5c8367ac5674360384d7a",
+      "text": "Everyone!! Please take me to the\nscaaariest spots in all the other\nworlds!",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:199bb7a0acefa417c879047f3f702c07e29e911e3797a70d52e5e243a9b33b22",
+      "text": "Uh... You're still going with\nsheer guts?",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:0227c8709d5dde05f0c037b026f149a3b9f99d9ed96ca098daabb0d1b6152767",
+      "text": "Of course! Fear has to be\novercome!!",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:5f93d8378f8abe1362e30a27362fcf773389b1279c9fbe4fca65239688e4282d",
+      "text": "Well... If she won't be satisfied\notherwise, there's little we can\ndo...",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:251987f189843570ff3084bde04d2dac8b5c5d144d2c55c8685a05298341e9db",
+      "text": "...Okay. Then let's get everyone\nto help out.",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:669aa87eb7c157af229c8df69f345811bec1c53bb0990fc61205b6d059dac4be",
+      "text": "Bwaaah!! I-it was scary, but...\nI made it through!!!",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:132b3ef88e5026956ea58f93228f044cf452435c9bc3dfa6488b77215abc35a9",
+      "text": "Clap clap clap clap.",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:ecc49ad6ae9f4f50579339b2a7b5c4612825d55bec878a7238c86edff532fb1a",
+      "text": "The way I am now, nothing\ncan scare me!!",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:56664e28293c4ea2fbf757c6a513b04b4a34aa73a240eb89111c93da5ff03558",
+      "text": "My next ghost-hunting job will\ngo without a hitch... I hope!!!",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:9c04d8a87f8db68483487c7879dc63f5e8fef7dd85faf9cf54d3421b44c510be",
+      "text": "...Why is it I only have\na bad feeling about this...",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:5168656f17366a5c665f8f50c7220abfd7edf9905d50918fe700a1b1efa00732",
+      "text": "Ugh... Ghosts are scary...!!",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:ae793a9bd716f0b84980cd1821ddb7126f92c8e89cb1f3132876abba79136507",
+      "text": "So it didn't work after all...",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:7c540d2a2dc6952d5431f300ec60bae22c20c7318e05870964d29e089f77e41e",
+      "text": "B-but scary things are scary!!",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:4bdb9d09018cd560f8ebc594049642bc7fb65847f17fa6e1e2e568284d3fc4db",
+      "text": "...Chenxi. Must you really\nforce yourself?",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:388f8008e8e8995708cfc2ef46538d626c8f184a0cc31153eae144edf82bf2dc",
+      "text": "With your skill, ordinary\nmonster-hunting requests alone\nwould keep you well enough.",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:b7109e67a095b16f13f1095d38911193fab790225e9b5e66b3dbd3b6653a4d72",
+      "text": "Or a job that uses your qigong for\nsomething besides fighting. It's\ngood for beauty and health, right?",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:ab85abe65e4b9460ec3f3f0fa9ed289e4d6cec54d1ae4aac300d3c3699efd998",
+      "text": "Th-that's...! ...It might\nbe, but...",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:92754a17c71340e1b8d20a1de3fb5fde155e3b4f7b2911feb97bca4f67847d34",
+      "text": "Even so... I just can't give up\nghost hunting.",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:37b5e4ad73bde1be93a9a6198157a75ea07c9f9f77ef04a3b47add389647b7b1",
+      "text": "...Is there a reason?",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:8601196acdaddc19bda8b1aee85d0dec9eca80da6c0e43dc6c562173e974f8bf",
+      "text": "Fei and Shan, my little sisters...\nthey're real scaredy-cats too.",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:6839cf8bf2de73642b4edc00d2772d22b97917c722ddec454408c084ba73609f",
+      "text": "But when I started hunting ghosts,\nthey were so happy: \"With Sis here,\nghosts aren't scary at all!\"",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:e88ebb781cb6fe4227b84a5014c3f1ecbaa6f7f08f94fd39ffb23dd2ceee043b",
+      "text": "So for their sake, I want to stay\ntheir \"reliable ghost hunter.\"",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:e519cb1957890b536a3bdf9d6d368140da51e95f4389821f4a2bbebefc6e699d",
+      "text": "...I see. Forgive me for speaking\nout of turn without knowing how you\nfelt.",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:ba680e0f4f1bc75bb57294f8509d67b7af7f228ef05fbe40f1c0d74647722aeb",
+      "text": "N-no, not at all! I'm the one who\nwent on like a big shot when I'm\nhopeless...!",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:33a5140c57087febbd9aeff084e6bec6bb0d4f8853681a182974004a7a9773e0",
+      "text": "Chenxi. I'm sure you'll\novercome it.",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:770f14ebf4686c5472ca03e4a7dc6cbe37885b57186015bbf76ae736db47f53a",
+      "text": "Y-yes!!",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:b9a628e6b8124aa53e02892e28bb676f3b2e635e49e3dad0d02c99403be80fdb",
+      "text": "Aaaaai!!",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:e78d6afd27ca7b08a702900c9f66deba42ac0550a2352fe6ecf38aecd9e49ed2",
+      "text": "EEEEEEEEEEEK!?!?",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:14dfa24ad093ee6cf5f8b1e438c5253b77a30a6cbb7d1b6693fb822dd9039bb6",
+      "text": "Chenxi, are you okay...?",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:c9aeea435bba81b663b2860180dbf86da9d9019175455968a1ab8296ed32d9bb",
+      "text": "S-sorry, I'm okay!\nO-o-one more time, please!",
+      "status": "machine"
+    }
+  },
+  "213": {
+    "5": {
+      "srcHash": "sha256:5cb78f9eb784996f775a18e10f2005bacc006012f610f51e69878a55c9b31835",
+      "text": "Still going on sheer guts,\nI see.",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:1d6bbc18ddc007e32864e24d4d1124249b513d54b96ea8bb5ba3fe44ae00c853",
+      "text": "Well, it's just one of those\nthings... Fear doesn't listen\nto logic...",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:00d2b1b673170e93afddf2222912502df93cb423e0beecacfbc18c1bb9e0279e",
+      "text": "And it's her who wants\nto keep trying.",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:90fc9b395bdfa60d875835c7caceb6c60b43fcc2dbce6ac656947ae94852e108",
+      "text": "Then it can't be helped!",
+      "status": "machine"
+    }
+  },
+  "229": {
+    "5": {
+      "srcHash": "sha256:74b6b6e0f45d8a81110d5524da3211a0b60752ea0bb5c74a1f5a945e800e789e",
+      "text": "...I'll overcome it, no matter\nwhat! You can do it, me!!",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:3f9b01b16a59cfb18ba3f622f8363304290b94f9e2abea2fdd9b8cf5e9b5f033",
+      "text": "NYOOOOOOOOOOOH!!!!",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:dc4926051d555df42983e4c1971891bab9c88ef7f84f7279aa3204c4d5efaf1c",
+      "text": "Please don't push yourself too\nhard...?",
+      "status": "machine"
+    }
+  }
+}

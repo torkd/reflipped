@@ -1,0 +1,27 @@
+# Override for the stack, api or assets flavour behind a Traefik that runs in a container: the edge
+# joins Traefik's network and Traefik routes PUBLIC_HOST to it. Traefik terminates TLS (keep TLS off).
+# Traefik can't serve files from disk, so the edge stays in the path for the assets.
+#
+#   cd docker/stack
+#   docker compose -f compose.yaml -f ../proxy/traefik/edge.yaml up -d --build
+#
+# .env: PUBLIC_HOST, PROXY_NETWORK (Traefik's network), TRAEFIK_ENTRYPOINT, TRAEFIK_CERTRESOLVER,
+# EDGE_BIND=127.0.0.1 (the edge's own ports then only answer on the host), and for stack/api
+# TRUST_PROXY=<STACK_SUBNET>,<the proxy network's subnet>.
+
+services:
+  edge:
+    networks:
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: ${PROXY_NETWORK:?set PROXY_NETWORK in .env}
+      traefik.http.routers.reflipped.rule: Host(`${PUBLIC_HOST:?set PUBLIC_HOST in .env}`)
+      traefik.http.routers.reflipped.entrypoints: ${TRAEFIK_ENTRYPOINT:-websecure}
+      traefik.http.routers.reflipped.tls.certresolver: ${TRAEFIK_CERTRESOLVER:-letsencrypt}
+      traefik.http.services.reflipped.loadbalancer.server.port: "8080"
+
+networks:
+  proxy:
+    external: true
+    name: ${PROXY_NETWORK}

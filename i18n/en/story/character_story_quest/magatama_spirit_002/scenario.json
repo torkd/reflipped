@@ -1,0 +1,429 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:312fc3b012a4f8a29be7ea5a0e153c0ca55f59be26cf1f40586b9176ab71babc",
+      "text": "Say, daydreamer. Would you like\ndumplings and hot tea?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:d5f95c612149a839e820f68272ff257a90adf398272f6b298ad66dbe00130231",
+      "text": "...Thank you. Did you make these\nyourself too?",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:24b7baae226cccc09a3248e6093c4d5a846ded89c42e96bb3c80fcc9ca245031",
+      "text": "Yes, it's rather fun. If you want to\nmake some with Manoka, I'll teach\nyou the recipe?",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:2eb9f39fc6dc10f6a563f265b76af6372049b3cc70c5181bfd697d2ae1013aff",
+      "text": "Now, daydreamer. Something you\nwon't even tell Manoka on your mind?",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:b854d5a69a55d4afcc5962d9f0ce26c161a30df7a459d7b393439c1862499d42",
+      "text": "...It's about the ninja targeting\nyou two. That's why I shouldn't\ntalk about it...",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:18735c89f2c62161fe2b51b41c99d81b81ee33b4e1ecd79337c0e77e0b8a2db3",
+      "text": "But you aren't good at keeping\nsecrets, are you? Especially from\nManoka.",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:b5b7b9d6cc43b329e34b32413689e9d6d20ed49ad0d7b363dd2b8234c582a532",
+      "text": "Come now. Before Manoka finds out,\nwhy not complain to this old lady?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:188dec1ac93cf687f3619ac8de314f171c89d547abf181455ad459950fe843fb",
+      "text": "...I found a seed of civil strife.\nI've already disarmed him and\nreported to the diviners.",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:c4294ce494757ea900a2b51372cdf57efff7192b9015c8abe7c33c3a4f28c747",
+      "text": "But that ninja hasn't given up on\nreviving Orochi—or on revenge\nagainst the shogun and Commission.",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:710cbda4777132e1c377d9463ece5f56611ec8c43ce9737c407baeccb830240f",
+      "text": "...That's trouble. He may choose a\ndark path...",
+      "status": "machine"
+    }
+  },
+  "46": {
+    "5": {
+      "srcHash": "sha256:8c8192fc25995d604fe88393d03f7305aa84f6d8603a38e276db66fdf97fe138",
+      "text": "...I'd like to persuade him so he\ndoesn't run wild. But—",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:e795674fcb3b9b6afed5fc220f77d5697bc3c413452555d6e1647a476b5754da",
+      "text": "...When I asked those from his\nhometown, they said \"I don't know.\"\n\"I can't say.\"",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:8f7b21413c02a4bbd99c5fe4ae6c86ff5244b8cfdc7fa994aeff622bd1e8c30d",
+      "text": "...Someone even said there are ways\nto make him spineless. But I don't\nwant to take that kind of way...",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:f9cac4dc39f4d7eb52f8cbb1ace3f03eb9258b5730398a246972f22f40b1cdca",
+      "text": "Hohoho, how unique. Quite the\ncheerful friends you have.",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:631d11c4f8dda2412be12cc4cf7d0b09bdf5ccb2cde509659f320003640297ed",
+      "text": "...But I'm also a rogue ninja. I\nhave no right to persuade him.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:6830d443b36a5c1a999e6dc5b78568c69f2aa70b09b45e440870b15c512a4e1a",
+      "text": "I once cut them off because I didn't\nwant to be the same. ...Though my\nhands are stained with blood too.",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:15f32b73110045706f48fe3bf5acf86e4c374d9b6a92c55e01b919acd7e770b2",
+      "text": "Hmm. I see, I see.",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:cb9ed59d716fbe1593374306ce898ce196906d43cf156b68e357c32d934ab27a",
+      "text": "Even so, Yakumo, you want to ease\nthat spy's suffering.",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:c10509924d12fbe23708367cecf72259f0cce07f2d98444eba6fd94dbbdbdd76",
+      "text": "Well then, shall we leave this to\nthis old lady?",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:a823b803d9fb9580db7c4e672cd5ae2e4a7ece80c49f1dfb59d4cdb818b1c20d",
+      "text": "The grudge doesn't fade, does it.",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:94e7ec65a12367893668a791e6b34d72f88c7850d54026f6465868d753aef1f0",
+      "text": "You no longer need to be held\ncaptive. You could discard the ninja\nrole and choose freedom.",
+      "status": "machine"
+    }
+  },
+  "87": {
+    "5": {
+      "srcHash": "sha256:8a4116c25977963c56f27e0c5f1c1dece281afee9b957dd503755aeeb473c91f",
+      "text": "Yet you still want revenge...\nYou wish a curse on this world?",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:d56a28eec6db2a7f5bfd843d87c8aecd31bb4edf9643e042d3d1d4a2c4eff4ba",
+      "text": "I do. Revenge on those who denied\nand cast us away.",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:e1724011a8447e22a35b1391c265080418ddb6f9cb2f561f7ac3c885ac14bf5e",
+      "text": "Cursed magatama. A tool swallowed\nby Orochi. I'll give you my tainted\nbody...! So, grant my wish, please—!!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:4536a191b9465ee70b7bb79cc02857df5a199bfa72000935c2ddaae18e3eb078",
+      "text": "...Ah. Pitiful human.",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:c5c23335923e0de154e367559a87c8c790157494990c9e039b9b1d41d0d45577",
+      "text": "One who creates curses, who wishes\ncurses. In that case—",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:a0ec5fb5529e645f0b3e565ed2af2557d1680f9cfd5119bd36a17593e05194bb",
+      "text": "Might I make dinner first?",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:f876e867fa40ea21f18a871e73751da1664fa16fb110df1d851b015e056cdcfb",
+      "text": "..........Huh?",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:b4431f00a15500e1bfa7374be9238e05af14ffea4640c497e823b24dc0b0422d",
+      "text": "Is this much enough? There's more\nif you want. Just say so.",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:82117248345ab70e5a448be211beed0a14383cab3624463f67d48e9d985b29bb",
+      "text": "...W-why won't you grant my wish?\nI truly want revenge...",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:7f810a8509ed6bb7154051e2a45bd8092aa1fc786faad22a95b8726ee805c7fa",
+      "text": "Now, now, there's no poison in it.\nWon't you try one bite?",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:6940f6b39a7c9c3120296182825808abc7d399b0184810b13db13931ac071a5a",
+      "text": "My name is Tamako. My specialty is\nmiso soup.",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:698b0b4d88f34967283709c7b2650c3bd63f8d9f0dbbf7620458c390eb9670c7",
+      "text": "I want to know more about you. I'd\nbe glad if you'd indulge this old\nwoman's whim a little.",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:0653973e7e7ea63025f638f76d839874cf39e2f25da1a40da1e6548ebeea94bc",
+      "text": "...Even if you say that, I'm\ntroubled. I don't need this...",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:48c0493d8c34c0be36f222f83a7ba84efa26e579418c05f179ee9381707c54aa",
+      "text": "Oh, is that so? Was my miso soup not\ndelicious?",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:543f7eca716d46a452e6c91e034c4b355db64398bfaacc1269311dbefd66c73f",
+      "text": "..........It's good...",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:769a0d0a4321a20a0ed58bd22c2568e94ae023528516c1189c8d7274be54c9ad",
+      "text": "By the way, do you have a favorite\nfood? I like pickled radish too—",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:4f73686a7cd9e20acb19e3019ea32c180eb6c28a6d0d3b42ce7df099112ff06e",
+      "text": "...I have no favorite food.",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:9e81347adfdd676063ac15df16b3beff58902cd7b8c3a6f656592beb5d15e602",
+      "text": "I never thought about meals. Being a\nninja was everything. And yet...",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:fd3888b827b61b24d44058273f283abb813737f5f395125edf321c3c2e5d282b",
+      "text": "...It hurts, doesn't it? Being told\nyou never needed to be stained\nwith blood.",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:96637f8a6a708e4e656e2ca0189e554173a4e720a9b2eb8fff56a5e0cb019efa",
+      "text": "Your pain, your grudge, your regret.\nThey can never be undone...",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:ec76de9daaf83e12643d1bb9c614d52fee3fba5badda6b3a37d2d4720c80c6fc",
+      "text": "—Ngh...!!",
+      "status": "machine"
+    }
+  },
+  "153": {
+    "5": {
+      "srcHash": "sha256:7b247c3ac21d368a628149100ea9363b23172d0f2eb09d8223907d9486164e64",
+      "text": "I'm sorry I couldn't find you.",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:0b50347cf004f6b8acceb847d0c1d8218720d7f92a2b66e68b19190e9df56e9d",
+      "text": "You've worked so hard until now...",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:850a4b8e325d533ae30a88d21acaa834b02b218c92a24acd7be1772264687fb1",
+      "text": "It's fine to be tainted. I want you\nto live.",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:3c039e38094014a096f5f9f30a55c382f079aa275d425255ade0b7112b0ccd8b",
+      "text": "I'll hold your hand until you stop\ncrying...",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:b8328ef5c3f1d9b4ac9f25a0dcce3d81473fadce18654bb77335fdeb67a9e8bb",
+      "text": "...Ngh... What do I do...?",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:02c7f1acd2088bbe721d95d932b73e06f11ece84cf3243b7180aba1a9d2ac680",
+      "text": "It still hurts. The grudge doesn't\nfade. How can I erase this curse...?",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:c6470f657f823de9bd715a2187309c13fb753d50f7d7e92c699ab782df987c15",
+      "text": "Yes, yes. I know...",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:ec3940f674fd42eb7aa621ad4b28f0a7c2f28a272efa23d6350d382204dfec66",
+      "text": "Don't worry, no rush. Let's loosen\nit slowly, together.",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:396871936ef0c490000aadb902f041bd66dea649ebdc67e0b688b9a5a167104f",
+      "text": "...For now, shall we make ohagi\ntogether?",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:4ff6b45b71d8e13d838c08c9db9a452a251b355681609c60484d9d837e328e0b",
+      "text": "...Thank you, really. But how did\nyou do it...?",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:e2782a44274d0372f08cd47f783d669b79eea7e4ea48544eda6a322b3e13f1be",
+      "text": "Oh, I simply made delicious ohagi\ntogether.",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:95279c7490154b656bb3c6b4a309f2b7d137017574e6212eda8f60f08a933512",
+      "text": "...Don't you resent them? The ones\nwho killed your masters?",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:62776d5c2a411f31edf2dfc8edb0a14c916ccbac494ae3e7f161270ef4c81f12",
+      "text": "I don't like them, but sadness might\ncome first.",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:b8c7a73613251d382a4fcea491a78eee38b5d3d14a24123e12b77f15390f26d2",
+      "text": "In every age, humans keep creating\ncurses. Truly pitiful...",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:2aaf5e127f2daced953505938e4bece903e80e5b2656d056ec8089983e6a24c0",
+      "text": "...But you know how to loosen them.",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:8d87b1b83de9df7d90701853c5ce15fae9fc174e45a6b140283b776a17eef91e",
+      "text": "I want to learn that, too.\n...Thank you.",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:6c85086cac673c3cc4ebb42420b38663c2ea86a16da6dd96e4f8acb8328c3533",
+      "text": "Hohoho. In your case, you might\nwant to learn how to move your\nlove forward someday, too?",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:715df5e3dc194e074667c5f372ce7bff69e608770e7861cf7d3f486151583685",
+      "text": "Don't worry. I'll listen as many\ntimes as you like and pat your back.",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:1a5e23fb29bd67db72e9563dad19a81a356f92f1cba093b3dc9bd263a60d659f",
+      "text": "I'm everyone's Granny Tama, after\nall.",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "2": {
+    "4": {
+      "srcHash": "sha256:bc18290028436f344d6f4d641373170e68514fee37db7e8daa19ee58bd00b438",
+      "text": "Daily Reward Count\nFor The Reckoning Windwrath Steambot",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:bc18290028436f344d6f4d641373170e68514fee37db7e8daa19ee58bd00b438",
+      "text": "Daily Reward Count\nFor The Reckoning Windwrath Steambot",
+      "status": "machine"
+    }
+  },
+  "3": {
+    "4": {
+      "srcHash": "sha256:de59f38babb913afd078f2eae82d99c3c1471920c49207883ab5573c2b0e9e07",
+      "text": "Daily Reward Count\nFor The Reckoning Maelstrom Steambot",
+      "status": "machine",
+      "note": "source names the boss (Steambot Vernus); event name used to match the official fire row and the other two"
+    },
+    "6": {
+      "srcHash": "sha256:de59f38babb913afd078f2eae82d99c3c1471920c49207883ab5573c2b0e9e07",
+      "text": "Daily Reward Count\nFor The Reckoning Maelstrom Steambot",
+      "status": "machine",
+      "note": "source names the boss (Steambot Vernus); event name used to match the official fire row and the other two"
+    }
+  },
+  "10000000": {
+    "4": {
+      "srcHash": "sha256:dd72b9cf69216ca0abf5616d65a9146525763fb6ab8ecdbfedd645ac3cfc36cc",
+      "text": "Daily Reward Count\nFor The Reckoning Radiant Steambot",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:dd72b9cf69216ca0abf5616d65a9146525763fb6ab8ecdbfedd645ac3cfc36cc",
+      "text": "Daily Reward Count\nFor The Reckoning Radiant Steambot",
+      "status": "machine"
+    }
+  }
+}

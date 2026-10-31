@@ -1,0 +1,5 @@
+# API flavour: the assets are served elsewhere (the shell's --cdn), so the asset path is a 404 here
+# instead of reaching Reflipped's own static handler.
+location /patch/ {
+    return 404;
+}

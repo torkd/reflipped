@@ -1,0 +1,44 @@
+{
+  "haniwa_great_fire_direct/79": {
+    "1": {
+      "srcHash": "sha256:0703c37aec4e1e07cddf6da4764a773045ce1d0da13d7f910756afb1ef859b27",
+      "text": "Flashfire DH Hani",
+      "status": "machine"
+    }
+  },
+  "haniwa_great_fire_direct/100": {
+    "1": {
+      "srcHash": "sha256:0703c37aec4e1e07cddf6da4764a773045ce1d0da13d7f910756afb1ef859b27",
+      "text": "Flashfire DH Hani",
+      "status": "machine"
+    }
+  },
+  "haniwa_great_fire_pf/79": {
+    "1": {
+      "srcHash": "sha256:0435f917efae57355ca325611968bb4b6c25110cc84945cc9490fd721231f1c7",
+      "text": "Flashfire PF Hani",
+      "status": "machine"
+    }
+  },
+  "haniwa_great_fire_pf/100": {
+    "1": {
+      "srcHash": "sha256:0435f917efae57355ca325611968bb4b6c25110cc84945cc9490fd721231f1c7",
+      "text": "Flashfire PF Hani",
+      "status": "machine"
+    }
+  },
+  "haniwa_great_fire_skill/79": {
+    "1": {
+      "srcHash": "sha256:24ad3da749971e57c8b130b9c00b60351f479fa36bd273381e859d10098edbf8",
+      "text": "Flashfire S Hani",
+      "status": "machine"
+    }
+  },
+  "haniwa_great_fire_skill/100": {
+    "1": {
+      "srcHash": "sha256:24ad3da749971e57c8b130b9c00b60351f479fa36bd273381e859d10098edbf8",
+      "text": "Flashfire S Hani",
+      "status": "machine"
+    }
+  }
+}

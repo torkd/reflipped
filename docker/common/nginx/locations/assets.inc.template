@@ -1,0 +1,37 @@
+# Asset archives from disk (flavours stack and assets). Included by both sites; rendered to
+# /etc/nginx/conf.d/locations/assets.inc by the image's entrypoint.
+
+# Translation overlays (npm run i18n:build, CDN_OVERLAY_DIR mounted at /srv/overlay), kept out of the
+# CDN tree: only their archives are public, the manifest stays private. ^~ wins over the CDN location.
+location ^~ /patch/Live/2.0.0/overlay/ {
+    alias /srv/overlay/;
+    autoindex off;
+    gzip off;
+    sendfile on;
+    deny all;
+    # Archive names contain a content hash, so they never change.
+    location ~ ^/patch/Live/2\.0\.0/overlay/[a-z][a-z]/[A-Za-z0-9_.-]+\.zip$ {
+        allow all;
+        add_header Cache-Control "public, max-age=31536000, immutable" always;
+    }
+}
+
+# Asset CDN, served from disk. The AIR shell's AssetDownloader fetches whole archives with
+# plain GETs (no ranges, no auth); the zips are already compressed, so no gzip.
+location /patch/Live/2.0.0/ {
+    root /srv/www;
+    autoindex off;
+    gzip off;
+    sendfile on;
+    tcp_nopush on;
+    # Dotfiles and Reflipped's own bookkeeping stay private.
+    location ~ /\. { deny all; }
+    location = /patch/Live/2.0.0/metadata.json { deny all; }
+
+    # Archive names contain a content hash, so they never change: cache forever.
+    location ~ ^/patch/Live/2\.0\.0/[a-z]+/archive-[^/]+/[^/]+\.zip$ {
+        add_header Cache-Control "public, max-age=31536000, immutable" always;
+    }
+    # Everything else (entities CSVs, mods) can change in place: revalidate with ETag/Last-Modified.
+    add_header Cache-Control "public, max-age=0, must-revalidate" always;
+}

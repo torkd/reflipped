@@ -1,0 +1,74 @@
+{
+  "5010075": {
+    "1": {
+      "srcHash": "sha256:3ac0c10f5d098487789157fc95b3330c5b548d32be9641a3c39f807bcbff9ec8",
+      "text": "Hanifridge",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:3882200b4279169992d412823ae8482c135af7463eebe2a9bbc6dd15932be0b9",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. One of many swords found stuck in what seemed to be a storeroom, it gives off an intense chill.",
+      "status": "machine"
+    }
+  },
+  "5020042": {
+    "1": {
+      "srcHash": "sha256:e3d52b149fa0ff1134706773b518d33bfedf64c10bba6dc7e5f41081b2e5e2be",
+      "text": "Hal Bowman",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "5040037": {
+    "1": {
+      "srcHash": "sha256:f7531a34d934d05cc9e4dc8f9d5c496c78e4623aba3701dfd3af9fe3cf074e6d",
+      "text": "Hanirocket",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:53861ad7f64a47434866747b334d64a5215835a22775b69e213ab8f7e461cd8a",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. A great bow made to fire not arrows, but sticks packed with gunpowder.",
+      "status": "machine"
+    }
+  },
+  "5070043": {
+    "1": {
+      "srcHash": "sha256:08754d3ea8a5c88910f228db0d432faceae3b5fcd073de1d5980da7ab3aee6c3",
+      "text": "Hanimitts",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:869056cf7f0b47e7c9d3b3999cd824b5c0cfb95bee4be897ca6423b09287a4b0",
+      "text": "An exquisite piece uncovered during a fierce battle with the Flashfire Hanifolk. These mysterious gloves, a gift from a Hani in an apron, keep out every last bit of heat.",
+      "status": "machine"
+    }
+  },
+  "5090047": {
+    "1": {
+      "srcHash": "sha256:10ff3d838a29efae634b96aaf4eb99a8dde2488794a420d0cdcb30398f79c687",
+      "text": "Aroland Nemo",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "5100020": {
+    "1": {
+      "srcHash": "sha256:2a4ddcbb165101e7516e4daf2598e5b31862cde3a983f1eff56725bc9d2c49c3",
+      "text": "Hari Salvor",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  }
+}

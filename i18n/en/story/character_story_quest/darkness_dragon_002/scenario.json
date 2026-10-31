@@ -1,0 +1,408 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:72342b8716c20079468102b20f12e4f546d456ef721900363deb754f0e290d70",
+      "text": "I see. So that kid pulled you\nup here directly.",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:4f78a45a3b5cecdf885ccf730d3d086651f88502a4af805c90e5046eda9483f9",
+      "text": "Yeah. Thanks to that, I got to see\neveryone right away. They welcomed\nme so warmly...",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:a1aafbcc9df5d77b007732b0bca6ff8dd8a815121667b6082b9c704bc14f3f20",
+      "text": "I'm really happy.",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:24f45c4128cfe71fe8f2fbf4a8e4550d9ff384fc7710501e64c0dcba6f6c6add",
+      "text": "Nice little setup you've got, huh...?",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:c374cf7fc47434bf8b28731fa103653e8bb2cc9aa68d1cfb1af9ddc51958512e",
+      "text": "W-what...?",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:9aa9a72a6e8d66d95230d0d3c621b7464d6e48fb30411b93805face6a4d00ce6",
+      "text": "While I was getting beaten up by that\nviolent woman, you were cuddling up\nin the warm.",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:b35c95cb0f0d9bd9b897664d678ca70960318831248cfa3eb901c2015832348e",
+      "text": "Not fair.\nTeach me that memory-inheriting\ntrick, too, won't you?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:81f1e49d111d5a770dc517a285c00f39802e38a3db29bf3ee4a624912c823777",
+      "text": "I don't mind, but...\nright now I'm missing a lot of\nArmadeus's memories, so—",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:c0dc05e539b1c95597c4cd72225105ff20a6dcb20070e94c5231549ccdc3ac22",
+      "text": "About that...",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:60de95fc6f2ff201becf3efde9b938be4a118d40a4353a3e6f99183fa2905d08",
+      "text": "We actually have a curse crystal\nready already. The Fiends hunted\none down for your rebirth.",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:31edaeacc0f567e6c39e66ade6206ce45ee47019a9ac4e2a5786d97038170864",
+      "text": "You don't have to use it, of course.\nThink of it as a precaution in case\nyou want those memories.",
+      "status": "machine"
+    }
+  },
+  "48": {
+    "5": {
+      "srcHash": "sha256:6112ff8f26f1eb5c94efd6c6d57d12bf39cbf01ee31e170a7b76cde125cccc3e",
+      "text": "N-no! That's exactly\nwhat I wanted...!",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:55f3a7626d477f2042580779d6dcd1eabb281b0ff651f3b269211899d0a9043a",
+      "text": "What I was like before...\nWhat Capella and the others were\nto me. What Armadeus wished for.",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:d60e22383f261503f2174389cdfcc47b9d1a9ad9fa5cbef3d1961e7832dc03cf",
+      "text": "...I want to know it properly.",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:e30829a8f4a442bd180e210e8b64e9287c46a6e02d11781c087293505c238ddd",
+      "text": "...Will you come with me, Couette?\nI'm a little... scared, after all.",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:918722780168cfceba5f639450f7b684084115756da5b697384ea3d832929416",
+      "text": "Of course I will!",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:4818cb6619a56a99cb7ee0763dbf40cefda63648d43948d34a75a9e7fcbb4311",
+      "text": "Hmmmmmmmmm.",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:8241a4bccdc252ebd0a0f3def477383999ad50664973cea91519b4a19cb8effe",
+      "text": "Um, Rustamov,\nwould you like to come along, too?",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:8ce799dffef6e97056ca89cb4eae2d8178e75124e7920899e906314a29c8aa0e",
+      "text": "Heh, you're hopeless, aren't you?\nIf you're so nervous, this Holy\nDragon will go with you!",
+      "status": "machine"
+    }
+  },
+  "81": {
+    "5": {
+      "srcHash": "sha256:dfddd2660880c348b81c5144689ea8cc26e13458c53fa4dfb09cfa8d47a1a082",
+      "text": "So this is... the Fiends'\ncurrent home...",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:3753d0dd828248158390074eb311e4f9d13c7d60ae4cab1584160a4605add5b1",
+      "text": "Kind of run-down, isn't it?",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:75c774430696a242be015da719b3069fd8134eda2960637dd7960d098c5c33d9",
+      "text": "...We're abandoning this place.\nEveryone's planning to move to\na new world.",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:96192dccfe3ff76a545d6165ab42151fd4f529a01b4f61654f17b39d42def658",
+      "text": "Let's go. The curse crystal\nis ready over there.",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:997a003e4b035faf2834953681996cc53bf2a4b09521e95e58bb0e7050e4b2c9",
+      "text": "They say this is all of them\nthat've been found so far.",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:619da23cb522ab307a12684042ef9933dc4e79cb79bf612a5855a972bd6a1953",
+      "text": "Yeah.\n...Thank you.",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:53c9329c0094caa8d84e552050e7d4da3316890b633bc6abe85310c8712180e5",
+      "text": "...Tell me, Armadeus.\nWhat kind of dream were you having—!",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:26caf9f06c41f225b68e33f39b85c1783856bbe659ba24e1d8e471d70e7efa22",
+      "text": "KILL!!!!!!",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:90bc4cc4bb840c1a387d82aa453111e01bfcaf8a603b7c10d4efe66f37ffbdc9",
+      "text": "Gah... aagh...!?",
+      "status": "machine"
+    }
+  },
+  "119": {
+    "5": {
+      "srcHash": "sha256:53497993517fb4f80b8481a08438c92d6122998e26cc89918a8da11ae670dd7e",
+      "text": "Rooma!!!",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:b8706ba9578132ba0a8bb521e38f94129fa400bdbe513638b209dc9de0bdd6bb",
+      "text": "I-I'm... all right...\nI was just... surprised...",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:a40f402bb93400bed8c585739989d6cbd3fc487e0d4ab4caf060e36daaa0e787",
+      "text": "...I knew it in my head.",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:397320e582984f2356d76e949070e7e0a69a541293c09b3d225cb81a3c0ef728",
+      "text": "I wanted to save humans, so I shared\nmyself with them. In return I got\na wish. It became hatred and a curse.",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:720c4831464b44366574b38a15e9ba3b9cff612f2e9d30d8b70558ec7057a7f8",
+      "text": "But that just now...!!\nIt was more than words like that\ncan cover...!",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:088f808f4586c1e9e1ee6e413c7fc14a16786f0d84a44cd44f740390adf795c2",
+      "text": "What I did...",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:291f7b1a751f7dfd3c80cbe7c055f389952ddaf609fd927b8a2ebfbfc9a56e91",
+      "text": "...That's all I could leave behind...",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:5d1f97a7761ea390d2566eba7748b109448064e226f02ff79ec56ad71812e4f7",
+      "text": "...I take it back.\nI don't need past memories after all.",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:788a2f65c7b8e2071f90e920c07721e19f09d4cd66cd28dfdd698f0fbcfd8a8f",
+      "text": "If it hurts that much, throw it away.\nYou're 'Rooma,' right? Why carry\nthe Dragon of Darkness's memories?",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:a84670f6de0fb979fcce295f73cbbb6df87fe072961b677b9140a773feaa9134",
+      "text": "Maybe you're right...\n...I...",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:c2272aec6a2ef46108befdbb270ce986ac9db53d75b6789fb2663b57781e7cf2",
+      "text": "That's not true!!!",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:d7845b5df53f7be9515f44729a9113451dc3c413d521f65987050071b1456686",
+      "text": "Couette doesn't really get it.\nBut, but—!!",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:e9b27d0f2e037c6b4c7004f227426cc11dbd3b32f1ff461d3a8fad277c7856e5",
+      "text": "It'll be fine, for sure!",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:a35d233ff049cc448bcf7227b1e54450902b4be68ebd2fd1230415ad9ccac2b9",
+      "text": "Big Sis Challua's place is warm,\nthe food is yummy, and it's\nsooo much fun!",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:c8640b6456d0e0289ec29c8d27926399d875190040868f81f7b5834fe904c48e",
+      "text": "Eric saw the flower field too, right?\nYou'll live there, so it'll be\nsuper-duper fluffy!",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:1426b79907951e1e2a9d63361125693bcba29097e66537ecb34f7af1f6570162",
+      "text": "Hey, don't just say whatever.\nThere are monsters over there, too.\nWhat if Eric gets hurt?",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:33d4dcbb9c4f363f1a75b7abd02d9ab7b49fd884cc714f30d25068dfc8a0e174",
+      "text": "Those kids...",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:210afb2e460ac2eda8e7ead15de8f9a33746419f35797ed9c2e6cc294f0c26fe",
+      "text": "Eric's mother, that little boy's mom,\ndied in the war with the Fiends.\nHe lives with Marly now.",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:1dd9e8c1591222401c5c097d2199c4b6a02f00a6742a0983e3aac353cecb5e80",
+      "text": "We used to be enemies.\nBut not anymore.",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:8f13376b62244b641a34562c968ec18e2970ea9481d1dabc498b36a122588764",
+      "text": "We can laugh together now.",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:e3ffe521af2ac2d5165a1052e5cdb8d8f56549985433eaae7541440adc4501a7",
+      "text": "...Without who you once were, we\nwouldn't exist today.",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:8839428bf4caa927d136348150a070dad1944c1cafc2daa75c708c11b9b2dc38",
+      "text": "Allow me to thank you on behalf of\nthe Fiends. ...Truly, thank you.",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:41dc5a366d0c133bd0ab6c70b03786d6af3e7e72312e62ee1fb70d1b385f6e2c",
+      "text": ".........Ah.........!",
+      "status": "machine"
+    }
+  },
+  "208": {
+    "5": {
+      "srcHash": "sha256:9fec239a14e4ce21a09274512aa07978a85f184e631220bc1319f0443457ccb6",
+      "text": "Armadeus's feelings may have\ntwisted along the way, but",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:8e36d6ba3049a6b6dc8c05bc9c6c716e5a3eb609a2b21ff3de7e5327275e4e49",
+      "text": "his wish still connected us all.\n...That's how I see it.",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:826710420edc3070de7cf85b809e8c679bc2a7598045c296144f0eabe0beddd5",
+      "text": "...Yeah.........!",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:2c89f1d64e802216b676c58442d4c764542867b75e1cdf58dd658ab0e57e4be5",
+      "text": "......You're a dragon, and you cry?\nYou're a weird one.",
+      "status": "machine"
+    }
+  },
+  "225": {
+    "5": {
+      "srcHash": "sha256:2f1cbfa857e45dcbc5ef8d1e3acaa8c7a7c830cf3488d38e3bd404f95ddf4203",
+      "text": "...I don't know what I can do yet,\nor what I want to do.",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:e11b5445b4c0c2f69af638df1bd2b110a8ace927e0c4318ac2bb2ed87e13627d",
+      "text": "But I want to live together with the\npeople you left behind, and with\ntheir feelings.",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:a232f722c70ba53d6e3d6bbd3dccb4982da46808c4a139b68e4e57afaef7f5ac",
+      "text": "...Thank you, Armadeus.",
+      "status": "machine"
+    }
+  }
+}

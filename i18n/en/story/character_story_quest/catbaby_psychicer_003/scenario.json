@@ -1,0 +1,450 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:d1eea164c3b7178e7de6591e2b1cba99456b5bbc78623947b86650cee54c429a",
+      "text": "Letter, check. Map, check.\nLunch, check. Snacks, check.\n...Preparations are perfect!",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:4d05710c79bf9bb092f22a8933d0ba922639163ed224323e9f25d8bed1897300",
+      "text": "Hey, are you really sure about this?\nWe could just go along with you...",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:7a097df13f3994006ec91d91513275e5c7e873055caa32f049716ba7c92a277b",
+      "text": "No, I shall go alone. It's the 'job'\nFather and Mother asked me to do!",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:100973cfda68645b9395c34bc6094d3b3e1344821595897a596a9e4f077929c7",
+      "text": "Delivering a letter to the\ndogfolk town... It's simple, but\nimportant work. I'll do my best!",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:74ef5b903f0731fe84e74403c7792c038d5cc519698081b3d46c98cd614e5fdd",
+      "text": "But the village is pretty far, right?\nGoing all by yourself...",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:a2d066ea43c3cbf2db8c9970f4e459188b0dc38e9e93b6644368028fea6481d4",
+      "text": "Thank you for worrying.\nBut it's a distance I can\nreturn from by nightfall.",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:2c3eb8c17110cc416187a98f38ecdad96f99691a0c2632954147f19de27499e4",
+      "text": "...Okay. If anything happens, rely\non the people around you, all right?\nWe'll be right behind—",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:b0306d72008c1356c3d5d4df28c8f018b50dc2ffdc3cc71c97d7ab97601d9e97",
+      "text": "Good luck, Pene! We'll be\nwaiting for you to come back!",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:a46df4844acb3ef9cbb2fa1719c744d9dc9ef42cb7dca83c0ac30645e5ca756e",
+      "text": "Yes! I'm off!",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:37b509f0af312cbe60b2a3e0a6b3c7a68a8d8f23c9cca1c45201484c3ea41750",
+      "text": "Shota~...",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:5a9a92910f55fbf218badc73465174427df4cbae8c51db75944f9e0790747cca",
+      "text": "S-sorry! It's a secret,\nright? That her parents asked\nus to quietly watch over her.",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:b70386ed475f331720aac5fb6ec2d5aee368005e3a0884ea790337babfcd688b",
+      "text": "Exactly! The key to this is that she\nnever finds out till the end!",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:34e1b67fd2efd903f32d4fa24b9c61c7a4a32a72de087cc8f829cdd338092ada",
+      "text": "Let's go, Shota!\nWatch Staff Squad, move out!",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:40c3d42e8ebf5109362cdeb8a77c96660ad018515c4cd9f007b08e51fb20a207",
+      "text": "...You're pretty into this, huh?",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:c2b1fc57b650778c0cde073b89da696a1eb852d625e55ff51b8548e39bafcb1e",
+      "text": "Oh, my...?\nWhich way is this, I wonder...?",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:866e3262f0b7e8615d5ab42828a0aa67f58a13e7dfac2f2c6745c4663ada7c38",
+      "text": "Ah~, not that way...! She'll totally\nget lost! We should tell her—!",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:2105cd5a6557fc6f4dd9850af0b27f2ad4eeee0e0db49835127d34cb21be8867",
+      "text": "Shota, stay. It's fine.\nIt's fine, really.",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:12927543ca9f3bcd89182ff3009c433216deed05f4f79bd7ca2b67d3d5cbeb6e",
+      "text": "This is where I turn\n'right'. The hand that holds\nthe fork is 'left'... So?",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:a59fcb4e35801dee6381fe2ff8e7fe913f5248d552f95684761e299166ac8d75",
+      "text": "It's this way! That was close...!",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:10384ecb9b9f7454765d116b0682991770e7ec8cbc919ce6629fe8458fcaa21c",
+      "text": "Oh~, she's doing great...! Maybe we\nreally didn't need to worry.",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:0f70b96243b37f312f2298a07fbd57451f45acf39e7379e4449130a8258ec169",
+      "text": "Yeah, yeah! At this rate, she'll be\nback around evening—",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:a980e589e74d4950d2a18fe3b3c5adf6bcfe6e068d88d544188deeedcce84667",
+      "text": "Waaaaah...!!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:4ff07d6ee86dd4a2373193ef3101e6c4b2500069d88c7dc5e1d166989ed4d98f",
+      "text": "W-what's the matter?\nAll alone in a place like this...",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:eec1e76890c44783e6c1b1658b3ed82b47f3fa262aa2624d6a550405577afdd3",
+      "text": "...Sniff... Where am I...?\nMama, where are you...?",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:05989302955aa2bfe110f2dd40aac7d9bdf9722190dd7c2e047d80726e02d0d8",
+      "text": "...It's all right. I'll look for her\nwith you!",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:a15747fdbb34de545c4fef6a4deed3ef04a2ca355b9ee2d02cbd4249406c12ff",
+      "text": "So don't cry anymore, okay?\n...Here, take this.",
+      "status": "machine"
+    }
+  },
+  "108": {
+    "5": {
+      "srcHash": "sha256:c47143cb854bc2912be2e4cdf65cbf18152083fc9f16666f986daa36781e4e10",
+      "text": "...Can I? Isn't this yours, sis...?",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:4d0bb2c20fe23b3055fb7e4fbd8aafcf4e5b179e898f3fd76076ad0da142eecd",
+      "text": "I'm fine. I'm not hungry right now.",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:11b8c9394f1a8f89c70e6c3d9e73e9663720dbe22b5ea40d6924a2318c79710e",
+      "text": "First, cheer up, and let's find\nyour mama together, shall we?",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:221e54bd2474cc9d0cda394697ead55ef7a318d41d27ca7de83f6ab6e5b5d21e",
+      "text": "Mama! Mamaaa...!!",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:33d91f14abce703a4ac7ee5b81d6f42c94ccdc3cd752cb1cb5ac8edfa6e5479b",
+      "text": "Oh, thank goodness...! I'm sorry I\nmade you feel lonely...!",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:9e72c899bf68c9de496ac03bf0c8bcf6519ea52826e8d94d3ce2a7f92255bd48",
+      "text": "...Mother...",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:8f3449ea2a8404ff5b7508bd014ee55d538b9f93009c0a74f8333e5c0b2cb73b",
+      "text": "I'm glad you found each other safely.\nThen, I'll be on my way...",
+      "status": "machine"
+    }
+  },
+  "127": {
+    "5": {
+      "srcHash": "sha256:97d1d09382c5b7fe68393d9eb44e077c1a563d0625c730698eb5488c12062589",
+      "text": "Wait, little miss...! Why don't you\nstay at our house, if you'd like?",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:0294c6154bb8c007228440b61df359a1250fd2a30e9de544c67258f32d7f60c3",
+      "text": "It'll be dark soon. It's dangerous\nfor a child alone. We can at least\ngive you supper as thanks...",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:acfc102793ead69ffc49aa1481f404b8447762ee7abaeb525e4531eb68f76a3c",
+      "text": "Thank you for your kindness. But I'm\nfine! My destination is just a bit\nfarther.",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:7a5bda0ff9af05cbc1ce87fd06832ce5b5f85d5724a7aab6d17d03a46e26bec8",
+      "text": "...Really? If anything happens, come\nanytime. Our house is very close.",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:61c73db503dbdd22c1092389eb0603510118e8ed4267a5dca0ec73998cb14639",
+      "text": "...Oh...",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:732d6dc31005f0e160cc7756a922bcb0831abcd5d463517665727a8e15f5ece6",
+      "text": "...I'm hungry.",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:c5e8d4e02715ba26cb374a81655946d4ccbda3035ced376f090fd6ff8a39ca25",
+      "text": "But it's already sunset... I told\nShota and the others that I'd be\nback by nightfall...",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:c84a835197e496de5349e2a25c04b6aad66bdff128812e6f9456971209e1ba73",
+      "text": "...Father... Mother...",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:0f1c9b0e48edc8428d7893f685b1c7eb40855fc8f67e33374dfb22d2d5d5948b",
+      "text": "...H-hey. Isn't this enough?\nShe's worked hard enough...",
+      "status": "machine"
+    }
+  },
+  "153": {
+    "5": {
+      "srcHash": "sha256:a8d1a9e752df187f8890af0bb1ebb344993027d41c2dadbbcc9830658368fd7f",
+      "text": "Ngh... b-but...",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:f443fdc9136fb38a2c097cc32ca97d30481f33dc354285f0fbd5dcafcba36301",
+      "text": "—No. No! I won't give up...!",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:9a00ce3f7bb745c159083f42da810aab82a4251f07b69ce18a6588570c371631",
+      "text": "This is my precious first job. And\nbesides—",
+      "status": "machine"
+    }
+  },
+  "167": {
+    "5": {
+      "srcHash": "sha256:bd990ac5fa288827df0e7d8f0c281a50446027edf6b32d3964c25d3a71025fdf",
+      "text": "Nao and the others are waiting\nfor me...!",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:577e66370c8858535ac2f4b9c236c9ae6fa498f29cf3347052e5d6fd9129cf2d",
+      "text": "...Maybe we really didn't need to\nworry.",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:ced4b8eb18dd36ad90461b7a33f08b26a3845b12429f24f7ee9ac82d4c31d88b",
+      "text": "Yes, I have received it. Thank you.\nCould you give my regards to your\nparents as well?",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:c38b225f280bbb200f423f970e3bdf570cfdcdd83c6396ef5999849056c5796a",
+      "text": "Yes, of course.\nI'll pass it on!",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:ce6e200e992c09117020bce2cfcbdea12fba111a26718dc6355955499eb31853",
+      "text": "Haah... I'm actually tearing up...",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:52f9501deb938e34592a8c73d8830a1833a013be652bb5d9da69ee49def5c834",
+      "text": "Heh heh~. Nao believed in her! I knew\nPene would be fine!",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:9a386ccc644330780b1a02b51546b128f6556cf935b8c2190e2fd3d38e851ca6",
+      "text": "N-Nao? Shota? Why are you\nhere...!?",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:7eb3d2dc49881c01290a537b9d2d2f8922ad8afebce3e78332a9104bfe60d006",
+      "text": "Oh, how awful. Don't you trust\nme that much?",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:3302ccd989b7f73f6d73fdcaa3bf530afd5082ee488390c4e19a3dfa60bc832b",
+      "text": "I-I said sorry! There's a long\nstory behind this—",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:0677bc239ca356b62d2b4a39fa0b8c0df9d28e48d4d8b9d91f5e8164d51441a2",
+      "text": "Hee hee, I'm joking! But more\nimportantly...",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:5c132adc7bab00ad6c81b42606f4bd27fd61f60a1b733a819df51c858d86c06d",
+      "text": "My first job... I was actually\nanxious whether I could do it right.",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:eab8927d3a49ab9bfeea8c8ccc525c9fce938c3b83eaa26e2a150e8b4db1558f",
+      "text": "Did I... do it well?",
+      "status": "machine"
+    }
+  },
+  "216": {
+    "5": {
+      "srcHash": "sha256:b7756f43e51bf07d485515fe628fef325919eee8e7a311c93e4fe7dce2c318d4",
+      "text": "Full marks! A gold star, a\nperfect answer!",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:5ef8e8c4ecad8ea1efc7aec75b22add26e9191967b5540f228931b565ef678ef",
+      "text": "Nyaaah~...!",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:407adb92be06786fc2bdafe4ece992f49955740fbf4d8cf37647103d609676bf",
+      "text": "Thank you so much!\nI'm so glad...!",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:a8525504b33568e3def7db0b81f828b4261aceef7440fb4f7ea24c1af34c67bd",
+      "text": "Now, let's go home! The\njob isn't done until we're\nsafely back at home!",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:26af37aabd81d3eb85c4d006c0c41f8db5d94637252b0154aab851e7cf5ff6a9",
+      "text": "Is that something to say while\nbeing carried?",
+      "status": "machine"
+    }
+  },
+  "235": {
+    "5": {
+      "srcHash": "sha256:743dbf1272b1a9d9e56e91a2e6d21eec2fc13615b3ee21f5d67a671ea6a5aec2",
+      "text": "It's fine! I'll be someone who can do\nthe job, be kind, and be spoiled,\nall perfectly—",
+      "status": "machine"
+    }
+  },
+  "239": {
+    "5": {
+      "srcHash": "sha256:fccc35a4d5a14f847bd7eae288bbb3e38f5d9d1557fed4d8bf6d8e370db612cb",
+      "text": "A wonderful grown-up like that.\nI'll become one, I promise!",
+      "status": "machine"
+    }
+  }
+}

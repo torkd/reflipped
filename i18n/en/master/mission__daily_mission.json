@@ -1,0 +1,198 @@
+{
+  "11": {
+    "1": {
+      "srcHash": "sha256:e4368eb9ecbfd82810e6897aecc38c1893b1b7f4498ddf08f637c90546959f45",
+      "text": "Infinite Exhibition: Clear any quest",
+      "status": "machine"
+    }
+  },
+  "125000": {
+    "1": {
+      "srcHash": "sha256:4cc69aedb2db0d222c1228dd0fa450149805192ac8c42f119958754ec3a1e53d",
+      "text": "[Limited Time] Winged Familiars: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "125001": {
+    "1": {
+      "srcHash": "sha256:4cc69aedb2db0d222c1228dd0fa450149805192ac8c42f119958754ec3a1e53d",
+      "text": "[Limited Time] Winged Familiars: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "125002": {
+    "1": {
+      "srcHash": "sha256:4cc69aedb2db0d222c1228dd0fa450149805192ac8c42f119958754ec3a1e53d",
+      "text": "[Limited Time] Winged Familiars: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "125003": {
+    "1": {
+      "srcHash": "sha256:52f45b9c10ba712f7f9c7f88d885ae576759a39528e5b5c0866a15b7e1642321",
+      "text": "[Limited Time] Clear all limited daily missions",
+      "status": "machine"
+    }
+  },
+  "800131": {
+    "1": {
+      "srcHash": "sha256:a5f7fbf5df0e214ee623b30d3c676c8b4cce299e31ce990eee9e7d5582c5935d",
+      "text": "Boss Battles: Clear ::x_count:: multiplayer boss battles",
+      "status": "machine"
+    }
+  },
+  "800132": {
+    "1": {
+      "srcHash": "sha256:a5f7fbf5df0e214ee623b30d3c676c8b4cce299e31ce990eee9e7d5582c5935d",
+      "text": "Boss Battles: Clear ::x_count:: multiplayer boss battles",
+      "status": "machine"
+    }
+  },
+  "800133": {
+    "1": {
+      "srcHash": "sha256:a5f7fbf5df0e214ee623b30d3c676c8b4cce299e31ce990eee9e7d5582c5935d",
+      "text": "Boss Battles: Clear ::x_count:: multiplayer boss battles",
+      "status": "machine"
+    }
+  },
+  "800154": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800155": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800156": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800157": {
+    "1": {
+      "srcHash": "sha256:287140de5bc0a83d4f79ad0faa50fce88c614c0fe86077783b62dfa58e3a3c21",
+      "text": "The Purge: Clear all daily missions",
+      "status": "machine"
+    }
+  },
+  "800158": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800159": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800160": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800161": {
+    "1": {
+      "srcHash": "sha256:26b0d4ddf2a92f852d09527e2d6612908340aeb31fd8a1fad1ae35d9dc95f5a4",
+      "text": "Windwrath Steambot: Clear all daily missions",
+      "status": "machine"
+    }
+  },
+  "800180": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800181": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800182": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800183": {
+    "1": {
+      "srcHash": "sha256:a84893fcd20ab402d1e8817ddefe2ac29cd6716f2c10c5ee3effb0e8609ca5a6",
+      "text": "Maelstrom Steambot: Clear all daily missions",
+      "status": "machine"
+    }
+  },
+  "800268": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800269": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800270": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800271": {
+    "1": {
+      "srcHash": "sha256:287140de5bc0a83d4f79ad0faa50fce88c614c0fe86077783b62dfa58e3a3c21",
+      "text": "The Purge: Clear all daily missions",
+      "status": "machine"
+    }
+  },
+  "800280": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800281": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800282": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "800283": {
+    "1": {
+      "srcHash": "sha256:57db1bd2428eaad89794ddb51dd128263cc2dac112be2859a8b77634e0c8cc42",
+      "text": "Radiant Steambot: Clear all daily missions",
+      "status": "machine"
+    }
+  }
+}

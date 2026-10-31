@@ -1,0 +1,464 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:10da1ace3ee243af7e1da838f1aa2a04baab62548c89c574d3891dd795c50f64",
+      "text": "Oh, hey, it's you guys! What's up?\nWorking? Want me to help?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:80117aaacd54f4f4dc79e244ba46609668959b294130c81375dd2605b58615d8",
+      "text": "Oh, we're fine. We just finished.",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:32a95d7d1a1773276a7d4df389880e89ddf66e1a0af358bb361139c783473356",
+      "text": "Actually, we finished so fast that\nwe have no plans now. We were just\ntalking about what to do.",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:65b8c18f316bb7cc4bfc285ec88853a9351bae094fd306189bd17ff37666f4f5",
+      "text": "...Asato, flying in a skirt. Is\nthat really okay? I don't think\nit's good. Just saying???",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:296fbd460220fea7d70ac03e6c985fef65f49116ec0fe0e88d4ad46b78991b0c",
+      "text": "Huh? They're shorts, so it's fine,\nright?",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:97283f7710d23eb9753cec5001725085216ebd37e576467c92de1430bb510f7a",
+      "text": "It's not fine on MY end!!",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:bf39e37b7e4130f2b27c23fa66df5320492fe8dfcba22b66124778d6ad52a92b",
+      "text": "...Peek.",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:a27b2cb7c3e0c749069ac6394325748046b454827fe74dbaae928dd00053885b",
+      "text": "Hey!?!?",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:9af9f025700ea66f6032787f25c2b18ac76187253778c9d6d3981441782a77ba",
+      "text": "That's not allowed...!",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:baa046992d23de76c9a8cb314a1644c5a7b044f2ec4524398c46b4439fa12ecd",
+      "text": "Ahaha, sorry, sorry! I just wanted\nto prank you.",
+      "status": "machine"
+    }
+  },
+  "48": {
+    "5": {
+      "srcHash": "sha256:b5be9bbae40e67ff22cf83ab70f4693d756259cfc2a16c68424a868e24429e32",
+      "text": "I won't do it again, so forgive me!\nI don't wanna get killed by Yukari\neither.",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:c75b75881fdbabbcf5ca548ac2df548fd0fc79acbaeb04776b02a5f1b97e7853",
+      "text": "Wait... What? You're friends with\nYukari too??",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:4e40724296a388e83f69bc60eee92cc62f64e744fb4aab2b03b800aa38fe7cb7",
+      "text": "Yeah? So? She's super cute, it's\nwild!",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:536a92c9c46364dfaeece1bcf3440b8504a309b3a88ac5832e83aacfb4589c94",
+      "text": "She just came up to me on my way home,\nthe night I first talked to you, Sho.\nWe've been hanging out ever since!",
+      "status": "machine"
+    }
+  },
+  "65": {
+    "5": {
+      "srcHash": "sha256:adbb8af30a7adb2e02d40ab26e0ce2f7c5bd5b0c2f2d3cf1223c567e099adb73",
+      "text": "O-oh...",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:101490783480bfa78a97c79fe426c6fc8bc4e23e65151d4868249c1484762b33",
+      "text": "Asato, you're fearless...",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:411b300d4514a3f90a1d50eeb2d2af70027bd8356af3225929a801db4c65323e",
+      "text": "Hey! If you guys are free, let's\nhang out! I just wrapped up my\nstuff too.",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:664ceb0a4ac3aab909298738836bd7ac2d7c9908532dff7dd13259a9831214b7",
+      "text": "To thank you for taking me to the\nsea, I'll be your escort today!",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:2a088800fa9b9ac907b3b07d6b983d54fc4b7968c645894f4c2133473fdcc349",
+      "text": "Well, no work anyway. Let's go!",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:e3382c108574f5f92e7cbf5bd0eacaeb2ce5f4323abbfa18db2af4f26ed4716a",
+      "text": "Yes! Follow me!!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:57bcfd648d4e15d6fc6160e17b325671d7117c0fe43478aa4fcd5731dbedaf3a",
+      "text": "And the winner is—! Stella and Yuki\nare both so cute! Seriously!",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:e1aea6e483c546374b44d473dd5b1f47cf7f9a223937e0a48f8c6fbfbcf3f62e",
+      "text": "Like, this is amazing! It's making\nme so productive!!!",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:b7f1ae4a4088313c6ec2766fe435d6357362013195cf5a459871dc98a32c81e3",
+      "text": "I mean... Even in Shibuya now,\nthere are shops like this, huh...",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:819e3d048af049befc2c029a937ede021b4a5773ca2ecce0962fbb8d1835a5df",
+      "text": "Yeah, it surprised me too. ...But I\nwonder? It feels kind of\nPalpebra-ish?",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:ffe47d10b01c7f9cb928e7df0282b729f28881121cbc1af44cfc19a5c219866d",
+      "text": "Ahaha. Well, the fabric and stuff come\nfrom over there. Yae buys all kinds of\ncute stuff in Palpebra and shows me.",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:9a20da955477c645b3d7e76f87650431c7f6d6f2d4c529924a635bb312f4bbcd",
+      "text": "It got me inspired too. So I've been\nborrowing the cool vibes of stuff\nfrom over there.",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:1c2f30bc00427a873dab1817dc89635b72b096ef9c20b03f6c9cfd5a5ed27fdb",
+      "text": "I see... So new things are being\nmade in Shibuya too...",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:ba8f795ea87329a9f77220764ba60a08ac1e19373258fc03f3c7f02cacafb626",
+      "text": "Oh, they even have kimono!\nSecondhand? Which yuzen is this?\nThe vibes are so good!",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:3bd646fb5dd25e685d89bd870164968dba26bedc82277fb74c23485e1e3cb950",
+      "text": "Asato, you know a lot about kimono?",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:75649e71020538a4f57e0d8834b2204322d05030a354a3f4118d80590c65860e",
+      "text": "Hmm, kinda? Not like the people who\ndo it seriously, but I know a fair\nbit.",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:eb66a00fe0cb535498e28bcc8f6de93c3583ae4f3b3c86b8d28c03433e373a2f",
+      "text": "Yae's family used to be super rich.\nShe went to Hizakura Girls' Academy\nuntil middle school, they say.",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:249928d5d2478c3471d105ff66d663de8160de0c3847dfd1fa441db8a1e6e7d6",
+      "text": "Hizakura?! A legit rich girl! Wait,\nseriously?!",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:d187e37da28526f407d10121ef535aa9309457e99a5b848d7ee6f2dc47356cf9",
+      "text": "For real. Not old money, more like\nnew money? My parents were desperate\nto keep up with the real elite~.",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:3a247cca033c6a1f8295ca01239fdcac3d444220d138d585adc978decf7f8dba",
+      "text": "The discipline was insane. I had no\nfreedom at all.",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:1e63cb62a2043f70f69319c628b7dee87692a531ed6fb5299c867b909d10539d",
+      "text": "Well, the company went bust before I\ngot to high school, so I'm not a rich\ngirl or anything anymore! Wahaha!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:4d469fa455d1ca588858c0aae7435a58962ea55d5e038ea68d3e02a0f99c68d8",
+      "text": "O-oh... I don't know how to react.",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:c40578ed033f924c758681b41d6ce8684885073a206968196b62cac0622fa401",
+      "text": "But right when I finally got free,\nShibuya turned into that mess! No\nway, right?!",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:7159bafa7fa2e6959a1dffd424c43c9d2bbc77ff0a28be3404a025956ad94381",
+      "text": "You were super free back then, too.\nYou talked to me like it was\nnothing, even when I was in Aegis.",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:589d2c4d44029208be30d33d9f205c3fe5f257905577d179655828f843c6ad1a",
+      "text": "Same. I went to recruit for the\nStarsayers and somehow got turned\ninto a buddy. Makes no sense.",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:4496a0a6bfe12fc9595c96563eab64a1e539510ba39353a3fecc277589054e20",
+      "text": "B-but everyone was having a hard\ntime, so I wanted to be friends!!!",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:40935fa0f9f037784e1ab141eae3002ef81324fad93be970c05fd92c1a37fc9b",
+      "text": "I can't laugh at Yae either. Times are\ntough, and I'm running a hobby shop\nlike this. Like, what am I even doing?",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:6f0a999601f43c797243fcce138045a456d2450563e7c2993673030ddf506838",
+      "text": "Huh, no, that's not true.\nInfrastructure comes first, sure.",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:fc47f668687c67e027921de702e7c93328902f40707a9f54415bb52554fa8082",
+      "text": "But a shop like this is definitely\nimportant too! For peace of mind\nand stuff!",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:cadfb6fe32b6a2b5b8b011b0163edcec7d3aa33cc18bc09c1fc5dd6ccd5a7d7b",
+      "text": "...Yeah. You're right. I think so\ntoo.",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:7d9508ce07f293bf83cb985b37d2098c8e529cf1c585b2202bc82275168bc4fa",
+      "text": "Right, right! As expected of Alk!\nYou get it!",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:660e79b8ffc40c9e70b97c79f60afc82782500c178051a790e3b456ed58560e7",
+      "text": "Oh, this one's great too! It'd look\ngood on Yuki!",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:af7760c8be0b6f0139ea61efa623d4e9df64ee21fcffa1051c25d0aa51d279ff",
+      "text": "That was so fun! I feel like I\nhaven't played this hard in ages!",
+      "status": "machine"
+    }
+  },
+  "202": {
+    "5": {
+      "srcHash": "sha256:999ee41d89d9ff8b15d7e9ba825066b45073fd0f9ed85d05faae0e75010a0b8b",
+      "text": "Yeah... It was an unfamiliar place,\nbut it was fun...",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:2591a114ca2f05c3cdcb78eadb5bea12a57c7faf18cf9be9d09ff9d535aa3558",
+      "text": "And I got to see how Shibuya's\nrecovering, too.",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:83f5487e7d46c21f6b0e3cce8458b26e46847dd0b3422973152dbb76db8ac6eb",
+      "text": "Ahaha, what, so serious!",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:5264d7c7ceed129f413dc7adf0be912b79fa63b438eb6a2ca024b2e243407944",
+      "text": "...But yeah. Everyone's moving\nforward, huh. ...I'm glad.",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:9e047fc6cde6986d00f801dbf4b466db940be7f910ebfb76751e644f20f63d8d",
+      "text": "...You know. When Shibuya first got\nhit, right at the start... I know it's\nwrong, but I was a little excited.",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:629156feca14b0331909c13858010a2823f9b6bbc5841bba3b69e08e3a3088be",
+      "text": "...Because I felt so free.",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:41413d5e47788291fcc5262241148a2d300990c24c9e1602a196f8bbaef0a0a5",
+      "text": "...I can't say I didn't think that.\nMaybe I thought, finally, this is\nit.",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:2094cf5a1a4be80e19a7f1cb85f104fc9d28b9d36a712e33d95a26c2e3af7e23",
+      "text": "But what happened after, and what I\nfelt, blew it all away...",
+      "status": "machine"
+    }
+  },
+  "230": {
+    "5": {
+      "srcHash": "sha256:9f256529ed23985b3baaf6406cc101a76ec6e17ff436d35208a9c083bc021e99",
+      "text": "Yeah. Me too. ...And that's when I\nrealized.",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:102aa1caa05dbf7b058b613cf95680b9bdb648b83ed3a5225162ba3dc9fbea2a",
+      "text": "The freedom I thought I had was\nsomething protected by society, my\nparents, all kinds of people.",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:756c7ff84548cceda615990ac9697102190f482268745d017d53a97f5c78f837",
+      "text": "So let's make Shibuya a place where\neveryone can be free again!",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:540ed9668db809ac64cd2112df6fd52fc6cc05e97a0dda565b8127629186e05e",
+      "text": "...Yeah.",
+      "status": "machine"
+    }
+  },
+  "245": {
+    "5": {
+      "srcHash": "sha256:bb39253984c6b7adb4ef78117287787c7075f78d301f7b886503b884b97c5e42",
+      "text": "Show us more shops you know\nsometime. We want to explore new\nplaces.",
+      "status": "machine"
+    }
+  },
+  "250": {
+    "5": {
+      "srcHash": "sha256:8e1be942d4439da61111e85941f737083a05c793273efcdc583492969b3b21e1",
+      "text": "Of course! Leave it to me!",
+      "status": "machine"
+    }
+  },
+  "253": {
+    "5": {
+      "srcHash": "sha256:ef1adcc34606e259ebae5581050d7f128a898c38a13c467fd307cf5268847b39",
+      "text": "Oh, then let's go to a club now!\nOne just opened recently, and I\nhaven't been yet either!",
+      "status": "machine"
+    }
+  },
+  "257": {
+    "5": {
+      "srcHash": "sha256:43552e7c0bcf60f2330ec0ba87b63c18856cd7c9820424361cc7292dd9b6a3ed",
+      "text": "Huh...?! Now? We're still playing?!",
+      "status": "machine"
+    }
+  },
+  "262": {
+    "5": {
+      "srcHash": "sha256:bfb01aa6e1bae011a4b434b610aaa0c8b98054efd754aea4ff014f9ef225fcf8",
+      "text": "Obviously! Tonight we're going\nall-nighter!!",
+      "status": "machine"
+    }
+  },
+  "266": {
+    "5": {
+      "srcHash": "sha256:a97110cbbbe58bd5956053667ceae906a19ebd6031511dd0efafa753bd684316",
+      "text": "...Well, why not! Let's go!",
+      "status": "machine"
+    }
+  },
+  "271": {
+    "5": {
+      "srcHash": "sha256:3b0c47ecd481e0bfbe8c619cc94880137652def1c50d14e1eb4624106236c238",
+      "text": "Okay-doke! Everyone, follow me!",
+      "status": "machine"
+    }
+  }
+}

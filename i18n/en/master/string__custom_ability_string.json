@@ -1,0 +1,37 @@
+{
+  "change_skill_amulet_bosslady": {
+    "0": {
+      "srcHash": "sha256:bf8d19fe04c17b5cd2d46129c1893081b63c103857140797e973096aeaeda560",
+      "text": "Floodcall: Gonggong gains the following effect: Inflicts a stackable Water resistance debuff on hit foes",
+      "status": "machine"
+    }
+  },
+  "change_skill_catbaby_psychicer": {
+    "0": {
+      "srcHash": "sha256:3ba0c530c6faa15b2b33123bc6beaf87b154f5e2527975073e1399ba28f2a63f",
+      "text": "Extends the duration of Kittenkinesis's \"Inflicts Fire damage on nearby foes for a period of time\"",
+      "status": "machine"
+    }
+  },
+  "change_skill_evilloli_master": {
+    "0": {
+      "srcHash": "sha256:8e9df983aeb598d66d965fed617d4de896b0cf1c375159fe71c290768dfc5b4b",
+      "text": "Increase power of Innocent Karma",
+      "status": "machine"
+    }
+  },
+  "change_skill_priest_prince_playable": {
+    "0": {
+      "srcHash": "sha256:6f20f6fc65ca2929d3fe44f82ddf2c954ea0f164d3e9d6258400dff5ab7f1dd4",
+      "text": "Parasite Abyss gains the following effect: Grants Barrier to Dark multiballs",
+      "status": "machine"
+    }
+  },
+  "change_skill_psychic_taichi": {
+    "0": {
+      "srcHash": "sha256:ecdec743bd0c0f803627f6ddedebbf0e2cca5a240f253dbb8ea3236c75c55dea",
+      "text": "Increase power of Fiend's Hand: Resonance",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:0a1a2469e071ee9a797d1fb8ce51b48beae175d30d6ce8ed49fec575c85d3d60",
+      "text": "This is the worst. The WORST...!!",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:9811d46d09c8e2a306625c4c2269e6906d554e945328984b65bc54d18fa7de43",
+      "text": "Y-yeah...",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:7958b1c9024bbdbd2ef83a408d944869fc86e40f667b0e8df9cfdc8a6dec1536",
+      "text": "What's with that violent little elf?\nI mean, seriously? Doesn't it bug\nyou that a kid acts so cocky?",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:134c0f9fc6833070951d8455c7dde89e34ecb53fb0c4e4c5e95bf8607f4b82f4",
+      "text": "B-but that would make us zero\nyears old—",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:ae68faf427caaadba1cfcc6fb4dd83de251983ac52891a6e28c8576fcdd335c5",
+      "text": "Age doesn't matter to dragons.\nYou don't want someone puffing up\nbecause they were reborn first, right?",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:ad97aa5345c7878a334a0a9a135d201cfc7afa5fb30ad4936cf00b87a21fc973",
+      "text": "...N-no, I guess I wouldn't want\nsomeone puffing up...?",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:d9d863341ce43d406e063a10542c3a24c6d719199d3fbfba9ec8859e562420cf",
+      "text": "You're weird too, you know.",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:78d4ffda44e9182331fda2a86d1ffce934d3f8b71d66c1f45d2d0a54a9da8e18",
+      "text": "Huh...?!",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:4ead5d49caeafaba683ccfa92a2885a8ba5dfd0535d10ecc44c6a05335ea159f",
+      "text": "...You're Rooma who became\nArmadeus. That's what I mean.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:58f1ab731b0f2aed822a6c8f4dafb29c1db8ede0430b55480c4d80d8c915a40b",
+      "text": "And the dragon thing. Sis Rams and\nthe others told me. We're just\nfood for the Champion, right?",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:9243dd223cef7da98c348fbc4f8afd8c7033716a6b1677839fb4bc3b9485132f",
+      "text": "In the Silver Woods, the elves keep\ntelling me what the old me was like.\nI never asked!",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:82c2a9c84039fc990db1b994d811002bdaa478f6b0998441acef0d6ef54b928b",
+      "text": "...All of it. Everything.\nI hate it.",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:5a864bfa46a2a81afb0976633a507be41f09a9eee93f008a6737f188a4e48b21",
+      "text": "Rustamov...",
+      "status": "machine"
+    }
+  },
+  "55": {
+    "5": {
+      "srcHash": "sha256:a661016635aa782995040b336afece1386c2bcdb50470016bfea4ec714fa7ff1",
+      "text": "As \"Rooma,\" you could've said\n\"it doesn't matter,\" right?\nWhy didn't you?",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:3f007c149e6251b0dcf7ec69eac3f8b353dbe9edfe137d8d4ab59a698f40df27",
+      "text": "...Because I found out.",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:eb4552af65631af6a47852006e7e791b90dce2755ff8e66437807d54dfac2a4e",
+      "text": "I wanted to hold on to it, the way\nCouette did for me.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:1148f8cdfa18a1acfb0cb2974adf75cd9382c88e47629d443cbcb82a7bdc56d1",
+      "text": "...Hmm.",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:7c89134020a295016f4415c3468cebc54fcd038ba360774768f0f856a59756f8",
+      "text": "You really are a weird one.",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:a6281b833a6cf9220fa5a65ba03fa7c47cbe9daa27469e9e31f8ec47d9ec2766",
+      "text": "Yeah... Maybe I am...",
+      "status": "machine"
+    }
+  },
+  "81": {
+    "5": {
+      "srcHash": "sha256:ea55a502c3ad6b20750dcab15839351616222279bf1bb3b360a6a67f859a875b",
+      "text": "Yes! The plan worked...!",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:8c8e8b2d56bc00e7f70bd1c05a4cc7127a75200dc32e1ae6ffaf8d37d37d53c3",
+      "text": "Hmph. The Goddess gave me the\nauthority. Now if I go to a world\nno one knows, no one can catch—",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:4d2f2bdfadf99df2e52a3dc6298d37d949399fd5aeb23fae1baadd53bac6ce33",
+      "text": "Waaah?!",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:83aff837056c65665123120b52d835f7824e6e900eb1fdd652a3248945534b7e",
+      "text": "Hm...?",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:e4ade8e86f0c268dbddd709895f5ab3d4ec04367925c6b87499590771eea4393",
+      "text": "E-Estariel...",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:b753769a69358028b2beee966850bedcaf68d5a4babe1783958f5de80f991672",
+      "text": "You're leaving?",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:2f6015246c7896136ef1b82bc83f329d3175e7100fc704a499ca5bd5754ecc59",
+      "text": "Huh.",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:6fdff7719a506682ae54ff6335f7eee8ced8ddfddfb8b0703a0cd37ad6fc4152",
+      "text": "I see... It's about time, I suppose.",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:ebbd7a8092675755063bf3109705cba13e3b6eec6b08639e1d29d3b39f4a4067",
+      "text": "Huh? Huh??",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:880ac20bc1bb718fb40808738ef5fc5006a5d3813eae9e048e3718683a223898",
+      "text": "A bond has formed. If anything\nhappens, rely on the people\nof this town.",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:637cefa3b591ca2ba344ab37625d6b5edede9f2bead130592323784ea7fa55ca",
+      "text": "Go. Your wings are yours to command.\nFind the wind you love.",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:d3bcd07b2b17b2296e549dfa36a20b68a448a383abd68bd2c864e478c3442200",
+      "text": "Hah...",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:36c2cccb6bf32760d21e0597fe9c4bb53b15c14e59c65097bd8b5311496e2d30",
+      "text": "I hope there are tomorrows\nawaiting you.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:f7cae4162a2cf6a436e05d2a0ef63b5f72f93824981394a719c28bba245811e0",
+      "text": "Wh-what is with her...?!",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:a61553c931057eb74303c19a6b8e12efeb32a853260adb529134c601aea76065",
+      "text": "Hmph...! Fine, if she says it's\nfine! I'll do what I like!",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:4cd51be26a65f9b7cc4bea15dafcb49956ba953543007ec1785584c283601f07",
+      "text": "Seriously, what's with her?!\nSo selfish! Isn't there something\nelse she could say?!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:a949b67f44a36529759c0367da550c8261964eb941404cc72aaadd123c73cc72",
+      "text": "What's all the fuss about?",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:3e39e797fcbf83abf39991f3ebd29735642b61b3a3aa1703ebf797fbdb6a2179",
+      "text": "If you're leaving, then leave.\nYou're an eyesore.",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:06426f8c751093f19590b6e9aebbcd1f197c5774872047782198bff2b38c4dde",
+      "text": "Ngh... Grr...!",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:c26bd1b1da309a3f7ffde0e94ada6a15d1c2678d1861f145bd939b04d435e166",
+      "text": "Shut UP!! Who are you?! Acting so\nhigh and mighty!",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:5bbef1da2a599b61b81a7ea10756647b0eac90e24b4ae724898d60e67e6b0f70",
+      "text": "And what's a Flame Dragon King?\nKing of who? Did you make it up?\nYou take orders from humans!",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:4cfabceac0a479cb1501e8aa02ec2b38482d3b314dbf5fcd58b07cb31e1446dc",
+      "text": "You're lame! You and all the other\ndragons! Every last one of you!!",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:53e32cb6f517bc8b8936fc7fa62c2964745029b6d39a744a80879c144e65c4c5",
+      "text": "I'm... different. I don't care\nwhat the old me was like...!",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:8357de4994a5b66e5c7713ae1833a4db4cb40ea7dad81f56b2e3f5b5569cf45c",
+      "text": "Vagner and the Ancient Dragons\nare not lame.",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:01b6a8480cdb9545082beca01e8b033dc0700f23e7304eb9c9385b0e5ce3da5d",
+      "text": "But you think they are. In that\ncase, what would stop them\nfrom being lame?",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:97f8b960ad264c6166d102e2cc17584006f208b98fce6fb92b135fedee2ad21e",
+      "text": "...I dunno. How should I know...?",
+      "status": "machine"
+    }
+  },
+  "191": {
+    "5": {
+      "srcHash": "sha256:35f583cc5ca10654bca19ba6600a584a59f6f17aa25cca2218f7c11399be7328",
+      "text": "...Fate has already let go of us.",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:493ce707c409ce36ba094991de72efb2f921ea5c31dab7ed0e57dd6cf8a0cbd9",
+      "text": "Dragons will no longer die for\nthe Champion.",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:c8219d07693f86563f43c4f386ca0e0bf8c0a39a70c8b69c06bd049e38f1082c",
+      "text": "We decided to make it so.",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:188230cc8e1f87e90f94f3bc1c37468828fa84658f2caacd614aaacdcad96a6a",
+      "text": "...Then why? Why stay here\nand fight?",
+      "status": "machine"
+    }
+  },
+  "208": {
+    "5": {
+      "srcHash": "sha256:8c92518beb018b751a575ee859ad083607577c3fe9cfd466924f07d8216e5eb3",
+      "text": "Vagner likes Light.",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:cf784dc8488275797d57732539b88ede2514867c53e9f09c9da31fe5111a0ae5",
+      "text": "Huh?",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:47cd7f2db75e915775f2d18498216a3580fff8a301d19ec94271311f624f32f6",
+      "text": "Also, Vagner is a proud dragon.",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:9572b66ca05c28700059427cb1a0b29637af9a3efd0c2c89e18a9f1831e1d845",
+      "text": "...Hmph. I will let those fools who\ntried to bind and fix dragons taste\nmy blazing heat and sharp fangs.",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:6a0704e798277bfc4f38164641c2c7b6e06feec567b3713d0656db0f443ce9a4",
+      "text": "I will show them. That's reason\nenough, is it not?",
+      "status": "machine"
+    }
+  },
+  "229": {
+    "5": {
+      "srcHash": "sha256:90a6f70c799a75621410c420cc20c8e651486d4003226fe7edf691b283465ac5",
+      "text": "What's that supposed to mean...",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:98b6459a609c0ee4f5ab422378a6918ef4c6faba290bb8d82651d84b4c944b79",
+      "text": "That's kind of cool...",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:2910a18eec8fd2dd5cd180079f7daaa70fc264fbed0798ef916403245c1c3d55",
+      "text": "Yes.",
+      "status": "machine"
+    }
+  },
+  "243": {
+    "5": {
+      "srcHash": "sha256:726748a0e534313005f8bb4f3c47984b34731814e7dca6b0d6680d6416623689",
+      "text": "Well, that's how it is. If I get\nlooked down on, it'll be a stain\non dragonkind's honor, right?",
+      "status": "machine"
+    }
+  },
+  "247": {
+    "5": {
+      "srcHash": "sha256:144069b25d280312fb8a998af764c1cd0603d23ea5da571278859cea32fea6f6",
+      "text": "I decided to show that violent little\nelf who the greatest Dragon King is!",
+      "status": "machine"
+    }
+  },
+  "251": {
+    "5": {
+      "srcHash": "sha256:0d7f530d7a50424a53440833e5c9ba8d2976d47dcd9819569a7f570947c10405",
+      "text": "...I got that already... but you\nkeep talking about Estariel...\nOver and over...",
+      "status": "machine"
+    }
+  },
+  "256": {
+    "5": {
+      "srcHash": "sha256:bcd07a6936c6f75aa05d9be4260f27ced98c0e567bcc71644f412cba7965afc4",
+      "text": "Of course I do! I mean, when I said\nI'd stay after all, she—!",
+      "status": "machine"
+    }
+  },
+  "260": {
+    "5": {
+      "srcHash": "sha256:04b68df93db1b15770bd1dad1d97fe3ea948eede6ee93bc5a4b9e752f1405645",
+      "text": "Well, anyway. I'm glad you stayed.",
+      "status": "machine"
+    }
+  },
+  "264": {
+    "5": {
+      "srcHash": "sha256:7ba2a4917b6c541f38053a75b95d33acc4de416193f811e21d9cf5f794387d34",
+      "text": "You shouldn't say stuff like that\nwith a straight face.",
+      "status": "machine"
+    }
+  },
+  "268": {
+    "5": {
+      "srcHash": "sha256:642f438ab4057711a0b594061da306f1e07b463170625b71d8835e1e9c441c46",
+      "text": "Huh? You think so...?",
+      "status": "machine"
+    }
+  }
+}

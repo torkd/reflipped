@@ -1,0 +1,436 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:cd777ea39f7612743ba5da85a76cd159b804b3dfd4a3749704656f105c72e192",
+      "text": "Stop resisting. You'd better\nsurrender quietly.",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:288a12a532bcc7db86ea414a266e52fa2f04fcd78f035e0a6a0925b8f396abe1",
+      "text": "Ugh...?! You've been hitting me\nwith weird attacks!\nWho ARE you?!",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:72e078cd646c310c119cb932778e9e5bb914520663eaa372e58c37802417abef",
+      "text": "Cowdy.\nA gravure idol enjoying a day off.",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:a5069027fded6c5aa5c401c04e9ab80bb912e3812d5265048fd7c53136a67250",
+      "text": "That makes no sense!!\nDamn it!",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:761c5103d74a9dd9b483cf0453d9dae406a68bb335ca01566bf8ecbe51249a2e",
+      "text": "You won't get away!\nCosmic Gravure Power!!",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:55f8dbe492492f5558d660d4976817217c64849d43505a62d7ba2db86916a846",
+      "text": "Thank you all for helping us bust\nthat illegal dealer★",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:cdc9ec30cd9dcbdfe1a04b9088559f7d5200ef5e8287650108c9ca5b9ecbb3aa",
+      "text": "Now, Cuddle. These are the items\nwe confiscated. Could you check\nthem to be sure?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:34ee10c3ed9ad44dd3f49403da2cf7ed3f6aa1d7a0a13fab2c5cadf88214fd14",
+      "text": "...No doubt about it. These are not\nCuddle Sweets chocolates. They're\nfakes.",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:2ba6a65661ed54784138e2fffca30c16ff41bc50eebe93b182658ee1991cb3a1",
+      "text": "So they sold cheap chocolate by\ndisguising it as a popular shop's?\nWhat a lowlife move.",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:118ea053b76bc06b6cb76033d1caf57b28177450bd116f3d865dcd3f6d5c6fe3",
+      "text": "It's because the confession boom at\nfests and Shibuya's arrival made\nchocolate demand surge, probably.",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:1bffea71f2e20aff2d8a36839367fc58a66c00fc59dc844552f9b0afb88b7069",
+      "text": "The Guild has been monitoring, but\nit's hard to stop it completely...",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:02059d1b623bb047bbab3923e4f68a713ab5d099876983589d0b93877556caee",
+      "text": "...I've been making sweets since\nPalpebra was just a bunch of small\ncaravans.",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:2336c4334dc51731cd4d234c92be1750166ae03f7e5a64837a7ce089f88bbcd6",
+      "text": "Sweets make people at least a\nlittle happy. I've always believed\nthat...",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:9e97514c7894fddedb55761a2c3868fa1d2d91bbaa22aef091e7778eded08be4",
+      "text": "Having something precious used in\na way you never wanted... I can\nunderstand how you feel.",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:7e7f72678271767dbbf2f796688b9c908394ff38ba84f631032d553519690952",
+      "text": "...Beaucy...",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:b86eaf49ad5eea58b7b2cf13a24049c8b37b8d063dfff49934e160955e70d8f5",
+      "text": "The ones we caught today are only\nthe low-level ones, right? We have\nto take down the boss soon...!",
+      "status": "machine"
+    }
+  },
+  "65": {
+    "5": {
+      "srcHash": "sha256:253e5843093f9db2c9d9d44ddbfd8128c5b549b983f961322e58b54ccb07ec48",
+      "text": "We haven't found their base yet,\nbut we're still investigating. I'll\nlet you know if anything turns up.",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:ccf01f93072ff373e0d66d31128a662d218201ac83de5471694290372abe0087",
+      "text": "Cowdy.\nPlease, take this. It's my top\nidol recommendation list.",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:48d101baa5b6169a8fdd4317bf15eef945c120618c5f99c5640dc84fbda0a492",
+      "text": "Just like sweets, taking in idols\ncan make you happy, too.",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:d5f6a7f0476f29e79115c340f93dff3a0625ed57d08a4e1453b0bda020f5927c",
+      "text": "...Please don't be too discouraged.",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:6aebd3a6082a74740bee4d50475e1f7a83edf0323b2cd98b2fed7ebc4c25d938",
+      "text": "Hahaha... Thank you, miss. I'll\naccept the thought alone...",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:9c7b8a82645acd1f187366966b7a5822b2917545b82ae495213e89b0aae5dbe9",
+      "text": "A lead on the fakers, huh... Time's\nprobably running out, right?",
+      "status": "machine"
+    }
+  },
+  "87": {
+    "5": {
+      "srcHash": "sha256:a0ad8b277b4daf7af46fc63eb15ef3ce4b857c11e37c39e4d3ad0e6012955278",
+      "text": "Yes. After the fest, the goods will\nchange. Then the investigation\nwill stall.",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:e5aa90c15723d981bdb909575b01b9362693994e6c4938d8929ab268eb0a2d87",
+      "text": "We must find a lead as soon as\npossible—",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:5f4f44f584b19d14a3039391890c5e446610f88e5652d745d9790ce52064985d",
+      "text": "Emergency stock! Emergency stock!!\nA collab chocolate between popular\nshop Cuddle Sweets and Levy!!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:eeff0b7df3ea80ab006b120c6f85b88b83e258fe809434265083b066996abc16",
+      "text": "Quantity is limited, so buy it\nquickly!!",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:b3e3dc34fe5aef73d1718083f70d26337df2878c88f99612221b4b473f023d22",
+      "text": "Cowdy. Sorry. I bought it out of\nreflex.",
+      "status": "machine"
+    }
+  },
+  "104": {
+    "5": {
+      "srcHash": "sha256:222347d69e60903482715866be0958882f5c235d8838653fccfb281777c8c45b",
+      "text": "N-no, it's fine. Glad you got it.",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:91ad90ec3dd292a87a951a94bb915b98d1686362cd7f74365c3587f710dd85f9",
+      "text": "Wait, Levy's in your range\ntoo, huh...",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:5ee787b14ba813bb8dae079e8393323baf34d426299f1e8ebc18488f4ffec072",
+      "text": "What? Did you panic and buy the\nwrong thing?",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:49db9ae72b0fc92b9d8ca814c28f53c4befaf2ac1379382d3a363f5f46468336",
+      "text": "No. But this is...!",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:2fc23584a26ea89174c19c86e79b5a27c6b4d80139aa712e5310fce6d8c4e213",
+      "text": "There's no mistake. This chocolate\nis a fake product...!!",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:dc3bc13b204813a5340038476f17d2f02d5cdb179cdf067043e299a0209149c3",
+      "text": "Hey! Did you dispose of anything\nthat could be traced?! Forget\nthat junk chocolate!",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:c7700b20afc61b75ec7bd473744fdfa4731614d7fe9ae7233cab11420fbdc1c1",
+      "text": "Heh heh, thanks to the fest we've\nmade a ton. Let's skip town before\nanyone complains!!",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:e9b2209fa0a8303f36f586883b59a4c695592e53d18b42e604f6b87a97a55b32",
+      "text": "That's far enough!!",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:e0f3e20bab9fc03660ff439aad8c0492819e792f8321d49edfd91403fb7c6386",
+      "text": "I see. So this is the dealers'\nhideout.",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:c9e291a164e3a1ce15e4513973d9b730aa8c0fdd5af66a61033d667f096f3bc8",
+      "text": "What?! You're hired by the Guild?!\nHow did you find this place...!",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:e9af4a6f32e995b281fb23edb61df429a51782dcfe1850b5056b4d4e897d9da8",
+      "text": "Cowdy. How? ...It's only natural.",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:9e3b2eeee2cc759abb830b400776911d145c5c99528a20dbf003e96fe8d5fc89",
+      "text": "For an idol fan, tracing the\nmanufacturing route from a goods'\nmaterial and color is easy...!!",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:c96294d63255d79bc2a8da798dbcd756f1d40aac851ac667f57f5511d282d969",
+      "text": "You meant this as one last big\nscore, but using idols was a mistake.",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:987d53f6af3e088ae0a79244ad29635c9bf28ca104432f5b880aa7314878821c",
+      "text": "Tch, what nonsense! Don't let them\nleave alive, boys!!",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:1b8f21c50bfbce47c6a227dddffd0f784ad9a83807a120f1c1dfa2a03d2962d1",
+      "text": "Cowdy. Do you think you can beat\na gravure-type idol in close\ncombat?",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:b09aa5674a5e9c2a1010a44ad9efb02f380867c5c9ba7e09a633a7bbcac5dc79",
+      "text": "That blow was my anger at using\nidols for crime.",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:cd67b1924d3a6bb78088798c3450c9397a82ff0859d09fd0bade84e3bcb40ee3",
+      "text": "This is Levy's anger at being\nturned into goods without consent!!",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:be76962c0d0138685a9fb72ab695a35cfc576affcb94d0c09b8857b57381d91f",
+      "text": "This is the consumers' anger at\nbeing handed fakes!!",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:cd2857a4aa48e25a59c586b978f721557735b96c02269b37693e32892ba53cc5",
+      "text": "This is Alk and the others' anger!!",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:4cdfd7d0beb600b19126f644c14013c7a7cf5483e9870d93798ebab2140c9ef9",
+      "text": "Hey, we're not even angry!?",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:c9eb6ac75ce59b10696017384492304b198ad279c29c9ac90d6106721ab325e1",
+      "text": "And this is—the old man's\nanger!!!",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:b25a4a376d161783d83f32a88ee6c62561dab758741c02bb40c29852ad8af4ca",
+      "text": "VT Candid Shot!!\nFull Cacow!!!",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:ad147b86f29dacb3daabe5ca5454b0e70c92ec3ae82124215cffc3bec63fcfc2",
+      "text": "The Guild told me. You solved it.\nThank you so much, truly...!",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:b2af951a354bdee863df763d3256b5cf1115ad64374666517d57eaff4efd0db2",
+      "text": "Don't mention it. As someone who\ncherishes precious things, I only\ndid what's natural.",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:2c2c13288b7acbb66932904e8699d25f2061a8c4d34d4c2f9d2391c60c17c2bf",
+      "text": "Chocolate and idols both make\npeople happy.",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:cd097a5d96c31004c0a09eb5108b57201584e87ccec63502daf805a31e822069",
+      "text": "...I see. I don't know much about\nidols, but I'm sure they're lovely.",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:6252284864b7f5509a78c5620bf75f40eb4674eedc02a43d5753e44eda24f32e",
+      "text": "Cowdy.\nThen I'm glad to hear it.",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:6800d48dada4d7a4ca5f444d3756594c3b7eb165a0889ea36cbce7b6db8d840a",
+      "text": "—So, Mary? Why the sudden\nconsultation? Fight with your\nboyfriend?",
+      "status": "machine"
+    }
+  },
+  "219": {
+    "5": {
+      "srcHash": "sha256:f3f1ffa8b8193733d7a5ed72126d0674ebffc872d5acf4c0a2ec8e5f550b38c7",
+      "text": "N-no. It's not that...",
+      "status": "machine"
+    }
+  },
+  "222": {
+    "5": {
+      "srcHash": "sha256:7a1421254a98be2177e9882209048acfadca399eb1da26a4aa63aa2cc005f107",
+      "text": "My grandpa recently got into idols.\nHe goes to lives and handshake\nevents every week—",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:6292b43f95b81e4cda5b3758e70510eef5babf9298c091936e4a1a18df6d6397",
+      "text": "His calls and glow stick moves are\nsharp, and he buys goods for the\nfamily, too. How should I react?",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:a917a480c972759ea72676286ebbb3b3b5df35e809baf14103adba7d5662be81",
+      "text": "H-he's an energetic grandpa. Just\nwatch over him. Hobbies don't care\nabout age, so freely—",
+      "status": "machine"
+    }
+  },
+  "235": {
+    "5": {
+      "srcHash": "sha256:ffe67ed585077f9e5bbbd7ae9ebcacd92a21835d4e4e462e2fb9821ff19a0b8e",
+      "text": "Hey, Beaucy. Going on another\nexpedition today?",
+      "status": "machine"
+    }
+  },
+  "239": {
+    "5": {
+      "srcHash": "sha256:aa94e84bfb49d0ec2d8cb4ea9fd4e1fc912ec2898fb254c8faac7bcdb5750607",
+      "text": "Cowdy.\nOf course.",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:885dba5d7177a58ea9b0373c1af05f074c7f6b39640124817a16a861aa483c64",
+      "text": "I love idols, after all.",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+ "version": 1,
+ "percentile": 95,
+ "tables": {
+  "active_mission/active_mission": {
+   "2": 12,
+   "4": 61
+  },
+  "battle/boss/general_boss": {
+   "1": 19
+  },
+  "battle/boss/standard_boss": {
+   "0": 18
+  },
+  "bonus/login_bonus": {
+   "3": 43
+  },
+  "character/character": {
+   "18": 26
+  },
+  "character/character_speech": {
+   "3": 144,
+   "8": 149,
+   "13": 147,
+   "18": 151,
+   "23": 150,
+   "28": 147,
+   "33": 148,
+   "38": 147
+  },
+  "character/character_text": {
+   "0": 12,
+   "2": 307,
+   "3": 24,
+   "4": 23,
+   "5": 260,
+   "6": 24,
+   "7": 260,
+   "8": 26,
+   "9": 16
+  },
+  "degree/degree": {
+   "2": 26,
+   "4": 60
+  },
+  "encyclopedia/encyclopedia": {
+   "8": 17,
+   "16": 28,
+   "19": 535
+  },
+  "encyclopedia/encyclopedia_tag": {
+   "0": 28
+  },
+  "feature_banner/feature_guide_dialog": {
+   "1": 125,
+   "3": 153
+  },
+  "item/equipment": {
+   "1": 22,
+   "7": 196
+  },
+  "item/item": {
+   "1": 29,
+   "4": 145
+  },
+  "mail/reason": {
+   "0": 49,
+   "1": 116
+  },
+  "mission/collect_item_event_mission": {
+   "3": 58
+  },
+  "mission/daily_mission": {
+   "1": 67
+  },
+  "mission/degree_mission": {
+   "2": 53
+  },
+  "mission/event_mission": {
+   "1": 68
+  },
+  "quest/character_quest": {
+   "3": 24,
+   "123": 416
+  },
+  "quest/event/advent_event": {
+   "2": 31
+  },
+  "quest/event/advent_event_quest": {
+   "2": 31,
+   "125": 379
+  },
+  "quest/event/carnival_event_quest": {
+   "3": 17,
+   "4": 32
+  },
+  "quest/event/carnival_event_quest_folder": {
+   "1": 22
+  },
+  "quest/event/daily_challenge_point": {
+   "4": 67,
+   "6": 77
+  },
+  "quest/event/rush_event_quest": {
+   "4": 14
+  },
+  "quest/event/story_event": {
+   "2": 44
+  },
+  "quest/event/story_event_single_quest": {
+   "2": 25
+  },
+  "shop/event_item_shop": {
+   "6": 6,
+   "7": 23,
+   "11": 184
+  },
+  "shop/general_shop": {
+   "1": 39,
+   "5": 183
+  },
+  "skill/action_skill": {
+   "0": 24,
+   "1": 260
+  },
+  "story/story_character": {
+   "0": 19
+  },
+  "string/custom_ability_string": {
+   "0": 141
+  },
+  "string/ui_string": {
+   "2": 127
+  },
+  "tutorial/triggered_tutorial": {
+   "19": 203
+  }
+ }
+}

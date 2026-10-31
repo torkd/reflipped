@@ -1,0 +1,146 @@
+{
+  "5010032": {
+    "2": {
+      "srcHash": "sha256:6872afd51a8a2ae4a1ad79d90420c66926a0a271af4cb75ceac562c87c1fddd5",
+      "text": "Blade of Celestial Wealth Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:2bae410f7a823b91d53f07adacd822cf6c26fd61d31c8d3e818347950fa73be6",
+      "text": "An exquisite piece hidden away by an organization known as the Star Augurs. The blade amplifies light magic by drawing on the powers of a star visible in the southern sky.",
+      "status": "machine"
+    }
+  },
+  "5010045": {
+    "2": {
+      "srcHash": "sha256:4685bce2c2deac4f7701ec10530cc6619c15a2c24ab00462259f16f55cdf11d5",
+      "text": "Polis Whip Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:5e2f82dabe068b349c6be00e437396fcd79208baa29085eb82a221db131c38c9",
+      "text": "An exquisite piece hidden away by an organization known as the Star Augurs. Bearing the name of a star in the southern sky, this whip draws out the fire within its wielder's soul.",
+      "status": "machine"
+    }
+  },
+  "5010056": {
+    "2": {
+      "srcHash": "sha256:6e0443accfdcce65af069de04e0514c6dfaceb06e049531e581e685724529636",
+      "text": "Blade of Celestial Wisdom Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:154b15f135ef84bb833c0bf0084f6c67704268fcd27bf37bb841c8759446dd82",
+      "text": "An exquisite piece that was sequestered away by an organization known as the Star Augurs. Named after a constellation in the southern sky, the otherworldly blade draws out the inner darkness lurking within its wielder.",
+      "status": "machine"
+    }
+  },
+  "5010074": {
+    "2": {
+      "srcHash": "sha256:567c2aa5f4156ef7e2b4387e0dc46105e80e3810d4ad8c772694f1d60464f956",
+      "text": "Wicked Wood Edge N+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:cb292df3b7c0a4ffe0a842e9a3bdf8ac075239b2028639a5027932342afd7718",
+      "text": "An exquisite piece created from the sap and branch of a wicked tree. The polished resin blade is decorated by wave-like patterns.",
+      "status": "machine"
+    }
+  },
+  "5020042": {
+    "2": {
+      "srcHash": "sha256:64b8972d79f54ca420e5ebcf34210aa43e89041075a3d5bbbf6a88b59532439a",
+      "text": "Hal Bowman+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:df10f5df2001490ead36940d2c2e96ddd7e47112bdb59aab0cf51476b7748636",
+      "text": "An exquisite piece made from recycled Windwrath Steambot wings. Driven by a combustion engine and clever aerodynamics, this mechanical axe unleashes searing slashes wreathed in blazing wind.",
+      "status": "machine"
+    }
+  },
+  "5030028": {
+    "2": {
+      "srcHash": "sha256:930285c140efc0729cebeaf3fec4c1295458464e81e9ce0042c0b4646512b23a",
+      "text": "Trident of Celestial Fortune Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:5269a09d4647c73cdced7fde44286324b9e9ae0c84051edf6f9b30745c33018e",
+      "text": "An exquisite piece hidden away by an organization known as the Star Augurs. The trident amplifies wind magic by drawing on the powers of a star visible in the southern sky.",
+      "status": "machine"
+    }
+  },
+  "5040020": {
+    "2": {
+      "srcHash": "sha256:058750a83c2ce7f01b5f0ba144047b55d3417cd7dd0711d05af8f91fbc3120c1",
+      "text": "Bow of Celestial Service Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:790ce19940978fcad35bb35274a056a958aa2012787b330008761fc720a66f14",
+      "text": "An exquisite piece hidden away by an organization known as the Star Augurs. This bow amplifies water magic by drawing on the powers of a star visible in the southern night sky.",
+      "status": "machine"
+    }
+  },
+  "5060045": {
+    "2": {
+      "srcHash": "sha256:01cb99943e8d93589a1cfe54db4652e90d7b363e70dbed54ca8d68ed634c3e66",
+      "text": "Tidal Lord N+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:1dadb9affb208bd0d13dee14cd1a1303ed059a1732b9d546fdd294873d8315a7",
+      "text": "An exquisite piece forged from the remains of a mighty kraken. Named after the emperor of the seas, only one who is fit to rule may lay claim to this staff.",
+      "status": "machine"
+    }
+  },
+  "5070042": {
+    "2": {
+      "srcHash": "sha256:8924199bbfda15745210822a8ebf7c0b9e1a29f9af7e47cf7c4ec47e24de191c",
+      "text": "Ancient Glove N+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:edf6be763e19de2c778ff90a7e82b2ee5413b92e90d73d7f990f88f51d931101",
+      "text": "An exquisite piece excavated from ruins under a guardian's watch. This gauntlet imbues its wielder with incredible physical strength, though the source of this empowerment remains a mystery.",
+      "status": "machine"
+    }
+  },
+  "5090047": {
+    "2": {
+      "srcHash": "sha256:e1f977df93f4d7990af7f3824a13f8ad42544876502d0a5e83243124fcd3b69e",
+      "text": "Aroland Nemo+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:936798c822e66fbf7a1f01e6d668f8e4f4dc464db73a75096b0c06cff2aadd60",
+      "text": "An exquisite piece made from recycled Maelstrom Steambot engine parts. Clockwork gears surround its magic core, and the necklace transforms to boost its output.",
+      "status": "machine"
+    }
+  },
+  "5100011": {
+    "2": {
+      "srcHash": "sha256:c395f5bbc9c477bde7654b56cfd598ac8a88544e45f66a44fa8e3ffb5f2774cb",
+      "text": "Handgun of Celestial Insight Peerless",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:1c3f721c4e79bcd24178fe5e1250e9e2713c31e4063dc7007ae30a8c56c3828f",
+      "text": "An exquisite piece hidden away by an organization known as the Star Augurs. The gun amplifies thunder magic by drawing on the powers of a star visible in the southern sky.",
+      "status": "machine"
+    }
+  },
+  "5100020": {
+    "2": {
+      "srcHash": "sha256:040ee11a621a97129df70942262f73b7c54c5e07b54721478331cc09ab029e50",
+      "text": "Hari Salvor+",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:f5e3c61d3792278b8799eeb6d283fdae825dcdffc91357f54761d2e7f62701bd",
+      "text": "An exquisite piece made from recycled Radiant Steambot steam pipes. Steam pressure accelerates its bullets even further, riddling any target with holes.",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "700005/1": {
+    "4": {
+      "srcHash": "sha256:20899a28251780ce1eae4b351385e4d1295f002606b65cd00ac1508790149dc7",
+      "text": "Inter. 1",
+      "status": "machine"
+    }
+  },
+  "700005/2": {
+    "4": {
+      "srcHash": "sha256:5194486db0e617cb5881e840fc723fd01dbdcb49df13735fcade144d561584d5",
+      "text": "Inter. 2",
+      "status": "machine"
+    }
+  },
+  "700005/3": {
+    "4": {
+      "srcHash": "sha256:1ab9b7841031cf0697391108b2410978c5c12d6f1a8ea4fc884577acfdfbbcbf",
+      "text": "Adv. 1",
+      "status": "machine"
+    }
+  },
+  "700005/4": {
+    "4": {
+      "srcHash": "sha256:556a1bec28b85428c46b0c27fdb0764ab9dce43e95d1c2c40ee6ad681856bbdf",
+      "text": "Adv. 2",
+      "status": "machine"
+    }
+  },
+  "700005/5": {
+    "4": {
+      "srcHash": "sha256:841d520e6824c02b9d8ae36c10aba3dc4a853763542bfd50b7d73a210339170e",
+      "text": "Godly 1",
+      "status": "machine"
+    }
+  },
+  "700005/6": {
+    "4": {
+      "srcHash": "sha256:f1e770176980c76e1abbc2b5b095d1fecd670cf9a644d96d47c795d23f65ad5a",
+      "text": "Godly 2",
+      "status": "machine"
+    }
+  },
+  "700005/7": {
+    "4": {
+      "srcHash": "sha256:ab65b8c801c3ccedf0050db76c5b91a020b931945baf8a77254f8e0f743e73d7",
+      "text": "Godly 3",
+      "status": "machine"
+    }
+  },
+  "700005/8": {
+    "4": {
+      "srcHash": "sha256:038b623892e9af0ae13db1020ba0bfd69d66705271beed9af6cc113b1d9a0801",
+      "text": "Endless Battle",
+      "status": "machine"
+    }
+  }
+}

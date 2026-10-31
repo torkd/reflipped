@@ -1,0 +1,429 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:7e28d7ddc2a735dc9b854b9afba0480c75e4a7d3b2633e31e8d7d556d43054b8",
+      "text": "Wow, it's delicious! What is this,\nchocolate liqueur!? Amazing! Is it\nfor Valentine's Fest?",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:1a84d48b8cdec35748fc3b9baa6817075cafa91a43bbfa9dd98b6e4dd979df44",
+      "text": "Right? It's my pride and joy! It's\nbeen pretty popular, you know?",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:faf3a2842fff5763392f4ae3aa59afa36b263979f3699f231db67c4d81c1de50",
+      "text": "Last year a weird sheep made a mess,\nbut we all made it here. So to\ncelebrate, chocolate from me, a guy!",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:815a9f142b9f3e6ea0450cfc69e1c5c775071f9919a57f64a226af5e508cdf69",
+      "text": "Oh, is that how it's going? Then I'll\ngo with this chocolate. It's an\nassortment from a popular shop lately.",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:96be22e581a46454fca8b24846c66bdf603daa72b70e6fa6cd757cc5323afbff",
+      "text": "Ah, then I'll give you this one. The\nowner set it aside specially for\nme.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:3e3e057dc3998df38f2732a83364582ac7f3fa84e3f2afb6ac7903c86ea20bc9",
+      "text": "Huh, this is for me?\nCan I really have it?",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:67d1e9aab603ade08530e472fe059a4da48079440ed27bcff8d45559f21ffc69",
+      "text": "Sure, sure! Keep\nfavoring us from now on.",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:c59628dbe50253954bfd631f7fbba5db0b840a9642eeb07af50eca7b79f5e5ac",
+      "text": "Eh~? You're embarrassing me~!\nI'm super popular, huh!",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:9c3b6447780393ba3ad6a926da955afbcbba866789ddb46b577d37285a94082b",
+      "text": "Then I'll gladly accept! I'll visit\nall your shops sometime! Thanks~!",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:64d8b16d761ba75cf604d65fca9faf20ae16a2db1588093706c0e0abe6217759",
+      "text": "Um! Denah!",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:20c3b8dac437a139d20354f921b81b4c0278152ae2b6fa14c995c77f796d5c33",
+      "text": "Um, this one is from me. Not from the\nshop, but... um... it's\nhomemade!",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:de6fc17ab003255f1ada2e963a1c4eeb48640b75215658ab491abddfc6a8086c",
+      "text": "Huh? Oh, okay, thanks?",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:d29b4121076a0647d0d11d153fe7fb2272b75ed3a4040cb21b4b8775bd0a291e",
+      "text": "...Wait, is this that kind of...?",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:c38f37f68b31dfaa5770c9df0627dc4e575f9e78c1835df2c7290f5c75b3ce05",
+      "text": "That kind of...",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:23769d8d6ea57c1152a88040a019b967002e53c502b09ae4706c290c25dfdbd9",
+      "text": "Seriously?\nSeriously... huh... wow...",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:946276ab687ad84988a1c2671405b2b02fe4b0fee2716a3911804147fde77d1f",
+      "text": "...I shall accept this with thanks.\nBut my heart belongs to my King.",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:b323a620c4b5b44df98249d20e5871610dd41582b2acdce44981a894c406a279",
+      "text": "Your King...?",
+      "status": "machine"
+    }
+  },
+  "55": {
+    "5": {
+      "srcHash": "sha256:17f3f3c6bfd83488963c400dfba5eda95ee9248fc176fc0db1fd7f0f477a043d",
+      "text": "At the bottom of the labyrinth,\nbeyond the gloom. At the edge of the\nAbyss dwells the Devourer of Stars.",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:0843abda7734d7558692ed1893885576d0b5fb9ea505b2bd47c0b9be0673dfba",
+      "text": "...Better not get too close to me.\n'This side' is dangerous.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:8d6684c095244236c551ad922b4b703b38e3bd912ae73c46141560251bfcbd24",
+      "text": "So that's... what...\nhappened............",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:13b8674676c0a58fe9069bd005f01b1052b074e29ee13ff2c2f3296442d17def",
+      "text": "What's with that face...",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:62ffc29aa238f9d889a3cd7a1ee653061928cdc6de0e94be5ccd2fb976f6560b",
+      "text": "I brushed it off on the spot,\nbut~~!! What should I do now?? It's\nprobably bad to leave it, right!?",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:16fb4babfee8986922af98a5bdae4c734ac484270f7de4f32e70168798eeae73",
+      "text": "Or maybe he took it as a refusal?\nCouldn't he just read it that way??",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:081b1a3a5942f70e7df1b88d9cc331456d47054b116df3e6041c95026952d6a4",
+      "text": "I think this is the first time I've\nheard 'interpretation' for a reply to\na confession...",
+      "status": "machine"
+    }
+  },
+  "87": {
+    "5": {
+      "srcHash": "sha256:0a672cbb1c6c28a2bf7f20768d5ef526b614103fab9e08d9add113e1019c8a90",
+      "text": "But you and that kid are friends,\nright, Denah? Maybe you'd get along\nif you tried...",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:71cd9b3e1bfc42324555f927cbb9e4b366e8e1dcf732ed4ea6d428d29f77d90e",
+      "text": "You mean date to try it out,\nright? Say yes!? Even that's a\nbit high-level for me, though!?",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:7da9ff4a89411eed51535a52dd843f1ab9b21e4b85623cdd0a63b0f6d8f31f16",
+      "text": "I mean, seriously. This is a really,\nreally serious question.",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:897925fe8e5c1785db2258f93a4ad252775b3e6b0921d96b28679a02cc5f4e04",
+      "text": "What do you do when it turns into\nthat kind of mood...?",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:1e9808317873a1e6f6aae096ffeae9858b7c2faec7da140bb531a21ae9214980",
+      "text": "Ehh...",
+      "status": "machine"
+    }
+  },
+  "108": {
+    "5": {
+      "srcHash": "sha256:66acc2187b5cbcf2496273618de7f418ae7a7a7cacf44e0177cee527580524d3",
+      "text": "Don't make that face! A serious\ntalk is important, right!? For both\nof us! You're hopeless at this too!",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:22c9b4b37884b30e8c133b1582d6ebe7ee02836f3f67b8370ee0fe9185086553",
+      "text": "Huh? What is it?\nIs this harassment?",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:699716ac2b88bfd436f2a412c971aab38902e6e4e29320a306a186d79ef85419",
+      "text": "Anyway, did you even have\nany interest in romance in\nthe first place, Denah...?",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:2061103e83f293d8c2c53ef423140eb87bce6058634e29be47ed0804b74160b8",
+      "text": "I do!? How rude!! I do... I do, yeah,\nI do...!?",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:62f41c0cf98e8d21ccf0f8e8566e93aec3eb3f3bdb048516310932aefd1a6368",
+      "text": "You're losing confidence.",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:b61de34739966141c2bed59f77a5f9df0344c7b1b7c98a6434c86ad231238422",
+      "text": "...Long ago... maybe I did. When I\nwas the world's enemy, someone who\nunderstood me, sort of...?",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:b21bc573dff7e745db0a449d4d06a27c034956a6830c91783c9251f29372c1eb",
+      "text": "But I can't remember what I felt\nthen... Was that... my youth...?",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:a6c18d1d1b12e15f10757771aadafa981c69a369b351a12d2c6e32095c8ab70f",
+      "text": "Hee hee. Denah really is cute.",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:b99404b221815724b92a25fcaab1f702a7406307dbbc41844d0fb396167700b5",
+      "text": "That's enough about my past! It's\npretty embarrassing!",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:0ee6a4e9c17fd4bbea4e410717a8834bd02e8261c72cd14b9e2e0d36eba35ece",
+      "text": "More importantly, look,\nthere are tons of guys with\nstories like that here!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:22f847bb06be73663cc629991cb0fcb0f65671e771af670cff4a9662cec20153",
+      "text": "Hey, Alk—",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:dce2c047580e757471c0acef451a2774b41a51fb10c79e113ccbbc56f3297b71",
+      "text": "Yeah, yeah. What I say has nothing to\ndo with what you do, Denah.",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:da9b93bc8bf1d64aabb0c28429704cbfdd0f23d21309e17b708b2fdc0bc2e2e5",
+      "text": "I'm not one to butt into other\npeople's love lives. Don't turn this\non me. Talk about your own.",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:d7bdd416e7b439ec9892df84218bcd9a565e2560a3e49e6d0fd81eefd88e3f3a",
+      "text": "Gnnh... no, I mean? To give a proper\nanswer, I want to hear other people's\nstories...?",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:3c0f56a5f1e41bd8057b8767f9453ac781d75bf79689b187185fc31041b07a2f",
+      "text": "Eh~? If it's that kind of story, I'd\nbe better at it, I think?",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:a6b65ae612ac1a27a40dc5379aefd7b2b51b99d8be8402c4712a5beacf60a5b8",
+      "text": "Please spare me...!!!",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:a942ac9c6da9b455deb203a97159b4e7bfd7dd76482cc4be4e56cbeaff6190ae",
+      "text": "Then what about Nimbus?\nHe's got a perfect story, right~?",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:5ce5365fe8e06ebc114116b15d7902b9b69a71fe1abd3ec8a019e07641cff7e9",
+      "text": "Huh~~? It's not the kind of story you\nexpect.",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:8ef14a656b9ec7a4aafafc2e0aba3eb8a31b9398c26a713418d03ed548778cc2",
+      "text": "What!? Nimbus had something\nlike that!? Tell me, tell me!!",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:b783a5c12ccc39834b82e0d2d1c1f520e1684bab1de0c989eb293e2aed73e80a",
+      "text": "Reuniting with an old friend\nin another world...!? What\nis that, a love romance...!",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:3b9e20945d9621999abd8441f4aaf39231b2b1aa976dd7c08f492abbc0c029cc",
+      "text": "Uuu... I feel sick...\nThis is bad...",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:ea6eb84b67c9b9f9706aaa8e86a4f77e6d17c466e785e9213207e7297bc22e96",
+      "text": "After all that, I haven't decided\nanything... I just got a hangover...\nUgh...",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:b1f5d02c659642e35bae3dc903efba0d9b643ec46e16b2646e14ff95ad54b40c",
+      "text": "My Princess!",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:d92edbba6b770b8c5e8805560ef776b3b445163e346488db1e535bef8c5cdbc5",
+      "text": "I thought and thought all night. And\nI decided. Please grant me the honor\nof escorting you to your King!",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:98a198f8f3f7685d39fea23335ebca2c8c92a4650ea563a9c8056c87c9a0d70d",
+      "text": "Wha, no, huh???\nUm????",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:07b6e22ec110cc2d6398d3f26b7f0c8f7f9ade380908b37593b2eb18df0c9fc1",
+      "text": "For you, I'll become an\nadventurer! I'll love you even if\nthe whole world turns against me!",
+      "status": "machine"
+    }
+  },
+  "213": {
+    "5": {
+      "srcHash": "sha256:0ba1bef790d609bdd4bc522f1c23b7f4f2955df66eeab5aeed6e0db6b26b8a59",
+      "text": "No, I don't need that resolve!!\nSeven or eight years ago it\nmight've made my heart skip!!",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:7ff01674c2cae0be5a90ad594348bcde1ef2106c7f3d8c7e125ee0336451c5a2",
+      "text": "W-what do I do!? This is bad,\nright!? Very bad!?",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:a8f0b3c9c9607d739fc2d6f0525a2371b1ec3c04032afcd0795ac714243e7ae3",
+      "text": "Good luck~.",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:3e28f9ee0606967a734ebf5e98ac8a68a5449b73e8c166dc29fbd60c22bcd6ba",
+      "text": "You reap what you sow.",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:02b576cea58db7fd6f465071fac277f823e9d393d884fe3234a6bb8953e64a76",
+      "text": "Noooo~~~~!!!",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:82cce7bb9f3cfd29c343e6e49b7d980e7b1a8447a3d10c86cad888d79ad613bf",
+      "text": "I've had enough of\nValentine's Fest~~~~!!!!",
+      "status": "machine"
+    }
+  }
+}

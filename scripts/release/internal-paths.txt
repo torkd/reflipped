@@ -1,0 +1,33 @@
+# Internal files: on `develop` only. `scripts/release/sanitise.sh apply` removes them when `develop` is
+# merged into `staging`, so `staging` and `main` hold code plus the docs end users need (how-tos, feature
+# plans, available features). One path per line, relative to the repo root; a trailing `/` is a folder.
+# Kept docs must not link to anything here (`sanitise.sh links`, run on every PR).
+
+# Agent instructions and the roadmap
+CLAUDE.md
+plan.md
+
+# Retired, unmaintained files
+archive/
+
+# Research, reverse-engineering notes and specs
+docs/apk-analysis.md
+docs/air-shell.md
+docs/air-shell-internals.md
+docs/coop-research.md
+docs/coop-protocol.md
+docs/coop-polish-spec.md
+docs/game-system-unlocks.md
+docs/missions.md
+
+# Internal status, security review and planning background (docs/roadmap.md is the public summary)
+docs/current-state.md
+docs/feature-gap.md
+docs/accounts.md
+docs/i18n.md
+docs/hardening.md
+docs/capacity.md
+
+# Contributor guides (setup, code layout, master data, CI) and the admin site's style guide
+docs/contributing.md
+docs/admin-theme.md

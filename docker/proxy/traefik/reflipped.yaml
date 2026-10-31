@@ -1,0 +1,26 @@
+# Override for the proxy flavour behind a Traefik that runs in a container: Reflipped joins Traefik's
+# network and Traefik routes PUBLIC_HOST to it. Reflipped then serves the assets itself (fine for a
+# few players; for more, use traefik/edge.yaml with the stack flavour so nginx serves them).
+#
+#   cd docker/proxy
+#   docker compose -f compose.yaml -f traefik/reflipped.yaml up -d --build
+#
+# .env: PUBLIC_HOST, PROXY_NETWORK, TRUST_PROXY (that network's subnet), TRAEFIK_ENTRYPOINT,
+# TRAEFIK_CERTRESOLVER.
+
+services:
+  reflipped:
+    networks:
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: ${PROXY_NETWORK:?set PROXY_NETWORK in .env}
+      traefik.http.routers.reflipped.rule: Host(`${PUBLIC_HOST:?set PUBLIC_HOST in .env}`)
+      traefik.http.routers.reflipped.entrypoints: ${TRAEFIK_ENTRYPOINT:-websecure}
+      traefik.http.routers.reflipped.tls.certresolver: ${TRAEFIK_CERTRESOLVER:-letsencrypt}
+      traefik.http.services.reflipped.loadbalancer.server.port: "8000"
+
+networks:
+  proxy:
+    external: true
+    name: ${PROXY_NETWORK}

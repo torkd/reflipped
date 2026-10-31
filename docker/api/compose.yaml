@@ -1,0 +1,99 @@
+# API backend only: Reflipped behind the nginx edge (TLS, X-Forwarded-For), without the asset archives.
+# The assets come from somewhere else: the assets flavour on another host, or object storage.
+#
+#   cd docker/api && cp .env.example .env     # adjust paths, ports, TLS
+#   docker compose up -d --build
+#
+# Then build the AIR shell with both addresses:
+#   python3 -I client/air-shell/build.py --apk <apk> --server https://<PUBLIC_HOST> --cdn https://<assets host>/patch/Live/2.0.0
+# See docker/README.md.
+
+name: reflipped-api
+
+services:
+  reflipped:
+    extends:
+      file: ../common/services.yaml
+      service: reflipped
+    environment:
+      # Only the edge talks to Reflipped, over the stack's network: trust its X-Forwarded-For. Behind
+      # a proxy in a container (traefik/edge.yaml), add that network's subnet: TRUST_PROXY=<stack>,<proxy>.
+      TRUST_PROXY: ${TRUST_PROXY:-${STACK_SUBNET:-172.28.42.0/24}}
+    ports:
+      # The admin UI has no login: host loopback only (reach it over SSH or a VPN).
+      - "${ADMIN_BIND:-127.0.0.1}:${ADMIN_PORT:-8001}:8001"
+      # Co-op realtime socket, spoken by the game directly (not HTTP, so not through the edge).
+      - "${COOP_BIND:-0.0.0.0}:${COOP_PORT:-18888}:18888"
+    volumes:
+      - reflipped-data:/data
+      # Reflipped only looks at the asset tree to pick the short entities lists (<lang>/entities/files)
+      # and to list mods/; it doesn't serve the archives here. A skeleton is enough (docker/README.md).
+      - ${CDN_DIR:-../../.cdn}:/srv/cdn:ro
+      # Translation overlays (npm run i18n:build, built where the full en CDN is): Reflipped reads their
+      # manifests and archives to announce them; copy the same folder to the asset host (assets flavour).
+      - ${CDN_OVERLAY_DIR:-../../.cdn-overlay}:/srv/cdn-overlay:ro
+    networks:
+      - stack
+
+  edge:
+    extends:
+      file: ../common/services.yaml
+      service: edge
+    depends_on:
+      reflipped:
+        condition: service_started
+      # Whichever certificate service TLS enables; the others are skipped.
+      letsencrypt-init:
+        condition: service_completed_successfully
+        required: false
+      selfsigned-init:
+        condition: service_completed_successfully
+        required: false
+      custom-cert:
+        condition: service_completed_successfully
+        required: false
+    ports:
+      - "${EDGE_BIND:-0.0.0.0}:${HTTP_PORT:-8080}:8080"
+      - "${EDGE_BIND:-0.0.0.0}:${HTTPS_PORT:-8443}:8443"
+    volumes:
+      - ../common/nginx/locations/no-assets.inc.template:/etc/nginx/templates/locations/no-assets.inc.template:ro
+      - ../common/nginx/locations/api.inc.template:/etc/nginx/templates/locations/api.inc.template:ro
+    networks:
+      - stack
+
+  backup:
+    extends: { file: ../common/services.yaml, service: backup }
+    profiles: ["backup"]
+    volumes:
+      - reflipped-data:/data
+
+  letsencrypt-init:
+    extends: { file: ../common/services.yaml, service: letsencrypt-init }
+    profiles: ["letsencrypt"]
+  letsencrypt-renew:
+    extends: { file: ../common/services.yaml, service: letsencrypt-renew }
+    profiles: ["letsencrypt"]
+    depends_on:
+      letsencrypt-init:
+        condition: service_completed_successfully
+  selfsigned-init:
+    extends: { file: ../common/services.yaml, service: selfsigned-init }
+    profiles: ["selfsigned"]
+  custom-cert:
+    extends: { file: ../common/services.yaml, service: custom-cert }
+    profiles: ["custom"]
+
+networks:
+  stack:
+    ipam:
+      config:
+        - subnet: ${STACK_SUBNET:-172.28.42.0/24}
+
+volumes:
+  # Fixed names, so the flavours share them: switching from api to stack keeps the players.
+  reflipped-data:
+    name: ${DATA_VOLUME:-reflipped-data}
+  certs:
+    name: ${CERT_VOLUME:-reflipped-certs}
+  acme-webroot:
+    name: ${CERT_VOLUME:-reflipped-certs}-acme

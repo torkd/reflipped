@@ -1,0 +1,457 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:941a02e10d6728c2313efc1db0b75a688c3776a53158145990e50b97eaeb55e3",
+      "text": "Shibuya, here we are!!",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:488c5c25356cb2e2a09d2cc2f0302c773bd079e7159f39a69dd278885ac5b26a",
+      "text": "Yae, if you shout so loud, you will\nbother the people around us.",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:de39473f1c32d640ce94756e82fa2bd007e8e51218dba4b9354e6cc1078731ac",
+      "text": "Huh, seriously? Was I that loud? So\nembarrassing!!",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:084bfdf5d784f648bc4f8c8a575d93bb2127c6c739839a07d7de8109ed6b53d0",
+      "text": "But it's been so long since I hung\nout with you, Nagi! Of course I'm\nhyped!",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:053a9b5a621b33062c2ec97df63734e1cd9673a224125e6181a4ed5cb394a755",
+      "text": "Well, true. It is nostalgic that\nShibuya has become a place to \"come\nplay.\"",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:f2d49caccecc0b3f429fe61b7add734f4b26a8669575e5e23d383204e201cff6",
+      "text": "Hehe! Right? Get hyped with me,\nNagi! Wooo!",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:7c2683b074e2c0260bf2c45aa2a343da9593dc014fe49f4028e5ef0268bc913f",
+      "text": "Eek...! M-monster!!",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:194dcd4a0eea0e7e93d88109c04372349f8c78ba74cf3d20c76e36a683972aac",
+      "text": "Whoa, so strong. You're from\nShibuya, right?",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:139270c3e0963bcd93508d458b7669753cd52fd3dd28ca1f99825c4a096e4794",
+      "text": "We're the Shibuya Underground Defense\nForce! We handle monster control, but\na few got loose this time~.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:68d5bb3c4c331b439d1067dcfbc58a23d90b535f049db0927c5590fca188c6c3",
+      "text": "I am Nagiri Amo, a provisional\nGuild Knight. I will help. Where do\nthe monsters come from?",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:f6ddf18505b64c0f621d22af872bd369be24fe22a1b0aca4506721f0111c8520",
+      "text": "Seriously? That's a huge help! The\nsubway line a little way from here\ngot connected to the labyrinth.",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:1d496317e840fba4685013c38f767fb39461991228d872881d97303efeb516b9",
+      "text": "Understood. I will head to the\nsource. Yae, rescue people from the\nair.",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:31a006e028026611319670b27006d1cfcf1d270cf0dbfd42ca133ee1edfdaf19",
+      "text": "Okay-doke! Be careful, Nagi!",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:d87f89cf0f8ce1f513bb70b199b70dedd8eb7bc97aa0347cad5eaff9cb093ae1",
+      "text": "Are you all right?! It is dangerous\nhere, evacuate...!",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:12de92e17fc8a07e31c36200a04b843c845f62e97e74b642a6b6a5d5e99d1c1f",
+      "text": "Get out of my way!",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:4dd6958889f403d12df1e757f386666cf6270a02d25138aad3626b60f56a7444",
+      "text": "I don't need help from anyone...! I\nhave power!",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:022b992f7ebabcab34fa36e57f746951af91d941ec064584acd5e7379b5e7d97",
+      "text": "That is reckless! In that state...!\nDo you want to die?!",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:72c265811cfaec50e433911265637886db6168b52dfe589f8f45e1207f59be46",
+      "text": "In any case, let us flee, quickly!",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:5657faf0921d8228b5f191a857a206b0e5ae627ef72807d1848454dba9273523",
+      "text": "Shut up! Leave me alone—",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:fe771b9eccc090f60952d510980553c57a2e20b23b2d95b4bf1d99180368f795",
+      "text": "...It seems the labyrinth branch\njoined to the subway caved in, and we\nfell straight down into the labyrinth.",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:7a8b9267fe39baa950653e3d64045bbc06a3b2c910563d0d42289dffa11001c2",
+      "text": "That is the opposite of the exit.\n...If you truly mean to die, I will\nstop you even if I must hit you.",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:93d799b322d8952f58325b222274edfcfd7000018edf7b4b9a5570ba088d2cce",
+      "text": "...I don't mean to die. I'm proving\nI can live on my own...!",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:1c40e26e416cd8038c94fd984884319ba396ccc0bd8171f4d1853de5e44d7861",
+      "text": "Understood.",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:c6d25be51aacd1d74be71d24a0b48dd30f7c6b6775bbebf603a93e9274bb9451",
+      "text": "I will escape. Is it a problem if\nwe happen to be going the same way?",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:f472b4c56c9e83bc2382dd869165294ca8da26fd19af23888fef4cc6453bb197",
+      "text": "...Tch.",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:cf69f718515f4e483b3b51968946eb87b0192f8c47a629a1e7ba7a22b2a8bc67",
+      "text": "I am only talking to myself, but...\nI had heard of former Aegis members\nwho refuse protection.",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:0107b5177f9a1d80a31f874b9c7f3d5460935be29663339e013026c5ac64836b",
+      "text": "And that in some cases, the Guild\nKnights may have to \"protect\" them\nby force.",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:0a5961e4fa6bd4c2778d12652b1dfd04d079f489151ac5ab4e95ff34cc2e8db0",
+      "text": "Ha, like I'd lose to those small\nfry. Even Thor had his eye on me.",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:32bce62e183712ac2c598b7197df6059e01974f795663b0040b2f46a9f5534b9",
+      "text": "...Then I look forward to facing\nyou one day.",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:94964ae117bab11510aad76de2b4f2049212671aec8ae8b36ca97bcbe87dd77f",
+      "text": "...You a Guild Knight?",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:76158815a0711c30984b6887325e108125d9d9ae521c68fa797bb38c6c01ff8a",
+      "text": "Still a trainee, but yes.",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:65171a6de85e436feb0879e01183eff67a09e69cf243d812bf9bdd327d6228cc",
+      "text": "...You're exactly the type I hate\nmost.",
+      "status": "machine"
+    }
+  },
+  "108": {
+    "5": {
+      "srcHash": "sha256:254198febe03946d307a0145b7abf13f7ddf975a38f1e87537cf13e7d01486d1",
+      "text": "I see. That has nothing to do with\nme.",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:1d539aee6b27cf465a94dd807613b0529fb930b824d7217102ad00ab3adc52fe",
+      "text": "Huh...?!",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:ef56684a12f1276d04da2244490253c118fcb67ee2a67930773b176de96df323",
+      "text": "...I will break the encirclement.\nMove in that opening.",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:4043edc8ef53c91cd1376e638ea0b72744dfbcf4a3dc46cb68f72584e728041f",
+      "text": "Why should I take orders from you?",
+      "status": "machine"
+    }
+  },
+  "119": {
+    "5": {
+      "srcHash": "sha256:978fc50e348ac26b027ecce053e72428930a99079d5573889cb4fae086a1b833",
+      "text": "Me, in a world like this...! I\nwon't lose! I refuse to lose!!",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:5bd2b502c2d9cc2aa58d420fc06c5e3ad9aabfd929e76af40a2bb5fe6992f288",
+      "text": "Get lost on your own! I can do this\nalone...!!",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:951f364df5759ff1d6ce5989f49fad13616f9ea13076b331b2cae36fc155cda5",
+      "text": "—Heaven's Thunder, One Flash!!",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:132f75ac9d820fda3e46d87af93135288ad2d4030990c8f142e6d7abd8769730",
+      "text": "You...!",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:3df363d4767115ae727509fe5354048c9bec575aa1325010d465e0bf90e63397",
+      "text": "If I look away here, I will regret\nit!",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:a195df323d11f13fda150110adc6b43ff95720138816de51781489970d73b78f",
+      "text": "It has nothing to do with you.\nRather than overlook someone I can\nsave and imagine their resentment—",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:9dda79376879ca45a7e00f1aff5da6a882288e4c5e69b1103d75f0e27410ead9",
+      "text": "I would much rather save them and\nbe complained at.",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:6d6c0ee1b7b2da149482aa90b62da86578db8762fe1ec4b1d9397b9ba38cfaac",
+      "text": "If you grow strong enough to live\nwithout anyone's help...",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:a335c8daaf4c472f09e3777db2e694f27a8e915470529870436dcf4ad5cf6f10",
+      "text": "Then I grow strong to save\neveryone!",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:ac7c04c2910e7d5e5f9b0f49cfaf55bed8eac27d075d554bc5e8523715ab8fac",
+      "text": "You... Selfish woman!",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:6d269a86857c5e408a8744bf8322e8718c83199ed3e8064ddd8213ca3f613169",
+      "text": "I am not the one to hear that!\nBesides, being merely strong will\nnot let you live in solitude—",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:bd780f87d923b529305366967fc76d7715c326bdd5c25f18b570ef47feaf0a7e",
+      "text": "Super Ultimate! Fire enough shots\nand one hits!!",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:533abb3502896c487cb3f379ec15693f0219ca4787608e752b721e8824a6a75f",
+      "text": "I'm here! Go get 'em, Nagi!!",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:17b9749826deb2e3ff92bf55e65229ce85407ecbdeccb603637bf960a19837eb",
+      "text": "Yae...! Thank you, with this!",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:c13e622198974afaaecfbae4f5656f4efe53f503d2b722ada386003913ce6c90",
+      "text": "Change of plan. We will wipe out\nthe monsters here!",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:c97152589b0b667632c97b9d236a360e180c41d798126375eadc5231ae0c951d",
+      "text": "—Amo Style, here I come!",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:553d8e0c78795d072accf11cd90b159105bfbd5ce52cd0f4b7b005881ddfa5b2",
+      "text": "Listen! I never asked you to save\nme!",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:553562c6e36c74248c902003042e8ef034f379452cb765b89b8c661be380808f",
+      "text": "I know. Next time, let us meet when\nI come to \"protect\" you.",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:4508f3c3d8acc0ffcb6f66ac7aaaa3337cad7bc156905e73c5a230f17ad02962",
+      "text": "Seriously. Are you okay with that,\nNagi?",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:74e11dba02d12f337721540dd48fb35fcb1eae1135b733090c6eb3ac3589ac18",
+      "text": "I do not mind. This is about my way\nof being, and has nothing to do\nwith him.",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:f867d9acb0e1421eb3b3ac3c137f74c1499c308b3fdf614bb79fa6e2215ab8d8",
+      "text": "His ideals have nothing to do with\nme either, so I would save him next\ntime too.",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:003184428bb3f0c5bfca57351b0661a4e6461acdad7006c2c597ae2cd0afb18a",
+      "text": "Wow, Nagi, you're sometimes\nseriously ruthless.",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:853c1034cf75fed504f2f36a6b309435a5c1c8b140ed08c7f51136d4099b97d4",
+      "text": "I decided to do it even without\nmeaning.",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:6199354fb6f6b81b4be992c441f4c2d628cc3469782327a7defe8699b9790537",
+      "text": "That's what I love about you, Nagi.\nSo cool? I'm falling for you. No\nwait, I already have. Love you!!",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:a0c4d2a0bf9af3504456af03a215f783a3ff23358fa6166918776abb72348abc",
+      "text": "...Please stop, it is embarrassing.",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:8ac8886744bcfdb8cda5e58207dbbf71c582d8653499e84f48aa5f935fac6848",
+      "text": "Now then, the trouble is settled.\nShall we play again?",
+      "status": "machine"
+    }
+  },
+  "211": {
+    "5": {
+      "srcHash": "sha256:c5630f70e29994477f41215259f0ce3bf4dcf89240a58909b85932b2dd6794ba",
+      "text": "Oh, nice! So, all-nighter in\nShibuya?",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:28f6740727272ac8f35bb67f2140055cf8de69237dfc40c022317d54d8db8ee8",
+      "text": "No. We are minors.",
+      "status": "machine"
+    }
+  },
+  "216": {
+    "5": {
+      "srcHash": "sha256:c96c23924fa7cb0bf71765629b0a0a877bcc4da307f2df1d61513e57c372a3d9",
+      "text": "...Right. In Palpebra, I found a\ngood shop—",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,973 @@
+{
+  "61260": {
+    "2": {
+      "srcHash": "sha256:f7bcd8f7bc43cfe9c88118f0304e5b874d0cb29239e9fb1b10b58f12fb407078",
+      "text": "Flashfire Hanifolk Dazzler",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:6ea7c1c0443ef882a241be4e6461c4908dce7179f92a120d5987b6ad2f527d3f",
+      "text": "Clear the Solo Boss Challenge: Flashfire S Hani Godly",
+      "status": "machine"
+    }
+  },
+  "61270": {
+    "2": {
+      "srcHash": "sha256:c6e9831d2b2c693bc6fc4526d3e26a4d119b7a56b949557e467df3147ad7d0ee",
+      "text": "Flashfire Hanifolk Flipper",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:7b7072a3413a98c69b978e9364afc641dc9afc7169418a847f438f6ab8632e87",
+      "text": "Clear the Solo Boss Challenge: Flashfire PF Hani Godly",
+      "status": "machine"
+    }
+  },
+  "61280": {
+    "2": {
+      "srcHash": "sha256:1ce096edfd626f4bacbcbc5d4cd6ed469a081199a74e0e0fc0076e240b8ce75c",
+      "text": "Flashfire Hanifolk Hitter",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:492a52a364950ac112ddfe90035ceeaa45d0d6bbcbe6d05696c259dfd346bb41",
+      "text": "Clear the Solo Boss Challenge: Flashfire DH Hani Godly",
+      "status": "machine"
+    }
+  },
+  "62340": {
+    "2": {
+      "srcHash": "sha256:951ccf080abf15d17b0645497d117fcf2f040aacfb8a8376f5675322469c81d5",
+      "text": "Gustbot Soldier",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:6b1cece74c75b680f6f90621e8bc7b4250304500223c5b53d754784159244c4d",
+      "text": "Clear The Descension Windwrath Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62350": {
+    "2": {
+      "srcHash": "sha256:ff193151eba0d8c9498000659b8d22ffff6ce9b7996a01002d7c7a7568e7b14a",
+      "text": "Gustbot Subjugator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b7905b5dcc12c977e31ed0e1a79fe12d3aa8359efdbefe1cdee084fffa48981c",
+      "text": "Clear The Descension Windwrath Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62360": {
+    "2": {
+      "srcHash": "sha256:32c569fb35c61228bb6ab7e8e4e1c7c74db2ea0bd37e8056870848fbe77f5761",
+      "text": "Gustbot Annihilator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:e1bbbe70d40a55237e6c078dde3f3ad8628153dc95dfc40468c3cb0c8305330e",
+      "text": "Clear The Descension Windwrath Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62370": {
+    "2": {
+      "srcHash": "sha256:f5d62478e99d3bb4f49a82555f84af09f846c795783e089e154c6b2a7e2263b6",
+      "text": "Gustbot: Reckoned",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:e01d288fae308f5d6f0164f61fc245f9c8826ec975fab89bbf90b0f9be9f6113",
+      "text": "Clear The Reckoning Windwrath Steambot",
+      "status": "machine"
+    }
+  },
+  "62380": {
+    "2": {
+      "srcHash": "sha256:109b987020e8ec14041294ab685156da2ef337f5e05e9f6dae2f50c5e6bbaedb",
+      "text": "Tidebot Soldier",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:4c3378224f6b237d539d1cfcd41b9a69bbc1b456e8ffa4bfeb3adbd2ed24c73a",
+      "text": "Clear The Descension Maelstrom Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62390": {
+    "2": {
+      "srcHash": "sha256:30d4a0b1d67759dcc394497b49efe600f99a321f95b97f69ff1b9c691208adca",
+      "text": "Tidebot Subjugator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:f40c61b7699413ab7f0a86c69ebd9dce870e81391dec2a8287b3f8b5d87757a7",
+      "text": "Clear The Descension Maelstrom Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62400": {
+    "2": {
+      "srcHash": "sha256:f18f182eeca1ee1b69fe0f8c278473cc8ca8dcf42052f865bdcb4e437cf47c45",
+      "text": "Tidebot Annihilator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bc68152e95309a64cbe75d9cd84c2d37e429bf9faee3c11e29c194a90dba4191",
+      "text": "Clear The Descension Maelstrom Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62410": {
+    "2": {
+      "srcHash": "sha256:c510268d093942eb252dcde34e67fdff14bcfbd1b77e6667a1956ddc699c69e9",
+      "text": "Tidebot: Reckoned",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:a48186482d111a1094126e74e28bb93effdbd9b2ee688c4f1fe7ffaafd3627f5",
+      "text": "Clear The Reckoning Maelstrom Steambot",
+      "status": "machine"
+    }
+  },
+  "62420": {
+    "2": {
+      "srcHash": "sha256:335973dc760261e62eec21605b69a4db18115125ea9fc97bfd9c7d41cec5a730",
+      "text": "Flashbot Soldier",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0f6b6839555f6bf65eb56a7aaeabc6c2f8269ffb33cc8078137435117b574861",
+      "text": "Clear The Descension Radiant Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62430": {
+    "2": {
+      "srcHash": "sha256:74b238998995e363ad9945f3bf249f2e151c34f04035be89680d5ee7ecacd4c4",
+      "text": "Flashbot Subjugator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:f997ce828a59899dbed431dc7f9922e63e92113f824dd2bf62beb8cf5daab08f",
+      "text": "Clear The Descension Radiant Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62440": {
+    "2": {
+      "srcHash": "sha256:d1932b2c204b12cf83907b3eeb0e064a04876c7056e1cece072ea36e0a593cf4",
+      "text": "Flashbot Annihilator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bbd511da1d4bc26375ea7263acabb45fa21fe6661131fba045be76348d7f58b6",
+      "text": "Clear The Descension Radiant Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62450": {
+    "2": {
+      "srcHash": "sha256:a3242d333ad3d6d4f3a3af86ac476435a98d29f33353982908f923492d6325c0",
+      "text": "Flashbot: Reckoned",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b4ee3aee237ea8d0d0bb986362d4f10172be98beaca5a7308c54ed3f1df8b388",
+      "text": "Clear The Reckoning Radiant Steambot",
+      "status": "machine"
+    }
+  },
+  "63039": {
+    "2": {
+      "srcHash": "sha256:356cbdbc632c9f604ba2d8d899867353c99cb48cc8e0bcdd69782ea742af8aa9",
+      "text": "Black Dragon Saga Hero of Yore",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:7be71130454c6fa696ec7dc71c36f03e2e5f7a181dfeca1251c154dd057d51ce",
+      "text": "Place in the top 500 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine",
+      "note": "Rank kept as in the JP source; global raid titles used smaller ranks (e.g. top 50 for Hell)."
+    }
+  },
+  "63040": {
+    "2": {
+      "srcHash": "sha256:15937ff8f2f39ecf78b663c9677ec13909e548520a3b6e99371b162ee1392281",
+      "text": "Black Dragon Saga True King",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:ee5a2d078ad1bc2b311360d1a27a5e7e72e5fdd84acf90af508327f73ae3a645",
+      "text": "Place in the top 1000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63041": {
+    "2": {
+      "srcHash": "sha256:34b09f416e44b4584d06235199d13bf494d8f37a9890f2e71b4840381132b378",
+      "text": "Black Dragon Saga Loyal Retainer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:c94876774f25ef07609e44dd50b852763d0ba88510e9b40a47d8b1a2d7df2e77",
+      "text": "Place in the top 2000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63042": {
+    "2": {
+      "srcHash": "sha256:085b7dbfd5bcb10300eefaaebdd1a6451ac34e4b8bab91873db6e86c2781b813",
+      "text": "Black Dragon Saga War Hero",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0b400173a98c9206d9c2530d27b59d40100c10721b4629ff062b6c0f6df61a7d",
+      "text": "Place in the top 3000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63043": {
+    "2": {
+      "srcHash": "sha256:633a4b233f7eddfa8620b1abae8b9a5741c79df7aa3783336ae0b68ebf60db37",
+      "text": "Black Dragon Saga Warlord",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9d509ed3e3fa0d17e264ed2135e016cc06a80c3da3d1c153796631d24e222833",
+      "text": "Place in the top 2000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63044": {
+    "2": {
+      "srcHash": "sha256:348e8a9f146fe762a644082b0fc3459813dda564f5bd1c4e9fb387c2f9fe4777",
+      "text": "Black Dragon Saga Marshal",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:01dd99fb56f25ea04a51ebf87740fe9bcbd985ee3d95ac3d5228d3440dd68032",
+      "text": "Place in the top 4000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63045": {
+    "2": {
+      "srcHash": "sha256:c3e8850186c57803974bf34b56e62e127f91b2f29d171a49374473dbb2b362aa",
+      "text": "Black Dragon Saga General",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:a1ec5134887ba4b9cc428e5c3b4e7b1be95f2b6922fcea0c845547f92ac00bce",
+      "text": "Place in the top 7000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63046": {
+    "2": {
+      "srcHash": "sha256:abb5064ffffb780540abfcb82b7f64681d5875b19abcfad71c1d4b5a72e00abe",
+      "text": "Black Dragon Saga Brigadier",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:f1750378db9972780799dcc31983a476ab60d5853b08ed30181c873ee1f731b5",
+      "text": "Place in the top 10000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63047": {
+    "2": {
+      "srcHash": "sha256:1c9167f723b230821eed3abf88b96cc0b5dd9dceb0cd70dc0cca639db7c5ad41",
+      "text": "Black Dragon Saga Colonel",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:4d35654bfa9aaa162329bb7d87b353808b7424a80615e397c2215d7d7b199df7",
+      "text": "Place in the top 4000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63048": {
+    "2": {
+      "srcHash": "sha256:8f8070fb0e43488859fcf8647b2db175c03b008adcac1a68b6353d233f3a18c3",
+      "text": "Black Dragon Saga Major",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:47b3c0746eaf08bb6bceec570294dea48b1364fa817d35adc81037e794195036",
+      "text": "Place in the top 8000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63049": {
+    "2": {
+      "srcHash": "sha256:caaa7be6b80115f76c36c00ca62d288a965e30e2c3960c1df43c7f82530db067",
+      "text": "Black Dragon Saga Captain",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bc9571cdab281f760de402f2f2aedd20a2f4c4c71c85325d6ffc7a72def04fb3",
+      "text": "Place in the top 12000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63050": {
+    "2": {
+      "srcHash": "sha256:0230264218154c4a3cd509a9fa0eb747b94aa3b76e1a828a228e73460570d2a9",
+      "text": "Black Dragon Saga Lieutenant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:47ae5a5160c365260caa51c727af3cf0d46e8b7eea4e1afed33cdab5ac14dbf7",
+      "text": "Place in the top 5000 for Beginner difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63051": {
+    "2": {
+      "srcHash": "sha256:bd94d0c85f07f11985aca1fc2ecc7ed81395e5a267a6e2dce6da7122598b608c",
+      "text": "Black Dragon Saga Cadet",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:11d2957667295922b45f426fe26a76bf821855b140799bc1b87263ceb6623002",
+      "text": "Place in the top 10000 for Beginner difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63052": {
+    "2": {
+      "srcHash": "sha256:356cbdbc632c9f604ba2d8d899867353c99cb48cc8e0bcdd69782ea742af8aa9",
+      "text": "Big Baaad Golem Saga Hero of Yore",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:7be71130454c6fa696ec7dc71c36f03e2e5f7a181dfeca1251c154dd057d51ce",
+      "text": "Place in the top 500 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine",
+      "note": "Rank kept as in the JP source; global raid titles used smaller ranks (e.g. top 50 for Hell)."
+    }
+  },
+  "63053": {
+    "2": {
+      "srcHash": "sha256:15937ff8f2f39ecf78b663c9677ec13909e548520a3b6e99371b162ee1392281",
+      "text": "Big Baaad Golem Saga True King",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:ee5a2d078ad1bc2b311360d1a27a5e7e72e5fdd84acf90af508327f73ae3a645",
+      "text": "Place in the top 1000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63054": {
+    "2": {
+      "srcHash": "sha256:34b09f416e44b4584d06235199d13bf494d8f37a9890f2e71b4840381132b378",
+      "text": "Big Baaad Golem Saga Loyal Retainer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:c94876774f25ef07609e44dd50b852763d0ba88510e9b40a47d8b1a2d7df2e77",
+      "text": "Place in the top 2000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63055": {
+    "2": {
+      "srcHash": "sha256:085b7dbfd5bcb10300eefaaebdd1a6451ac34e4b8bab91873db6e86c2781b813",
+      "text": "Big Baaad Golem Saga War Hero",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0b400173a98c9206d9c2530d27b59d40100c10721b4629ff062b6c0f6df61a7d",
+      "text": "Place in the top 3000 for Hell difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63056": {
+    "2": {
+      "srcHash": "sha256:633a4b233f7eddfa8620b1abae8b9a5741c79df7aa3783336ae0b68ebf60db37",
+      "text": "Big Baaad Golem Saga Warlord",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9d509ed3e3fa0d17e264ed2135e016cc06a80c3da3d1c153796631d24e222833",
+      "text": "Place in the top 2000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63057": {
+    "2": {
+      "srcHash": "sha256:348e8a9f146fe762a644082b0fc3459813dda564f5bd1c4e9fb387c2f9fe4777",
+      "text": "Big Baaad Golem Saga Marshal",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:01dd99fb56f25ea04a51ebf87740fe9bcbd985ee3d95ac3d5228d3440dd68032",
+      "text": "Place in the top 4000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63058": {
+    "2": {
+      "srcHash": "sha256:c3e8850186c57803974bf34b56e62e127f91b2f29d171a49374473dbb2b362aa",
+      "text": "Big Baaad Golem Saga General",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:a1ec5134887ba4b9cc428e5c3b4e7b1be95f2b6922fcea0c845547f92ac00bce",
+      "text": "Place in the top 7000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63059": {
+    "2": {
+      "srcHash": "sha256:abb5064ffffb780540abfcb82b7f64681d5875b19abcfad71c1d4b5a72e00abe",
+      "text": "Big Baaad Golem Saga Brigadier",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:f1750378db9972780799dcc31983a476ab60d5853b08ed30181c873ee1f731b5",
+      "text": "Place in the top 10000 for Godly difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63060": {
+    "2": {
+      "srcHash": "sha256:1c9167f723b230821eed3abf88b96cc0b5dd9dceb0cd70dc0cca639db7c5ad41",
+      "text": "Big Baaad Golem Saga Colonel",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:4d35654bfa9aaa162329bb7d87b353808b7424a80615e397c2215d7d7b199df7",
+      "text": "Place in the top 4000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63061": {
+    "2": {
+      "srcHash": "sha256:8f8070fb0e43488859fcf8647b2db175c03b008adcac1a68b6353d233f3a18c3",
+      "text": "Big Baaad Golem Saga Major",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:47b3c0746eaf08bb6bceec570294dea48b1364fa817d35adc81037e794195036",
+      "text": "Place in the top 8000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63062": {
+    "2": {
+      "srcHash": "sha256:caaa7be6b80115f76c36c00ca62d288a965e30e2c3960c1df43c7f82530db067",
+      "text": "Big Baaad Golem Saga Captain",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bc9571cdab281f760de402f2f2aedd20a2f4c4c71c85325d6ffc7a72def04fb3",
+      "text": "Place in the top 12000 for Advanced difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63063": {
+    "2": {
+      "srcHash": "sha256:0230264218154c4a3cd509a9fa0eb747b94aa3b76e1a828a228e73460570d2a9",
+      "text": "Big Baaad Golem Saga Lieutenant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:47ae5a5160c365260caa51c727af3cf0d46e8b7eea4e1afed33cdab5ac14dbf7",
+      "text": "Place in the top 5000 for Beginner difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "63064": {
+    "2": {
+      "srcHash": "sha256:bd94d0c85f07f11985aca1fc2ecc7ed81395e5a267a6e2dce6da7122598b608c",
+      "text": "Big Baaad Golem Saga Cadet",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:11d2957667295922b45f426fe26a76bf821855b140799bc1b87263ceb6623002",
+      "text": "Place in the top 10000 for Beginner difficulty of the Raid Event: Sagas of Conquest",
+      "status": "machine"
+    }
+  },
+  "64006": {
+    "2": {
+      "srcHash": "sha256:f76a298ed8134a09cd68277f3fca626bbdaba65a358a05a2487dc86e37a9204a",
+      "text": "C-Rev.1",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:fa8a51fe9143b0082e7c014c6e17034456527d218a9f1abf2a5d83307c53ef33",
+      "text": "Reach rank 6000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64007": {
+    "2": {
+      "srcHash": "sha256:9c1e62a68c497aad7f97540194687e1e7aad432858a7002ac356424db0a8d894",
+      "text": "C-Rev.2",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:64f6e55ad869dc197369b18611e113583bf10a6168c6321a25b98e088de106e9",
+      "text": "Reach rank 3000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64008": {
+    "2": {
+      "srcHash": "sha256:216225c739bef9b5fc6925f43e4a5d4a53d4611c648999e962c932eff4b9892c",
+      "text": "C-Rev.3",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:87ceb086b79bf82299376560f47ccad60f52276ec4c0dc84a8a195ae7ebc3301",
+      "text": "Reach rank 1000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64009": {
+    "2": {
+      "srcHash": "sha256:7970f718b7515063ce7b30feb6778979f92094d5f008dd48dcfb79ac6cbed3d8",
+      "text": "D-Rev.1",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:fa8a51fe9143b0082e7c014c6e17034456527d218a9f1abf2a5d83307c53ef33",
+      "text": "Reach rank 6000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64010": {
+    "2": {
+      "srcHash": "sha256:86eee0da19a92a53679667b733897c1e73cb7153df9099347ff9205217b41b7b",
+      "text": "D-Rev.2",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:64f6e55ad869dc197369b18611e113583bf10a6168c6321a25b98e088de106e9",
+      "text": "Reach rank 3000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64011": {
+    "2": {
+      "srcHash": "sha256:e9e5227692c0a23a375681bc6102ed6ee00ab0233a2829dcbea8b470ac0dab71",
+      "text": "D-Rev.3",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:87ceb086b79bf82299376560f47ccad60f52276ec4c0dc84a8a195ae7ebc3301",
+      "text": "Reach rank 1000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64012": {
+    "2": {
+      "srcHash": "sha256:91059d96a42481c358b425ff17aa1a16574e54dcd26cddd1f909f646b332addc",
+      "text": "E-Rev.1",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:fa8a51fe9143b0082e7c014c6e17034456527d218a9f1abf2a5d83307c53ef33",
+      "text": "Reach rank 6000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64013": {
+    "2": {
+      "srcHash": "sha256:078caf95fa57e3c6e7b00d4e6c9c8e70bfef3c32d9f87434857bc721dfc82223",
+      "text": "E-Rev.2",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:64f6e55ad869dc197369b18611e113583bf10a6168c6321a25b98e088de106e9",
+      "text": "Reach rank 3000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "64014": {
+    "2": {
+      "srcHash": "sha256:0c499570d7cc8da2223e0cb42580c80e44d192ebd03f9a8637d815b5f4a0eff4",
+      "text": "E-Rev.3",
+      "status": "machine",
+      "note": "full-width Latin in the source; no official EN text uses full-width Latin"
+    },
+    "4": {
+      "srcHash": "sha256:87ceb086b79bf82299376560f47ccad60f52276ec4c0dc84a8a195ae7ebc3301",
+      "text": "Reach rank 1000 in Grand Gauntlet Endless Battle",
+      "status": "machine"
+    }
+  },
+  "111153": {
+    "2": {
+      "srcHash": "sha256:b9a4405eea060950958a802f2055108a0d0af8ee4f9619adf45a8fb4a792ceef",
+      "text": "Fiery Rookie Adventurer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0b143fbdd249278834da4c512149bc6b4e804dd02db4a84db13ca473c8a19926",
+      "text": "Level Lunetta to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "111159": {
+    "2": {
+      "srcHash": "sha256:1e2d0ceb24ad5a7cba6612dd040aebd2f3dbc03de9d0e6a823642f5c0273a144",
+      "text": "Pure-Hearted Kitten",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:773cafa02854f6da1422260a4a013b6a3c841bf19a7b89e642a932dab44f034e",
+      "text": "Level Penelone to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "121159": {
+    "2": {
+      "srcHash": "sha256:a352337f4eaa01ef14e1863e1f84955c300ad5437d0be3186ebae09b7ea043a9",
+      "text": "Spirit Horn Adventurer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:16febfbe5c88429c73914efebe7cb79fef1809e0f2e1559ed6da95c20bd3e6d5",
+      "text": "Level Nisues to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "121165": {
+    "2": {
+      "srcHash": "sha256:bdbf6b62e6fcdefc688ea58eaf677f13603b546f4e22a382829b7fac83e4b81b",
+      "text": "Kowloon Gangster",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:df4ebf57480167d2b53cd82ba29536e72127c30bd9b668355c74a866affde818",
+      "text": "Level Lanmei to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "131134": {
+    "2": {
+      "srcHash": "sha256:03cf53b2ef337ba6cd408c4ed2ef4b1b3f15fcc55a06a3f92883936de493cd38",
+      "text": "Cage Liberator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:c87da0ff75d70101d5923bc45d11e407e5e10db1f548b01e0f57f98466a7a762",
+      "text": "Level Kasivars to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "131140": {
+    "2": {
+      "srcHash": "sha256:f82394d562bfd30911b0641e25c6b175821d3f64e0c85505ecd584fa398b645e",
+      "text": "†Inverted White Maiden†",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5021a5986dad6ffab7b5f681effa28d7a9e3a0e466c06249794be37000f64346",
+      "text": "Level Denah to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "131146": {
+    "2": {
+      "srcHash": "sha256:446e71684e8a93dac895eec512489edcd3b26373b676c28c15115bdcd973c19b",
+      "text": "Dapper High-Hat Negotiant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:2ab042bb8bec8e5b925a9581958c4ae5e00435996b0b227e619b259bcd6f3ac5",
+      "text": "Level Libram to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "131158": {
+    "2": {
+      "srcHash": "sha256:8d47a5284c3d91d6850361290fe32d204410d81d9bfba63b7666224cb6f896b2",
+      "text": "Judgment Blade",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:d549d9cf6185da64e4dd353514a4d34cbfc8d335f828e954887ed7c06f87ed82",
+      "text": "Level Nagiri Amo to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "141147": {
+    "2": {
+      "srcHash": "sha256:dfd128b3be43a236705abeacfebc453307acfa2e76d51b1a12152639ab3932d5",
+      "text": "Off-Duty Idol",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:1414774e9fbc271d7cb79f26962a71c49036ee724a204f24185782a95fd2590a",
+      "text": "Level Beaucy to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "141153": {
+    "2": {
+      "srcHash": "sha256:8523ca104f1291c04991911397501b656f5928ad10e9d3a16f8821ad6364de7e",
+      "text": "Free Spirit",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:06b8fc297d7907c1be97e6776747ed11b488aa89ededdb97b9012754193dc41c",
+      "text": "Level Yae Asato to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "141159": {
+    "2": {
+      "srcHash": "sha256:2acd5ebef49184eb50f4f37e8f32fa73b93cffa689021389bd510eaebb0e92c8",
+      "text": "The Black Wolf Errant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b634c91da295aac778d95d1eadfbc6cab8eed8b02070d17ce2be73239e9748cc",
+      "text": "Level Rolf to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "141171": {
+    "2": {
+      "srcHash": "sha256:08cebc403ed3f9a9cd26d8c831c415960b691c6458cb569647c5653798683f22",
+      "text": "Witness to the Aftermath",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9641b758af600b312a62ce5bb23c4f83bd8dfe9bcd6ccbbd7b24d2493812e663",
+      "text": "Level Taichi Yuhino to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "151159": {
+    "2": {
+      "srcHash": "sha256:a4457566ddda2b3268b2a8973b469c3758469886448807d691b35184f44a4a94",
+      "text": "Dragon of Love's Legacy",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:8d7be87ba90969d85b4a8d674f9c45181c2aa2c6de4c28d4b152cdadf8a5ae05",
+      "text": "Level Rustamov to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "151171": {
+    "2": {
+      "srcHash": "sha256:d1b6e7e7f07ee86f2490b9714dba364cf5e3626a3e91223cd7ac0e09ab20531a",
+      "text": "Spirit of the Magatama",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:3a879964ea02cc4891b6153326c423343e0fc7d45d4fcfda5291f0695ff12215",
+      "text": "Level Tamako to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "161165": {
+    "2": {
+      "srcHash": "sha256:cf6e6714e5ea72302ee92ec3dce7a9f1f04772bbc9015a40167424bce1d76522",
+      "text": "Master of Chaos",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:93934ff85905d1ead894cdaa4b093af1229e061572043d515e6f8cac8580f389",
+      "text": "Level Tanakiela to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "161171": {
+    "2": {
+      "srcHash": "sha256:a9eb6f3c01c465f8c4d4634a7e6273a57dda90b649c5bb30da8de959450e1697",
+      "text": "Phony Priest of the Night",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9a5e1cf51700c55d48365033e17806d87bd55e7df3f98f62b1139e3eccf309b4",
+      "text": "Level Iores to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "161183": {
+    "2": {
+      "srcHash": "sha256:ddab483f787b3f26364165343d10cd1aed0412b8b48ebd29547903ebcec3aa9f",
+      "text": "Teleporter",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:83b3fc89c3dc22c61c40c81a23b32dc68c5d8ca7b135b9ce10830e25f0e4c564",
+      "text": "Level Hibiki Suminami to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "161189": {
+    "2": {
+      "srcHash": "sha256:5ee76945582e5ce05ec6aefafa881abbb8b5922c699a8dcba7a09c501778f0d0",
+      "text": "Starless Light",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5e9c9b517536bb1d6d299eaa1e5d00cea18b885ad1aefa4154238e246d7abb5d",
+      "text": "Level Marden to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "211062": {
+    "2": {
+      "srcHash": "sha256:7f86807dd7e77c7ebc79cfa73d2119e6240b2e42bcdf9cbeaafa104d3a43fe76",
+      "text": "Timid Ghost Hunter",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:3fe4d6324e9808bd61fee868d986cd1c46518f4f8bc35b55e93d80ec54066fbf",
+      "text": "Level Chenxi to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "221078": {
+    "2": {
+      "srcHash": "sha256:46548ff8d6a1acf71777b012903efa9e2b41b72df9b991f086ed40b8d3d393a5",
+      "text": "Princess of Love Dreams",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0345e0d703710ef4d9ef13d6301861f9e2f61b9c099a841bedafdcb66ef3b6d5",
+      "text": "Level Feanie to 100 and obtain her Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "231099": {
+    "2": {
+      "srcHash": "sha256:6ced52b2a0829666bfb086267d680c00cf6d187b9bc1b9c5cec1309c2b3d166e",
+      "text": "Hero Mechanic",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bfe9b9d2ac906f07bfc161fa3bdc71ad46d209feae495e1c96366511f3d5ddb9",
+      "text": "Level Invetra to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "261089": {
+    "2": {
+      "srcHash": "sha256:bd1aff0920bc5c37a611373689b3c6e9c58df3f9a66d994eb987cdc90fa63e7c",
+      "text": "Dragon of Darkness, Bound by Hearts",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:e5e8c84be83d84e8652d5f678ab023da4b4305a3dd6243ac4d318942bfd8ac01",
+      "text": "Level Armadeus to 100 and obtain his Amity Scroll",
+      "status": "machine"
+    }
+  },
+  "1111069": {
+    "2": {
+      "srcHash": "sha256:eb2d34657b1a660d54fc75e266aa28822ee4c646688518200c39ce7d418403d5",
+      "text": "Power to Liven Up the World",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:09594895a5a2e58a3397125a30d6b14b8ca34886d9023991608b1c54ce198fdd",
+      "text": "Fully complete Haruhi Suzumiya's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1121057": {
+    "2": {
+      "srcHash": "sha256:962841510741ea92dbf15d976a33a9331b5679db7e7ffb81f5012c5cd63415ac",
+      "text": "Almighty Data Manipulation",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:35a28172086adbb7c0e7f2dfbf536a81f63040d6ccfd08aedc411cac7bbb0ad2",
+      "text": "Fully complete Yuki Nagato's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1131134": {
+    "2": {
+      "srcHash": "sha256:46d4c33485a2d2d520871595cb847c791d8df0d7bdb7b1e28edeaea37d72dbd2",
+      "text": "Body Designer of Desire",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:1845042ccf3873bf1755a4b1ee156d8eabbd87081546f876c22d95d5b034aa40",
+      "text": "Fully complete Kasivars's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1151057": {
+    "2": {
+      "srcHash": "sha256:b5fa03217ab6c06a98f5aa1b5d73f5eb71a5003b2afcecad16e326f77c13e57c",
+      "text": "Clubroom-Exclusive Angel",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:272c548a6f2165d3391e8d382679b5f0e4b0747e09fb2065f40d7f5dd74387a9",
+      "text": "Fully complete Mikuru Asahina's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1161165": {
+    "2": {
+      "srcHash": "sha256:573849c99519eabb04e2033ff2c89b2ba41e435f8a7caf0686d62e470760b8ac",
+      "text": "Guidance of the Inhuman",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:10de031dc00dd54c8bfff771d70e07a3553d2234b15959db1173c03025c812d7",
+      "text": "Fully complete Tanakiela's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1211062": {
+    "2": {
+      "srcHash": "sha256:cac71d7286c95e75ca034b11705fcfcf4151ee8df0abcb544feedd44af81ae7f",
+      "text": "I'm Not Scared of Ghosts!",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:fde32c98bdaf9f4d7497e82bf4484b3a0d0f12cb521d78aee9f121d436251840",
+      "text": "Fully complete Chenxi's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1213007": {
+    "2": {
+      "srcHash": "sha256:3a24a8f86bd8bcbe682b4628a3d422d9649935702f7178e3d889ca7e80dcae6f",
+      "text": "Charming? Ordinary Person",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:dfe8e84bc8b1cd511e11babb1280f5d6928d3e1ee5f22294c18dab0f7d0fee5a",
+      "text": "Fully complete Kyon's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1261053": {
+    "2": {
+      "srcHash": "sha256:74a6cc678479b1cefae557b2fa04417697b4731bc52aac2a84b117281bd661ac",
+      "text": "The Yes-Man's Beautiful Melody",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:7c6a9e0399e819b262d246507b814c39771c7ff5f184e51e86a02c74747c7cf7",
+      "text": "Fully complete Itsuki Koizumi's 2nd Mana Board",
+      "status": "machine"
+    }
+  }
+}

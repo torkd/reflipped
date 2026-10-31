@@ -1,0 +1,436 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:4e6183b9f1ad2bb87fcd22e80abc1e9ff077f2f2b08ba666a2341d3a643f611d",
+      "text": "I have realized something.",
+      "status": "machine"
+    }
+  },
+  "7": {
+    "5": {
+      "srcHash": "sha256:c611f2949af77998f3c52476e902d63e96ca6d0f951736f404761b73b37edcfe",
+      "text": "I never gave the King any\nchocolate...!",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:00f796804ce9b20ed92793f53ab3095d7415d75996fb9ed7289fdb76e5832143",
+      "text": "...What? Wait... what are\nyou saying...? That's not\nokay, is it...?",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:79c42cd6e3bb6d6c589a42f2464fb721eebdb0d554f6f4f5c8a9d40535508562",
+      "text": "It's not about whether the King eats\nchocolate. Showing devotion is the\nimportant part.",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:99a568ca5964f0b8a3eb1cc3c00afef6216f9d6b72ecea6911d8a84fcd180bb7",
+      "text": "I make a chocolate shaped like a very\nKing-like King, display it, and pray!\nYou know, like supporting your fave.",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:cdac241f823523d57282c219dcae583f3422f7d05b61bad9b923eabbac8afc58",
+      "text": "I really don't think that's it...!",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:4ac263aabe1790125db7973b0779f339e945d56edd0c6a61d8cfb6899a0abac1",
+      "text": "Well, if she's only praying to it,\nmaybe it's... fine...?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:4cf6545fef001e2af9c42066d1471cebaff047392f08dd13b5691f707b148b2e",
+      "text": "Hmm... well, it's Denah, so I think\nit'll be all right...?",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:a7de84889ad868affc44e70160c14f7c1c3d8cd289edc3e9c9c24eaa0567fc51",
+      "text": "I heard everything!",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:219e43b86669bcc2333e8d931b75849e7e6c52257bd4069ff4cc1a2605f1a0a2",
+      "text": "Let me produce that chocolate!\nLeave it to me!",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:5e938e7cab480f3b8c6ca67d34c0cbeda2ad9c40ce8b4d5f417af9193903f388",
+      "text": "You're... Parfait, right? The one\nwho sometimes does something in the\nkitchen with Alk?",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:a192044d97cb51144a41cd594cbaecd0b1c0ce533c6a2508285ec8e95b672a51",
+      "text": "Yes! I've wanted to talk to you for\nages! Here, a little token of\nfriendship★",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:97b2c0d6bdf93a7321aac3ca79e41912a67d761c73761c607191207db2e63625",
+      "text": "W-what is this...!?!? Honestly, even\nI don't want to eat it. That's some\nKing power...!!",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:3c591799e93fe5609aa56d66957dffff6ddbba11684bfe57534e574ac6bc563e",
+      "text": "So if it's gross, it's a King!?",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:f4f6ef88ed337f07c8082d3ef5e3b51887a48e23fd1da5c693d41616893036c7",
+      "text": "It's... delicious...!?\nHow is that possible...!?",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:b7c923d73bd26475325696ca6fa8e2a4691e4db29839f5bd59128e0139e128b6",
+      "text": "Hey, Denah. Is just displaying it\nreally enough?",
+      "status": "machine"
+    }
+  },
+  "68": {
+    "5": {
+      "srcHash": "sha256:eecb7d155d47570f58267706ea0409002db242151603e279a4cf6b97418ba0e5",
+      "text": "What kind of chocolate do you really\nwant to make?",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:f0d88f4ffa9be413693b4a33163da6152bb8a0a298b50cb3a81d894b24346ec7",
+      "text": "I want... to make a tasty and cool\nseafood tentacle chocolate...!",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:cc250ba9efe732a288581da7c86577dea112c14bed1632ecb2a62deb7f272712",
+      "text": "Hey! The disaster level just went\nup!?",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:77fd6064b110e2e7f0699d81c4f0f5e65d9b5d137d47345a6da3bc9a8606c1e2",
+      "text": "Understood. I'll definitely\nmake a dish that makes your\nKing? groan in awe!",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:8bf3543197faf7d1409dff1d533786e4011f9219197829b0a9051761f590ae8a",
+      "text": "Yeah...! I'll do it! I'll give the\nKing a proper offering...! Just\npraying isn't enough, after all!",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:c5903f983bc0ca5d0c642f268afda1bc9cb6e071db498a2713ebc8033f428b58",
+      "text": "This feels like... it's going in\na bad direction...?",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:b0dbbe05224b862fb4575733f53d858549cea9cce220c81e11057405afa16c93",
+      "text": "...Well, they're both motivated, so\nwe just have to do it, right?\nYeah, yeah.",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:db5f227bb615062c3d8066bfb6b359040bd2908f0235626974c16e04a1d6eb1e",
+      "text": "...You're enjoying this a little,\naren't you?",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:f67b238223a2192e9eb727fa69ef8383e0bb7048be478bea0f58ec3995c0e912",
+      "text": "Enjoying things is a good thing.",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:eda03c9c1284be0c71089bcb0bbda2095d8e2339dea893166a837bdfbfa72282",
+      "text": "That said, I don't know enough about\nsea monsters either. It's an unknown\nchallenge for me, too...!",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:2d56c4a40cefd4b1efc11966758ac8d69870cf7f45bbc679410a32a2d0838b99",
+      "text": "Nice, nice! Now I'm fired up!\nThen first of all—",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:1db3d45fbf41de4471f92f5cc7fa7964dfd969ba02735914ac0bb73881955a6d",
+      "text": "Ingredient hunting!!",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:f5be1cbf350835fb97b827873305cb029a857378fd968bb65d9158e1a19892ab",
+      "text": "Hee hee, here it comes! My intuition\nis tingling! Straight east from here!",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:b9c4d684b3d22417e826d14f1c22b4af9d8d22b43f47a1bc4da21e1ac0cbe309",
+      "text": "It's west, though...",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:509bf60cea944066876a400a1979773b528471f6642c3dac30a1f2cf202f8880",
+      "text": "What a prime catch★\nLooks like it'll be fun to fillet!",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:4ee476bdb34f16fb3167bd98d29861ff11b9f3b650a8a014522105f94526e08d",
+      "text": "I want to take a mold, so try not to\nhurt it more than necessary!\nLet's go, everyone!",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:46608712af9c77ae5f0555e2d75e37f6beda87c0a3dd7114baaac9e34bbb3137",
+      "text": "Ha ha ha ha!\nWho do you think you're talking to?",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:cfe23469eaae8fe614915f6f08edd0c8e66ac41347948c8f6c8886ca635701ac",
+      "text": "I am Denah Selphis, Maiden of the\nKING OF VOID AND DARKNESS! Capturing\na kraken alive is child's play!",
+      "status": "machine"
+    }
+  },
+  "149": {
+    "5": {
+      "srcHash": "sha256:11e33ab43ac7cf24d9d0f126080a671737da30fd1d55e6750425b071a36ecf92",
+      "text": "Black turns white. Flipped, inverted.\nThere dwells the King beyond.\nDark Art 999!",
+      "status": "machine"
+    }
+  },
+  "153": {
+    "5": {
+      "srcHash": "sha256:8296cc766e724d837f427da65b93845b35ea4c5b5549820d25194e1182afa123",
+      "text": "Whenever she's involved, things\nreally do tend to get big...",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:dfe7a39ed0024f247def2ba5ffa8af9322469890a312598284c8a9519f559d2e",
+      "text": "Are you worried, Light?",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:2552d7433416653831456300f558e44302cd022c888e6d035cb8804d9a96e1d9",
+      "text": "The King she speaks of, the Devourer\nof Stars, is an enemy we've fought\nmany times. I can't be optimistic...",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:1a4e1a3dbc1d1be287b641ae8698a34f990c6c2f649197d8df5ff23ce9860479",
+      "text": "...Or so it should be.",
+      "status": "machine"
+    }
+  },
+  "167": {
+    "5": {
+      "srcHash": "sha256:6c33566268e1bc4d73c01831e3686412e44a94470ea6caab11cddb8a9ce28f09",
+      "text": "Hey, Denah! You're\nsqueezing the tentacle too\nhard! It'll get crushed!!",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:dd8405b4eb5bfcc81860735ae8d5384573993c0adf24c6291fad6166bea8c2d7",
+      "text": "Oops, yikes! King, go a bit easier!",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:05ef8ad58af8667fc137f1ca528456a57ed2501027c91ffe6da8cd2e78cff4c2",
+      "text": "Why is that, I wonder? With\nher around, I even feel this\nis the right way to handle it.",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:95b3b003ce4b34a500833959ecc3c4ca5b781e9330fd5e3bf900a41704c40dc9",
+      "text": "Yes. I'm sure it will be all right.",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:ed187210ba446e5455f6157901b42330f6b8fe083c20ae2f5d1cae39659ff2f3",
+      "text": "Why are you so troubled, King!\nIt's my offering to you!?",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:7c5e940a8cc5e00f112be8e881b35a683aed93074f6630e96fd75f6889cd26de",
+      "text": "Don't tell me you're picky?\nThat's not good, King!",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:b3de9e6f200a6ff39e8cb8b6e413426c628968407bcc728084fb9bffe77d3d0c",
+      "text": "I suppose it turned into an ordinary\nmonster chocolate after all. At least\nI got the shape right, but—",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:ee2c3c3f6de88984095d8c6e6982dec820b6fb0c88a160a9a03fdc082917114c",
+      "text": "It can't be helped, Parfait. The\ncombination of sea smell and chocolate\nstill has lots of issues...!",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:0e88d4b88d32561f7e9b442875e9d30a6340a04642346dce0f61f114c2830cf3",
+      "text": "True. Seafood monster cooking...\nI still need more training!",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:adecb102082069443bd95506e1e13fd711f726bfe6b48d2f907aac43b282a4bf",
+      "text": "Look! We worked so hard to make\nsomething delicious for the King!\nYou could at least take one bite!",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:c394b64623b1d3398ce07ccb44c68227c196248cf762a19ba4533730d113537d",
+      "text": "She's... lecturing the King...",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:0f537f8f046da0e279d2da8f8731dad82b7c0e3a989263947b2b11a088afa7aa",
+      "text": "Of course! If you do something bad,\nI'll scold you even if you're a King!",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:404d81691962431e4bca517a34f8a70a85641dd9fc5320560c9b91bcbd2c34c4",
+      "text": "Oh, right.\nEveryone, here you go!",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:25de16e5e9ef43aa6116299168237d0b94090ea4542f42a296e7cd459eb4f262",
+      "text": "This is for us...?",
+      "status": "machine"
+    }
+  },
+  "227": {
+    "5": {
+      "srcHash": "sha256:d6170191536a5e2254e9e8ef0c7eb094d25aae7c758079df7c1bf7c5fe2f1fbb",
+      "text": "Think I didn't prepare any for my\nfriends? It's just leftover\ningredients, chilled and set, though.",
+      "status": "machine"
+    }
+  },
+  "230": {
+    "5": {
+      "srcHash": "sha256:66ce726c30ca13d733f776b0c69052e58aebcb0e7ea172f01f74fe3b00b4e5d9",
+      "text": "Seriously, this is so tasty.\nAs expected of Parfait's chocolate...",
+      "status": "machine"
+    }
+  },
+  "235": {
+    "5": {
+      "srcHash": "sha256:af895701265317c3ac882ee599aedded7ab0091837998cc410e87057d2207ef8",
+      "text": "Thank you, Denah.",
+      "status": "machine"
+    }
+  },
+  "239": {
+    "5": {
+      "srcHash": "sha256:5b44488c3cdd3e73b6ed37eac8fd8c9395139a959713c31216ce071c40f19ad4",
+      "text": "So, everyone. Just to be sure,\nthere's something I'd like to\nask...",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:d3e641d089dbd1951f4914890a72e447c5aae54e696cbf72818eb21c0c4e77e0",
+      "text": "Did you have fun on this adventure?",
+      "status": "machine"
+    }
+  },
+  "247": {
+    "5": {
+      "srcHash": "sha256:6d291b845e2aaedf5c800d45f34049c8e211ce9703c85a96174e6bffc2f2eb68",
+      "text": "Yes, very much...!",
+      "status": "machine"
+    }
+  },
+  "251": {
+    "5": {
+      "srcHash": "sha256:e6027c97b289fac691505c65159a7c78623313a24fd109ba70138d715a6f95db",
+      "text": "We had fun! A lot!",
+      "status": "machine"
+    }
+  },
+  "256": {
+    "5": {
+      "srcHash": "sha256:5bfb4a85da656ff5903cf190077051fe4c4843367375e619077ed1ce62acfe21",
+      "text": "I see, I see...! Yeah, I had fun too!",
+      "status": "machine"
+    }
+  },
+  "259": {
+    "5": {
+      "srcHash": "sha256:ee9845bba87be9a04e82283a1bd60df0cfc88ebb4817d12e3f2972da277a2047",
+      "text": "I'm so glad I was with you all!",
+      "status": "machine"
+    }
+  }
+}

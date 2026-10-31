@@ -1,0 +1,429 @@
+{
+  "40321": {
+    "1": {
+      "srcHash": "sha256:3baab39f247f007e3fe50dbd1a186bf233aeba0873d1b034b68e93d1d7f18a93",
+      "text": "Purger Halo",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:68ce9f7a57a1a15e96ddb2d60e1cd269417845cda23940457b82c1e6253eddaf",
+      "text": "A warped halo recovered from the wreckage near Purger battles. Remarkably similar to the particles that make up dragons.\nEvent: The Purge\nExchange Item",
+      "status": "machine"
+    }
+  },
+  "40322": {
+    "1": {
+      "srcHash": "sha256:448441affa3e2ffe68bff666c7e70b3179545d7b683b67728d6eb69bb5aea1cb",
+      "text": "Purger Celestial Ring",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:14b670d2af92970dd88d385b078b5767e8c85aa501e856dbd513fe032810571c",
+      "text": "A halo in which the residual particles of a special Purger have coalesced. Highly sought after by scholars seeking to develop countermeasures.\nEvent: The Purge Side Stories\nExchange Item",
+      "status": "machine",
+      "note": "official text of 40312 with its event line set to The Purge, as the source says"
+    }
+  },
+  "40323": {
+    "1": {
+      "srcHash": "sha256:cd97d5bf6ca4b1b124f5da3f451efb49a718fd94c7a7e8f190167b6e92d7c266",
+      "text": "Purger Nexus",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:93fb9801663cae853ac67f5d7cb64b6b39006c261b00815169fd8d17f91e6076",
+      "text": "A crystal found on very rare occasions when a Purger is destroyed. Emits a unique signal that can be used to attract special Purgers.",
+      "status": "machine"
+    }
+  },
+  "40327": {
+    "1": {
+      "srcHash": "sha256:f243f00402c8adf4fd0b987bff6151b400a228d3ab15bf6bb0d60721aa0ec609",
+      "text": "Kugui's Scroll (Plum)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5515ca5bc59c536f35ba7cc0c7a76a2dc249c941e7d0932cd4ee3f1c981adfa1",
+      "text": "A silver coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40328": {
+    "1": {
+      "srcHash": "sha256:38200a3622ac8131425947a2d36a7f5ebd7ed4cb4cbe45d9f402f531cf45916d",
+      "text": "Kugui's Scroll (Bamboo)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:807e3399338ee93fe3a73ae86352a6671ea4735c499eb13f02d06fec97373a5b",
+      "text": "A gold coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40329": {
+    "1": {
+      "srcHash": "sha256:65be04fc2dd8838b15717e820d58eab0c40b23ec2a1610cff5c7713d76a39381",
+      "text": "Kugui's Scroll (Pine)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:4cffce6ac4447c61b39546816d827306af93d1733d71f331a7f7a2524e79e4d8",
+      "text": "A lilac coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40330": {
+    "1": {
+      "srcHash": "sha256:f243f00402c8adf4fd0b987bff6151b400a228d3ab15bf6bb0d60721aa0ec609",
+      "text": "Kugui's Scroll (Plum)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5515ca5bc59c536f35ba7cc0c7a76a2dc249c941e7d0932cd4ee3f1c981adfa1",
+      "text": "A silver coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40331": {
+    "1": {
+      "srcHash": "sha256:38200a3622ac8131425947a2d36a7f5ebd7ed4cb4cbe45d9f402f531cf45916d",
+      "text": "Kugui's Scroll (Bamboo)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:807e3399338ee93fe3a73ae86352a6671ea4735c499eb13f02d06fec97373a5b",
+      "text": "A gold coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40332": {
+    "1": {
+      "srcHash": "sha256:65be04fc2dd8838b15717e820d58eab0c40b23ec2a1610cff5c7713d76a39381",
+      "text": "Kugui's Scroll (Pine)",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:4cffce6ac4447c61b39546816d827306af93d1733d71f331a7f7a2524e79e4d8",
+      "text": "A lilac coin engraved with a picture scroll, apparently made in imitation of the coins collectors seek. Can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40333": {
+    "1": {
+      "srcHash": "sha256:3baab39f247f007e3fe50dbd1a186bf233aeba0873d1b034b68e93d1d7f18a93",
+      "text": "Purger Halo",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:68ce9f7a57a1a15e96ddb2d60e1cd269417845cda23940457b82c1e6253eddaf",
+      "text": "A warped halo recovered from the wreckage near Purger battles. Remarkably similar to the particles that make up dragons.\nEvent: The Purge\nExchange Item",
+      "status": "machine"
+    }
+  },
+  "40334": {
+    "1": {
+      "srcHash": "sha256:448441affa3e2ffe68bff666c7e70b3179545d7b683b67728d6eb69bb5aea1cb",
+      "text": "Purger Celestial Ring",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:14b670d2af92970dd88d385b078b5767e8c85aa501e856dbd513fe032810571c",
+      "text": "A halo in which the residual particles of a special Purger have coalesced. Highly sought after by scholars seeking to develop countermeasures.\nEvent: The Purge Side Stories\nExchange Item",
+      "status": "machine",
+      "note": "official text of 40312 with its event line set to The Purge, as the source says"
+    }
+  },
+  "40335": {
+    "1": {
+      "srcHash": "sha256:cd97d5bf6ca4b1b124f5da3f451efb49a718fd94c7a7e8f190167b6e92d7c266",
+      "text": "Purger Nexus",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:93fb9801663cae853ac67f5d7cb64b6b39006c261b00815169fd8d17f91e6076",
+      "text": "A crystal found on very rare occasions when a Purger is destroyed. Emits a unique signal that can be used to attract special Purgers.",
+      "status": "machine"
+    }
+  },
+  "40501": {
+    "1": {
+      "srcHash": "sha256:f59dd9852d6878659135462c90294fc949748c407ddf419dbf8b66058a14add6",
+      "text": "Gold Infinity Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:949c5e9cdf557375fdcd2aa21f529c5743ef160c3a0f6dcd90c2286513193704",
+      "text": "A gold denarius coin engraved with a peculiar symbol. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40502": {
+    "1": {
+      "srcHash": "sha256:8b08b841c33f96f187d5d096211a6661791d44c2b267b67f5c4970da7b1da631",
+      "text": "Lilac Infinity Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:133be6914b78e7770acba5b0baa8c3a7a8ef88f4a318588889e202b3437668fb",
+      "text": "A lilac denarius coin engraved with a peculiar symbol. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "40503": {
+    "1": {
+      "srcHash": "sha256:bd13f64cd9af6522e249911de8a13bb273a56785c0edccb9bec99b0ce6d5f04c",
+      "text": "Lilac Lilie Award",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9a79c5493d36f3987050d7bc25e14095039916dc7ed77072ae0286373f2bb52a",
+      "text": "An award from Pur Lilie for adventurers who have shown outstanding ability.\n\nArmament Augmentation Material.\n\nMaximum Capacity: 9999",
+      "status": "machine"
+    }
+  },
+  "40504": {
+    "1": {
+      "srcHash": "sha256:624da6519159da2866aa3aba06254afc1a8769efbbbfea32c17e9cd5596bd333",
+      "text": "Obsidian Lilie Award",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b53b6d1ff361b3e4c218e89bdd00a2b29459a213d44cc894a1bbdb74199bccd1",
+      "text": "An award from Pur Lilie for adventurers who have shown truly exceptional ability.\n\nArmament Augmentation Material.\n\nMaximum Capacity: 9999",
+      "status": "machine"
+    }
+  },
+  "49341": {
+    "1": {
+      "srcHash": "sha256:4194bb40fe092d8ce7a406339d9fcacf82578d43679eb4250a8de7d3f968b4b5",
+      "text": "Silver Windwrath Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:1032bb0d727b8e8717464cf635fbc3e8b0e79dd95764e4d17c7f2b4fc3bf7d31",
+      "text": "A silver denarius coin engraved with a relief of Windwrath Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49342": {
+    "1": {
+      "srcHash": "sha256:cc289cc3aa2d6f93d2729a73024c9fdc3f265ee70a3227f5149ad4f0ee4b58db",
+      "text": "Gold Windwrath Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5687718e5848c4ca43c1f6f81c2f80af2eae6a527b55c14416173a5240ae9a98",
+      "text": "A gold denarius coin engraved with a relief of Windwrath Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49343": {
+    "1": {
+      "srcHash": "sha256:351379022b830671088318c82606b724a6dee8e6df7f6cde2a8d74eb856b3da4",
+      "text": "Lilac Windwrath Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9f602062a475d27c292766291bca298d9246b68bc3024ea69dcc41fc3a6a6180",
+      "text": "A lilac denarius coin engraved with a relief of Windwrath Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49344": {
+    "1": {
+      "srcHash": "sha256:b4abd5220ae8aeee2a6c09390b518f67299c0761f626c55ebf85ecc1db4e3eea",
+      "text": "Silver Maelstrom Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bb84adde306935f44c96a21222562c4491cba16870ee676dd13bad4e899acc79",
+      "text": "A silver denarius coin engraved with a relief of Maelstrom Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49345": {
+    "1": {
+      "srcHash": "sha256:74d3b3e127e190c92101f1d5d97fa8e01ce7a99a0767c81b4cb2fe2a4fa82c5b",
+      "text": "Gold Maelstrom Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:97e145d2258286db371c19f53ecf23eaa3b4d16b603cf46109b311f8e427af18",
+      "text": "A gold denarius coin engraved with a relief of Maelstrom Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49346": {
+    "1": {
+      "srcHash": "sha256:2c8d2e8067cab97f38e0a73513293dad0a0f8714efe76c5ab9cece2f1c63e31e",
+      "text": "Lilac Maelstrom Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:90667e897bd629cb6be1054c099333ee8d783e2a5a893ab77e28831073a0601b",
+      "text": "A lilac denarius coin engraved with a relief of Maelstrom Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49353": {
+    "1": {
+      "srcHash": "sha256:179ccb33d384c819aa8eaba9a9020166baf6cf5b0e7acdb5ca6c457590d928a5",
+      "text": "Silver Radiant Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:70460e5635e311515d8baef2c012c9cda3d39cccb8d9801bb6fb7d66f4e3c96d",
+      "text": "A silver denarius coin engraved with a relief of Radiant Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine",
+      "note": "relief names the event, as the official Inferno Steambot coins do"
+    }
+  },
+  "49354": {
+    "1": {
+      "srcHash": "sha256:ed1ccbcf55c8de0aa5f94951ad571b858970eebe94e20e8bb520306749015ba3",
+      "text": "Gold Radiant Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:bf7d2d30566aa6a7224471fd074f62b7b56bd7852c42452e353cc15f8d35e98d",
+      "text": "A gold denarius coin engraved with a relief of Radiant Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "49355": {
+    "1": {
+      "srcHash": "sha256:cd45cf9cb4ddbd35edce948eac85a57ca955afd328898d0e3033c7d2fdcc13b2",
+      "text": "Lilac Radiant Steambot Denarius",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:433e84dc1be45adac93c5e854558a8661452a9ee22d0f5a80027923afb6ce071",
+      "text": "A lilac denarius coin engraved with a relief of Radiant Steambot. Popular with collectors and can be traded for items in the shop.",
+      "status": "machine"
+    }
+  },
+  "70005": {
+    "1": {
+      "srcHash": "sha256:10167a88fbc0d14e0d736b0a8633a19434f762474cff4077fc01dfe52e2ee9bb",
+      "text": "Gauntlet Chips",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0262218011703d038f73284ddcaf951b94eb0ec4a00ea89fc6c0a9fea7b34005",
+      "text": "A virtual currency obtained through the Grand Gauntlet, a VR game. Currency earned is based on the amount of points obtained during a playthrough.",
+      "status": "machine"
+    }
+  },
+  "100012": {
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "999009": {
+    "1": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:c6ae03311956a5627631708e33ed56d48ea252365e957797063c7d69e30b1517",
+      "text": "Can be traded for any 1 eligible unit in the Scouting Ticket Gift Promo",
+      "status": "machine"
+    }
+  },
+  "4090050": {
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5010075": {
+    "1": {
+      "srcHash": "sha256:77c9712843fb2d72171ff8e017c6cc87d461425c69d09347833db69f58990c0f",
+      "text": "Hanifridge Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5020042": {
+    "1": {
+      "srcHash": "sha256:e3c73979a4093456ddbe7498dcb9b98c6eb38bd386be999ef4db99224205e65f",
+      "text": "Hal Bowman Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5040037": {
+    "1": {
+      "srcHash": "sha256:367e4b41b68d79a24cea356ba3357ebf01efa68b514bbb32d35dc2331518b884",
+      "text": "Hanirocket Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5050039": {
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5070043": {
+    "1": {
+      "srcHash": "sha256:80c124d8ef335b901c81afd96c75696bad691a24fbf62d10b5cc46c4d1eafa7d",
+      "text": "Hanimitts Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5090047": {
+    "1": {
+      "srcHash": "sha256:107de135b424f9cd0cae5d42edfddd7d92141c28118725f76dc292bc5e426ff2",
+      "text": "Aroland Nemo Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5090049": {
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  },
+  "5100020": {
+    "1": {
+      "srcHash": "sha256:d59745ce7c36013b90afa463cd787da7e4222d6d6e69201dad701e5eb7e37e52",
+      "text": "Hari Salvor Core",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:0e2cf0b3d3c9ba68448a12a1a20d5580e47928476ee907cf0ed1ebb07998610b",
+      "text": "Ability Core",
+      "status": "machine"
+    }
+  }
+}

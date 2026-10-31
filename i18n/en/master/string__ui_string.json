@@ -1,0 +1,223 @@
+{
+  "ability_description_delay": {
+    "2": {
+      "srcHash": "sha256:a0613e2d70449000a8f0943ab33434a004f97a3bc0af48c6731f0a14b49c6df6",
+      "text": "::if (delay > 0)::after ::delay::&nbsp;second(s), ::end::",
+      "status": "machine"
+    }
+  },
+  "ability_description_instant_content_delete_unique_condition": {
+    "2": {
+      "srcHash": "sha256:71f0d9151825f0bd79efe6903fd8a517913b77977f9b4d2da0c6b94b1853d2f2",
+      "text": "remove ::if !withoutTarget::::target::'s ::end::[::name::]",
+      "status": "machine"
+    }
+  },
+  "equipment_select_now_equipping_by_other_dialog_description": {
+    "2": {
+      "srcHash": "sha256:b6e406f9eaac5c4cbf1f8860a2e90eafc70ed5567e6f00874fd92481070b2255",
+      "text": "Unequip it from that unit and equip it here?",
+      "status": "machine",
+      "note": "same broken placeholder, removed (see the header row)"
+    }
+  },
+  "equipment_select_now_equipping_by_other_dialog_header": {
+    "2": {
+      "srcHash": "sha256:ecc7bc84ee32664944cb97bb25fc8d2a16abb34e91c51d8a1535f1cb65751350",
+      "text": "This armament is currently equipped by another unit.",
+      "status": "machine",
+      "note": "source placeholder (named \"variable name undecided\" in kanji, with one colon missing) is broken and the key is not referenced in the 0.0.81 SWF, so no value is passed; rewritten without a placeholder (the sibling equipment_select_party_equipped_confirm_message uses ::equippingCharacter::)"
+    }
+  },
+  "help_label_equipment_enhancement_score_attack_event": {
+    "2": {
+      "srcHash": "sha256:86fe5fff048415a287807b1d6a0cff7982191dc0ccb0a63216cb6513ecd60d0b",
+      "text": "Augment Award Armament",
+      "status": "machine"
+    }
+  },
+  "help_label_event_advent_steam_robot_light": {
+    "2": {
+      "srcHash": "sha256:b6fa8651f134f1652bb661ef5821a94ebc99c59d3a56c879f4b4c18dd3fbadc2",
+      "text": "Radiant Steambot",
+      "status": "machine",
+      "note": "source column held Korean (copied from the ko column), not Japanese"
+    }
+  },
+  "help_label_event_advent_steam_robot_water": {
+    "2": {
+      "srcHash": "sha256:a57732b4dc87c31817511d1333866c42ff1c4c5495b40b88b37b9e8590229eda",
+      "text": "Maelstrom Steambot",
+      "status": "machine",
+      "note": "source column held Korean (copied from the ko column), not Japanese"
+    }
+  },
+  "help_label_event_advent_steam_robot_wind": {
+    "2": {
+      "srcHash": "sha256:d677ecc3dc14f865dcd59b66c9da094e86947a4d25d0521f2513f5e2342d260f",
+      "text": "Windwrath Steambot",
+      "status": "machine",
+      "note": "source column held Korean (copied from the ko column), not Japanese"
+    }
+  },
+  "help_label_event_advent_u_collabo": {
+    "2": {
+      "srcHash": "sha256:4f6cf9512a65946419600317ec041f9b7fa068400dde32430ce1e254dfcca56e",
+      "text": "The Descension: Shifting Tracks, Distant Worlds",
+      "status": "machine",
+      "note": "help labels prefix 'The Descension: ' as the official ones do"
+    }
+  },
+  "help_label_event_score_attack_event": {
+    "2": {
+      "srcHash": "sha256:f945cf6e59d5da2ab50cc8fd0572fc4b905dffa552d76eb9cd619998727989ba",
+      "text": "Infinite Exhibition",
+      "status": "machine"
+    }
+  },
+  "score_attack_border_reward_dialog_title": {
+    "2": {
+      "srcHash": "sha256:87a6f2c803eabc8608f945b9613b601026b2aea35f7b617ecb3be4b6f1b00b45",
+      "text": "Target Score Rewards",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_get_reward_list_dialog_title": {
+    "2": {
+      "srcHash": "sha256:d193e9d2b723e7603a41beb58fe1d35770c4cc7fc0d7810c00709948dd28ac35",
+      "text": "Rewards",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_history_no_data": {
+    "2": {
+      "srcHash": "sha256:61255e450250753d9b1a550588329690ec80c21aa648975c3ac049a39ea845dc",
+      "text": "No battle history found.",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_play_caution": {
+    "2": {
+      "srcHash": "sha256:3a9298d149ddcd1e16f1b9f6bbaf547cd3fb8af217be21adcc2dab35ef740c02",
+      "text": "You can only use <font color=\"#ea354c\">::element:: element units</font> \nfor this quest. \nPlease select an appropriate party.",
+      "status": "machine",
+      "note": "official hard_multi_event_play_caution text"
+    }
+  },
+  "score_attack_event_quest_select_next_event_date": {
+    "2": {
+      "srcHash": "sha256:4ecde41bfc4066ad7060fac6062dab375b9ee3609c2c4221f26291f76b31b3ae",
+      "text": "Next rotation in <font color='#ffcc1c'>::time::</font>::unit::",
+      "status": "machine",
+      "note": "::unit:: follows the number directly; the unit rows carry their own leading space"
+    }
+  },
+  "score_attack_event_remaining_time_label": {
+    "2": {
+      "srcHash": "sha256:1050ba0aec1ea10f008f5303ee07ca5cb1dc8cc125b2db714ef0fe98d8c4412c",
+      "text": "Next rotation: ::time::",
+      "status": "machine",
+      "note": "::time:: is filled with the generic remaining-time text (\"10 dy. left\")"
+    }
+  },
+  "score_attack_event_remaining_time_unit_day": {
+    "2": {
+      "srcHash": "sha256:85217f7aff77841438439fb3e7cf37bb3062fb026453c7692247d3a5641a0115",
+      "text": " day",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_remaining_time_unit_days": {
+    "2": {
+      "srcHash": "sha256:85217f7aff77841438439fb3e7cf37bb3062fb026453c7692247d3a5641a0115",
+      "text": " days",
+      "status": "machine",
+      "note": "leading space on purpose (follows ::time:: directly)"
+    }
+  },
+  "score_attack_event_remaining_time_unit_days_or_more": {
+    "2": {
+      "srcHash": "sha256:9510144adf279306c89df5702b862f180aaa0852c3eff9b0cd50908b80d5e4eb",
+      "text": "+ days",
+      "status": "machine",
+      "note": "follows the number directly: \"10+ days\""
+    }
+  },
+  "score_attack_event_remaining_time_unit_hour": {
+    "2": {
+      "srcHash": "sha256:bf6267da6077b6bedde993a6ec599e9d5474eef12284b6823ef8dd0facc08f40",
+      "text": " hour",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_remaining_time_unit_hours": {
+    "2": {
+      "srcHash": "sha256:bf6267da6077b6bedde993a6ec599e9d5474eef12284b6823ef8dd0facc08f40",
+      "text": " hours",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_remaining_time_unit_minute": {
+    "2": {
+      "srcHash": "sha256:b6a993c256ef577abb04b0c353affde222af27a0e4254d66bb697a154cfec553",
+      "text": " minute",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_remaining_time_unit_minutes": {
+    "2": {
+      "srcHash": "sha256:b6a993c256ef577abb04b0c353affde222af27a0e4254d66bb697a154cfec553",
+      "text": " minutes",
+      "status": "machine"
+    }
+  },
+  "score_attack_event_update_high_score_dialog_title": {
+    "2": {
+      "srcHash": "sha256:1f08060d8dbbd11425d908f444cded62d55b9a801ed1d82da72e0edb7b0707a7",
+      "text": "::name:: - New High Score",
+      "status": "machine"
+    }
+  },
+  "score_attack_list_score_border": {
+    "2": {
+      "srcHash": "sha256:f7c7e61fc1b9aeaa335848acb68c352c62573a0a2c3d22894ae8181abdb2181b",
+      "text": "Target Score ::score::",
+      "status": "machine"
+    }
+  },
+  "score_attack_zone_objective": {
+    "2": {
+      "srcHash": "sha256:1c670de8fc271618285a7779526d9b1a50eba17524943a9ab212b6fb34d495d4",
+      "text": "Smash your <font color=\"#FFCD1B\">high score</font>!",
+      "status": "machine"
+    }
+  },
+  "system_lock_hard_multi_blue": {
+    "2": {
+      "srcHash": "sha256:371881a8bcc52f8a76c2ea09731d58c898ffb874b79c5b908076d2df5a9f2041",
+      "text": "The Reckoning unlocks after completing the following:\n-Being player rank ::need_player_rank:: or higher\n-Clearing the Kaleidoscope: Necropolis -The Beast of the Abyss\n-Clearing The Descension: Maelstrom Steambot - Steambot Vernus Godly",
+      "status": "machine"
+    }
+  },
+  "system_lock_hard_multi_green": {
+    "2": {
+      "srcHash": "sha256:74943ba52ccb6e53bfe5308cbe1998193ff1b575eb7e6f9471a66083b2a3f65b",
+      "text": "The Reckoning unlocks after completing the following:\n-Being player rank ::need_player_rank:: or higher\n-Clearing the Kaleidoscope: Necropolis -The Beast of the Abyss\n-Clearing The Descension: Windwrath Steambot - Steambot Clarg Godly",
+      "status": "machine"
+    }
+  },
+  "system_lock_hard_multi_light": {
+    "2": {
+      "srcHash": "sha256:66b40d2d48dadaac216749921ec1455e040b18ea54e27e22ead17d3819bcb2e6",
+      "text": "The Reckoning unlocks after completing the following:\n-Being player rank ::need_player_rank:: or higher\n-Clearing the Kaleidoscope: Necropolis -The Beast of the Abyss\n-Clearing The Descension: Radiant Steambot - Steambot Aizan Godly",
+      "status": "machine"
+    }
+  },
+  "system_lock_score_attack": {
+    "2": {
+      "srcHash": "sha256:a6f4e4b8abec82ecd9380134dfd6146ada9e2095dedba0d1bf12a03acdcaabf3",
+      "text": "Infinite Exhibition unlocks\nafter reaching player rank\n::need_player_rank::.",
+      "status": "machine"
+    }
+  }
+}

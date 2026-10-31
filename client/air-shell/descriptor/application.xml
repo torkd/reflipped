@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Template filled in by build.py. Mirrors the original descriptor's window settings and
+     extension list, without the Kakao/Google/Firebase manifest entries (none of that code ships). -->
+<application xmlns="http://ns.adobe.com/air/application/${NS}">
+  <id>${APP_ID}</id>
+  <versionNumber>${VERSION}</versionNumber>
+  <filename>worldflipper</filename>
+  <name>${NAME}</name>
+  <icon>
+    <image36x36>icon36.png</image36x36>
+    <image48x48>icon48.png</image48x48>
+    <image72x72>icon72.png</image72x72>
+    <image96x96>icon96.png</image96x96>
+    <image144x144>icon144.png</image144x144>
+    <image192x192>icon192.png</image192x192>
+  </icon>
+  <extensions>
+${EXTENSIONS}
+  </extensions>
+  <initialWindow>
+    <content>worldflipper_android_release.swf</content>
+    <visible>true</visible>
+    <aspectRatio>portrait</aspectRatio>
+    <autoOrients>true</autoOrients>
+    <fullScreen>true</fullScreen>
+    <renderMode>direct</renderMode>
+    <depthAndStencil>true</depthAndStencil>
+  </initialWindow>
+  <supportedLanguages>ko en fr de es th</supportedLanguages>
+  <android>
+    <manifestAdditions><![CDATA[
+<manifest android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="${TARGET_SDK}"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <application android:allowBackup="false" android:usesCleartextTraffic="true" android:resizeableActivity="true">
+    <meta-data android:name="android.max_aspect" android:value="2.4"/>
+    <meta-data android:name="reflipped.server" android:value="${SERVER}"/>
+    <meta-data android:name="reflipped.cdn" android:value="${CDN}"/>
+    <activity android:excludeFromRecents="false" android:resizeableActivity="false">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <!-- co-op room links (wdfp://social-room?k=<token>) and profile links (wdfp://profile?id=<viewer>), as in the
+           original APK: AIR hands them to the game as an InvokeEvent with reason "openUrl" -->
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="wdfp"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+    ]]></manifestAdditions>
+  </android>
+</application>

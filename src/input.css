@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url(/public/font/Inter-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/public/font/Inter-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/public/font/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/public/font/Inter-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/public/font/Inter-Black.ttf);
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* colour tokens: Tokyo Night (dark) with Dracula accents, Tokyo Night Day (light) */
+:root {
+  /* light */
+  --md-sys-color-background-light: #e1e2e7;
+  --md-sys-color-on-background-light: #343b58;
+  --md-sys-color-surface-light: #e1e2e7;
+  --md-sys-color-surface-dim-light: #d0d5e3;
+  --md-sys-color-surface-bright-light: #ffffff;
+  --md-sys-color-surface-container-lowest-light: #ffffff;
+  --md-sys-color-surface-container-low-light: #e9e9ed;
+  --md-sys-color-surface-container-light: #e6e7ed;
+  --md-sys-color-surface-container-high-light: #dcdee8;
+  --md-sys-color-surface-container-highest-light: #d0d5e3;
+  --md-sys-color-on-surface-light: #343b58;
+  --md-sys-color-surface-variant-light: #d0d5e3;
+  --md-sys-color-on-surface-variant-light: #6172b0;
+  --md-sys-color-inverse-surface-light: #343b58;
+  --md-sys-color-inverse-on-surface-light: #e1e2e7;
+  --md-sys-color-outline-light: #848cb5;
+  --md-sys-color-outline-variant-light: #a8aecb;
+  --md-sys-color-shadow-light: #000000;
+  --md-sys-color-scrim-light: #000000;
+  --md-sys-color-surface-tint-light: #9854f1;
+  --md-sys-color-primary-light: #9854f1;
+  --md-sys-color-on-primary-light: #ffffff;
+  --md-sys-color-primary-container-light: #e4d4ff;
+  --md-sys-color-on-primary-container-light: #2e1065;
+  --md-sys-color-inverse-primary-light: #bd93f9;
+  --md-sys-color-secondary-light: #d20065;
+  --md-sys-color-on-secondary-light: #ffffff;
+  --md-sys-color-secondary-container-light: #ffd1e6;
+  --md-sys-color-on-secondary-container-light: #3d0020;
+  --md-sys-color-tertiary-light: #2e7de9;
+  --md-sys-color-on-tertiary-light: #ffffff;
+  --md-sys-color-tertiary-container-light: #d6e4ff;
+  --md-sys-color-on-tertiary-container-light: #0b2a5c;
+  --md-sys-color-error-light: #f52a65;
+  --md-sys-color-on-error-light: #ffffff;
+  --md-sys-color-error-container-light: #ffd6e0;
+  --md-sys-color-on-error-container-light: #4a0016;
+  --md-sys-color-primary-fixed-light: #897300;
+  --md-sys-color-primary-fixed-dim-light: #6d5b00;
+  --md-sys-color-on-primary-fixed-light: #ffffff;
+  --md-sys-color-on-primary-fixed-variant-light: #ffffff;
+  --md-sys-color-secondary-fixed-light: #7b7646;
+  --md-sys-color-secondary-fixed-dim-light: #615d30;
+  --md-sys-color-on-secondary-fixed-light: #ffffff;
+  --md-sys-color-on-secondary-fixed-variant-light: #ffffff;
+  --md-sys-color-tertiary-fixed-light: #73793a;
+  --md-sys-color-tertiary-fixed-dim-light: #5a6024;
+  --md-sys-color-on-tertiary-fixed-light: #ffffff;
+  --md-sys-color-on-tertiary-fixed-variant-light: #ffffff;
+
+  /* dark */
+  --md-sys-color-background-dark: #1a1b26;
+  --md-sys-color-on-background-dark: #c0caf5;
+  --md-sys-color-surface-dark: #1a1b26;
+  --md-sys-color-surface-dim-dark: #16161e;
+  --md-sys-color-surface-bright-dark: #292e42;
+  --md-sys-color-surface-container-lowest-dark: #16161e;
+  --md-sys-color-surface-container-low-dark: #1f2335;
+  --md-sys-color-surface-container-dark: #24283b;
+  --md-sys-color-surface-container-high-dark: #292e42;
+  --md-sys-color-surface-container-highest-dark: #2f3549;
+  --md-sys-color-on-surface-dark: #c0caf5;
+  --md-sys-color-surface-variant-dark: #2f3549;
+  --md-sys-color-on-surface-variant-dark: #a9b1d6;
+  --md-sys-color-inverse-surface-dark: #c0caf5;
+  --md-sys-color-inverse-on-surface-dark: #1a1b26;
+  --md-sys-color-outline-dark: #565f89;
+  --md-sys-color-outline-variant-dark: #3b4261;
+  --md-sys-color-shadow-dark: #000000;
+  --md-sys-color-scrim-dark: #000000;
+  --md-sys-color-surface-tint-dark: #bd93f9;
+  --md-sys-color-primary-dark: #bd93f9;
+  --md-sys-color-on-primary-dark: #1a1b26;
+  --md-sys-color-primary-container-dark: #44475a;
+  --md-sys-color-on-primary-container-dark: #f8f8f2;
+  --md-sys-color-inverse-primary-dark: #7c4dcc;
+  --md-sys-color-secondary-dark: #ff79c6;
+  --md-sys-color-on-secondary-dark: #1a1b26;
+  --md-sys-color-secondary-container-dark: #3d2a4d;
+  --md-sys-color-on-secondary-container-dark: #ffd1ec;
+  --md-sys-color-tertiary-dark: #7aa2f7;
+  --md-sys-color-on-tertiary-dark: #1a1b26;
+  --md-sys-color-tertiary-container-dark: #2a3a66;
+  --md-sys-color-on-tertiary-container-dark: #d6e2ff;
+  --md-sys-color-error-dark: #ff5555;
+  --md-sys-color-on-error-dark: #1a1b26;
+  --md-sys-color-error-container-dark: #5c1f2b;
+  --md-sys-color-on-error-container-dark: #ffd6db;
+  --md-sys-color-primary-fixed-dark: #ffe16d;
+  --md-sys-color-primary-fixed-dim-dark: #e9c400;
+  --md-sys-color-on-primary-fixed-dark: #221b00;
+  --md-sys-color-on-primary-fixed-variant-dark: #4d3f00;
+  --md-sys-color-secondary-fixed-dark: #ebe4aa;
+  --md-sys-color-secondary-fixed-dim-dark: #cec890;
+  --md-sys-color-on-secondary-fixed-dark: #1f1c00;
+  --md-sys-color-on-secondary-fixed-variant-dark: #454116;
+  --md-sys-color-tertiary-fixed-dark: #e1e89d;
+  --md-sys-color-tertiary-fixed-dim-dark: #c5cc84;
+  --md-sys-color-on-tertiary-fixed-dark: #1a1e00;
+  --md-sys-color-on-tertiary-fixed-variant-dark: #3e4409;
+}
+
+/* load light theme */
+:root {
+  --md-sys-color-primary: var(--md-sys-color-primary-light);
+  --md-sys-color-primary-rgb: var(--md-sys-color-primary-light-rgb);
+  --md-sys-color-on-primary: var(--md-sys-color-on-primary-light);
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-light);
+  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-light);
+  --md-sys-color-secondary: var(--md-sys-color-secondary-light);
+  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-light);
+  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-light);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-light);
+  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-light);
+  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-light);
+  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+  --md-sys-color-error: var(--md-sys-color-error-light);
+  --md-sys-color-on-error: var(--md-sys-color-on-error-light);
+  --md-sys-color-error-container: var(--md-sys-color-error-container-light);
+  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-light);
+  --md-sys-color-outline: var(--md-sys-color-outline-light);
+  --md-sys-color-background: var(--md-sys-color-background-light);
+  --md-sys-color-background-rgb: var(--md-sys-color-background-light-rgb);
+  --md-sys-color-on-background: var(--md-sys-color-on-background-light);
+  --md-sys-color-surface: var(--md-sys-color-surface-light);
+  --md-sys-color-surface-container-lowest: var(--md-sys-color-surface-container-lowest-light);
+  --md-sys-color-surface-container-low: var(--md-sys-color-surface-container-low-light);
+  --md-sys-color-surface-container: var(--md-sys-color-surface-container-light);
+  --md-sys-color-surface-container-high: var(--md-sys-color-surface-container-high-light);
+  --md-sys-color-surface-container-highest: var(--md-sys-color-surface-container-highest-light);
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-light);
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-light);
+  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-light);
+  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-light);
+  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-light);
+  --md-sys-color-shadow: var(--md-sys-color-shadow-light);
+  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-light);
+  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light);
+  --md-sys-color-scrim: var(--md-sys-color-scrim-light);
+}
+
+/* override light theme with dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: var(--md-sys-color-primary-dark);
+    --md-sys-color-primary-rgb: var(--md-sys-color-primary-dark-rgb);
+    --md-sys-color-on-primary: var(--md-sys-color-on-primary-dark);
+    --md-sys-color-primary-container: var(--md-sys-color-primary-container-dark);
+    --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-dark);
+    --md-sys-color-secondary: var(--md-sys-color-secondary-dark);
+    --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-dark);
+    --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-dark);
+    --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+    --md-sys-color-tertiary: var(--md-sys-color-tertiary-dark);
+    --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-dark);
+    --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-dark);
+    --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+    --md-sys-color-error: var(--md-sys-color-error-dark);
+    --md-sys-color-on-error: var(--md-sys-color-on-error-dark);
+    --md-sys-color-error-container: var(--md-sys-color-error-container-dark);
+    --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-dark);
+    --md-sys-color-outline: var(--md-sys-color-outline-dark);
+    --md-sys-color-background: var(--md-sys-color-background-dark);
+    --md-sys-color-background-rgb: var(--md-sys-color-background-dark-rgb);
+    --md-sys-color-on-background: var(--md-sys-color-on-background-dark);
+    --md-sys-color-surface: var(--md-sys-color-surface-dark);
+    --md-sys-color-surface-container-lowest: var(--md-sys-color-surface-container-lowest-dark);
+    --md-sys-color-surface-container-low: var(--md-sys-color-surface-container-low-dark);
+    --md-sys-color-surface-container: var(--md-sys-color-surface-container-dark);
+    --md-sys-color-surface-container-high: var(--md-sys-color-surface-container-high-dark);
+    --md-sys-color-surface-container-highest: var(--md-sys-color-surface-container-highest-dark);
+    --md-sys-color-on-surface: var(--md-sys-color-on-surface-dark);
+    --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-dark);
+    --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+    --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-dark);
+    --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-dark);
+    --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-dark);
+    --md-sys-color-shadow: var(--md-sys-color-shadow-dark);
+    --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-dark);
+    --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-dark);
+    --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
+  }
+}
+/* admin panel components (Reflipped) */
+@layer components {
+  .app { @apply min-h-screen bg-background text-on-surface md:grid md:grid-cols-[260px_1fr]; }
+  .sidebar { @apply flex md:flex-col items-center md:items-stretch gap-1 md:gap-6 px-3 py-3 md:p-6 md:h-screen md:sticky md:top-0 bg-surface-container-low border-b md:border-b-0 md:border-r border-outline-variant overflow-x-auto; scrollbar-width: none; }
+  .brand { @apply flex items-center gap-3 mr-2 md:mr-0 shrink-0; }
+  .brand-name { @apply hidden md:inline text-2xl font-black tracking-tight text-on-background; }
+  .nav { @apply flex md:flex-col gap-1; }
+  .nav-link { @apply flex items-center gap-2 md:gap-3 px-2.5 py-2 md:px-4 md:py-2.5 rounded-xl text-on-surface-variant font-medium hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap; }
+  .nav-link svg { @apply hidden md:block w-5 h-5 fill-current shrink-0; }
+  .nav-link-active { @apply text-primary hover:text-primary; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  .nav-link-active:hover { background-color: color-mix(in srgb, var(--md-sys-color-primary) 20%, transparent); }
+  .main { @apply w-full max-w-5xl mx-auto px-4 py-6 md:px-10 md:py-10 flex flex-col gap-6; }
+  .page-header { @apply flex flex-col gap-1; }
+  .page-title { @apply text-3xl md:text-4xl font-bold text-on-background tracking-tight; }
+  .page-subtitle { @apply text-on-surface-variant; }
+  .card { @apply flex flex-col gap-4 p-5 md:p-6 rounded-2xl bg-surface-container border shadow-sm; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
+  .card-danger { border-color: color-mix(in srgb, var(--md-sys-color-error) 50%, transparent); }
+  .card-header { @apply flex items-start justify-between gap-4 flex-wrap; }
+  .card-title { @apply text-lg font-semibold text-on-background; }
+  .card-text { @apply text-sm text-on-surface-variant leading-relaxed max-w-prose; }
+  .grid-cards { @apply grid gap-6 md:grid-cols-2; }
+  .btn { @apply inline-flex items-center justify-center gap-2 h-10 px-5 rounded-xl text-sm font-semibold transition-all disabled:opacity-40 disabled:pointer-events-none cursor-pointer; }
+  .btn-primary { @apply btn bg-primary text-on-primary hover:brightness-110 active:brightness-95; }
+  .btn-outline { @apply btn border border-outline-variant text-on-surface hover:bg-surface-container-high; }
+  .btn-danger { @apply btn text-error border hover:bg-error hover:text-on-error; background-color: color-mix(in srgb, var(--md-sys-color-error) 15%, transparent); border-color: color-mix(in srgb, var(--md-sys-color-error) 40%, transparent); }
+  .input { @apply h-10 px-3 rounded-xl bg-surface-container-high border border-outline-variant text-on-surface focus:outline-none focus:ring-2 focus:ring-primary; }
+  .file-input { @apply text-sm text-on-surface-variant file:mr-3 file:h-9 file:px-4 file:rounded-lg file:border-0 file:bg-surface-container-highest file:text-on-surface file:font-semibold hover:file:bg-outline-variant; }
+  .badge { @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold; }
+  .badge-on { @apply badge text-tertiary; background-color: color-mix(in srgb, var(--md-sys-color-tertiary) 15%, transparent); }
+  .badge-off { @apply badge bg-surface-container-highest text-on-surface-variant; }
+  .stat { @apply flex flex-col gap-1 p-4 rounded-xl bg-surface-container-high; }
+  .stat-label { @apply text-xs uppercase tracking-wide text-on-surface-variant; }
+  .stat-value { @apply text-xl font-bold text-on-background tabular-nums; }
+  .notice { @apply px-4 py-3 rounded-xl text-sm; }
+  .notice-info { @apply notice text-primary border; background-color: color-mix(in srgb, var(--md-sys-color-primary) 10%, transparent); border-color: color-mix(in srgb, var(--md-sys-color-primary) 30%, transparent); }
+  .notice-error { @apply notice text-error border; background-color: color-mix(in srgb, var(--md-sys-color-error) 10%, transparent); border-color: color-mix(in srgb, var(--md-sys-color-error) 30%, transparent); }
+  .list-row { @apply flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-surface-container-high transition-colors; }
+  .avatar { @apply flex items-center justify-center w-11 h-11 rounded-xl text-primary font-bold text-lg shrink-0; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  /* Settings page: sections (heading, presets, cards), a card per group, a row per setting */
+  .settings-section { @apply flex flex-col gap-4 pt-2; }
+  .settings-section-header { @apply flex flex-col gap-1; }
+  .settings-section-title { @apply text-xl md:text-2xl font-bold text-on-background tracking-tight; }
+  .preset-card { @apply gap-3; }
+  .preset-card-active { border-color: color-mix(in srgb, var(--md-sys-color-primary) 60%, transparent); }
+  /* tags in a chip line: chip geometry, so showing one never changes the line's height */
+  .chip-custom { @apply chip font-semibold text-tertiary; background-color: color-mix(in srgb, var(--md-sys-color-tertiary) 15%, transparent); }
+  .chip-unsaved { @apply chip font-semibold text-primary; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  .unit-input-edited { @apply border-primary; }
+  .settings-group { @apply card gap-0 p-0 overflow-hidden; }
+  .settings-group-header { @apply flex flex-col gap-2 px-5 py-4 md:px-6 md:py-5 border-b; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
+  .settings-group-title { @apply flex items-center gap-3; }
+  .settings-group-icon { @apply flex items-center justify-center w-10 h-10 rounded-xl text-primary shrink-0; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  .settings-group-icon svg { @apply w-5 h-5 fill-current; }
+  .setting-row { @apply flex flex-col md:flex-row md:items-center gap-3 md:gap-6 px-5 py-4 md:px-6 border-b last:border-b-0 transition-colors hover:bg-surface-container-high; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 40%, transparent); }
+  .setting-text { @apply flex flex-col gap-1 flex-1 min-w-0; }
+  .setting-label { @apply font-medium text-on-background; }
+  .setting-meta { @apply flex flex-wrap items-center gap-2 pt-1; }
+  .chip { @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs tabular-nums bg-surface-container-highest text-on-surface-variant; }
+  .unit-input { @apply inline-flex items-center h-11 shrink-0 self-start md:self-center rounded-xl bg-surface-container-high border border-outline-variant overflow-hidden focus-within:ring-2 focus-within:ring-primary; }
+  .unit-value { @apply flex items-baseline justify-center gap-1 w-24 h-full; }
+  .unit-input input { @apply w-[3.5ch] h-full bg-transparent text-right text-lg font-semibold tabular-nums text-on-background focus:outline-none; appearance: textfield; -moz-appearance: textfield; }
+  .unit-input input::-webkit-outer-spin-button, .unit-input input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .unit-input .unit { @apply text-sm text-on-surface-variant; }
+  .stepper-btn { @apply flex items-center justify-center w-10 h-full text-lg font-semibold text-on-surface-variant transition-colors cursor-pointer select-none hover:text-primary hover:bg-surface-container-highest; }
+  .stepper-btn:first-child { @apply border-r border-outline-variant; }
+  .stepper-btn:last-child { @apply border-l border-outline-variant; }
+  .action-bar { @apply sticky bottom-4 flex flex-wrap items-center justify-end gap-3 px-5 py-3 rounded-2xl bg-surface-container border shadow-lg; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
+}

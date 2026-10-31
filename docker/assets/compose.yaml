@@ -1,0 +1,60 @@
+# CDN asset delivery only: the nginx edge serving the asset archives from disk, no Reflipped.
+# Pair it with the api flavour (or any Reflipped) on another host.
+#
+#   cd docker/assets && cp .env.example .env  # adjust paths, ports, TLS
+#   docker compose up -d
+#   curl http://<host>:8080/patch/Live/2.0.0/en/entities/2.1.121-android_medium.csv -I
+#
+# Then build the AIR shell with --cdn https://<PUBLIC_HOST>/patch/Live/2.0.0 (and --server for the API).
+# See docker/README.md.
+
+name: reflipped-assets
+
+services:
+  edge:
+    extends:
+      file: ../common/services.yaml
+      service: edge
+    depends_on:
+      # Whichever certificate service TLS enables; the others are skipped.
+      letsencrypt-init:
+        condition: service_completed_successfully
+        required: false
+      selfsigned-init:
+        condition: service_completed_successfully
+        required: false
+      custom-cert:
+        condition: service_completed_successfully
+        required: false
+    ports:
+      - "${EDGE_BIND:-0.0.0.0}:${HTTP_PORT:-8080}:8080"
+      - "${EDGE_BIND:-0.0.0.0}:${HTTPS_PORT:-8443}:8443"
+    volumes:
+      # The game assets, read-only. Mounted under the URL path so nginx can use `root` (no alias).
+      - ${CDN_DIR:-../../.cdn}:/srv/www/patch/Live/2.0.0:ro
+      # Translation overlays, a copy of the API host's CDN_OVERLAY_DIR (served by assets.inc).
+      - ${CDN_OVERLAY_DIR:-../../.cdn-overlay}:/srv/overlay:ro
+      - ../common/nginx/locations/assets.inc.template:/etc/nginx/templates/locations/assets.inc.template:ro
+      - ../common/nginx/locations/no-api.inc.template:/etc/nginx/templates/locations/no-api.inc.template:ro
+
+  letsencrypt-init:
+    extends: { file: ../common/services.yaml, service: letsencrypt-init }
+    profiles: ["letsencrypt"]
+  letsencrypt-renew:
+    extends: { file: ../common/services.yaml, service: letsencrypt-renew }
+    profiles: ["letsencrypt"]
+    depends_on:
+      letsencrypt-init:
+        condition: service_completed_successfully
+  selfsigned-init:
+    extends: { file: ../common/services.yaml, service: selfsigned-init }
+    profiles: ["selfsigned"]
+  custom-cert:
+    extends: { file: ../common/services.yaml, service: custom-cert }
+    profiles: ["custom"]
+
+volumes:
+  certs:
+    name: ${CERT_VOLUME:-reflipped-certs}
+  acme-webroot:
+    name: ${CERT_VOLUME:-reflipped-certs}-acme

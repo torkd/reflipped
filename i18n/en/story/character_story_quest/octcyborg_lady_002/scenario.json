@@ -1,0 +1,415 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:ee762e2c29ebd28128343f6dad774f9a2bbece63e5cf1400951cbd753c866c9d",
+      "text": "Ah, delicious. Your cooking is\nwonderful.",
+      "status": "machine"
+    }
+  },
+  "7": {
+    "5": {
+      "srcHash": "sha256:0b39565013e423f6e5f1c7a3cdfd277c15d51d723e674945da29a5fcca5aecae",
+      "text": "The sweetness melting deep inside\nmy body... It's quite addictive.",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:56edd691582a430429a17061a8d3f1cdf76678b12c3c6f989f607b732e6b8ec3",
+      "text": "Hmm. I feel like I'm getting\npraised in a very unusual way...!",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:14ccaa1698c16fe11d674f8134d913ee2186d9a2d9132bcbb3ee50364b710af3",
+      "text": "...Come to think of it, Kasivars,\nyou've had a meal function ever\nsince you first came to town, right?",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:52c4ceaac5e212c50525d46c20e7831b808bc0a5f268129726f45ced5004b1f3",
+      "text": "Heh, so that I'd be ready whenever\nthe time came to eat something.\nBesides that...",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:90adf2c08ce59e1f7aad51b2cdc492821b6c354af2c438bdaacf2d9058084365",
+      "text": "My \"other bodies.\" The left one\nmoves freely across desert terrain.\nThe right one is built for swimming.",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:b6b66607dcf013e9a13d32b67faf4c35d760a4e483756087fd73113aa36de439",
+      "text": "Whoa...?! So that's like a\nbeastfolk form and a mermaid form?\nThat's amazing...!",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:df5afe57421d985de047cda6496e1f5e6b5cdfe4391ed4a79d7e56fe8098b422",
+      "text": "They can transform, too.",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:53381e7245d2b3455a880e3118ad3edd441ab7f69e456303491d60b8a43245f0",
+      "text": "Transform...!!",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:5da5972ac4b1c801dfcb3c7bcc7ac9b76809983b808e9c37bdbb6c6f0164c5f0",
+      "text": "You aren't attached to your own\nform... Even among automata, your\nway of thinking seems exceptional...",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:51fd165fafa279122af92eb7ea721d21d022634c50a21825e860552671367058",
+      "text": "Heh, you're surprised by this much?\nAnd I haven't even made your bodies\nyet.",
+      "status": "machine"
+    }
+  },
+  "48": {
+    "5": {
+      "srcHash": "sha256:c89f7aaa2220669a7bcef822c7808012df10ac2ce88de7c013f92db13d883ccf",
+      "text": "No, it's less surprise and more\nthat this is seriously cool...",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:e589d3e1de55c5595b8680f38ac3ebc7bcc73f66900f0ae4958dcfc38e8e8f2e",
+      "text": "W-wait. What did you just say...?",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:35243c7dd8e7c5a17e44aed810a743f7cbc412d2164e5225ce8d718685a3e5fb",
+      "text": "Oh, did you not hear me?",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:bfe6b2dbee541af3d9f2a27bc59acfd807828af64876a2d7d7ff4b2716e6911f",
+      "text": "Alk, Stella, Light. I want you to\nlet me make your \"bodies.\"",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:e7dd4ed5e0d7bca47269bb4e2af66f0782039e1ec861def078b3e0411f994146",
+      "text": "Wonderful. Simply wonderful.\nSmooth, hot skin...",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:2872484b58a1eedd9fed61a8a8508c6995d23276507251bac994bc46de14efaf",
+      "text": "Will you tell me more? Of what's\ninside you, and deeper still...",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:1ebb94a6433a380a5232b8064b92b2e2f603a3ffbac629beb7d2a7755c002baf",
+      "text": "You were totally teasing us just\nnow, weren't you?",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:75995a7ae759652b29b43a8afaa9386e029ac02992b4921048067b32f2df8812",
+      "text": "Oh? I only wanted a reference for\nyour \"clothes.\"",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:6253ab5df73e406fe3f0dd82126be9eb5b071cd0d875a882d0e97574fb7372a4",
+      "text": "When you said you wanted to make\nour bodies, I was shocked... To\nthink you meant our \"clothes.\"",
+      "status": "machine"
+    }
+  },
+  "87": {
+    "5": {
+      "srcHash": "sha256:90f281b8f9115064662d028dbbe29810fe9960e29d16a720d96235e5cadab45a",
+      "text": "Heh, I'm not used to saying it.\n...If I could make \"bodies\" too, of\ncourse I would love to try.",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:9321d5f138fc8e60f0d4570873103895be872734cf70028609771954cd8914df",
+      "text": "But why make clothes for us? If you\nneed models, wouldn't someone other\nthan me be better...?",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:6d6fc6e37e3a1d80c41b4cee405aabcab56f3b99e7cfb20e923396fb4a19a6c5",
+      "text": "It's my thanks for killing the\nAdministrator.",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:79a238c899c3acc5579557fa4c5cc7078631feae2fa1f374c73f9174ce42beae",
+      "text": "Or so I first thought. It doesn't\nmatter much now.",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:7101397cba99f29665f4459fa7e7e5d3c455f773adbce526acc1067e86458a19",
+      "text": "It's because you are who you are. I\nwant to widen your possibilities.",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:e61fff1da0ed09b75883c03ae2f8ccdf59dd58b4bc670c8b5c8f4c0db3b7cda8",
+      "text": "Clothes and bodies are both the\nworld's cage.",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:84cd5db845f957bce6748155852574340a30ab15b988c30bddd66bbadba8f8ae",
+      "text": "Forms society decided on its own.\nThings that deny your smoothness,\nyour heat, all of it...",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:faeb1ad406cf47706e8196bfa1ebd027b83c555ddf86418ebb1ea2134d93b602",
+      "text": "Kasivars...?",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:11b422257d4a5238b80f7b253cecf5038e48eda33a1d03cb45f24237f9eb655c",
+      "text": "...But they can also become things\nthat break the world. As I chose\nthem to be.",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:2a57564e28a201803627786da6ecdb90c7e20ab45595a6bc04196984398f558f",
+      "text": "You are the same. You killed the\nAdministrator, and now you mean to\nbreak the god of this world too.",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:0b783f087f9d75368543587c64acee0f92bdb127a3652affe923fc461f0f89f8",
+      "text": "Even if you yourselves are broken.",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:7c1fac7ece05c635834b827d11c0445de4b0b26b9eeb57baf6e083712fb9f289",
+      "text": "...Yes.",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:34149cc70058f365c7ecec795c5ca36cb3e8335bda264ee7075cb48d3be855e0",
+      "text": "That's the reason. I want to strip\naway every cage of yours.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:bebd7bb275711fba38d874a8f12b50daad396aa2868950cf41f96470288d4404",
+      "text": "I want to see what you become\nbeyond the broken world.",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:82b003ed70678e999dbe054d0c5feba72614f038a580f3381a44f9bb3b2d5609",
+      "text": "...My impression of you has changed\na little.",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:9785cbe7ee622c6dffc17925aea74f53d7aa0d9998548ac19da5fd6fb0142315",
+      "text": "You watch us closely. I thought you\nwere someone who stuck to her own\nideals more...",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:f37b9e630c0a053fc81d9f68e55e72643c223526c1825fee591abc60aa0628a1",
+      "text": "Like the Administrator?",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:80113313893dd4eb995ef9e9af9b50b3006f2fe6d34d494a787aa99a77c03922",
+      "text": "Heh... How offensive. How could I\nbe the same as that woman?",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:d2dbba90de50f8dcf712ca87db25debd2fc51c157560854d5c1ac7f7a53a5943",
+      "text": "There's no reason for anyone to\nbind their own form, their own\npossibilities.",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:a1df4457af4ac33be49a092a74028efd266671269e7469a389cfdb94e65795d1",
+      "text": "She is infuriating. That woman\nnever understood a single thing.",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:26a9ecbaf7afa6d637d558025e7768b5f4e034591b74fb1b02fbc103a0b91bae",
+      "text": "...Even her...",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:c252d405864c5b1c7b71f945b2779a4daad7a14d5b1592046e01eb32d7bab750",
+      "text": "Did the Administrator also have\npossibilities?",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:0393936f512dd55337b51f692b167d689e8280f3cf5508b19b4f856ab5b240f1",
+      "text": "...Of course she did—... No... ...",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:0f103893c12052824e2aba08011dcf10f61b18ec5c7cd5c9d3ce3d25e96b8ec8",
+      "text": "...Ah, I see.",
+      "status": "machine"
+    }
+  },
+  "175": {
+    "5": {
+      "srcHash": "sha256:744d46317f7d1246ba8c08dbcd120d39e31da81a970005ff7dbe5352bd110ec8",
+      "text": "I wanted to make clothes for that\nwoman too, didn't I?",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:30a33fecf65556c7cb3762fc76124fb0a1407bc091ec4c3647bb38f9bce9c06d",
+      "text": "Not that I hate her any less. I\nloathe her to the core.",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:1bca8a7c5a35b5c5723cce51caeab4ca7f4fa0e8a37b90a92abea76a7be79d85",
+      "text": "Y-you don't hate her any less...",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:03a495dc72889db7c95f53d1f89a8780e818e3ed85c7159ddd50ebf18c682d17",
+      "text": "Naturally. Nor does my gratitude to\nyou for killing her change in the\nslightest.",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:0ed67435118b3820b448d882530b7f21ce29deabc2db5d719f7a750c5924664e",
+      "text": "...I see. But you had regrets,\ndidn't you?",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:88931176685595bd7bb39edfd467455bc17d44fc3b9fb3169fefdbc27e661e4d",
+      "text": "If there had been another way, I'd\nlike to know about it. ...Even now.",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:1de866243c14c2647a8666474cb97a2072d0e450b7a8b104df5b8c31cedcfb48",
+      "text": "To console yourself?",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:e92b901209dd76efb1c7415c05df12dd7b7727a3ef47cafd3b4ff7d24a63e922",
+      "text": "So we don't repeat the same thing.\nAnd... to add to our options, I\nguess.",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:0106f7edb5d80535864aa629e08bc5dd3d3d548b011b1582a3072961f8eb9796",
+      "text": "Heh... Making your clothes sounds\nlike fun.",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:b58b6b6c9bbd4fe4a1fe61d531126d6ce8623e760083fdb86576d3ae85893249",
+      "text": "Look forward to it. I'll make\nclothes that turn your world and\nyour entire self upside down.",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:485befb3e5caf1b70a2d606e791594f4f7ee38672fdb4cf53833d77361d72bb2",
+      "text": "C-can I really look forward to\nthat...?",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:69600ba59570624774edb88ea8bc469949853dcdac94dc6bf8d9f1783298eda1",
+      "text": "Still, it seems quite a few people\nwant to make clothes for you.",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:64a7c2b934d12ea9288ed088512a2379171c0f63776a071f4e7addef4760caaa",
+      "text": "A joint production, I suppose. That\nmight not be bad either.",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:16569bd9640f2d22e19d6198525498613c21dad090b09296c3b6216dd74c5161",
+      "text": "Ah, today's client has arrived.",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:19377128a42e9f4e3f95a4903cb9edd3aa2bc449e05921ad9186c1be2fc044f4",
+      "text": "Come. I'll strip you of your cage.",
+      "status": "machine"
+    }
+  }
+}

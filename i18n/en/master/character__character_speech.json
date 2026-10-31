@@ -1,0 +1,984 @@
+{
+  "111153": {
+    "3": {
+      "srcHash": "sha256:e20ad01023764a122b0808de82fa522195adf66684a03524d357c80db1c45b85",
+      "text": "As expected of Palpebra! It's nothing like my hometown! Big buildings! Paved roads! So this is the big city! ...Huh, this is Shibuya? Wha?",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:e31d495ded4cb7fab4830084fcf25fb0a355760f7b1e3b49d4e2f925f0a26a17",
+      "text": "Spirit? ...Helloooo, Spirit? ...Nope, I still can't hear any voice. Why are you lending me your power...? Hmm, maybe I'll go ask Shywe?",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:e6c22d9ce2571bc51002b6119c2081912da89d9b69e773c2a03b8751d8ec880f",
+      "text": "Chores or anything else, leave it to me! It's all for the sake of becoming a first-class adventurer! With my power... laundry dries in no time!",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:c02fb19cc7e2470fd2d8cda3c7e781bfa692d3829bad545cd98755b473d5f51e",
+      "text": "If anyone's in trouble, leave it to me! I won't turn a blind eye to anyone! After all, I wanted to become an adventurer to stop people's tears...!",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:e05ce8ac8de2ad9c6a93f16c23f4e0326e650cf274f8d404a7b6b95ca676c9a6",
+      "text": "How about it, Alk, Alk?! I'm closer to first-class now, right?! ...Eheheh! I'll keep working even harder!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:8aacd7534122df27aeb4792f77bf116a0a8392ae2cd504d3d64ce283abc2e427",
+      "text": "Oh, Nimbus! I'm going to punch you for real, so punch me back! Let's have a heart-to-heart with our fists! ...Hey, why are you running away?!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:4ebcc8a5342c906a9fa45ca4db1b356172b78234d7da6a675bec4f7b9eec4c10",
+      "text": "Yes! I'm Lunetta, the rookie adventurer! I'm still inexperienced, but I'll give it my all to become a first-class adventurer! Nice to meet you!",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:65d7470c0f857d8730b4b92f1454c39eff0e3a743079ff86465f69bb7e9f378f",
+      "text": "Have I gotten a little closer to being the first-class adventurer I'm aiming for...? I don't know, but I'll keep trying! To stop people's tears!",
+      "status": "machine"
+    }
+  },
+  "111159": {
+    "3": {
+      "srcHash": "sha256:a05a6d0f665bed9e3f009cb02f6c17bf99cced69d9d5c8be8b6233642ec87c24",
+      "text": "Is there anything I can help with? Heavy lifting or anything else, leave it to me! I'll get it done, heave-ho, easy-peasy!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:c865d32aff45b1514beb9e7d8f216776791e1c03c8ceebdab0f4bf0aaad3978b",
+      "text": "I want to become a wonderful grown-up lady soon! Cooking, reading and writing, music, sewing... I have so much studying to do!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:ca9106a52903063737eb03b1d0029d8784d4f2c21cf54d7a13c6cc9be0e7bba0",
+      "text": "Mwaaah... mew... nyaaa... Ah! N-no, I absolutely was not yawning...! Grown-ups can stay awake without taking naps, you know...!",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:251ed1626b081e4ae528387e3736283bbe5fa2b628fd3f90f056d804e3fea55d",
+      "text": "Hmph, balls no longer distract me. I have grown up too... Nya?! N-Nimbus, why are you throwing the ball... Ooh... Nyah... Nyaaaaaaah!",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:3b16622a7448c19dc9c2078c256a7ab1ac0f38affd0f96a62d5360d656f48d2e",
+      "text": "Oh my. Might you be a little tired, perhaps? Sometimes it is important to pamper oneself. ...So, would you like to take a nap with me?",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:ee633e1ce084e1d19fd801f022bba0730d3bea7a92ec7508fad2ac405b014a5e",
+      "text": "Alk, Nao is a wonderful person. She is kind and cute and smart and amazing! So... please don't ever make her feel lonely. I'm counting on you!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:187129466b88d104c731510d5cf6f4173c4bd781ea8b5ba69bc945d1171b9627",
+      "text": "My name is Penelone. I am studying to become a wonderful grown-up lady. It is a pleasure to make your acquaintance.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:297419579cca180a0fa7988c999f05299c733f9dd52928bce71365086e121a58",
+      "text": "Wow...! Look, look! I grew up some more! The day I become a wonderful grown-up lady is almost here! Please keep relying on me from now on!",
+      "status": "machine"
+    }
+  },
+  "121159": {
+    "3": {
+      "srcHash": "sha256:73f5deec2c6e1df0ac7202ad9201fff7ab4bcfc40d59a737f161755cd69abc7a",
+      "text": "Hehehe. If you're ever in trouble, just ask. As long as everyone is together, Nisues can have fun.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:c243e78f1aa051a08fa4d97735bd2763966825e8af9ece401fa359fed7c4256b",
+      "text": "It makes Nisues happy when hearts become one. Vesta and humans are the same that way!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:4e0a9d6e026894d974f36d19a6e11da257a4b52b0fb345edd6213bae34f08110",
+      "text": "A Vesta, and an adventurer. Nisues is the one who connects the two... Hehe. Nisues had better do her best, right?",
+      "status": "machine",
+      "note": "Nisues refers to herself in the third person throughout"
+    },
+    "18": {
+      "srcHash": "sha256:99b4b30b2a4c461f80352e3ac5c383082005d07150ed22e67b9bd530b16f5802",
+      "text": "Nisues wants to share the joy of learning with everyone. Nisues hopes we keep getting along!",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:c8c1328b0dc6c37b4b805254dea935e52614bacdaa110242a7be231abf784e8f",
+      "text": "Lady Memram was pleased that Nisues's Oudo had changed a little... Has Nisues changed?",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:6f83a32c15cc45b0d09ab9da5c8cb56d0db912f82404f287fafdeda87c87d0b1",
+      "text": "There were so many things in the world Nisues didn't know, things she couldn't learn from Oudo... And that is so much fun, and makes her so happy!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:e48be0271235f1d1fe0ef30e24c485193964d53d3e28e122913c1998caafe7fb",
+      "text": "Nisues, Staff of the Vesta. From now on, she will do her very best as an adventurer, for everyone's happy future.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:6b015e9620b5d2ff1d856743674a2b6ea9eaca36109b7093918ffeb70a7d52cd",
+      "text": "Just touching happy Oudo was enough to make Nisues happy... But when she touches new things, her heart flutters... Is this what they call \"fun\"...?",
+      "status": "machine"
+    }
+  },
+  "121165": {
+    "3": {
+      "srcHash": "sha256:475df73dfc3fc5af8a4d60534b0dbe4439034d047c018307545211f0423ecdad",
+      "text": "The strong preying on the weak is the way of the world... But it's the way of beasts, isn't it? I would rather be human.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:8b54f2e469e66391c8c4f5bc3ec8e745fb1a53ea2023326aaaaf5d713286e3b9",
+      "text": "I lend you my strength. I make use of your actions. That makes us equals, wouldn't you say?",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:a83694cd90708335f001daac697ca8934e64567babbece4183f97b2f247526ab",
+      "text": "A city of machines... and a single ruler... Too much oppression always sows the seeds of rebellion. ...Still, I can't say I dislike that city's beauty.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:756cac3700e45e5860dbdf801b59b3a0179ebf536d4c8e51a29aa8f6d3a46e2a",
+      "text": "As a child, I couldn't see any future. By chance, the mafia took me in and I survived... but all my friends from back then died. ...No other child should feel that.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:d320c7e6f5ba3806cc99debd666cb6a7ea5694be56655177c11b503f2315049d",
+      "text": "I get along well with that princess. She says she was blessed with the parents who raised her. I would have liked to meet them too. ...A pity.",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:b7a2680017527009e52f79ea41647b02011724cff426893224c5147d08f36da7",
+      "text": "Alk's cooking is nothing like a top chef's. ...I'm not saying it's bad, you know? I'd much rather have many people who cook like you than one lone master.",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:d778926a8b5d0f0bebeb097b7988bd2af3e22b8a48e13b15d1ef23dbbf33177a",
+      "text": "I'm Lanmei. Just a humble mafiosa. Hehe, no need to be so wary. I only wish to negotiate with you as equals.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:e5bf663c57aa910fb370e616045c6c5477e3dae6a6c4e5e281c389de419ad11f",
+      "text": "Head of the mafia. A fearsome gangster. Being feared is what makes me who I am. ...I have no need for any other praise. Do remember that, won't you?",
+      "status": "machine"
+    }
+  },
+  "131134": {
+    "3": {
+      "srcHash": "sha256:06513e9be5b76d51086887cacb6be85e8fd76e5b26f0cb5c5035204725a2023f",
+      "text": "New commissions are most welcome. Call on me whenever you wish. I'll remake you as many times as you like.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:a144bb685ccffacb0e3e71c238a08bf486f68446cb9ea4817af0109d3c74d6cd",
+      "text": "Hehe... Regis is amusing. He longs for a songbird in a cage, yet loses his heart to the girl who flies out of it... A darling man, full of contradictions.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:8eff06641e46d35d81f203a11cb982ea6050d0509cdfd54fe1cc3b3eeb847826",
+      "text": "...\"Form Frame\"? I don't know where you heard that, but... My name is Kasivars. Don't you ever call me by such a ridiculous name again.",
+      "status": "machine",
+      "note": "Foomu Fureemu transliterated as 'Form Frame' (a mocking nickname); not in EN data."
+    },
+    "18": {
+      "srcHash": "sha256:85b201ed9e64aa6f797a978c010fb0bd5907f03b0c11921c24b15cbae4f2b645",
+      "text": "Hatred and affection blend together. Freedom isn't only for the things you love. Hating is a freedom too, isn't it?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:7d2d7da7fc607052a83755ace22da63549f2fd299ea68b7baa6a8fb661469d9b",
+      "text": "New bodies for humans, hmm? Copying the brain's data into the Sanctuary would only make more of the same person. If only there were a more interesting method...",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:138ad293368f23a1d77966a57c1dea76d7d64e9d290a26a5ef71dbe18529a3fb",
+      "text": "A seppuku device... Hehehe. So that man went and installed something like that on his own. Ah, how truly foolish...",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:6765c430c3a387edcdfc6a533a0a48f803cb8a7f4a8ffc7bfd0dcaa3d6b56680",
+      "text": "My name is Kasivars. ...Hehe... What lovely eyes. Come here. Let me strip away your cage.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:027d1e794e664b0923606df82bb3de67bfe5373381b47db730e8392458b43236",
+      "text": "Hehehe... Ah, how wonderful. The feeling of your own form changing... You feel it too, don't you? Come, let us break the cages—and the world—together.",
+      "status": "machine"
+    }
+  },
+  "131140": {
+    "3": {
+      "srcHash": "sha256:ade1871e05e4b3c470f8da6c1b59cb29ab9701640ff3e118d7a0be708ffc3bdb",
+      "text": "No, see, that's NOT it??? It's not like cute clothes are totally off-limits?? I get that this is nice in its own way, okay?! It's just... if only it were BLACK...!!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:007912327a6239dc6db27c8824c08ebfdff8359ae506e5065cc93b9e13c9fcfd",
+      "text": "Ever since I put on these clothes, my power feels... inverted? The King and I were always better at destroying stuff... Maybe my power's closer to Shibuya's people?",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:23c27beec516311dcc58235d66b9167c26502fcfdadc308decc9b8d299fdac1a",
+      "text": "Heh... My King has no blind spots. Every festival shall descend into CHAOS... Hmm, no, that's not it, is it? Shibuya-style is a bit more low-key, huh?",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:1015b5e38d23158d6e4e0d1b913e48d8e1d0b3ccac4396f99bdf7a7617c63dc8",
+      "text": "...I have seen the end, and the King who dwells beyond. He gave me a pact, strength, and the will to be myself. So if I don't like him, I'll take down even the King. ...Just kidding!",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:9fd631e925feda5435d09455a86a2ce74732ddc8a2d45796b435a7d67a2bde60",
+      "text": "Hey, Yuki! Wanna go clothes shopping with me? I mean, your world was super interesting, so I want to learn more about it!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:2ffb6ae07d205866b5958999c8736a35c5705b2b53233f7233be71f689274026",
+      "text": "Heeey, listen, Alk, Sonia! So, after all that, some kind of religion that worships ME almost got started? ...Yeah, romance is better when it's wholesome!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:0b247348094f86a206ae0ab1deca3920a879c36e10586ef8c3a98a9afba9a1ff",
+      "text": "Ah! Wait! Wait, I said! I'm not ready yeeet!! Ugh...!! *ahem* Chaos is inverted, dyed in WHITE. That is the me of this time! Got a problem with that?!",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:81a0ac5002d43198bdbd86922964ad74bf68ced72a97be23e10471c6389f8ae9",
+      "text": "You and me, and everyone else too. Together, we can do anything! I mean it! I'll swear it on the King! Because I love you all!",
+      "status": "machine"
+    }
+  },
+  "131146": {
+    "3": {
+      "srcHash": "sha256:2013d2b57d7b2364d11f70563149eefa154b369de1c3370e9b837d5dd675ec69",
+      "text": "Fine suit, isn't it? Custom-made for White Fest! As for how much it cost... well... A necessary expense. It couldn't be helped! Yes!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:0b1b4ce8750c499631b37e675471702c2224b8115eb06549a62f76863f6098cc",
+      "text": "I heard all about it... You went out for crepes without me...! That's not fair! No matter how busy I seem, you could at least have invited me!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:9337ad9ef1995839675f6e08671077e437c7b1577d52e9fd53779573f5d67d0e",
+      "text": "Shibuya is a fascinating place. Once the infrastructure is in order, its culture should flourish along with daily life... We ought to consider tourism as well...!",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:91353e6b50b906783ead0b141b2c7b80e72e3c160d42fa6509e040eb33dc02b7",
+      "text": "Huh? Yes, I received a lot of chocolate, but only because they like my face and my status... Wh-what? They like what's inside, too...? ...Wh... R-really...?!",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:42aaed95f871acab71a6ece6661c888721373f0eef0b9be002d3e0f238124a26",
+      "text": "Prosper together, live together. Using failure as fuel to move forward... To realize that beauty, I do everything I can, every single day. Together with you all, of course!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:cc93d8b8ebe0455f4f8174244416f127f33e143e37c4840ccd0a576368b73d50",
+      "text": "Nimbus! Let's go for a drink! Reylas told me about a great bar, so the three of us... Y-you won't come?! Why?! Is it because we're all too good-looking?!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:f66abd94f37722b60308903d1496270019edad2f8842694ae51a1eadf60f69f4",
+      "text": "Strong. Skilled. Stunning. And this suit looks marvelous on me! Go on, Libram. You can do this! Let me show you that I can live up to your expectations!",
+      "status": "machine",
+      "note": "Mirrors his EN line 'Strong. Skilled. Stunning.'"
+    },
+    "38": {
+      "srcHash": "sha256:7a45d0eeb9bd4caa44bfc075d905236ee61975b933819d87cd896613bb90d071",
+      "text": "We finally have some time to ourselves. I'd better put my best foot forward. Now, take my hand. Won't you be mine, just for now?",
+      "status": "machine"
+    }
+  },
+  "131158": {
+    "3": {
+      "srcHash": "sha256:881693afe49fa72f6a9b9485efa3e07d9eba3f44c98a3b4e76ab0708cd329804",
+      "text": "They say a sound mind dwells in a sound body. Won't you train together with me?",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:94675ad0356a702574dbba79d0ad084a3dceec17a245037fbfd1517cb964e0a7",
+      "text": "The other day I passed a blonde girl as pretty as a doll... and her swordsmanship aura was tremendous. I'd love to cross blades with her someday!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:e798593485f92384cc770090d71acc7d4689326efd55f77a7cb1efedd95475b5",
+      "text": "Every swordsman is different. It's fascinating! My style, for example, is closer to the Farlands knights than to adventurers or pirates. Rather well-mannered, if I may say so.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:874dae65b9e1f5e329bce8cf0d80b9d18cff5f71ed6c461b23ab5bf09a8875b1",
+      "text": "Just between us... I truly do respect Yae. ...If only I had strength like hers, perhaps I wouldn't have left that girl all alone.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:5ca0c38ac24b1911127a4015e8851e857bde3da0aec25e808e1f0ab38993da0e",
+      "text": "There's talk of reopening Shibuya's schools. Should I go back? The Guild Knights could be a career, too... What a dilemma. And a co-ed school would be a first for me...!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:7898609e6301ac06b2836b930f6054a8a0b9d0a71bb19d42c01c18ac4cff1bb4",
+      "text": "I used to hardly ever eat crepes unless Yae dragged me along. ...And yet, strangely, I find myself missing them.",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:fcd3f8e5971309baa4d2dfa34f441db920b2a1a4dd9bcc0bcba65068fcd66beb",
+      "text": "At long last, we meet! My name is Nagiri Amo. My body and my sword are yours to use as you see fit, so that we may help those in need.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:07f31d22f8afd8671232a0e97660356f700e401001a8d1a296bc06da5f4fd749",
+      "text": "In this ever-changing world, it is impossible to save everyone. My strength and my wishes may mean nothing... But what of it? That is no reason for me to give up!",
+      "status": "machine"
+    }
+  },
+  "141147": {
+    "3": {
+      "srcHash": "sha256:63a8e07e662101b1e1d08d1b3c74f3f7eda8df99b348528951c079c3d531624d",
+      "text": "A fest for sharing one's feelings... How lovely. Then I, too, shall speak to my heart's content about my love of idols.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:8f09db2fb663c41770a6a7f05ee8d59bdba66eabb6c3f362ed9406a466d287b7",
+      "text": "I will spare no effort in helping Shibuya rebuild. ...I wonder what kind of idols I'll meet in that city. I can hardly wait.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:781d281aa89d96f71d712690dcbb1515369b348a9fa265f67eb696033353c448",
+      "text": "Cowdy. To me, being looked at is an honor...! ...And yet, hehe... Every so often, dressing to avoid attention is fun too.",
+      "status": "machine",
+      "note": "Catchphrase 'Beef' rendered 'Cowdy' as in her EN join line."
+    },
+    "18": {
+      "srcHash": "sha256:5a4c46634f45b9817b52e4b6e023581200cb0158c4584f617ffee19f22c670cc",
+      "text": "At the Fest, I received all sorts of presents from my fans. As a gravure idol, I will live up to their expectations. ...And someday, as a regular idol as well. Without fail.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:14913e4f8107921214489610aa62af1d281b57d1b6d2ecfaf2426497c4d9a21d",
+      "text": "Cacow, thank you for everything, as always. This chocolate is for you. Yes, enjoy it with some brandy.",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:bed1f6fa6e29319a5843345e9564e182ab6f8750012b02bba5c34ae8d8f8b5c4",
+      "text": "...Love stories are...! N-no, other people's stories are no problem at all. It's just, when it's about me... Mmmh...!!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:fe9231ee677ccf256016264b67887c38f227dc0483c76c16cbc9e1b1787c03aa",
+      "text": "Cowdy. It's Valentine's Fest, after all. Shall we go around together, in secret? ...Hehe. Just kidding.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:d4ece0bb1ea9eb87e0015d5afa80df7c4b9d0fedb07092d30f85533f6cc04be8",
+      "text": "Please, accept this. It's chocolate I made myself. ...Keep it a secret from everyone, all right? ......Because you're special. Cowdy...",
+      "status": "machine"
+    }
+  },
+  "141153": {
+    "3": {
+      "srcHash": "sha256:2ea54b707666d4a1b018944eb44cbbc9e7e47f165c6afc1871517899c2347413",
+      "text": "When someone's all \"I'm crazy good at this! I wanna do it for real!\" it's like, total respect, y'know? I wanna find a dream too!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:a590509fe01a2a5dbd1eca49eca266863f3b11f9095b6aabdc11a1772c3389a7",
+      "text": "What's up? You bored? Then let's go hang out somewhere. We'll just figure out the details as we go!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:839527aa5184f480b047fa3fa933eb34bae6da890749b45eb7c25ded6b3f2c22",
+      "text": "Bows from other worlds are sooo hard!!! No way I can handle these with the little archery I did. Ugh. I really wanted a magic bow...",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:d83c32ab4842cf2d63aa0e0a47a88553441c300914b6bbeeb29757d506c56473",
+      "text": "Well, believe it or not, I used to be a proper young lady, you know? Tea, piano, I can do it all, darling. Not as well as the pros, though. Ohoho.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:54ec5b3fd47e4dffa15e02d445a6bcffa8fe84d6f71a73178853194ff5bc6e30",
+      "text": "Ehehe. My name's super old-fashioned and cute, right? I used to have a total complex about it, but now I seriously love it!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:cf3559e10cf6b04ca20b4afbfc002aea4f9a90363965442d8c6c38e8e0bfe80d",
+      "text": "Wait wait wait, listen! There's this girl from my junior high I team up with a lot, and she's, like, unbelievably cool!! Haaah... I'm totally crushing...",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:2e451ef291d860207044ce710e3d832dfc39deec0f837b77852d4d6df98b49ac",
+      "text": "Yo! I'm Yae Asato, first-year! Lately I've been adventuring, sightseeing other worlds, and just kinda doing my own thing. Nice to meet ya, senpai!",
+      "status": "machine",
+      "note": "Source ★ dropped (EN voice lines don't use it)"
+    },
+    "38": {
+      "srcHash": "sha256:e305e78543c6d53feb80fc30aa40f1f83c226cbee3ea1432311be53889f47284",
+      "text": "I really wanna make Shibuya free again, y'know. And I wanna find something I love. Let's keep at it together! And keep the hype up, 'kay?",
+      "status": "machine"
+    }
+  },
+  "141159": {
+    "3": {
+      "srcHash": "sha256:49d6105ace9f23b123d45019cd7fea21bb8e0a375d6e329cae92c92b2faf1e5d",
+      "text": "I am the sword of my king, and of you all. However... I must now face the mistakes I have long averted my eyes from.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:1decf07f3d5a7199a47fe90f2b60a4cb52a5c33edae551507285d8265173fe06",
+      "text": "Happy White Fest. I never imagined I would be blessed with so many smiles. I am grateful for this rare experience.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:15a5b4b08bd7004ebf64edbe0a81d83ba16fef05c54649866161355667d7185a",
+      "text": "Of late, I have been invited to play Shibuya's board games. The rules are complex, yet they share principles with tactics, and I find them enjoyable. Care for a match?",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:54da978c8902af49260efda49266a7840a096dc95319279d048c23df5e951bb8",
+      "text": "This cookie is for you as well, Sir Nimbus. This is not a duty of the Fest. Of my own will, I am handing them to those who have aided me. Would you accept it?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:0c898cb720bba11439ee91e6e2fdd999e0d116871fcebeefba02f35d57ee9897",
+      "text": "Loyalty to the king. I was long mistaken in believing that was all I could offer. I shall wash away that shame by forging a path of my own.",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:ec676479726af58f7d35bf0ddb22bda0194c01e4472cd77b88d370bdfe636438",
+      "text": "Polar Bear Cookies, hmm? They may serve well as rations for the mercenary company and bring joy to soldiers on the battlefield. Lion Cookies would do as well, of course.",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:692e1b437dbf25d681ac4e9fa3114baa4b7568e307d18be1a562b9c9827604a8",
+      "text": "I am the knight Rolf Zahn, at your service. Pay no mind to my unusual attire. I entrust this sword, and these cookies, to you.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:c38f250bd61e2895c2e0104ee8b1eca30f50977b724bbfb6c4fd058f0612a261",
+      "text": "Though this blade is stained with much blood, I vow once more to walk alongside you. From this moment on, I am the sword of myself, and of you all.",
+      "status": "machine"
+    }
+  },
+  "141171": {
+    "3": {
+      "srcHash": "sha256:b7aacfb59c835a8563dbf2e57050506e0753bd28859bc7e1e5e65bd050d2b305",
+      "text": "Me? I'm not strong. This wooden sword does the work. I'm just \"reading\" how its last owner moved. Supposedly it's cursed or something, but hey, if it works, it works!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:82d4158f7bdc78b672a91e7e6ed89e126ec65c01a5e7ad3b3b8c3f1dc251bfa8",
+      "text": "Armadeus, Vagner... So it's \"Schult,\" not \"Schubert,\" huh. Guess whoever named 'em was really into classical music?",
+      "status": "machine",
+      "note": "Joke: the ancient dragons' names sound like composers (Wagner, Schubert)"
+    },
+    "13": {
+      "srcHash": "sha256:9896b1d39bc069694211091de52778341f405a66664e14a817dfab604d4f0e81",
+      "text": "Ugggh... My heaaad... Keeping up with Mamiya always means a guaranteed hangover. ...Huh? He got blackout drunk? Ahh, he picks who he drinks with. So unfair...",
+      "status": "machine",
+      "note": "Mamiya: transliterated; not found in EN data."
+    },
+    "18": {
+      "srcHash": "sha256:f992acbc93c30a5b09f0400eb2e32f4c23ee53a6214d9c97f1998c24b9bf7e02",
+      "text": "Haaah... So good. Seriously, so good... Man, I'm glad I'm a guy. 'Cause if someone fed me this, I'd fall for 'em on the spot. ...No, really... Mind if I come eat again?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:5cc3218acbbbfdda060d2209f257e1354fbf3d7f21d9abc3131b4aec45424d05",
+      "text": "Yo, Sho. Is Alk around? Aw, he's not, huh... Then wanna grab Gerard and hit up that place? You know the one. Alk's always dying to hear the stories after, anyway.",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:8e05c5fd04fb97c369fca05c418d6d542589f2e50cb5977498862551c9da18be",
+      "text": "What do Alk and I talk about every night? Dummy, like I'd tell you. Then he'd stop talking to me. Haha, sorry for stealing your spot, huh??? Pfft... BWAHAHA?!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:c00f9185fdb67db5bacf9960c3e5af66199e3ea1216a5875f297d32aa133d52a",
+      "text": "Name's Taichi Yuhino. I'm guessing we're from the same place, right? Well, it probably won't be for long, but nice to meet ya.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:f9bc95bb595f4b09d8931550478089c23fd0b5df0bfd18af208f9a7b05e7a549",
+      "text": "Guess the jig is up, huh. No more drifting around for me. From now on, I'll fight for you!",
+      "status": "machine"
+    }
+  },
+  "151159": {
+    "3": {
+      "srcHash": "sha256:1343a2990b00d83d8324ce84a678693b7c3c003f47ac41dbfa5adf710a34ba56",
+      "text": "Hmmmph. What's so great about Starview Village? Stargaze all you want. Humans, the world... none of it matters to me. ...What's with that face? I'm dead serious!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:7629255f220b44d54b591dace6f13b889da092049a4d4724a397e6b1152cad68",
+      "text": "What's a \"freeloader dragon\"??? That's what I thought too, but if you think about it, he's got humans paying his way. ...Kinda makes you see him differently...",
+      "status": "machine",
+      "note": "himo dragon: a dragon kept by others (Schult, whose EN unit text calls him 'dependent')."
+    },
+    "13": {
+      "srcHash": "sha256:e42f39df18b758f1cfc888dfc47497312a3cc7d7605ef950d75cd613037c00ff",
+      "text": "Haaah... Why's Sis Anbach gotta be such a nag? Sis Rams would never be like that... No wait, Sis Rams is way scarier...",
+      "status": "machine",
+      "note": "An-neechan / Ram-neesan = the ancient dragons Anbach and Rams."
+    },
+    "18": {
+      "srcHash": "sha256:01c17a179d06b6c78242a45e3a9bceb0a99e981c7f700014a70661122b4c347b",
+      "text": "Heh, heheh...! See? I can do it too, right...? Estariel... Even you... ...Mmm... hehehehehe...",
+      "status": "machine",
+      "note": "Esuteru taken as Estariel (the high elf princess he cared for)."
+    },
+    "23": {
+      "srcHash": "sha256:df1a345ad0c39f1d1197ffbbfd924fd40b096302711b2b912c5d69ea9469ae6d",
+      "text": "Hey, Stella! Isn't your attitude toward Mr. Vagner a little out of line? Are you showing him proper re-spect? Well, if you are, then fine...",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:31144c4247ad16499adc84791d9b7a0ceed6407fe325092ad4ed028a328e7d69",
+      "text": "Alk...? Oh, that meal guy... OWWW?! Wh-what was that for, Rooma?! ...Y-you don't have to get THAT mad...",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:1356f0188d2c1493b76cec71bd8320ad40f402e960c6c45b3e969de021cd9853",
+      "text": "I am the great holy dragon, Rustamov. Normally, the likes of you wouldn't even be worthy to speak with... OW?! Hey, ow! That hurts! What's with that violent little elf?!",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:c027a2b81833a4ed07f03555e302fb900e7126e5357e67e09f4a10cfbe5d6325",
+      "text": "Geez. Humans and elves are way too high-minded. Ugh, fine, fine, I get it! I'll play along! ...Hmph. You'd better be grateful.",
+      "status": "machine"
+    }
+  },
+  "151171": {
+    "3": {
+      "srcHash": "sha256:e256c3360d2ca1ce318015c3557dade6775a23211e96e730eea33a6c76feab5d",
+      "text": "Oh, my dear child, perfect timing. Granny's just finished a batch of ohagi. Care to join me? There's warm tea to go with it, too!",
+      "status": "machine",
+      "note": "ohagi: sweet rice balls coated in red bean paste, kept as a food name"
+    },
+    "8": {
+      "srcHash": "sha256:c3b98703444c58bf8356de2d5ab80051798d40c8ce0913d17e2a8019ea3185ea",
+      "text": "Murakumo and Manoka have both mellowed out so much. Why, you might even say they're a little giddy... Hoho. I suppose that's what they call being a heartbreaker.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:4ac112e9c643bf86ec3454f2a4d5905898b911e73ffaef52101f5dba91f12c40",
+      "text": "Cultural exchange is such fun! Here, here, take a look. Yae and I filmed a short dance video. Does Granny look cute? Did the filters do me justice?",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:a135c2dd58afb91ff78b807054164da54f6022796f2c978a844671aa1ae22f65",
+      "text": "Feelings are tricky. They squeeze your heart even when you don't want them to... When it's hard to breathe, come sit by Granny, dear child. I'll always rub your back.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:c86734d7d98d78d88e914392831669880220c545688dff3f7e213d0c3bbf9967",
+      "text": "My, my. Feeling all knotted up today? Then why not blow off some steam with Granny? Smash things, make things go boom, whatever you like. A little mischief is fine, too!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:de9af5d8e317266a834c5cfeab4814fa1b0d844a703d565fe8e12cace752b16b",
+      "text": "Stella and Yakumo... Whenever I watch them, my heart just goes all tight. And I've recently figured out why. Simply put... they give off strong grandkid energy!",
+      "status": "machine",
+      "note": "magomi ga tsuyoi (slang 'very grandchild-like') rendered as 'strong grandkid energy'."
+    },
+    "33": {
+      "srcHash": "sha256:ddc7aa6aefd3440abd3d75cb97ccbf420064bbfd94f4a9481a81feed84b21cb9",
+      "text": "The Spirit Magatama, Tamako, has arrived... Hoho. Pleased to meet you, dear child. Just call me Granny Tama. Now then, how about some ohagi?",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:21dd4cc74bd7e3d578c6373c9eaaf49ed49bf90590c7ac9a400bb98753254a34",
+      "text": "When your heart grows dark, come stay by Granny's side. Cry, rage, even hate, if you must. I'll always listen and rub your back. I'm your Granny Tama, after all.",
+      "status": "machine"
+    }
+  },
+  "161165": {
+    "3": {
+      "srcHash": "sha256:6944777729849152898ab29cc36089a52ea27b38c7452d09d2d7e53fa7705608",
+      "text": "Curious about my outfit? Clothes like these make it easier to lure in prey. ...But I'm not getting many bites. Guess I'm a little lacking in the curves department?",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:6a73644df177f8869b87f14db20c7d68c66e520383a990f7169347da3f8de585",
+      "text": "You're that interested in me? Hehe... You've got good taste, huh? ...Bu-ut, anything further will have to wait until we're closer, okay?",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:27354e2687e6653b3972303eb03d2874a1d190f5138666827f7549d652a72e90",
+      "text": "To master martial arts, you have to see even the most reckless training through. Never give up. Where there's a will, there's a way, right? Yep, in more ways than one.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:08c08e514e27f5c5fa1a581ce602ad2a9dea19205d3345de271ae571c8e10e22",
+      "text": "Alk, Nimbus! Seen Melmyna? I finished her new outfit, and she ran off before I could put it on her! To think she'd escape my clutches... Hehe. This is getting fun...",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:c5c72d05c90916bebc798560298b63d2dcb75c05a7cdbb8ad202be11177f4191",
+      "text": "Relax, I'm keeping my promise! \"Consent is key,\" right? Pleasure and satisfaction are for each person to decide. Everyone looks so happy, it makes me happy too!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:40d0bc519d3af12e61febfa0cca6375c8735ebcb1b4565f1f7311684ef64c14f",
+      "text": "What a nice face... So honest... and so disgusted! But you don't think too badly of someone you can make that face at and call it hate, do you?",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:6a3ceec4f1eb52f0cddd7b9ac0120a083de5878fa7efa8be60a3588478ec4863",
+      "text": "My name is Tanakiela. An adorable martial artist, as you can see. I know all about you lot, you know? ...Hehe. Let's get along from now on, okay?",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:7f4737c0b75af3c97cfe2ae94ef8d4c982698704d0d422f964959c8596fcfb3a",
+      "text": "You break each other down until you're a total mess, clash, and lay yourselves bare. That's what getting stronger is all about, right? Come on, let's get stronger together!",
+      "status": "machine"
+    }
+  },
+  "161171": {
+    "3": {
+      "srcHash": "sha256:dc8d37d6ecadfbea2c0f685ed7379286fc17310fa5cbd7fe0e2234001c6f7880",
+      "text": "Don't kill people. Just because someone breaks the rules doesn't mean I can hit them... Being an ordinary citizen is tedious...",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:ad7c3770d383a10b94e912a4518ddeb3b83cddb0b181320d75113c3495b0c02f",
+      "text": "May the stars... ...bless...? ...profit...? ......May the stars guide you, was it. Memorizing these every time is tedious...",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:bd5911c84a420db56e250dbd546c3bae0eea533db7a8984da4841061941f2414",
+      "text": "I don't dislike books. They show me worlds I don't know. Understanding or empathy, though... that's harder.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:bd3f8aed8f1ea77ee19a012b508628e61606cd080170985b71c6ef0fc84340ee",
+      "text": "I still work as a gravekeeper. As an ordinary citizen, I suppose I need a public occupation. ...Though repair work is as tedious as ever.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:ffe4464df9379ee1ac7dcdccbd5db4d2b839d08418058c70102459aa6b9c79ec",
+      "text": "That long-haired man also says he \"doesn't have the sensibilities of an ordinary citizen.\" ...To me, you all look the same. Strange bunch...",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:ae65ca94cec0cb9cb243b2a7f4035554d57991235849516d7583fbdb2ce8cf12",
+      "text": "I can remember people's names. You're Alk. You're Nimbus. ......I think.",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:0d01078ae36bfad675f87228fa009e07b4b9b488997095e7bc97db6ba66ad771",
+      "text": "...How tedious... Iores. Priest, and gravekeeper. \"May the stars guide you.\" ...Did I say that right?",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:6b9533ef065712a5580d0de910e47339fd710a720d0d9c741220442c9d3f6afa",
+      "text": "Orders and restraints are tedious. ...But if you need strength, I'll lend it. That's what friends do, right?",
+      "status": "machine"
+    }
+  },
+  "161183": {
+    "3": {
+      "srcHash": "sha256:7f39e8906174ed3844a8e3b82ccacbe707f46217ff38b6fa52af4c769a679231",
+      "text": "The sounds of Starview Village are lovely, aren't they? Lively, yet so clear and peaceful... I really, really love them.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:a62555f0a8c72d907cc72ce098980b222e12bb460b94474fad02ab8149d92ed4",
+      "text": "I try not to use my power for personal things. It'd be bad to be too tired to use it when it really mattered... and I'd miss the little changes in the seasons.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:253c24786a0c7b596e43110cf9684272019e822f87411bf301775c986c9bc30b",
+      "text": "That day... Magia Fest... I'll never forget it as long as I live. A lot happened, but... every bit of it is a treasure to me.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:47d1490e4fbcc2d7796615d22b6e111b8af964415b0db399807a2381bcd9df1a",
+      "text": "I guess I'm greedier than I thought. Making songs used to be enough for me, but now I've started wanting to share them with everyone.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:1d4468fa6bde295fd68dac6e686fa629697e336f0a4f062a2c7dc228994063ed",
+      "text": "I'm really, really happy that people like my songs...! But Luciada and Toria's offers are on a completely different scale... Honestly, they scare me a little...",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:d09728871482ddca35cbbc567e218d7df58ce824954e9fb933259a96d530a29a",
+      "text": "Mm-mm... hm-hmm... Ahh?! S-sorry! I always start humming when I let my guard down...! ...S-so embarrassing... I want to disappear...",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:e17115b7185dc26abb701ae07b6d31a1e7c54534cc416449c0af7d986eb248b0",
+      "text": "Everyone's going through a lot right now... but there are feelings only music can convey. So... I'm looking forward to working with you from now on!",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:db6665287871d265ee4c71113af77c16ad3eceb603957e07c93563cb84431e3f",
+      "text": "I'm so glad I got to tell everyone \"thank you.\" From now on, I want to keep weaving the same future together with all of you!",
+      "status": "machine"
+    }
+  },
+  "161189": {
+    "3": {
+      "srcHash": "sha256:135fbd96e9f57583be9a91e47489023b47fef1e0ed3e4a3e1dee6957ed5bfd62",
+      "text": "The real creator's already dead, this thing's an evil god from another world, and it sank a whole world into the sea? ...I wish I didn't have to believe any of this.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:c34b838e1422d0a014a3bb8ea1c3e21c9df9896876bff14c2c0c0962e7460c49",
+      "text": "Please, just keep that Denah girl away from me! Seriously, she's the one thing I can't figure out at all... What the hell IS she?!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:0ed9a25da6961da8e5d9eba0b4f2437bcbcdbbdaf320925b734bf9a866aeef62",
+      "text": "The more I learn about other worlds, the worse my headache gets... What was everything I believed in, anyway? ...What a joke.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:4cc2b3abdd46967b260b58625d8c4408fefc0a78fa595889f1be97dab9aa746d",
+      "text": "Yuni's a good drink. I used to swipe bottles from the Swes kitchen and drink 'em all the time. ...Back when I could hang out with Libram without needing a debt as an excuse.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:712db36a9dd22480fcc4520778dc03ff5701be650de4ef175728461a7d85e62f",
+      "text": "Huh? Prince Razelt was in this town too? ...Good thing we didn't meet. I made a point of never getting acquainted. He's not someone who should get dragged into the muck.",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:f1e4c2e989180857a89fa359a59df35612102c8222a6185c1fd898ac1765fec8",
+      "text": "Alk, could you teach me to bake cookies? Lost won't shut up in my head about how the other terminals get sweets or whatever... What is this thing even saying?",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:d3cc3d0ef225c51f83e7507d5dc046945c3f2b770d32da48ac93b8b1057f3581",
+      "text": "Anyway, the sisters in Palpebra are... how do I put it... a lot. How does Sister Liesel manage to win any converts like that...? Should I be taking notes...?",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:26d0560d720a0f229a2cb0f1f5045d48f27c0c9b908e2d2dee4c5ec8a792883f",
+      "text": "Hah, other worlds. Other worlds, huh...? Everything here makes me question my sanity... Seriously. What am I supposed to do with all this?",
+      "status": "machine"
+    },
+    "43": {
+      "srcHash": "sha256:356765dd028b35b1a9ec45df152e3dfd64ec9949bc2f145fd8154a39ad41ae58",
+      "text": "More than anything, I hated myself, and I was too much of an idiot to admit it. But those lost in darkness need guidance most. That's the kind of man I want to be!",
+      "status": "machine"
+    }
+  },
+  "211062": {
+    "3": {
+      "srcHash": "sha256:b0316b475412870bd40ee618473f40b40fb6d0eab94d1db73e455aaf1bd32b55",
+      "text": "Breathing is the key to qigong! It boosts your metabolism, so it's good for beauty and health too. Want to try it with me?",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:7e8b42f87559fa786ec787ee57d50ab9a72b3218cadf30652f36fef231e95e28",
+      "text": "I-I know, okay?! I know I'm the least suited person in the world for exorcising ghosts! But... even so, I want to try my best. For those kids' smiles.",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:5d882bc8c94fb5c8c2732bcd3912bf49414ea1149f0297510dac4b229f87cbdf",
+      "text": "Ghosts aren't scary, ghosts aren't scary... Okay, self-hypnosis complete! H-here I gooo!",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:c28dcb12dbac8368c186cc4d940fcd208ab5b372b22b09e550259d66d336b00c",
+      "text": "Haaah, so delicious! Alk's cooking is as good as a fancy restaurant's. I wish I could let my little sisters try it too... ...Um... could I take some home?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:18ea2287ee1bbd109e91066e12413406517408e45f9d52c11a67991a4f844343",
+      "text": "Ghosts, yokai, monsters, Devourers of Stars... Th-there are way too many scary things in this world! By the time I get over all of them, I'll be an old lady!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:042832e4aea9b61b0e7791e29cf9c5b340e454ceda24605eb6164b39f31de481",
+      "text": "Everyone has something they're afraid of, right? But everyone overcomes it and moves forward. Somehow, I feel braver now!",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:166a30a52d013695ab1d532ac27832efd5f720c230d1630baa82caf7049a5e2e",
+      "text": "N-nice to meet you. I'm Chenxi, a ghost hunter. If ghosts are troubling you, come to me anytime... Ah! But I'd prefer cases that aren't too scary, please. Yes.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:1905eb3c3ed6078d6bfd443edb58f9a7edfad52198f51a69523c25fc6ef8f352",
+      "text": "I feel like adventuring with you all has made me a little braver! Right now, even ghosts don't scare m... Huh? What was that noise? Eek! Stay awaaaay!!",
+      "status": "machine"
+    }
+  },
+  "221078": {
+    "3": {
+      "srcHash": "sha256:0222686b2b3eb4f97dc55f1bc34b0ec17fa219958c9477cae52e9bd2f1aa3cb5",
+      "text": "Hey, hey, do my clothes look good? Is Feanie all fluffy and sparkly too? ...Ehehe, really? Yaaay!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:35539ea2dc6d634a845654a050d029210be9df5e301b4973e20fd2aa6273d7cf",
+      "text": "Feanie can help with love too! Soak up the warm sunshine... Meet the person you love in a dream... And tell them you love them...",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:4118df25b8403639d18069b0a958d577e727afd714cad6fee8aeb40d4853b574",
+      "text": "Love is all... thump-thumpy... and floaty... and nervous and jittery...? Mmm... my head's getting all sleepy-sleepy...",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:aa67a87c8b34ac15d68789f582d8bb0623feac52ee02fad79cf0da7523a7bf0e",
+      "text": "I am Feanie, the Sleeping Princess of dreams and love! Ehehe. Denah came up with a catchphrase and pose for me. Beaucy, wanna do it with me?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:d792bef4685278492ebccd00276fba50dfc40212b4760de95c2d87fea5ca5b79",
+      "text": "I wonder what shape Feanie's love will be...? I hope it's fluffy and warm and cozy, like a nap...",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:9c1b5983dcb223c8e6eb50c30fcb22e54189799fc3eec371fdc9e7ff189b0165",
+      "text": "Happy Valentine's! Here's a present for always working so hard, and to say thank you! ...Huh? What's wrong? Why are you crying? U-Uncle Bertie?",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:d5f1d920e398cd9d30cc358c4c28b862773630064dbdb449979eee51fb32cffc",
+      "text": "Ehehe, Happy Valentine's! Feanie's gonna help out with love lots and lots too!",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:442962c246efec344e4effc828328e21071e706765f5589b6fd91201e5f67205",
+      "text": "Look, look. Feanie made this herself. I put lots and lots of \"I love you\" and \"thank you\" into it. I'd be so happy if you took it!",
+      "status": "machine"
+    }
+  },
+  "231099": {
+    "3": {
+      "srcHash": "sha256:bd48826532c0294afb7b9896876a713103eda517851e8f2f5c92291eac93c774",
+      "text": "If you need new gear, leave it to me. I'll prepare a gadget that's supremely cool and marvelous!",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:57226822e18050427b70e43cee6635c01c34991ef90c863e60564a9a0df01259",
+      "text": "Ahhh, divine inspiration just struck! W-wait, don't talk to me right now! Notes, notes! I have to jot this down before I forget!",
+      "status": "machine"
+    },
+    "13": {
+      "srcHash": "sha256:f94b17db588a5da09936bd243a9d2678c2486b86e591f857ff325a8d5db913ae",
+      "text": "Champions... magic... beastfolk... automatons... Other worlds have way too much going on! Argh, the ideas just keep pouring out... I love it, but where do I even start?!",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:81f8f3b8a227544ef795a73b5a80d49e56485d5dcd9b5ad9f32639b5fd23b3f1",
+      "text": "Ooh, so this is Shibuya manga...! I'm sensing a vibe similar to Qualia City's comic culture. ...Where's the next volume?",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:7d7a954371d542708e169389aee435bec85ae4b65f2fb1735926634f26f28c14",
+      "text": "Hehehe... Are you all set, Mr. Zantetsu? Then let us depart on our pilgrimage to the sacred sites of Metal Maniac Paradigm!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:b332ed8f1a50c244c4670097c46c39bbf849f4c7b3461f39211d8687250d1b78",
+      "text": "There are as many kinds of \"the best\" as there are people. That's exactly why you have to believe yourself that the things you love are the coolest. ...Right?",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:552e3eaf86ba4ef5ece93f48e0214448b26c4a49431a192888da9502f89cabf0",
+      "text": "Invetra, PBC Hero Division, Development Section. Creator of the world's coolest gadgets. Pleased to meet you.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:37ce098b5a858ec81c5ec2ba6f4bdb9e63c81ec7176dc92e3d4feea5568d5b93",
+      "text": "Friendship, trust, bonds between comrades... Hehe, I thought those had nothing to do with me, since gadgets are all I'm good at. I look forward to working with you.",
+      "status": "machine"
+    }
+  },
+  "261089": {
+    "3": {
+      "srcHash": "sha256:f251b8bcb42727d04addaa511834b26bc6241eb714c398626af3ad6da49b417a",
+      "text": "I'm Rooma, but I'm also Armadeus. That's why I want to know... what I felt back when I was the Dragon of Darkness.",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:f1a8b1e0ea032dc63bfe3424218d79b08d76a714bbfc48b283a73e04b72f1a9f",
+      "text": "U-um, Koma? You don't have to try to spoil me, you know...? I mean, I'm still a kid, but...! I-it's embarrassing...!",
+      "status": "machine",
+      "note": "Koma taken as Couette's companion in EN; uncertain."
+    },
+    "13": {
+      "srcHash": "sha256:13b08cd12055fd40fb576cc531c28e1d4ef2ce2a8a6cc7e626b990b3b49a7302",
+      "text": "Books are nice, aren't they? Music, too. It's like they color your own world in brighter shades... Yeah. I think it's really wonderful.",
+      "status": "machine"
+    },
+    "18": {
+      "srcHash": "sha256:3f4021ff14f6f430b20458979931580cc71c2ae68f13d1820dcdbedd611f28d4",
+      "text": "I think I'll keep on inheriting my memories. There were sad things too, but... I don't want to lose the feelings that were passed on to me.",
+      "status": "machine"
+    },
+    "23": {
+      "srcHash": "sha256:1624f41d53edef5dc610c037e3a20cabe5d9a862052f324a35c4f4a1ca184e63",
+      "text": "I met Couette's parents the other day, and when they saw me, they said I was \"beautiful\"! People are often scared of the power of darkness, so... that made me really happy!",
+      "status": "machine"
+    },
+    "28": {
+      "srcHash": "sha256:3671573334ab099d76ed842edd84381e8e57636d76184d7be1ee564da9c6a4c5",
+      "text": "I want to grow big like the other dragons soon. It can't be helped, but I'm not at full strength yet either... Though I do like being able to talk to my friends at eye level.",
+      "status": "machine"
+    },
+    "33": {
+      "srcHash": "sha256:9a0651a3b07eb60622e19122e9164b0c45acc3bfaed954e1efece395701447df",
+      "text": "My name is Armadeus. A lot of people call me the Dragon of Darkness, but... my friends call me Rooma.",
+      "status": "machine"
+    },
+    "38": {
+      "srcHash": "sha256:d99be2bce78cb75b208038ac79663706a97f3d3d8653b8b9a9b1c26630359762",
+      "text": "I want to protect humans. But not because I'm Armadeus. It's because I want to protect everyone's feelings! That's why I fight. Come on, let's go!",
+      "status": "machine"
+    }
+  },
+  "700015": {
+    "3": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Everyday dialogue 1)",
+      "status": "machine",
+      "note": "Placeholder; same rendering as EN rows 4 and 5"
+    },
+    "8": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Joining dialogue)",
+      "status": "machine",
+      "note": "Placeholder; same rendering as EN rows 4 and 5"
+    },
+    "13": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Evolution dialogue)",
+      "status": "machine",
+      "note": "Placeholder; follows EN rows 4 and 5"
+    }
+  },
+  "700016": {
+    "3": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Everyday dialogue 1)",
+      "status": "machine",
+      "note": "Placeholder; same rendering as EN rows 4 and 5"
+    },
+    "8": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Joining dialogue)",
+      "status": "machine",
+      "note": "Placeholder; same rendering as EN rows 4 and 5"
+    },
+    "13": {
+      "srcHash": "sha256:c2ffaa9ec724c09f044c84f523dd280a7084ae78d05a15187d4cda4a5fb29fd7",
+      "text": "(Under adjustment; Evolution dialogue)",
+      "status": "machine",
+      "note": "Placeholder; follows EN rows 4 and 5"
+    }
+  }
+}

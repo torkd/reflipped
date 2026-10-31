@@ -1,0 +1,98 @@
+{
+  "300120": {
+    "1": {
+      "srcHash": "sha256:ee73dcfb415f2b667621e9888012d2bd2caac8ff6658153a3b5a34dafdf537eb",
+      "text": "5★ Starsteel Ingot Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:f394d1658539f7aa64bdab46f15aaf9425979d7303c70daf666d088ba61aad39",
+      "text": "A set containing 5★ Starsteel Ingot × 1 and Wrightpiece × 3000",
+      "status": "machine"
+    }
+  },
+  "300127": {
+    "1": {
+      "srcHash": "sha256:9679b8eaa268f7519c0964c18ef8a2ac1846fe98906711160288517ecca0a7eb",
+      "text": "10-Pull Summoning Ticket Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:d9d1584114ad233ddf907e6167a3acf3b8c9cdc676e30406b9bd79fafb29723f",
+      "text": "A set containing 10-Pull Summoning Ticket × 1 and Mana × 50000",
+      "status": "machine"
+    }
+  },
+  "300129": {
+    "1": {
+      "srcHash": "sha256:35cb4967920b3bef91036bf68fa07d51a5f77c21f7f66a641bffd2e21421c39a",
+      "text": "Staminade Flask Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:363a5c0427e16f3ac55883ef7d59e5ae2814dd67c77d6e6898602f631ed2a31a",
+      "text": "A set containing Staminade Flask × 3, Mana × 300000 and Wrightpiece × 10000",
+      "status": "machine"
+    }
+  },
+  "300130": {
+    "1": {
+      "srcHash": "sha256:517b1d05cd140266eda3232095d70424806c4256700bd64759950d4082c3f93d",
+      "text": "Staminade Swig Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:b8f7904fc2bb7d7ff59642116f6d71ee4e99cdee755640693982d6a13495d051",
+      "text": "A set containing Staminade Swig × 3, Mana × 100000 and Wrightpiece × 3000",
+      "status": "machine"
+    }
+  },
+  "301132": {
+    "1": {
+      "srcHash": "sha256:ee73dcfb415f2b667621e9888012d2bd2caac8ff6658153a3b5a34dafdf537eb",
+      "text": "5★ Starsteel Ingot Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:f394d1658539f7aa64bdab46f15aaf9425979d7303c70daf666d088ba61aad39",
+      "text": "A set containing 5★ Starsteel Ingot × 1 and Wrightpiece × 3000",
+      "status": "machine"
+    }
+  },
+  "301139": {
+    "1": {
+      "srcHash": "sha256:9679b8eaa268f7519c0964c18ef8a2ac1846fe98906711160288517ecca0a7eb",
+      "text": "10-Pull Summoning Ticket Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:d9d1584114ad233ddf907e6167a3acf3b8c9cdc676e30406b9bd79fafb29723f",
+      "text": "A set containing 10-Pull Summoning Ticket × 1 and Mana × 50000",
+      "status": "machine"
+    }
+  },
+  "301141": {
+    "1": {
+      "srcHash": "sha256:35cb4967920b3bef91036bf68fa07d51a5f77c21f7f66a641bffd2e21421c39a",
+      "text": "Staminade Flask Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:363a5c0427e16f3ac55883ef7d59e5ae2814dd67c77d6e6898602f631ed2a31a",
+      "text": "A set containing Staminade Flask × 3, Mana × 300000 and Wrightpiece × 10000",
+      "status": "machine"
+    }
+  },
+  "301142": {
+    "1": {
+      "srcHash": "sha256:517b1d05cd140266eda3232095d70424806c4256700bd64759950d4082c3f93d",
+      "text": "Staminade Swig Set",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:b8f7904fc2bb7d7ff59642116f6d71ee4e99cdee755640693982d6a13495d051",
+      "text": "A set containing Staminade Swig × 3, Mana × 100000 and Wrightpiece × 3000",
+      "status": "machine"
+    }
+  }
+}

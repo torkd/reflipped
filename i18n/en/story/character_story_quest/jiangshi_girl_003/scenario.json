@@ -1,0 +1,359 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:a13db2dbd54b33a780606fae486862083947aeee2001a66863863147fad693fb",
+      "text": "Jiangshi are running wild...!?",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:cbb03ff101679dd2730c97ea74641d2de04ce7e900939e3ab2f66b79b0e65572",
+      "text": "Yes. There's been one incident\nafter another lately. We'd like you\nto drive them out, Chenxi...!",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:3bf749763e8188b8e83171eba79f1be8b02ba43e42aa7301678aa524b9b7ce9c",
+      "text": "Jiangshi... An undead from the\nlegends around these parts,\nif I recall.",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:a3c2330b41a019586c11f8dd25bd0a659769a6f653cf9604039527c265ecbd4f",
+      "text": "Yes. I've never seen one myself,\nthough...",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:0eded8e25a8eb090c4a75e9aaa9d23812a7d259c801b58d3bd54ce93a5d85057",
+      "text": "Sounds fishy.",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:9172c4f62f98c254d6de3bc2e1ca3cb407085a4a58bd0e04f1e5161be50fac3d",
+      "text": "B-but people are really getting\nhurt! The residents are terrified...",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:d856401bd2cf2f451916b7c700ef22c82a5142ee2fe697b822fb0a267114ced8",
+      "text": "I-I understand. I'll take\nthe job...!",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:d1cb87d5ed866d2ba78711a7da0c71acef3ff88531152700f6a09223e0bb093c",
+      "text": "I-it's fine...! Not scary...\nnot scary...!!",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:df81d29e5c55afe4e7fe24917b51cd0ef8f0980a5d103e8bdd8976a6563cf797",
+      "text": "...Chenxi. Are you sure about this?\nYou haven't overcome your fear yet.\nAnd yet—",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:99e8369d173f30d5c20dcc5edc4c5a72ea635879d94fdbccaf10705630287bd8",
+      "text": "E-even so...!",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:81bac07c4c77abd64967863b24f247bd902836f30d56ed665bda62632efd4d24",
+      "text": "If the same thing happened on my\nFloat... If Fei and Shan were put\nin danger...!",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:84a68910185b680981a7646e9028892ac3906b4d29bf7876a78b250bcf4c60c0",
+      "text": "When I think about that, I can't\nrun away! I-I'll solve this, no\nmatter what...!!",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:fe96b413c808e95399e2f3f7b7ae5316c11dbd0893c1e10e51247cbaaa03bbe1",
+      "text": "...I see.",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:7fabef200acc26ea9f7f26a3d64062160d77a41e7c758db445422be8f01a36dc",
+      "text": "Yes. And above all—\nyou all trained me!",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:41dbb5bad7d6a6d26ac9abed6b8dbd2133af9159fda51333259948399a8e47f8",
+      "text": "Well, do your best, just don't\noverdo it.",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:b1f2f332f8a097b2d3b71db33847498757327440d42d9a0a3ccf9369efe44c15",
+      "text": "L-leave it to me! I'll show you\nwhat my training did!",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:8ed505673f44bdbe6cd464843188f5be7e2536a209215c4e8d2d80cc17b523ac",
+      "text": "...Ugh...! This warehouse is the\nonly place we haven't checked, but—",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:1a834ab2600a05951f763c0e858630a53780653c14288de19b89b4c48da9fd89",
+      "text": "Careful, Chenxi! Something's there!!",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:8d88cd5b8084de11fa5a15e2bd661d3ef2225934b3cad871a2e641eecbe572d8",
+      "text": "Aaa-aaah... aaa-aaah...",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:3bd9d1f16cd7f897a4cdb821a287d78d350e948a6cf8cb45bf733e16e4213ed1",
+      "text": "Ee... gh...!?!?",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:6a6ac6e1a3230fc34f67f30572aa42d10f8715694a6a20e23bb4ba21459c0d09",
+      "text": "That's a jiangshi...!",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:f5ec82b955869f987e8ac9c5c1f97337cfb2f67454375d868a8105cce5506746",
+      "text": "...? This presence...? For an\nundead, it's far too—",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:d607a245628d6115e0e00e9c1691140a43f6e51d4cc98c26b4910b122384ffcc",
+      "text": "Ugh... N-not scary, not scary,\nnot scary...!",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:56b574d09f10228fed2bf9ad60df86d6c16c82774dd75528bf2514eaaaa6e008",
+      "text": "Chenxi! Don't push it,\nget back!!",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:ea8e29b2fad781a6d34d687d2614d78e95d08b323004b525b705a18c3cacaa03",
+      "text": "N-no! I won't back down!!",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:beb1541cfd809fe256484b71ce88310496c07aeb2d37d79374063050106ef2b6",
+      "text": "I trained so hard...!!",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:8c935ad152f83455b5cd8c09fa90395ccb4e465bdaa2d5565886ea5993a003d8",
+      "text": "For Fei and Shan...! I'm going to\nbe a sister they can be proud\nof...!!",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:6ee73412e0bc5335498a921aa8dbc5ad04d18f6796decd8486b948156aeef9d7",
+      "text": "I'M GONNA BE ONE!!!",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:a723fc4c3f1467a63561aedaf5769dddd1ae6c81b0ddf07dba9c2f870f85c920",
+      "text": "Haah, haah...! ...D-did I do it?",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:8e20d536c4c9b4658844b105d03579525211bcca7100efe9f097517defd1e1f1",
+      "text": "...I did it!! Everyone, did you\nsee?! I really did it!",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:d85caadf6b36a2883368c4001915559416dfac45c64306c0d6d1c6fabd65dfd3",
+      "text": "Yes, I was watching every moment.",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:1bc44880b8136eb952ac0cdba2aef41ae91bcd5f8dc2b69799a56c0136e324d8",
+      "text": "Ngh, ugh...!! Damn you, you'll\npay for this...!!",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:8705b4a4729ba04e5f31a49b81f74aa38d59cbd8f9d921afe6b55ecd54b6ae0a",
+      "text": "Th-the jiangshi talked!?\n...Don't tell me...!!",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:5f35b1e9ca5cfd169cb020203c423cbd7d2ad94463824379716668a0a8e5fd53",
+      "text": "So they were human after all.\nNo wonder I sensed none of the\npresence of the undead.",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:d0b5cc3b4e23460da28a74c013350b3c601bab80ac396d92e72e58aeacd25586",
+      "text": "And the jewels they dropped... A gang\nof thieves using a jiangshi scare as\ncover? How petty can you get?",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:f53c4be7f1a4d16d4bd6b3f3f67972ee280c8b97cba1526e892c5c27f3cce44b",
+      "text": "N-no... How awful!\nTricking everyone and scaring them!!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:fdaaf97e7e71132d8badd8d7094febdeac2e0362ab3b9507063c3b480ab073b5",
+      "text": "Ha! Anyone dumb enough to fall\nfor it has only themselves to blame!!",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:8e692714db4b854d6646f770aa474cfc9d0ef1c4735b4b99c2666ce8f86b208d",
+      "text": "...Do you know how frightening\nit is to spend the night trembling\nover ghosts...",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:087ea352ede6487a558a9e0f03cc1f4bd1f160a9f05c858d348fe11792893783",
+      "text": "How scared everyone is...\nhow scared those kids are...!",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:a5d9d3db209f2ac292e1e371ef143b6ad50e25b85dec3ea91b8e6200d301c1fd",
+      "text": "DO YOU HAVE ANY IDEA?!!!",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:ad48764f0ba9e3e99b94f493bdba1e9232fe3ea168f58ab211dcb96815aa13fb",
+      "text": "Shut up! Everything was going\nso well... Stay out of our way!!",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:865a96b82d1dde1675a251f96e4c81726613ec037c54a8dcdc351009fbaa2f2f",
+      "text": "I will NEVER forgive you!!!\nHAAAAAAAAAH!!!",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:bb63d3a1def98ac05e1bf20b24dd2f8f797e4617f98dedf3ffc2c760a1f3adea",
+      "text": "And that settles that.",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:b358d2a352b5a99122a7ab2478c7bd93537e55b805d9859781289b1e28cc25cb",
+      "text": "I just caaan't believe it! Toying\nwith people's fear of ghosts!!",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:a3dafa25bc63bc589244202def59dda1f7fe1d31b9d4f2285e4282a5d49d08cd",
+      "text": "...But you overcame it.\nThat was splendid, Chenxi.",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:e226db5e34e89411b8021f3579daa82b13afc4c685677ad236f01be852a152ad",
+      "text": "Y-yes...! It's all thanks to you.\nThank you so much!!",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:d9c9dd1c811ce066b6a90b78890a7aad5d9908f5d1eef9051917cdc7f52e6a60",
+      "text": "I'm not Chenxi the scaredy-cat\nanymore. I can hold my head high\nin front of my sisters—",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:3b404276b8e277f07ad3dcc8bdfb9240d27d6c3c5877beccea92c52603ff558d",
+      "text": "A-as a r-r-reliable\nghost hunter—",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:caac4d5833a838049475b19e840b5620fd34fc49b75deee77d898f5e44cc913f",
+      "text": "WAAAAAAAAAAAAAH!?!?",
+      "status": "machine"
+    }
+  },
+  "208": {
+    "5": {
+      "srcHash": "sha256:258163d3a190124b734684e6a7c9a88f14cb4451a1ef153a02939816f58c28d5",
+      "text": "...Looks like holding her head high\nwill take a little longer...",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:bafe84e754745729644a661a58eca5e31b9bc111d513d5daca18ecb1b8ad6444",
+      "text": "...Well, one step at a time.",
+      "status": "machine"
+    }
+  }
+}

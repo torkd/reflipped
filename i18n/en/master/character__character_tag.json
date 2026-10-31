@@ -1,0 +1,16 @@
+{
+  "Hero": {
+    "0": {
+      "srcHash": "sha256:24c2ea9bb88f21d4e5405da091d04ce141b0ceeff4bddfc6ac19882f6fee018a",
+      "text": "Champion",
+      "status": "machine"
+    }
+  },
+  "Prince": {
+    "0": {
+      "srcHash": "sha256:10d685927bc6121c95304d90153716db5d15e5fd8c187a7b7be84ca514fdf1fe",
+      "text": "Prince",
+      "status": "machine"
+    }
+  }
+}

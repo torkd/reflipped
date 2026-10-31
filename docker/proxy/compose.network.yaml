@@ -1,0 +1,17 @@
+# Override for a reverse proxy that runs in a container: join its Docker network, so the proxy reaches
+# Reflipped as http://reflipped:8000 and the game port needn't be published at all.
+#
+#   docker compose -f compose.yaml -f compose.network.yaml up -d
+#
+# Set PROXY_NETWORK to the proxy's network (`docker network ls`) and TRUST_PROXY to its subnet
+# (`docker network inspect <network> -f '{{(index .IPAM.Config 0).Subnet}}'`).
+
+services:
+  reflipped:
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+    name: ${PROXY_NETWORK:?set PROXY_NETWORK in .env}

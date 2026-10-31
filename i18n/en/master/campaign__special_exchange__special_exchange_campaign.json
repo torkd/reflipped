@@ -1,0 +1,76 @@
+{
+  "7": {
+    "1": {
+      "srcHash": "sha256:74614a81d1ffc63ad79179715026d7fe0a127d208ef4cd6345af1caec7a86529",
+      "text": "Dream Unit Scouting Season 5 (2021_9)",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "1": {
+      "srcHash": "sha256:4cffdf5ca00b8efaa56b5f5a56ebc26be7e88f6106f17f7e02e98d26c7e1f759",
+      "text": "Dream Unit Scouting Season 6 (2021_11)",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "1": {
+      "srcHash": "sha256:99502ceea86db89fc5b7d028c2a52c19dbded47865820a60ca9a231f2106ffca",
+      "text": "Scouting Ticket Gift Promo",
+      "status": "machine"
+    },
+    "12": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "1": {
+      "srcHash": "sha256:99502ceea86db89fc5b7d028c2a52c19dbded47865820a60ca9a231f2106ffca",
+      "text": "Scouting Ticket Gift Promo",
+      "status": "machine"
+    },
+    "12": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "1": {
+      "srcHash": "sha256:99502ceea86db89fc5b7d028c2a52c19dbded47865820a60ca9a231f2106ffca",
+      "text": "Scouting Ticket Gift Promo",
+      "status": "machine"
+    },
+    "12": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "1": {
+      "srcHash": "sha256:99502ceea86db89fc5b7d028c2a52c19dbded47865820a60ca9a231f2106ffca",
+      "text": "Scouting Ticket Gift Promo",
+      "status": "machine"
+    },
+    "12": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "1": {
+      "srcHash": "sha256:99502ceea86db89fc5b7d028c2a52c19dbded47865820a60ca9a231f2106ffca",
+      "text": "Scouting Ticket Gift Promo",
+      "status": "machine"
+    },
+    "12": {
+      "srcHash": "sha256:f24b21faf1d760cc0b8e96421aaaed4d3b34d14c4510eede8cb297ede6fc5322",
+      "text": "[Gift] Scouting Ticket",
+      "status": "machine"
+    }
+  }
+}

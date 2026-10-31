@@ -1,0 +1,338 @@
+{
+  "2243": {
+    "3": {
+      "srcHash": "sha256:6dd39a7611a8847457d52dcb5ad678de3d4dc534025f1caeb6559df588a0f5ae",
+      "text": "Use up a total of 100 stamina",
+      "status": "machine"
+    }
+  },
+  "2244": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2245": {
+    "3": {
+      "srcHash": "sha256:80fdfe1bdafe5f1343ac1b542a4948b96d8baca2ce2eb4639fff79b8a26438cc",
+      "text": "Clear ::x_count:: solo battles",
+      "status": "machine"
+    }
+  },
+  "2246": {
+    "3": {
+      "srcHash": "sha256:7f6771a108272363d591fc08a078acf58a126bfc4109fb19a7df03645f33d6cb",
+      "text": "Clear ::x_count:: quests with a rank of S+",
+      "status": "machine"
+    }
+  },
+  "2247": {
+    "3": {
+      "srcHash": "sha256:a4dd380e407e00c91189103dd183c39b9dc5bf6b0df060f98d939a32191bfb06",
+      "text": "Use skills ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2248": {
+    "3": {
+      "srcHash": "sha256:dccb2e0523dc24f71ebf923a22873566f8c4bc02f7191052dd4cd64e05f8acb2",
+      "text": "Dash ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2249": {
+    "3": {
+      "srcHash": "sha256:838efc2fe2ad6d208cb91f85c986519843153e5c00a27bf1d7bd42c3ef0d3f09",
+      "text": "Activate ::x_count:: Power Flips (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2250": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2251": {
+    "3": {
+      "srcHash": "sha256:e7f8f9f69d69148af0685746df86df36d72e743a06724e996aa7b104da3dc56e",
+      "text": "Clear a battle with a skill chain of 4 or higher",
+      "status": "machine"
+    }
+  },
+  "2252": {
+    "3": {
+      "srcHash": "sha256:88c0662db30bed6cee2bb2382f648cf050d37368138d97dc34e3d4ec831d7bad",
+      "text": "Clear all Beginner missions",
+      "status": "machine"
+    }
+  },
+  "2253": {
+    "3": {
+      "srcHash": "sha256:7d88e6bb972f0487d14122c169f2ff700d86434441cae345ed493c033becb392",
+      "text": "Use up a total of 150 stamina",
+      "status": "machine"
+    }
+  },
+  "2254": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2255": {
+    "3": {
+      "srcHash": "sha256:a4dd380e407e00c91189103dd183c39b9dc5bf6b0df060f98d939a32191bfb06",
+      "text": "Use skills ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2256": {
+    "3": {
+      "srcHash": "sha256:dccb2e0523dc24f71ebf923a22873566f8c4bc02f7191052dd4cd64e05f8acb2",
+      "text": "Dash ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2257": {
+    "3": {
+      "srcHash": "sha256:838efc2fe2ad6d208cb91f85c986519843153e5c00a27bf1d7bd42c3ef0d3f09",
+      "text": "Activate ::x_count:: Power Flips (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2258": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2259": {
+    "3": {
+      "srcHash": "sha256:e1de3036d1747df40e7e644a08d1f39d88f2114d392a162cc58c52831cd36bef",
+      "text": "Clear a battle with a skill chain of 6 or higher",
+      "status": "machine"
+    }
+  },
+  "2260": {
+    "3": {
+      "srcHash": "sha256:5a3e5795a6b6acfaae62c5aa9d698cbfc5d4654f93098812b7d4dfda5a98a099",
+      "text": "Clear all Intermediate missions",
+      "status": "machine"
+    }
+  },
+  "2261": {
+    "3": {
+      "srcHash": "sha256:6d43ebf896844756603eeaeb7d169e52f33ee9cd26028593f19a2c67491037a1",
+      "text": "Use up a total of 200 stamina",
+      "status": "machine"
+    }
+  },
+  "2262": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2263": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "2264": {
+    "3": {
+      "srcHash": "sha256:f36280e5f73e819acb3813c8814aae0d277c94918d686da1aa96128aa1df6e1c",
+      "text": "Clear a battle with a skill chain of 9",
+      "status": "machine"
+    }
+  },
+  "2265": {
+    "3": {
+      "srcHash": "sha256:b8cd76cb1dba2f5280abfa18d2b18ca7a5f28c54b71f384d3bb274fd90bdb470",
+      "text": "Clear all Advanced missions",
+      "status": "machine"
+    }
+  },
+  "2266": {
+    "3": {
+      "srcHash": "sha256:412d6498f3a9c692ff62c304c85b74ee07566cd8684ee6e530c3d39c33a5bd55",
+      "text": "Clear all missions",
+      "status": "machine"
+    }
+  },
+  "10000": {
+    "3": {
+      "srcHash": "sha256:6dd39a7611a8847457d52dcb5ad678de3d4dc534025f1caeb6559df588a0f5ae",
+      "text": "Use up a total of 100 stamina",
+      "status": "machine"
+    }
+  },
+  "10001": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "10002": {
+    "3": {
+      "srcHash": "sha256:80fdfe1bdafe5f1343ac1b542a4948b96d8baca2ce2eb4639fff79b8a26438cc",
+      "text": "Clear ::x_count:: solo battles",
+      "status": "machine"
+    }
+  },
+  "10003": {
+    "3": {
+      "srcHash": "sha256:7f6771a108272363d591fc08a078acf58a126bfc4109fb19a7df03645f33d6cb",
+      "text": "Clear ::x_count:: quests with a rank of S+",
+      "status": "machine"
+    }
+  },
+  "10004": {
+    "3": {
+      "srcHash": "sha256:a4dd380e407e00c91189103dd183c39b9dc5bf6b0df060f98d939a32191bfb06",
+      "text": "Use skills ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10005": {
+    "3": {
+      "srcHash": "sha256:dccb2e0523dc24f71ebf923a22873566f8c4bc02f7191052dd4cd64e05f8acb2",
+      "text": "Dash ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10006": {
+    "3": {
+      "srcHash": "sha256:838efc2fe2ad6d208cb91f85c986519843153e5c00a27bf1d7bd42c3ef0d3f09",
+      "text": "Activate ::x_count:: Power Flips (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10007": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10008": {
+    "3": {
+      "srcHash": "sha256:e7f8f9f69d69148af0685746df86df36d72e743a06724e996aa7b104da3dc56e",
+      "text": "Clear a battle with a skill chain of 4 or higher",
+      "status": "machine"
+    }
+  },
+  "10009": {
+    "3": {
+      "srcHash": "sha256:88c0662db30bed6cee2bb2382f648cf050d37368138d97dc34e3d4ec831d7bad",
+      "text": "Clear all Beginner missions",
+      "status": "machine"
+    }
+  },
+  "10010": {
+    "3": {
+      "srcHash": "sha256:7d88e6bb972f0487d14122c169f2ff700d86434441cae345ed493c033becb392",
+      "text": "Use up a total of 150 stamina",
+      "status": "machine"
+    }
+  },
+  "10011": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "10012": {
+    "3": {
+      "srcHash": "sha256:a4dd380e407e00c91189103dd183c39b9dc5bf6b0df060f98d939a32191bfb06",
+      "text": "Use skills ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10013": {
+    "3": {
+      "srcHash": "sha256:dccb2e0523dc24f71ebf923a22873566f8c4bc02f7191052dd4cd64e05f8acb2",
+      "text": "Dash ::x_count:: times (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10014": {
+    "3": {
+      "srcHash": "sha256:838efc2fe2ad6d208cb91f85c986519843153e5c00a27bf1d7bd42c3ef0d3f09",
+      "text": "Activate ::x_count:: Power Flips (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10015": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10016": {
+    "3": {
+      "srcHash": "sha256:e1de3036d1747df40e7e644a08d1f39d88f2114d392a162cc58c52831cd36bef",
+      "text": "Clear a battle with a skill chain of 6 or higher",
+      "status": "machine"
+    }
+  },
+  "10017": {
+    "3": {
+      "srcHash": "sha256:5a3e5795a6b6acfaae62c5aa9d698cbfc5d4654f93098812b7d4dfda5a98a099",
+      "text": "Clear all Intermediate missions",
+      "status": "machine"
+    }
+  },
+  "10018": {
+    "3": {
+      "srcHash": "sha256:6d43ebf896844756603eeaeb7d169e52f33ee9cd26028593f19a2c67491037a1",
+      "text": "Use up a total of 200 stamina",
+      "status": "machine"
+    }
+  },
+  "10019": {
+    "3": {
+      "srcHash": "sha256:dbe5244758898db630f3cbddbd02fc946ee645af48b343e0f6b7ffa949bcffa1",
+      "text": "Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "10020": {
+    "3": {
+      "srcHash": "sha256:59b6817d7ad14e97e7c5216be7383c48e6085ef6a78c0020e4a320017599a24f",
+      "text": "Defeat ::x_count:: foes (Cleared battles only)",
+      "status": "machine"
+    }
+  },
+  "10021": {
+    "3": {
+      "srcHash": "sha256:f36280e5f73e819acb3813c8814aae0d277c94918d686da1aa96128aa1df6e1c",
+      "text": "Clear a battle with a skill chain of 9",
+      "status": "machine"
+    }
+  },
+  "10022": {
+    "3": {
+      "srcHash": "sha256:b8cd76cb1dba2f5280abfa18d2b18ca7a5f28c54b71f384d3bb274fd90bdb470",
+      "text": "Clear all Advanced missions",
+      "status": "machine"
+    }
+  },
+  "10023": {
+    "3": {
+      "srcHash": "sha256:412d6498f3a9c692ff62c304c85b74ee07566cd8684ee6e530c3d39c33a5bd55",
+      "text": "Clear all missions",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "4": {
+    "5": {
+      "srcHash": "sha256:070c473fb3c17455355d918c60e92ac86d7ab013d8630ba638f15f3ff80679ca",
+      "text": "Ah... I see. So that's how it was.\nI was—",
+      "status": "machine"
+    }
+  },
+  "6": {
+    "5": {
+      "srcHash": "sha256:0baba993b09849bafc0eff3c3b3b7ecda46803c2fe73fb3ca4ffc32d51ef713e",
+      "text": "Hey there. Got a moment?",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:0669d20ccf5639969b810eeed121db0f23e5f297c131c23240ffaaad91d2549b",
+      "text": "You're a dragon too, right?\nHow funny, meeting mid-rebirth!",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:a495f51d522862bffa011286562d414c75a6fe1da2ba7e130706151cf3cb34ba",
+      "text": "Who are you...?",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:a5ab4f513e736238133cf170a1e7b5e2040dd93e6020794485eb359b27492973",
+      "text": "Me? I'm Rustamov.\nThe Holy Dragon!\nAnd you?",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:4bda2734289c1a3b1bc1725ca61615a6bff7c173957e8c5031bd456eb85acaa4",
+      "text": "I'm... Armadeus.",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:7c2401b724eda00746774f6744b1fb0c79aa75d9f3e6193e24d8b0033efee648",
+      "text": "My friends call me Rooma.",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:df200960228009e1d919537b276782f69c4cb7f01dacdb6f180d0fb4466b1e0e",
+      "text": "A dragon who wants to stay close\nto humans... Hahaha.",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:6839cb5f527cd7c9cc0c4470f2b6b5c8acba78887530ddcaa338c9876a8a5c42",
+      "text": "What a weirdo.\nI can't understand it at all!",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:23df7b30cec99828a1f593f77b83834a50ee86706568d2efdee98dc57302de95",
+      "text": "...I see. So it's time.",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:33b8b67d83b6b26d2e5004d8d5df872af381a4f9832070f39387cb23cac78af8",
+      "text": "So this is where you were,\nEstariel!",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:970a26189e17657bf17c04d6e8c0ad8a133be0dc710761dabc5fd4ee262e620d",
+      "text": "Princess of the elves. It is time for\nrebirth.",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:989f25977c3eca81e67a93994591787423e235bb9051efd14737d050b96752d2",
+      "text": "Rooma, the Dragon of Darkness, has\nappeared in Starview Village. And he\nsays the Holy Dragon Rustamov is—",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:300b5d6a5faa296d930d5acacd33bb39e7cb8e9835522c3e2e4430c4d8502253",
+      "text": "Enough. The forest told me.\nI know everything.",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:0a689aef43b56cb8cf201ade34e844b660b906857a5d82173f8041f176a913e5",
+      "text": "I will go and bear witness.\nYou may all come with me.",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:75c747e6cede50bf1e59f705900083dd9b58e268ccb069cdaf9156d7798b41a5",
+      "text": "You know where he is...?",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:a2f040570afe97dabae8b9db7b4796ca58767cf9b07d0354bcfa6a198ee0d6dc",
+      "text": "Damn it all!!\nWhat's WITH those guys?!",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:1c4c737ba6ff62348c5a968c8775c78287d762006629047a6f0d4d385da633cb",
+      "text": "Dragon... Become... Light...",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:c261bb66664c111a856d8047c136ca0db92e4a422a2f03e6639efb4b7a9f786a",
+      "text": "W-wait—!",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:4cc6c063e156132b52627ce400aa033b402d1c3d6e8942d917e526191f4c7dc2",
+      "text": "Drag Rudra!!!",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:bc5e1b1df0853518c980d80f6eb4afa99b66acd8e40c7089e859c379f67ab97f",
+      "text": "What are you doing?! Fire!!!",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:a5203da0983f8959c9c56432945fce80d2e11e1f9dccfd173d98d728f5b4808b",
+      "text": "Let there be light! Iten Shu!!",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:d430c5eaa0287dd43da4711396370f94a914bc14a0fdd921c56facae33537bc7",
+      "text": "Ah...",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:e3369c74226274044b48333de88d5d341f7fbdc9ade02cd8be35cca86ed01827",
+      "text": "Heh... You've gotten rather small,\nhaven't you? Rustamov.",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:b5845ddb987aec83300aeee00ff1f45fa7f29505a201a29ebc6cfb583e031c0a",
+      "text": "Wh-what did you say?!",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:22a9aea8c1d687ec4075f14c22bbbc6a09e25fa80feb9797138e6b2c70eb5bd4",
+      "text": "Good! You're safe...! That was\ncloser than I'd like, but—",
+      "status": "machine"
+    }
+  },
+  "119": {
+    "5": {
+      "srcHash": "sha256:5a0b422695cca2138c8d84477bb92c6bf92704ff808e4e3daa08b59a2bae58aa",
+      "text": "Small? You're the shrimp here!\nWho do you think you are?!\nDo you know who I am?!",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:3ecff0ecdb49a841974c178dbc71a0565363017fd722e1ce672bd3e765a74ffb",
+      "text": "...You are Rustamov, are you not?",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:dbb415ed3285dc8e9b255d3dc17b5a5342cdedf988293fe5380bb7052e183cb1",
+      "text": "That's right, I'm the greatest dragon,\nHoly Dragon Rustamov! How dare mere\nhumans hold their heads high?",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:7a31693d3b34220081fc225db0632bc7dce2511598702747a567201311eae151",
+      "text": "Hmph. You didn't need to butt in.\nThose small fry were nothing\nto me, you know?",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:0a5249708c776383027b8836152f05c33d051191f90d50d87c3c303fcf608cb1",
+      "text": "...How do I put this? He's very\ndifferent from before his rebirth...",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:60c4231831d500cfb462154ad374b8587c9fbf83c3b8a3cfe23b5539528dfb4e",
+      "text": "No. This is not Rustamov.",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:fb98e70f36abfdb1ffea58be90eca4b260447e590f3b93d53b586bcd3ed177bc",
+      "text": "Huh???",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:78b56ff20526cb13c27de3f7f322a39b1d4583c96b5391e2a8b5c2de96574bd1",
+      "text": "He was a great one. Ever since I\nwas a hatchling, he was strong,\nwise... and thoughtful.",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:b4eba960080279aa3a384fb1f14674c1639ad8fb22ca25543e8a5dc086246c62",
+      "text": "But—",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:e8e66bc1dece2a439db1789e4dd509c43af9f62af4442f955d258601a797b1fb",
+      "text": "Are you picking a fight?\nHey, you are, aren't you???",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:5e6960572d79fcc09a66fcfcfbfac56c94910ed1c8ca6a2baac5029074cc4856",
+      "text": "You're a wind dragon, right? Isn't\nit cheeky for a whelp who just\nlearned to talk?",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:341b7e7526a5a90bc0a7d4f6f769ded5ee1826254e0e15debb480eb0daffe5a0",
+      "text": "W-wait. He is your—",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:a7984a6214d7b70f0980c74b75f593df895abca380e70187825d98cf5ea112c2",
+      "text": "Besides, \"wind\" just exists to make\n\"light\" look good. Get it? Born\nas a supporting role—",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:401e7561cc717172b7723c340e14e411666ef063b47fcbb1e6da4fcbf0af1923",
+      "text": "Gil Amdia.",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:305cafb96a37f4fba8285ffaefd17e07c12706e9091313e86f898d091f5c166f",
+      "text": "WAAAAAAAH?!",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:fbca28c350d5eaa57236c03940b40245ca3999844e8aac4c039fe473f83e30fb",
+      "text": "Savor what wind truly is.",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:b0831ab3a7705d7446f3d4b336a8bf060748e3acbe6102f3990657ba24facdcf",
+      "text": "WAAAAAH?! Ah! Aaaaah!!\nAAAAAAAH?!",
+      "status": "machine"
+    }
+  },
+  "208": {
+    "5": {
+      "srcHash": "sha256:9c2eaafaf9ea6c2904af83680093146a602868f6ff2bcd6f861ce461d67fb1be",
+      "text": "Come now, shine. Go on and\nflicker for me.",
+      "status": "machine"
+    }
+  },
+  "213": {
+    "5": {
+      "srcHash": "sha256:c5c9abe7086ed94a3fe012eb1fe016cdfd276a40ee5b4b853b89ddd6dd8b3a39",
+      "text": "Please... forgive him.",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:2af921e59c8357627ce896b822258e0dac442b82d1856bdaa24fa57c65571fc8",
+      "text": "Put me down, you violent shorty!\nForehead! Pipsqueak!\nI would never—",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:eb51dbaa30437d3b9ef8a0d282d9ef2740e17f1bfaeaa5a9b91a4f3c813e8d0c",
+      "text": "WAAAAAAAH!!!",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:c88d0e9a66dca806872aa1336b0865d91304cff9f9e604507767522dd9705441",
+      "text": "No, no, no!\nWhat's with this town! I'll never\ndo what you say!",
+      "status": "machine"
+    }
+  },
+  "235": {
+    "5": {
+      "srcHash": "sha256:e5493e05ed4575f1f6ffb03d6e5a3a3be88bf891b68fc6a4771dffa933dc17d6",
+      "text": "What a sore loser of a dragon...",
+      "status": "machine"
+    }
+  },
+  "240": {
+    "5": {
+      "srcHash": "sha256:06215fae39660bc9b591b440ede5b961bb2a6a68f8252e2f988a5672ec5035bb",
+      "text": "You're the one who dragged me\nhere!",
+      "status": "machine"
+    }
+  },
+  "244": {
+    "5": {
+      "srcHash": "sha256:2889b85426df418257f5ecab530dbb103ae8432d5461e1516a765704d9913cce",
+      "text": "Rustamov...?! What on earth is\ngoing on...?",
+      "status": "machine"
+    }
+  },
+  "248": {
+    "5": {
+      "srcHash": "sha256:5cad471af51a15856aa7d3d8c6bdb418f8d909d30788b74510129da143fc8e05",
+      "text": "Well... At first, she meant only to\nwatch. But it seems she\ncouldn't hold back.",
+      "status": "machine"
+    }
+  },
+  "251": {
+    "5": {
+      "srcHash": "sha256:01b89e2e815fa193e018a3e4c8bb7cba68c2914254451e108fc6f6b87bda833e",
+      "text": "Yes, she couldn't help herself.",
+      "status": "machine"
+    }
+  },
+  "256": {
+    "5": {
+      "srcHash": "sha256:1dae03bcbd9521b6c8a86b04f4b601e58247277cfcb40ea3732b072869462d5d",
+      "text": "...Estariel seems rather cute\ntoday.",
+      "status": "machine"
+    }
+  },
+  "261": {
+    "5": {
+      "srcHash": "sha256:2910a18eec8fd2dd5cd180079f7daaa70fc264fbed0798ef916403245c1c3d55",
+      "text": "Yes.",
+      "status": "machine"
+    }
+  },
+  "266": {
+    "5": {
+      "srcHash": "sha256:f6db1a515a1c10842de5dea433a5f7d3c9b23df135ff3b90228535bd34078562",
+      "text": "I can't release him into the world\nlike this. As thanks for his past\nlife, I shall \"look after\" him.",
+      "status": "machine"
+    }
+  },
+  "271": {
+    "5": {
+      "srcHash": "sha256:58cfd134f768f970bc003e235c6dd5479fdfa9234c7b7e9cc814c525266da78c",
+      "text": "Liar! That's the face of someone\nwho's gonna \"discipline\" me!",
+      "status": "machine"
+    }
+  },
+  "275": {
+    "5": {
+      "srcHash": "sha256:c525f1a9e8fb0409cdde9bd8da144f75d729cb7e4709c7d1a7715f8e198be1a7",
+      "text": "I'm the great Holy Dragon!\nRustamov! Show some respect!!",
+      "status": "machine"
+    }
+  },
+  "279": {
+    "5": {
+      "srcHash": "sha256:0c104c7742e9ed8becd9867ea4e756fb6aad2d15da27c1b24917f0acd9d1dca6",
+      "text": "Yes. Of course, I know.",
+      "status": "machine"
+    }
+  }
+}

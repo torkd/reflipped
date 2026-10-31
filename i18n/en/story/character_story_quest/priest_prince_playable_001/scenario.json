@@ -1,0 +1,436 @@
+{
+  "4": {
+    "5": {
+      "srcHash": "sha256:6250302cf681e0348c2b5e4ba6a4e6b61cd2b3a319d8d426f41bdf059cc06d52",
+      "text": "—Strange, isn't it? You were nearly\nassassinated. And yet your family\nhas said nothing?",
+      "status": "machine"
+    }
+  },
+  "6": {
+    "5": {
+      "srcHash": "sha256:0f889a3f68303d3b676f2733bb64463102da2ac1bfa1975378be77e79bdd4281",
+      "text": "True, the Noble Houses are in a\nharsh position, but they're still\nyour family, no? ...Right?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:4a096bb3e28900ea0b5110e2e2980d489bc7ab4a2d2534622937d9238e01ea9e",
+      "text": "I was the prodigal son. I've caused\nnothing but trouble for Father and\nmy brother.",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:f6c9007b492fcd36ca94a8ad890148b08a409de185c15a1b5beeed239001461c",
+      "text": "Take a break, Marden. At this rate,\nyou'll collapse yourself long\nbefore any assassin gets to you.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:b63a113f1816749cf78def7776620b7a411be3a027ca90d1fcaf2b01923922ce",
+      "text": "...Staying busy means I don't have\nto think about unnecessary things.",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:4f258a0313fcde3415c62aa38c21c53f9bf9aa9cab6fcd965ed94c7f0bf958db",
+      "text": "...Half a year since then, already.\nWhen I heard you'd nearly been\nassassinated, I truly doubted my ears.",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:3834579810cff4ab7db686bcedf01abb3cb05cd7a099fee5a05740cc961ef9c4",
+      "text": "If you have no intention of\nstopping, how about a deal, Marden?",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:e23b1aeeebc912e48da21f357f53da614631cfdeaa406bd54a63f32ff2d32bac",
+      "text": "...I've already spilled everything\nI know.",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:b173810bd1eb0d51d4fbe88c9466b33fd7af9d0b9381e2233de1730d8db4d999",
+      "text": "House Kwetur has lost its sanity.\nThey're that cornered. We cannot\nleave this unchecked.",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:a1e88807620d7ee2d173a8a9b1b116cba1d939195077143f1e37250a9c2366f8",
+      "text": "We expose the conspiracy before they\nrun wild again, and hold them to\naccount. Our goals are the same, no?",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:78c52d2a4497e92444f667a260adb6079817f3c424315f9cf4be5b45998a938c",
+      "text": "My goal...",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:1fa17b55a51677fb898c9f1b48fe298f85bdc0fa31e8b20fc96c61e22e90ed75",
+      "text": "...You can't stop. But taking a\nstep forward is hard too, isn't it?",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:88536674f8f07bd2d173eead252b37c6c9e8512d26b2bf65e4a371579d0beec1",
+      "text": "Take a step...?",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:91f01c028ee8ffd42bd07d675c349f35e9fee88603cb57c11d66883474c769cf",
+      "text": "Marden...?!",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:01212e4f122b98444eb6c8812df8b0b0578630fb7c44f7505f951ea93ba17afc",
+      "text": "...I just felt a little dizzy,\nthat's all—",
+      "status": "machine"
+    }
+  },
+  "64": {
+    "5": {
+      "srcHash": "sha256:484fcb3adb19e36a0651004156a6b582a7324ecba00c79187398e81ddb5e0f8f",
+      "text": "The ruin of stars. The Guardian's\nwomb. Its arms.",
+      "status": "machine"
+    }
+  },
+  "68": {
+    "5": {
+      "srcHash": "sha256:a658a982c6f2d7b8d1660d32e38909778ac851e2f448d3503b027aaab79d369c",
+      "text": "Hii...!!?",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:db21894042b4772baedd1bbf15d5c68961a9486c75d1d14c2d3baa92f354d6f1",
+      "text": "The bottom of the well. A countless\nstench of death.",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:d0111b309853efc7ca0c18b0418ba09dd6c3b70c16b1c18288921d1b76e9b0c2",
+      "text": "Wh-what the hell are you?! Don't\ncome near me!!",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:6e7cac37a73cfa000751f3294eed5765e9e0d763cfcb6ef58a06b96488d4822f",
+      "text": "Maaaarrrrrrdeeeen!",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:969506f2b067002da26ca00127af048902e74e69238b4871008b7e61129b32c0",
+      "text": "Light, divine might! Illuminate the\ntruth!!!",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:68d54b6ba268501ebbd041ceff85819400b520fed5469db637d5ad3fa26cb8fd",
+      "text": "Don't r-run... It's an easy...\nstory... isn't it...?",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:76cbfa19171b2914a31b11198cda70ec2ab43406785f78d044373a8d9045469e",
+      "text": "You want to kill, don't you...?\nMe... I... Me!",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:a7ba71ddd609eed3588a57b9ed90a15bae0d212fcf5a558ad5df2c5b644c32e2",
+      "text": "Dad and my brother...! All the\nworthless fools who don't\nunderstand me!!",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:338bef53129db487e96372eee46eb8dfee146d240972518480406dee874a797d",
+      "text": "No... that's... Wrong!!",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:371677686d4cd0463ad2a2c465f4f87c86e821ad866f38703e715fc60255039f",
+      "text": "Because it isn't right, damn it!!",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:671e76af27a1eefb14656705c5ea4f4c2608d8538252f486346933eabbf13ea2",
+      "text": "They turn faith into a tool!! For\nthemselves, not the people! That's\nwhy—",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:2ddf055069c41232fbf24c0014470f7e249a14c02e0ff22fa28fead74f721528",
+      "text": "Then let us destroy what is wrong.",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:3529aefdec1127926e6e5ee305b69ccf7359de9507f2ea0dc5d4b8a4eef757ac",
+      "text": "Those who stain the light. Let us\nruin the foolish system. Is it not\nall for the people?",
+      "status": "machine"
+    }
+  },
+  "127": {
+    "5": {
+      "srcHash": "sha256:b719a5e19837ac1937a17ac2ca558de2bd99d214316ff466ccce2259c3d8a250",
+      "text": "...What are you saying...",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:99cb4764987443c6fee6151b5ef22a0b85682bec025649386bf52921b49fb36a",
+      "text": "Seize the stars...!",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:2c4f155727a0078db62ec79589c6639b8395e474bac4fc13db419d3177caf272",
+      "text": "Run awaaaaay!!!",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:8c2e8ac3ff6b8f0300c936338b7cc336e6c12f84f2b2212a38ef56f2c832d863",
+      "text": "No... No!",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:a9597c5cf011b804801b96cd9541f5fed7736b47308e865586125a89036ca720",
+      "text": "That Prince is different...!",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:38f715b7787c36dec82182dff5544e9151bcfd7f1be6cfd73f2e816e1c64c8fd",
+      "text": "Then what about you?",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:53b26e443d065cc6a1181f76cdd39cea20e26c27f13d8d3190d6f1050065d274",
+      "text": "You can't escape. Because I am you.",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:ab466cc969ac8052380638ec0d34d092d909e1a8aeecc2314e9cbc2725ddcbad",
+      "text": "Haah, haah, haah, haah...!!",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:2b6171a312567236e4bbec4d86355f359d14f6da1d155de37c824ac72b7a262d",
+      "text": "Hii... D-don't come! Don't come\nneaaaar!!!",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:436cb8a943ee77b9b44f6735f0c1e4fab0320a732223f1e01c0e7f50130e7738",
+      "text": "Squeak.",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:73cd8a1b91977ad0f4d489b1b65e8e64b88085a74e2741c93bf46570e369355f",
+      "text": "Haah... Huh...?",
+      "status": "machine"
+    }
+  },
+  "175": {
+    "5": {
+      "srcHash": "sha256:a9f5756d08c0602dc7cf53cb15243f67425b07de3c914b871ec0af1dcce1cb3d",
+      "text": "Are you all right, Marden!!",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:b19dbb08cb2bb7eba8981e14c3a54a921ad3bfe2fd5d90e998c305e70abaa55a",
+      "text": "...Your Highness?",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:aef822042936af1e5a03e58c8aa9cd22a11c66088c964d8f24c7baad566348e1",
+      "text": "—Half a year? I slept for half a\nyear...?",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:cde2664d5793a0276f4fd00a435eb5405952326722b023572f182ac92ea16d54",
+      "text": "And you fought an emissary of the\nheavens? ...You're joking...",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:46841c4b1b43985de882b4fca298a1e541aae32314e76fc60bb174167115279d",
+      "text": "...That, too, is likely not\nunrelated to you.",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:4935458b5bfc59011eab66372118ab3a1914b4f735d92967bdeeaed3d3daaa17",
+      "text": "Kikikikiki!",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:d79b4a34b583bbf1ded8b7fb4c6ed14874dc2478ae809c2b8fbccaf6fddfd3a8",
+      "text": "What is that thing? It's more than\na mutated monster. It's\nsomething... else.",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:7ce1c91fb9c95f6263238276c63f2779d11489a823b11e2bb0fbe7970f82aae9",
+      "text": "...A god from a faraway world.\nThat is what the Devourer of Stars\nis.",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:d58b4474ea83d76f3fe45aed41bd22d0f26219c408d4be4d680b9ae499da66c5",
+      "text": "...What?",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:d1f381dcb24e7f199cd94a5e15d63141c12f4836e1c7e3761947a0d514fa573f",
+      "text": "The god who made this world is already\ngone, and they were sent to claim the\nempty seat... or so it seems.",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:4bffaa39d50d68620b4672ce455993574f95649469e46197ead2bc797d21c960",
+      "text": "In fact, you collapsed at the very\ntime the Devourer targeting the\nPurgers appeared in Palpebra.",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:a999b4554ecce8062b8a19036fed0f95d1cfb863c2aa744f0185ef4b30762736",
+      "text": "W-wait! A god's seat... vacant?\nWhat are you saying...!",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:5aa578b0e58c25fcba99728784bf8ea9c2a503e2e99785e130c88c985492bed2",
+      "text": "The world was made by the dragon\nand a single boy. That is what we\nhave come to know.",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:aef0de88506039e9a272e4653ca401a78b37e6fb2190177d179ec19da745ad0b",
+      "text": "Then... then what I summoned...",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:485fe90b685eb683caff52942f0de37f27e4d4ab7840866515096f624b4011cb",
+      "text": "If I die, will this thing\nvanish...?",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:31038a9c42c7dc3f71c41a4717a9a4ef4179c1b7b570f1fd71e7311dded43392",
+      "text": "Do not!!",
+      "status": "machine"
+    }
+  },
+  "245": {
+    "5": {
+      "srcHash": "sha256:40da53e0abf8eb44a3ed3a90c54b54f9d4199cd799d5b2519280d90b69e6176d",
+      "text": "You must not give up...! Lord\nVyron!",
+      "status": "machine"
+    }
+  },
+  "250": {
+    "5": {
+      "srcHash": "sha256:2a69d7fc2eaa302c228da2ae8bbf54341a012ba8ff876d6f81c42c4e7cd06d0d",
+      "text": "Geez... Look at you, face like death\nwarmed over. Let's go, kid!",
+      "status": "machine"
+    }
+  },
+  "255": {
+    "5": {
+      "srcHash": "sha256:fcd6d087a45220bf9f5f4861e39cffbea419a01d1b36c46842df656b95724268",
+      "text": "...I believe every person has a\nstar within. May the guidance of\nthe stars be with you.",
+      "status": "machine"
+    }
+  },
+  "260": {
+    "5": {
+      "srcHash": "sha256:9412fd61f2f69d3583d83bd93d48eebd4f23da64f31bb831335007df3ee1c01c",
+      "text": "What are you people... saying...?",
+      "status": "machine"
+    }
+  },
+  "265": {
+    "5": {
+      "srcHash": "sha256:89a2fef75df1b7f81c41248f7fe73885b4bc38b75192ba431d2bedd46362fb8c",
+      "text": "We're going to search for\npossibilities.",
+      "status": "machine"
+    }
+  },
+  "269": {
+    "5": {
+      "srcHash": "sha256:a551e6d6c1e0da5faa508fee491b6b0baf88295d491b061f7bca8be0b88f0f41",
+      "text": "Marden. You must go to Starview\nVillage.",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "11115301": {
+    "3": {
+      "srcHash": "sha256:b9a4405eea060950958a802f2055108a0d0af8ee4f9619adf45a8fb4a792ceef",
+      "text": "Fiery Rookie Adventurer",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:726b075eb2beaea97229c876d732dc1ccc55275f30bf37998b6d0fd457b1c25e",
+      "text": "Reporting back to the villagers, Alk and co. hear a scream and rush over to find Lunetta, a girl with vermilion hair, rescuing an adventurer. Seeing her ideal of an adventurer in Alk and co., she begs to join their party, and they bring her to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "11115302": {
+    "3": {
+      "srcHash": "sha256:db5313febcd40b8d970ffe9b44637280c2f6a22430d9c0e06a907c6dc3d8414d",
+      "text": "Who You Want to Be",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:672f2a93bcdc51d0266d3f593a8591b795b411a6df240fac533f3b184505f16d",
+      "text": "Lunetta takes adventurer jobs without pay, and gets told off for it by other adventurers. Caught between wanting to help and their complaints, she goes back to her roots, rethinks how she's been doing things, and vows to become a proper adventurer.",
+      "status": "machine"
+    }
+  },
+  "11115303": {
+    "3": {
+      "srcHash": "sha256:13b5c4bdac6b093b8a7ece89e537eb2215323e9107034528f5ebba7c171be762",
+      "text": "Kindness Catches Fire",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:28e32140d28b2279b310ade7a10427ef718cb111ae396db558b881d64c9a15ff",
+      "text": "In the Kaleidoscope, Lunetta comes across adventurers fighting to protect people from Shibuya. Unable to leave the wounded behind, she leaves Alk and co. to hold the line and races to the guild. She rounds up reinforcements as an urgent request, then treats the adventurers who helped to drinks as their reward.",
+      "status": "machine"
+    }
+  },
+  "11115901": {
+    "3": {
+      "srcHash": "sha256:fb7bc23420650b9577c0702082c78cbe3f6680e3c1ae63e8e811c64765061d8a",
+      "text": "A Fabulous Grown-Up",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5c689cc7ada7e58b6b20a6d6fea6d50f3e6e20363fadd22dda2613d0dc91fda9",
+      "text": "When their carriage gets stuck in a ditch, Alk and co. are rescued by the psychic powers of Penelone, a catfolk girl from a nearby village. She invites them home and talks her parents into letting her go to Starview Village, so she can master her powers and become a fabulous grown-up.",
+      "status": "machine"
+    }
+  },
+  "11115902": {
+    "3": {
+      "srcHash": "sha256:dcc9c0f596017d5a0fda6a97a79c67a58f3cac93a6c59d036b888aac95d26cf2",
+      "text": "Everything I Wanna Do",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:8efdfb1f105f4c9e579ff7b7454a879955ad31cd01d8384949d2ee485e953b14",
+      "text": "Penelone can't wait for tomorrow, when she'll finally get her parents all to herself, but sinks into gloom when urgent work comes up. She bottles up her wish to be pampered, until Nao suggests getting the work done early, and she gets to enjoy her parents' affection to the fullest.",
+      "status": "machine"
+    }
+  },
+  "11115903": {
+    "3": {
+      "srcHash": "sha256:eeefe9638ad7155952c1edcbd5e6e834c834dc238bfb6a6916827dc9db80141b",
+      "text": "My First Job",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:99c7996e9faa8e24e462b4f63060d1a635723fe7397d17eac346e6c1e94637bc",
+      "text": "Asked by her parents to deliver a letter to the dogfolk town, Penelone sets out full of enthusiasm. Watched over by Nao and the others tailing her, she helps people along the way and gets the job done, one step closer to being a fabulous grown-up who's perfect at both working and being pampered.",
+      "status": "machine"
+    }
+  },
+  "12115901": {
+    "3": {
+      "srcHash": "sha256:2a132143300a5d465249c448cc7170cafa7fbeaf055f93304156997d02d45048",
+      "text": "Daughter of the Vesta",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:c47ebc0034b766238c4b3faa6639a29330e9be7a7ca833b7ab8d206593c3e74f",
+      "text": "Alk and co. take a delivery job with Nisues, a Vesta girl who became an adventurer to see how humans and the Vesta get along. On the way back she saves an injured adventurer, devoting herself to others as she explores the wider world in search of \"something she loves,\" which she has yet to find.",
+      "status": "machine"
+    }
+  },
+  "12115902": {
+    "3": {
+      "srcHash": "sha256:99825fb133140b939664cbc4f9a55c2554da393cc33c9c6e6a10bae30e105d21",
+      "text": "Mirror of the Heart",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:da82d5e04078a75ece5c3c357d6ed8267f15297e644d11d40026a4dcdb182814",
+      "text": "After helping out in a kitchen in chaos, Nisues is asked by Stella what she wants to do, but nothing comes to mind and she gets flustered. As payment for her help, Nisues asks Alk and co. to help her find something she wants to do.",
+      "status": "machine"
+    }
+  },
+  "12115903": {
+    "3": {
+      "srcHash": "sha256:88ec2ec7b66351b497c0c6d874ef05b084b1a69baa93912970b52143138e6aa4",
+      "text": "What She Found",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5dc7a76c05ef669eaf37657ee0cf44d43270fa3329d1dea2ac15ac2f961b9588",
+      "text": "On a delivery job to the Voluntas Arcane Arts Academy, Nisues gets swept up by Golem Club members who love their hobby, and is all but forced to study golems. Through what she learns at their study session, Nisues finds something she wants to do.",
+      "status": "machine"
+    }
+  },
+  "12116501": {
+    "3": {
+      "srcHash": "sha256:bdbf6b62e6fcdefc688ea58eaf677f13603b546f4e22a382829b7fac83e4b81b",
+      "text": "Kowloon Gangster",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:7db1f30932d9b8d4e7fe8d878183bdd0b64be5706a1f41ebcb412fb21b1da8f9",
+      "text": "At Selene's request, Nimbus and co. head to Kowloon Float with Selgir to find the missing child of a high-ranking government official. Raiding a human trafficking ring, they run into Lanmei, boss of the mafia syndicate Tsangli, and agree to join forces with her to change Kowloon's future.",
+      "status": "machine",
+      "note": "Shiro = Nimbus (official)"
+    }
+  },
+  "12116502": {
+    "3": {
+      "srcHash": "sha256:39b1a5aa33e4d8d51ab2ab077b47174c9a6a0f01a44987702b02ecd849839c0c",
+      "text": "Street-Corner Villain",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:7189a76490ec0ea0e29064e70ab949d3bd7e60081bd8c81ce8c9b137ecf975f7",
+      "text": "In recovering Shibuya, Lanmei meets a boy, once one of the Aegis, who keeps pushing himself too hard. Torn between the duty he feels for his past deeds and the guilt of finding it so painful, the boy is at breaking point, until Lanmei's rough-and-ready remedy sets him free.",
+      "status": "machine"
+    }
+  },
+  "12116503": {
+    "3": {
+      "srcHash": "sha256:05d202bc1b40bd4e38422f88dd3166da097529cb44a0280246043bcb0407d082",
+      "text": "Yearning for Freedom",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:f902d3f4fbfbbdd7ba05d43015f0ef28478cf8134260d44449af5bb67efa2e72",
+      "text": "Lanmei is thrilled to hear of plans for a brand-new Float, until a rival mafia family tries to muscle in. Tsangli's involvement must stay hidden, and she's at a loss, but a scheme by Light and the others shows off a powerful backer and keeps the mafia at bay.",
+      "status": "machine"
+    }
+  },
+  "13113401": {
+    "3": {
+      "srcHash": "sha256:d521d0c9a4099556fe16b749131f72b0c9ab1139619d4b84276c378c1b76eb22",
+      "text": "Android Body Designer",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:235c83c658d155008a62cb2e324593bf9c4d7e0693176aa0f10059064ed72a44",
+      "text": "Yuki and the others are invited to the lab of Kasivars, an android body designer. Whether for Defaulters or Updaters, Kasivars gives shape to the desires sleeping deep within people, and sensing something of Stella in her, Yuki and the others welcome her to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "13113402": {
+    "3": {
+      "srcHash": "sha256:e804910f49c3bfa666e8a7fc0aa426099562e6a6d0b74e685bff751ef4275250",
+      "text": "The Shape of Possibility",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:6b8a47bff653e9579684a9ac30122df8200a66a3b66a70b17364cbc4d1151045",
+      "text": "Not attached to her own form, Kasivars asks to make clothes for Alk and co. too. She sees clothes and bodies alike as the world's cages, and rejected the Administrator because she believes in people's potential to break out. Never looking back, she keeps giving shape to that potential.",
+      "status": "machine"
+    }
+  },
+  "13113403": {
+    "3": {
+      "srcHash": "sha256:e51b999d46877a0d70fa89a89100c65455f323f4fdfa9fb4fd1c9ad3714a3f66",
+      "text": "The Perfect Outfit",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:23f55ef527a5c9602a37e3768f8c9cc186147a53dd7f0d4d99d1aae471fcedf1",
+      "text": "Kasivars can't understand why Zantetsu would go so far as to grovel for a \"shimmering rainbow swimsuit.\" But talking with a Defaulter who leaves himself in others' hands, she realizes Zantetsu just wants to have fun with his friends, and smiles in satisfaction.",
+      "status": "machine"
+    }
+  },
+  "13114001": {
+    "3": {
+      "srcHash": "sha256:afe6e4cad471b5db6374a07dc6aefedeb5b6286d2f692b67debffc3e099072d3",
+      "text": "Chaos Inverted",
+      "status": "machine",
+      "note": "Denah's chuuni phrasing kept plain; add daggers in review if wanted"
+    },
+    "123": {
+      "srcHash": "sha256:07fe71a7584101f7a3d2d9d9013abcc7e95d123750c7da3f426da15bffa34cee",
+      "text": "Intrigued by the Valentine's Fest, Denah uses it as an excuse to get some new clothes. With help from Yuki and the others she changes into a sweet white outfit, nothing like her usual look, and everyone has a blast coming up with a new grand speech to match.",
+      "status": "machine"
+    }
+  },
+  "13114002": {
+    "3": {
+      "srcHash": "sha256:46be43fe7370d0e89086fb81a6be9105e69c2df2dd89f101e4bd1a4a3b67b492",
+      "text": "An End for Just Us Two",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:31f3b9ed5b44fc7aa51a1269b54db7b833a47cd0d6e2692faf20db272d422349",
+      "text": "Denah has been getting reverse-Valentine chocolates from her guy friends when an apprentice pastry chef confesses to her. She dodges it on the spot and asks Alk and co. for advice, but when she meets the man again, he's come to a rather off-the-wall resolve, and she groans that she's had enough.",
+      "status": "machine"
+    }
+  },
+  "13114003": {
+    "3": {
+      "srcHash": "sha256:56685361f8107364ba7f96c38a6e9a4d8964886c9c6ad95263f5a57aa88eb732",
+      "text": "Together",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5753622481a4d4f165b949f7e1d3212c3e2769ea2354ea877f991c595ea67368",
+      "text": "Realizing she never gave chocolate to the king she adores, Denah hits it off with Parfait, who turns up out of nowhere, and they start making chocolate. With ingredients from the sea, Denah completes a seafood-tentacle chocolate and, lecturing the baffled king all the while, shares a laugh with Alk and co.",
+      "status": "machine"
+    }
+  },
+  "13114601": {
+    "3": {
+      "srcHash": "sha256:54babe5fa23991f1e7c59035fd8ceadf466a19e7a1af90715052d9e2234ba57a",
+      "text": "The Escort",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:fe9b5045202c5808f1dbfdadda66c1551ca1263d843509549b6aaaece4e3125e",
+      "text": "To deepen ties with Palpebra, Libram tours the White Fest with the entrepreneur Grace. He lights a fire under Grace, who had resigned herself to her lot, and they become friends on equal terms, only for him to tremble in fear when Dul Kugala summons him a few days later.",
+      "status": "machine",
+      "note": "Kukusu taken as Dul Kugala; uncertain"
+    }
+  },
+  "13114602": {
+    "3": {
+      "srcHash": "sha256:2cb714998c7ca24ca894cefc9722f10fddce10d272740816806d2e575b6798ee",
+      "text": "A Man of Principle",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:562e6d045b673a744f0a2bcf222e6b0e104117f5bd57d67fba282719c757cf22",
+      "text": "Discussing what to give back for the White Fest gifts with Nova and the others, Libram finds the talk drifting to romance. He declares that work and love can't go together, yet when he hears that his long-awaited trade deal with Starview Village may finally happen, he lights up like never before.",
+      "status": "machine"
+    }
+  },
+  "13114603": {
+    "3": {
+      "srcHash": "sha256:ddda042a1dddddda2a00e84305f1467ea7ece09ad6e0a3c58b92b0a02d703696",
+      "text": "A Man Moving Forward",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5a9ec453f1bc09b45587a6a380df983e1d6277fecc7c1f0f965824bbc7ef9a2e",
+      "text": "At a mixer for merchants from Palpebra and the Farlands, Libram strengthens the ties between the two cities while sizing up who can be trusted. He even meets the brother who has been avoiding him, and leaning on friends who laugh off his grumbling, he keeps moving steadily forward.",
+      "status": "machine"
+    }
+  },
+  "13115801": {
+    "3": {
+      "srcHash": "sha256:8d47a5284c3d91d6850361290fe32d204410d81d9bfba63b7666224cb6f896b2",
+      "text": "Judgment Blade",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:ce4bce37d78c00fa9fdc2dab46d84150070b01dbaa39dd1a3228bbb2a3a57fce",
+      "text": "Joining a monster hunt as reserves, Alk and co. meet Nagiri Amo, a swordswoman from Japan. Nagiri, a friend of Yae's, asks them to introduce her to strong fighters, and after Yae spills her secret, they bring the blushing Nagiri to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "13115802": {
+    "3": {
+      "srcHash": "sha256:c5d712dc85d6716b2242af664aee820e275c557dc779c3fc77e5e88f00a5f7ce",
+      "text": "The Meaning of Strength",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:92c95a32752282921cb3d0b133f11f14c9d79c6bc50bd037cc2de5da2fbbd6bc",
+      "text": "Soushiro has been looking over Nagiri's swordsmanship and tells her to \"know fear.\" To make sense of it, she asks Yuki and the others for advice. Remembering why she first took up the sword, she comes to understand fear and finds her answer: if she wants to do something, she does it. That's all.",
+      "status": "machine"
+    }
+  },
+  "13115803": {
+    "3": {
+      "srcHash": "sha256:feaece6a6abf2c56ab543dee7bdd4697ed7bb6e9f6f1b9e3dbf28f8fe3b29afe",
+      "text": "Heart on the Blade",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:0ec96ace7d02c1251fefeeba6876964c1c5eae5bd209f0d425da8499c19645c9",
+      "text": "Out having fun in Shibuya with Yae for the first time in a while, Nagiri meets Cocoa and the others from the Shibuya Underground Defense Force. Joining them at the source of the monsters, she saves a former Aegis boy on her own terms, wipes out the monsters, and heads back to having fun with Yae.",
+      "status": "machine",
+      "note": "Koko = Coco and the Shibuya underground response division: no official EN found"
+    }
+  },
+  "14114701": {
+    "3": {
+      "srcHash": "sha256:25d8801f5cd0520eddabfb046e1a3134c55e4c1546fb81e0bb714c52ad17c650",
+      "text": "Off-Duty Valentine",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:70d95fcfe770bb0bbe8ffd737e59771d89052421925730ae963e308912c44d63",
+      "text": "When an idol booking mistake threatens to cancel a mini-concert, Beaucy hands the staff some top-secret materials to keep the show going. She then takes the stage herself to fill time, and though it's hardly a success, she's happy to have taken a step forward.",
+      "status": "machine"
+    }
+  },
+  "14114702": {
+    "3": {
+      "srcHash": "sha256:d34f8bf7446fbf443e9cb63c59b0e6af0cbf51e36db703e907f0ceee0659853e",
+      "text": "A New Stage",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:b642d85e234f75125813804d9f1bf96117c91d174af16ec628a1bfecd5b3d951",
+      "text": "As part of her fan activities, Beaucy asks Alk to teach her how to make chocolate, so she can give shape to her love for idols. Her weakness for love talk comes to light along the way, but she finishes the chocolate, proud to have given her love form, and everyone eats it together.",
+      "status": "machine"
+    }
+  },
+  "14114703": {
+    "3": {
+      "srcHash": "sha256:a092a77421058c9b46a4b533cac385a43eda7a71477955c34a0bbe53ee6b99cd",
+      "text": "Love Spreads",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:6cf4f3ac24e9a584ed5fb5137f6cfc32c0f04647fe6fa48cba2ed47a0b6890cd",
+      "text": "On their way back from busting an illegal fake-chocolate ring, Beaucy and the others buy fake chocolate at a stall, which leads them to the counterfeiters' base. Having solved the case with her love of idols, Beaucy sets off on another trip to cheer on her favorites.",
+      "status": "machine"
+    }
+  },
+  "14115301": {
+    "3": {
+      "srcHash": "sha256:82428074982fd2c66ca9077c972f45dc4ddc4cc26014ffce8b3929684b28aafc",
+      "text": "The Unbound Girl",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:d9fcc83d80bb2a9d4d539ab98a94a19f8fb9491b1903f5666286830d894ed851",
+      "text": "Escorting a caravan to Shibuya, Alk and co. meet Yae Asato, a girl wearing the same high school uniform. Yae gushes at full speed about how she saw Magia Fest and wanted to talk to Stella and the others, and after a trip to the ocean world together, they gladly bring her to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "14115302": {
+    "3": {
+      "srcHash": "sha256:de4c2eb98ccc0513048e00c3be6434f745e2551167328732b412a3ee1c1aef7e",
+      "text": "Room to Breathe",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:167683ede1c2139566e1a7607dc5cb844ca662b9c6a381e74ac5efbe1eb06b72",
+      "text": "Their work done early, Alk and co. are killing time at the shelter when Yae offers to show them around. As they wander, they feel Shibuya coming back to life and catch glimpses of Yae's past. Touched by her hopes for Shibuya, they head back out into the city once more.",
+      "status": "machine"
+    }
+  },
+  "14115303": {
+    "3": {
+      "srcHash": "sha256:91530bb1b5162a65609f9f96c8b38456dc30ed758b5157220dfb17f44c51aceb",
+      "text": "Easing the Anxiety",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:b7559639b01b86d5c89a1022754d410217a2937491f8a024c08cf5c6c1bd946d",
+      "text": "A nightmare she hasn't had in ages leaves Yae lost for an answer, and heartless words from someone she thought was a friend bring her even lower. But inspired by a shop owner working hard not to give in, she finds a firm answer when the nightmare comes back.",
+      "status": "machine"
+    }
+  },
+  "14115901": {
+    "3": {
+      "srcHash": "sha256:6659dd23c20ceea6a69a65630f8032cd14e8512b40f93601d42f4396f7b8dd8b",
+      "text": "Treat or Knight?",
+      "status": "machine",
+      "note": "pun: kashi ka kishi (sweets or knight?) adapted as Treat or Knight?"
+    },
+    "123": {
+      "srcHash": "sha256:8ac5d63211b48093bbf4eb91b1f0342318f04a152d1ea95b1293e1f7e905a34f",
+      "text": "Having lost sight of the path he believed in, Rolf helps hand out sweets at Nimbus's suggestion. Dazzled by the sight of Palpebra's peoples laughing together as equals, and remembering his wife's last words as he watches old friends trying to change, Rolf begins searching for a new path.",
+      "status": "machine"
+    }
+  },
+  "14115902": {
+    "3": {
+      "srcHash": "sha256:a81ae39c42825c03b05c0be817b09db48925b684e5b592631c423f01f3986d1b",
+      "text": "Warrior or Knight?",
+      "status": "machine",
+      "note": "series with Treat or Knight? / King or Knight?"
+    },
+    "123": {
+      "srcHash": "sha256:820e4ef2d683bc4342790bcf84738d6744d6b940655834c606760491fa7f83a3",
+      "text": "Rolf is handing out sweets to children in Shibuya when the alarms blare and monsters attack. He proposes holing up to keep the children safe, finds a new path in the fight to protect them, and resolves to do what he must as the king's sword.",
+      "status": "machine"
+    }
+  },
+  "14115903": {
+    "3": {
+      "srcHash": "sha256:9006de95efbca94d1b3ad5c14987df300195581cfe2b7a345053755427631201",
+      "text": "King or Knight?",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:f6e2f1b670cb2b2076d4e9f3f84ced8d30ffb8d8e568b34ee17abf92edea5814",
+      "text": "Through Albert, Rolf is granted an audience with the dogfolk king and begs to wield his strength to save Palpebra. When the king throws a tantrum and rambles on incoherently, Rolf finally parts ways with him and follows the new path he believes in as a guest commander of the Company of the Fang.",
+      "status": "machine"
+    }
+  },
+  "14117101": {
+    "3": {
+      "srcHash": "sha256:ea82df98fed9d19d7fa13eda5512427c68df413f7d480a71b4efc99e6995a39b",
+      "text": "The Drifter",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:a2e09fb57f26122a931a9d48661072616274a8d139a5d4f502fc6a06d47f6c7f",
+      "text": "Hunting western yokai that attack people in Yamato, Alk and co. meet Taichi Yuhino, a friend of Marina's. Taichi knows the chaos Japan fell into after Shibuya vanished, and when he's shown the Shibuya he thought was gone, he celebrates his reunion with Marina all over again.",
+      "status": "machine"
+    }
+  },
+  "14117102": {
+    "3": {
+      "srcHash": "sha256:5b8432ff28de9965e21a7eb4f19fe339a697d6c8937f7a4e256f157feecd7d9b",
+      "text": "Can't Be Helped",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:b7bd37442d4762ed698f4297a66eb9f9ec2c538d336edb26b77d0bbf57c99a7f",
+      "text": "After telling Marina how their friends and families fared after Shibuya vanished, Taichi decides to have a drink for the first time in ages. That night he dreams of being swallowed by the void again, and over a late-night talk with Alk in the dining hall, he decides to visit his hometown, Shibuya.",
+      "status": "machine"
+    }
+  },
+  "14117103": {
+    "3": {
+      "srcHash": "sha256:64d990062024fc4d9fc34d9913afa010a66061377ea98ba912cc6e8102201016",
+      "text": "I've Got Your Back",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:d8785721068dda4d998e02e9d1330131623b40dce7232d3bc9e2b6cf823092f3",
+      "text": "Back in his hometown of Shibuya, Taichi is reunited, with Alk's help, with his father, who runs the best curry house in the world. To repay even part of that debt, Taichi swears to spend half of the rest of his life on Alk, and ends up fighting over Alk with a jealous Marina.",
+      "status": "machine"
+    }
+  },
+  "15115901": {
+    "3": {
+      "srcHash": "sha256:17ac9e74274568ed2655a5212f0e191fb7f6d13d3ebcbe823d255ca25cc3b4d3",
+      "text": "Holy Dragon Reborn",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:2aa6a509ccf587563f6372f3cbedfa2ae6ec72436c423114b088c89640b21e24",
+      "text": "Attacked by Purgers right after his reincarnation, Rustamov is rescued by Estariel, leader of the elves. Nothing like his former self, Rustamov acts like a cheeky little brat, until his antics earn him a dose of Estariel's \"care.\"",
+      "status": "machine"
+    }
+  },
+  "15115902": {
+    "3": {
+      "srcHash": "sha256:e8a20e84e576dc4bf47acfd269e288e940823ec6c5e4da44cc6ef1d880049bf9",
+      "text": "A Mighty Stubborn Streak",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:597860a7926071f05b7e39c9add87d3a58fb8eeba749db112a81c2b6adcc6001",
+      "text": "Fed up with Estariel's tyranny and the constant comparisons to his former self, Rustamov plots to slip away to another world. But after meeting Vagner and coming to admire his words, he vows to make Estariel acknowledge him instead.",
+      "status": "machine"
+    }
+  },
+  "15115903": {
+    "3": {
+      "srcHash": "sha256:7ad0b1ccc88b6526e8e3db1ca2e3aa27b782f3bea89055d27c201d3cf813ec61",
+      "text": "Awakening of Light",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:11bb8adb4245c77908cdedc0d8f58ed98df9d8d5c3426fece0a94dbdc87affca",
+      "text": "Rustamov bosses around Losrend, a young elf who looks after him without asking for anything in return. When Losrend shields him in a battle with the Purgers and he fails to protect his friends, Rustamov is crushed, but Estariel's encouragement gets him back on his feet.",
+      "status": "machine"
+    }
+  },
+  "15117101": {
+    "3": {
+      "srcHash": "sha256:876ad794fc401d815201b540d776e21f1b703a1ac443382a390f8500ad0ed389",
+      "text": "The Third Treasure",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:2165ae72e8c6cda0a1fe0cbefdc2f1dd5b110b8c2297183852543998a4f7dca4",
+      "text": "Roaming Yamato in search of the magatama, the last of the Three Sacred Treasures, Stella and co. meet Tamako, a spirit jewel given human form by the local children. Freed from her curse by the cheerful villagers, Tamako moves to Starview Village so as not to drag them into any conflict.",
+      "status": "machine"
+    }
+  },
+  "15117102": {
+    "3": {
+      "srcHash": "sha256:dfba89a647e5ca43fa495c0a4cb7730dc1e4ad2da577995d4a407b83b5b3e430",
+      "text": "Unraveling the Night",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:cd520b27eff590f609cf7f37a4850e758952e4793936593dd285e13b8ac0d581",
+      "text": "Yakumo wants to talk sense into a ninja still plotting Orochi's revival, so Tamako suggests paying the ninja a visit to cook dinner. A taste of peaceful life far from any curse finally lets the ninja pour out their pain, and having eased their heart, Tamako laughs warmly, worrying all the while for the people of the world.",
+      "status": "machine"
+    }
+  },
+  "15117103": {
+    "3": {
+      "srcHash": "sha256:628b9047463b1e627ab3b49da6ea2cf65cfe9409a33dea9c665c81f2f515fab9",
+      "text": "Unraveling Many Nights",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:a8b2b3462997706630e07fe91de109e51a47761cbfac528c5d8ef079a5749899",
+      "text": "Saved from the curse by Tamako, the ninja now works as a schoolteacher, yet keeps wondering why they're so different from Shinobu and Yakumo, who should be just as tainted. Tamako listens, teaches them a few ways to blow off steam, and untangles their worries, smiling fondly on the people she cherishes.",
+      "status": "machine"
+    }
+  },
+  "16116501": {
+    "3": {
+      "srcHash": "sha256:825d2a2e68a2d5a342158af7db1bea7a14dedc7db39ce180f9f2e88a5bbc49c7",
+      "text": "Enter the No-Good Master",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:2d0269d46a158d51a4a6af7c6bd03e495e817ba2fde337da8f8df30e13f39642",
+      "text": "Alk and co. are squeezing information out of a crook with Melmyna when Melmyna's master, Tanakiela, shows up. Groping Melmyna the moment they meet and acting thoroughly untrustworthy, Tanakiela asks Alk and co. to take her to Starview Village.",
+      "status": "machine",
+      "note": "sekuhara (sexual harassment) softened to 'groping'"
+    }
+  },
+  "16116502": {
+    "3": {
+      "srcHash": "sha256:5c484c849c38ecf0632ba59d0f3acd77627f613fc30327c5fca749269c9e29fd",
+      "text": "Seeking Martial Mastery",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:916aee22246a97580f1da4e4b2e8aae290d298ffe8f34b2558fbaa20cc020bc6",
+      "text": "Taking a job to stop the bandits appearing around town, Tanakiela drags along a reluctant Melmyna. But the bandits turn out to be victims whose tastes Tanakiela warped, for she keeps taking gifted people as pupils, searching for someone who can reach the same heights as her.",
+      "status": "machine"
+    }
+  },
+  "16116503": {
+    "3": {
+      "srcHash": "sha256:887e1d2ce49b6cc80fbab2a634fdcc03635483b1902a07fc7d8d0f7f324a8bb6",
+      "text": "A Merry Time",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5c5c67306b617894afb5dccfdd87dba30d6f7663ff900fb9702bc0718ea1c1b4",
+      "text": "Tanakiela asks Alk and co. to train a young man whose fiancee was stolen from him. But the one who stole her was Tanakiela herself, and as she tries to spin his rage-fueled awakening into a heartwarming tale, Alk and co. don't quite know how to feel.",
+      "status": "machine"
+    }
+  },
+  "16117101": {
+    "3": {
+      "srcHash": "sha256:6ee98b428013962d010c2c7c137a1a6634dbf70db13d9ba0361eab83720cac84",
+      "text": "A Phony Priest's Peace",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:4ee400afdc728975b2cd4bc2effe58ce90cba4ea123acc0504d629f76aaea806",
+      "text": "Alk and co. are asked to look into Iores, said to be an assassin active in the Farlands, but it turns out he's already retired. He wants to become an ordinary citizen and live in peace, and his slightly off common sense leaves Alk and co. baffled.",
+      "status": "machine"
+    }
+  },
+  "16117102": {
+    "3": {
+      "srcHash": "sha256:13aebff147c40279a552d4b9d4b5af449cf11f420360be405c08f09cb248de25",
+      "text": "Just a Peaceful Day",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:d24b3b27a14d0b13977769144f400849d84615b2dc7e48c38021c7cf82f28269",
+      "text": "Spending time with Iores, whose skewed common sense keeps dragging him into trouble, Alk and co. learn why he decided to become an ordinary citizen. Realizing all he really wanted was to make friends, they bring him to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "16117103": {
+    "3": {
+      "srcHash": "sha256:743b926ae3dbdd7c5a28470ee177368cf79204a379d9164fb285364e39f9fcd8",
+      "text": "Such a Hassle",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:7eeaa4f42f9a264918095b21129a4f1f88e6806a2dc5a828c5aedb83702c451b",
+      "text": "Iores keeps working at becoming an ordinary citizen, hassle or not, until a man from his old organization asks him to team up. Not the least bit interested, Iores turns him down and puts his skills to use to become an ordinary citizen just like Alk and co.",
+      "status": "machine"
+    }
+  },
+  "16118301": {
+    "3": {
+      "srcHash": "sha256:33193efcb2309c2b133fbc6d94249e654b313dfd0f531ee736b6f48deb4a7328",
+      "text": "Days Beyond the End",
+      "status": "machine",
+      "note": "shortened from 'Beyond the End, Life Goes On' for the 24-char limit"
+    },
+    "123": {
+      "srcHash": "sha256:9ec72fb269b768ec9157632c875627d1eba98c7dbd5ad246fd1cdc6d1e461007",
+      "text": "The Purgers are beaten, but Palpebra and Shibuya were hit hard. Helping with the rebuilding while she waits for Nao and the others, Hibiki is overjoyed at the news of their victory. Hoping to lighten the hearts of anxious people even a little, she vows to write a new song.",
+      "status": "machine"
+    }
+  },
+  "16118302": {
+    "3": {
+      "srcHash": "sha256:f7642d2c9ecf551e4ca5a71d8647e5085937afb2906e3def58572f7e4b0fdc87",
+      "text": "Words I Want to Say",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:3cb04daf658724dccf6684d12804609420906077efac7b2f33a41c9772abcf77",
+      "text": "Luciada and the others take Hibiki, stuck in a slight slump, out for some fun in Qualia City. Refreshed, Hibiki faces the farewell that Luciada's graduation will bring, realizes the feelings she truly wants to share, breaks out of her slump, and gives Luciada a song.",
+      "status": "machine"
+    }
+  },
+  "16118303": {
+    "3": {
+      "srcHash": "sha256:7fd5f7bd7f1a8418c813f5a6c0d208b5e526664612c7ae759438a9eaa3533dc9",
+      "text": "Your Song Resounds",
+      "status": "machine",
+      "note": "the title's verb hibiku (resound) puns on Hibiki's name"
+    },
+    "123": {
+      "srcHash": "sha256:b806010677057328388488cf31e02b4a1d1974dd0ab5b8ac192ad8bd4a1afd2e",
+      "text": "Her new song finally finished after much struggle, Hibiki visits Regis before the big show and tells him everything she felt while facing her music. She pulls off the performance with Dia, and walks on through days full of meetings and partings.",
+      "status": "machine"
+    }
+  },
+  "16118901": {
+    "3": {
+      "srcHash": "sha256:2a48955da6fb104353e4b53d66f0803d830678fd96ca7b55ae17585beedc2e25",
+      "text": "A Wish's Call",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:6b4c020a4aec441d5c0183cd4fc64d1dccf0f2568ec51339786f552beecda9b0",
+      "text": "Marden wakes from a sleep that lasted half a year, ever since the Purgers struck Palpebra, only to learn that the god he believed in is gone and that what he summoned was something else entirely. To pull him out of his despair, Varen and the others bring him to Starview Village.",
+      "status": "machine"
+    }
+  },
+  "16118902": {
+    "3": {
+      "srcHash": "sha256:f5a85f5ca654ebad0725bf8033ac02be206c50a5c2f7651bce23a7388b94cccd",
+      "text": "A Shattered World",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:0055c8b1c9f8b7afa65e1778320e178971b351d92305f03303ed7016232c7789",
+      "text": "Betrayed by his faith and drowning in drink, Marden wakes up in a room at the orphanage. Moved by the outlook of Corinna, who looks after the place, and facing himself through talks with Hans, a boy there, he names the Devourer of Stars' terminal \"Lost\" and starts walking toward his goal.",
+      "status": "machine",
+      "note": "hoshigui no tanmatsu rendered as \"the Devourer of Stars' terminal\"; uncertain"
+    }
+  },
+  "16118903": {
+    "3": {
+      "srcHash": "sha256:28e3db8c29b021ec6fde525543106e324d4370e5d13cafb228fe3dfcade1369d",
+      "text": "Starlight Guides All",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:bf5fd3b515416778031029764a925de29b7fae66281cfae8476dd9e290352e82",
+      "text": "Marden spends peaceful days preaching at the orphanage, until Oxtan's sinister hand reaches for it. Resolved to confront the darkness of the Farlands, he wins over Yuwel and the others, then begins scheming with Varen for the sake of his homeland's people.",
+      "status": "machine"
+    }
+  },
+  "21106201": {
+    "3": {
+      "srcHash": "sha256:2f9eeec9126ae6a6edfd99b5973a05a85d30fd208dea9e483a0f2a62e6c7c888",
+      "text": "The Timid Girl's Story",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:bb4e5513a135d668da32b0d95d77b5a2b102b879dcc0d410673c626ccaf9fb86",
+      "text": "Searching the back alleys of a Float on a monster-hunting job, Alk and co. meet Chenxi, a ghost hunter on a job of her own. Chenxi is scared of ghosts but keeps fighting for her family, so to cheer her on, Alk and co. launch an operation to cure her fear with the help of yokai.",
+      "status": "machine"
+    }
+  },
+  "21106202": {
+    "3": {
+      "srcHash": "sha256:5800fd820ac5f0e940866683d784805f2d2651a4a57b0c492c2f3c6523769c65",
+      "text": "The Timid Girl Tries",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:c11bad1182cdee7e705c9b6a8ad2794f4d59b18c4ea25fdf09e6e4fc24370426",
+      "text": "To beat her fear of ghosts, Chenxi takes on the scariest spots in all sorts of worlds through sheer grit. It doesn't go the way she hoped, but for her easily frightened little sisters, she keeps at it, aiming to be a \"ghost hunter you can count on.\"",
+      "status": "machine"
+    }
+  },
+  "21106203": {
+    "3": {
+      "srcHash": "sha256:9471c6bd661737bbfc339df7192ad01f0b6917430f316b79d49812b243c6d491",
+      "text": "The Timid Girl Hits Back",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:b2cc9f8ddfa2a0759560a051197a6051627b78d4377ac4ba7a33031d318ddb16",
+      "text": "Taking a job with Alk and co. to defeat a jiangshi, Chenxi trembles but destroys it. It turns out to be a thief dressed as a jiangshi, and Chenxi turns her anger into strength to beat him down, but she's just as scared of ghosts as ever.",
+      "status": "machine"
+    }
+  },
+  "22107801": {
+    "3": {
+      "srcHash": "sha256:a845d8cb4305598ce795594faeb5d5eb486ad7713e6347e6e75b80d0fa28cfeb",
+      "text": "Dreamy Romance",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:689f871bc345ffd450bc545963b4df3dc2825ce295e404d083cb8b6d0b7e334e",
+      "text": "Strolling around and soaking up the town's mood, Feanie changes into an adorable outfit at Lilie's suggestion and helps hand out sweets. When women ask her to let them rehearse their confessions and romance in their dreams, Feanie goes to Light to ask about love.",
+      "status": "machine"
+    }
+  },
+  "22107802": {
+    "3": {
+      "srcHash": "sha256:55f6359f2b21f684ff1fec43727a9a980d42b41ff9b9d72e8768b5d2d0a2c638",
+      "text": "The Shape of Love",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:f281e99a455d7c37f77639b8f26c40dfb730beddbf8853b0b777a51f9af1e2d1",
+      "text": "Holding more rehearsals in dreams, Feanie fails to give good advice to a boy too nervous to confess, and starts studying love. After hearing about it from Mary, who knows love well, she understands it a little better, and gives the boy the right advice when they meet again.",
+      "status": "machine",
+      "note": "Merienna = Mary (official character_text reading)"
+    }
+  },
+  "22107803": {
+    "3": {
+      "srcHash": "sha256:60a8e86babfa116a7034f1a7d55384c30223f9575da3b331645f8ac8c4f9d436",
+      "text": "Love Story Most Wanted",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:87f62a3f897b689b37f21bc499b66e60876a8dcbcfbd223125b7961a75e72bb9",
+      "text": "Handing out Pretzen, a sweet from her homeland her father taught her to make, to the people she loves, Feanie is at last reunited with her missing father. Hearing how he fell in love with her mother, she understands love a little more, and helps a girl troubled by love.",
+      "status": "machine"
+    }
+  },
+  "23109901": {
+    "3": {
+      "srcHash": "sha256:6ced52b2a0829666bfb086267d680c00cf6d187b9bc1b9c5cec1309c2b3d166e",
+      "text": "Hero Mechanic",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:5cc2fb7a361b7654c9034a6da75d0c7f5aaab1b5e500c48f346186dc4dd9e3df",
+      "text": "Thanks to King Johnson's arrangements, Alk and co. meet Invetra, a developer of Hero Gadgets. Still in training, Invetra keeps inventing with style above all else, so to give him some inspiration, Alk and co. bring him to Starview Village.",
+      "status": "machine",
+      "note": "roman (romance, coolness) rendered as 'style above all else'"
+    }
+  },
+  "23109902": {
+    "3": {
+      "srcHash": "sha256:71fffcd83293d1bde74fb4d2f8fe5ec7019321bfb76c2a9b1157bab042c28628",
+      "text": "Highway Chase",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:66dabe3d8ac8639a1c448c8a828ff0bcc74f8c5235a81bd79e1a16ebb94ed080",
+      "text": "Inventing to prove the dream he shared with his brother, Invetra has his creations dismissed as kids' toys by a reckless biker. Seeing himself from the outside for a moment, he comes to his senses, remembers his roots, and challenges the biker again.",
+      "status": "machine"
+    }
+  },
+  "23109903": {
+    "3": {
+      "srcHash": "sha256:78d030940faff2b962a00e019fbdeb2ce9148731789cd8359de332a088d55fea",
+      "text": "Cool in Their Own Way",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:27e43f4fd219d0811c97499bdbf5a73d6bc1d3f1be3eec4bdca19005b2e91b13",
+      "text": "At the suggestion of his brother, who now swears by efficiency, Invetra takes him on at Qualia TechCon, a showcase for the latest corporate tech. He loses, but shows the audience his own path, and keeps going so that his brother will acknowledge him one day.",
+      "status": "machine"
+    }
+  },
+  "26108901": {
+    "3": {
+      "srcHash": "sha256:850f98b08b41c64e7cebc80f5bb1f9a4daeb0a254c3cc309167d16259944cce4",
+      "text": "A New Dragon of Darkness",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:bb1652c1d30d349484f1261dd3868e3fc0d54cceebba293446739f0f3dbc07b9",
+      "text": "Waiting to be reborn within the Dracostream, Armadeus answers Couette's call and is reincarnated in Starview Village. Overjoyed at their reunion, he listens to Couette talk in her sleep, worn out from all the excitement, and dreams of the days of adventure ahead.",
+      "status": "machine"
+    }
+  },
+  "26108902": {
+    "3": {
+      "srcHash": "sha256:5317cd4c1d8ad732482ab4e406bdbaaad58cac7514745321f2bbb6f5d023c41d",
+      "text": "Bound to the Darkness",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:95b5fef3cc8d77489df7e382df7e7327812483e71f4e422dc32ad789dcce1f1a",
+      "text": "Armadeus uses Curse Crystals to recover the memories of his lost past, and suffers on learning he left nothing behind but hatred and curses. Saved by the words of Adjudicus and others living in the present, he looks ahead, wishing to live on together with the feelings he once held.",
+      "status": "machine"
+    }
+  },
+  "26108903": {
+    "3": {
+      "srcHash": "sha256:4d2d4d2e34bd8e21032018a380d5f0d7e6626fbe7c516de70202006def7ff115",
+      "text": "A Calamitous Parting",
+      "status": "machine"
+    },
+    "123": {
+      "srcHash": "sha256:8150fcbd9ab957b14bddeafafba2dab3fb218fb69889a23d80d2e06ee45f2c3b",
+      "text": "Helping people under attack by Purgers alongside Rustamov, Armadeus is reunited with Capella, who was like a parent to him. Refusing her outstretched hand and bidding farewell to his friend and parent, Armadeus takes flight as one of the Rooma, to carry those feelings on.",
+      "status": "machine",
+      "note": "'as Rooma, carry the feelings on': rendered 'as one of the Rooma' (encyclopedia term); uncertain"
+    }
+  }
+}

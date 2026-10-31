@@ -1,0 +1,443 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:9ee482710ad375b2174c1d4a5255221582d7ef392614a2adbd2d6fff2e0fbeaa",
+      "text": "...Thanks so much, Nimbus...!\nI hit every sale and bought it all!\nNo regrets now...!",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:a5ea64529798945aa2b37f77460bb9562731883d18f3067dbe746e7817909a2e",
+      "text": "Hey, carrying bags is nothing...\nBut your eyes always light up at\nthe weirdest times.",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:af86ec2907d54100c36ad959900f928ac82523647b57e54a269d25fdab5205d0",
+      "text": "...What a pain.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:3ea84a4a35fab4ad58f37fa935911c2db49cd5419d568274124263007b3f54a7",
+      "text": "Oh... um. Thank you...?",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:4417759cddadbb060bd0c6fa77cc08743ae6a2342bde21b9465a29e6a9dc70d6",
+      "text": "...It's nothing.\n\"May the Stars guide you.\"",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:4b6b8a79dd4ce2d9e47601dda5ecdf3010dbb89c3088bc5423a0e552315f435b",
+      "text": "...Was that a member of the Church\nof Farlana? But something feels...",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:6c7c2dfed2fd5542bcaf0df7c7b5f53a130ca6029a2243c31ef836250dab528d",
+      "text": "He walks way too quietly. And that\nsmell soaked into him is—",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:d42776482f63e05449c57698f66bb4894489f4cf8ee32dd742f567e63bf6ae07",
+      "text": "The smell of blood, perhaps?",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:a84cf9c73b8210aac1fff1b5a4587a044e60108da6917140f964e41fffa66055",
+      "text": "His name is Iores. He recently\nbecame the gravekeeper of\nPalpebra's cemetery.",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:37ec9a0a8031f40ce4c7c2f68118f16ad784435ba51600f89f9efe89367b8bc0",
+      "text": "...That's not how you talk about an\nacquaintance, is it?",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:3ba0016901c1c78ff6371638cf751ff3f819f395edadf12bdb280fc93f2df357",
+      "text": "I wanted to look into his\nbackground a little. ...Would you\nmind helping?",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:529c425c59dadabe326dda0cbd9c691376352dc2d5c7bf4700b2ae20b9de32e7",
+      "text": "I know you're there.\nWhat do you want with me?",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:455c90abc44e528629b7965d54738da455f070977bf356f462f8a516d2e034fb",
+      "text": "...We received a request from the\nGuild, and used our connections to\nlook into you.",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:73adca7b3f93612b412073aa90466df3bd3f593b3658b793a9e1e0295f2d61d4",
+      "text": "One of a crime ring of assassins\nworking in the Farlands. ...\"Iores\"\nis an alias too, isn't it?",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:65fc33d09a7ddfde9b837f0095e363f04fba779cf2a98765230d841cf34fd795",
+      "text": "Why pose as a gravekeeper under a\nfalse name? If you're plotting\nsomething in Palpebra...",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:3564bfa979cb4e24aaef4ab78406cac05cbcf6236ac8bfeb78ca91067a1512d8",
+      "text": "There's no need to worry. Not if\nyou hand him over to us.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:44beea4705be653e436f1d5d7c11befa27bed80376a0840bad041d42c0a03788",
+      "text": "...Same smell. One of his pals?",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:86ab3701eb91131de23b9f44ace73871200ee1a5f5129f386986a2c17669cba0",
+      "text": "Think what you like. Hand that man\nover, and we'll be on our way.",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:73be37e4a0b31fd9df81be66895ad9a781f01365cf2f4703c2d30a23e29fcc20",
+      "text": "We wish to remove a danger, and we\nwould rather not make a scene. ...Our\ninterests align, I believe?",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:ca58048a07f729bc8f5b99c5f84279e2d0d952f16466b95e61b8e42ab46720fb",
+      "text": "Just a family squabble...?\n...What do we do?",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:02b2e9316d471ba8ede939e8e81e318dacc4f5b1995a442e4f660062747f4241",
+      "text": "...Nobody told us to take him into\ncustody, but—",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:cbb5f5fa06ac0653c8dcf9ec56b5bfdb9cf07511ac821eac75c98e8896f8a2bb",
+      "text": "—What a pain.",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:8048d9f3942805331690c46f96a25a57bb554d12739d3c287f6902b8b69dfa53",
+      "text": "Faster to just hit them.",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:e4f2dba8a7d3ae964307a5a4c128da20c2d933cb130cb59ad5aa94e8c1780bf0",
+      "text": "H-hey!?",
+      "status": "machine"
+    }
+  },
+  "94": {
+    "5": {
+      "srcHash": "sha256:a36e8f5873d4a606b4517f349752b03a8877983e383b251e1bfb84ef7ee660b3",
+      "text": "Ngh... Traitor...! How dare you...!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:9b57588868d835a8a1e100ce94e712da2c62966c5d63fb9d423877ed704c6a8e",
+      "text": "...Still alive, are you.",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:405168ec4236a66a4fe3a5cfb543537de4984cf4c111b3ae4055eebfda14e8cc",
+      "text": "...? Why stop me?",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:af1b527e1ad692996d617011890901d230b443142b45296c84d433bbae291f3b",
+      "text": "W-well... There's no need to go\nthat far...",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:6c98ab2d4abd912d30653eef807263d60c56888b4bbe8f7e72a6a19424694f0b",
+      "text": "Why?",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:d345cbb17f7d0ad86fa6ed220f7ea0355f846adfb056f8949c5ae49252136387",
+      "text": "This town has no need for them.\nWhy let them live?",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:e28666f2e2aca26d5506dc1251f3a16933cdb57fdf00e1dfa9ac20c2829a71a0",
+      "text": "...Wh... why would you even...",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:a9367b4270a90715bb0fd77ed2e8ae1861129583bbd3aaa672b12ec519848a8d",
+      "text": "...Because I don't want to choose\nthat. That's all.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:1caed96b3ee27d586ea88dcdf843d106ec9fc54781215405cccd63c519c0fd0f",
+      "text": ".........\n...I see.",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:8e75db1a6e5ecb7fc6c7d25f31d0dda3dabbbf387628f46ace36b3f2c25727f4",
+      "text": "...What is your purpose?",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:8edc69b2e8767bb454b1076858fe7f17be8913d8a0aaf7a066e8298787cfc245",
+      "text": "An assassin posing as a priest,\nhunted by his own kind. Something\nserious must have happened...?",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:4f801a604f1ac35e2950a6a019673d71f3b6958f6b58b7029963aa8c1c82de28",
+      "text": "I—",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:7a87496c1cf08f89e4c52449f4296d9d309174b93840c3d6903977e10869e9b9",
+      "text": "I want to be an ordinary citizen.",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:f1bf0ac2e40b4d5803fbe0b4df9203e41a2ce6888511ee44919264d6a9077c52",
+      "text": ".........Huh?",
+      "status": "machine"
+    }
+  },
+  "149": {
+    "5": {
+      "srcHash": "sha256:290f261464ceec64bcbf99c123ddfb3569b84a311b1fd2858fa14f60e5ee87c7",
+      "text": "Um... So you really were part of a\ncrime syndicate working in the\nFarlands, Iores?",
+      "status": "machine"
+    }
+  },
+  "153": {
+    "5": {
+      "srcHash": "sha256:50533dff43eb77347faa7f27ddf5768eb335ddc666f0903d5667a895ba597a2d",
+      "text": "Yes. Though I don't recall any\ndealings with these \"Star Augurs\"\nof yours.",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:e11c074700158269d090afb1e50d7bf186e574fe45d5807ed75e90f26bb4e2e2",
+      "text": "...But you have no intention of\ngoing back to them, and would rather\nhave nothing to do with them...?",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:1e9b1f507665c8f440fbf960888ed38b2094d169515eae75ef2c15d3930edaba",
+      "text": "...Orders, restraints... They're\nall a pain now.",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:887fd96742a4bb11471ae16c9cf9b2233abc894b1cb32a9320eb901441296679",
+      "text": "If I become an ordinary citizen of\nthis town, out in the light, I can\nlive in peace. So that's what I want.",
+      "status": "machine"
+    }
+  },
+  "167": {
+    "5": {
+      "srcHash": "sha256:1bb340614873cacbec02f2678bf4a407ba6249d5feba82fa77638ca271eafc45",
+      "text": "...Let me confirm once more. You've\nwashed your hands of the dirty\nwork. You can say that?",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:9a999da4429b3e254ee9ca8dcf69de3be132eefd39069f2b2a6c7b672e01352b",
+      "text": "I can. I had a contract on a Guild\nexecutive in Palpebra. I ignored it.",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:4dfcaf432bf5440eaff15260b6d53283662df368d015b2053455ac4eb04ff4fd",
+      "text": "Ignoring it is exactly why you've\ngot them all on your tail, you know...",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:da731311a9104cb4f4d99cd24a9004cf6c0fac62737319a0ae7dbe499fc2c30a",
+      "text": "...What a pain...",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:1761cc2a3ba999015604501e262ed9e1a95b1a63d5c60897bce76b8bf79d1d16",
+      "text": "This guy's totally the type who\ndoesn't think things through, huh?",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:61cf7ffc8aa2db2b54f391699c4decdf011e826fde1cf0f51c0af5f783bed7e9",
+      "text": "Uh, hmm...",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:4c7ed0316d2b4d2a05b7e79de4b1d1bec2cf6415607e168a1e5b55edc916cd3a",
+      "text": "...I've reported on you to our\nclient. The Guild will keep an eye\non you for a while.",
+      "status": "machine"
+    }
+  },
+  "196": {
+    "5": {
+      "srcHash": "sha256:e013f3b6a2ecd3bab9edcf0e65b91ca854114579f92bcb4e26b6f8b1ae9e802b",
+      "text": "They say it's still hard to trust\nyou. ...You wouldn't have held back\nearlier if Alk hadn't stopped you.",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:2348258ef2eacf0c6be4151b85d76fe0b3c78bfa9e64b3f5c04799bbd70dfb8b",
+      "text": "Let me ask one thing.",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:63bb476418a65b261ed353ad92c9404e6a59373ba87242a31ecf4ac3907045be",
+      "text": "If I don't kill people,\ncan we be friends?",
+      "status": "machine"
+    }
+  },
+  "208": {
+    "5": {
+      "srcHash": "sha256:50e854917c49e6aa07bc7a97cfd198b0eafa152f9cf5097329006f38c881ab4c",
+      "text": "What? Friends??",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:feff0872110349c6e7e3ce6d25d8744fc9589577c4c95afcd90065330813c719",
+      "text": "Ordinary citizens make these things\ncalled friends, don't they?",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:bdccff0bd33147fd731044b7644a5b7d634b2305bd027164163c450d14a20ca0",
+      "text": "Th-that might depend on the person...\nBut most people do, I guess...?",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:ae609949bb4c35e3a19c28073d3d6b3f7cf36a9c12d80f1b53eda2b43368ed20",
+      "text": "Understood. I won't kill anyone\nanymore.",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:f2c85cfdb4adbd3776947172ff9a0587d907f3e7d4e004c56385251d8ca1024f",
+      "text": "I'll do my best to become a friend.\nAn ordinary citizen. ......Though\nit's a pain.",
+      "status": "machine"
+    }
+  },
+  "229": {
+    "5": {
+      "srcHash": "sha256:61ba63ad41c7b8440e9bd7db2095523966ec5b404d49bb70a84bbc17b8c969da",
+      "text": "It's a pain?!",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:3aa4f52fb4745a7581f966910b08e6fd3d910ed04f25057f39a7fc4b9a14374a",
+      "text": "So from now on, I want to stay\ninvolved with you... That is, I'd\nlike to request contact...",
+      "status": "machine"
+    }
+  },
+  "235": {
+    "5": {
+      "srcHash": "sha256:b41caba4a7c09a93606a28f28177a7b08af6f5667debd64b8709a47a883077fd",
+      "text": "...What's the proper thing to\nsay at a time like this?",
+      "status": "machine"
+    }
+  },
+  "240": {
+    "5": {
+      "srcHash": "sha256:1a677e9acf162173ca13f0c1d67ef0093bbd0185dc4ae20f780554de14db82ac",
+      "text": "...Um, \"Looking forward to working\nwith you,\" maybe?",
+      "status": "machine"
+    }
+  },
+  "245": {
+    "5": {
+      "srcHash": "sha256:e796506e9ab611170269e8aebcb083139d5d77a135376261911d366a1ccc60d1",
+      "text": "I see. ...I look forward to\nworking with you from now on.",
+      "status": "machine"
+    }
+  }
+}

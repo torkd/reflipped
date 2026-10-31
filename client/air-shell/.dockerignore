@@ -1,0 +1,8 @@
+# Context of container/Dockerfile: only the sources go in, never game files, APKs, SDKs or keys.
+build/
+test/
+**/__pycache__/
+*.apk
+*.zip
+*.p12
+AIRSDK*/

@@ -1,0 +1,27 @@
+            <header class="page-header">
+                <h1 class="page-title">Dashboard</h1>
+                <p class="page-subtitle">Server settings for everyone on this Reflipped server.</p>
+            </header>
+            <section class="grid gap-4 grid-cols-2 md:grid-cols-3">
+                <div class="stat">
+                    <span class="stat-label">Players</span>
+                    <span class="stat-value">{{playerCount}}</span>
+                </div>
+                <div class="stat col-span-1 md:col-span-2">
+                    <span class="stat-label">Server clock (UTC)</span>
+                    <span class="stat-value">{{currentServerTimeText}}</span>
+                </div>
+            </section>
+            <form class="card" method="post" action="/api/server/time">
+                <div class="card-header">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Server clock</h2>
+                        <p class="card-text">Which gacha banners and events are open depends on this date, and so does the season shown in town. By default it starts at a date with content and runs on from there in real time; setting a time restarts it from that time. Start the server with <code>SERVER_TIME=real</code> to follow the real date, or <code>SERVER_CLOCK=frozen</code> to stop the clock (the game's own timers then run slow). Times are in UTC.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-wrap items-center">
+                    <input id="time" name="time" type="datetime-local" value="{{currentServerTime}}" class="input" required />
+                    <button type="submit" class="btn-primary">Set time</button>
+                    <button type="submit" formaction="/api/server/resetTime" formnovalidate class="btn-outline">Reset to default</button>
+                </div>
+            </form>

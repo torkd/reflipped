@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
+    <title>Reflipped news</title>
+</head>
+
+<body class="bg-background text-on-surface m-auto max-w-screen-md min-h-screen box-border flex flex-col px-5 py-8 gap-5">
+    <header class="flex gap-3 items-center">
+        <img src="/public/img/logo.svg" class="w-9 h-9" alt="">
+        <h1 class="text-3xl font-black text-on-background">Reflipped news</h1>
+    </header>
+    <section class="bg-surface-container-low rounded-3xl p-5 flex flex-col gap-2">
+        <h2 class="text-xl font-semibold text-on-background">Welcome to Reflipped</h2>
+        <p class="text-on-surface-variant">
+            This is a community-run server for World Flipper. It has no connection to Kakao Games or Cygames.
+        </p>
+        <p class="text-on-surface-variant">
+            The server clock currently reads <b>{{currentServerTime}} UTC</b>, which decides which gacha and events are open.
+        </p>
+    </section>
+</body>
+
+</html>

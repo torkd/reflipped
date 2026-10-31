@@ -1,0 +1,135 @@
+{
+  "steampunk_light_hard_multi/100": {
+    "0": {
+      "srcHash": "sha256:7ab29783bf53f5d189cfac3b0430d7c6e3bdfd019db0bff404ef1966d0e949f6",
+      "text": "Steambot Aizan",
+      "status": "machine"
+    }
+  },
+  "steampunk_light_multi/20": {
+    "0": {
+      "srcHash": "sha256:7ab29783bf53f5d189cfac3b0430d7c6e3bdfd019db0bff404ef1966d0e949f6",
+      "text": "Steambot Aizan",
+      "status": "machine"
+    }
+  },
+  "steampunk_light_multi/50": {
+    "0": {
+      "srcHash": "sha256:7ab29783bf53f5d189cfac3b0430d7c6e3bdfd019db0bff404ef1966d0e949f6",
+      "text": "Steambot Aizan",
+      "status": "machine"
+    }
+  },
+  "steampunk_light_multi/70": {
+    "0": {
+      "srcHash": "sha256:7ab29783bf53f5d189cfac3b0430d7c6e3bdfd019db0bff404ef1966d0e949f6",
+      "text": "Steambot Aizan",
+      "status": "machine"
+    }
+  },
+  "steampunk_light_multi/80": {
+    "0": {
+      "srcHash": "sha256:7ab29783bf53f5d189cfac3b0430d7c6e3bdfd019db0bff404ef1966d0e949f6",
+      "text": "Steambot Aizan",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_hard_multi/100": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_multi/20": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_multi/50": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_multi/70": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_multi/80": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_single/20": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_single/50": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_single/70": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_water_single/80": {
+    "0": {
+      "srcHash": "sha256:8d91d87ed7d3cf2a425fce057fb0bb761759fea392dd32d8f33489f3b267ac29",
+      "text": "Steambot Vernus",
+      "status": "machine"
+    }
+  },
+  "steampunk_wind_hard_multi/100": {
+    "0": {
+      "srcHash": "sha256:eae53f9d77b5b74af2aa95397cf3054f72718253337188f65afa2d9fb1d5b41e",
+      "text": "Steambot Clarg",
+      "status": "machine"
+    }
+  },
+  "steampunk_wind_multi/20": {
+    "0": {
+      "srcHash": "sha256:eae53f9d77b5b74af2aa95397cf3054f72718253337188f65afa2d9fb1d5b41e",
+      "text": "Steambot Clarg",
+      "status": "machine"
+    }
+  },
+  "steampunk_wind_multi/50": {
+    "0": {
+      "srcHash": "sha256:eae53f9d77b5b74af2aa95397cf3054f72718253337188f65afa2d9fb1d5b41e",
+      "text": "Steambot Clarg",
+      "status": "machine"
+    }
+  },
+  "steampunk_wind_multi/70": {
+    "0": {
+      "srcHash": "sha256:eae53f9d77b5b74af2aa95397cf3054f72718253337188f65afa2d9fb1d5b41e",
+      "text": "Steambot Clarg",
+      "status": "machine"
+    }
+  },
+  "steampunk_wind_multi/80": {
+    "0": {
+      "srcHash": "sha256:eae53f9d77b5b74af2aa95397cf3054f72718253337188f65afa2d9fb1d5b41e",
+      "text": "Steambot Clarg",
+      "status": "machine"
+    }
+  }
+}

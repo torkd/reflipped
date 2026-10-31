@@ -1,0 +1,422 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:18cda5f2638b6a4a31bb4b2605c4e82fb0ff54640c76a1ad1468e704cad803db",
+      "text": "Ahh, delicious. Cake is wonderful...",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:fd7437b2a8170de1a042bc40583938c720d0ef9dfc728a71d19617c60f31da0d",
+      "text": "I might want to master Western\nsweets-making...",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:72f40f058ef43e99e5e92becbe6116ce8d8af0fb1c7839aab59d0325f0db77e0",
+      "text": "Won't you make ohagi anymore...?",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:10572e54143bbed19bc96c8d860c2db313acd51c08778677065a32c9a98c2b92",
+      "text": "Stella, I'll start with that. An\nohagi cake...!",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:1f5c92b3e4611f0ed53ead0212201fa28d356bb66d63b29d03905eff233cb7c6",
+      "text": "...Is it all right for me to be here?",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:371e29b374252b696eaabf2a4a2322f35ffa333893da80ce31dd651e8be53ec5",
+      "text": "Hohoho, of course. Today is an\nupdate gathering.",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:474b6011a231c27655ea916a87130c7a3c9c183f3427fef75c40ba077ee2818d",
+      "text": "I hear you became a school teacher.\nAre you enjoying yourself?",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:8d71dbac54fbe528ea8f2a875f1207a1f4bcc755b7fa920ee21df1c5f9c81b26",
+      "text": "...Several ninja are hiding in the\nShibuya school. I just became one\nof them.",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:a1b7f559ef6cf277257027ad7d16e469deecdcc148a11e51812eb3f70338c173",
+      "text": "...I no longer intend revenge. I\ntruly feel so.",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:6f28c3063af37d99ef4cad6469518aa0a492f8179cbaf16d488af81970d83e19",
+      "text": "I'm fine. ...You don't need to\nworry about me.",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:e47618ededabade4fccf71d36b0b901528fbe04ed9d3356a16fdb1496b0e84dd",
+      "text": "I see, I see. That's the best news.",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:79a00e9dd036e1fe69e4ebe136c654f794bbb5d2236e2ee3a911df53061808b3",
+      "text": "Oh, those are school uniforms. Are\nthey your students?",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:baa5905d765060fd0b6f70fcfec67d22da228481cdb097bb4f41b67a5d5a95ea",
+      "text": "One of them is a ninja. He seems\nto have fully blended into the\nShibuya people.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:1bb6b9a47a61755fd3143cc253064d5faf787b7317eea241d6430415cdc51678",
+      "text": "Even though we're both ninja.\n...Far more than me.",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:9706a09161eaec5e41e911903933bffb34ca87e6319f01ea155a28ab61c898ff",
+      "text": "Teacher! Wanna get crepes? Shinobu\nactually showed interest for once—",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:92347f24e6800e5612dc4f977e5f913a12c51980c6bba5acc4db4d3e506e95e5",
+      "text": "...S-sorry. They often talk to me,\nand I don't know how to deal with\nthem...",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:f3ce4c60c3221d1a051fa2b3a3745b0163e682e5459525a931eb20aa4146e225",
+      "text": "Do you dislike the ninja among them?",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:744d68f84ddc156e24e833c75950a79cab1c0bdecb6b32ab0e93b4b80ca80915",
+      "text": "N-no, I just...!",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:9e847d70c02ebf16e837031592a8442574033c38c6eb8dfb014692b638716e59",
+      "text": "Take your time. Tell me what you're\nthinking right now.",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:e71cb82e987860a6e323e4e536f3ddd56fa4e0a14d606ea12f20bb0daf1dcf4d",
+      "text": "...Why do Shinobu and Yakumo hold\nno grudges? Even though we're\nthe same stained ones.",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:e1442a2dc3887c3d3a2215e7414b1e5f27024af7f7854863901f8f8802fe001d",
+      "text": "...You don't intend revenge. But\nyour own grudge hasn't faded?",
+      "status": "machine"
+    }
+  },
+  "65": {
+    "5": {
+      "srcHash": "sha256:1aae72ec53b38533ef2cb2839fa47102652882ba0f23219a34ea6b2766b33ef5",
+      "text": "...Sorry. You loosened the curse for\nme.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:22f982d9a612be19f3b830c1f835f8ec68cec2c82acd0fcc7410af171c8d0648",
+      "text": "It's just envy. An ugly thing inside\nme. I shouldn't feel this way...",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:e3fc401d0d9f59538835781263d1c4c56043ddfe2a53047ae406afc9b5117c9d",
+      "text": "No. You may have that feeling.",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:f08245935a08a72f0d4aed5062bd9e3caa3b6e8c50bf489a9228c7f9c31ef520",
+      "text": "Feelings arise on their own. Holding\nthem down is only suffocating.",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:d4a74814c3f2fb3296e5ba8c0d859c110954fbe42335c34b77d3be34b9ad1eaf",
+      "text": "This old woman doesn't love all of\nhumankind, either. You dislike what\nyou dislike, don't you?",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:48d3ffe825ba2bcfae8b19fdbea143d8327bf46e98680e7193c2d957d9999313",
+      "text": "Yes. Disliking is also free.",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:66abdb7b4833fdb31e2b848389d8c4a6e629b478006cb14c918514634656ded6",
+      "text": "Oh, what a good phrase. I might\nstart using it myself.",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:570ebb8da903e45c4448f37f8fcc167e487c08063fe401652ea49fa3ff61dd52",
+      "text": "Still, hurting is hurting. Sometimes\neating and sleeping aren't enough...",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:234e3a12c5fdc53acb7a41fe5cf25f8f07d9bfea7f3d051604613cffca65b510",
+      "text": "Come now. If ohagi isn't enough, why\nnot try other ways to vent?",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:e57cb258f6dea0f3e43c01da5b2e51557832f23abe34d6434c403f99361a7c0a",
+      "text": "...What is this?",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:6d9edee13b92fbc78764e5fbe1e9f706db6893b0598a32fced46261e8b39790d",
+      "text": "Stress relief method number one.\n—The Scribble!",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:210f4cecaba2fcbe60bbd85eb554cbf4069ec8012239e9418ab0883405c5a59a",
+      "text": "Scribble wildly, messily. It's\nrefreshing and becomes art, too.\nTwo birds with one stone...!",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:b48eacd579bcfff8eae87c7beb0bff1b24c68946f66d09e60244bda98e673c55",
+      "text": "Well, it's like taking it out on\nsomething. Why not press your\nfrustration onto paper?",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:c7c555099ab0d27ac3046f3eea03212f234c5222a66b6ab6b35f27c1a7c6cd64",
+      "text": "Hohoho. That's not all. Next up—",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:8305c63fe38534a808f58f6851d54c921fe15578d38b6f99d870c8b19b8e529e",
+      "text": "Here we go~. Kaboom!",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:03b391ac116e281e1ac443285c3e87c5296165de5135b875e8490b119f2ebf6f",
+      "text": "Here I go! —That stubborn, clueless\nblack-company boss!!!!!!",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:6524d11b2f71ae61739112c516fae075bf97b0b77383295dfe187b08ffd4a43b",
+      "text": "Next... How about this \"karaoke\"?\nYou shout insults, very loud...",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:4ad133c480ba5333e60b00fce4beb3641cef88929e07d24110ec1c01510cfe4d",
+      "text": "Oh, that sounds refreshing. It's a\nprivate room, so no one else hears.",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:cdbfd56c440aa6b65f755d1cd9695f954088b349bed10adca1b96541d66b7130",
+      "text": "...Is \"pie throwing\" bad? A Shibuya\nculture. Throwing pies at the\nshogun's faces...",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:a6177482570332dda313a343692b49a2fe47ed4076aff42b549e87473a022c01",
+      "text": "Hmm. Tempting, but that's just over\nthe line. If we grannies played at it\nourselves, though, that'd be fine.",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:0d7c6da689c1cf0efcc15436d8fa161bb1d8c466e7d8dbff1f8b4d6db7105016",
+      "text": "I want to hurl one at them...",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:0c41557de906517a5edf22aefcff1ae09de159ab883637e22590bb6efe77b285",
+      "text": "Yes, indeed. What a harsh world.",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:f793feb7eb3607f42e1530123f9ce1d89b8e33a231ddc769c4b4ff6d38e3a0f2",
+      "text": "...Ah, what is this...",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:f7a2bab1106b96de23f33474ca55e0f232d93ea254f41022afe1262a7a4ed7a4",
+      "text": "Say, Tamako. Is it okay to do\nsomething like this...",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:52fe6af07e4d6c45c4297746186ffb6c2219fa9cd5c333ee0c3f6a0bbb4a3fab",
+      "text": "Well, it depends on the person. If it\nmade for a good day, all the better.",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:ca996283eb7252eb96dc6545c2a4e05094227944c783f6011fa070443cd8f301",
+      "text": "Stella, did you enjoy today?",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:535dff4f1639d84ce8a69472324fda62296259807245c60f961409c65f3fccc6",
+      "text": "Insults and stabbing kunai seemed\nhard.",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:d2df750f6d8272e78a81a6ea565a932c55cbb0492480968018f8b100abc3a8ed",
+      "text": "But I enjoyed the fireworks and the\nscribbling.",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:fc059a7045873f8dac26f92f2c3f96f4e0a96b2840a6f2e8d06b10d90eccc5d0",
+      "text": "I see, I see. Then it's a success.",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:d9f88203db0000bd51e8cb733b9f464335bee3cfa8fc668c7d23fef515c88bd5",
+      "text": "...Silly or serious, even if it hurts\nagain, that's fine.",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:bdff1ba015ccfeb908496f794f80ee43f9b6ef99fd116342be7d30c0a7abce90",
+      "text": "I'll always be by your side.",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:f57838dad2798ad6285a6c4b033810850e7910e1c6d909c2673a3bea3f047e69",
+      "text": "There are children who quickly try\nto be swallowed by curses.\nMurakumo, Manoka?",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:1de447fb63ab0a95a3b6f443c4be0cafae7cf7f6f91974c0b1697ed3f6111dd9",
+      "text": "Hahaha. But Murakumo is a sword.\nIf my master wishes, I can only\nslash.",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:ad36377d7056f372c8ee6fda2dcb36c690b159d54eee3fded70a346c2d9eb78c",
+      "text": "If a curse is the true wish, perhaps\nwe should grant it?",
+      "status": "machine"
+    }
+  },
+  "175": {
+    "5": {
+      "srcHash": "sha256:d375113c3c16e0167f1129f3739a2643f252a4042b93d6bb8b4d7ed81de29446",
+      "text": "Hohoho. Still so young.",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:8bb594fc05f7767d903fd5c40df501bcb2561eee415db9875e9c8769f81a4cbe",
+      "text": "Granny Tama treats even Murakumo\nand Manoka as children...?",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:6ee1e40d725109020698748e60c03702031e3d1acb3ddab658f43dcbc5cca06c",
+      "text": "Hmm. If you say swinging swords is\nchildlike desire, I can't deny it.",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:552e090619530310aaa22509bf6cbf251055f7a4776fb14cece7ad3d5d26f16f",
+      "text": "Hmm. In the end, it's a matter of\nheart. Each person is different.\nAnd besides—",
+      "status": "machine"
+    }
+  },
+  "191": {
+    "5": {
+      "srcHash": "sha256:42e18cc55fbda8aa905582b919854e81f1d5afed1c3e69b909e5250aa371bd2a",
+      "text": "I love you all just the way you are.\nWhat am I to do with you?",
+      "status": "machine"
+    }
+  }
+}

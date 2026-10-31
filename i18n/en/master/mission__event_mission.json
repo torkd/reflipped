@@ -1,0 +1,768 @@
+{
+  "2263": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2264": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2265": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2266": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2267": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2268": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2269": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2270": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2271": {
+    "1": {
+      "srcHash": "sha256:c9d12690140ebe013ad2aefe4ea8621e4beec308613ac601ce24d3b90e5917cd",
+      "text": "[Wanderers from Another World] Defeat ::x_count:: Winged Familiars",
+      "status": "machine",
+      "note": "hiyoku no tsukaima = Winged Familiars (official Descension name)"
+    }
+  },
+  "2389": {
+    "1": {
+      "srcHash": "sha256:98d56bddfa3c2e85d5a7bd35c1860176d9ee38505819b17d6fc5a1601f037ca5",
+      "text": "WF Unit Poll: Vote ::x_count:: time(s)",
+      "status": "machine"
+    }
+  },
+  "2491": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2492": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2493": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2494": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2495": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2496": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2497": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2498": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2499": {
+    "1": {
+      "srcHash": "sha256:88ab9bfa97b9d46268b2898d2b65758739914920c6884a8462e414f50e5f74ed",
+      "text": "Midsummer Promo: Clear Orochi (Multiplayer) ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "2600": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2601": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2602": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2603": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2604": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2605": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2606": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2607": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2608": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2609": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2610": {
+    "1": {
+      "srcHash": "sha256:3918cea0d2289b4cbd93dc854e5dc9af7799aa1b06301c5eb6231439abfdd823",
+      "text": "Windwrath Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2611": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2612": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2613": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2614": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2615": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2616": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2617": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2618": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2619": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2620": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "2621": {
+    "1": {
+      "srcHash": "sha256:ec4dceca0bf657ef1a98bb0d5bceb5bf839e33e06eefad92cf913e8c50c665e2",
+      "text": "Maelstrom Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "400053": {
+    "1": {
+      "srcHash": "sha256:77f19a9ecf30b9bb8bf4b851523e4ea42708a4d71050e05cddab92cb03df2ad8",
+      "text": "Sagas of Conquest: Join the event",
+      "status": "machine"
+    }
+  },
+  "400054": {
+    "1": {
+      "srcHash": "sha256:b5fbdd354cbbcc6f0dd1f757bf33474100989d14d16b0f533978343d45635650",
+      "text": "Sagas of Conquest: Build your Main party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "400055": {
+    "1": {
+      "srcHash": "sha256:6eaa011de2fc3d245d8892f67f95d38f1194cb0e23305ed6048205e6efd83f00",
+      "text": "Sagas of Conquest: Build your Sub 1 party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "400056": {
+    "1": {
+      "srcHash": "sha256:794ec86733929971b4312eb08e632d3dc692218d9d1fb550210a9530f54f88da",
+      "text": "Sagas of Conquest: Build your Sub 2 party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "400071": {
+    "1": {
+      "srcHash": "sha256:77f19a9ecf30b9bb8bf4b851523e4ea42708a4d71050e05cddab92cb03df2ad8",
+      "text": "Sagas of Conquest: Join the event",
+      "status": "machine"
+    }
+  },
+  "400072": {
+    "1": {
+      "srcHash": "sha256:b5fbdd354cbbcc6f0dd1f757bf33474100989d14d16b0f533978343d45635650",
+      "text": "Sagas of Conquest: Build your Main party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "400073": {
+    "1": {
+      "srcHash": "sha256:6eaa011de2fc3d245d8892f67f95d38f1194cb0e23305ed6048205e6efd83f00",
+      "text": "Sagas of Conquest: Build your Sub 1 party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "400074": {
+    "1": {
+      "srcHash": "sha256:794ec86733929971b4312eb08e632d3dc692218d9d1fb550210a9530f54f88da",
+      "text": "Sagas of Conquest: Build your Sub 2 party in Edit Set",
+      "status": "machine"
+    }
+  },
+  "500061": {
+    "1": {
+      "srcHash": "sha256:427f7ce29d771e93f0531df8d383bb6bd18999d0ba2ac7242c2ffcc62850fec0",
+      "text": "Hanifolk Carnival: Clear Doomshade DH Hani Intermediate",
+      "status": "machine"
+    }
+  },
+  "500062": {
+    "1": {
+      "srcHash": "sha256:0ca474f8a698c305998bb1329b35b2d5e984a95b62e4abe12d685fb2bc5e4bb1",
+      "text": "Hanifolk Carnival: Clear Doomshade PF Hani Intermediate",
+      "status": "machine"
+    }
+  },
+  "500063": {
+    "1": {
+      "srcHash": "sha256:564976196ad84a1459f626cdaa13a7b3c368946be4211e71c8f1886509f7656f",
+      "text": "Hanifolk Carnival: Clear Doomshade SM Hani Intermediate",
+      "status": "machine",
+      "note": "Doomshade skill Hani is 'SM' in the official carnival folder rows"
+    }
+  },
+  "500064": {
+    "1": {
+      "srcHash": "sha256:2f21e5ce3ceff5c91bebfad7d0a2360ec5b156a810a3d89b2d314ba12204d8ba",
+      "text": "Hanifolk Carnival: Clear All Intermediate Quests",
+      "status": "machine"
+    }
+  },
+  "500065": {
+    "1": {
+      "srcHash": "sha256:e6a55ddb4b17eb773d8a85496f1c24a5df0baf282256a88b930c1aff82375761",
+      "text": "Hanifolk Carnival: Clear Doomshade DH Hani Advanced",
+      "status": "machine"
+    }
+  },
+  "500066": {
+    "1": {
+      "srcHash": "sha256:904fed0a314b0c1683a27410b7ead50d08af4cb03ee9cba39587bb2f8e60cae1",
+      "text": "Hanifolk Carnival: Clear Doomshade PF Hani Advanced",
+      "status": "machine"
+    }
+  },
+  "500067": {
+    "1": {
+      "srcHash": "sha256:9552df8551183595891e184556fbee9094290916b2ff2fb3fecaeb0d9e41cc3a",
+      "text": "Hanifolk Carnival: Clear Doomshade SM Hani Advanced",
+      "status": "machine"
+    }
+  },
+  "500068": {
+    "1": {
+      "srcHash": "sha256:4b561ff0b6472a6927f174e05f6b56e2c2f6dd4d6fc51da9015068cb5e61f3f8",
+      "text": "Hanifolk Carnival: Clear All Advanced Quests",
+      "status": "machine"
+    }
+  },
+  "500069": {
+    "1": {
+      "srcHash": "sha256:07b23fa2a9ad7fd3d6b1cfcb782cbe9bfb5af7afc5efbefca44f5672d989a1a5",
+      "text": "Hanifolk Carnival: Clear Doomshade DH Hani Godly",
+      "status": "machine"
+    }
+  },
+  "500070": {
+    "1": {
+      "srcHash": "sha256:0ab0be7ec41c1c927cf0163a3fcf1f15d18cd6fb2a0c7bc400b347ca1f1dba85",
+      "text": "Hanifolk Carnival: Clear Doomshade PF Hani Godly",
+      "status": "machine"
+    }
+  },
+  "500071": {
+    "1": {
+      "srcHash": "sha256:2c9e26f34a72d99dd4aa8fce88848a5cd857d69039bae88c69e8c9c964df1447",
+      "text": "Hanifolk Carnival: Clear Doomshade SM Hani Godly",
+      "status": "machine"
+    }
+  },
+  "500072": {
+    "1": {
+      "srcHash": "sha256:e7c9c5f7a595f1554f5950041ffd9588e02c19399c3726bdf128545f9653ecf1",
+      "text": "Hanifolk Carnival: Clear All Godly Quests",
+      "status": "machine"
+    }
+  },
+  "600002": {
+    "1": {
+      "srcHash": "sha256:08dbfbd7df04db2567a71b7aecb30bb8bf557702ad3424b5fc20cefdc0374582",
+      "text": "Clear with a grade of S+ with no Coffins in the first 180 seconds",
+      "status": "machine"
+    }
+  },
+  "600003": {
+    "1": {
+      "srcHash": "sha256:62c3e0c15c93fe951a1aafb288973f2abd8e88bb8f56f66158b78b39b8ab0385",
+      "text": "Clear with a grade of S+ without your leader getting an Attack Debuff",
+      "status": "machine"
+    }
+  },
+  "700051": {
+    "1": {
+      "srcHash": "sha256:2b9e9d0edf171e417328460d6aeacac779326fe0968cb603334f26a2fdcbbe64",
+      "text": "Clear the first Intermediate Grand Gauntlet Battle in 120 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700052": {
+    "1": {
+      "srcHash": "sha256:4e7758b287c86669edaa241a99414d5054c9b281122c697b03e285f38f8589a1",
+      "text": "Clear the second Intermediate Grand Gauntlet Battle in 120 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700053": {
+    "1": {
+      "srcHash": "sha256:7de2dc705c73f8ec674ab5cdb89d383dd0a2e2e191672069ea8d354c536fd765",
+      "text": "Clear the first Advanced Grand Gauntlet Battle in 180 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700054": {
+    "1": {
+      "srcHash": "sha256:5bcf71b2997af8235347e54593b6d3568c4afdcdc181cd083de201615bbc23ce",
+      "text": "Clear the second Advanced Grand Gauntlet Battle in 180 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700055": {
+    "1": {
+      "srcHash": "sha256:3a4ea2ee51c4b1e3c21714c416f6e9dbe77618636a4ef322b606a9c0850cc928",
+      "text": "Clear the first Godly Grand Gauntlet Battle in 180 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700056": {
+    "1": {
+      "srcHash": "sha256:7aa3a685f003e3ef4e195e7ed8206a96a2f21dd4ef98a7eea8a5153696fd2993",
+      "text": "Clear the second Godly Grand Gauntlet Battle in 180 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700057": {
+    "1": {
+      "srcHash": "sha256:db6098e12267de2fce8173f251f4b1e76d27989c0f187cc6886b12647b64663b",
+      "text": "Clear the third Godly Grand Gauntlet Battle in 180 seconds or less",
+      "status": "machine"
+    }
+  },
+  "700058": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "700059": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "700060": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "700061": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "700062": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "700063": {
+    "1": {
+      "srcHash": "sha256:6938a007a74096e727deec88acbf2cb29f4e7d50779410945bff53767388cab6",
+      "text": "Clear Grand Gauntlet Rush Battles ::x_count:: times",
+      "status": "machine"
+    }
+  },
+  "900563": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900564": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900565": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900566": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900567": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900568": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900569": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900570": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900571": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900572": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900643": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900644": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900645": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900646": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900647": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900648": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900649": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900650": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900651": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900652": {
+    "1": {
+      "srcHash": "sha256:64d870b2ba3fef825929f74f5546ea7139cfae1de9675468bb08479aeaf3d18b",
+      "text": "The Purge: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900653": {
+    "1": {
+      "srcHash": "sha256:cebed17a2d02d00365d8fa357c07b7b8b235e7f89001b512658dad31a2b0f711",
+      "text": "Clear with a grade of S+ without your leader getting a Light Resistance Debuff",
+      "status": "machine"
+    }
+  },
+  "900654": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900655": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900656": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900657": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900658": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900659": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900660": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900661": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900662": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900663": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  },
+  "900664": {
+    "1": {
+      "srcHash": "sha256:44c0867d5b0c131eaddd66d471bbb07f507fb856a6925ab7b5914df44fdf078c",
+      "text": "Radiant Steambot: Clear ::x_count:: multiplayer battles",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,1087 @@
+{
+  "111153": {
+    "0": {
+      "srcHash": "sha256:b6ee10f24bdc93b5cced31e9813fc764aa7474df8afa9b3b4338cfd8af3bffda",
+      "text": "Lunetta",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:b37b9da3b3a39c10fed7a119f229de971fc7bb45fb8d61c62a78d324e353fd1e",
+      "text": "A rookie adventurer fresh from the countryside. She carries the power of a Fire Spirit, though even she isn't sure why. But she doesn't sweat the small stuff! Armed with the spirit's power and her natural cheer, she's charging down the road to becoming a first-class adventurer.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:b9a4405eea060950958a802f2055108a0d0af8ee4f9619adf45a8fb4a792ceef",
+      "text": "Fiery Rookie Adventurer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:2e457f208142ff763fae825bda4724f2805c400accadf13cd33c4a8f615c9f8b",
+      "text": "Emotion Ignite",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:feba2ae6eb3abaf2715b9f4af975cd3ab161c35e7541c05571af84f41743b4df",
+      "text": "Uses the spirit's power to cause a huge explosion, inflicting Fire damage on all foes on the field / Increases the Wind resistance of Fire units and Fire multiballs in your party, and Fire units in other players' parties",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:eccb3ef823f98462c2cabe8342532b6940f04aa8db3762e37ad3f606c40c5366",
+      "text": "Emotion Ignite+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:feba2ae6eb3abaf2715b9f4af975cd3ab161c35e7541c05571af84f41743b4df",
+      "text": "Uses the spirit's power to cause a huge explosion, inflicting Fire damage on all foes on the field / Increases the Wind resistance of Fire units and Fire multiballs in your party, and Fire units in other players' parties",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:4e267f2b9fa109b80ccfcceb88dc40c5e6ae5575e662e3601ab381751ecb9f5a",
+      "text": "A Light for Others",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:c807d518df671c81bbab7eaef7fa2e2dc4cc0fdb935a5495712f87c5da09d27b",
+      "text": "Suzuko Mimori",
+      "status": "machine"
+    }
+  },
+  "111159": {
+    "0": {
+      "srcHash": "sha256:cc7d79230c6fb17847f30a2e9413bb0d78ffe43bd4f78c0ecf6346cd3fa3a04e",
+      "text": "Penelone",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:da05e2516ac8f291f6f04f5b9722140c8d75c145a2076171134ad30cfab5ecc4",
+      "text": "An honest and polite catfolk girl who tries to act grown-up despite her young age. Behind her adorable looks, she is said to hide a tremendous power.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:1e2d0ceb24ad5a7cba6612dd040aebd2f3dbc03de9d0e6a823642f5c0273a144",
+      "text": "Pure-Hearted Kitten",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:c03c962287c4f63e4c77029d92b01da28ef17634312c3607fefca139c5cb68b6",
+      "text": "Kittenkinesis",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:591b7acd4c864acad9f9dc476f1bf6603389f25c1e8f0a952368dbfb2fc4bd4c",
+      "text": "Surrounds herself with floating rocks, inflicting Fire damage on nearby foes for a period of time / When party leader is Fire, grants Pierce and increases Power Flip damage for the party",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:5b847d24c038ce9e35974d60c1f87d5e11de7709ad290fd63a8ee11b39240da0",
+      "text": "Kittenkinesis+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:591b7acd4c864acad9f9dc476f1bf6603389f25c1e8f0a952368dbfb2fc4bd4c",
+      "text": "Surrounds herself with floating rocks, inflicting Fire damage on nearby foes for a period of time / When party leader is Fire, grants Pierce and increases Power Flip damage for the party",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:aa1a7b42c6a9da5195220de86834cb0ff9946024bfdef343888d0757f293d3ce",
+      "text": "Leave It to Me!",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:7b1f1432d555420891c3c2991082cdb882acaaa55de8ceda5943ed7176247d9a",
+      "text": "Ayano Yamamoto",
+      "status": "machine"
+    }
+  },
+  "121159": {
+    "0": {
+      "srcHash": "sha256:6af5c69c54b42624b6ff28514fc6d4572e1bbc51e140a6f36fe90dab3d1eed5b",
+      "text": "Nisues",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:35b438e811c5ce82f69d561765562ec667291e8d632dbb72a0b53a8a27167fa6",
+      "text": "The first of the Vesta to become an adventurer in the Palpebran way. With her Spirit Horn, which reads people's emotions, she keeps the harmony with those around her while enjoying her first life outside the Vesta.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:a352337f4eaa01ef14e1863e1f84955c300ad5437d0be3186ebae09b7ea043a9",
+      "text": "Spirit Horn Adventurer",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:af9a9784a26dee5b4132ee5c1f9d3a10afad12bf90931d17fc6a3c1438af644f",
+      "text": "Spirit Horn Beacon: Glory",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:ee52f28659566d883181fb273f9e739ccf87b70f28b52a1f98d85f2b02ec20c7",
+      "text": "Restores the HP of all units and multiballs in your party, and units in other players' parties (Effect boosted for Water element) / Grants two attack buffs to Water units and Water multiballs",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:ab926bd0d95068fea849061e0d23e076a480f3c9c5c9e316da957c5fcc8d1ea3",
+      "text": "Spirit Horn Beacon: Glory+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:ee52f28659566d883181fb273f9e739ccf87b70f28b52a1f98d85f2b02ec20c7",
+      "text": "Restores the HP of all units and multiballs in your party, and units in other players' parties (Effect boosted for Water element) / Grants two attack buffs to Water units and Water multiballs",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:3b838a6e1c5d9885f5cd3143d134cb72781f2418c6f681f2ca612b8952e09815",
+      "text": "Staff of the Vesta",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:80821f873888660c7470c518161b60f0b280a4602aeaef91fc574d991478cd1c",
+      "text": "Yu Shimamura",
+      "status": "machine"
+    }
+  },
+  "121165": {
+    "0": {
+      "srcHash": "sha256:351ed5c5f4f133969ae9e35e6371b58ce2b9b184593eb7ede927302d86665d6e",
+      "text": "Lanmei",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:f3a2b5469e31d4af262c5a0fcdceb9536c0d39a28ac300546d3242d55f62603b",
+      "text": "The infamous boss of Tsangli, a vast mafia organization that rules the underworld of the Endless Blue. Though little is known of her past, her talent and skill quickly carried her to the top. She is a gangster who is beautiful, terrifying, and at times, kind.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:bdbf6b62e6fcdefc688ea58eaf677f13603b546f4e22a382829b7fac83e4b81b",
+      "text": "Kowloon Gangster",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:843c25bfb7445a13c0aa6db44662fd3f6b1bd5fe6fbd88804e7ee733bd06e86c",
+      "text": "Floodcall: Gonggong",
+      "status": "machine",
+      "note": "Four Perils (si zui) are the four villains of Chinese myth, Gonggong among them; shortened."
+    },
+    "5": {
+      "srcHash": "sha256:9a1200beec7c1fd6ccb8c26e05f57d8ce5aaeae15f9b4d61b17491f72531b844",
+      "text": "Creates a barrier around herself for a period of time, inflicting Water damage, a stackable attack debuff, and a stackable Water resistance debuff on nearby foes",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:7ae4efdc103e3cc8635c7b7cfead9f5df7a74245f00f030fabdbc6760c77d59c",
+      "text": "Floodcall: Gonggong+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:9a1200beec7c1fd6ccb8c26e05f57d8ce5aaeae15f9b4d61b17491f72531b844",
+      "text": "Creates a barrier around herself for a period of time, inflicting Water damage, a stackable attack debuff, and a stackable Water resistance debuff on nearby foes",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:4af1840d40cdbf1c7a603f0929b129abdf6f69b7ee4eb6acc738c89f3128f46d",
+      "text": "Reaching into the Abyss",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:10a44b9f5cad7d844f56fdf179104a19ed0fd252e134a5301bea04cbf0ab50c6",
+      "text": "Natsuki Aikawa",
+      "status": "machine"
+    }
+  },
+  "131134": {
+    "0": {
+      "srcHash": "sha256:1a416b3a5343a4cdd5400df0108c4c47fe2d3539c8306fa0a06759fc464cecf9",
+      "text": "Kasivars",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:33af27a329819c035c04493d8f54323037e6cd23077e168a24f1b0e5524d9897",
+      "text": "A body designer who creates android bodies. Her designs are strikingly novel and outlandish, favoring forms no ordinary android would have, such as multiple arms and legs. Her clients invariably say, \"Before I knew it, my body had been set free.\"",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:03cf53b2ef337ba6cd408c4ed2ef4b1b3f15fcc55a06a3f92883936de493cd38",
+      "text": "Cage Liberator",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:907d2730e7abd170accbfa3f76c875a116735e37c22dd042a2045d39752ad9ad",
+      "text": "Sauve Design",
+      "status": "machine",
+      "note": "Reading uncertain (French sauve?)."
+    },
+    "5": {
+      "srcHash": "sha256:7ab0323310fe25644c2f1802f491d4d8b8795c54dc7dfd5771bb06e720a3c52f",
+      "text": "Wields multiple arms, inflicting Thunder damage on nearby foes / Increases Power Flip damage for the party / Removes 1 debuff from Thunder units and Thunder multiballs",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:fa25d7c50c6d6ec2a55f9a69516e4a2bc56fc22c4fac760f8b0c95d233079f06",
+      "text": "Sauve Design+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:7ab0323310fe25644c2f1802f491d4d8b8795c54dc7dfd5771bb06e720a3c52f",
+      "text": "Wields multiple arms, inflicting Thunder damage on nearby foes / Increases Power Flip damage for the party / Removes 1 debuff from Thunder units and Thunder multiballs",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:46d4c33485a2d2d520871595cb847c791d8df0d7bdb7b1e28edeaea37d72dbd2",
+      "text": "Body Designer of Desire",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:3a2e2d085e38fb4792ca6e2a8850a0906df3797412c6329c337b307a60de7fcc",
+      "text": "Asami Seto",
+      "status": "machine"
+    }
+  },
+  "131140": {
+    "0": {
+      "srcHash": "sha256:dba9cabe0ed1f2a70e08b9c0a24eb235ea203d6ae8dfb6049940aaed7db948d4",
+      "text": "Denah",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:5144fbe95e56ee3151c317d4f394d624b97878b27b71ebab6a40f43f019fde78",
+      "text": "Yin and yang, black and white. Chaos is inverted, and the maiden is cloaked in a world of white. In other words, cute white outfits aren't really Denah's thing, but she's adopting one as her new style anyway.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:f82394d562bfd30911b0641e25c6b175821d3f64e0c85505ecd584fa398b645e",
+      "text": "†Inverted White Maiden†",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:94f97df2f90591160e98e95d6ca126341f464be85a6eb30c232878ebebd85a43",
+      "text": "Dark Art 999: Chaos Bloom",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:ea079ca70bb97ad7b61f75ada9948d249b0f90c3bf383bbf3b76a12b4a74f7de",
+      "text": "Strikes a pose to show off her new outfit / Tentacles attack the nearest foe, inflicting Thunder damage and reduced Thunder resistance on hit foes / If activated outside of Fever state, increases Fever Gauge",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:0b1c9c35952bb70df83ced954c1c2300825aeb851966bf378fde9afc5f0320fe",
+      "text": "Dark Art 999: Chaos Bloom+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:ea079ca70bb97ad7b61f75ada9948d249b0f90c3bf383bbf3b76a12b4a74f7de",
+      "text": "Strikes a pose to show off her new outfit / Tentacles attack the nearest foe, inflicting Thunder damage and reduced Thunder resistance on hit foes / If activated outside of Fever state, increases Fever Gauge",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:3a6f0b7d15dc05330b935dcf23fd9e9702e2cf21262e37034bac4ad93e69c37c",
+      "text": "Girlish Delusion Nostalgia",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:dec427733a32c9f22fd8857a15bc1a694f7892308d039187e2437189517064b9",
+      "text": "Yukari Tamura",
+      "status": "machine"
+    }
+  },
+  "131146": {
+    "0": {
+      "srcHash": "sha256:3a6f73b92832e59ec1444ea66924bab5c57f46cec3918b2b7aa678d8c44f0d9b",
+      "text": "Libram",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:b9ed2d259d3e8257c0d1c86b27b2359caece85c407d8403818d1cbfbd4ea2518",
+      "text": "Handsome, wealthy, and well-born. Yet his friends all say the same thing: \"He's an adorable coward, that one.\" So no matter how fine a suit he wears, there's no way Libby could gracefully escort a lady... Wait, Libby?",
+      "status": "machine",
+      "note": "Libby: nickname for Libram (source: Lee-yan)."
+    },
+    "3": {
+      "srcHash": "sha256:446e71684e8a93dac895eec512489edcd3b26373b676c28c15115bdcd973c19b",
+      "text": "Dapper High-Hat Negotiant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:d08fb4cab93d3ed394bbdad5124f5e2c9dd6e1a4c595fe76c3420fcbe5e2e0b4",
+      "text": "Gifted Mate",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:754bb04b1351cc1f98453b307ce1b11a75dffc5f30b6f893528aeadfb063bbdb",
+      "text": "Puts on a lavish show across the field, removing 1 buff from all foes / Increases Thunder leader attack / Removes 1 debuff from Thunder units and Thunder multiballs",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:3f9880b22d01a72e5aa1a0d792e75713bf4a5a4c0802bb1b99975792595392b8",
+      "text": "Gifted Mate+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:754bb04b1351cc1f98453b307ce1b11a75dffc5f30b6f893528aeadfb063bbdb",
+      "text": "Puts on a lavish show across the field, removing 1 buff from all foes / Increases Thunder leader attack / Removes 1 debuff from Thunder units and Thunder multiballs",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:34aacd93aadf41566a934ad842a1b863dba8683bf57782e3976ce78f630a3aba",
+      "text": "Swes Philosophy",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:329e6c97b54182ab2629b1fdfed191dd249e5ad90ed6ec1be1c09655d84afcd8",
+      "text": "Kaito Ishikawa",
+      "status": "machine"
+    }
+  },
+  "131158": {
+    "0": {
+      "srcHash": "sha256:10c5fa45e968451061a11826ef042832c4cdccdff87595781989a7c7cfe3895b",
+      "text": "Nagiri Amo",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:723089b432a90f88ce20320f78171f34738f0caae1cec54992280bbe780c735b",
+      "text": "Nagiri Amo, a 16-year-old first-year high school student. A sword prodigy named rightful heir to the Amo Style by her grandfather, a Living National Treasure. At a glance she seems a well-bred young lady with the air of a class president, but her blade flashes like lightning to pass judgment.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:8d47a5284c3d91d6850361290fe32d204410d81d9bfba63b7666224cb6f896b2",
+      "text": "Judgment Blade",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:91c8d9d4f8414f16e3cfb9b3476e56e3115cfb1ccc81c5271c0d2d086b1b0c81",
+      "text": "Heavenly Thunder Flash",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:b6caefa9868a96ebeef43054c155a2908ad83ac48df6f1ca0085e37d85eb89ee",
+      "text": "Performs an iaido strike in front, inflicting Thunder damage on hit foes / If HP is above 50% when activated, deals additional damage to self",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:117be5f8a6aedbb7c0da8277f757fdd930efe2fc3b05ce26963b455750a22bf7",
+      "text": "Heavenly Thunder Flash+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:b6caefa9868a96ebeef43054c155a2908ad83ac48df6f1ca0085e37d85eb89ee",
+      "text": "Performs an iaido strike in front, inflicting Thunder damage on hit foes / If HP is above 50% when activated, deals additional damage to self",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:20aa209aa211e0493f4e76f2d1807897f2c25ea589804cd049686784be06d4d7",
+      "text": "Indomitable Blade",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:899d7a96f3d99f9e1cc1ae7e692d39c21381631c0701eac4fc62f3390fe1bb59",
+      "text": "Yuki Hirose",
+      "status": "machine"
+    }
+  },
+  "141147": {
+    "0": {
+      "srcHash": "sha256:940c074355e0c2e40dc15cd317ea03aa59ed717b8475054a876d3514a213df50",
+      "text": "Beaucy",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:3f24762c820525b24e6a79530de66f206c8e9ee714228c66f3248eaa27c51bc4",
+      "text": "The top gravure-type idol who conquered the BRASS, a proxy war in which twelve mysterious nations stake their prestige. Her immense Cosmic Power and love for idols don't waver one bit, even off duty. Her catchphrase is \"Cowdy.\"",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:dfd128b3be43a236705abeacfebc453307acfa2e76d51b1a12152639ab3932d5",
+      "text": "Off-Duty Idol",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:8f03a215745566a8f10305c38d8949e17511a6e4eda545017e4e2534d772e84b",
+      "text": "VT Candid Shot",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:c0deeeb39a057b9803e2a00214ed71ade42ccd65fe3648d8e98c0e94ac01f92f",
+      "text": "Shows off an alluring candid shot, increasing Wind leader attack / When party leader is Wind, increases Power Flip damage for the party / Increases combo count",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:e20dcc558893a43c83e40da7b26cdb1a823466b1191d53f0bd5354c2113ed0ae",
+      "text": "VT Candid Shot+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:c0deeeb39a057b9803e2a00214ed71ade42ccd65fe3648d8e98c0e94ac01f92f",
+      "text": "Shows off an alluring candid shot, increasing Wind leader attack / When party leader is Wind, increases Power Flip damage for the party / Increases combo count",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:80f109452fbd91c2da0e73ffd871f9381ad01a5c20f7ff38b5f0597863d60f28",
+      "text": "Incognito Holiday Date",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:3ddf18a3d911d8abf2ec808f8e4ef2bfe234b90e3c7fe85b41fbf700c7e53923",
+      "text": "Eri Kitamura",
+      "status": "machine"
+    }
+  },
+  "141153": {
+    "0": {
+      "srcHash": "sha256:970246c6e145d0794c63a747637118840bcc0e2d365ac4f7f8706e2cc66fb9b9",
+      "text": "Yae Asato",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:6c34338638a9a4e5636eaf965bb456dd61766d17f0ed5f0b0252ceb2e0ffe2ae",
+      "text": "Yae Asato, a 16-year-old first-year high school student with the power of freedom. In search of something to be passionate about, she drifts along as a carefree adventurer while sightseeing in other worlds. She's sociable, and doesn't really do personal space.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:8523ca104f1291c04991911397501b656f5928ad10e9d3a16f8821ad6364de7e",
+      "text": "Free Spirit",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:cad333c8d18e890dc8e50ebd75dd408e129f1587378b37cd3ba07d8b889555de",
+      "text": "Arrow of Liberation",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:e3aaeed65ecd3818c5f2a6bc49ef20b045b6d7a78b58a54a2fb5826d52eb4905",
+      "text": "Rains countless arrows down on the nearest foe, inflicting Wind damage on hit and nearby foes / Increases direct hit damage for Wind units + Removes 1 debuff / Grants Levitate to all units and multiballs in your party",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:31d9a23ee96dd1802d44039bd4592949e5e4bf49e3ccebb0f2a748a725736fb4",
+      "text": "Arrow of Liberation+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:e3aaeed65ecd3818c5f2a6bc49ef20b045b6d7a78b58a54a2fb5826d52eb4905",
+      "text": "Rains countless arrows down on the nearest foe, inflicting Wind damage on hit and nearby foes / Increases direct hit damage for Wind units + Removes 1 debuff / Grants Levitate to all units and multiballs in your party",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:3ea7987f60a4164eb5d053d35586e64adeb91077126dbd12b19156f1bd182ce4",
+      "text": "Eightfold Bonds",
+      "status": "machine",
+      "note": "Pun: yae means eightfold, her given name."
+    },
+    "9": {
+      "srcHash": "sha256:a734cce8d206219785c2915388bc942057dcec998f4f3006ebebd523343d2acb",
+      "text": "Haruka Michii",
+      "status": "machine"
+    }
+  },
+  "141159": {
+    "0": {
+      "srcHash": "sha256:6c106a92db2e43d82150b4b319fd7a9e96d54ee585268ec186e30ec1695acfad",
+      "text": "Rolf",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:6d6a7eef0891a5aa3d403b08f1992e6dae9858ad993c6185fd2632bc44754c26",
+      "text": "A knight who has led the Canids to victory in countless battles. Having realized his mistakes, he now seeks a path he can truly believe in.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:2acd5ebef49184eb50f4f37e8f32fa73b93cffa689021389bd510eaebb0e92c8",
+      "text": "The Black Wolf Errant",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b840b8f1fa409d73757c111b5d673ab7a99b03c99194d5ad6ae506f3f8429e6e",
+      "text": "Schlachten den Ort",
+      "status": "machine",
+      "note": "German-styled like his earlier skill Mordhau; reading of the katakana uncertain."
+    },
+    "5": {
+      "srcHash": "sha256:790ebdfa7412b412d718ccc944781f8d72d1e985116aa7bd4bd3c41cb7c85ef5",
+      "text": "Rushes the nearest foe with slashes and explosions, inflicting Wind damage on hit and nearby foes / When party leader is Wind, increases Power Flip damage for the party",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:2425e456c605176edd1d9aa4cec88df257538d2d921389940af3cf6dc55f682e",
+      "text": "Schlachten den Ort+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:790ebdfa7412b412d718ccc944781f8d72d1e985116aa7bd4bd3c41cb7c85ef5",
+      "text": "Rushes the nearest foe with slashes and explosions, inflicting Wind damage on hit and nearby foes / When party leader is Wind, increases Power Flip damage for the party",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:f1d4d71b5522387038766cfb287c3658c81ea53f73b0223187ac6f128158dbf0",
+      "text": "A Path to Believe In",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:3ba106ad4ea8743a876649746f901935e20bde875d593ae680c5b24fa99aa156",
+      "text": "Yoji Ueda",
+      "status": "machine"
+    }
+  },
+  "141171": {
+    "2": {
+      "srcHash": "sha256:afe0c3d587bde37787dd930aff85b6c9cbae71e9ffbda092022fa4c05f1ff7c2",
+      "text": "Taichi Yuhino, 41. A man who chased an illusion into the vast void that took his friends and family, and never found his way back. He has wandered and wandered, turning away from his hopes and wishes. But now, before his eyes, \"everything\" is beginning to reveal itself.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:08cebc403ed3f9a9cd26d8c831c415960b691c6458cb569647c5653798683f22",
+      "text": "Witness to the Aftermath",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:b0b7add0c1d0736bffd62c90a8b352ad28af0afd554465dac436299c5ab1dd14",
+      "text": "Fiend's Hand: Resonance",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:13d3c53d8fb2f7e9c4561e185a032ad0f722dadbfae17f01e66eaeb2b1246a92",
+      "text": "Slashes forward, inflicting Wind damage on hit foes / Increases attack and skill damage for self",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:2249b97e747f8c69df3f3db00ef0cd75274aaba309c3ce8b00148538cf321f59",
+      "text": "Fiend's Hand: Resonance+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:13d3c53d8fb2f7e9c4561e185a032ad0f722dadbfae17f01e66eaeb2b1246a92",
+      "text": "Slashes forward, inflicting Wind damage on hit foes / Increases attack and skill damage for self",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:40894a7ce5bb1fb9a7c8332c631a2abb176dbd50f234278579928d04337bd8ca",
+      "text": "The Sun Also Rises",
+      "status": "machine",
+      "note": "Hemingway title."
+    },
+    "9": {
+      "srcHash": "sha256:4402b6412cf91ea0013964a8f13bb0d857e5dbfd442d126e527eca5a98bfb771",
+      "text": "Chikahiro Kobayashi",
+      "status": "machine"
+    }
+  },
+  "151159": {
+    "0": {
+      "srcHash": "sha256:3de1490cc3ee91694679a1c47a2208c705745efabecde209de44fd33e7aaa3ba",
+      "text": "Rustamov",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:d7db94ed9faa2d720618a9cc2b59527e26fb7f21d83b5fbb2694ad466976c42c",
+      "text": "The great Holy Dragon, who has lived through the most ages of all six Ancient Dragons. Wishing for a little princess's future, he left his power to her out of love and was reborn... as the cockiest little thing you ever did see.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:a4457566ddda2b3268b2a8973b469c3758469886448807d691b35184f44a4a94",
+      "text": "Dragon of Love's Legacy",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:5822bae408e35610313245106e6e98695ecee4ac095603fc1956beb6c25fba07",
+      "text": "Iten Shu",
+      "status": "machine",
+      "note": "Transliterated; meaning unclear."
+    },
+    "5": {
+      "srcHash": "sha256:ce23b9e19aab8c1ce451e2667d18a1eae491c9de3c05f754e2e3c834fca4bcd5",
+      "text": "Displays the majesty of an Ancient Dragon, inflicting a stackable Light resistance debuff on all foes on the field + Removes 1 buff / Emits a piercing light, inflicting Light damage on all foes on the field",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:67600cc4484e4dee39efe3390fe936dd6d0dbd6e6842af442c19457576ae0acf",
+      "text": "Iten Shu+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:ce23b9e19aab8c1ce451e2667d18a1eae491c9de3c05f754e2e3c834fca4bcd5",
+      "text": "Displays the majesty of an Ancient Dragon, inflicting a stackable Light resistance debuff on all foes on the field + Removes 1 buff / Emits a piercing light, inflicting Light damage on all foes on the field",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:1e79b39a715617c363b30e8127ec74470b801fc4eaa1d4abbb41c4951c1287e7",
+      "text": "I Am the Holy Dragon King!",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:657c150a6c57aca7fc134ac172dd292570f4f782b9b4ce12605bdcaaf806c854",
+      "text": "Shizuka Ishigami",
+      "status": "machine"
+    }
+  },
+  "151171": {
+    "0": {
+      "srcHash": "sha256:8140bdeb890dc01a7c0792b56ebc55036009ed25d15e89dfe8aa851f588d52ba",
+      "text": "Tamako",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:a1e22ec4265d17d9ccefb497f64399031e81e53ce9a3ed64a2c1daf51d2fa58e",
+      "text": "The incarnation of a spirit jewel, and one of the Three Sacred Treasures. Long ago, she and her master were swallowed by a curse and became the Yamata no Orochi. Freed from that curse, she has become everyone's sweet Granny Tama. Ohagi are my specialty, dearie.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:d1b6e7e7f07ee86f2490b9714dba364cf5e3626a3e91223cd7ac0e09ab20531a",
+      "text": "Spirit of the Magatama",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:8bbf868c13209985b7f339b704f03484e9b1e5085615ff4da947ff2ed3a58824",
+      "text": "Light Unraveling Night",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:1bc79201f3beab93923b936b954ac619aee58ffef18817f628dc32588e28aef5",
+      "text": "Uses the light of the magatama to increase the attack of Light units and Light multiballs + Grants Recover + Removes 2 debuffs",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:1e2c33bccfd8938ceefd89a0ef2aafb6a5183c169303195ed03ac10d4734960d",
+      "text": "Light Unraveling Night+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:1bc79201f3beab93923b936b954ac619aee58ffef18817f628dc32588e28aef5",
+      "text": "Uses the light of the magatama to increase the attack of Light units and Light multiballs + Grants Recover + Removes 2 debuffs",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:8dd9aeb58329c6f4216a48274a8202ea5adcaefa22e13a0600c276b122a50a94",
+      "text": "Everyone's Granny Tama",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:1a8cc75816209f7a09a48428d2bd4be88c6553ba131e140a88910d7857a78c76",
+      "text": "Chitose Morinaga",
+      "status": "machine"
+    }
+  },
+  "161165": {
+    "0": {
+      "srcHash": "sha256:6b2e3b3b6a7f01ae570370287198ea543b7c8895528bc9c1a31522fbd45808e1",
+      "text": "Tanakiela",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:ed6c7c43fcad1b2ad1923d97dcec23e7947c908694faf03504b9064fefb3c94f",
+      "text": "A martial arts master both kind and terrifying. Though she wields superhuman strength, she is a good soul whose hobby is helping and teaching others. Her way of thinking and her priorities, however, are beyond human understanding. Put simply, she doesn't understand the human heart.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:cf6e6714e5ea72302ee92ec3dce7a9f1f04772bbc9015a40167424bce1d76522",
+      "text": "Master of Chaos",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:997e17ac53af0c262c88c583043b01a3d019d153f25221e332dd30e04db1f9ea",
+      "text": "Innocent Karma",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:d6d826563165d511647d05d19a916c6504cbb681837fa905e856cd38d1a94959",
+      "text": "Readies her spear in front, inflicting Dark damage and reduced Dark resistance on hit foes",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:6aadedcac94b5e8df8fbde89d058b97d8557b08d404c7f60b708b4dcc1cf74f1",
+      "text": "Innocent Karma+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:d6d826563165d511647d05d19a916c6504cbb681837fa905e856cd38d1a94959",
+      "text": "Readies her spear in front, inflicting Dark damage and reduced Dark resistance on hit foes",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:573849c99519eabb04e2033ff2c89b2ba41e435f8a7caf0686d62e470760b8ac",
+      "text": "Guidance of the Inhuman",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:f7e276112485585a8f61c29ee05a70dd5fdec45fc6b30cbe6bc0e3cbdcd9d277",
+      "text": "Omi Minami",
+      "status": "machine"
+    }
+  },
+  "161171": {
+    "0": {
+      "srcHash": "sha256:7711cb978c740422fa3a04725a229030563bd5dc573dcab565339619e49da20a",
+      "text": "Iores",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:b13f54854942cac55738748b2dbb86c0f73dbecea380f2b00a61549af7f2f63c",
+      "text": "A self-proclaimed priest who works as a gravekeeper in Palpebra. A man of few words who hates bother. Orders, restraints, even thinking: to him, it's all a bother. The first thing he ever truly wanted was the peace he found in Palpebra.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:a9eb6f3c01c465f8c4d4634a7e6273a57dda90b649c5bb30da8de959450e1697",
+      "text": "Phony Priest of the Night",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:2e5d3706e04d69dd006e967b500a735d9b5015104ef523fe4cf8866ffc16b133",
+      "text": "Brute Hollow Force",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:98532f8eec91974814f7561cf77b0cdbd43105f9a551571d196dd926706d9eb1",
+      "text": "Slams his mace down on the nearest foe, inflicting Dark damage on hit foes / Increases attack for self",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:84aee39af87ed24dbebeb9c4cb02902f091e7ae96dfdf056a8add46cabebc229",
+      "text": "Brute Hollow Force+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:98532f8eec91974814f7561cf77b0cdbd43105f9a551571d196dd926706d9eb1",
+      "text": "Slams his mace down on the nearest foe, inflicting Dark damage on hit foes / Increases attack for self",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:efa8e214596b1ea74a2a63ff4c6e85bbdbc1182b7adaf6acdd38be2f8b86562b",
+      "text": "Hollow Gazing at Light",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:791f0349094654162fdcafc07751fb565b88e4b9356b22d1064556bbcc0d7632",
+      "text": "Shoya Chiba",
+      "status": "machine"
+    }
+  },
+  "161183": {
+    "0": {
+      "srcHash": "sha256:8d1cb67612e6ba86b88deddb89799836bf66407a0a2d3404b33a1ffa73e26486",
+      "text": "Hibiki Suminami",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:92015a7d9f668214e9b0d45d2c68aad8f16d2bc070eb95a4114588b18e7d1a97",
+      "text": "Hibiki Suminami, a teleporter. She loves music and turns all kinds of feelings into songs. Once tormented by severe anxiety, she recovered after a certain major incident. She is now helping rebuild Shibuya while sincerely facing the strange new world around it.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:ddab483f787b3f26364165343d10cd1aed0412b8b48ebd29547903ebcec3aa9f",
+      "text": "Teleporter",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:cfeed0d2806687770b27b2cab2fb9afe088139d4c99fd661410d2d021f14043e",
+      "text": "Our Song with the World",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:0effb260f5e00d0ac6da6b66053d9ff15394a3c3778d02f2ce1a461c69433e2f",
+      "text": "Inspires allies with a performance, sacrificing the HP of Dark units to increase their skill damage / Grants Song of the World to Dark units (excluding Hibiki) / If HP is below 40% when activated, restores own HP after 5 seconds",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:b6470159179cbaff5718afb79a106db7583ebfad6b63b611cac4427d3b8e1c9b",
+      "text": "Our Song with the World+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:0effb260f5e00d0ac6da6b66053d9ff15394a3c3778d02f2ce1a461c69433e2f",
+      "text": "Inspires allies with a performance, sacrificing the HP of Dark units to increase their skill damage / Grants Song of the World to Dark units (excluding Hibiki) / If HP is below 40% when activated, restores own HP after 5 seconds",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:4aad2713b1c40a9cfb83885c315ee29495a72dfa683953425f2a3bf32a4492b6",
+      "text": "Comforting Melody",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:7994e85aa9e228348ed427919a44cc242a54c6f27911442a5b2d8edd6fa65c12",
+      "text": "Yurika Kubo",
+      "status": "machine"
+    }
+  },
+  "161189": {
+    "0": {
+      "srcHash": "sha256:2ff0be34a304973f53d09c1ab1173d3ffc9153ae8b33d1e69ae3f15c18d9a02a",
+      "text": "Marden",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:1878771ebafee20bfff2ef06c4d8901b355f4e3a035ca0cdb00dadd7db25ef47",
+      "text": "Second son of the Oxtan family, eighth of the Farlands' Nine Houses. A high priest, and a corrupt one at that. Having lost sight of the light and his star to anger and hatred, he met a beast that devours stars in the darkness.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:5ee76945582e5ce05ec6aefafa881abbb8b5922c699a8dcba7a09c501778f0d0",
+      "text": "Starless Light",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:f48843b4ef7d4319bdb1ea378714136d713213f7d32326752e3d983c65103b3b",
+      "text": "Parasite Abyss",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:b3d0ec1b627cca882829217d63cad2ada51f233290fbc019e2e7573d5f387c7c",
+      "text": "When Lost is not on the field: Heals allies with forbidden arts, restoring the HP of all units in your party, and units in other players' parties (Effect boosted for Dark element) / Summons Lost, a minion of the Devourer of Stars afflicted with Anti-Healing (Multiball)\nWhen Lost is on the field: Heals allies with forbidden arts, restoring the HP of all units in your party, and units in other players' parties (Effect boosted for Dark element) / Increases attack and skill damage for Dark units",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:fc1be625f1007fc3144b3191b27e9a7a0077e4f97e614f6b856cd234e28bf872",
+      "text": "Parasite Abyss+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:b3d0ec1b627cca882829217d63cad2ada51f233290fbc019e2e7573d5f387c7c",
+      "text": "When Lost is not on the field: Heals allies with forbidden arts, restoring the HP of all units in your party, and units in other players' parties (Effect boosted for Dark element) / Summons Lost, a minion of the Devourer of Stars afflicted with Anti-Healing (Multiball)\nWhen Lost is on the field: Heals allies with forbidden arts, restoring the HP of all units in your party, and units in other players' parties (Effect boosted for Dark element) / Increases attack and skill damage for Dark units",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:0384fffd77c74a386d980cf6b22563af52e2da28f193098572c2dd2eb21d3b73",
+      "text": "Star-Devouring Darkness",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:7775374b418c0814062be1610ea60952eca88cefc5710675daaf665f02a7c37d",
+      "text": "Mitsuki Saiga",
+      "status": "machine"
+    }
+  },
+  "211062": {
+    "0": {
+      "srcHash": "sha256:acaf35d3ec58d22094efc9f53a333d4b912b0272b681499df2ff31b3d4bd537b",
+      "text": "Chenxi",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:7a242add5dc2335d87b3c56252a8b2c10ae07184b25ed074a1d1fce4ee914e7c",
+      "text": "A girl who is terrified of ghosts. She took up qigong to ward off ghosts and for beauty and health, only to end up relied on to solve supernatural cases. To support her little brothers and sisters, she reluctantly faces the supernatural yet again today.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:7f86807dd7e77c7ebc79cfa73d2119e6240b2e42bcdf9cbeaafa104d3a43fe76",
+      "text": "Timid Ghost Hunter",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:88927a122c5e28dddf210587ab8757cd8654dde43d1b3d0d4b7c463ed74ee16e",
+      "text": "Qigong Wave Palm",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:ffa33a87d6f53554a9746e17a675324261aed6fefa4dca16f5d18e14a135a803",
+      "text": "Creates a mass of energy waves toward the nearest foe, inflicting Fire damage and a stackable Fire resistance debuff on hit foes",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:8a7d1b182d8e3baf559bea25261cbdc461836cdb3646fe1cbed46d82d4be5b84",
+      "text": "Qigong Wave Palm+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:ffa33a87d6f53554a9746e17a675324261aed6fefa4dca16f5d18e14a135a803",
+      "text": "Creates a mass of energy waves toward the nearest foe, inflicting Fire damage and a stackable Fire resistance debuff on hit foes",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:cac71d7286c95e75ca034b11705fcfcf4151ee8df0abcb544feedd44af81ae7f",
+      "text": "I'm Not Scared of Ghosts!",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:935db8a91763f1f282a0ed7920595bda13c39acd557abd3f245adb6e40e2319d",
+      "text": "Mio Nonaka",
+      "status": "machine"
+    }
+  },
+  "221078": {
+    "0": {
+      "srcHash": "sha256:051f41e4ef81db62057097189c18c82903a1e88cf338c764552d8ece9215be76",
+      "text": "Feanie",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:0b1f50fe7e425e25e2a3376bbfc61b7d7c67c7a9506d9fcf9ab3e931e1bd15c3",
+      "text": "A sleep-inducing princess who wants to help all sorts of people. At Valentine's Fest, she's studying love as hard as she can. In her brand-new outfit, she uses her dream-showing power to lead lambs lost in love off to dreamland.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:46548ff8d6a1acf71777b012903efa9e2b41b72df9b991f086ed40b8d3d393a5",
+      "text": "Princess of Love Dreams",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:aea404212b5ae7318698ee7d779a7c662cbf7f43fc6945d2f10430f02937f3a6",
+      "text": "Traum Juice",
+      "status": "machine",
+      "note": "German \"Traeum suess\" (sweet dreams) punning on juice; umlauts avoided (not attested in EN data)."
+    },
+    "5": {
+      "srcHash": "sha256:6f69b3844edf2bd28e4ec7e3e4e71326000d1584059968c9e62ad34e04e90bc1",
+      "text": "Brings sweet dreams, increasing the attack and Fire resistance of Water units and Water multiballs",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:051a37e3f965f67666bea8c45a523d015c6f2bf2dddf8b997870f271c622f876",
+      "text": "Traum Juice+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:6f69b3844edf2bd28e4ec7e3e4e71326000d1584059968c9e62ad34e04e90bc1",
+      "text": "Brings sweet dreams, increasing the attack and Fire resistance of Water units and Water multiballs",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:b32740e625719ed8b918fd2e3b45770214b7fba3ced142e5acc27c9c6b1657f5",
+      "text": "Tell Me Who You Love?",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:9f1d95e6a6f859ec5c2fa923410b124284f0060271a8fbdc8da9be5067ee680f",
+      "text": "Mayu Iizuka",
+      "status": "machine"
+    }
+  },
+  "231099": {
+    "0": {
+      "srcHash": "sha256:3f9e44406627bd291b07f555f5dbd78dcdd162faa91c5c89745b11aa8883b905",
+      "text": "Invetra",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:7388fc9a129dbe0e34f714de79bb378e74c1d78918ac4ee863d4cf383bb8e419",
+      "text": "The resident mechanic of PBC's Hero Development Division. His wild ideas and solid engineering skills produce one super gadget after another for the heroes, though his obsession with the details is his one flaw.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:6ced52b2a0829666bfb086267d680c00cf6d187b9bc1b9c5cec1309c2b3d166e",
+      "text": "Hero Mechanic",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:8d4e303c69259b1e9a4681c864df44bf19ff702e9e25fb8896d78a928d2342e8",
+      "text": "Stun Ray Field",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:9f058817d54a8e9135643d634006d9773c159257162a12e48f3f6e8e6236e490",
+      "text": "Generates a special field, inflicting Thunder damage on all foes on the field / Restores the HP of all units and multiballs in your party, and units in other players' parties (Effect boosted for Thunder element)",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:4ac51d0292501b1c644139be3c44288e8c1c5cebb613113b68929f83e9ea5508",
+      "text": "Stun Ray Field+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:9f058817d54a8e9135643d634006d9773c159257162a12e48f3f6e8e6236e490",
+      "text": "Generates a special field, inflicting Thunder damage on all foes on the field / Restores the HP of all units and multiballs in your party, and units in other players' parties (Effect boosted for Thunder element)",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:7ad0793a3c8a5b74d11c93686655140d235ac5f4bad690c2c323d26c0cdcc002",
+      "text": "Extraordinary Inspiration",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:dbbfe4b5a17e13e0f82a348d2a7ac8a1e1289e5e5c283dbb4932207f9426590d",
+      "text": "Yuya Hirose",
+      "status": "machine"
+    }
+  },
+  "261089": {
+    "0": {
+      "srcHash": "sha256:39af4d2a61fe75ee293421cfc26c86a96d3a0edb5ae0ccf4ccb1102862313bcc",
+      "text": "Armadeus",
+      "status": "machine"
+    },
+    "2": {
+      "srcHash": "sha256:bccb5c5819b820574cafcf60b4974b7ad6bfafb858c1d8ff7326621e665e0aca",
+      "text": "An ancient dragon who defied his fate and fell to a curse, twisted by anger and hatred for ages. But after meeting a young girl and walking through dreams, the dragon spread his wings toward a new life.",
+      "status": "machine"
+    },
+    "3": {
+      "srcHash": "sha256:bd1aff0920bc5c37a611373689b3c6e9c58df3f9a66d994eb987cdc90fa63e7c",
+      "text": "Dragon of Darkness, Bound by Hearts",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:35c8a034c09d89f374ca54dd501df264914a336cfe961ff17dccd98ccc049d80",
+      "text": "Deus ex Arma",
+      "status": "machine"
+    },
+    "5": {
+      "srcHash": "sha256:6fb21aac385bc0bc9f594fd6a5b38db6fd0d1bfb038884507f5bc8d26bdaedac",
+      "text": "Unleashes an explosion of darkness, inflicting Dark damage on all foes on the field / Increases skill damage for Dark units",
+      "status": "machine"
+    },
+    "6": {
+      "srcHash": "sha256:d5b1b66bca428bca99d9283cb5aaa64dc021b8a3794d9d0894fcad83dd454b81",
+      "text": "Deus ex Arma+",
+      "status": "machine"
+    },
+    "7": {
+      "srcHash": "sha256:6fb21aac385bc0bc9f594fd6a5b38db6fd0d1bfb038884507f5bc8d26bdaedac",
+      "text": "Unleashes an explosion of darkness, inflicting Dark damage on all foes on the field / Increases skill damage for Dark units",
+      "status": "machine"
+    },
+    "8": {
+      "srcHash": "sha256:8b6df00d75d7ecc3fa73346a605cbccbfb395f70ce63a5490a7a2747e5d144a9",
+      "text": "Inherited Memories",
+      "status": "machine"
+    },
+    "9": {
+      "srcHash": "sha256:092d8c20ac4b5d31339ccc3e6460c378dca7f9715eb015e1b875f367b472b848",
+      "text": "Yuto Suzuki",
+      "status": "machine"
+    }
+  },
+  "700000": {
+    "4": {
+      "srcHash": "sha256:8ae1c06517b2077151aa1e10c1f5eb16091841a3aedcfd76304e44bdba7a0078",
+      "text": "(None)",
+      "status": "machine",
+      "note": "Source is a placeholder; EN placeholder rows use (None)."
+    },
+    "5": {
+      "srcHash": "sha256:8ae1c06517b2077151aa1e10c1f5eb16091841a3aedcfd76304e44bdba7a0078",
+      "text": "(None)",
+      "status": "machine",
+      "note": "Source is a placeholder; EN placeholder rows use (None)."
+    },
+    "6": {
+      "srcHash": "sha256:8ae1c06517b2077151aa1e10c1f5eb16091841a3aedcfd76304e44bdba7a0078",
+      "text": "(None)",
+      "status": "machine",
+      "note": "Source is a placeholder; EN placeholder rows use (None)."
+    },
+    "7": {
+      "srcHash": "sha256:8ae1c06517b2077151aa1e10c1f5eb16091841a3aedcfd76304e44bdba7a0078",
+      "text": "(None)",
+      "status": "machine",
+      "note": "Source is a placeholder; EN placeholder rows use (None)."
+    },
+    "9": {
+      "srcHash": "sha256:33d762ee0c9e23629e3aa99236dfb39ae32f69aa15ccc5df594354e0c0f1809b",
+      "text": "Yu Kobayashi",
+      "status": "machine",
+      "note": "EN credit of Kugui (243007)."
+    }
+  },
+  "700011": {
+    "2": {
+      "srcHash": "sha256:4d22b741ad1f2013cfa30948b15ad4e0565490961e50d6d577126b3c9850fd70",
+      "text": "Seventeen-year-old Yuki Mishima was a second-year high school student when her town became trapped and she gained powers. Though others see her as an aloof beauty, her two closest friends know what she looks like when she smiles without a care in the world.",
+      "status": "machine",
+      "note": "Copied from the official EN profile of 121070, same text."
+    }
+  },
+  "700012": {
+    "2": {
+      "srcHash": "sha256:8ae1c06517b2077151aa1e10c1f5eb16091841a3aedcfd76304e44bdba7a0078",
+      "text": "(None)",
+      "status": "machine",
+      "note": "Source is a placeholder; EN placeholder rows use (None)."
+    }
+  }
+}

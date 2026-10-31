@@ -1,0 +1,408 @@
+{
+  "4": {
+    "5": {
+      "srcHash": "sha256:532c445a53cc0944033105284e773f2974d48fcabd28d787a2eebefda10201eb",
+      "text": "Hmm. So you can still remember\nyour life before reincarnating?",
+      "status": "machine"
+    }
+  },
+  "6": {
+    "5": {
+      "srcHash": "sha256:d51eb60a0579a0516992760e6a377d32e53ab19803f6b838695f0e7dfc9e1094",
+      "text": "It's all in pieces now, but the\nfeelings that mattered...",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:e1384e2bf40e9f57e6923dcf39bc0f67342bed5ef3d2a3ae9b65eb1cc6c774b6",
+      "text": "...Yeah. I'll never forget them.",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:5ebfc9751440a0bb1d543614ad5b245d65915b2521078601948c39b435a392ef",
+      "text": "Looks like this is\nwhere we part ways.",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:8d37c9e8313ad85519393c37e7d298ac92e2ca50f1fd7d065fc73ea5e8c202a7",
+      "text": "Shame. Well, maybe we'll meet again!\nThe Holy Dragon and the Dragon of\nDarkness teaming up? Fun, right?",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:b5d3ffe20e600438fd9a867d1da14908784aea8b552919fb5545c70cd2e82fbc",
+      "text": "Yeah, it would.\n...See you around, then.",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:5c9e4321566a85d05ec9068a24844809bc0850d4beda8eb10b25702e9316ec65",
+      "text": "Rustamov, huh...\nWhat an interesting kid.",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:e710b948dd314d5ce85750e06be9a070e8dec0878dbd9ddcb7807b9bbd52e21d",
+      "text": "...............ma...............\n...Roo.........ma...",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:aec5a8435d91b9242403a4c00f083b5a4154a369fc8e45f533654675d9d9651f",
+      "text": ".........Yes. I can hear it.\nI can hear you.",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:ae55276bfce20cf3df290e15abdec9ee436031f719f25781148cb1b034e96ac0",
+      "text": "There's no way I'd forget.",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:d1f07d47d975524b0f367095e3c2d26810adc4896b4f0849b3f7805372f253a2",
+      "text": "My dear, dear friend!!",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:405aeef209c4aab02f480b7b6c699b5d37a23cb595d11388f8cf20e733bca518",
+      "text": "Couette!!!",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:34494511c90ec0173f607a10cb470f4550a80c11a945b345ba86101fe26c96b2",
+      "text": "R-Rooma...? Is that you...?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:bb0ce0e323fdbb0d4c8a6866ea86da5c090a35c8b023137b510d8d2608ad91ae",
+      "text": "Couette...!\nThank you for calling me...!!",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:4577e0d4b6f7d6d1a9888062a47f80ce61135525ad5b4f907958147e391c6f4c",
+      "text": "...Rooooomaaaaaa!!!!",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:47bcf22dec1b5f8a1687536c7806572eb800f3ae8845af8c0ef69ed493323204",
+      "text": ".........I'm glad for you, Couette.",
+      "status": "machine"
+    }
+  },
+  "46": {
+    "5": {
+      "srcHash": "sha256:125b960a9cd1b34daf5e9fe96f08cf9e92d7306d3b30bb7d4da1bb0d1fb902af",
+      "text": "...And for all of you.\nIt's so good to see you again.",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:525913205d95891f4373057ec7c92132665fc54472e9175ed8c2fa5e640c1afe",
+      "text": "Thank you, for back then...\nReally.",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:de39d359c2e2c228946c24466bf34d02dccdd311e23867ef8773649053bd699c",
+      "text": "You're welcome.\n...So you got to keep our memories?",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:ed1af9f8d25c6128d9ea66a42da15106a4f0e094de2c60b9f5ea73f54ba03e7f",
+      "text": "Most of them are missing, but\nI remember being Rooma clearly...!",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:54c67ee37f63df0f551fe77a5b53a968a7ae1fe6f2fb9982c938364bc3d68bbe",
+      "text": "But... you all seem a bit smaller\nthan I remember...?",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:f0edfb8b604cdc70d18c88884771c9f09d75ead26130d69a9edd2bd24936dc3f",
+      "text": "You've grown, that's why.\nYou must be nearly the size\nof a pony by now.",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:c172982ec68cc0687f6bdadffbd4fa5187a02f1bcc3aaee6a292555bbb022ee6",
+      "text": "So this is Rooma's new shape.",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:55d21370ef4b029c6ea55cdb66238d54c3d3daa10f0e0b093e9cbd4539fc3505",
+      "text": "Should I be calling you Armadeus\ninstead of Rooma now...?",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:af92ed4a47ff1cd5ff6991fd751915559f2274a0f735a87aa71cde4884079788",
+      "text": "N-no, it's fine, Couette!\nKeep calling me Rooma...",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:e5c9463912d400d12b0b44683915c21a276f0d6b748bd0457fa3280fdb1fc875",
+      "text": "...No.\nI'd like you to call me Rooma.",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:24557427e10e54d0354bdaa61df09a179cfda8483b7e02ce7bc747a04ec03cf0",
+      "text": "You got it!",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:99727788ad28e0b697bc763664a6956c86c4b37828596d21631509e2cded895d",
+      "text": "Waaaah!!\nThere's something weird in here!!",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:fd6072e49ed9cc49c07da675606855562dc3ea593abda1b04f4af3445392101e",
+      "text": "Hehe!\nThis is Rooma! He's Couette's\nfriend, so his name is Rooma!",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:2735b31337edcdf67b47f75820472514e88d4b942e521579954841d30a171d92",
+      "text": "Nice to meet you.\nI'm... Armadeus.\nI was only just reincarnated—",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:550e360c55becc208d22a2a39d62e4525e71200be99591e409917fcce3ac049a",
+      "text": "Mmnnh... Rooma...",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:95b0550eb97006e16dd66355a3b080dcaef7a58d0b60252e6990061c93a3798c",
+      "text": "Couette's worn out, I think.\nAre you all right, Rooma?",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:6d4ef2670c86652b32b3e1bacf41ea28af71a454285183a3c9de1debc4c20376",
+      "text": "I'm fine. If anything, I'm\noverflowing with power.\n...So this is Armadeus's strength.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:3548f2fa41474b61727241820c3564ce0a180838d94891a8f622cb39ff736abe",
+      "text": "...Um, that kid from before.\nShe was a Fiend, right?",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:43a75dd1b644fe013987e6f7e19bec390cdb37eb98ebc3f4368db10cbb4026dc",
+      "text": "Still bothered by it? The spell the\nFiend used seemed to have deep\nties to you...",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:990b7da59e0c75230b1d8cb8d3865c1c1ab6bb46439810b10abc7f102ba0e734",
+      "text": "...Yeah.\nBut that's not all.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:31ca75c370a53392c73d385ebab3a53748fa63508f6ba965a5a38c7c045c2942",
+      "text": "Armadeus once gave power to the\npeople the higher beings had\ndriven out.",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:88f9ac6c7b7bcf3fc5ff8e6212217eb41ca0a7826e58a686985f7026f27dd511",
+      "text": "So they could live even in barren\nlands. He gave them his own blood\nand flesh.",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:4c387cc1ba7e76495623d93b084f292d2d2dd04d90c54d79cd1b132a3bec5515",
+      "text": "...And that made him the Fiends'\nancestor...?",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:6dce571502fb45d36e56a9d04c51226d0098c3994517f69595648f49a8b9d839",
+      "text": "...And because of that...\na lot of wars were born...",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:adb384df20478dc1cdde95c2ca074239ba198ac54ea6efd0b39a44c98106c701",
+      "text": "...What can I do, as Armadeus...?",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:baf6a3a0d8c6edd539cf0552147245b08920a2764ea944a6cb20208c7847cf94",
+      "text": "Do whatever you like.",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:35cedcd1940b9386d47f18a046fe581ade19ff38814102910865c3231d63a32e",
+      "text": "Congrats on the reincarnation,\nArmadeus.",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:85234d236660abd6e03ebac419d5d831ce2cf6e6333624d68cc45765943e15c7",
+      "text": "Th-thanks. Um...\nRams. Schult. Anbach.\n...Right?",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:8df9e405040328c1e0af9929913c101e015cfae95c8e6bc1e7132b3ed1c216a9",
+      "text": "So this is THE Armadeus...!?\nI can't believe it...!",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:ef780493d194bebbc26cb13836a9826bb61a9899fbc268ccd928970c57944c18",
+      "text": "S-sorry. I'm still missing a lot of\nArmadeus's memories...",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:786484e09675fabf03cf1d0ccb9c85d96990bb01731ad6ea0d579687cb52dd73",
+      "text": "No need to be shackled by those.\nLike I said, do what you like.",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:8fa3f70043d5f19a6664e87079241965878527073d077c89d1c64591120dab0b",
+      "text": "Fly through your own sky.",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:c1655df5808353062a441d637254bfe36cbef87c644c297ee524f28ec5b03d0e",
+      "text": "My own sky...",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:d3ee65c84f3989655c1540d1d1eb14e369e3ae71866e69c6a47ca30c196c25c9",
+      "text": "Not that you need to decide in\na hurry, you know?",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:387d8bcbb9f0796b7a0b85b52f3b2bbb2b7a5f914031195ac9d7cea381e40155",
+      "text": "Take your time looking here.\nCouette would be happy, too.",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:c246ec392c2bd683601d2d785af6abe9faa196f71196741386904f714151de96",
+      "text": "Yes. We welcome you, Rooma.",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:4b05eaeb6ed8e40a00b5eaa87eb9acc043bb51206c88b04207ee88f230d8828b",
+      "text": "...Y-yeah...!",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:4e9da3692a1ad3e238b1e30e3fb7034348a19269b6033add53d4c0c17755ab05",
+      "text": "Achoo!",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:baffb3b6fb1828b63dfedc7ee8c1e89ef60d8acb5a15e81afe38d118232e0247",
+      "text": "Couette. If you sleep here,\nyou'll catch a cold.\nLet's get you to bed.",
+      "status": "machine"
+    }
+  },
+  "219": {
+    "5": {
+      "srcHash": "sha256:9ddc1e23a0684ef9b3071e1235b5314240c4bca24977cb1e8277b530a575827a",
+      "text": "...Mmnnh...\nTonight I'm going to Rooma's dream...",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:5f75640dda647722d5ddd1611e39b44bb0e238eb79fdaa0dbeca3753ad86d3cf",
+      "text": "Okay. In dreams, in other worlds,\nwherever, we'll be together...",
+      "status": "machine"
+    }
+  },
+  "227": {
+    "5": {
+      "srcHash": "sha256:606e32e2c496184978b63e0f99558b17e84e2f7943153c0216b2be2aba7c2ac7",
+      "text": "Let's have lots of adventures.",
+      "status": "machine"
+    }
+  }
+}

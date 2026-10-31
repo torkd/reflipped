@@ -1,0 +1,6572 @@
+[
+ {
+  "kind": "unit",
+  "id": "121165",
+  "ja": "ランメイ",
+  "candidates": [
+   {
+    "en": "Lanmei",
+    "source": "best-effort",
+    "url": "",
+    "note": "Chinese-styled name (Kowloon mafia boss); EN spells Chinese names as pinyin, e.g. シェイロン = Shuilong, ウェイフー = Weihu"
+   },
+   {
+    "en": "Ranmei",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames; the archive's Chinese name is 岚梅 (Lanmei)"
+   }
+  ],
+  "proposed": "Lanmei",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "amulet_bosslady; boss of the syndicate ツァンリー on Kowloon Float"
+ },
+ {
+  "kind": "unit",
+  "id": "151171",
+  "ja": "タマコ",
+  "candidates": [
+   {
+    "en": "Tamako",
+    "source": "best-effort",
+    "url": "",
+    "note": "Japanese given name (玉子, 'jewel child'); Hepburn"
+   },
+   {
+    "en": "Tamako",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Tamako",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "magatama_spirit; spirit of the Yasakani-no-Magatama (official EN item name)"
+ },
+ {
+  "kind": "unit",
+  "id": "161189",
+  "ja": "マーデン",
+  "candidates": [
+   {
+    "en": "Marden",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#priest_prince",
+    "note": "the NPC's official EN speaker name; also used in EN quest synopses"
+   },
+   {
+    "en": "Marden",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Marden",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "priest_prince_playable; playable version of the Farlands NPC"
+ },
+ {
+  "kind": "unit",
+  "id": "161183",
+  "ja": "澄波ヒビキ",
+  "candidates": [
+   {
+    "en": "Hibiki Suminami",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#2000077",
+    "note": "EN encyclopedia name of npc_psychic_teleport"
+   },
+   {
+    "en": "Suminami Hibiki",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Hibiki Suminami",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "psychic_teleport_playable"
+ },
+ {
+  "kind": "unit",
+  "id": "121159",
+  "ja": "ニスエス",
+  "candidates": [
+   {
+    "en": "Nisues",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain transliteration Ni-su-e-su; no English source found"
+   },
+   {
+    "en": "Nisues",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Nisues",
+  "basis": "community",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "vesta_caster; girl of the Vesta (official EN tribe name)"
+ },
+ {
+  "kind": "unit",
+  "id": "141171",
+  "ja": "Taichi Yuhino",
+  "candidates": [
+   {
+    "en": "Taichi Yuhino",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#141171",
+    "note": "the EN name column is already English; also story_character psychic_taichi"
+   },
+   {
+    "en": "Yuhino Taichi",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Taichi Yuhino",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "psychic_taichi; only the name was localised, the title and texts are Japanese"
+ },
+ {
+  "kind": "unit",
+  "id": "131158",
+  "ja": "天羽ナギリ",
+  "candidates": [
+   {
+    "en": "Nagiri Amo",
+    "source": "best-effort",
+    "url": "",
+    "note": "reading アモウナギリ; given name first and long vowel dropped, as in Taichi Yuhino (ユウヒノ), Saki Nikaido (ニカイドウ), Shota Inori (ショウタ)"
+   },
+   {
+    "en": "Nagiri Amou",
+    "source": "best-effort",
+    "url": "",
+    "note": "keeps 'ou' as in Soushiro and Ryouki (both from Yamato, not modern Japan)"
+   },
+   {
+    "en": "Amou Nagiri",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Nagiri Amo",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "psychic_katana; 天羽流 (Amou-ryu) sword style is still Japanese in the EN encyclopedia"
+ },
+ {
+  "kind": "unit",
+  "id": "111159",
+  "ja": "ペネローネ",
+  "candidates": [
+   {
+    "en": "Penelone",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain transliteration; EN keeps such names close to the kana (Nephtim, Sotieth)"
+   },
+   {
+    "en": "Penerone",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames; the archive's Chinese name is 佩妮萝涅 (l, not r)"
+   }
+  ],
+  "proposed": "Penelone",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "catbaby_psychicer; catfolk girl"
+ },
+ {
+  "kind": "unit",
+  "id": "151159",
+  "ja": "ラフマーノ",
+  "candidates": [
+   {
+    "en": "Rustamov",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#2000031",
+    "note": "EN encyclopedia npc_golden_dragon (reading ラフマーノ)"
+   },
+   {
+    "en": "Rustamov",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#golden_dragon_jr",
+    "note": "EN speaker name of this very unit's story character"
+   },
+   {
+    "en": "Rachmano",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Rustamov",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "golden_dragon_jr; the EN localisation renamed him, so a transliteration (Rafmano) would be wrong"
+ },
+ {
+  "kind": "unit",
+  "id": "261089",
+  "ja": "アルマデウス",
+  "candidates": [
+   {
+    "en": "Armadeus",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#darkness_dragon",
+    "note": "EN speaker name"
+   },
+   {
+    "en": "Armadeus, Dragon of Darkness",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000307",
+    "note": "EN encyclopedia keyword_almadeus (冥龍アルマデウス)"
+   },
+   {
+    "en": "Armadeus",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Armadeus",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "darkness_dragon"
+ },
+ {
+  "kind": "unit",
+  "id": "141159",
+  "ja": "ロルフ",
+  "candidates": [
+   {
+    "en": "Rolf",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#111007",
+    "note": "base unit Rolf, The Black Wolf"
+   },
+   {
+    "en": "Rolf",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Rolf",
+    "note": "global version only"
+   },
+   {
+    "en": "Rolf (White Day)",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   },
+   {
+    "en": "Rolf",
+    "source": "531Moths (YouTube): World Flipper JP - White Day Rolf Episodes (Rough Translation)",
+    "url": "https://www.youtube.com/watch?v=AMzjfdBaxD4",
+    "note": "confirms a White Day alternate of Rolf"
+   }
+  ],
+  "proposed": "Rolf",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "black_wolf_knight_wt23; alternate version"
+ },
+ {
+  "kind": "unit",
+  "id": "131146",
+  "ja": "リーブラム",
+  "candidates": [
+   {
+    "en": "Libram",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#151007",
+    "note": "base unit Libram, High-Hat Negotiant"
+   },
+   {
+    "en": "Libram",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Libram",
+    "note": "global version only"
+   },
+   {
+    "en": "Liebraum (White Day)",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Libram",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "blade_dancer_wt23; alternate version"
+ },
+ {
+  "kind": "unit",
+  "id": "231099",
+  "ja": "インヴェトラ",
+  "candidates": [
+   {
+    "en": "Invetra",
+    "source": "best-effort",
+    "url": "",
+    "note": "transliteration; her brother ルヴェトラ would then be Luvetra"
+   },
+   {
+    "en": "Invetra",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Invetra",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "hero_mechanic; PBC Hero Development Division mechanic"
+ },
+ {
+  "kind": "unit",
+  "id": "111153",
+  "ja": "ルネッタ",
+  "candidates": [
+   {
+    "en": "Lunetta",
+    "source": "best-effort",
+    "url": "",
+    "note": "transliteration (Italian-sounding, as EN Luluca, Lumira)"
+   },
+   {
+    "en": "Runetta",
+    "source": "best-effort",
+    "url": "",
+    "note": "literal r-reading"
+   },
+   {
+    "en": "Runetta",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames; the archive's Chinese name is 露涅塔 (lu)"
+   }
+  ],
+  "proposed": "Lunetta",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "flame_blessgirl; rookie adventurer with a fire spirit"
+ },
+ {
+  "kind": "unit",
+  "id": "141153",
+  "ja": "朝戸ヤヱ",
+  "candidates": [
+   {
+    "en": "Yae Asato",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#psychic_gal",
+    "note": "EN speaker name of psychic_gal"
+   },
+   {
+    "en": "Asato Yae",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Yae Asato",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "psychic_gal"
+ },
+ {
+  "kind": "unit",
+  "id": "161171",
+  "ja": "イオレス",
+  "candidates": [
+   {
+    "en": "Iores",
+    "source": "best-effort",
+    "url": "",
+    "note": "transliteration"
+   },
+   {
+    "en": "Iorez",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Iores",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "impostor_priest; gravekeeper in Palpebra"
+ },
+ {
+  "kind": "unit",
+  "id": "141147",
+  "ja": "ビューシィ",
+  "candidates": [
+   {
+    "en": "Beaucy",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#131026",
+    "note": "base unit Beaucy, Bovine Idol"
+   },
+   {
+    "en": "Beaucy (Valentine)",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   },
+   {
+    "en": "Beaucy",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Beaucy",
+    "note": "global base unit (Bovine Idol)"
+   }
+  ],
+  "proposed": "Beaucy",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "heavenly_two_vt23; Valentine alternate"
+ },
+ {
+  "kind": "unit",
+  "id": "131140",
+  "ja": "ディーネ",
+  "candidates": [
+   {
+    "en": "Denah",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#161021",
+    "note": "base unit Denah, †Maiden of Darkness†"
+   },
+   {
+    "en": "Dine (Valentine)",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Denah",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "dark_psygirl_vt23; Valentine alternate"
+ },
+ {
+  "kind": "unit",
+  "id": "221078",
+  "ja": "フィーニ",
+  "candidates": [
+   {
+    "en": "Feanie",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#251047",
+    "note": "base unit Feanie, Sleep-Inducing Princess"
+   },
+   {
+    "en": "Fini (Valentine)",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames"
+   }
+  ],
+  "proposed": "Feanie",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "sleep_puppy_vt23; Valentine alternate"
+ },
+ {
+  "kind": "unit",
+  "id": "131134",
+  "ja": "カシヴァルス",
+  "candidates": [
+   {
+    "en": "Kashivarus",
+    "source": "best-effort",
+    "url": "",
+    "note": "transliteration Ka-shi-va-ru-su"
+   },
+   {
+    "en": "Kashivals",
+    "source": "best-effort",
+    "url": "",
+    "note": "reading the final ルス as a consonant cluster"
+   },
+   {
+    "en": "Käsivars",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan spelling; カシヴァルス is Finnish käsivarsi ('arm') for an octopus-armed cyborg. 'ä' appears in no English text of the client (only unused German strings), so 'Kasivars' (as in 531Moths' video title) is safer"
+   },
+   {
+    "en": "Kasivars",
+    "source": "531Moths (YouTube): World Flipper JP - Kasivars Episodes (Rough Translation)",
+    "url": "https://www.youtube.com/watch?v=cv9Ck7Zum70",
+    "note": "English fan subtitle video"
+   }
+  ],
+  "proposed": "Kasivars",
+  "basis": "community",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "octcyborg_lady; Updater body designer"
+ },
+ {
+  "kind": "unit",
+  "id": "161165",
+  "ja": "タナキエラ",
+  "candidates": [
+   {
+    "en": "Tanakiela",
+    "source": "best-effort",
+    "url": "",
+    "note": "transliteration"
+   },
+   {
+    "en": "Tanakiera",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames; the archive's Chinese name is 塔娜奇艾拉 (la)"
+   }
+  ],
+  "proposed": "Tanakiela",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "evilloli_master; martial-arts teacher in Palpebra"
+ },
+ {
+  "kind": "unit",
+  "id": "211062",
+  "ja": "チェンシー",
+  "candidates": [
+   {
+    "en": "Chenxi",
+    "source": "best-effort",
+    "url": "",
+    "note": "pinyin reading (晨曦), as EN does for Chinese-styled names (Shuilong, Weihu)"
+   },
+   {
+    "en": "Chen Shi",
+    "source": "best-effort",
+    "url": "",
+    "note": "split reading"
+   },
+   {
+    "en": "Qianshi",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation; Japanese name order and literal spellings, ignores official renames; the archive's Chinese name is 江诗 (pun on 僵尸 jiangshi)"
+   }
+  ],
+  "proposed": "Chenxi",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 0",
+  "note": "jiangshi_girl; ghost-busting qigong girl"
+ },
+ {
+  "kind": "unit_title",
+  "id": "121165",
+  "ja": "九龍のギャングスター",
+  "candidates": [
+   {
+    "en": "Gangster of Kowloon",
+    "source": "best-effort",
+    "url": "",
+    "note": "九龍 = Kowloon, official in 'Kowloon Float' (keyword_kowloon)"
+   },
+   {
+    "en": "Kowloon Gangster",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Kowloon Gangster",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Kowloon Gangster",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "151171",
+  "ja": "霊玉の宿精",
+  "candidates": [
+   {
+    "en": "Spirit of the Magatama",
+    "source": "best-effort",
+    "url": "",
+    "note": "霊玉 is the sacred jewel; EN item 'Yasakani-no-Magatama'"
+   },
+   {
+    "en": "Jewel-Dwelling Spirit",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "The Spirit Jewel's Resident Spirit",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Spirit of the Magatama",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "161189",
+  "ja": "星を無くした光",
+  "candidates": [
+   {
+    "en": "Starless Light",
+    "source": "best-effort",
+    "url": "",
+    "note": "literal 'the light that lost its star'"
+   },
+   {
+    "en": "The Light Bereft of Stars",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Starless Light",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Starless Light",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "161183",
+  "ja": "瞬間移動の能力者",
+  "candidates": [
+   {
+    "en": "Teleporter",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN renders <power>の能力者 as one agent noun: 復元 = Restorer, 重力 = Gravity Manipulator, 結界 = Barrier Defender, 影使い = Shadow Puppeteer"
+   },
+   {
+    "en": "Instant Teleporter",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Psychic of Teleportation",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Teleporter",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "121159",
+  "ja": "心角の冒険者",
+  "candidates": [
+   {
+    "en": "Spirit Horn Adventurer",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#161147",
+    "note": "心角 is 'Spirit Horn' in EN (Elmor, 'Spirit Horn Healer'); 冒険者 = Adventurer"
+   },
+   {
+    "en": "Adventurer of Empathetic Horns",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   },
+   {
+    "en": "Archon of the Spirit Horns",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Memram",
+    "note": "official 心角 = 'Spirit Horns' on the global unit Memram"
+   }
+  ],
+  "proposed": "Spirit Horn Adventurer",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "141171",
+  "ja": "その後を知る男",
+  "candidates": [
+   {
+    "en": "Witness to the Aftermath",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN 'その後' stories are '... : Aftermath' (tag_shibuya_after_1 'Shibuya: Aftermath 1')"
+   },
+   {
+    "en": "The Man Who Knows What Came After",
+    "source": "best-effort",
+    "url": "",
+    "note": "literal, long"
+   },
+   {
+    "en": "The Man Who Knew the Afterwards",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Witness to the Aftermath",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "131158",
+  "ja": "裁刀の能力者",
+  "candidates": [
+   {
+    "en": "Judgment Blade",
+    "source": "best-effort",
+    "url": "",
+    "note": "裁刀 = judging sword; EN uses 'Blade' for swordfighters (Cobalt Blade, Glorious Blade)"
+   },
+   {
+    "en": "Blade of Judgment",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Psychic of Cutting Edge",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Judgment Blade",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "111159",
+  "ja": "純情可憐なキトゥン",
+  "candidates": [
+   {
+    "en": "Pure-Hearted Kitten",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Pretty Little Kitten",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Pure and Lovely Kitten",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Pure-Hearted Kitten",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "151159",
+  "ja": "愛を継ぐ龍",
+  "candidates": [
+   {
+    "en": "Dragon of Love's Legacy",
+    "source": "best-effort",
+    "url": "",
+    "note": "継ぐ = inherit/pass on"
+   },
+   {
+    "en": "Heir to Love",
+    "source": "best-effort",
+    "url": "",
+    "note": "like 'Heir to House Felder'"
+   },
+   {
+    "en": "The Inheritor Dragon of Affection",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Dragon of Love's Legacy",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "261089",
+  "ja": "想い繋ぐ冥龍",
+  "candidates": [
+   {
+    "en": "Dragon of Darkness, Bound by Hearts",
+    "source": "best-effort",
+    "url": "",
+    "note": "冥龍 = 'Dragon of Darkness' (official encyclopedia 5000307)"
+   },
+   {
+    "en": "Heart-Linking Dragon of Darkness",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "The Abyss Dragon of Connected Thoughts",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Dragon of Darkness, Bound by Hearts",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "141159",
+  "ja": "黒狼の自由騎士",
+  "candidates": [
+   {
+    "en": "The Black Wolf Errant",
+    "source": "best-effort",
+    "url": "",
+    "note": "base title 黒狼の騎士 = 'The Black Wolf' (degree reading こくろうのきし); 自由騎士 = knight-errant"
+   },
+   {
+    "en": "Free Knight of the Black Wolf",
+    "source": "best-effort",
+    "url": "",
+    "note": "literal"
+   },
+   {
+    "en": "The Free Black Wolf Knight",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "The Black Wolf Errant",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "131146",
+  "ja": "尊大紳士な交渉者",
+  "candidates": [
+   {
+    "en": "Dapper High-Hat Negotiant",
+    "source": "best-effort",
+    "url": "",
+    "note": "base title 尊大なる交渉者 = 'High-Hat Negotiant' (degree reading そんだいなるこうしょうしゃ); 紳士 adds the gentleman in a suit"
+   },
+   {
+    "en": "High-Hat Gentleman Negotiant",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "The Haughty Gentleman Negotiator",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Dapper High-Hat Negotiant",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "231099",
+  "ja": "ヒーロー・メカニック",
+  "candidates": [
+   {
+    "en": "Hero Mechanic",
+    "source": "best-effort",
+    "url": "",
+    "note": "katakana English"
+   },
+   {
+    "en": "Hero Mechanic",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Hero Mechanic",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "111153",
+  "ja": "炎の新米冒険者",
+  "candidates": [
+   {
+    "en": "Fiery Rookie Adventurer",
+    "source": "best-effort",
+    "url": "",
+    "note": "cf. Nao's 'Brave New Adventurer' (あらたなるぼうけんしゃ)"
+   },
+   {
+    "en": "Rookie Flame Adventurer",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Newbie Adventurer of Fire",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Fiery Rookie Adventurer",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "141153",
+  "ja": "自由の能力者",
+  "candidates": [
+   {
+    "en": "Free Spirit",
+    "source": "best-effort",
+    "url": "",
+    "note": "能力者 titles become one agent noun in EN (see 161183); 自由 = freedom; fits her carefree adventuring"
+   },
+   {
+    "en": "Liberator",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Psychic of Freedom",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Free Spirit",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "161171",
+  "ja": "闇夜の似非神官",
+  "candidates": [
+   {
+    "en": "Phony Priest of the Night",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Midnight Pseudo-Priest",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "False Priest of Midnight",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Phony Priest of the Night",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "141147",
+  "ja": "オフショットグラビア",
+  "candidates": [
+   {
+    "en": "Off-Duty Idol",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN turns グラビア into 'Idol' for Beaucy (こずみっくぐらびあぱわー = 'Cosmic Idol Power'); base title 'Bovine Idol'"
+   },
+   {
+    "en": "Candid-Shot Idol",
+    "source": "best-effort",
+    "url": "",
+    "note": "closer to オフショット (behind-the-scenes photo)"
+   },
+   {
+    "en": "Off-Shot Gravure",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Off-Duty Idol",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "131140",
+  "ja": "反転セシ白ノ少女",
+  "candidates": [
+   {
+    "en": "†Inverted White Maiden†",
+    "source": "best-effort",
+    "url": "",
+    "note": "base title 暗黒少女 = '†Maiden of Darkness†': EN marks her chuuni style with daggers; † is in the EN data so it renders"
+   },
+   {
+    "en": "Maiden of Inverted White",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Inverted White Girl",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "†Inverted White Maiden†",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "221078",
+  "ja": "恋の夢見せ姫",
+  "candidates": [
+   {
+    "en": "Princess of Love Dreams",
+    "source": "best-effort",
+    "url": "",
+    "note": "base 眠らせ姫 = 'Sleep-Inducing Princess' (ねむらせひめ)"
+   },
+   {
+    "en": "Love-Dream-Inducing Princess",
+    "source": "best-effort",
+    "url": "",
+    "note": "mirrors the base title, clumsy"
+   },
+   {
+    "en": "Dreaming Princess of Love",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Princess of Love Dreams",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "131134",
+  "ja": "檻を解き放つ者",
+  "candidates": [
+   {
+    "en": "Breaker of Cages",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "The Cage Unlocker",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Cage Liberator",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Cage Liberator",
+  "basis": "community",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "161165",
+  "ja": "混沌の師",
+  "candidates": [
+   {
+    "en": "Master of Chaos",
+    "source": "best-effort",
+    "url": "",
+    "note": "師 = teacher/master"
+   },
+   {
+    "en": "Chaotic Mentor",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   },
+   {
+    "en": "Master of Chaos",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Master of Chaos",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "unit_title",
+  "id": "211062",
+  "ja": "臆病な幽鬼退治屋",
+  "candidates": [
+   {
+    "en": "Timid Ghost Hunter",
+    "source": "best-effort",
+    "url": "",
+    "note": "幽鬼退治屋 is also an encyclopedia keyword (5000609)"
+   },
+   {
+    "en": "Cowardly Ghostbuster",
+    "source": "best-effort",
+    "url": "",
+    "note": "avoid: trademark"
+   },
+   {
+    "en": "Cowardly Ghost Exterminator",
+    "source": "World Flipper Story Archive (fan Google Sheet, tab 'JP-Exclusive Character'; reused by world-flipper.vercel.app)",
+    "url": "https://docs.google.com/spreadsheets/d/1cjrja_U6biwyST_pX9yN6Y0pEpwOoB5QuVzRlevaTNE/edit#gid=914957196",
+    "note": "fan translation (literal)"
+   }
+  ],
+  "proposed": "Timid Ghost Hunter",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 3; degree/degree degree_favor_<code> col 2",
+  "note": "the unit title doubles as the title (degree) earned at Lv100 with the Amity Scroll; EN keeps both identical"
+ },
+ {
+  "kind": "term",
+  "id": "121165",
+  "ja": "相川奈都姫",
+  "candidates": [
+   {
+    "en": "Natsuki Aikawa",
+    "source": "romanisation",
+    "url": "https://wiki.pokemonwiki.com/wiki/%E4%B8%89%E6%A3%AE%E3%81%99%E3%81%9A%E3%81%93",
+    "note": "reading あいかわ なつき"
+   }
+  ],
+  "proposed": "Natsuki Aikawa",
+  "basis": "community",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "151171",
+  "ja": "森永千才",
+  "candidates": [
+   {
+    "en": "Chitose Morinaga",
+    "source": "romanisation",
+    "url": "https://www.animenewsnetwork.com/encyclopedia/people.php?id=131782",
+    "note": ""
+   }
+  ],
+  "proposed": "Chitose Morinaga",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "161189",
+  "ja": "斎賀みつき",
+  "candidates": [
+   {
+    "en": "Mitsuki Saiga",
+    "source": "romanisation",
+    "url": "",
+    "note": "well-known seiyuu, standard romanisation"
+   }
+  ],
+  "proposed": "Mitsuki Saiga",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "161183",
+  "ja": "久保ユリカ",
+  "candidates": [
+   {
+    "en": "Yurika Kubo",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Yurika Kubo",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "121159",
+  "ja": "嶋村侑",
+  "candidates": [
+   {
+    "en": "Yu Shimamura",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation; EN drops long vowels (Yu Kobayashi)"
+   }
+  ],
+  "proposed": "Yu Shimamura",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "141171",
+  "ja": "小林親弘",
+  "candidates": [
+   {
+    "en": "Chikahiro Kobayashi",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Chikahiro Kobayashi",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "131158",
+  "ja": "広瀬ゆうき",
+  "candidates": [
+   {
+    "en": "Yuki Hirose",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Yuki Hirose",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "111159",
+  "ja": "山本彩乃",
+  "candidates": [
+   {
+    "en": "Ayano Yamamoto",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Ayano Yamamoto",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "151159",
+  "ja": "石上静香",
+  "candidates": [
+   {
+    "en": "Shizuka Ishigami",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Shizuka Ishigami",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "261089",
+  "ja": "鈴木裕斗",
+  "candidates": [
+   {
+    "en": "Yuto Suzuki",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Yuto Suzuki",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "141159",
+  "ja": "上田燿司",
+  "candidates": [
+   {
+    "en": "Yoji Ueda",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#111007",
+    "note": "same VA as base Rolf"
+   }
+  ],
+  "proposed": "Yoji Ueda",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "131146",
+  "ja": "石川界人",
+  "candidates": [
+   {
+    "en": "Kaito Ishikawa",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#151007",
+    "note": "same VA as base Libram"
+   }
+  ],
+  "proposed": "Kaito Ishikawa",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "231099",
+  "ja": "広瀬裕也",
+  "candidates": [
+   {
+    "en": "Yuya Hirose",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Yuya Hirose",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "111153",
+  "ja": "三森すずこ",
+  "candidates": [
+   {
+    "en": "Suzuko Mimori",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Suzuko Mimori",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "141153",
+  "ja": "道井悠",
+  "candidates": [
+   {
+    "en": "Haruka Michii",
+    "source": "romanisation",
+    "url": "https://dic.nicovideo.jp/t/a/%E9%81%93%E4%BA%95%E6%82%A0",
+    "note": "reading みちい はるか"
+   }
+  ],
+  "proposed": "Haruka Michii",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "161171",
+  "ja": "千葉翔也",
+  "candidates": [
+   {
+    "en": "Shoya Chiba",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Shoya Chiba",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "141147",
+  "ja": "喜多村英梨",
+  "candidates": [
+   {
+    "en": "Eri Kitamura",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#131026",
+    "note": "same VA as base Beaucy"
+   }
+  ],
+  "proposed": "Eri Kitamura",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "131140",
+  "ja": "田村ゆかり",
+  "candidates": [
+   {
+    "en": "Yukari Tamura",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#161021",
+    "note": "same VA as base Denah"
+   }
+  ],
+  "proposed": "Yukari Tamura",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "221078",
+  "ja": "飯塚麻結",
+  "candidates": [
+   {
+    "en": "Mayu Iizuka",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#251047",
+    "note": "same VA as base Feanie"
+   }
+  ],
+  "proposed": "Mayu Iizuka",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "131134",
+  "ja": "瀬戸麻沙美",
+  "candidates": [
+   {
+    "en": "Asami Seto",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Asami Seto",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "161165",
+  "ja": "南央美",
+  "candidates": [
+   {
+    "en": "Omi Minami",
+    "source": "romanisation",
+    "url": "",
+    "note": "standard romanisation"
+   }
+  ],
+  "proposed": "Omi Minami",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "term",
+  "id": "211062",
+  "ja": "野中深愛",
+  "candidates": [
+   {
+    "en": "Mio Nonaka",
+    "source": "romanisation",
+    "url": "https://www.animenewsnetwork.com/encyclopedia/people.php?id=207653",
+    "note": "reading のなか みお"
+   }
+  ],
+  "proposed": "Mio Nonaka",
+  "basis": "community",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "character/character_text col 9",
+  "note": "voice actor credit; EN writes given name first, long vowels dropped"
+ },
+ {
+  "kind": "event",
+  "id": "score_attack_event_01",
+  "ja": "無限演武",
+  "candidates": [
+   {
+    "en": "Infinite Exhibition",
+    "source": "best-effort",
+    "url": "",
+    "note": "演武 = martial-arts exhibition; logo is subtitled スコアアタック, which EN calls 'Score Scramble'"
+   },
+   {
+    "en": "Endless Exhibition",
+    "source": "best-effort",
+    "url": "",
+    "note": "avoid clashing with 'Endless Battle' (Grand Gauntlet)"
+   },
+   {
+    "en": "Boundless Bouts",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Infinite Exhibition",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event col 1; ui_string help_label_event_score_attack_event, system_lock_score_attack",
+  "note": "the event logo/banner art has no Latin text (checked in the CDN images)"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "直接攻撃演武",
+  "candidates": [
+   {
+    "en": "Direct Hit Exhibition",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Direct Hit Exhibition",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "パワフリ演武",
+  "candidates": [
+   {
+    "en": "Power Flip Exhibition",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Power Flip Exhibition",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "スキル演武",
+  "candidates": [
+   {
+    "en": "Skill Exhibition",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Skill Exhibition",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "直接攻撃演武（耐久）",
+  "candidates": [
+   {
+    "en": "Direct Hit Exhibition (Endurance)",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Direct Hit Exhibition (Endurance)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "スキル演武（耐久）",
+  "candidates": [
+   {
+    "en": "Skill Exhibition (Endurance)",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Skill Exhibition (Endurance)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "event",
+  "id": "",
+  "ja": "スキル演武（速攻）",
+  "candidates": [
+   {
+    "en": "Skill Exhibition (Blitz)",
+    "source": "best-effort",
+    "url": "",
+    "note": "Direct Hit / Power Flip / Skill are the official EN mechanic names (Hani bosses DH / PF / S)"
+   }
+  ],
+  "proposed": "Skill Exhibition (Blitz)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/score_attack_event_quest col 3",
+  "note": "quest name inside 無限演武"
+ },
+ {
+  "kind": "term",
+  "id": "score_attack_border_reward_dialog_title",
+  "ja": "ボーダー報酬",
+  "candidates": [
+   {
+    "en": "Target Score Rewards",
+    "source": "best-effort",
+    "url": "",
+    "note": "follows 報酬達成タイム = 'Target Time' (solo time attack)"
+   }
+  ],
+  "proposed": "Target Score Rewards",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "ui_string; mail/reason 16001 ボーダー更新報酬"
+ },
+ {
+  "kind": "event",
+  "id": "carnival_event",
+  "ja": "ハニワカーニバル",
+  "candidates": [
+   {
+    "en": "Hanifolk Carnival",
+    "source": "EN client master data",
+    "url": "master:/quest/event/carnival_event#1",
+    "note": "event name, ui_string help_label_event_haniwa_carnival"
+   },
+   {
+    "en": "Haniwa Carnival",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#party_group_edit_carnival_event_invalid_party_select_message",
+    "note": "one stray EN string"
+   },
+   {
+    "en": "Score Scramble: Hanifolk Carnival",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Score_Scramble:_Hanifolk_Carnival_Event",
+    "note": "global event page"
+   }
+  ],
+  "proposed": "Hanifolk Carnival",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/carnival_event_quest col 3"
+ },
+ {
+  "kind": "term",
+  "id": "haniwa_great_fire_skill",
+  "ja": "閃火必殺ハニンガー",
+  "candidates": [
+   {
+    "en": "Flashfire S Hani",
+    "source": "EN client master data",
+    "url": "master:/quest/event/carnival_event_quest_folder",
+    "note": "same pattern as Stormsurge S / PF / DH Hani; 閃火 = Flashfire (Flashfire Hani Warrior)"
+   }
+  ],
+  "proposed": "Flashfire S Hani",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/carnival_event_quest_folder 100002 col 1; carnival_event_quest col 4; battle/boss/general_boss col 1"
+ },
+ {
+  "kind": "title",
+  "id": "61260",
+  "ja": "閃火ハニンを必殺せし者",
+  "candidates": [
+   {
+    "en": "Flashfire Hanifolk Dazzler",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#61230",
+    "note": "必殺 = Dazzler, 強振 = Flipper, 直撃 = Hitter in every earlier carnival"
+   }
+  ],
+  "proposed": "Flashfire Hanifolk Dazzler",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "term",
+  "id": "haniwa_great_fire_pf",
+  "ja": "閃火強振ハニンガー",
+  "candidates": [
+   {
+    "en": "Flashfire PF Hani",
+    "source": "EN client master data",
+    "url": "master:/quest/event/carnival_event_quest_folder",
+    "note": "same pattern as Stormsurge S / PF / DH Hani; 閃火 = Flashfire (Flashfire Hani Warrior)"
+   }
+  ],
+  "proposed": "Flashfire PF Hani",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/carnival_event_quest_folder 100002 col 1; carnival_event_quest col 4; battle/boss/general_boss col 1"
+ },
+ {
+  "kind": "title",
+  "id": "61270",
+  "ja": "閃火ハニンを強振せし者",
+  "candidates": [
+   {
+    "en": "Flashfire Hanifolk Flipper",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#61230",
+    "note": "必殺 = Dazzler, 強振 = Flipper, 直撃 = Hitter in every earlier carnival"
+   }
+  ],
+  "proposed": "Flashfire Hanifolk Flipper",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "term",
+  "id": "haniwa_great_fire_direct",
+  "ja": "閃火直撃ハニンガー",
+  "candidates": [
+   {
+    "en": "Flashfire DH Hani",
+    "source": "EN client master data",
+    "url": "master:/quest/event/carnival_event_quest_folder",
+    "note": "same pattern as Stormsurge S / PF / DH Hani; 閃火 = Flashfire (Flashfire Hani Warrior)"
+   }
+  ],
+  "proposed": "Flashfire DH Hani",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/carnival_event_quest_folder 100002 col 1; carnival_event_quest col 4; battle/boss/general_boss col 1"
+ },
+ {
+  "kind": "title",
+  "id": "61280",
+  "ja": "閃火ハニンを直撃せし者",
+  "candidates": [
+   {
+    "en": "Flashfire Hanifolk Hitter",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#61230",
+    "note": "必殺 = Dazzler, 強振 = Flipper, 直撃 = Hitter in every earlier carnival"
+   }
+  ],
+  "proposed": "Flashfire Hanifolk Hitter",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "event",
+  "id": "advent_steam_robot_wind",
+  "ja": "翠愁の機兵",
+  "candidates": [
+   {
+    "en": "Windwrath Steambot",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire 紅嫉の機兵 = 'Inferno Steambot' reuses the fire Spiritbeast adjective (炎嗟 = Inferno); the same element adjective is reused here (wind: 'Windwrath' from the Serpent series, since the Spiritbeast's 'Slitherwind' is snake-specific)"
+   }
+  ],
+  "proposed": "Windwrath Steambot",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2; ui_string help_label_event_*"
+ },
+ {
+  "kind": "event",
+  "id": "hard_multi_steam_robot_wind",
+  "ja": "共同決戦【翠愁の機兵】",
+  "candidates": [
+   {
+    "en": "The Reckoning Windwrath Steambot",
+    "source": "EN client master data",
+    "url": "master:/quest/event/hard_multi_event#1",
+    "note": "pattern of 'The Reckoning Inferno Steambot'"
+   }
+  ],
+  "proposed": "The Reckoning Windwrath Steambot",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/hard_multi_event col 2"
+ },
+ {
+  "kind": "term",
+  "id": "steampunk_wind",
+  "ja": "翠機兵クラーグ",
+  "candidates": [
+   {
+    "en": "Steambot Clarg",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire boss 紅機兵ハインレルト = 'Steambot Heinlert' (quest name 'Heinlert'); クラーグ: Clarke (Arthur C. Clarke) nod; its axe ハルボーマン = HAL + Bowman"
+   },
+   {
+    "en": "Steambot Kraag",
+    "source": "best-effort",
+    "url": "",
+    "note": "alternative spelling"
+   }
+  ],
+  "proposed": "Steambot Clarg",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "battle/boss/standard_boss col 0; quest names use the bare name with ::quest_rank:: as for Heinlert"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "翠機兵の銀貨",
+  "candidates": [
+   {
+    "en": "Silver Windwrath Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Silver Windwrath Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "翠機兵の金貨",
+  "candidates": [
+   {
+    "en": "Gold Windwrath Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Gold Windwrath Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "翠機兵の紫貨",
+  "candidates": [
+   {
+    "en": "Lilac Windwrath Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Lilac Windwrath Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "翠愁の打倒者",
+  "candidates": [
+   {
+    "en": "Gustbot Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Windwrath Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Gustbot Soldier",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "翠愁の征服者",
+  "candidates": [
+   {
+    "en": "Gustbot Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Windwrath Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Gustbot Subjugator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "翠愁の討滅者",
+  "candidates": [
+   {
+    "en": "Gustbot Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Windwrath Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Gustbot Annihilator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "翠愁の試練：決",
+  "candidates": [
+   {
+    "en": "Gustbot: Reckoned",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire: 'Hotbot: Reckoned'"
+   }
+  ],
+  "proposed": "Gustbot: Reckoned",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "event",
+  "id": "advent_steam_robot_water",
+  "ja": "蒼歎の機兵",
+  "candidates": [
+   {
+    "en": "Maelstrom Steambot",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire 紅嫉の機兵 = 'Inferno Steambot' reuses the fire Spiritbeast adjective (炎嗟 = Inferno); the same element adjective is reused here"
+   }
+  ],
+  "proposed": "Maelstrom Steambot",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2; ui_string help_label_event_*"
+ },
+ {
+  "kind": "event",
+  "id": "hard_multi_steam_robot_water",
+  "ja": "共同決戦【蒼歎の機兵】",
+  "candidates": [
+   {
+    "en": "The Reckoning Maelstrom Steambot",
+    "source": "EN client master data",
+    "url": "master:/quest/event/hard_multi_event#1",
+    "note": "pattern of 'The Reckoning Inferno Steambot'"
+   }
+  ],
+  "proposed": "The Reckoning Maelstrom Steambot",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/hard_multi_event col 2"
+ },
+ {
+  "kind": "term",
+  "id": "steampunk_water",
+  "ja": "蒼機兵ヴェルヌス",
+  "candidates": [
+   {
+    "en": "Steambot Vernus",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire boss 紅機兵ハインレルト = 'Steambot Heinlert' (quest name 'Heinlert'); Jules Verne nod; its necklace アロランドネモ = Aronnax + Ned Land + Nemo"
+   },
+   {
+    "en": "Steambot Vernes",
+    "source": "best-effort",
+    "url": "",
+    "note": "alternative spelling"
+   }
+  ],
+  "proposed": "Steambot Vernus",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "battle/boss/standard_boss col 0; quest names use the bare name with ::quest_rank:: as for Heinlert"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "蒼機兵の銀貨",
+  "candidates": [
+   {
+    "en": "Silver Maelstrom Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Silver Maelstrom Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "蒼機兵の金貨",
+  "candidates": [
+   {
+    "en": "Gold Maelstrom Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Gold Maelstrom Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "蒼機兵の紫貨",
+  "candidates": [
+   {
+    "en": "Lilac Maelstrom Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Lilac Maelstrom Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "蒼歎の打倒者",
+  "candidates": [
+   {
+    "en": "Tidebot Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Maelstrom Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Tidebot Soldier",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "蒼歎の征服者",
+  "candidates": [
+   {
+    "en": "Tidebot Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Maelstrom Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Tidebot Subjugator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "蒼歎の討滅者",
+  "candidates": [
+   {
+    "en": "Tidebot Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Maelstrom Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Tidebot Annihilator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "蒼歎の試練：決",
+  "candidates": [
+   {
+    "en": "Tidebot: Reckoned",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire: 'Hotbot: Reckoned'"
+   }
+  ],
+  "proposed": "Tidebot: Reckoned",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "event",
+  "id": "advent_steam_robot_light",
+  "ja": "閃哭の機兵",
+  "candidates": [
+   {
+    "en": "Radiant Steambot",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire 紅嫉の機兵 = 'Inferno Steambot' reuses the fire Spiritbeast adjective (炎嗟 = Inferno); the same element adjective is reused here"
+   }
+  ],
+  "proposed": "Radiant Steambot",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2; ui_string help_label_event_*"
+ },
+ {
+  "kind": "event",
+  "id": "hard_multi_steam_robot_light",
+  "ja": "共同決戦【閃哭の機兵】",
+  "candidates": [
+   {
+    "en": "The Reckoning Radiant Steambot",
+    "source": "EN client master data",
+    "url": "master:/quest/event/hard_multi_event#1",
+    "note": "pattern of 'The Reckoning Inferno Steambot'"
+   }
+  ],
+  "proposed": "The Reckoning Radiant Steambot",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/hard_multi_event col 2"
+ },
+ {
+  "kind": "term",
+  "id": "steampunk_light",
+  "ja": "閃機兵アイザン",
+  "candidates": [
+   {
+    "en": "Steambot Aizan",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire boss 紅機兵ハインレルト = 'Steambot Heinlert' (quest name 'Heinlert'); Isaac Asimov nod; its gun ハリサルヴァー = Hari Seldon + Salvor Hardin"
+   },
+   {
+    "en": "Steambot Isan",
+    "source": "best-effort",
+    "url": "",
+    "note": "alternative spelling"
+   }
+  ],
+  "proposed": "Steambot Aizan",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "battle/boss/standard_boss col 0; quest names use the bare name with ::quest_rank:: as for Heinlert"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "閃機兵の銀貨",
+  "candidates": [
+   {
+    "en": "Silver Radiant Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Silver Radiant Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "閃機兵の金貨",
+  "candidates": [
+   {
+    "en": "Gold Radiant Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Gold Radiant Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "",
+  "ja": "閃機兵の紫貨",
+  "candidates": [
+   {
+    "en": "Lilac Radiant Steambot Denarius",
+    "source": "EN client master data",
+    "url": "master:/item/item#40000",
+    "note": "boss coins are '<Silver|Gold|Lilac> <boss> Denarius' (Silver Inferno Steambot Denarius)"
+   }
+  ],
+  "proposed": "Lilac Radiant Steambot Denarius",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "閃哭の打倒者",
+  "candidates": [
+   {
+    "en": "Flashbot Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Radiant Soldier",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Flashbot Soldier",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "閃哭の征服者",
+  "candidates": [
+   {
+    "en": "Flashbot Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Radiant Subjugator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Flashbot Subjugator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "閃哭の討滅者",
+  "candidates": [
+   {
+    "en": "Flashbot Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire uses the pun 'Hotbot' (こうしつ = 紅嫉): Hotbot Soldier / Subjugator; 打倒者/征服者/討滅者 = Soldier/Subjugator/Annihilator in every advent series"
+   },
+   {
+    "en": "Radiant Annihilator",
+    "source": "best-effort",
+    "url": "",
+    "note": "plain variant like 'Seafang Annihilator'"
+   }
+  ],
+  "proposed": "Flashbot Annihilator",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "閃哭の試練：決",
+  "candidates": [
+   {
+    "en": "Flashbot: Reckoned",
+    "source": "best-effort",
+    "url": "",
+    "note": "fire: 'Hotbot: Reckoned'"
+   }
+  ],
+  "proposed": "Flashbot: Reckoned",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5020042",
+  "ja": "ハルボーマン",
+  "candidates": [
+   {
+    "en": "Hal Bowman",
+    "source": "best-effort",
+    "url": "",
+    "note": "the fire Steambot sword is 'Juan Rico' (Starship Troopers), so these are sci-fi names: 2001: A Space Odyssey (HAL 9000, Dave Bowman); wind Steambot axe"
+   }
+  ],
+  "proposed": "Hal Bowman",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5020042",
+  "ja": "ハルボーマンのソウル",
+  "candidates": [
+   {
+    "en": "Hal Bowman Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "ability souls are '<armament> Core'; アビリティソウル = 'Ability Core'"
+   }
+  ],
+  "proposed": "Hal Bowman Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5020042",
+  "ja": "ハルボーマン・改",
+  "candidates": [
+   {
+    "en": "Hal Bowman+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5010073",
+    "note": "augmented Steambot gear: Juan Rico -> Juan Rico+"
+   }
+  ],
+  "proposed": "Hal Bowman+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5090047",
+  "ja": "アロランドネモ",
+  "candidates": [
+   {
+    "en": "Aroland Nemo",
+    "source": "best-effort",
+    "url": "",
+    "note": "the fire Steambot sword is 'Juan Rico' (Starship Troopers), so these are sci-fi names: Twenty Thousand Leagues (Aronnax, Ned Land, Nemo); water Steambot necklace"
+   }
+  ],
+  "proposed": "Aroland Nemo",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5090047",
+  "ja": "アロランドネモのソウル",
+  "candidates": [
+   {
+    "en": "Aroland Nemo Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "ability souls are '<armament> Core'; アビリティソウル = 'Ability Core'"
+   }
+  ],
+  "proposed": "Aroland Nemo Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5090047",
+  "ja": "アロランドネモ・改",
+  "candidates": [
+   {
+    "en": "Aroland Nemo+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5010073",
+    "note": "augmented Steambot gear: Juan Rico -> Juan Rico+"
+   }
+  ],
+  "proposed": "Aroland Nemo+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5100020",
+  "ja": "ハリサルヴァー",
+  "candidates": [
+   {
+    "en": "Hari Salvor",
+    "source": "best-effort",
+    "url": "",
+    "note": "the fire Steambot sword is 'Juan Rico' (Starship Troopers), so these are sci-fi names: Foundation (Hari Seldon, Salvor Hardin); light Steambot gun"
+   }
+  ],
+  "proposed": "Hari Salvor",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5100020",
+  "ja": "ハリサルヴァーのソウル",
+  "candidates": [
+   {
+    "en": "Hari Salvor Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "ability souls are '<armament> Core'; アビリティソウル = 'Ability Core'"
+   }
+  ],
+  "proposed": "Hari Salvor Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5100020",
+  "ja": "ハリサルヴァー・改",
+  "candidates": [
+   {
+    "en": "Hari Salvor+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5010073",
+    "note": "augmented Steambot gear: Juan Rico -> Juan Rico+"
+   }
+  ],
+  "proposed": "Hari Salvor+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5070043",
+  "ja": "ハニツカミ",
+  "candidates": [
+   {
+    "en": "Hanimitts",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN Hani gear is one word 'Hani' + object (Hanibow, Hanizooka, Hanicane); pun on 鍋つかみ (oven mitt): heat-proof gloves"
+   }
+  ],
+  "proposed": "Hanimitts",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5070043",
+  "ja": "ハニツカミのソウル",
+  "candidates": [
+   {
+    "en": "Hanimitts Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "'<armament> Core'"
+   }
+  ],
+  "proposed": "Hanimitts Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5010075",
+  "ja": "ハニゾウコ",
+  "candidates": [
+   {
+    "en": "Hanifridge",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN Hani gear is one word 'Hani' + object (Hanibow, Hanizooka, Hanicane); pun on 冷蔵庫 (fridge): ice-cold sword"
+   }
+  ],
+  "proposed": "Hanifridge",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5010075",
+  "ja": "ハニゾウコのソウル",
+  "candidates": [
+   {
+    "en": "Hanifridge Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "'<armament> Core'"
+   }
+  ],
+  "proposed": "Hanifridge Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5040037",
+  "ja": "ハニビヅツ",
+  "candidates": [
+   {
+    "en": "Hanirocket",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN Hani gear is one word 'Hani' + object (Hanibow, Hanizooka, Hanicane); pun on 火筒 (fire tube): bow that shoots powder-filled rods"
+   }
+  ],
+  "proposed": "Hanirocket",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/equipment col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5040037",
+  "ja": "ハニビヅツのソウル",
+  "candidates": [
+   {
+    "en": "Hanirocket Core",
+    "source": "EN client master data",
+    "url": "master:/item/item#5020022",
+    "note": "'<armament> Core'"
+   }
+  ],
+  "proposed": "Hanirocket Core",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "5100011",
+  "ja": "天機銃・無双",
+  "candidates": [
+   {
+    "en": "Handgun of Celestial Insight Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Handgun of Celestial Insight' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Handgun of Celestial Insight+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Handgun of Celestial Insight Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5030028",
+  "ja": "天同槍・無双",
+  "candidates": [
+   {
+    "en": "Trident of Celestial Fortune Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Trident of Celestial Fortune' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Trident of Celestial Fortune+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Trident of Celestial Fortune Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5010056",
+  "ja": "天梁刀・無双",
+  "candidates": [
+   {
+    "en": "Blade of Celestial Wisdom Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Blade of Celestial Wisdom' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Blade of Celestial Wisdom+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Blade of Celestial Wisdom Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5010045",
+  "ja": "七殺鞭・無双",
+  "candidates": [
+   {
+    "en": "Polis Whip Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Polis Whip' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Polis Whip+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Polis Whip Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5040020",
+  "ja": "天相弓・無双",
+  "candidates": [
+   {
+    "en": "Bow of Celestial Service Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Bow of Celestial Service' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Bow of Celestial Service+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Bow of Celestial Service Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5010032",
+  "ja": "天府剣・無双",
+  "candidates": [
+   {
+    "en": "Blade of Celestial Wealth Peerless",
+    "source": "best-effort",
+    "url": "",
+    "note": "official base name 'Blade of Celestial Wealth' (item/equipment); 無双 = peerless, no EN precedent for this suffix"
+   },
+   {
+    "en": "Blade of Celestial Wealth+",
+    "source": "best-effort",
+    "url": "",
+    "note": "the Steambot augment suffix"
+   }
+  ],
+  "proposed": "Blade of Celestial Wealth Peerless",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5070042",
+  "ja": "グリーパァクファーズ・追憶",
+  "candidates": [
+   {
+    "en": "Ancient Glove N+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5020035",
+    "note": "official base name 'Ancient Glove'; the other memory-stone augments are '<name> N+'"
+   }
+  ],
+  "proposed": "Ancient Glove N+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5060045",
+  "ja": "エンペラー・追憶",
+  "candidates": [
+   {
+    "en": "Tidal Lord N+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5020035",
+    "note": "official base name 'Tidal Lord'; the other memory-stone augments are '<name> N+'"
+   }
+  ],
+  "proposed": "Tidal Lord N+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "item",
+  "id": "5010074",
+  "ja": "禍樹の露刃・追憶",
+  "candidates": [
+   {
+    "en": "Wicked Wood Edge N+",
+    "source": "EN client master data",
+    "url": "master:/equipment_enhancement/equipment_enhancement#5020035",
+    "note": "official base name 'Wicked Wood Edge'; the other memory-stone augments are '<name> N+'"
+   }
+  ],
+  "proposed": "Wicked Wood Edge N+",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "粛清者討伐戦",
+  "candidates": [
+   {
+    "en": "The Purge",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event#200013",
+    "note": "global run of the same event"
+   }
+  ],
+  "proposed": "The Purge",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "星に願いを",
+  "candidates": [
+   {
+    "en": "Wish Upon a Star",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Wish Upon a Star",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "歩兵の粛清者",
+  "candidates": [
+   {
+    "en": "Frontline Purger",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Frontline Purger",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "天蓋都市の反撃",
+  "candidates": [
+   {
+    "en": "Palpebra's Counterattack",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Palpebra's Counterattack",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "光の逃走経路",
+  "candidates": [
+   {
+    "en": "The Path to Safety",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "The Path to Safety",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "僧正の粛清者",
+  "candidates": [
+   {
+    "en": "Purger Sage",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Purger Sage",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "異形粛清者",
+  "candidates": [
+   {
+    "en": "Modified Purger",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Modified Purger",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "深淵より響く",
+  "candidates": [
+   {
+    "en": "Echoes in the Abyss",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Echoes in the Abyss",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "掴め、全ての子達よ。",
+  "candidates": [
+   {
+    "en": "Seize Your Destiny",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Seize Your Destiny",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200021,200050",
+  "ja": "女帝の粛清者",
+  "candidates": [
+   {
+    "en": "Purger Empress",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event_quest#200013",
+    "note": "same quest slot in the global run"
+   }
+  ],
+  "proposed": "Purger Empress",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "item",
+  "id": "40321,40333",
+  "ja": "粛清の光輪",
+  "candidates": [
+   {
+    "en": "Purger Halo",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "EN item with the same icon (boss_epuration_exchange_item)"
+   }
+  ],
+  "proposed": "Purger Halo",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "40322,40334",
+  "ja": "粛清の天輪",
+  "candidates": [
+   {
+    "en": "Purger Celestial Ring",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "EN item with the same icon (boss_epuration_exchange_item)"
+   }
+  ],
+  "proposed": "Purger Celestial Ring",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "40323,40335",
+  "ja": "粛清の心核",
+  "candidates": [
+   {
+    "en": "Purger Nexus",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "EN item with the same icon (boss_epuration_exchange_item)"
+   }
+  ],
+  "proposed": "Purger Nexus",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "event",
+  "id": "200012",
+  "ja": "水狂の精霊獣",
+  "candidates": [
+   {
+    "en": "Maelstrom Spiritbeast",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_event_advent_spirit_beast_*",
+    "note": "EN help label of the same boss; earlier runs are English"
+   }
+  ],
+  "proposed": "Maelstrom Spiritbeast",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200025",
+  "ja": "魁雷の精霊獣",
+  "candidates": [
+   {
+    "en": "Thundering Spiritbeast",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_event_advent_spirit_beast_*",
+    "note": "EN help label of the same boss; earlier runs are English"
+   }
+  ],
+  "proposed": "Thundering Spiritbeast",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200052",
+  "ja": "威風の精霊獣",
+  "candidates": [
+   {
+    "en": "Slitherwind Spiritbeast",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_event_advent_spirit_beast_*",
+    "note": "EN help label of the same boss; earlier runs are English"
+   }
+  ],
+  "proposed": "Slitherwind Spiritbeast",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200020,200038,200056",
+  "ja": "巫光の精霊獣",
+  "candidates": [
+   {
+    "en": "Radiant Spiritbeast",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_event_advent_spirit_beast_*",
+    "note": "EN help label of the same boss; earlier runs are English"
+   }
+  ],
+  "proposed": "Radiant Spiritbeast",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200019,200051",
+  "ja": "炎嗟の精霊獣",
+  "candidates": [
+   {
+    "en": "Inferno Spiritbeast",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_event_advent_spirit_beast_*",
+    "note": "EN help label of the same boss; earlier runs are English"
+   }
+  ],
+  "proposed": "Inferno Spiritbeast",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200028,200037",
+  "ja": "クグイとリョウキの特別訓練！",
+  "candidates": [
+   {
+    "en": "Kugui and Ryouki's Special Training!",
+    "source": "best-effort",
+    "url": "",
+    "note": "Kugui, Ryouki are official EN names"
+   }
+  ],
+  "proposed": "Kugui and Ryouki's Special Training!",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event col 2"
+ },
+ {
+  "kind": "term",
+  "id": "smr21_big_boss",
+  "ja": "星喰いデオフラスス",
+  "candidates": [
+   {
+    "en": "Deo the Devoured",
+    "source": "EN client master data",
+    "url": "master:/battle/boss/general_boss#smr21_big_boss",
+    "note": "EN boss name of the same boss"
+   },
+   {
+    "en": "Deophrastus, Devourer of Stars",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000259",
+    "note": "story name + 星喰い = 'Devourer of Stars'"
+   }
+  ],
+  "proposed": "Deo the Devoured",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest 200028 col 2"
+ },
+ {
+  "kind": "term",
+  "id": "middle_boss_dragon_anv1",
+  "ja": "ブラックドラゴン",
+  "candidates": [
+   {
+    "en": "Black Dragon",
+    "source": "EN client master data",
+    "url": "master:/battle/boss/general_boss#middle_boss_dragon_anv1_kc",
+    "note": "EN boss name"
+   }
+  ],
+  "proposed": "Black Dragon",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest 200037 col 2"
+ },
+ {
+  "kind": "item",
+  "id": "40327,40330",
+  "ja": "クグイの絵巻・梅",
+  "candidates": [
+   {
+    "en": "Kugui's Scroll (Plum)",
+    "source": "best-effort",
+    "url": "",
+    "note": "silver/gold/lilac exchange coins of Kugui's training event; EN qualifies variants in brackets ('Barrel of Fun (Celebratory)')"
+   },
+   {
+    "en": "Kugui's Picture Scroll: Plum",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Kugui's Scroll (Plum)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "40328,40331",
+  "ja": "クグイの絵巻・竹",
+  "candidates": [
+   {
+    "en": "Kugui's Scroll (Bamboo)",
+    "source": "best-effort",
+    "url": "",
+    "note": "silver/gold/lilac exchange coins of Kugui's training event; EN qualifies variants in brackets ('Barrel of Fun (Celebratory)')"
+   },
+   {
+    "en": "Kugui's Picture Scroll: Bamboo",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Kugui's Scroll (Bamboo)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "40329,40332",
+  "ja": "クグイの絵巻・松",
+  "candidates": [
+   {
+    "en": "Kugui's Scroll (Pine)",
+    "source": "best-effort",
+    "url": "",
+    "note": "silver/gold/lilac exchange coins of Kugui's training event; EN qualifies variants in brackets ('Barrel of Fun (Celebratory)')"
+   },
+   {
+    "en": "Kugui's Picture Scroll: Pine",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Kugui's Scroll (Pine)",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "event",
+  "id": "200015",
+  "ja": "聖夜の雪像Ｇ",
+  "candidates": [
+   {
+    "en": "Festive Snowy Maws G",
+    "source": "best-effort",
+    "url": "",
+    "note": "the holiday advent boss is 'Festive Snowy Maws' in the EN runs (advent 11); Ｇ kept as a plain G"
+   }
+  ],
+  "proposed": "Festive Snowy Maws G",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/advent_event_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "help_label_event_advent_u_collabo",
+  "ja": "揺らぐ彼方のニューゲート",
+  "candidates": [
+   {
+    "en": "Shifting Tracks, Distant Worlds",
+    "source": "EN client master data",
+    "url": "master:/quest/event/advent_event#100007",
+    "note": "EN name of the same collab advent"
+   }
+  ],
+  "proposed": "Shifting Tracks, Distant Worlds",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "string/ui_string (help label)"
+ },
+ {
+  "kind": "event",
+  "id": "raid_event_04",
+  "ja": "乏竜の宴",
+  "candidates": [
+   {
+    "en": "Saga of the Black Dragon",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN raid quests: Saga of Warding, Genome Dragon, Ode to the Dorsals; boss middle_boss_dragon_anv1 = 'Black Dragon'"
+   },
+   {
+    "en": "Black Dragon",
+    "source": "best-effort",
+    "url": "",
+    "note": "bare boss name, as raid 2"
+   }
+  ],
+  "proposed": "Saga of the Black Dragon",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/raid_event_quest col 3"
+ },
+ {
+  "kind": "event",
+  "id": "raid_event_05",
+  "ja": "妄羊の宴",
+  "candidates": [
+   {
+    "en": "Saga of the Big Baaad Golem",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN raid quests: Saga of Warding, Genome Dragon, Ode to the Dorsals; boss alter_sheep_materia = 'Big Baaad Golem'"
+   },
+   {
+    "en": "Big Baaad Golem",
+    "source": "best-effort",
+    "url": "",
+    "note": "bare boss name, as raid 2"
+   }
+  ],
+  "proposed": "Saga of the Big Baaad Golem",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/raid_event_quest col 3"
+ },
+ {
+  "kind": "event",
+  "id": "raid_event",
+  "ja": "戦陣の宴",
+  "candidates": [
+   {
+    "en": "Raid Event: Sagas of Conquest",
+    "source": "EN client master data",
+    "url": "master:/quest/event/raid_event#1",
+    "note": "EN raid event name"
+   }
+  ],
+  "proposed": "Sagas of Conquest",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "mail/reason 13027"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_01",
+  "ja": "弾襲天",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Hero of Yore",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Hero of Yore",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Hero of Yore",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_02",
+  "ja": "弾襲星",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga True King",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest True King",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga True King",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_03",
+  "ja": "弾襲空",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Loyal Retainer",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Loyal Retainer",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Loyal Retainer",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_04",
+  "ja": "弾襲聖",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga War Hero",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest War Hero",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga War Hero",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_05",
+  "ja": "弾襲王",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Warlord",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Warlord",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Warlord",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_06",
+  "ja": "弾襲卿",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Marshal",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Marshal",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Marshal",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_07",
+  "ja": "弾襲侯",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga General",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest General",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga General",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_08",
+  "ja": "弾襲豪",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Brigadier",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Brigadier",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Brigadier",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_09",
+  "ja": "弾襲帥",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Colonel",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Colonel",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Colonel",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_10",
+  "ja": "弾襲将",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Major",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Major",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Major",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_11",
+  "ja": "弾襲長",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Captain",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Captain",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Captain",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_12",
+  "ja": "弾襲兵",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Lieutenant",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Lieutenant",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Lieutenant",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_04_13",
+  "ja": "弾襲士",
+  "candidates": [
+   {
+    "en": "Black Dragon Saga Cadet",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Cadet",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Black Dragon Saga Cadet",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_01",
+  "ja": "弾襲天",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Hero of Yore",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Hero of Yore",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Hero of Yore",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_02",
+  "ja": "弾襲星",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga True King",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest True King",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga True King",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_03",
+  "ja": "弾襲空",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Loyal Retainer",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Loyal Retainer",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Loyal Retainer",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_04",
+  "ja": "弾襲聖",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga War Hero",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest War Hero",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga War Hero",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_05",
+  "ja": "弾襲王",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Warlord",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Warlord",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Warlord",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_06",
+  "ja": "弾襲卿",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Marshal",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Marshal",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Marshal",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_07",
+  "ja": "弾襲侯",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga General",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest General",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga General",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_08",
+  "ja": "弾襲豪",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Brigadier",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Brigadier",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Brigadier",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_09",
+  "ja": "弾襲帥",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Colonel",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Colonel",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Colonel",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_10",
+  "ja": "弾襲将",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Major",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Major",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Major",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_11",
+  "ja": "弾襲長",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Captain",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Captain",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Captain",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_12",
+  "ja": "弾襲兵",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Lieutenant",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Lieutenant",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Lieutenant",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "degree_raid_event_05_13",
+  "ja": "弾襲士",
+  "candidates": [
+   {
+    "en": "Big Baaad Golem Saga Cadet",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63026",
+    "note": "弾襲 ranks have fixed EN names; the prefix is the raid boss ('DNA Dragon Saga', 'Brofin Saga')"
+   },
+   {
+    "en": "Sagas of Conquest Cadet",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#63000",
+    "note": "raid 1 used the event name"
+   }
+  ],
+  "proposed": "Big Baaad Golem Saga Cadet",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "C-Ｒｅｖ．1",
+  "candidates": [
+   {
+    "en": "C-Rev.1",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "C-Rev.1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "C-Ｒｅｖ．2",
+  "candidates": [
+   {
+    "en": "C-Rev.2",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "C-Rev.2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "C-Ｒｅｖ．3",
+  "candidates": [
+   {
+    "en": "C-Rev.3",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "C-Rev.3",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "D-Ｒｅｖ．1",
+  "candidates": [
+   {
+    "en": "D-Rev.1",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "D-Rev.1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "D-Ｒｅｖ．2",
+  "candidates": [
+   {
+    "en": "D-Rev.2",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "D-Rev.2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "D-Ｒｅｖ．3",
+  "candidates": [
+   {
+    "en": "D-Rev.3",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "D-Rev.3",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "E-Ｒｅｖ．1",
+  "candidates": [
+   {
+    "en": "E-Rev.1",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "E-Rev.1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "E-Ｒｅｖ．2",
+  "candidates": [
+   {
+    "en": "E-Rev.2",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "E-Rev.2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "",
+  "ja": "E-Ｒｅｖ．3",
+  "candidates": [
+   {
+    "en": "E-Rev.3",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#64000",
+    "note": "A-Rev.1 / B-Rev.1 in EN; full-width Latin only"
+   }
+  ],
+  "proposed": "E-Rev.3",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "event",
+  "id": "700005/1",
+  "ja": "中級 1戦目",
+  "candidates": [
+   {
+    "en": "Inter. 1",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Inter. 1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/2",
+  "ja": "中級 2戦目",
+  "candidates": [
+   {
+    "en": "Inter. 2",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Inter. 2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/3",
+  "ja": "上級 1戦目",
+  "candidates": [
+   {
+    "en": "Adv. 1",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Adv. 1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/4",
+  "ja": "上級 2戦目",
+  "candidates": [
+   {
+    "en": "Adv. 2",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Adv. 2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/5",
+  "ja": "超級 1戦目",
+  "candidates": [
+   {
+    "en": "Godly 1",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Godly 1",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/6",
+  "ja": "超級 2戦目",
+  "candidates": [
+   {
+    "en": "Godly 2",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Godly 2",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/7",
+  "ja": "超級 3戦目",
+  "candidates": [
+   {
+    "en": "Godly 3",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Godly 3",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "event",
+  "id": "700005/8",
+  "ja": "エンドレスバトル",
+  "candidates": [
+   {
+    "en": "Endless Battle",
+    "source": "EN client master data",
+    "url": "master:/quest/event/rush_event_quest#700004",
+    "note": "same slot in Grand Gauntlet 4"
+   }
+  ],
+  "proposed": "Endless Battle",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/rush_event_quest col 4"
+ },
+ {
+  "kind": "item",
+  "id": "70005",
+  "ja": "ダイバーズチェック",
+  "candidates": [
+   {
+    "en": "Gauntlet Chips",
+    "source": "EN client master data",
+    "url": "master:/item/item#70001",
+    "note": "same item in Grand Gauntlet 1-4 (same icon)"
+   }
+  ],
+  "proposed": "Gauntlet Chips",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "event",
+  "id": "200029",
+  "ja": "リリース千日記念クエスト",
+  "candidates": [
+   {
+    "en": "1,000-Day Celebration Quests",
+    "source": "best-effort",
+    "url": "",
+    "note": "the 1st-3rd anniversaries are 'Nth Flipperversary Celebration Quests'"
+   },
+   {
+    "en": "Mushroom Madness 8 Quests",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event#200026",
+    "note": "the 300-850 day events were the 'Mushroom Madness' series; only if this one is too"
+   }
+  ],
+  "proposed": "1,000-Day Celebration Quests",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/1",
+  "ja": "リリース千日記念1日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 1",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 1",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/2",
+  "ja": "リリース千日記念2日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 2",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 2",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/3",
+  "ja": "リリース千日記念3日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 3",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 3",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/4",
+  "ja": "リリース千日記念4日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 4",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 4",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/5",
+  "ja": "リリース千日記念5日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 5",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 5",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/6",
+  "ja": "リリース千日記念6日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 6",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 6",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/7",
+  "ja": "リリース千日記念7日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 7",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 7",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/8",
+  "ja": "リリース千日記念8日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 8",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 8",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/9",
+  "ja": "リリース千日記念9日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 9",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 9",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "event",
+  "id": "200029/10",
+  "ja": "リリース千日記念10日目",
+  "candidates": [
+   {
+    "en": "Celebration Day 10",
+    "source": "EN client master data",
+    "url": "master:/quest/event/story_event_single_quest#200030",
+    "note": "anniversary quests are 'Celebration Day N'"
+   }
+  ],
+  "proposed": "Celebration Day 10",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "quest/event/story_event_single_quest col 2"
+ },
+ {
+  "kind": "item",
+  "id": "40503",
+  "ja": "プ・リリエの紫褒章",
+  "candidates": [
+   {
+    "en": "Lilac Lilie Award",
+    "source": "EN client master data",
+    "url": "master:/item/item#49100",
+    "note": "'Lilie Award' + 紫 = 'Lilac' as in every boss coin"
+   },
+   {
+    "en": "Lilie Award",
+    "source": "EN client master data",
+    "url": "master:/item/item#49100",
+    "note": "EN name of プ・リリエの褒章 (prize_ranking_event_01): 'A certificate from Pur Lilie...'; the item name drops 'Pur'"
+   },
+   {
+    "en": "Pur Lilie's Lilac Award",
+    "source": "best-effort",
+    "url": "",
+    "note": "keeps 'Pur'"
+   },
+   {
+    "en": "Lilie Award",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Lilie_Award",
+    "note": "official name of the base award"
+   }
+  ],
+  "proposed": "Lilac Lilie Award",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1; shop/event_item_shop",
+  "note": "special-armament augment material (r4)"
+ },
+ {
+  "kind": "item",
+  "id": "40504",
+  "ja": "プ・リリエの黒曜褒章",
+  "candidates": [
+   {
+    "en": "Obsidian Lilie Award",
+    "source": "best-effort",
+    "url": "",
+    "note": "黒曜 = obsidian; same pattern as the lilac award"
+   },
+   {
+    "en": "Lilie Award",
+    "source": "EN client master data",
+    "url": "master:/item/item#49100",
+    "note": "EN name of プ・リリエの褒章 (prize_ranking_event_01): 'A certificate from Pur Lilie...'; the item name drops 'Pur'"
+   },
+   {
+    "en": "Lilie Award",
+    "source": "worldflipper.wiki.gg",
+    "url": "https://worldflipper.wiki.gg/wiki/Lilie_Award",
+    "note": "official name of the base award"
+   }
+  ],
+  "proposed": "Obsidian Lilie Award",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1; shop/event_item_shop",
+  "note": "augment material (r5)"
+ },
+ {
+  "kind": "term",
+  "id": "equipment_enhancement_shop_category/4",
+  "ja": "プ・リリエの褒章装備強化",
+  "candidates": [
+   {
+    "en": "Augment Lilie Award Armament",
+    "source": "EN client master data",
+    "url": "master:/string/ui_string#help_label_equipment_enhancement_steam_robot_weapon",
+    "note": "機兵装備強化 = 'Augment Steambot Armament', 粛清装備強化 = 'Augment Purge Armament'"
+   }
+  ],
+  "proposed": "Augment Lilie Award Armament",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "equipment_enhancement/equipment_enhancement_shop_category col 3"
+ },
+ {
+  "kind": "term",
+  "id": "help_label_equipment_enhancement_score_attack_event",
+  "ja": "褒章装備強化",
+  "candidates": [
+   {
+    "en": "Augment Award Armament",
+    "source": "EN client master data",
+    "url": "",
+    "note": "same pattern"
+   }
+  ],
+  "proposed": "Augment Award Armament",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "string/ui_string"
+ },
+ {
+  "kind": "term",
+  "id": "",
+  "ja": "「プ・リリエの褒章装備」",
+  "candidates": [
+   {
+    "en": "Lilie Award Armaments",
+    "source": "best-effort",
+    "url": "",
+    "note": "装備 = 'Armament' throughout EN"
+   }
+  ],
+  "proposed": "Lilie Award Armaments",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "score attack tutorial image (I18N-7)"
+ },
+ {
+  "kind": "item",
+  "id": "40501",
+  "ja": "無限の金貨",
+  "candidates": [
+   {
+    "en": "Gold Infinity Denarius",
+    "source": "best-effort",
+    "url": "",
+    "note": "boss-coin pattern '<metal> <name> Denarius' with 無限 from the event name"
+   },
+   {
+    "en": "Gold Exhibition Denarius",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Gold Infinity Denarius",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "40502",
+  "ja": "無限の紫貨",
+  "candidates": [
+   {
+    "en": "Lilac Infinity Denarius",
+    "source": "best-effort",
+    "url": "",
+    "note": "紫貨 = lilac coin"
+   }
+  ],
+  "proposed": "Lilac Infinity Denarius",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1"
+ },
+ {
+  "kind": "item",
+  "id": "999009",
+  "ja": "【ギフト】キャラ交換チケット",
+  "candidates": [
+   {
+    "en": "[Gift] Scouting Ticket",
+    "source": "EN client master data",
+    "url": "master:/item/item#999002",
+    "note": "キャラ交換チケット = 'Scouting Ticket' (special_exchange_ticket); EN writes tags in square brackets ('[Until 26 Sep]Yasakani-no-Magatama')"
+   }
+  ],
+  "proposed": "[Gift] Scouting Ticket",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "item/item col 1; campaign/special_exchange/special_exchange_campaign col 12"
+ },
+ {
+  "kind": "event",
+  "id": "special_exchange_campaign/13-17",
+  "ja": "キャラ交換チケットギフトCP",
+  "candidates": [
+   {
+    "en": "Scouting Ticket Gift Promo",
+    "source": "EN client master data",
+    "url": "master:/campaign/special_exchange/special_exchange_campaign#12",
+    "note": "'Dream Armament Exchange Ticket Gift Promo'"
+   }
+  ],
+  "proposed": "Scouting Ticket Gift Promo",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "campaign/special_exchange/special_exchange_campaign col 1"
+ },
+ {
+  "kind": "event",
+  "id": "special_exchange_campaign/7",
+  "ja": "スペシャルキャラ交換ガチャセットキャンペーン5（2021_9）",
+  "candidates": [
+   {
+    "en": "Dream Unit Scouting Season 5 (2021_9)",
+    "source": "EN client master data",
+    "url": "master:/campaign/special_exchange/special_exchange_campaign#6",
+    "note": "numbered series ('Dream Unit Scouting Season 4 (2021_5)', '... 7 (2022_5)')"
+   }
+  ],
+  "proposed": "Dream Unit Scouting Season 5 (2021_9)",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "campaign/special_exchange/special_exchange_campaign col 1"
+ },
+ {
+  "kind": "event",
+  "id": "special_exchange_campaign/8",
+  "ja": "スペシャルキャラ交換ガチャセットキャンペーン6（2021_11）",
+  "candidates": [
+   {
+    "en": "Dream Unit Scouting Season 6 (2021_11)",
+    "source": "EN client master data",
+    "url": "master:/campaign/special_exchange/special_exchange_campaign#6",
+    "note": "numbered series ('Dream Unit Scouting Season 4 (2021_5)', '... 7 (2022_5)')"
+   }
+  ],
+  "proposed": "Dream Unit Scouting Season 6 (2021_11)",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "campaign/special_exchange/special_exchange_campaign col 1"
+ },
+ {
+  "kind": "event",
+  "id": "gacha_campaign/20",
+  "ja": "3.5周年アニバーサリー記念 1日1回10連ガチャ無料キャンペーン",
+  "candidates": [
+   {
+    "en": "3.5 Year Flipperversary Free Daily 10-Pulls Promo",
+    "source": "EN client master data",
+    "url": "master:/gacha/gacha_campaign#16",
+    "note": "'2.5 Year Flipperversary Free Daily 10-Pulls Promo'"
+   }
+  ],
+  "proposed": "3.5 Year Flipperversary Free Daily 10-Pulls Promo",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "gacha/gacha_campaign col 1"
+ },
+ {
+  "kind": "event",
+  "id": "gacha_campaign/5",
+  "ja": "ゴールデンウィーク記念！1日1回ガチャ無料キャンペーン",
+  "candidates": [
+   {
+    "en": "Spring Holiday Celebration! Free Daily 1-Pull Promo",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN never says 'Golden Week': login bonus gw22 is 'Winter Holiday Login Perks', and spring/new-year events were renamed by season"
+   },
+   {
+    "en": "Golden Week Celebration! Free Daily 1-Pull Promo",
+    "source": "best-effort",
+    "url": "",
+    "note": "literal; 'Golden Week' is official EN wording (login bonus gw21 'Golden Week Login Perks')"
+   }
+  ],
+  "proposed": "Golden Week Celebration! Free Daily 1-Pull Promo",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "gacha/gacha_campaign col 1",
+  "note": "changed from the approved 'Spring Holiday' wording on 2026-10-30 in the I18N-4 review: the EN data has the official 'Golden Week Login Perks' (gw21), and official English wins (kept the same wording for the gacha campaign of that Golden Week)"
+ },
+ {
+  "kind": "event",
+  "id": "login_bonus_gw",
+  "ja": "ゴールデンウィークログインボーナス",
+  "candidates": [
+   {
+    "en": "Golden Week Login Perks",
+    "source": "EN client master data",
+    "url": "master:/bonus/login_bonus#gw21",
+    "note": "official name of the 2021 Golden Week bonus (gw22, whose background this bonus reuses, was 'Winter Holiday Login Perks')"
+   },
+   {
+    "en": "Spring Holiday Login Perks",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN login bonuses are '... Login Perks'"
+   },
+   {
+    "en": "Winter Holiday Login Perks",
+    "source": "EN client master data",
+    "url": "master:/bonus/login_bonus#gw22",
+    "note": "official name of the 2022 Golden Week bonus (season flipped)"
+   }
+  ],
+  "proposed": "Golden Week Login Perks",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "bonus/login_bonus col 3",
+  "note": "changed from the approved 'Spring Holiday' wording on 2026-10-30 in the I18N-4 review: the EN data has the official 'Golden Week Login Perks' (gw21), and official English wins"
+ },
+ {
+  "kind": "item",
+  "id": "300120,301132",
+  "ja": "★5星鉄鋼セット",
+  "candidates": [
+   {
+    "en": "5★ Starsteel Ingot Set",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "星鉄鋼 = 'Starsteel Ingot'; EN writes '3★ Astral Gem'"
+   }
+  ],
+  "proposed": "5★ Starsteel Ingot Set",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "shop/general_shop col 1"
+ },
+ {
+  "kind": "item",
+  "id": "300127,301139",
+  "ja": "10回ガチャチケットセット",
+  "candidates": [
+   {
+    "en": "10-Pull Summoning Ticket Set",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "'10-Pull Summoning Ticket'"
+   }
+  ],
+  "proposed": "10-Pull Summoning Ticket Set",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "shop/general_shop col 1"
+ },
+ {
+  "kind": "item",
+  "id": "300129,301141",
+  "ja": "スタミナ回復薬(大)セット",
+  "candidates": [
+   {
+    "en": "Staminade Flask Set",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "スタミナ回復薬(大) = 'Staminade Flask' (stamina_potion), (小) = 'Staminade Swig'; check the item ids in the set before shipping"
+   }
+  ],
+  "proposed": "Staminade Flask Set",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "shop/general_shop col 1"
+ },
+ {
+  "kind": "item",
+  "id": "300130,301142",
+  "ja": "スタミナ回復薬(小)セット",
+  "candidates": [
+   {
+    "en": "Staminade Swig Set",
+    "source": "EN client master data",
+    "url": "master:/item/item",
+    "note": "see above"
+   }
+  ],
+  "proposed": "Staminade Swig Set",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "shop/general_shop col 1"
+ },
+ {
+  "kind": "title",
+  "id": "1131134",
+  "ja": "嗜欲のボディデザイナー",
+  "candidates": [
+   {
+    "en": "Body Designer of Desire",
+    "source": "best-effort",
+    "url": "",
+    "note": "Kashivarus's leader skill; cf. 'Cosmic Idol Power', 'The House of Swes'"
+   }
+  ],
+  "proposed": "Body Designer of Desire",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2 (= character/character col 18, the leader skill name)",
+  "note": "2nd Mana Board title; same text as the unit's leader skill"
+ },
+ {
+  "kind": "title",
+  "id": "1161165",
+  "ja": "人でなしの導き",
+  "candidates": [
+   {
+    "en": "Guidance of the Inhuman",
+    "source": "best-effort",
+    "url": "",
+    "note": "Tanakiela's leader skill: she 'can't understand human hearts'"
+   }
+  ],
+  "proposed": "Guidance of the Inhuman",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2 (= character/character col 18, the leader skill name)",
+  "note": "2nd Mana Board title; same text as the unit's leader skill"
+ },
+ {
+  "kind": "title",
+  "id": "1211062",
+  "ja": "お化けなんて怖くないッ！",
+  "candidates": [
+   {
+    "en": "I'm Not Scared of Ghosts!",
+    "source": "best-effort",
+    "url": "",
+    "note": "Chenxi's leader skill; EN keeps exclamations ('I Quit!')"
+   }
+  ],
+  "proposed": "I'm Not Scared of Ghosts!",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2 (= character/character col 18, the leader skill name)",
+  "note": "2nd Mana Board title; same text as the unit's leader skill"
+ },
+ {
+  "kind": "title",
+  "id": "1111069",
+  "ja": "世界を大いに盛り上げる力",
+  "candidates": [
+   {
+    "en": "Power to Liven Up the World",
+    "source": "best-effort",
+    "url": "",
+    "note": "Haruhi collab (Haruhi Suzumiya); the collab units are not in the EN data, so these can't be earned"
+   }
+  ],
+  "proposed": "Power to Liven Up the World",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "1121057",
+  "ja": "万能の情報操作",
+  "candidates": [
+   {
+    "en": "Almighty Data Manipulation",
+    "source": "best-effort",
+    "url": "",
+    "note": "Haruhi collab (Yuki Nagato); the collab units are not in the EN data, so these can't be earned"
+   }
+  ],
+  "proposed": "Almighty Data Manipulation",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "1151057",
+  "ja": "部室限定のエンジェル",
+  "candidates": [
+   {
+    "en": "Clubroom-Exclusive Angel",
+    "source": "best-effort",
+    "url": "",
+    "note": "Haruhi collab (Mikuru Asahina); the collab units are not in the EN data, so these can't be earned"
+   }
+  ],
+  "proposed": "Clubroom-Exclusive Angel",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "1261053",
+  "ja": "イエスマンの美しき旋律",
+  "candidates": [
+   {
+    "en": "The Yes-Man's Beautiful Melody",
+    "source": "best-effort",
+    "url": "",
+    "note": "Haruhi collab (Itsuki Koizumi); the collab units are not in the EN data, so these can't be earned"
+   }
+  ],
+  "proposed": "The Yes-Man's Beautiful Melody",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "title",
+  "id": "1213007",
+  "ja": "魅惑？のジェネラルパーソン",
+  "candidates": [
+   {
+    "en": "Charming? Ordinary Person",
+    "source": "best-effort",
+    "url": "",
+    "note": "Haruhi collab (Kyon); the collab units are not in the EN data, so these can't be earned"
+   }
+  ],
+  "proposed": "Charming? Ordinary Person",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "degree/degree col 2"
+ },
+ {
+  "kind": "term",
+  "id": "2000081",
+  "ja": "イグノーツ",
+  "candidates": [
+   {
+    "en": "Ignatz",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#swallow_bro",
+    "note": ""
+   }
+  ],
+  "proposed": "Ignatz",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "kapera",
+  "ja": "カペラ",
+  "candidates": [
+   {
+    "en": "Capella",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#kapera",
+    "note": ""
+   }
+  ],
+  "proposed": "Capella",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "heavenly_cattle",
+  "ja": "カカウ",
+  "candidates": [
+   {
+    "en": "Cacow",
+    "source": "EN client master data",
+    "url": "master:/story/story_character#heavenly_cattle",
+    "note": ""
+   }
+  ],
+  "proposed": "Cacow",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "blade_dancer_oldbro",
+  "ja": "ジグラート",
+  "candidates": [
+   {
+    "en": "Ziggurat",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#keyword_ziggurat",
+    "note": ""
+   }
+  ],
+  "proposed": "Ziggurat",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "alk_p_encyclopedia",
+  "ja": "アルクP",
+  "candidates": [
+   {
+    "en": "Producer Alk",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia_tag#tag_alk_p",
+    "note": ""
+   }
+  ],
+  "proposed": "Producer Alk",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "magatama_spirit_name",
+  "ja": "八坂瓊曲玉",
+  "candidates": [
+   {
+    "en": "Yasakani-no-Magatama",
+    "source": "EN client master data",
+    "url": "master:/item/equipment#5090015",
+    "note": ""
+   }
+  ],
+  "proposed": "Yasakani-no-Magatama",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000216",
+  "ja": "エイトラン",
+  "candidates": [
+   {
+    "en": "Oxtan",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000216",
+    "note": "Marden's family, the eighth Farland house: エイトラン家 = 'House of Oxtan'"
+   }
+  ],
+  "proposed": "Oxtan",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000656",
+  "ja": "セイヴンの別荘",
+  "candidates": [
+   {
+    "en": "House of Sextan Villa",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000215",
+    "note": "セイヴン家 = 'House of Sextan'"
+   }
+  ],
+  "proposed": "House of Sextan Villa",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000496",
+  "ja": "特別技術対応課シブヤ支部",
+  "candidates": [
+   {
+    "en": "Special Tech Defense Force, Shibuya Branch",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000366",
+    "note": "特別技術対応課 = 'Special Tech Defense force' (EN keeps that casing)"
+   }
+  ],
+  "proposed": "Special Tech Defense Force, Shibuya Branch",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000629",
+  "ja": "ヒーロー事業部・開発室",
+  "candidates": [
+   {
+    "en": "Hero Development Division R&D Lab",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000352",
+    "note": "ヒーロー事業部 = 'Hero Development Division'"
+   }
+  ],
+  "proposed": "Hero Development Division R&D Lab",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000639",
+  "ja": "大和の都、その後",
+  "candidates": [
+   {
+    "en": "Yamato: Aftermath",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia_tag#tag_shibuya_after_1",
+    "note": "EN names 'その後' tags '<place>: Aftermath'"
+   }
+  ],
+  "proposed": "Yamato: Aftermath",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000616",
+  "ja": "コズミックアイドルパワー",
+  "candidates": [
+   {
+    "en": "Cosmic Idol Power",
+    "source": "EN client master data",
+    "url": "master:/degree/degree#1131026",
+    "note": "Beaucy's leader skill こずみっくぐらびあぱわー is 'Cosmic Idol Power' in EN"
+   }
+  ],
+  "proposed": "Cosmic Idol Power",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "tag_cosmicidolpower02",
+  "ja": "コズミックグラビアパワー",
+  "candidates": [
+   {
+    "en": "Cosmic Gravure Power",
+    "source": "best-effort",
+    "url": "",
+    "note": "EN merged gravure into 'Idol'; this second tag needs a distinct name"
+   }
+  ],
+  "proposed": "Cosmic Gravure Power",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000653",
+  "ja": "ロスト",
+  "candidates": [
+   {
+    "en": "Lost",
+    "source": "best-effort",
+    "url": "",
+    "note": "Marden's companion, a Devourer of Stars familiar (星喰い = 'Devourer of Stars')"
+   }
+  ],
+  "proposed": "Lost",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000609",
+  "ja": "幽鬼退治屋",
+  "candidates": [
+   {
+    "en": "Ghost Hunter",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Ghost Hunter",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000622",
+  "ja": "墓守",
+  "candidates": [
+   {
+    "en": "Gravekeeper",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Gravekeeper",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000635",
+  "ja": "天羽流",
+  "candidates": [
+   {
+    "en": "Amo Style",
+    "source": "best-effort",
+    "url": "master:/encyclopedia/encyclopedia_tag#tag_one_sword",
+    "note": "Nagiri's sword school; EN style names: 'Single Strike Style', 'Blade of Tris Style'"
+   }
+  ],
+  "proposed": "Amo Style",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000655",
+  "ja": "ツァンリー",
+  "candidates": [
+   {
+    "en": "Tsangli",
+    "source": "best-effort",
+    "url": "",
+    "note": "Lanmei's syndicate; Chinese-styled (pinyin of a 蒼/藏 + 李-like name), unsure"
+   }
+  ],
+  "proposed": "Tsangli",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000630",
+  "ja": "ルヴェトラ",
+  "candidates": [
+   {
+    "en": "Luvetra",
+    "source": "best-effort",
+    "url": "",
+    "note": "Invetra's brother (hero_mechanic_bro)"
+   }
+  ],
+  "proposed": "Luvetra",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000607",
+  "ja": "タナキエラの教え",
+  "candidates": [
+   {
+    "en": "Tanakiela's Teachings",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Tanakiela's Teachings",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000615",
+  "ja": "春咲サチカ",
+  "candidates": [
+   {
+    "en": "Sachika Harusaki",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Sachika Harusaki",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000623",
+  "ja": "氷桜女学院",
+  "candidates": [
+   {
+    "en": "Hizakura Girls' Academy",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Hizakura Girls' Academy",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000497",
+  "ja": "雪花結界",
+  "candidates": [
+   {
+    "en": "Snowflake Barrier",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Snowflake Barrier",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000608",
+  "ja": "ヴァラ・パストマ",
+  "candidates": [
+   {
+    "en": "Vala Pastma",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Vala Pastma",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000611",
+  "ja": "ラビラビ",
+  "candidates": [
+   {
+    "en": "Rabirabi",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Rabirabi",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000612",
+  "ja": "ボーパル・サーカス",
+  "candidates": [
+   {
+    "en": "Vorpal Circus",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Vorpal Circus",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000617",
+  "ja": "アイドル・リスト",
+  "candidates": [
+   {
+    "en": "Idol List",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Idol List",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000618",
+  "ja": "カドルスイート",
+  "candidates": [
+   {
+    "en": "Cuddle Sweet",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Cuddle Sweet",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000619",
+  "ja": "海鮮魔物チョコ",
+  "candidates": [
+   {
+    "en": "Seafood Monster Chocolate",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Seafood Monster Chocolate",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000620",
+  "ja": "恋の予行練習",
+  "candidates": [
+   {
+    "en": "Love Rehearsal",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Love Rehearsal",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000621",
+  "ja": "プレーツェン",
+  "candidates": [
+   {
+    "en": "Pretzen",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Pretzen",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000627",
+  "ja": "ユーニ",
+  "candidates": [
+   {
+    "en": "Yuni",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Yuni",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000628",
+  "ja": "ゲルダ",
+  "candidates": [
+   {
+    "en": "Gerda",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Gerda",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000633",
+  "ja": "ロスレンド",
+  "candidates": [
+   {
+    "en": "Losrend",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Losrend",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000634",
+  "ja": "龍王",
+  "candidates": [
+   {
+    "en": "Dragon King",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Dragon King",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000636",
+  "ja": "牙の福祉団",
+  "candidates": [
+   {
+    "en": "Fang Welfare Society",
+    "source": "best-effort",
+    "url": "master:/encyclopedia/encyclopedia_tag#tag_fang_mercenary",
+    "note": "cf. 'Company of the Fang'"
+   }
+  ],
+  "proposed": "Fang Welfare Society",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000637",
+  "ja": "海賊A",
+  "candidates": [
+   {
+    "en": "Pirate A",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Pirate A",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000638",
+  "ja": "海賊B",
+  "candidates": [
+   {
+    "en": "Pirate B",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Pirate B",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000652",
+  "ja": "導きの手",
+  "candidates": [
+   {
+    "en": "The Guiding Hand",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "The Guiding Hand",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "5000657",
+  "ja": "どよもす",
+  "candidates": [
+   {
+    "en": "Doyomosu",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Doyomosu",
+  "basis": "best-effort",
+  "confidence": "low",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "tag_nuxe",
+  "ja": "ニュクス",
+  "candidates": [
+   {
+    "en": "Nick",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000498/1",
+    "note": "official name of the same character (keyword_nuxe, the boy Nimbus rescues)"
+   },
+   {
+    "en": "Nyx",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Nick",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag",
+  "note": "changed from the approved Nyx on 2026-10-30 in the I18N-4 review: the EN data already names him Nick, and official English wins"
+ },
+ {
+  "kind": "term",
+  "id": "tag_ema",
+  "ja": "エマ",
+  "candidates": [
+   {
+    "en": "Emma",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Emma",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "character_tag/Prince",
+  "ja": "王子様",
+  "candidates": [
+   {
+    "en": "Prince",
+    "source": "EN client master data",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Prince",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "character_tag/Hero",
+  "ja": "勇者",
+  "candidates": [
+   {
+    "en": "Champion",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia#5000006",
+    "note": "勇者 is 'Champion' throughout EN (keyword_hero)"
+   }
+  ],
+  "proposed": "Champion",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_sharplook_dog_soldier_name",
+  "ja": "パウル",
+  "candidates": [
+   {
+    "en": "Paul",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Paul",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_graceful_ladyship_name",
+  "ja": "グレース",
+  "candidates": [
+   {
+    "en": "Grace",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Grace",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_friend_fellow",
+  "ja": "ハルト",
+  "candidates": [
+   {
+    "en": "Haruto",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Haruto",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_female_salesperson_name",
+  "ja": "リン",
+  "candidates": [
+   {
+    "en": "Lin",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Lin",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_downtown_girl_name",
+  "ja": "おせい",
+  "candidates": [
+   {
+    "en": "Osei",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Osei",
+  "basis": "best-effort",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_sheep_girl_fathshop",
+  "ja": "カドル",
+  "candidates": [
+   {
+    "en": "Cuddle",
+    "source": "best-effort",
+    "url": "",
+    "note": ""
+   }
+  ],
+  "proposed": "Cuddle",
+  "basis": "best-effort",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "mob_defaulter",
+  "ja": "デフォルター",
+  "candidates": [
+   {
+    "en": "Defaulter",
+    "source": "EN client master data",
+    "url": "master:/encyclopedia/encyclopedia_tag#tag_defaulter",
+    "note": ""
+   }
+  ],
+  "proposed": "Defaulter",
+  "basis": "official",
+  "confidence": "high",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ },
+ {
+  "kind": "term",
+  "id": "fake_mighty_striker",
+  "ja": "偽拳王",
+  "candidates": [
+   {
+    "en": "Fake King of the Ring",
+    "source": "EN client master data",
+    "url": "master:/character/character_text#131005",
+    "note": "拳王 = Barrek, 'King of the Ring'"
+   }
+  ],
+  "proposed": "Fake King of the Ring",
+  "basis": "official",
+  "confidence": "medium",
+  "status": "approved",
+  "approved": "2026-10-30",
+  "where": "encyclopedia / encyclopedia_tag / story_character / character_tag"
+ }
+]

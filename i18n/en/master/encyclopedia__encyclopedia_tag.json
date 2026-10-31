@@ -1,0 +1,66 @@
+{
+  "tag_cosmicidolpower": {
+    "0": {
+      "srcHash": "sha256:7a77f10eaba1c75194565a723b5979af9171d5eee2a6d20d08b68b0d632984cf",
+      "text": "Cosmic Idol Power",
+      "status": "machine"
+    }
+  },
+  "tag_cosmicidolpower02": {
+    "0": {
+      "srcHash": "sha256:5cd3a77ef77b803a00cfe85242bc08a542360bd4b9bb1e557f72745765102586",
+      "text": "Cosmic Gravure Power",
+      "status": "machine"
+    }
+  },
+  "tag_ema": {
+    "0": {
+      "srcHash": "sha256:f25bffd67aab9f363a9b65b22b05abfcbdd6448801aae34b08017adadd4301a5",
+      "text": "Emma",
+      "status": "machine"
+    }
+  },
+  "tag_girlsschool": {
+    "0": {
+      "srcHash": "sha256:d952d873e83e953e9389fc7f1c66b909dab50acc97c61a46f5d39a5241d43b49",
+      "text": "Hizakura Girls' Academy",
+      "status": "machine"
+    }
+  },
+  "tag_guiding_hand": {
+    "0": {
+      "srcHash": "sha256:0a2b13e044af57b041c139cd7b54716a1342edfc38b534e6e50b00ebac6b6a38",
+      "text": "The Guiding Hand",
+      "status": "machine"
+    }
+  },
+  "tag_juni": {
+    "0": {
+      "srcHash": "sha256:808fb0b9ac97546547927234ca2b827df00fd3267b042df3a7e5d68b04d6a564",
+      "text": "Yuni",
+      "status": "machine"
+    }
+  },
+  "tag_nuxe": {
+    "0": {
+      "srcHash": "sha256:5c52e5ab9a04453e562c4c2ef9efade004c8b80044cb85a59be19d432748d10f",
+      "text": "Nick",
+      "status": "machine",
+      "note": "Official EN name of the linked encyclopedia entry 5000498 (keyword_nuxe); replaces the best-effort Nyx in the names file."
+    }
+  },
+  "tag_snowflakes": {
+    "0": {
+      "srcHash": "sha256:d41dd7ec3694e80c979268f6ef783a733de20e2e1c362809b8924ad7b414f8e1",
+      "text": "Snowflake Barrier",
+      "status": "machine"
+    }
+  },
+  "tag_yamato_after": {
+    "0": {
+      "srcHash": "sha256:7d59e4cb002fb15414da80983b5c4afffc62e9f766eea2debd81db3bff13aae7",
+      "text": "Yamato: Aftermath",
+      "status": "machine"
+    }
+  }
+}

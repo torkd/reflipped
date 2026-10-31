@@ -1,0 +1,450 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:4b84f072a0b95c702a05946fb176b8aae064b6b350b674b16b967df5dba6990a",
+      "text": "Haah... bandits in town, you say??\nHighwaymen, thieves...?\nBut they don't steal money...?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:9c56caeca998c96b04c8a3faeb0fa50c4adaf8fd8e236502e2b6518f9080a635",
+      "text": "Right. It's strange. And they're\npretty troublesome, too. They've\nalready beaten several people.",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:775597051a24b9cd4a5de0579267016c90be4c021a55e41b6fde377429590fdb",
+      "text": "Beaten them... Did some former\nadventurers turn bandit?",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:86e4211534e0dfbd04e2bdcb39a30eaf3a9157ced1b2aca43876e812eff0f1f5",
+      "text": "Hmm, it doesn't seem that way, but\nanyway, they're supposedly odd folks.",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:d5fe44ed640267e7856432da440bc7bc7aa611d4ff4cf3b276e79265a54fde84",
+      "text": "...They're a little bit like\nMelmyna...",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:0f9442963108a33151b0ad274a40c6efd573e1140e3d23ae6637788e66403c6d",
+      "text": "Ah, that is odd...",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:7d0481de1dcfb14f6b010416165bebc3ff90d7ed0f705a6cbc9c5e5347baaffe",
+      "text": "I-I mean in how they fight...!? I\ncertainly don't know anything about\ntheir tastes!",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:5151b524343977566074fae6b2e8ad06e0eaaca2e04bdb0e5bbfbeffe38f1db5",
+      "text": "T-that's right! Bandits, I'd never\ndo that kind of thing! I think\nit's bad...! I'll stab them!!",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:82f62672f6b3c870b3c278adefa0c8f0306c6b1c7931e71ddb6ca3b2e109e74e",
+      "text": "What an interesting conversation~",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:af3600ca3f3f08560db1ec1884a440df4c30b5c3ff401e4bb771b166cb76d9e1",
+      "text": "I heard everything! Let me join this\nbandit hunt!",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:2e4a56b29ca283b90a0c9e6820fa13a909a2b05b784341305bf1f69908c72043",
+      "text": "Ah, sorry! On second thought,\nI'll sit this one out—",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:5ff57c840b88432b6a5efa49f5cf1bd255c4016c7fe0e94bec8e75560c7778cb",
+      "text": "Hey, hey, what are you saying? It's a\nrare chance for fun. Let's get wild\ntogether...",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:0f0a7223a5e4a09a33a4c05439da0fd78075d49a8c33a931ebb9ab75786a669d",
+      "text": "Eek...",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:2347846d06fa0a28ddf3747cb32d2289d7457347208b6d07c9bbd571f679d086",
+      "text": "Is she someone who'd die if she\nweren't vulgar from head to toe...?",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:d180b52d705bf64f20fa0998e05f24c5370cc8d2cfed0d102d9c5a2d538043d3",
+      "text": "And while we're at it, I'll check\nyour training results! Come on, let's\ngo! Time for some fun good deeds!",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:f69e5a3c923f6d64644609506340e1683d13d7499ba2971c6c5f7fb2c9eafbac",
+      "text": "This place looks fun~ There seem\nto be plenty of promising types.",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:b7a24691866f4a5d2c1859656d86be87ecbba25adddbd7d12087b1e72c0fadb4",
+      "text": "So what do we do from here?\nYou've got a plan, right??",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:6a26f787dea08419d85b2391ae3cc6e134e0db731eaec46dc3a51943a284d06d",
+      "text": "The target's a thug, right? Then\nwe've got the perfect bait.",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:794cdf2290215d8e4199071d87b160093c943d710dc7cf46fbcb42ff209b2ac7",
+      "text": "M-me!?",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:43d92a203f4609645cab80300f70ae532befe6e936b444ea349328656891d6eb",
+      "text": "I can't, I can't! Besides, I've\nnever even been to such a glittering\nplace...!!",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:bd7942bd36b7042d2cff6a8965f0100174720738bf312b52a0d29c4957b077cb",
+      "text": "Melmyna... have you forgotten why\nI had you wear that outfit?",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:df7ed590984f241c7a850ff9905c7b438094e961f4bebcba2c3c69a8addd176f",
+      "text": "It's all right, relax. Even in my\neyes, you look utterly charming,\nand oh so tempting.",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:294cb5b6604b9b1f4fd116157ccdff37667873b9c45e65878d932991daa4dd13",
+      "text": "The men of this town definitely won't\nleave you alone. We should reel in a\nwonderful training partner...",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:c6f7ce014b92112b6f82e7df7dcb1aee260476044c66961344eab9c9258df6dd",
+      "text": "I-I see... If it's for training,\nthen certainly...",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:f6d860e8cc3858afb06ead216e683d9eab50a47dd0e9ba9784034a01f0bbff46",
+      "text": "That works for you...? Wait, I\ncan't believe anyone would\nfall for something like that—",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:e86f1882ef1ea7bcf4fcf820eb2d6f615211c6373550c7f98eb61263e2b647aa",
+      "text": "Hey, you've got a good-looking girl\nthere.",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:c46e42fe8791dd9438a1d96646a5b421d404223bcd89c97ba521faf2dc433bcc",
+      "text": "They exist...",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:ff5cd477b6594a6af45b022fec23336c2b248d75cdd9b23d801b4673bd5a85d2",
+      "text": "Come along with us for a bit.\nDon't say no... Whether you're\nadventurers or not, we—",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:50161b00239996bf202e13a3328e06a82f456415db7649067ce9812e90cdc047",
+      "text": "Oh my, they really bit.\nNice~ Just my type.",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:c2dc62f331ef899a801bcaedf49f8efaac67b7407b06dec3621ce7d1341ea09a",
+      "text": "A-ah...! That voice, that face...!",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:b1f676f41b90936e18d6604bc957aa168aae52f317c1de814bc79a5b3cc03f7f",
+      "text": "...M-Master!?!?",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:3950c702d6b0e147e03214ca518fc77559af442865b56e17670150f60f10dba2",
+      "text": "...Tanakiela. Please explain...",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:9e7e073a5dc9186455563d3bd421a327eab966e2b81a93adf97c232c862f91ee",
+      "text": "Hm? ...Ah! You two! You're... um...\nit's on the tip of my tongue!",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:e65fb7b2a271ea373a67a999a3c3a7308cd8c67f2df7b922f4658c0835f560da",
+      "text": "We're your pupils! Until\ntwo months ago you used us\nlike your hands and feet!",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:6531f99dccef9c0bf4a38a5e38732ddb70e7349221da6ad4ebb7b38f161aabc7",
+      "text": "Oh right, how nostalgic! Hey, how've\nyou been? Enjoying life??",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:428b2453e9a51dff1d81aa59c30708b22ed2370ff30041ec5dee5617f5fd1d58",
+      "text": "Enjoying it...?",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:181205ac39ac8455cfabff711f7619f9df9907b24557f2d85a32e8ffa9ae09c9",
+      "text": "D-don't screw with us...!!\nYou wrecked our lives...!",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:cd5090d22081668b0b97c70fd1d9f7173a438abb21adba43f4386394244ea262",
+      "text": "I'll never forgive you...!! Prepare\nyourself, Tanakiela—!! I, I...!!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:f5f2e48335634b9ff9a5f5e0932636f2c9a56bd13779bfdac4e6ed0fca77ba34",
+      "text": "I used to be normal...!! Now I can't\nfeel alive unless a cute girl beats\nme up...!",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:8a2ee70a74e0d882a9b3ee914088e830ac6008ddca9be68181c5e78e523d0efa",
+      "text": "—Huh?",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:5529e4d92d26b17866ee0e1181bf97dfff2ff871140251532b79ce2ec25b6301",
+      "text": "I-I can only... when a strong woman\nforces me down...! But I can't find\nanyone stronger than me...!",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:0a18d2b24c10ca5aa9fa9392cb4a85a38d65857dc0cebfe0d6631b404182c87d",
+      "text": "But that feels the best to you,\ndoesn't it?",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:689dbf35a29de4df1705020ba4dc618350e00d6ff91d5e8ff78dda8baa5204ce",
+      "text": "Be honest. You're strong thanks to\nyour desires, right? You're dying\nto get cut down by me, aren't you?",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:8c67362dcb167a943e3ba645c7d6e7d6dcf6a31388ab748d6465ed9b6fa05567",
+      "text": "—You're really adorable~",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:5009b81905222bfdbe2c898dafb453e892532843f06f35c5d325bdfcbc3bfdd8",
+      "text": "Shut up, shut up, shut up! Prepare\nyourself, Master—!",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:e677710e2815ddb5a2e450b76258d921be2d7217d254090be55a0270c09e36d8",
+      "text": "M-my blow... with their bodies...!?!?",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:85c6f72a783360ce34c480279e58cec809933cd435e5ab5d53d9a7ac26edf324",
+      "text": "Ghh... This, THIS is it... it's not\nme, it's... !!! No!! No no noooo!!",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:8443900890eb2a198764d0705ed052cb251bb71355d95d43204d623a4d2783e0",
+      "text": "See? You're enjoying it after all.\nAdmit it already.",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:d653a1861a3908f7ac108df90a8b3b841a76b313c2be8c94774827833697d296",
+      "text": "Then I'll gently,\nthoroughly bully you.",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:6d0e290f839338d14ad12a3c5b1c06ce798f69b3eca847b7330d949042ae120f",
+      "text": "Hey... what do we do about this...?",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:0a96e9bbfe4148a879a8edecd22edf5728d2a05ea842372ff2afafc8412b211c",
+      "text": "Dunno... Let her have her way...\nThis is exhausting...",
+      "status": "machine"
+    }
+  },
+  "202": {
+    "5": {
+      "srcHash": "sha256:f47b3045051bf30ba5c31c587ede69f734080bfe1cee8e0ec8d6b2f30a916b19",
+      "text": "So, even though you've never met, how\ndoes it feel to be bullied by your\nsenior apprentice??",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:5fb07ae63b56a0314ba98b1c20364c12e5b1953a32004f45563e0de3bd540d3e",
+      "text": "I... I will never... yield...",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:fd5f44c1aff76e3fcc16aaa2981331ebbf7634d159c1e0dddf2cdc50ce46aa7e",
+      "text": "...Oh. Done?\nThen I'll tie these guys up.",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:12d36511a03286d70d4a9135494ac0ced1096ffc85dfea0198df68a0053e42d5",
+      "text": "Hmm... They're slow to awaken...\nThe martial path really is harsh...",
+      "status": "machine"
+    }
+  },
+  "219": {
+    "5": {
+      "srcHash": "sha256:e8b9d53a264fff25c0333c2b1edfaf26a62bc59c358376eb102fdfb12cdc8c71",
+      "text": "Don't tell me... are there more of\nthese types?",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:0709391c2bc2656f068d135dcc6938d6725f28d01bc549ec7e5bd0aa60a9ab10",
+      "text": "Of course. When I find someone with\ntalent, I awaken them.",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:93029bf977f7a2ca8c81fe64677cf16d8859a3a6608fd3d99b5ee9b7cbb6e1c9",
+      "text": "Though no one has made it 'this far,'\nMelmyna included.",
+      "status": "machine"
+    }
+  },
+  "230": {
+    "5": {
+      "srcHash": "sha256:4cedbe4d7e8f94f9b93df327b553d828e7cfc0777e41a90106dbe1cae37e3ad7",
+      "text": "So, if you want to get stronger, tell\nme, okay?",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:690d0fad3c16a29e2dcafb6b982f1593f31546852bf20e3630c3dbe4eec75967",
+      "text": "What shape is the beast sleeping\ninside you? Could you reach 'this\nfar'? Ah, I'm looking forward to it~",
+      "status": "machine"
+    }
+  },
+  "238": {
+    "5": {
+      "srcHash": "sha256:189fda27f663c644b1f773ef108dc9d6e4eb9ace34457c6dc571f2b64a5dc88d",
+      "text": "...And you mean that as kindness...",
+      "status": "machine"
+    }
+  },
+  "243": {
+    "5": {
+      "srcHash": "sha256:0674c18701e132a45737bebfc22e881cea2f24b9563a41ce975288dc3891654a",
+      "text": "A hell of a nuisance.\nWhatever happens, you're\nthe last person I'd ask.",
+      "status": "machine"
+    }
+  },
+  "247": {
+    "5": {
+      "srcHash": "sha256:01060797e4db6215bc458f83aa64d70f8223289b8882350fefd5a3718ae93cc6",
+      "text": "How cold. Oh well.",
+      "status": "machine"
+    }
+  },
+  "251": {
+    "5": {
+      "srcHash": "sha256:c6616a26d22a415df6957280cc69c68cf26074119531097ac74cf6f6b948d9e0",
+      "text": "Playing together is fun, too~",
+      "status": "machine"
+    }
+  }
+}

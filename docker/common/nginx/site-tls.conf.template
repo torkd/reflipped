@@ -1,0 +1,46 @@
+# HTTPS site (TLS=letsencrypt|selfsigned|custom; see docker/README.md). Rendered to
+# /etc/nginx/conf.d/site-tls.conf by the nginx image's entrypoint (envsubst); only defined variables
+# (REFLIPPED_UPSTREAM, PUBLIC_HOST, TLS, HTTPS_REDIRECT_PORT) are substituted. scripts/edge-site.sh removes it when TLS is off.
+# Host ports 80 and 443 map to 8080 and 8443 here (the image runs unprivileged).
+
+# Plain HTTP only answers Let's Encrypt challenges and the health check; the rest redirects.
+server {
+    listen 8080;
+    listen [::]:8080;
+    server_name _;
+
+    location = /healthz {
+        access_log off;
+        default_type text/plain;
+        return 200 "ok\n";
+    }
+    location /.well-known/acme-challenge/ {
+        root /var/www/acme;
+    }
+    location / {
+        return 301 https://${PUBLIC_HOST}${HTTPS_REDIRECT_PORT}$request_uri;
+    }
+}
+
+server {
+    listen 8443 ssl;
+    listen [::]:8443 ssl;
+    http2 on;
+    server_name ${PUBLIC_HOST};
+
+    ssl_certificate     /etc/letsencrypt/live/${PUBLIC_HOST}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/${PUBLIC_HOST}/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
+    add_header Strict-Transport-Security "max-age=31536000" always;
+
+    # Game requests carry headers with underscores (device_lang, short_udid, res_ver, ...).
+    underscores_in_headers on;
+    # Admin save import goes through the proxy too.
+    client_max_body_size 50m;
+
+    # The flavour's locations: assets from disk and/or the API proxied to Reflipped.
+    include /etc/nginx/conf.d/locations/*.inc;
+}

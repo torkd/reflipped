@@ -1,0 +1,345 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:34d061e8b60e68bcd2e56d3bc4aca9e6629ea084eb9e55ecd5d8377d0f5d3a8e",
+      "text": "Geez, this is totally out of hand...!",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:d40bfcc297d474ea568b031e2eca47919f11df55cb24ad565757afa69764de6f",
+      "text": "Looks like you're in a pinch,\nkids!",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:1f5a615172f6c8f24f3b2e69dcce62fb3b41546bb24839d7074873d7b35c3db8",
+      "text": "Isn't that obvious?! Save the\njokes for later, will you?!",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:b8e3368e05b31c1fcbd32c017001b201449352802aa1df1d087ee636edc206bc",
+      "text": "So cold! And here I went to the\ntrouble of arranging a secret\nweapon to turn this around.",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:82b632165a24f581451b731aecaba23c1e9414cd4afa2e79a84329a43e283199",
+      "text": "—Nice to meet you, Hero.",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:bb4064b1c4a7085f8b69e16f554fa5377b973996534fb285a0a21470ef216785",
+      "text": "I'm Invetra, from the PBC Hero\nDevelopment Division, R&D. I'm\nhere as backup.",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:4c1a087578db547871940d45bd18a956f08e78387de2aa45c827c432412623b9",
+      "text": "N-nice to meet you...? Um, R&D?",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:ed57cb9615f087750a986deb9a7a37da03dc2d3e1381e1e073eb6b27f9f27b2f",
+      "text": "I develop Hero Gadgets. Like\nthis one.",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:1d92d794af34dcdc5a184215a7628b96041cfbcbd1cf7ed255a733251f83c27b",
+      "text": "The Optical Electromagnetic Blade,\nMurasame Mk. 3. In theory, its range\nis infinite. Perfect for you, right?",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:d6e73b0944f03b7df9f8a19e5f928a39107d0709d20281069a5e1ca5948e1fb8",
+      "text": "A b-beam sword...!!",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:47a1ccd0295af304c0ac0e6e1e39f3910e9a4fedb4919533e28bb019b865ebfe",
+      "text": "...It's good.\nIt's GOOD! I love it!\nInvetra!",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:536a1ccfcb6cd2acd2c85a35f3df272c23b40c55dc052c2e4fd0142ab33ae629",
+      "text": "Heh, I'm honored.\n...But, sorry.",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:4cebeb8297cf6368c84cf1cb6759d100c6a9cc504a76a7cb19c9c8fe9d8cfc6e",
+      "text": "At current max output, it\nexplodes! Hahaha!",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:52b739d91f49476706bc9d50a29b1ca3ebb41aeadd402243ec13db5e9b21b11f",
+      "text": "It's not funny!?",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:7f93b7da3d6297f2ceff2c7ce7c9e643b2a877e85b67b8639c5b4da354be0abb",
+      "text": "Yeah, it exploded, but I got great\ndata! Maybe a little more budget\nfor the frame, or, no—",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:d78d97c4fd4bedd645f99a280b17d1268032af0604908ac6395c47e22bab712d",
+      "text": "...So he's the same type as Renoir\nand the others?",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:529fad8633fc6c5d07d028acf5f0810686fc17a02cb5be779acf3bb910b08bde",
+      "text": "Well, they both make peaky stuff,\nbut in a way he's worse...",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:49356a57a2646ae9f8a0df57a70b7d93c114706cd96a2a288afdf057db899a50",
+      "text": "\"Worse\" is hurtful. Peakiness is\nromance. In other words: cool!\nRight?",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:bfc78eab38777eebdbcd5587a1a655ef0bc1dd7a2ea25da7075dd93ed1d5ef47",
+      "text": "Do you know Metal Maniac Paradigm?\nIt's a hero anime where an Organic\nsuits up in a bike exoskeleton.",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:1deabc017190ff1c2de9bb4d8e827649ca7b15435849ada6084722efbf4ef815",
+      "text": "The original is almost 20 years old,\nbut it still has die-hard fans. The\nreason is the gadget romance—",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:2ad7421a5a415e7ec16cb8dc5662a06c7f4510ba87a27dedadd22046b0fd9234",
+      "text": "Ugh... Fast and close...\nYou, uh, do what you love for a\nliving...?",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:8897b973d57a4d8588aa8466a3f1688768bba95cc271a7b476a417184c64c818",
+      "text": "Anyway. I believe romance is the\nmost important thing for a hero.\nAnd gadgets bring it to life.",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:faf3ecd1945ea62ec62ab927e15855aecf4a2ac6fadfda1ff4fe1a4f596e388a",
+      "text": "Take this, look! A shape-memory\nalloy armor that transforms for\neach use!",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:865c9115e9d641e18acbb1e376affd8d7d0dcfa9e4c90fb79106a90df42f7c3c",
+      "text": "It'd just get in the way of Miss\nNate's body specs, but this one suit\nworks on land, air, polluted zones!",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:4f409b4248e8b9948129c931d298a548791758acbe256fa6c57782e0456be025",
+      "text": "...That does sound\nconvenient...?",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:6fbb532bb12ad821f9a2bca8c25aa39576fb838461b7719e09418892437f5606",
+      "text": "You said transform...\nIs this—",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:9e5591f7c87e7ddc78efd85ccc6bba0a67bcc78dcbb2fd4e1e1ed5ee3cb92b4b",
+      "text": "Of course, each form uses a\nseparate cartridge.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:5306d9cef1f88eab3806f2618e95612807ab8ff6faa9465b9b87182028ce7a42",
+      "text": "Cartridges...!\nI see...! The kind with voice!",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:c18ddc5921882a7363fdd2afb9f1af752144a41543b2b4861c0ca9e9fedd660f",
+      "text": "In real life, wouldn't that be\na pain? If you lose one, you can't\ntransform.",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:9f2f798adad0ffbd415d1a058dde13541d839f58fe7fb68c8fefb5746f413868",
+      "text": "You don't get it. Separate\ncartridges make it easy to add new\nfunctions.",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:035d86e59216c256cd478a52b86006828ffb61581254df0fe88f0260b5fd8f8f",
+      "text": "—And best of all!\nIt's fun as a toy!!",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:fd2dd85d4cb999332fd764c12114038ef6a1dcf0dcc6b18b2e8fd1f6e585a6f9",
+      "text": "I get it...!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:8d87090208ac543ef53e4a1f7cc753c4d83c55fd2260d55f8a835c215a27ecdc",
+      "text": "Look at this, too! The Beat\nNunchaku: the more you hit to the\nrhythm, the stronger the attack!",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:033958cfe1145256d546d745f5464136c3fe4dbc830801d7881c139490eac830",
+      "text": "How does that work?!\nIs it a rhythm game?!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:03df71007ad0473b315133a74f1c620e3b536ac62013e32dfb9de6cc96e5aa31",
+      "text": "And this! The Strikeback Suit: a\nfinishing move that activates only\nwhen you're near death!",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:8fc4d002015072f9654c61287542682dc95671a098600a779d217523dde8da82",
+      "text": "Romance...!\nBut isn't that too inconvenient?\nYou'd die...?",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:0722d12e75c893c4833399542380ec31c269ca6f367f01089a1d732c3582fabf",
+      "text": "Huh? But... c-cool, right?\nA comeback from a pinch is classic!",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:714e224afbce38ce6a97d4c8b7a7a696c2d7a91154a1a65acf2bdf02d13c3fd2",
+      "text": "See? You go overboard. Listen to\nwhat the field says for once.",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:bad659dbd114e018167d45714da828a050e5da6a45b2540218f82937880f8316",
+      "text": "Ngh... Well, I admit there's room\nfor improvement. I'm still in\ntraining, after all.",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:8f9a1478f69f2b782732b56c4f432081e9dc59143f44df4d9f7304a935159250",
+      "text": "That's why I wanted to meet you,\nMr. Alk. You're a bundle of\ninspiration. Today's a good day.",
+      "status": "machine"
+    }
+  },
+  "181": {
+    "5": {
+      "srcHash": "sha256:bfe550fd135249ce2c3c6975d19441464965954d9e682362985b27af7be8affe",
+      "text": "Oh, thanks. Whether I'll use any\nof it is another matter, though...",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:b4c8f56a21fd0751e475d791bce879b015bd5804829e3a38220f641f96a1b523",
+      "text": "My, my, what a wonderful youth!",
+      "status": "machine"
+    }
+  },
+  "191": {
+    "5": {
+      "srcHash": "sha256:2ab1c3ed25bc4dc75b584da57d000c8500584c15fd9a8dc87c511e3b1aa7f6c6",
+      "text": "Ugh, this feels familiar...",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:c17c28925ab4d0d02fdc89969d54614c132a08468cfe4a9b0a1a44a2ece02cc4",
+      "text": "Yes! You're sharp, which helps!\nAlk, may we count on you again?",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:e6e90f3ab53e49d0bf9372da4396b6939ee978ba0977388ee71a6620c6de4f06",
+      "text": "—Help sharpen his inventive\ninspiration, would you?",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:0c4dcbd0ceafe3c75afe791ea554330ad812032376ed824823676ceb28358f62",
+      "text": "Ohhh... So this is the otherworldly\nsecret base! I knew PBC had\nsomething, but this...!",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:93e063e0fab01fb0ccf7887f2f631b67f37b24cd14e6dd615575f52366830a28",
+      "text": "Well... Not just PBC. Any hints for\nyour inventions?",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:59075ff60128e22753e36fd7217aee241ccd817d8ab2a2a0fa4298f3717966ab",
+      "text": "Of course! Thank you, Alk!\nI feel like I can crank out amazing\ngadgets and hobby toys!",
+      "status": "machine"
+    }
+  },
+  "218": {
+    "5": {
+      "srcHash": "sha256:1f41b4f3cb2568620e54ecb2c208e39e37aa20de9b28ce1339506b2b63597252",
+      "text": "All right, let's do this...!!\nI'll fill the whole world with\nour kind of cool...!!",
+      "status": "machine"
+    }
+  }
+}

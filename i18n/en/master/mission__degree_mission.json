@@ -1,0 +1,283 @@
+{
+  "61260": {
+    "2": {
+      "srcHash": "sha256:b2c2ab48a7cad167887395559062af6ea8a5f0802ba4cd08052f0c575531a77f",
+      "text": "Defeat Flashfire DH Hani Godly",
+      "status": "machine"
+    }
+  },
+  "61270": {
+    "2": {
+      "srcHash": "sha256:4e1c8f7a4f836e8d5c2670d1750df9d9b78ff6e3c68d5595942d865a7c0b62f1",
+      "text": "Defeat Flashfire PF Hani Godly",
+      "status": "machine"
+    }
+  },
+  "61280": {
+    "2": {
+      "srcHash": "sha256:cb20eab9621fc48dacd42c6cf2c87afc12182529539bf4d953604f03459bf63f",
+      "text": "Defeat Flashfire S Hani Godly",
+      "status": "machine"
+    }
+  },
+  "62340": {
+    "2": {
+      "srcHash": "sha256:98cd26904b9af1a4dec5dd74c0d4b4408d81280b20e1956d671d6c5a353b6c07",
+      "text": "Clear The Descension: Windwrath Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62350": {
+    "2": {
+      "srcHash": "sha256:38ff76060d036cb4e4ac677c0f1871756fc55d1abd24fa4c3e3fe0e34de59c3f",
+      "text": "Clear The Descension: Windwrath Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62360": {
+    "2": {
+      "srcHash": "sha256:31035164e8da6e5193a1eea8c3f1fb26c19e166392f171bf852052c074eaa0b4",
+      "text": "Clear The Descension: Windwrath Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62370": {
+    "2": {
+      "srcHash": "sha256:c4a58e7031a75ed49fe79bdda2300d3312f3fc55685dc8b912aa859084a89737",
+      "text": "Defeat Steambot Clarg Reckoning",
+      "status": "machine",
+      "note": "official fire row: 'Defeat Steambot Heinlert Reckoning'"
+    }
+  },
+  "62380": {
+    "2": {
+      "srcHash": "sha256:69f602f0536a2f5230f588e7fb28b619c9aa07c4a47152ab8fabada352687ff7",
+      "text": "Clear The Descension: Maelstrom Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62390": {
+    "2": {
+      "srcHash": "sha256:d4d5ae046914bf7e1c03fbfd35bcf720ec74538ba99c4b550de2dc41f06938b1",
+      "text": "Clear The Descension: Maelstrom Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62400": {
+    "2": {
+      "srcHash": "sha256:4a4fcac0dac2f96b97f4c1afca6a3f1f798fdaec95e092dd405a9795110c284e",
+      "text": "Clear The Descension: Maelstrom Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62410": {
+    "2": {
+      "srcHash": "sha256:3e5dc3ebd61491d87f3423fc1e891d6c9fe598572031364e3e8e701bb484d7b7",
+      "text": "Defeat Steambot Vernus Reckoning",
+      "status": "machine"
+    }
+  },
+  "62420": {
+    "2": {
+      "srcHash": "sha256:7d9d0ef9fc7485e9d44b11515d71a540935cb9b3476fd3bb286e293c0fd50570",
+      "text": "Clear The Descension: Radiant Steambot 10 times",
+      "status": "machine"
+    }
+  },
+  "62430": {
+    "2": {
+      "srcHash": "sha256:20536636d61d119291f3cc0c1555dac64e50a06e9a9e69cb35ee4bbe7cf8de63",
+      "text": "Clear The Descension: Radiant Steambot 100 times",
+      "status": "machine"
+    }
+  },
+  "62440": {
+    "2": {
+      "srcHash": "sha256:baf7e05b31d5827a39aafb6e864cd99416be1e9672c7c09a7ead4c82a98b9730",
+      "text": "Clear The Descension: Radiant Steambot 500 times",
+      "status": "machine"
+    }
+  },
+  "62450": {
+    "2": {
+      "srcHash": "sha256:13fac407eb21384d10a91a494755c3dff9d5411375a67d69865cfec38787b85e",
+      "text": "Defeat Steambot Aizan Reckoning",
+      "status": "machine"
+    }
+  },
+  "111153": {
+    "2": {
+      "srcHash": "sha256:59fc323034b64c981dc9f5e93fedf9419212b0e79dcd70cb81d8e85013fa3091",
+      "text": "Level Lunetta to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "111159": {
+    "2": {
+      "srcHash": "sha256:10e6fe904744c53d86350dd17b6df4c23c1b033232fe103e5b018a964674b840",
+      "text": "Level Penelone to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "121159": {
+    "2": {
+      "srcHash": "sha256:4bde76bbb41b7d04c7ef4eccd37b2c6346d3623df21d43ea77fc0f37df9aef00",
+      "text": "Level Nisues to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "121165": {
+    "2": {
+      "srcHash": "sha256:18d29aab20b5fed68631d1a2e8cec3068d473e0057d0b0734a7a73b62acfba9d",
+      "text": "Level Lanmei to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "131134": {
+    "2": {
+      "srcHash": "sha256:7e87dfdac7fc98924816266c3cb9ea25680b5f288e021e1eceeb111939ae93df",
+      "text": "Level Kasivars to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "131140": {
+    "2": {
+      "srcHash": "sha256:ba91a5990426a7432c81963107b07c45cd17a92842fb307c643773ea06adca4a",
+      "text": "Level Denah to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "131146": {
+    "2": {
+      "srcHash": "sha256:0e5a8c18367612b6dd06c1a9015a494eedd58a5319178b976ca2c277cc3bee20",
+      "text": "Level Libram to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "131158": {
+    "2": {
+      "srcHash": "sha256:d7efe783c6cd68783d620df02b94acddb8af9f50ebfddc5c1d4de66c21de3189",
+      "text": "Level Nagiri Amo to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "141147": {
+    "2": {
+      "srcHash": "sha256:96d2c27b83c6b0b59d53fb0855fdaef25bb00082738178166cbb0efa7e6da39d",
+      "text": "Level Beaucy to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "141153": {
+    "2": {
+      "srcHash": "sha256:41bacfc74fecb46476721e4ab233821b2c8f7385cb267fabd101eff5775db088",
+      "text": "Level Yae Asato to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "141159": {
+    "2": {
+      "srcHash": "sha256:d164f9d7fea17da537eb632f9e645a4b532c021f2cbacb142ca6202c9e26326c",
+      "text": "Level Rolf to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "141171": {
+    "2": {
+      "srcHash": "sha256:2bffe042a2215f16b63954b9fda94671a9010ab519beb499bda5a784fcb922ab",
+      "text": "Level Taichi Yuhino to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "151159": {
+    "2": {
+      "srcHash": "sha256:8393c522d1bb4a354ebd0fb2b8407236acffe1a094dff086302943481430cec9",
+      "text": "Level Rustamov to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "151171": {
+    "2": {
+      "srcHash": "sha256:1b701e7ef8108f27231063036e58b38bff714f2a9dd91f01f9b732268b424906",
+      "text": "Level Tamako to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "161165": {
+    "2": {
+      "srcHash": "sha256:3fe0c50d5b4212c86b6afa22af406a4cae9a77628a67250c5b528137f311dd8c",
+      "text": "Level Tanakiela to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "161171": {
+    "2": {
+      "srcHash": "sha256:f8106f0a3ba22fbdce54d9e06649bd444b8b45a33ce97f20cfb1f349d89fe579",
+      "text": "Level Iores to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "161183": {
+    "2": {
+      "srcHash": "sha256:b19abde6409f3245a38499e8a7e5851b757402a93196f8dfe763a403503518b0",
+      "text": "Level Hibiki Suminami to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "161189": {
+    "2": {
+      "srcHash": "sha256:dd32c993b1893fa61da2c2a6d066ea28bf0722db3a5a4d467382b2f24d522dfc",
+      "text": "Level Marden to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "211062": {
+    "2": {
+      "srcHash": "sha256:0421f1317ced2167f3487a318bdfec2b0ec065fde2560554a00ec7f8c2b8fc95",
+      "text": "Level Chenxi to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "221078": {
+    "2": {
+      "srcHash": "sha256:62cad2f7f6277e0f5904952c89ec7da29ba136727d8b20ceb03ff24ee4594dbe",
+      "text": "Level Feanie to 100 and obtain her Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "231099": {
+    "2": {
+      "srcHash": "sha256:2877b87ec805b0b1dae6fc53cc20d003eb627072ea36cf5ffc3c0d2d41950130",
+      "text": "Level Invetra to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "261089": {
+    "2": {
+      "srcHash": "sha256:a3f53f28c8f642e29209e9aed04c07921555bdb45b9a750684cf3890cd935e84",
+      "text": "Level Armadeus to 100 and obtain his Amity Scroll.",
+      "status": "machine"
+    }
+  },
+  "1131134": {
+    "2": {
+      "srcHash": "sha256:2851b94216095951e209d1c1a466d87e1a8ddb1fe58896e83ffbb42efb7f3130",
+      "text": "Fully complete Kasivars's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1161165": {
+    "2": {
+      "srcHash": "sha256:639d0ba768549cafc56a848a14d5e3ae53a75a716ffade7ffcc4d416bc92ae26",
+      "text": "Fully complete Tanakiela's 2nd Mana Board",
+      "status": "machine"
+    }
+  },
+  "1211062": {
+    "2": {
+      "srcHash": "sha256:5f6d46ed6d6519011d68557b4e573e13e2fde78b20bf58894d23ff5a8a4cefc9",
+      "text": "Fully complete Chenxi's 2nd Mana Board",
+      "status": "machine"
+    }
+  }
+}

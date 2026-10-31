@@ -1,0 +1,23 @@
+# Plain-HTTP site (TLS off). Rendered to /etc/nginx/conf.d/site-http.conf by the nginx image's entrypoint
+# (envsubst); only defined variables (REFLIPPED_UPSTREAM, PUBLIC_HOST, TLS) are substituted.
+# scripts/edge-site.sh removes it when TLS is on.
+
+server {
+    listen 8080;
+    listen [::]:8080;
+    server_name _;
+
+    # Game requests carry headers with underscores (device_lang, short_udid, res_ver, ...).
+    underscores_in_headers on;
+    # Admin save import goes through the proxy too.
+    client_max_body_size 50m;
+
+    location = /healthz {
+        access_log off;
+        default_type text/plain;
+        return 200 "ok\n";
+    }
+
+    # The flavour's locations: assets from disk and/or the API proxied to Reflipped.
+    include /etc/nginx/conf.d/locations/*.inc;
+}

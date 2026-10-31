@@ -1,0 +1,78 @@
+{
+  "10001": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10002": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10003": {
+    "5": {
+      "srcHash": "sha256:58e7498c5626c28f661273c3af7a50ad5303f7b4e8cc684d229d88d627feac7e",
+      "text": "Round 1,Round 2",
+      "status": "machine"
+    }
+  },
+  "10004": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10005": {
+    "5": {
+      "srcHash": "sha256:58e7498c5626c28f661273c3af7a50ad5303f7b4e8cc684d229d88d627feac7e",
+      "text": "Round 1,Round 2",
+      "status": "machine"
+    }
+  },
+  "10006": {
+    "5": {
+      "srcHash": "sha256:58e7498c5626c28f661273c3af7a50ad5303f7b4e8cc684d229d88d627feac7e",
+      "text": "Round 1,Round 2",
+      "status": "machine"
+    }
+  },
+  "10007": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10008": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10009": {
+    "5": {
+      "srcHash": "sha256:dc7cfd79fa2361b576e3b696a55b455ef162fa7d06ae0fda634a33353c92df40",
+      "text": "Round 1,Round 2,Round 3",
+      "status": "machine",
+      "note": "comma-separated tab labels; 'Round N' as in the official 'Clear all Round 1 missions'"
+    }
+  },
+  "10010": {
+    "5": {
+      "srcHash": "sha256:1cc936e6a62e0b3a6dbd954ec0a68f35f5956f8eadde7612c46d2afd029ef96d",
+      "text": "Round 1,Round 2,Round 3,Round 4,Round 5",
+      "status": "machine"
+    }
+  }
+}

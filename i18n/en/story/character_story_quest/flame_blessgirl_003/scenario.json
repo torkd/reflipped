@@ -1,0 +1,443 @@
+{
+  "4": {
+    "5": {
+      "srcHash": "sha256:be135f04457e1070dcc3437d5c525f3d1545f98b0b166d75c12f6b10cd0b9a0b",
+      "text": "Thanks for helping out today.\nHere's your share.",
+      "status": "machine"
+    }
+  },
+  "7": {
+    "5": {
+      "srcHash": "sha256:2ef3683b62539f63da4d6cf749ff49da787bdc5c9e988e1202a444c0d613f15b",
+      "text": "Thank you so much!\nLet's adventure together again!",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:2db1689796bd1df58b3450d20aa9c5c423f95f6f4ead1f879bfc4d7f26bac3da",
+      "text": "Lunetta, are you free tomorrow?\nOur next job looks a bit tricky...\nWe'll pay well, of course.",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:ee133b71830a232b3aaab2ce18c678eb6db40d388b8434623fbcb847ce2364df",
+      "text": "An even split is fine!\nSee you tomorrow!",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:8cb82340753d0bf52c6b8f1afb865e90a7258374a90cf3bf590495509eee0df4",
+      "text": "Oh? Looks like business is booming.",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:2d5ad9ddca8b1d753fc6b4fbe15a346cdd544c9925fe15fce9a35f717664b49a",
+      "text": "Alk! Nimbus! Are you off on an\nadventure now?",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:b823fa5738072d0ed46d566c9fc928db372333489d5933472c8e8995eb9393df",
+      "text": "Yeah. A quick trip into the\nKaleidoscope... Want to help?",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:8abcf6676eca9959146625e0fe0e851b201f911cdf23372043364725a9e8ae7d",
+      "text": "Yes! Of course!!",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:4bc4ce53907b013663e8e7517c3b28774bea80793757d53153c292dae518d22c",
+      "text": "Your control's getting better.\nWant to go a bit deeper today—",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:6127d55f261310f3111af97264f12b87bfd7a5d1b74e5dda978906db10b55f4c",
+      "text": "That one was... pretty big.",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:f8a58d36e7121a2c35357a0ef736606443d8ec34b2f07a7ec50179e17a22fe61",
+      "text": "Whoa, whoa...?! What is this?!",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:45af23800fc7cba19943cd215f7c51d6d645a6d737964a86018e79ad12751095",
+      "text": "W-what?! Where are we?!",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:26cc20f4700cafe944a0b7c77d6273be56f3f087c0779448158d729434d65e86",
+      "text": "Reinforcements?! Perfect timing!\nGive us a hand...!!",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:23c3d610baf6dc871071186f59873e240768954c278c82c679dc7b9c53b47eda",
+      "text": "We'll take over! You guys get the\ninjured and the others out!!",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:e24a03289604674893f5ffe5724ec8e5d0d7c796c9f93f8bcd992374041f689d",
+      "text": "—My friend's badly hurt.\nMoving him could make it worse...",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:bd200db83ea3f55fc86953a1b851acd1f9055dc387d3377142b69ee2b14c3565",
+      "text": "T-then let's help him first...!",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:c2834878d0ce67c5d67fd292d158e2d1fe9e2e1b43a009b5dc6be1b028821117",
+      "text": "Leave us behind... We resolved to\ndie in the Kaleidoscope the day we\nbecame adventurers...",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:bd273a614beea8105cebed90848c5eeeb3d378c2c82d0212185017b5a1a74c09",
+      "text": "...But we can't drag those people\nwho got thrown into a strange\nplace into this...",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:ba8d8bc8b49d76d6ddd36d45a42209fe514505f90a25c5a12a72e78fd870dd78",
+      "text": "...That's how it is. We'll hold the\nrear. You guys take them—",
+      "status": "machine"
+    }
+  },
+  "65": {
+    "5": {
+      "srcHash": "sha256:3211586465e6c4935308e7b68e2964addb6ba0782558141bcb6afddada6e532c",
+      "text": "...Tch, idiots—!",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:b041007e304d11ecfe56059799f4b5ff604ea87657dcb98c4e99c3a545828431",
+      "text": "No way!!",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:e4abba74073c754d52896f69be9e850661d92cd2667a434c4f90d6396db82b71",
+      "text": "It's not a question of \"no way\"...!",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:4cbd899911f75231a8ee5fd51218e2b51f73abeca717e8e190c9d564c72c3556",
+      "text": "I said no! You may be better\nadventurers and have better\njudgment than me!",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:b3a9815ecbcdbea41fd2dfcfd8a5ed8dbdc8794989400b128a72454582fc1f1a",
+      "text": "But if I abandon you here, I'm not\nme anymore!",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:a7d20220320134e31e7f8cc65c5ef4d97151d326528df9c1bab52d1b8c1ec391",
+      "text": "Alk, Nimbus! Please...!\nLend me your wisdom to save\neveryone!",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:525bc233c06b16baece1b971d615676da3078f1a8514025d5f35b1ec12826510",
+      "text": "...Yeah. Got it. We'll hold here.\nLunetta, you go—!!",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:0785e573f6c7204dc12d126b7e03a6f603863f98a0fcce59e644b9d0537da850",
+      "text": "Excuse me! Someone, please\nhelp!!",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:a81bf728e4047d7a2d6136d6d54bbb239ebd16cd7fe6c6082bd88a05550cf07b",
+      "text": "It's an emergency! If you're free,\nplease come to the Kaleidoscope...!!",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:96082f379859d1ddc63016d191f340d3b64783daca0a5a32df3c787f8c3228d2",
+      "text": "...Please! Somebody...!\nSomebody lend me a hand...!",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:24ae70cc752707d185ad13aea4c8413fdc548d79a7dc9c63216e50e1f65cace2",
+      "text": "...Hey!",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:b39ca9f12cfcec76af569e8164178934b601792d4302fba25162ee9b019f253c",
+      "text": "Oh! You're the one from before...!",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:f62238fbf80e21e53be88c8b80b10948ee3945835c447e09b281a29f7b289ce1",
+      "text": "Explain the situation first!\nI can't make sense of that!!",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:406e0549df973b689d8c133589445245b672069abea020aa1e055b885bc36ca6",
+      "text": "...And this is the Adventurers'\nGuild. If you need help, there's a\nfaster way than begging, right?",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:fb9245d8b8c892a63cb3dbc25adf9b736b025e8079b6f6741392d2277beef108",
+      "text": "That's right—I forgot...!!",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:db64026c5608acb4cb70341d066c25ed5277a831dea875c5d86b0adff229e6d5",
+      "text": "I'm issuing a rescue \"request\" to\neveryone here!!",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:10a1304ad56ba99fdddaca74baeef985599951dec1c8417d0c3aa389e58413b2",
+      "text": "Location: the Kaleidoscope's middle\nlayers! Injured and castaways are\nstranded! We need rescuers!",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:5bea1aa1d74aa317a50441095a0d0d78fbaba27e08d5182c7a259c80bcd36a75",
+      "text": "I'll pay whatever you want!\nEverything I have...!",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:348c4b0e45f1448a92876e115e89006c28c80ddba633b4af2ed9c6cf26b0c35f",
+      "text": "—So please, lend me a hand!!",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:6d4e41cb16a0c91e3819874de539d187d472f46c503669cd3034a8c129502bf0",
+      "text": "Okie-dokie★ Since it's an\nemergency, details can wait.\nJust sign here★",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:a14b7bc43babd9f7c65f38d5eb2e95bdc77f187355bf7e909c4962a02821a8d3",
+      "text": "All set♪\nThis is now an official request!\nPosting it now!!",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:13f7aefea1bbefb299b1a62544663fe826d8cea29158bfbf4bffd003851bb180",
+      "text": "...If it's a request, we should\ntake it. As adventurers.",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:9d2cbe01f7e4edc64a947d07fecede52503546f6db4b697e63867a6178db7550",
+      "text": "And there's a reward, so no\ncomplaints! Let's go, everyone,\nput some spirit into it!!",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:87cc09cbce1f23b418d319b970ba104d17705d0ff2aa16315fdb29052c387ee7",
+      "text": "...That's the last of them.\nWe should be fine for a while.",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:a47ab36f44825e1715e9466facf8342c0f243d9f628eaaae37831c274cfb5598",
+      "text": "Don't let your guard down.\nBring the wounded over here.",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:9c390e3d579da1591e1266206a61fbf64db6cf7d43c19ac64e3590e1b55cfa93",
+      "text": "Lunetta! It's okay now!\nThanks to you, everyone's safe...!",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:8d98c2115a0a0ebfafd500dab63d480892065b4d3fe5b99be194265f7d06c778",
+      "text": "...Yes.",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:baeedea631858b22e7ecc7bb4e9799acae8badd4caffa17f288977c0515e3e07",
+      "text": "I... just realized something.",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:4c6cc1cda08545cd9783731d5db86fd0e366fa8361e274a0d5f89660ae525080",
+      "text": "I put out that request on impulse,\nbut I don't have nearly enough\nmoney to pay everyone...!!",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:bd5069f5f6d26cd5533f3083f75b8d0b1f8e6bbc924d23cff49503e647023d1b",
+      "text": "W-what do I do?! Is it okay to\nput it on a tab?!",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:4192a681df555be9f0b8b89bb0055f8c76d4b4d91a15bc3c168848ad2451caf9",
+      "text": "...Hey, I think it'll be fine.",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:ba0011d04385c854403bc5bfdc4d71d37f67aace8a0c2584c2dea0c9929c67c2",
+      "text": "Don't worry about it. You helped\nus out before, remember? Consider\nthis payback.",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:2838952516f18fa3634c2b9148b4d6004fdcc4199005881a60b72f6b18e698ba",
+      "text": "If you insist, help us on our\nnext adventure. For free!",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:d6a1ad521c0a896c7d56f0c3d241fc50e69e6591e45afc0fe349cdcd96cafb7a",
+      "text": "Wh-whaaat? B-but the request\nhas a proper reward...!!",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:e9978eeb948e586265821b6db5fc6d2eeccd72d6988e83d7f43789a2a437af85",
+      "text": "...Join me for a drink tonight.\nYou can buy.",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:52a018c93864c6b3e6fd24c4558ab337e353d479140c7d626553008cddcd2299",
+      "text": "That's about right for a request\nlike this.",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:92739daeedfa2826c67f58db53a06a17b6d25fb8978d19cf3ee456f6962e3d70",
+      "text": "...See?",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:d4556da9c72be55a6e628e68bc7e2390382ea34e263e43cd94d3594f6ec2ebcb",
+      "text": "...Yes!",
+      "status": "machine"
+    }
+  },
+  "200": {
+    "5": {
+      "srcHash": "sha256:db79930531f5eb062b05563d34958e4c3f761e8e0badd76ec60983dfcb1e2132",
+      "text": "Oh! But I can't drink!\n...Is milk okay?!",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:5f413817946df9f68b93f3251f596fc47b47a10f8aa84f675cb38b6454fba7ae",
+      "text": "Idiot!\nJust nod and keep quiet!",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:dd0c518eedf8cec65bcb0c83aac1c2a9f3bc1de4b2dbcb658208153de8df1f30",
+      "text": "I-is that how it works?!\nO-okay, got it...!",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:194cf2e0ce3c8b3bbc0ebfb1a4a8ecc0e6cedc248499eeb45cd86f8285e55732",
+      "text": "Hey, hey. If it's a celebration,\ntake us along, too.",
+      "status": "machine"
+    }
+  },
+  "211": {
+    "5": {
+      "srcHash": "sha256:b641f0288573cb5d1ebf5a36c7cb4f7b0beb0472797b8fc1f07d86c5893b1d63",
+      "text": "Oh, I'm not asking you to pay!\nIt's to celebrate a job well done!",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:e0f2a2a60d2f27c06a3feaf02760859cfca1eb7d88f0c3305d346da0fd37ff1d",
+      "text": "...Got it!\nThen let's all have a party!!",
+      "status": "machine"
+    }
+  }
+}

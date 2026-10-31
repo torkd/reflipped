@@ -1,0 +1,443 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:ff5b392356218a43dedf6fa7e02b3b4ad7e49c2ca5fc939a066ca10ab7e64efd",
+      "text": "Look. I've said this a bunch of\ntimes already.",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:d44c482935d4beec164b5763007ab9506bad2ebb661f2dca4d514986b3e38465",
+      "text": "No matter how much you welcome me,\nI've got nothing to give, okay?",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:1185f1f4879051ebd6010d815c1722e65a9eb4e802f0accd5ba15217c88aa54c",
+      "text": "Yes! Understood!",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:adac5c1ed547eaed37546f98494af4271f60ff326463c421b572e2787af6e063",
+      "text": "I'm not the old Rustamov. I'll never\nsacrifice myself to cast a barrier.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:1cbe7a30d8cbf03dffddaec467ffaeefcc72b61a1763c845b2e05ac00bf930cb",
+      "text": "Of course! Your safety is what\nmatters most!",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:0b4e72024b4938261e76f5d4806a90457e3ae44e4e5aaeca53c16d200753bc88",
+      "text": "This is really uncomfortable...",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:73539e435aa8af6281cca70617d238cf8b8d492b76f9f18244b191d82f242e78",
+      "text": "That won't do! How about this?\nI have a friend with fine fur who is\nquite amusing. If I call him—",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:defa01f42fe12553e7405ebdca35b2766f3e054ba0a7e80a5c3f944a98222601",
+      "text": "No, no, it's fine! I don't want\nfunny stories! Anyway—",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:38f187f8d92bb240baf1f9b8551f2d459e6962fc7a4bf41260aa82931928f015",
+      "text": "Why do you do all this with nothing\nin return? Are you out of your mind?",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:da4b677c8334b08efbc79da6774f1009888ad71e601a2eb3a076b7c43413caf4",
+      "text": "I know you are different from your\npast self. Still, being in your\npresence fills me with gratitude.",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:eecc3aec0ca576c3430517028dc22015ee5e8c919973a0d7d296b570e44db6b5",
+      "text": "So this is my own selfish conduct.\nI am doing as I please.",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:2b10faf703837b303f0a6d13c5cfd5bb36ef57bee73513c2b3475afd56e58cf5",
+      "text": "Hmm. So you're just doing it for\nyourself. Then I won't hold back.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:038711f170def856e3c8f67e54cc7b64cf0ec32e1a5e28586e4756f6256d1d09",
+      "text": "Bring me something delicious. Like\nthose baked sweets you elves love—",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:d5793922668add3270156f4a3b332cad20a4d1ab6d88e71725070880cfa12a8d",
+      "text": "Wh-what?! You said it's fine, so\nit's fine!",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:57d1c8260bc476dcd017b5d7fa76b35ce4f66db55b4f137670c7db3435fb65b2",
+      "text": "Humans... Wash away your sins—",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:50c5267393b79567a676253b497b09e0b478e49fb4aef050576d46c8dc68a0ab",
+      "text": "Now! Rooma!!",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:6363c7c59df82a72b9c730e83285b8b7f096e28c7b932adf1aa4eb833e031ef7",
+      "text": "Deus ex Arma...!!",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:0824bd3842ef2551f848c62b010a3c8e36b27b99dba76c6dd7aced89effc30f4",
+      "text": "All right...! That clears this area!",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:41bd285cd41867044eb08257e35c9bd0c4453eda2657514485137e904798f1cf",
+      "text": "OOOOOOOH!!",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:3d4603f826c09e946674a79b163cdc8747632067e7269215c71d56dc30da3e9e",
+      "text": "That's an army's cry... The Silver\nWoods Alliance has arrived!",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:723fe96f18e6eea6d84d48819e8d673f30ad771e5cfdd651499c498757f6573e",
+      "text": "...Don't you have someone you're\nworried about, too?",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:8e4de58d13ba143e0b08f9749c605195c2b3b980ef8915e778e4acd787909d87",
+      "text": "Don't be silly.\nI'm just tagging along with you—",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:7a3fc62031257f051306b12f7437c1695359044569db8817f3830d9c9c260111",
+      "text": "Okay. Then tag along with me.\nIt's that way, right?",
+      "status": "machine"
+    }
+  },
+  "94": {
+    "5": {
+      "srcHash": "sha256:782a3f895ee683f43deec2155e725df4757b201079408c3ea9fada77016a223e",
+      "text": "—It's no good. We lack the strength\nto break through. We'll have to wait\nfor reinforcements.",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:48f89897b051a7c4c24c19e9c42addb78cf41ad45123a38eb87d324bc1b0339f",
+      "text": "...We two could hold out. But do you\nthink they could?",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:e23c0b4ee0f940b2a5e31a43e9be2b72b9ae40d33714cb38f3b29386b0e7e449",
+      "text": "Only we two will stake our lives.\nI never promised more than that—",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:dd5c7c2797473bc363a76f67998735d25457acaa18858afd3fadbf9962200504",
+      "text": "What are you two fussing about?",
+      "status": "machine"
+    }
+  },
+  "104": {
+    "5": {
+      "srcHash": "sha256:11e6d0716e2ffc83a6bd97659229f610a0c7a54dc83e823e3501e44bc8fa22d0",
+      "text": "Lord Rustamov...!\nAnd Lord Armadeus, too...",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:2bc8d06c3544ca9144e0c4afa2e18397b008be6bd479a32614baaf14d25b6111",
+      "text": "So this is for your own satisfaction\ntoo? But they're from another world.\nThey're strangers, right?",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:1a2edf4757f0d7b62efbaac668adb1daff098ea490abc9fe575c7b832b1bef9d",
+      "text": "I want to return what I was given.",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:cf784dc8488275797d57732539b88ede2514867c53e9f09c9da31fe5111a0ae5",
+      "text": "Huh?",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:bcc3f31ee52765c17fcaf454184dc0c7e3f3cb7ef0433dcc3da9149f12a38253",
+      "text": "We elves were given everything:\na forest of peace, light and song,\nlong ages with those we love—",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:fd99e3dfe4a1d6e2779723776f266ab37691a4dcd76e62ac5eab01ddab6d1657",
+      "text": "We never even knew all that was\nmerely given to us by chance.",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:546a3d4e22e69e5661a8ce1ceeb243ea7e11e227fbb42613253671203f47bfd2",
+      "text": "But now that we know the world,\nwe can't live as before. I won't\nuse my strength only to save myself.",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:15dfbcf60eeea38ba10df7e900e1eb337289c05d7927bd0d3ec803ab2a4a771f",
+      "text": "Since I was given something, I want\nto use it to give.",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:425d99f736d0d53295a4e46b42086c4280f64b1a1ffe94a7117193b6480181b3",
+      "text": "...You're kind of scary, you know?",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:76b25086ddc7806c0c579515dce1601d28adfcb8232c761b053dd30c3b13779e",
+      "text": "Whatever. A good way to kill time.\nI'll tag along, Lothrend.",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:f746ded9f41cd70a2c0174b7359d9b2137491e16cf9eaecd26e264db0719bbb0",
+      "text": "You knew my name...",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:e5aebb8f29066e57ed47c9a6ab9c7a8b1b711d7522fe76099db9c2eab0dab5f3",
+      "text": "Don't underestimate me! I've heard\nit a few times, so I remember—",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:e59f45ae023dc51a0989e33b0d78db27e8b74372cfad6e35e36458e944a2b2ae",
+      "text": "Look out!!!",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:aece1c4ea4de133c626aafd898c2d15af1cc233d9f799d5110293255279b2709",
+      "text": "Loth... rend...?",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:62cfbe7565081cea859ecff11c7533f2fa8676e645ee59c3edb84bdcf8f411d0",
+      "text": "What's with the elves... Are they\nall high-minded types...?",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:161522ab7ebebd6e04fd0e8ad53d28e718aba2b79340c131a233999931dfa06b",
+      "text": "...No... Everyone is like that.\nThen... then I—!",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:b4b00cec1025e43a467ee78a4b164d00704916823597e5be7c8abdc41c10ab56",
+      "text": "I can't lose!",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:dfecb187b86bc884315b5e786beb5c8a94e9bae052dcfac4e6f002062afd54cd",
+      "text": "You puppet jerk!!!\nDon't lay a finger on my friend!!",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:49369a4dffc6eff8b59dff172207cb54a36df5f313c6f04376228d6b2a10bf8e",
+      "text": "Dammit, dammit, dammiiit!!!",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:02f38dda6be6334f59e245b8679ef51a05910ae8150945d05078a98046840254",
+      "text": "Lightning Edge!",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:51e15769d0f69a48e90e663e56dfd69aa4187dc2af50ad20a2110ae8e384c82a",
+      "text": "Eleanor...?",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:352b6269d21b61e33ee0674f6768b6d05997c7098288c0a43c7e75bef43481c8",
+      "text": "Once more! Rustamov!",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:496638dd0c01c4ecf3bb63d340db038abc69b3c7b86bb90da94d855e2a54c03b",
+      "text": "Ngh—!",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:5cd3f70ada7153569eb8d6c6f3d0f5da3bc15503bc4cf143bae9a309b6a1559b",
+      "text": "Let there be light!!",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:4204c94765d593b14529ba1a96b06c4a3181b3103bd868dba981c307301f9686",
+      "text": "Iten Shu!!!",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:706927acdf80034e6af96079eaa622368be95bfce830f48faecd5573f1913f4f",
+      "text": "Well roared, Rustamov...!",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:97a69bf2dac176f3afde29f618d4d042357b6a2479455b1394b0e1c8c60c353a",
+      "text": "Estariel... But I... I protected\neveryone—",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:f6dd468804968ece24a8a580f96bb23f7a05fcd7c76267b8290d0cf67a4f6407",
+      "text": "No. Not yet.\nIt is not over yet...!",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:0496cacf9749f9c128942f7bb3aa077d5b804c44e05e98743dfea3c3f2304f21",
+      "text": "Ugh... Wh-what? Could this be—?",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:de660dd2d1caca067514f9ed50ed07cb831779bcb08bd06c0f3722049f626e32",
+      "text": "Rooma!",
+      "status": "machine"
+    }
+  },
+  "225": {
+    "5": {
+      "srcHash": "sha256:ddddab91326ed820adde699085884ad917f67a8ffb210c00cb4cb8e39bcc6b5b",
+      "text": "I thought I could trust you to guard\nmy back. Was I mistaken, I wonder?",
+      "status": "machine"
+    }
+  },
+  "229": {
+    "5": {
+      "srcHash": "sha256:9548e38ff085cc2fdca3c431d4bf9a3db9227d3a5cc8359dd87f160b83dda5a9",
+      "text": "...Fine. If you're so nervous,\nI'll help you.\nEstariel!",
+      "status": "machine"
+    }
+  },
+  "234": {
+    "5": {
+      "srcHash": "sha256:15d84c98107586b5cd7f57e24538acb1e87d471294da1c8ae3c56acfa33876af",
+      "text": "Hahaha... You really are you,\naren't you...",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:31deadaec0aee2593c6dddb96a59c2f2cc693b62f063f1de851c105d79145a2c",
+      "text": "Lord Rustamov...!",
+      "status": "machine"
+    }
+  },
+  "240": {
+    "5": {
+      "srcHash": "sha256:1275ce8606322778ee1f5ec2d9fb6c747b7a3e7e7504346886cfc4894c31780c",
+      "text": "I'll do it!\nI'm the great Holy Dragon King...",
+      "status": "machine"
+    }
+  },
+  "244": {
+    "5": {
+      "srcHash": "sha256:552445d2dc702241d78b5e9209a9104c45cca63f244a8c56c4475279d4c55c09",
+      "text": "Rustamov!!!",
+      "status": "machine"
+    }
+  }
+}

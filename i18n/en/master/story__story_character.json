@@ -1,0 +1,1073 @@
+{
+  "alk_and_light_two": {
+    "0": {
+      "srcHash": "sha256:8981f8b72b351ea3419a1abdb052dd01a27682ebaea6247cb415f19c80e02caf",
+      "text": "Alk & Light",
+      "status": "machine",
+      "note": "\"The two\"; key alk_and_light_two, EN alk_and_light is \"Alk & Light\"."
+    }
+  },
+  "alk_p_encyclopedia": {
+    "0": {
+      "srcHash": "sha256:406f283496326bc7b2c3c7b88f390e9b3457945e19df11bb224843dbf66cd14a",
+      "text": "Producer Alk",
+      "status": "machine"
+    }
+  },
+  "amulet_bosslady": {
+    "0": {
+      "srcHash": "sha256:351ed5c5f4f133969ae9e35e6371b58ce2b9b184593eb7ede927302d86665d6e",
+      "text": "Lanmei",
+      "status": "machine"
+    }
+  },
+  "black_wolf_knight_wt23": {
+    "0": {
+      "srcHash": "sha256:6c106a92db2e43d82150b4b319fd7a9e96d54ee585268ec186e30ec1695acfad",
+      "text": "Rolf",
+      "status": "machine"
+    }
+  },
+  "blade_dancer_oldbro": {
+    "0": {
+      "srcHash": "sha256:bf5d29bfb9b333bff1b9f9cf217d3e8570bd0d2f241453032b50df543b023b73",
+      "text": "Ziggurat",
+      "status": "machine"
+    }
+  },
+  "blade_dancer_wt23": {
+    "0": {
+      "srcHash": "sha256:3a6f73b92832e59ec1444ea66924bab5c57f46cec3918b2b7aa678d8c44f0d9b",
+      "text": "Libram",
+      "status": "machine"
+    }
+  },
+  "catbaby_psychicer": {
+    "0": {
+      "srcHash": "sha256:cc7d79230c6fb17847f30a2e9413bb0d78ffe43bd4f78c0ecf6346cd3fa3a04e",
+      "text": "Penelone",
+      "status": "machine"
+    }
+  },
+  "catbaby_psychicer_fath": {
+    "0": {
+      "srcHash": "sha256:343ddf7753391c69d2d73343b932995a12dd77903e843e815b9615811d396d53",
+      "text": "Penelone's Father",
+      "status": "machine"
+    }
+  },
+  "catbaby_psychicer_mom": {
+    "0": {
+      "srcHash": "sha256:6f07ff2ef697b2d7e23e35294cc39f26dd8771ef94ff93bb7a7682b8d0af5909",
+      "text": "Penelone's Mother",
+      "status": "machine"
+    }
+  },
+  "crazy_doctor_unknown": {
+    "0": {
+      "srcHash": "sha256:ecb73a1856e4957367ada0b3457a8cb81f4c76b2a68897b9dbf7e4246bb34ade",
+      "text": "Researcher",
+      "status": "machine"
+    }
+  },
+  "dark_psygirl_vt23": {
+    "0": {
+      "srcHash": "sha256:dba9cabe0ed1f2a70e08b9c0a24eb235ea203d6ae8dfb6049940aaed7db948d4",
+      "text": "Denah",
+      "status": "machine"
+    }
+  },
+  "dark_psygirl_vt23_unknown": {
+    "0": {
+      "srcHash": "sha256:dba9cabe0ed1f2a70e08b9c0a24eb235ea203d6ae8dfb6049940aaed7db948d4",
+      "text": "Denah",
+      "status": "machine"
+    }
+  },
+  "evilloli_master": {
+    "0": {
+      "srcHash": "sha256:6b2e3b3b6a7f01ae570370287198ea543b7c8895528bc9c1a31522fbd45808e1",
+      "text": "Tanakiela",
+      "status": "machine"
+    }
+  },
+  "evilloli_master_noname": {
+    "0": {
+      "srcHash": "sha256:4e4980b202db0127aed9d5a9d6743102aed31abe169cce72bd6798d92f7d21dd",
+      "text": "Woman's Voice",
+      "status": "machine"
+    }
+  },
+  "fake_mighty_striker": {
+    "0": {
+      "srcHash": "sha256:11bec88bc7b6dca2d5d714d5d3b2d48913b3dc7e21fb73240f8e7658681ab43d",
+      "text": "Fake King of the Ring",
+      "status": "machine"
+    }
+  },
+  "flame_blessgirl": {
+    "0": {
+      "srcHash": "sha256:b6ee10f24bdc93b5cced31e9813fc764aa7474df8afa9b3b4338cfd8af3bffda",
+      "text": "Lunetta",
+      "status": "machine"
+    }
+  },
+  "flame_blessgirl_noname": {
+    "0": {
+      "srcHash": "sha256:c241a3f12c2310fe377b53025c9b6e5fd046ddc363c96427f6400de15155d54c",
+      "text": "Vermilion-Haired Girl",
+      "status": "machine"
+    }
+  },
+  "heavenly_cattle_vt23": {
+    "0": {
+      "srcHash": "sha256:abfd68e4d62c1d3f4b95b319c7c7576365c6fb8408710529e8e17866bb430e19",
+      "text": "Cacow",
+      "status": "machine"
+    }
+  },
+  "heavenly_two_vt23": {
+    "0": {
+      "srcHash": "sha256:940c074355e0c2e40dc15cd317ea03aa59ed717b8475054a876d3514a213df50",
+      "text": "Beaucy",
+      "status": "machine"
+    }
+  },
+  "hero_mechanic": {
+    "0": {
+      "srcHash": "sha256:3f9e44406627bd291b07f555f5dbd78dcdd162faa91c5c89745b11aa8883b905",
+      "text": "Invetra",
+      "status": "machine"
+    }
+  },
+  "hero_mechanic_bro": {
+    "0": {
+      "srcHash": "sha256:8be3f0afc9ebdecfe8b4989dd454fd01af04b34b4e3c95810b419f40b453f635",
+      "text": "Luvetra",
+      "status": "machine"
+    }
+  },
+  "hero_mechanic_noname": {
+    "0": {
+      "srcHash": "sha256:b590c294118b0cf0026cfcbfa474a918d5dfaba8da801152aab6987a688a3755",
+      "text": "Scholarly Young Man",
+      "status": "machine"
+    }
+  },
+  "impostor_priest": {
+    "0": {
+      "srcHash": "sha256:7711cb978c740422fa3a04725a229030563bd5dc573dcab565339619e49da20a",
+      "text": "Iores",
+      "status": "machine"
+    }
+  },
+  "impostor_priest_noname": {
+    "0": {
+      "srcHash": "sha256:37e9e2be97204e43fc33201563bdcb8363e62b071afbe9b9ce71b276a1d5f749",
+      "text": "Priestly Man",
+      "status": "machine"
+    }
+  },
+  "jiangshi_girl": {
+    "0": {
+      "srcHash": "sha256:acaf35d3ec58d22094efc9f53a333d4b912b0272b681499df2ff31b3d4bd537b",
+      "text": "Chenxi",
+      "status": "machine"
+    }
+  },
+  "jiangshi_girl_noname": {
+    "0": {
+      "srcHash": "sha256:5bb74f39e7f95d8cef0e7623cc3c7cfa30b5a7519d11baaf3a8b93538a83ce6b",
+      "text": "Frightened Girl",
+      "status": "machine"
+    }
+  },
+  "kapera_noview": {
+    "0": {
+      "srcHash": "sha256:d134fa53f742e5dbcb97c27f3f8b4e69029cabce916833c7905d23f91524d640",
+      "text": "Capella",
+      "status": "machine"
+    }
+  },
+  "magatama_spirit": {
+    "0": {
+      "srcHash": "sha256:8140bdeb890dc01a7c0792b56ebc55036009ed25d15e89dfe8aa851f588d52ba",
+      "text": "Tamako",
+      "status": "machine"
+    }
+  },
+  "magatama_spirit_name": {
+    "0": {
+      "srcHash": "sha256:321d1652823c0d7223d8b09e7db8441257e7841f86c85eed7c42a309e19e0c37",
+      "text": "Yasakani-no-Magatama",
+      "status": "machine"
+    }
+  },
+  "magatama_spirit_noname": {
+    "0": {
+      "srcHash": "sha256:b9d317ceded652bde7b54d1fc1fa9e844984ab423291da390b98e809506b7fdb",
+      "text": "Little Girl?",
+      "status": "machine"
+    }
+  },
+  "magatama_spirit_unknown_voice": {
+    "0": {
+      "srcHash": "sha256:99c0ef924afe9e98e2984e5a5136e4181d4f5772e21bb37a7607549044ff3077",
+      "text": "Magatama",
+      "status": "machine"
+    }
+  },
+  "mob_adventurer_bro": {
+    "0": {
+      "srcHash": "sha256:839a147417026e56eb7422264b5a61e9bf85ccb5759ef2a1597e29d8e051d984",
+      "text": "Adventurer Guy",
+      "status": "machine"
+    }
+  },
+  "mob_adventurer_man": {
+    "0": {
+      "srcHash": "sha256:24407fc1b04f1e47a0e95e55e1fb8ed47c566c197eb1573358f61a2603903b27",
+      "text": "Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_apt_nervous_woman": {
+    "0": {
+      "srcHash": "sha256:1fc7ea4c3bfd8de81513d179b1f6728110f5ebb02555e54d23fe6f5bdce3b01e",
+      "text": "Nervous Woman",
+      "status": "machine"
+    }
+  },
+  "mob_backdoor_boy": {
+    "0": {
+      "srcHash": "sha256:40ee13be0e2c6a9b2317354fc1f68909585a684d4f685ffb1b52e70735732d67",
+      "text": "Back Door Guard",
+      "status": "machine"
+    }
+  },
+  "mob_blackrobe_man": {
+    "0": {
+      "srcHash": "sha256:4a25c4e844632eb930921b5583bcbb142b59447a764f55644be91bb41802faa2",
+      "text": "Man in a Black Robe",
+      "status": "machine"
+    }
+  },
+  "mob_blonde_gal": {
+    "0": {
+      "srcHash": "sha256:ef909f437d5207b80a50090498f361e08d37fd99e50f6a0021a1826b2bb0bceb",
+      "text": "Blonde Gal",
+      "status": "machine"
+    }
+  },
+  "mob_bottle_shop": {
+    "0": {
+      "srcHash": "sha256:39004b6c3060e267f0842f409c1edffecd3d80630a83f8e221d01d690a80ece6",
+      "text": "Liquor Seller",
+      "status": "machine"
+    }
+  },
+  "mob_branch_store_man": {
+    "0": {
+      "srcHash": "sha256:2979e0737f2541d566d3b9c17ba20891dde8ea4db53d9d6f5ef313ee619d6b90",
+      "text": "Stall Keeper",
+      "status": "machine"
+    }
+  },
+  "mob_brunette_gal": {
+    "0": {
+      "srcHash": "sha256:2e4cff1c59620e219f50f9fb410c5cb0b346b1d99526cbd9911f1050a37bd9b9",
+      "text": "Black-Haired Gal",
+      "status": "machine"
+    }
+  },
+  "mob_bullish_adventurer": {
+    "0": {
+      "srcHash": "sha256:3dc55db3dabc692324d88e168d3a8d5f8ded2264ffc7023361281b700dbb9f0e",
+      "text": "Bold Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_camouflage_traders": {
+    "0": {
+      "srcHash": "sha256:5d0613065b2271a2b0d51c37e917118be0fa7950f3f45774e8372ddde7f26586",
+      "text": "Counterfeiter",
+      "status": "machine"
+    }
+  },
+  "mob_camouflage_traders_boss": {
+    "0": {
+      "srcHash": "sha256:5b2dcfdad32c4f798ea73c60825af062e0efb45f32e84f21544e49b3eb32ed0d",
+      "text": "Counterfeiter Boss",
+      "status": "machine"
+    }
+  },
+  "mob_cheerful_association_member": {
+    "0": {
+      "srcHash": "sha256:7ce93da6312be31223b68a465ba98ded96808277d27f03eedec7c6dfd6c1e11f",
+      "text": "Cheerful Member",
+      "status": "machine"
+    }
+  },
+  "mob_cool_adventurer": {
+    "0": {
+      "srcHash": "sha256:b942e01f4d6beff48bdf09f668c59be2c191eaab2cc1707f1ca997924fdfd3ac",
+      "text": "Cool Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_dark_color_dragon": {
+    "0": {
+      "srcHash": "sha256:bef260ac1694ab179872c92d95f6ae3c77edfa4e77fcb4e858bab8e1a379c0b1",
+      "text": "Dark-Hued Dragon",
+      "status": "machine"
+    }
+  },
+  "mob_date_enter_woman": {
+    "0": {
+      "srcHash": "sha256:1c5ffec45cc4dc676f66e920dd998e97d42d4a352e7f6ddc3d1e47302d2aa548",
+      "text": "Woman with a Date",
+      "status": "machine"
+    }
+  },
+  "mob_defaulter": {
+    "0": {
+      "srcHash": "sha256:291cf6c347211ce4cf1e0b988ebf3d3bf7147227f7d15be4997a1e09ae243b73",
+      "text": "Defaulter",
+      "status": "machine"
+    }
+  },
+  "mob_dog_staffofficer": {
+    "0": {
+      "srcHash": "sha256:6729ce28575b8234e1cf78b087aa12dc591f0a211dc55024323f7c3328073ca7",
+      "text": "Staff Officer",
+      "status": "machine"
+    }
+  },
+  "mob_dogtribe_boy": {
+    "0": {
+      "srcHash": "sha256:d804210a94f7881800b914eb7595423f2a4a7c0a64d1b5524f94c9242912a0aa",
+      "text": "Dogfolk Boy",
+      "status": "machine"
+    }
+  },
+  "mob_dogtribe_boy_mom": {
+    "0": {
+      "srcHash": "sha256:c87e7dcdbecd5e7cf338080a95e6bffe7e0b2a48c8b605946837a21490cb79fb",
+      "text": "Dogfolk Boy's Mother",
+      "status": "machine"
+    }
+  },
+  "mob_dogtribe_cityhead": {
+    "0": {
+      "srcHash": "sha256:cda97efa2539b0cff1e9a2c5a48ae0f1dbe5213938bff629ef485f5ff8f089e8",
+      "text": "Dogfolk Town Chief",
+      "status": "machine"
+    }
+  },
+  "mob_downtown_girl_name": {
+    "0": {
+      "srcHash": "sha256:4f1c0727aba35fd21189254f28b017f05e0ee1664e900e3cb0e392d2d39e753a",
+      "text": "Osei",
+      "status": "machine"
+    }
+  },
+  "mob_downtown_girl_voice": {
+    "0": {
+      "srcHash": "sha256:ae31e18398ac5c12d0742b8258b8c9bfdb30a5e97484274768cc5df02da87feb",
+      "text": "Girl's Voice",
+      "status": "machine"
+    }
+  },
+  "mob_downtown_man": {
+    "0": {
+      "srcHash": "sha256:596c633334c465557492620252d9581e222cd250fa49c0c48455cb9975a720d2",
+      "text": "Townsman",
+      "status": "machine"
+    }
+  },
+  "mob_downtown_woman": {
+    "0": {
+      "srcHash": "sha256:da79a43397be2a7b1cb35edab7ce46e5797f683f77b05812b8d020a656704af1",
+      "text": "Townswoman",
+      "status": "machine"
+    }
+  },
+  "mob_elf_youth": {
+    "0": {
+      "srcHash": "sha256:7fd7afa5df5f3dc5d770e2bc93312e5598d1193d1ecfe83fd2bcf6e75473a5f7",
+      "text": "Young Elf",
+      "status": "machine"
+    }
+  },
+  "mob_enemy_pirates_voice": {
+    "0": {
+      "srcHash": "sha256:bb801950d93f8e7c0e6724a53ea1fc306d4adcb0a2fef77bd6fdb5adedcf389a",
+      "text": "Gruff Voice",
+      "status": "machine"
+    }
+  },
+  "mob_expert_adventurer": {
+    "0": {
+      "srcHash": "sha256:bf9bc3c230c64dad4329dcc024f9658a2e18ff4b3c6075ffec388975db4f9410",
+      "text": "Veteran Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_fall_forward_man": {
+    "0": {
+      "srcHash": "sha256:61f999ee56b4a2941ce575c92df923235f51ff9ee6bc22d6b2f924ede301771d",
+      "text": "Collapsed Man",
+      "status": "machine"
+    }
+  },
+  "mob_fallin_love_girl": {
+    "0": {
+      "srcHash": "sha256:b5036d12571e60ef67e80e2df5238b97ec3fe43641c5f87a685b129011360e06",
+      "text": "Lovestruck Girl",
+      "status": "machine"
+    }
+  },
+  "mob_female_salesperson": {
+    "0": {
+      "srcHash": "sha256:82b94f4de1c47892110771dd0c1980f5d5b861789ffbff40e5e2d5a613d13b82",
+      "text": "Shop Clerk",
+      "status": "machine"
+    }
+  },
+  "mob_female_salesperson_name": {
+    "0": {
+      "srcHash": "sha256:d8e045dc7df7461043e08bc059e6e9f206a75f04ea6663919a5c4cbac34bf3ee",
+      "text": "Lin",
+      "status": "machine"
+    }
+  },
+  "mob_fit_association_member": {
+    "0": {
+      "srcHash": "sha256:587c81f628dd21697a759c3d064247ca2319d4e46d49434e2f1f872e3a2cd1d5",
+      "text": "Slapdash Member",
+      "status": "machine"
+    }
+  },
+  "mob_float_representative": {
+    "0": {
+      "srcHash": "sha256:e164dfbfc19d9268d17993b674a5e9d806eb7dc423fefd2e9a7a98a33a6c2518",
+      "text": "Float Representative",
+      "status": "machine"
+    }
+  },
+  "mob_former_defaulter": {
+    "0": {
+      "srcHash": "sha256:1207615eaa2c09b8b1ef96db7077074ea07a6310e2f55a9ddcef5c2dfe461a91",
+      "text": "Former Defaulter",
+      "status": "machine"
+    }
+  },
+  "mob_former_girlfriend": {
+    "0": {
+      "srcHash": "sha256:d62ed190fff62329b2d09a7d4869d19df490470bb06c9a9930d6aa76033c6c1d",
+      "text": "Ex-Girlfriend",
+      "status": "machine"
+    }
+  },
+  "mob_friend_fellow": {
+    "0": {
+      "srcHash": "sha256:81941d6cb798672825aa9d93999131fbf0b275278ad489603118c7c49f8df4c1",
+      "text": "Haruto",
+      "status": "machine"
+    }
+  },
+  "mob_friendly_adventurer": {
+    "0": {
+      "srcHash": "sha256:3fac0608b708c23f9c03d31b3c6e33773db82008d58ad6f584c1f2a11eb92505",
+      "text": "Friendly Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_gadget_fanatic": {
+    "0": {
+      "srcHash": "sha256:1b17413f5aac37e837ad3d21e4a362455cd4e6e04f985901267daecbd413137a",
+      "text": "Gadget Geek",
+      "status": "machine"
+    }
+  },
+  "mob_golemclub_femalestudent": {
+    "0": {
+      "srcHash": "sha256:bf757a0f46a4fc95985d44a5a5f3769a4001d0c54d15668859abaa24adc0c38d",
+      "text": "Golem Club Girl",
+      "status": "machine"
+    }
+  },
+  "mob_golemclub_malestudent": {
+    "0": {
+      "srcHash": "sha256:4c08de48c6d2eaa01eb7bcfda1957a0c9263db6251346d9a2bb961ed5657c5c5",
+      "text": "Golem Club Boy",
+      "status": "machine"
+    }
+  },
+  "mob_golemclub_student": {
+    "0": {
+      "srcHash": "sha256:ed8af4b29e1920584f696efcf16966bf857d812c09edf11e07995650ef3574d5",
+      "text": "Golem Club Student",
+      "status": "machine"
+    }
+  },
+  "mob_graceful_ladyship": {
+    "0": {
+      "srcHash": "sha256:f9bfee01cc1785af6019952bd15b807edd5fc924513e7caac3a889955bdbc4ee",
+      "text": "Graceful Lady",
+      "status": "machine"
+    }
+  },
+  "mob_graceful_ladyship_name": {
+    "0": {
+      "srcHash": "sha256:787ef9b5c67c93a6439768722c4e5bc8d32db5ff6a3612f0510add64ee787f0e",
+      "text": "Grace",
+      "status": "machine"
+    }
+  },
+  "mob_haughty_judge": {
+    "0": {
+      "srcHash": "sha256:b58928501a8fdfd4cd59ccd0b0a563b1d9941411d4c9111673a00fcc39644434",
+      "text": "Haughty Judge",
+      "status": "machine"
+    }
+  },
+  "mob_heavenly_two_fun": {
+    "0": {
+      "srcHash": "sha256:e986e661f84da91530ec6a5957f0f77c129708d36002b904bd4878379a00994a",
+      "text": "Beaucy Fan",
+      "status": "machine"
+    }
+  },
+  "mob_injured_adventurer": {
+    "0": {
+      "srcHash": "sha256:1d4b1480e79962e2ea09fa4ef22c418bfc5caeb6b76e8bcb8c3ee0314ef86bc0",
+      "text": "Injured Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_ironist_judge": {
+    "0": {
+      "srcHash": "sha256:065e8572cabe0d317e401fe559f1cf6e979afa5bce0bf09b454e2befc4c031c2",
+      "text": "Sarcastic Judge",
+      "status": "machine"
+    }
+  },
+  "mob_jiangshi_girl_client": {
+    "0": {
+      "srcHash": "sha256:82dcc075479419e7273522e83e33387c3967670c5976527929f44520107a04c0",
+      "text": "Chenxi's Client",
+      "status": "machine"
+    }
+  },
+  "mob_jiangshi_thieves": {
+    "0": {
+      "srcHash": "sha256:ab2beedf1d0affe9408f0954ed340bef0a9108f2e0e6d6c4018bae854cdd73a0",
+      "text": "Jiangshi Thieves",
+      "status": "machine"
+    }
+  },
+  "mob_jiangshi_thieves_fishy": {
+    "0": {
+      "srcHash": "sha256:3be2e705e9d879bb834d47c8deb3e0c6f3a5d68a01c8a80be18b3311e7e84527",
+      "text": "Jiangshi?",
+      "status": "machine"
+    }
+  },
+  "mob_jiangshi_thieves_seem": {
+    "0": {
+      "srcHash": "sha256:4098b043ffa8383a0a8bf0ba705de47f73bafb65ae77c887e512ea123dff562a",
+      "text": "Jiangshi",
+      "status": "machine",
+      "note": "Chinese hopping vampire."
+    }
+  },
+  "mob_learner_patissier": {
+    "0": {
+      "srcHash": "sha256:63ceb6369e2bccadcacc5e3f73c487234ef4d0154386f6ac4b93a125c38af157",
+      "text": "Apprentice Patissier",
+      "status": "machine"
+    }
+  },
+  "mob_liquor_store_master": {
+    "0": {
+      "srcHash": "sha256:e8b0f9092f3d01c60b3d2756063cf0569c84cd331238032feb3e1dc0982b995f",
+      "text": "Liquor Shop Heir",
+      "status": "machine"
+    }
+  },
+  "mob_look_gentle_woman": {
+    "0": {
+      "srcHash": "sha256:e5c5c15c3eb2cd9268b5b4fd09606edf05d1f34dab00ba61804e4d024377076c",
+      "text": "Demure Woman",
+      "status": "machine"
+    }
+  },
+  "mob_loving_faces_woman": {
+    "0": {
+      "srcHash": "sha256:afb0edd8f140f2082634deca6de5ff0f3e6ff2966e45f2bd82d92e3dec0fa1ff",
+      "text": "Looks-Loving Woman",
+      "status": "machine"
+    }
+  },
+  "mob_lowbrows_woman": {
+    "0": {
+      "srcHash": "sha256:aebbc2f43baf82f28ced9db373937331975941cef79f831e8fc2169550838549",
+      "text": "Trend-Chasing Woman",
+      "status": "machine"
+    }
+  },
+  "mob_main_martial_artist": {
+    "0": {
+      "srcHash": "sha256:f7d25e7c115c358c8d64b791f7ed75b986aa835a1c645c088f7e6b1e4de24a59",
+      "text": "Palpebran Fighter",
+      "status": "machine"
+    }
+  },
+  "mob_middlerank_adventurer": {
+    "0": {
+      "srcHash": "sha256:add3baae9ef32b8390d3156960428e8c010883d21d5126cbf105ba28b8034680",
+      "text": "Seasoned Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_mobster": {
+    "0": {
+      "srcHash": "sha256:c017acc825f6126c38a27de3a8fa176f2eb2631d3f9585e66b4165590d58e2db",
+      "text": "Thug",
+      "status": "machine"
+    }
+  },
+  "mob_most_scoundrel": {
+    "0": {
+      "srcHash": "sha256:f75e1e3472a17a40899c040f6bc6ce989fda4c9ecdcc0d84a20d91c9065b7da1",
+      "text": "Irredeemable Rogue",
+      "status": "machine"
+    }
+  },
+  "mob_nasty_judge": {
+    "0": {
+      "srcHash": "sha256:86fa100c8c57a4e5d75336bb2e802ec7505b9a776aa77681a2faa42a66b6e84d",
+      "text": "Snide Judge",
+      "status": "machine"
+    }
+  },
+  "mob_notnook_adventurer": {
+    "0": {
+      "srcHash": "sha256:05df94a1ddf477193862b05a45ec878594de5fdb2ae73b36c187bc6e1611e1ef",
+      "text": "Well-Rested Adventurer",
+      "status": "machine",
+      "note": "Source: adventurer without dark circles (under the eyes)."
+    }
+  },
+  "mob_older_man": {
+    "0": {
+      "srcHash": "sha256:d4513f8ee43a8d7cb1ab994816cc5f89264dbf004c864d8116043ade07c204eb",
+      "text": "Old Man",
+      "status": "machine"
+    }
+  },
+  "mob_panic_man": {
+    "0": {
+      "srcHash": "sha256:63bb01931ddf3dacaeaba4af2d3c7d972c202a51234b83130584f16b896dc801",
+      "text": "Panicked Man",
+      "status": "machine"
+    }
+  },
+  "mob_pastry_merchant_far": {
+    "0": {
+      "srcHash": "sha256:e28b765ea2220a00b82eb274e3f62b5f3154149c0cc82cfed4fb647c4c81ba4f",
+      "text": "Farlands Confectioner",
+      "status": "machine"
+    }
+  },
+  "mob_pastry_merchant_pal": {
+    "0": {
+      "srcHash": "sha256:7d0740f33a7cfe6d3abbe1ed3c25cf0d9a8cb8cb8c2ae9ee9c99e1ec80ec3b19",
+      "text": "Palpebran Confectioner",
+      "status": "machine"
+    }
+  },
+  "mob_pbc_bursar": {
+    "0": {
+      "srcHash": "sha256:5189c72481bd7d2f2f6bbc30fe2df0e5a6b9175e3ee5e97cb8da213b93775c3e",
+      "text": "PBC Chief Accountant",
+      "status": "machine"
+    }
+  },
+  "mob_photograph_staff": {
+    "0": {
+      "srcHash": "sha256:df34211f2e97ebf8f1ee725b576fdb192510b4242c8960a4f49aee5fd09d6e7b",
+      "text": "Staff",
+      "status": "machine"
+    }
+  },
+  "mob_quasi_adventure": {
+    "0": {
+      "srcHash": "sha256:fdd58ee64213f864936640a27c5f9a13d133c0de41de7eec5d938e0137af4e71",
+      "text": "Adventurer?",
+      "status": "machine"
+    }
+  },
+  "mob_runaway_motorbike": {
+    "0": {
+      "srcHash": "sha256:b1c9845df9fa3a96b2a3895cd1ffb2ccab7240cba0663dacc43967d83cfd3a23",
+      "text": "Reckless Biker",
+      "status": "machine"
+    }
+  },
+  "mob_same_organized_man": {
+    "0": {
+      "srcHash": "sha256:65a6aff7ab8255c86e6ddbc2bda13191465a95039db50cfa76bc9f3eb0e1efcd",
+      "text": "Former Comrade",
+      "status": "machine",
+      "note": "Source: man from the same organization."
+    }
+  },
+  "mob_serious_adventurer": {
+    "0": {
+      "srcHash": "sha256:4b56119c574ee9aa5cf15a87f53ea8acc67efccebb8a0a5ec0fd918c2874b487",
+      "text": "Earnest Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_sharplook_dog_soldier": {
+    "0": {
+      "srcHash": "sha256:c5e900b86c11c8e78c012b8900b711ec64d7af3e735fb76eeb2cb6ee6fc32146",
+      "text": "Keen-Eyed Soldier",
+      "status": "machine"
+    }
+  },
+  "mob_sharplook_dog_soldier_name": {
+    "0": {
+      "srcHash": "sha256:f4c98f5ae1afb3ceca4307cbd0315f93e53be733a23df3766a07c725a28203e6",
+      "text": "Paul",
+      "status": "machine"
+    }
+  },
+  "mob_sheep_girl_fathshop": {
+    "0": {
+      "srcHash": "sha256:8473c8c295a38192dcdba9015d7f025b6b2d11ab4f05e628068985f0e8fdfe8a",
+      "text": "Cuddle",
+      "status": "machine"
+    }
+  },
+  "mob_shibuya_lively_dk": {
+    "0": {
+      "srcHash": "sha256:00c2de15099e36c8686492a532e8a09d9b0ffe207f559ff5e802aab36ef6c4d7",
+      "text": "Lively Schoolboy",
+      "status": "machine"
+    }
+  },
+  "mob_shibuya_male": {
+    "0": {
+      "srcHash": "sha256:b120d95bafd029fcf37b1d400b678d550212646f3a0ce786700b2f6f2b4d479a",
+      "text": "Shibuya Man",
+      "status": "machine"
+    }
+  },
+  "mob_shibuya_younger_voice": {
+    "0": {
+      "srcHash": "sha256:b5c6fa7e8a3ff461edc3fb0a20103268858ccb2dd3e75dbe1297ef9e32aa35df",
+      "text": "Young Man's Voice",
+      "status": "machine"
+    }
+  },
+  "mob_shout_victory": {
+    "0": {
+      "srcHash": "sha256:d892ab83471a8ed84f7dc472f3e577e9a7cbbe446d5d9ce3ecd171cd3dcbea88",
+      "text": "Battle Cry",
+      "status": "machine"
+    }
+  },
+  "mob_shrewdness_adventurer": {
+    "0": {
+      "srcHash": "sha256:b4bd4b43267085cbe1e9763f884090a34e3a8201eeafbbdd8292e2f22477c214",
+      "text": "Shrewd Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_smuggler": {
+    "0": {
+      "srcHash": "sha256:e424763dab7eda03039cb54799cae80b5a103aca7821f1d35254a1c8de05b6a8",
+      "text": "Smuggler",
+      "status": "machine"
+    }
+  },
+  "mob_stand_voice": {
+    "0": {
+      "srcHash": "sha256:31c0434b5f54c62859f8b21cf91bfba353de32f39ef732fd2b33015c56b7685f",
+      "text": "Stall",
+      "status": "machine"
+    }
+  },
+  "mob_tough_adventurer": {
+    "0": {
+      "srcHash": "sha256:584954c1eccf2e3a20a75bcdeae3dc46bcd9f053c86e0bd2b0a082e81d0f526d",
+      "text": "Tough Adventurer",
+      "status": "machine"
+    }
+  },
+  "mob_unsure_mens": {
+    "0": {
+      "srcHash": "sha256:8f089391852cd00975b10d2420a334e7f73c0e9e9cfe69b9715e782a90423e23",
+      "text": "Shady Men",
+      "status": "machine"
+    }
+  },
+  "mob_unsure_mens_leader": {
+    "0": {
+      "srcHash": "sha256:f4ed761a1404f3f5002c3373c73bdb047e36d679811179eaa5cf1071ffe0a6bd",
+      "text": "Shady Ringleader",
+      "status": "machine"
+    }
+  },
+  "mob_unsure_pervert": {
+    "0": {
+      "srcHash": "sha256:e748ebf2cd8d6d7f001835eb9f8a496adeb3d0a9824bacd682f31fdbadf8ae89",
+      "text": "Shady Pervert",
+      "status": "machine"
+    }
+  },
+  "mob_vigorous_boy": {
+    "0": {
+      "srcHash": "sha256:292c3c363367ef1252638ed9ec5b59fdcca4fdd8f2ace7c2d2a52781ba685a3a",
+      "text": "Spirited Boy",
+      "status": "machine"
+    }
+  },
+  "mob_village_boy": {
+    "0": {
+      "srcHash": "sha256:ede1096c0f212a77e6c833aa8c021238585fcd56d2df749195a5785b78221a0e",
+      "text": "Village Boy",
+      "status": "machine"
+    }
+  },
+  "mob_village_girl": {
+    "0": {
+      "srcHash": "sha256:ca757aac963d6746d01ea6a5565d11bd50c73bfb96031b72fde724d9555d94cd",
+      "text": "Village Girl",
+      "status": "machine"
+    }
+  },
+  "mob_worried_girl": {
+    "0": {
+      "srcHash": "sha256:6f7e7fe8ac5ffdad99e871a741eb51b0532699561a1fb4b87ada1969efe4b9d8",
+      "text": "Once-Troubled Girl",
+      "status": "machine",
+      "note": "Source: the girl who had been troubled."
+    }
+  },
+  "mob_worriy_boy": {
+    "0": {
+      "srcHash": "sha256:1ed94a99ac4f1bd2edf198765cff1177bc111f9ed928e7f77f7b9c4248bd5771",
+      "text": "Troubled Boy",
+      "status": "machine"
+    }
+  },
+  "mob_worriy_girl": {
+    "0": {
+      "srcHash": "sha256:6fad9fb1cfbd5caad694a0a717dbcf7a21e4b6913dcf79e77099f490f75c8aa0",
+      "text": "Troubled Girl",
+      "status": "machine"
+    }
+  },
+  "mob_young_association_fervor": {
+    "0": {
+      "srcHash": "sha256:334fe1eb271652affe5183439a7cac50d70937223c3aac2c1f93b00c1e477a86",
+      "text": "Fiery Youth Member",
+      "status": "machine",
+      "note": "Fiery member of the youth corps (seinendan, village youth association)."
+    }
+  },
+  "mob_young_association_leader": {
+    "0": {
+      "srcHash": "sha256:964da72e2132ad051eee5676ec38dc674da44a4346099a83d01c0eadd6c6f8a8",
+      "text": "Youth Corps Leader",
+      "status": "machine"
+    }
+  },
+  "mob_young_association_member": {
+    "0": {
+      "srcHash": "sha256:570800c306c230b5769160a663082504835f0b8030756145cea0c33e2b828537",
+      "text": "Youth Corps Members",
+      "status": "machine"
+    }
+  },
+  "mob_young_engineer": {
+    "0": {
+      "srcHash": "sha256:d5ecfd9f6c944fe4f4ef71abdf1e9aedbb0c1d280dce353fff00fffe95ae3613",
+      "text": "Young Engineer",
+      "status": "machine"
+    }
+  },
+  "octcyborg_lady": {
+    "0": {
+      "srcHash": "sha256:1a416b3a5343a4cdd5400df0108c4c47fe2d3539c8306fa0a06759fc464cecf9",
+      "text": "Kasivars",
+      "status": "machine"
+    }
+  },
+  "old_woman": {
+    "0": {
+      "srcHash": "sha256:5e555dde4027abf4770483624787260e73c4b5d35acac744a805dd8a75306adb",
+      "text": "Old Woman",
+      "status": "machine"
+    }
+  },
+  "paraaby_mascot": {
+    "0": {
+      "srcHash": "sha256:c41fc371a325102c525b48b372e16557a1104f96369e42b12441d29329bab54e",
+      "text": "Lost",
+      "status": "machine"
+    }
+  },
+  "paraaby_mascot_noname": {
+    "0": {
+      "srcHash": "sha256:2b41520b989bd8e7983cc97066403f240b93d5ec00a8932e7afd7667661d94b8",
+      "text": "Calling Terminal",
+      "status": "machine",
+      "note": "Source: the calling terminal (of the Devourer); Lost before it is named."
+    }
+  },
+  "pbc_operator_operating": {
+    "0": {
+      "srcHash": "sha256:988d8fd9d8f873554682571bc70b7f498d4c6cf4e0b60a882d15ca647001bb2f",
+      "text": "Operator",
+      "status": "machine"
+    }
+  },
+  "priest_prince_playable": {
+    "0": {
+      "srcHash": "sha256:2ff0be34a304973f53d09c1ab1173d3ffc9153ae8b33d1e69ae3f15c18d9a02a",
+      "text": "Marden",
+      "status": "machine"
+    }
+  },
+  "priest_prince_playable_encyclopedia": {
+    "0": {
+      "srcHash": "sha256:2ff0be34a304973f53d09c1ab1173d3ffc9153ae8b33d1e69ae3f15c18d9a02a",
+      "text": "Marden",
+      "status": "machine"
+    }
+  },
+  "priest_prince_playable_fake_a": {
+    "0": {
+      "srcHash": "sha256:49f29bd3e8e739d21ff2822961f307c41f2d2e6505b68a8580d741b5ac984653",
+      "text": "Marden?",
+      "status": "machine"
+    }
+  },
+  "priest_prince_playable_fake_b": {
+    "0": {
+      "srcHash": "sha256:bd7b74b938d2802533e5a6ed246bad98d6a359202c6ec4510b5b3e10afeafe46",
+      "text": "Mar?en",
+      "status": "machine"
+    }
+  },
+  "priest_prince_playable_fake_c": {
+    "0": {
+      "srcHash": "sha256:2d2a6930c075fd0c72c879d39408e394069a293244e8035297128d3618ca88d8",
+      "text": "Ma?den",
+      "status": "machine"
+    }
+  },
+  "psychic_gal_dream": {
+    "0": {
+      "srcHash": "sha256:c14f4f9660f116ff5b6d93d27fcd576f7deab3699ae17ee03e88c1a4690115e9",
+      "text": "Yae Asato?",
+      "status": "machine"
+    }
+  },
+  "psychic_gal_noname": {
+    "0": {
+      "srcHash": "sha256:4bdd63d6c1ac4860495772c3c1c491de1f0d2aeefe8a576e734f29781a06e543",
+      "text": "Flying Schoolgirl",
+      "status": "machine"
+    }
+  },
+  "psychic_katana": {
+    "0": {
+      "srcHash": "sha256:10c5fa45e968451061a11826ef042832c4cdccdff87595781989a7c7cfe3895b",
+      "text": "Nagiri Amo",
+      "status": "machine"
+    }
+  },
+  "psychic_katana_noname": {
+    "0": {
+      "srcHash": "sha256:34cec642f8aa34ce06365dc44110df57a6ba642db9391e3999b0652eda10c026",
+      "text": "Girl with a Katana",
+      "status": "machine"
+    }
+  },
+  "psychic_nao_combat_unknown_voice": {
+    "0": {
+      "srcHash": "sha256:cc8aeb840e033950f5b8e36284f4a07eab3a7944b9df1c8653aae54bcdb97d0f",
+      "text": "Someone's Voice",
+      "status": "machine"
+    }
+  },
+  "psychic_taichi_noname": {
+    "0": {
+      "srcHash": "sha256:670d43fd331c0d868c675aa7579db63d8882aafd462227fc66b7c9196181fbdd",
+      "text": "Brown-Haired Drifter",
+      "status": "machine"
+    }
+  },
+  "psychic_taichi_young": {
+    "0": {
+      "srcHash": "sha256:b1d2e2a50237d2d800f2eac11261d079881d164a1bd061383c433c45478df3e1",
+      "text": "Young Taichi",
+      "status": "machine"
+    }
+  },
+  "psychic_teleport_playable": {
+    "0": {
+      "srcHash": "sha256:8d1cb67612e6ba86b88deddb89799836bf66407a0a2d3404b33a1ffa73e26486",
+      "text": "Hibiki Suminami",
+      "status": "machine"
+    }
+  },
+  "psychic_teleport_playable_encyclopedia": {
+    "0": {
+      "srcHash": "sha256:8d1cb67612e6ba86b88deddb89799836bf66407a0a2d3404b33a1ffa73e26486",
+      "text": "Hibiki Suminami",
+      "status": "machine"
+    }
+  },
+  "sleep_puppy_dad": {
+    "0": {
+      "srcHash": "sha256:43b3814f7e3073723c3102749fff15fe9646f6d21f1ce0f29a6d38503b1c70e5",
+      "text": "Feanie's Father",
+      "status": "machine"
+    }
+  },
+  "sleep_puppy_vt23": {
+    "0": {
+      "srcHash": "sha256:051f41e4ef81db62057097189c18c82903a1e88cf338c764552d8ece9215be76",
+      "text": "Feanie",
+      "status": "machine"
+    }
+  },
+  "summoner_little_voice": {
+    "0": {
+      "srcHash": "sha256:ae31e18398ac5c12d0742b8258b8c9bfdb30a5e97484274768cc5df02da87feb",
+      "text": "Girl's Voice",
+      "status": "machine"
+    }
+  },
+  "vesta_caster": {
+    "0": {
+      "srcHash": "sha256:6af5c69c54b42624b6ff28514fc6d4572e1bbc51e140a6f36fe90dab3d1eed5b",
+      "text": "Nisues",
+      "status": "machine"
+    }
+  },
+  "vesta_caster_noname": {
+    "0": {
+      "srcHash": "sha256:112b1e5617091008975d86cbc6351c95b028ab6056c8321ea6842443a2ec4f07",
+      "text": "Vesta Girl",
+      "status": "machine"
+    }
+  }
+}

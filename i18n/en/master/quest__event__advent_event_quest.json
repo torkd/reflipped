@@ -1,0 +1,377 @@
+{
+  "200015/1": {
+    "2": {
+      "srcHash": "sha256:ef2aa11b945f877bb7ee0e704e3b0e72828bc4fb9e1987a3e6d13b168f0337df",
+      "text": "Festive Snowy Maws G ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200015/2": {
+    "2": {
+      "srcHash": "sha256:ef2aa11b945f877bb7ee0e704e3b0e72828bc4fb9e1987a3e6d13b168f0337df",
+      "text": "Festive Snowy Maws G ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200015/3": {
+    "2": {
+      "srcHash": "sha256:ef2aa11b945f877bb7ee0e704e3b0e72828bc4fb9e1987a3e6d13b168f0337df",
+      "text": "Festive Snowy Maws G ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200015/4": {
+    "2": {
+      "srcHash": "sha256:ef2aa11b945f877bb7ee0e704e3b0e72828bc4fb9e1987a3e6d13b168f0337df",
+      "text": "Festive Snowy Maws G ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200015/5": {
+    "2": {
+      "srcHash": "sha256:ef2aa11b945f877bb7ee0e704e3b0e72828bc4fb9e1987a3e6d13b168f0337df",
+      "text": "Festive Snowy Maws G ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200017/1": {
+    "2": {
+      "srcHash": "sha256:c86c7a65e8e50929f28e9768a647dd622c69fadec1e6906671bf6db5dd0012af",
+      "text": "Clarg ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200017/2": {
+    "2": {
+      "srcHash": "sha256:c86c7a65e8e50929f28e9768a647dd622c69fadec1e6906671bf6db5dd0012af",
+      "text": "Clarg ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200017/3": {
+    "2": {
+      "srcHash": "sha256:c86c7a65e8e50929f28e9768a647dd622c69fadec1e6906671bf6db5dd0012af",
+      "text": "Clarg ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200017/4": {
+    "2": {
+      "srcHash": "sha256:c86c7a65e8e50929f28e9768a647dd622c69fadec1e6906671bf6db5dd0012af",
+      "text": "Clarg ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200018/1": {
+    "2": {
+      "srcHash": "sha256:5613502d6e86151d95d4efa4bd93ccd00a6a7b8e89ccb3338c5aad78ffc6ce50",
+      "text": "Vernus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200018/2": {
+    "2": {
+      "srcHash": "sha256:5613502d6e86151d95d4efa4bd93ccd00a6a7b8e89ccb3338c5aad78ffc6ce50",
+      "text": "Vernus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200018/3": {
+    "2": {
+      "srcHash": "sha256:5613502d6e86151d95d4efa4bd93ccd00a6a7b8e89ccb3338c5aad78ffc6ce50",
+      "text": "Vernus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200018/4": {
+    "2": {
+      "srcHash": "sha256:5613502d6e86151d95d4efa4bd93ccd00a6a7b8e89ccb3338c5aad78ffc6ce50",
+      "text": "Vernus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200021/1": {
+    "2": {
+      "srcHash": "sha256:777566cabaebb481958e802b83995cdc4b8f128b294a2f996dc7a71af7bc0226",
+      "text": "Wish Upon a Star",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:95e305b396f5a71ec7e5773e386ecbd7ae7f1487507556015c446ff49c3c1dbd",
+      "text": "As Nao and the others make ready to hold the line in order to leave themselves a chance to counterattack, reports come in of Purgers entering Shibuya. Desperate to save the civilians in Shibuya, Nao comes up with a plan to use shifts in the Kaleidoscope to form a bridge. A diversionary force is sent to draw the enemy's attention.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200021/2": {
+    "2": {
+      "srcHash": "sha256:ce050a520c748470edad4e2e7528be9691ceeefa85c1d1fe541a3e272d9a1de2",
+      "text": "Frontline Purger ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200021/3": {
+    "2": {
+      "srcHash": "sha256:e59bee8bbdd114ac98189f5f25140c8eb36da39b3bb288d82375fc0d932474c5",
+      "text": "Palpebra's Counterattack",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:8b2abdf5fc721b4a8fa58ebc073af57ee2a0fc1b7ff31e76060f110fa4120f87",
+      "text": "Nao enters the Kaleidoscope, seeking the Star Relic held by Belsidia to build a bridge. Leon comes to her rescue in the nick of time and finds he's brought along just the person she needs. Nao makes a concerned plea to Belsidia, convincing the woman to lend her aid in the task ahead.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200021/4": {
+    "2": {
+      "srcHash": "sha256:5f8651d45d03f90137a8f6cde93069f46a47fcb1da0c45cba2f777a3b634006d",
+      "text": "The Path to Safety",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:0484bd35429e3092151e38bf93ed58aae63e822c046bbc4c8e47f2079a4d886b",
+      "text": "While evacuating the people of Shibuya, Seiji leaves Memram to protect their escape while he brings the group underground. Beginning with forces from the Silver Woods, a defensive battle spreads out above, while below, Seiji and the others witness Nao completing the bridge.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200021/5": {
+    "2": {
+      "srcHash": "sha256:71c203b978fddf5e11a6b41ab55de59144ed4017792775ca38982c357793aeeb",
+      "text": "Purger Sage ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200021/6": {
+    "2": {
+      "srcHash": "sha256:f8e6009bf6274d935543c5ffd5bd567f15e51b9fa3c4dcab1b8d91ff18b91ba7",
+      "text": "Modified Purger ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200021/7": {
+    "2": {
+      "srcHash": "sha256:c1b85d86f5ebc87b7497409f368a3ef0e912f2fb03c225e22efc6d96e6de807c",
+      "text": "Echoes in the Abyss",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:fa03a7a7b7e9c6afa1536368df3a7e32b4e20289b0487a02b3421086626e4d54",
+      "text": "Despite numerous losses, the Purgers keep coming. Suizen's group begins to despair when suddenly, a dark energy bubbles up from below. Nao and the others believe it to be the power of the curse, but they bear witness to Challua and Regitare using the energy for an entirely different purpose.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200021/8": {
+    "2": {
+      "srcHash": "sha256:307d713cccffeab69e05862940bfba2f5bd4af911b097c26fcffe15fa71b67f1",
+      "text": "Seize Your Destiny",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:4f0fc1f89563e123f4aad5fe25e50f3cdf1d6f39e255343be3ad4fa488dc17b7",
+      "text": "Challua's power gives form to lingering emotions, making departed souls appear throughout the city. Regitare provides healing while sealing off the Purgers' power to reincarnate themselves. As Nao looks upon a city filled with those determined to fight on, the time comes to signal a counterattack.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200021/9": {
+    "2": {
+      "srcHash": "sha256:f5508a933b0b7367803575b65024cf1e09a43fbc30c9f2dde63594853aeaad7c",
+      "text": "Purger Empress ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200028/1": {
+    "2": {
+      "srcHash": "sha256:94a8ca8237306dbd6c9a48733bf02e912969cf29ab963479609f7a67f4b24c4d",
+      "text": "Deophrastus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200028/2": {
+    "2": {
+      "srcHash": "sha256:94a8ca8237306dbd6c9a48733bf02e912969cf29ab963479609f7a67f4b24c4d",
+      "text": "Deophrastus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200028/3": {
+    "2": {
+      "srcHash": "sha256:94a8ca8237306dbd6c9a48733bf02e912969cf29ab963479609f7a67f4b24c4d",
+      "text": "Deophrastus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200028/4": {
+    "2": {
+      "srcHash": "sha256:94a8ca8237306dbd6c9a48733bf02e912969cf29ab963479609f7a67f4b24c4d",
+      "text": "Deophrastus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200028/5": {
+    "2": {
+      "srcHash": "sha256:94a8ca8237306dbd6c9a48733bf02e912969cf29ab963479609f7a67f4b24c4d",
+      "text": "Deophrastus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200037/1": {
+    "2": {
+      "srcHash": "sha256:d38baa97f9f1b756e1044e78adf199198a5862cf89498a8952c5dde2df13d275",
+      "text": "Black Dragon ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200037/2": {
+    "2": {
+      "srcHash": "sha256:d38baa97f9f1b756e1044e78adf199198a5862cf89498a8952c5dde2df13d275",
+      "text": "Black Dragon ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200037/3": {
+    "2": {
+      "srcHash": "sha256:d38baa97f9f1b756e1044e78adf199198a5862cf89498a8952c5dde2df13d275",
+      "text": "Black Dragon ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200037/4": {
+    "2": {
+      "srcHash": "sha256:d38baa97f9f1b756e1044e78adf199198a5862cf89498a8952c5dde2df13d275",
+      "text": "Black Dragon ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200037/5": {
+    "2": {
+      "srcHash": "sha256:d38baa97f9f1b756e1044e78adf199198a5862cf89498a8952c5dde2df13d275",
+      "text": "Black Dragon ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200050/1": {
+    "2": {
+      "srcHash": "sha256:777566cabaebb481958e802b83995cdc4b8f128b294a2f996dc7a71af7bc0226",
+      "text": "Wish Upon a Star",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:95e305b396f5a71ec7e5773e386ecbd7ae7f1487507556015c446ff49c3c1dbd",
+      "text": "As Nao and the others make ready to hold the line in order to leave themselves a chance to counterattack, reports come in of Purgers entering Shibuya. Desperate to save the civilians in Shibuya, Nao comes up with a plan to use shifts in the Kaleidoscope to form a bridge. A diversionary force is sent to draw the enemy's attention.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200050/2": {
+    "2": {
+      "srcHash": "sha256:ce050a520c748470edad4e2e7528be9691ceeefa85c1d1fe541a3e272d9a1de2",
+      "text": "Frontline Purger ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200050/3": {
+    "2": {
+      "srcHash": "sha256:e59bee8bbdd114ac98189f5f25140c8eb36da39b3bb288d82375fc0d932474c5",
+      "text": "Palpebra's Counterattack",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:8b2abdf5fc721b4a8fa58ebc073af57ee2a0fc1b7ff31e76060f110fa4120f87",
+      "text": "Nao enters the Kaleidoscope, seeking the Star Relic held by Belsidia to build a bridge. Leon comes to her rescue in the nick of time and finds he's brought along just the person she needs. Nao makes a concerned plea to Belsidia, convincing the woman to lend her aid in the task ahead.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200050/4": {
+    "2": {
+      "srcHash": "sha256:5f8651d45d03f90137a8f6cde93069f46a47fcb1da0c45cba2f777a3b634006d",
+      "text": "The Path to Safety",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:0484bd35429e3092151e38bf93ed58aae63e822c046bbc4c8e47f2079a4d886b",
+      "text": "While evacuating the people of Shibuya, Seiji leaves Memram to protect their escape while he brings the group underground. Beginning with forces from the Silver Woods, a defensive battle spreads out above, while below, Seiji and the others witness Nao completing the bridge.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200050/5": {
+    "2": {
+      "srcHash": "sha256:71c203b978fddf5e11a6b41ab55de59144ed4017792775ca38982c357793aeeb",
+      "text": "Purger Sage ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200050/6": {
+    "2": {
+      "srcHash": "sha256:f8e6009bf6274d935543c5ffd5bd567f15e51b9fa3c4dcab1b8d91ff18b91ba7",
+      "text": "Modified Purger ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200050/7": {
+    "2": {
+      "srcHash": "sha256:c1b85d86f5ebc87b7497409f368a3ef0e912f2fb03c225e22efc6d96e6de807c",
+      "text": "Echoes in the Abyss",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:fa03a7a7b7e9c6afa1536368df3a7e32b4e20289b0487a02b3421086626e4d54",
+      "text": "Despite numerous losses, the Purgers keep coming. Suizen's group begins to despair when suddenly, a dark energy bubbles up from below. Nao and the others believe it to be the power of the curse, but they bear witness to Challua and Regitare using the energy for an entirely different purpose.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200050/8": {
+    "2": {
+      "srcHash": "sha256:307d713cccffeab69e05862940bfba2f5bd4af911b097c26fcffe15fa71b67f1",
+      "text": "Seize Your Destiny",
+      "status": "machine"
+    },
+    "125": {
+      "srcHash": "sha256:4f0fc1f89563e123f4aad5fe25e50f3cdf1d6f39e255343be3ad4fa488dc17b7",
+      "text": "Challua's power gives form to lingering emotions, making departed souls appear throughout the city. Regitare provides healing while sealing off the Purgers' power to reincarnate themselves. As Nao looks upon a city filled with those determined to fight on, the time comes to signal a counterattack.",
+      "status": "machine",
+      "note": "official synopsis of the first run (200013)"
+    }
+  },
+  "200050/9": {
+    "2": {
+      "srcHash": "sha256:f5508a933b0b7367803575b65024cf1e09a43fbc30c9f2dde63594853aeaad7c",
+      "text": "Purger Empress ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200053/1": {
+    "2": {
+      "srcHash": "sha256:3de915b5ef63a36235af807955e6a18689dff897ba27130e1977710720521f29",
+      "text": "Aizan ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200053/2": {
+    "2": {
+      "srcHash": "sha256:3de915b5ef63a36235af807955e6a18689dff897ba27130e1977710720521f29",
+      "text": "Aizan ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200053/3": {
+    "2": {
+      "srcHash": "sha256:3de915b5ef63a36235af807955e6a18689dff897ba27130e1977710720521f29",
+      "text": "Aizan ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "200053/4": {
+    "2": {
+      "srcHash": "sha256:3de915b5ef63a36235af807955e6a18689dff897ba27130e1977710720521f29",
+      "text": "Aizan ::quest_rank::",
+      "status": "machine"
+    }
+  }
+}

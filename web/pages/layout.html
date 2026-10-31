@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
+    <script src="/public/js/confirm.js" defer></script>
+    <title>{{title}} · Reflipped</title>
+</head>
+
+<body class="bg-background">
+    <div class="app">
+        <aside class="sidebar">
+            <a href="/" class="brand">
+                <img src="/public/img/logo.svg" class="w-9 h-9" alt="">
+                <span class="brand-name">Reflipped</span>
+            </a>
+            <nav class="nav">
+{{nav}}
+            </nav>
+        </aside>
+        <main class="main">
+{{content}}
+        </main>
+    </div>
+</body>
+
+</html>

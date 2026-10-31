@@ -1,0 +1,19 @@
+# Traefik running on the host (not in Docker), file provider: route PUBLIC_HOST to the edge of the
+# stack, api or assets flavour (TLS off, EDGE_BIND=127.0.0.1, HTTP_PORT=8080), or to the proxy
+# flavour's Reflipped on 127.0.0.1:8000 (which then serves the assets itself).
+# Load it with `providers.file.filename` (or `directory`) in Traefik's static config; replace the
+# hostname, entry point and resolver with yours.
+
+http:
+  routers:
+    reflipped:
+      rule: Host(`reflipped.example.com`)
+      entryPoints: [websecure]
+      service: reflipped
+      tls:
+        certResolver: letsencrypt
+  services:
+    reflipped:
+      loadBalancer:
+        servers:
+          - url: http://127.0.0.1:8080   # the edge; or http://127.0.0.1:8000 for the proxy flavour

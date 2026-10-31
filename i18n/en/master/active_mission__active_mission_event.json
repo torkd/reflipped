@@ -1,0 +1,17 @@
+{
+  "2": {
+    "1": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    }
+  },
+  "3": {
+    "1": {
+      "srcHash": "sha256:83518c8fdd0712451b0b70ed612cbbdef770daf1f0c35b67dfa1c1cdbf95a83c",
+      "text": "1 Million Yen Giveaway",
+      "status": "machine",
+      "note": "real-money campaign label (JP only); kept literal"
+    }
+  }
+}

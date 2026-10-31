@@ -1,0 +1,4 @@
+# Assets flavour: there is no Reflipped behind this edge, so everything but the assets is a 404.
+location / {
+    return 404;
+}

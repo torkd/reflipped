@@ -1,0 +1,847 @@
+{
+  "1111153/1": {
+    "19": {
+      "srcHash": "sha256:ed4c2bff19715c952e1fb50e35dfac38ebdec08083ddbe364cbd531d46316bf1",
+      "text": "A rookie adventurer fresh from the countryside. She carries the power of a Fire Spirit, though even she isn't sure why. But she doesn't sweat the small stuff! Armed with the spirit's power and her natural cheer, she's charging down the road to becoming a first-class adventurer.",
+      "status": "machine"
+    }
+  },
+  "1111159/1": {
+    "19": {
+      "srcHash": "sha256:cfbc96e11d60b90a39776df3f067e354c16d622353d93abb9a3d2a5f051d4b28",
+      "text": "An honest and polite catfolk girl who tries to act grown-up despite her young age. Behind her adorable looks, she is said to hide a tremendous power.",
+      "status": "machine"
+    }
+  },
+  "1121159/1": {
+    "19": {
+      "srcHash": "sha256:223fa987d7d57798604f62d57871fd09eb7cf75275746a91717dd8fb1508aea6",
+      "text": "The first of the Vesta to become an adventurer in the Palpebran way. With her Spirit Horn, which reads people's emotions, she keeps the harmony with those around her while enjoying her first life outside the Vesta.",
+      "status": "machine"
+    }
+  },
+  "1121165/1": {
+    "19": {
+      "srcHash": "sha256:2a60adf6aa896a1238b4c34da6efd435ffcb61bd1ff3ba8c868d5e4475029a1f",
+      "text": "The infamous boss of Tsangli, a vast mafia organization that rules the underworld of the Endless Blue. Though little is known of her past, her talent and skill quickly carried her to the top. She is a gangster who is beautiful, terrifying, and at times, kind.",
+      "status": "machine"
+    }
+  },
+  "1131134/1": {
+    "19": {
+      "srcHash": "sha256:6484a977971f5702868018bfcea753d83d88178687dd4f89f6d7278d3d089057",
+      "text": "A body designer who creates android bodies. Her designs are strikingly novel and outlandish, favoring forms no ordinary android would have, such as multiple arms and legs. Her clients invariably say, \"Before I knew it, my body had been set free.\"",
+      "status": "machine"
+    }
+  },
+  "1131140/1": {
+    "19": {
+      "srcHash": "sha256:8371f0128171cf5708f330128a8c0656b5683811401936f2be1f2fb72a003aa6",
+      "text": "Yin and yang, black and white. Chaos is inverted, and the maiden is cloaked in a world of white. In other words, cute white outfits aren't really Denah's thing, but she's adopting one as her new style anyway.",
+      "status": "machine"
+    }
+  },
+  "1131146/1": {
+    "19": {
+      "srcHash": "sha256:b030dd872c4d4f46c94317fa00d7c1db85c6a72df51ce342710269c154c4a117",
+      "text": "Handsome, wealthy, and well-born. Yet his friends all say the same thing: \"He's an adorable coward, that one.\" So no matter how fine a suit he wears, there's no way Libby could gracefully escort a lady... Wait, Libby?",
+      "status": "machine"
+    }
+  },
+  "1131158/1": {
+    "19": {
+      "srcHash": "sha256:874c6861cd0a7f5ae85e7483a77c74afdba878eb845bc45fda906f677a833892",
+      "text": "Nagiri Amo, a 16-year-old first-year high school student. A sword prodigy named rightful heir to the Amo Style by her grandfather, a Living National Treasure. At a glance she seems a well-bred young lady with the air of a class president, but her blade flashes like lightning to pass judgment.",
+      "status": "machine"
+    }
+  },
+  "1141147/1": {
+    "19": {
+      "srcHash": "sha256:867bc173f9e8a4b526000359aa09a428e0e3ec3a213df684485f8cd04b2f507f",
+      "text": "The top gravure-type idol who conquered the BRASS, a proxy war in which twelve mysterious nations stake their prestige. Her immense Cosmic Power and love for idols don't waver one bit, even off duty. Her catchphrase is \"Cowdy.\"",
+      "status": "machine"
+    }
+  },
+  "1141153/1": {
+    "19": {
+      "srcHash": "sha256:3f261e38643bc17dc1bd563548cb4b7252b4825c2eff4a87506ee912782c25db",
+      "text": "Yae Asato, a 16-year-old first-year high school student with the power of freedom. In search of something to be passionate about, she drifts along as a carefree adventurer while sightseeing in other worlds. She's sociable, and doesn't really do personal space.",
+      "status": "machine"
+    }
+  },
+  "1141159/1": {
+    "19": {
+      "srcHash": "sha256:07ff66f083a1fe9191f97e3efb2b6a871a24b3ec6465f658e02adc0e00454cda",
+      "text": "A knight who has led the Canids to victory in countless battles. Having realized his mistakes, he now seeks a path he can truly believe in.",
+      "status": "machine"
+    }
+  },
+  "1141171/1": {
+    "19": {
+      "srcHash": "sha256:ad601cbc4dd7e5c83e292e3f2e4cc0386fd58df06ef8395361d72ed56e137eff",
+      "text": "Taichi Yuhino, 41. A man who chased an illusion into the vast void that took his friends and family, and never found his way back. He has wandered and wandered, turning away from his hopes and wishes. But now, before his eyes, \"everything\" is beginning to reveal itself.",
+      "status": "machine"
+    }
+  },
+  "1151159/1": {
+    "19": {
+      "srcHash": "sha256:d270a23bfaa178967e7848839f8b116a51946a2e38587b83fc53cd4c14644ad6",
+      "text": "The great Holy Dragon, who has lived through the most ages of all six Ancient Dragons. Wishing for a little princess's future, he left his power to her out of love and was reborn... as the cockiest little thing you ever did see.",
+      "status": "machine"
+    }
+  },
+  "1151171/1": {
+    "19": {
+      "srcHash": "sha256:8357ab1ff8565ff336cca7e9c97614d16773a6b84fed98b6d8639addb223f951",
+      "text": "The incarnation of a spirit jewel, and one of the Three Sacred Treasures. Long ago, she and her master were swallowed by a curse and became the Yamata no Orochi. Freed from that curse, she has become everyone's sweet Granny Tama. Ohagi are my specialty, dearie.",
+      "status": "machine"
+    }
+  },
+  "1161165/1": {
+    "19": {
+      "srcHash": "sha256:8bc94dfdae86b9126ce7910d41fbe1acb0c9067c07d9d3cbd27501dff0b122cb",
+      "text": "A martial arts master both kind and terrifying. Though she wields superhuman strength, she is a good soul whose hobby is helping and teaching others. Her way of thinking and her priorities, however, are beyond human understanding. Put simply, she doesn't understand the human heart.",
+      "status": "machine"
+    }
+  },
+  "1161171/1": {
+    "19": {
+      "srcHash": "sha256:123e997608009f639a7673c7b9f69e9ca854a951a7e664bc7d98abdb4329c00c",
+      "text": "A self-proclaimed priest who works as a gravekeeper in Palpebra. A man of few words who hates bother. Orders, restraints, even thinking: to him, it's all a bother. The first thing he ever truly wanted was the peace he found in Palpebra.",
+      "status": "machine"
+    }
+  },
+  "1161183/1": {
+    "19": {
+      "srcHash": "sha256:1074fe66a6f1a0d183b46f4aa9a6e6fe1aaab98ac4eb17da09a53ae466f459ad",
+      "text": "Hibiki Suminami, a teleporter. She loves music and turns all kinds of feelings into songs. Once tormented by severe anxiety, she recovered after a certain major incident. She is now helping rebuild Shibuya while sincerely facing the strange new world around it.",
+      "status": "machine"
+    }
+  },
+  "1161189/1": {
+    "19": {
+      "srcHash": "sha256:5d0c2b969f0b61ebff3eacf10c4d22b02ba6a937c6834d0d0a9be47878981a4a",
+      "text": "Second son of the Oxtan family, eighth of the Farlands' Nine Houses. A high priest, and a corrupt one at that. Having lost sight of the light and his star to anger and hatred, he met a beast that devours stars in the darkness.",
+      "status": "machine"
+    }
+  },
+  "1211062/1": {
+    "19": {
+      "srcHash": "sha256:7e246db9b821a627940cfaf3e36e9759b9c790dd8340ec08c9bde79c50a62682",
+      "text": "A girl who is terrified of ghosts. She took up qigong to ward off ghosts and for beauty and health, only to end up relied on to solve supernatural cases. To support her little brothers and sisters, she reluctantly faces the supernatural yet again today.",
+      "status": "machine"
+    }
+  },
+  "1213013/2": {
+    "19": {
+      "srcHash": "sha256:362a767eeeade9b34d6a1fe565df166208bff04dcff2010027190995ec14ef71",
+      "text": "There was a time when all I thought about was keeping a smile on my face, and I never let myself cry. And yet ever since that day, all I've done is cry.\n\nIt's so frustrating. When I look back, this, that, all of it, every single thing is so frustrating. A certain senpai who can't read the room stayed by my side the whole time I couldn't cry. The person I look up to laughed and asked, \"So what? Isn't that fine?\" Now they've both fallen, and all I'm going to do is cry?\n\nSo I made up my mind. I'll fight too. No more crying. I'll grab hold of my wish with my own hands!\n\nYou'd better watch out, you Ayumu Nagihara jerk!!!",
+      "status": "machine",
+      "note": "Nao Nagihara's monologue; Ayumu Nagihara is Alk's real name."
+    }
+  },
+  "1221078/1": {
+    "19": {
+      "srcHash": "sha256:ddb94267d3271caa760624f2a5dea3e2a63b4d81aaaddcb1d590273093d948d1",
+      "text": "A sleep-inducing princess who wants to help all sorts of people. At Valentine's Fest, she's studying love as hard as she can. In her brand-new outfit, she uses her dream-showing power to lead lambs lost in love off to dreamland.",
+      "status": "machine"
+    }
+  },
+  "1231099/1": {
+    "19": {
+      "srcHash": "sha256:6119bc5427ae0a71823c20bdb950d35e6936c679bda97e43a943fffdf045e29a",
+      "text": "The resident mechanic of PBC's Hero Development Division. His wild ideas and solid engineering skills produce one super gadget after another for the heroes, though his obsession with the details is his one flaw.",
+      "status": "machine"
+    }
+  },
+  "1261089/1": {
+    "19": {
+      "srcHash": "sha256:cd695905b8be7c5d417cca4010953327b56d2965e1781b0b96aac3f58a9abf8c",
+      "text": "An ancient dragon who defied his fate and fell to a curse, twisted by anger and hatred for ages. But after meeting a young girl and walking through dreams, the dragon spread his wings toward a new life.",
+      "status": "machine"
+    }
+  },
+  "2000019/2": {
+    "19": {
+      "srcHash": "sha256:ef5ff5fc7951d2ffe461ccf005d94088040f24f8105f36437faf03706ee731fc",
+      "text": "Two young people showed the king a path of light, telling him that his power was needed for the sake of the future. Yet the king chose to wallow in his obsessions instead. Shut away in his palace, he now turns his back on everything, and has gone so far as to insist that those who failed to stop his rampage are the ones to blame.\n\nEven so, many still wish to stay loyal to him to the end. They will have to keep asking themselves whether that loyalty is deserved.",
+      "status": "machine"
+    }
+  },
+  "2000080/1": {
+    "8": {
+      "srcHash": "sha256:7775374b418c0814062be1610ea60952eca88cefc5710675daaf665f02a7c37d",
+      "text": "Mitsuki Saiga",
+      "status": "machine"
+    },
+    "16": {
+      "srcHash": "sha256:2ff0be34a304973f53d09c1ab1173d3ffc9153ae8b33d1e69ae3f15c18d9a02a",
+      "text": "Marden",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:5380c7bcc4118081ae2cdb6f0178628c507a7a5991edabcc9d4b8c68d7865fc5",
+      "text": "The second son of the House of Oxtan. Though a high-ranking priest, he is also a corrupt monk who has run up debts on drink and women.\n\nBy leaking the ties between his house and the Star Augurs to Varen and the others, he tried to dig into the long-standing entanglement between the House of Oxtan and the house it branched from, the House of Kwetur.",
+      "status": "machine"
+    }
+  },
+  "2000081/1": {
+    "8": {
+      "srcHash": "sha256:3acf3c122870fa9d464372b54a533fefda03a3114883a754c32a1d264b1b5f58",
+      "text": "Yoshihisa Kawahara",
+      "status": "machine",
+      "note": "Voice actor not credited in EN data; standard romanisation."
+    },
+    "16": {
+      "srcHash": "sha256:23a7f334f278d3b450923f7451ad565118feb3228ee82e9b2dd51cb491d0e636",
+      "text": "Ignatz",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:c2c9a8a6e9122b80f029a0ee20275d98b56f465fafaec800673e88335fcc6675",
+      "text": "A stalwart warrior who commands the forces of the House of Nouin as the captain of its knights. He is the older brother of Yuwel Nouin, and though he never says so, he has always worried about his brother, who tends to get carried away by his own lofty ideals.\n\nWhen his brother returned to the Farlands a changed man, Ignatz heeded his counsel, agreeing to cooperate with the House of Tris and pledging his support to the New Swallow Knights.",
+      "status": "machine",
+      "note": "Shin Hien Jiyu Kishidan = official tag tag_new_hien_free_knights 'New Swallow Knights'."
+    }
+  },
+  "5000139/3": {
+    "19": {
+      "srcHash": "sha256:f2c897a135f687b51aa0cfb2ec66209c69e17663918c1becf60f204b37b4c00a",
+      "text": "Though they were only small fragments, curse crystals carved with Armadeus' memories had also been left behind in Pandemonium. With the help of the daemons, these memories were passed on to Rooma after his rebirth.\n\nThe memories bring Rooma pain, but he will never let them go.",
+      "status": "machine"
+    }
+  },
+  "5000193/4": {
+    "19": {
+      "srcHash": "sha256:bc74bdf1edbaeb380f71f3cab6c8217b98d187ae4130c3597139254c61fbf259",
+      "text": "A Star Augur who called himself Procheon was also working behind the scenes of the attack on the celebration of the Kaleidoscope's Fiftieth Anniversary.\n\nHis plan seems to have been to steal the treasure known as the Anti-Observer, lure the Serpent into the Kaleidoscope, and pin the entire crime on his accomplice Orgus Oxtan and, by extension, the House of Oxtan. Thanks to the efforts of the adventurers, however, the incident was brought to an end. What Procheon truly intended remains unknown.",
+      "status": "machine",
+      "note": "Anti-Observer as in EN lore; the haizu dragon = Serpent (official tag tag_discarded_dragon)."
+    }
+  },
+  "5000193/5": {
+    "19": {
+      "srcHash": "sha256:472bb8268a9beeb0ce722539bfdfacfe8ec86a0a254f2899b6a2b0fb6bfe1fbe",
+      "text": "The Star Augurs were also found to be involved in the renewed monster outbreak in the Farlands.\n\nWith a laboratory set up in Oxtan territory and funds and equipment provided in secret, they had been researching the tentacled monsters believed to be the source of the outbreak.\n\nNot only the House of Oxtan but also its parent house, the House of Kwetur, was involved. The Kweturs claim that the main responsibility lies with the Oxtans, but Vyron, who has been pursuing the Kweturs ever since the assassination of Etheria, seems convinced that the two houses have been working together since that time.",
+      "status": "machine"
+    }
+  },
+  "5000208/4": {
+    "19": {
+      "srcHash": "sha256:61ee5a416ecef62b5b8907a19ecd4baeebebed459cf40776c9ab8675d4c1b748",
+      "text": "The renewed monster outbreak greatly shifted the balance of power between the princes who are leading contenders in the next struggle for the throne, and the common people are now following it with keen interest.\n\nThe prince fourteenth in line to the throne, meanwhile, appears to have been left completely out of the picture.",
+      "status": "machine"
+    }
+  },
+  "5000211/2": {
+    "19": {
+      "srcHash": "sha256:8a1dd96b6e340f5d49a1eaaa84618e2de00146111e773c5cd47323f68f1ffbad",
+      "text": "During the monster outbreak, the House of Tris held firm and refused to act, insisting that no house should intrude on another's domain without due cause. Once Yuwel Nouin's request gave them a pretext, however, the head of the house personally led their soldiers into battle against the outbreak.\n\nAs the house that wields the kingdom's military might, the Tris had always tended to avoid getting actively involved in politics. Since the incident, though, rumors have been spreading that the current head, Ciel Tris, has begun backing a candidate for the throne.",
+      "status": "machine"
+    }
+  },
+  "5000212/3": {
+    "19": {
+      "srcHash": "sha256:2ea8c1347c019f453f8e31c7e85c917976b0d2164c425eaf1c22728d13f08b16",
+      "text": "When the monster outbreak returned, the House of Kwetur, together with the House of Oxtan, stubbornly rejected the House of Swes' proposal to ask Palpebra for help.\n\nWhen it later came to light that the Kweturs had also been involved in the hidden monster laboratory discovered in Oxtan territory, they explained it away as the doing of a few members too eager to solve the crisis, and of the Oxtans running out of control.\n\nThe investigation turned up no evidence to further disprove this account, but the other houses' distrust has only grown, and the Kweturs' influence within the kingdom has waned.",
+      "status": "machine"
+    }
+  },
+  "5000216/2": {
+    "19": {
+      "srcHash": "sha256:4c40127c01af258d223e85c61711f6f30dab877b226d83bddf462d35968b75dd",
+      "text": "The mastermind behind the attack on the Kaleidoscope's Fiftieth Anniversary celebration, which brought a dragon into the city, was a man of the House of Oxtan named Orgus.\n\nUnder questioning, Orgus pointed to a Star Augur calling himself Procheon, and to the involvement of the House of Kwetur behind him. Yet even while the interrogation was still underway, Orgus was taken back to his homeland at the Farlands' request.\n\nOrgus' involvement and his testimony were never officially recorded and seem to have been kept secret even within the Farlands, and Orgus himself is said to be under long-term house arrest.",
+      "status": "machine"
+    }
+  },
+  "5000216/3": {
+    "19": {
+      "srcHash": "sha256:8870025c54fc54635e482eb53cb7fa77856eaa9d97c951ffc44ca66814baa2d6",
+      "text": "When the monster outbreak returned, the House of Oxtan joined the House of Kwetur in rejecting the proposal to ask Palpebra for help. In the middle of the crisis, however, an unrecorded monster laboratory was exposed in Oxtan territory.\n\nIt had been concealed in order to provide funds and facilities to a cult calling itself the Star Augurs. The Oxtans insist that their sole aim was to put an end to the monster outbreak and that the main family knew nothing of the cover-up, but the other houses continue to press them hard.\n\nWith their relationship with the Kweturs also souring, it is fair to say that their standing has collapsed.",
+      "status": "machine"
+    }
+  },
+  "5000217/2": {
+    "19": {
+      "srcHash": "sha256:026592646d4eb4cc06025792bd3eef427d4349299ac05cc18ae070f516fd31b2",
+      "text": "As the Noble House in charge of keeping the peace, the House of Nouin had been dealing with the monster outbreak alone since it began, but as the disaster grew, they found themselves falling further and further behind.\n\nPolitical ties kept the Nouins from accepting help from the House of Tris, but the return of Yuwel, long thought missing, turned the situation around. In the end, the Nouins were credited with ending the outbreak and won the trust of the kingdom and its people.",
+      "status": "machine"
+    }
+  },
+  "5000234/2": {
+    "19": {
+      "srcHash": "sha256:70a7e85ef6b043e8faec4cf8089a3b243fcf062cb5f464064da64ede7ed7b8aa",
+      "text": "Invetra's modifications added 77 cutting-edge features, including mini homing missiles, a hover system for crossing water, and an optical barrier. Ironically, all that excess hardware left it lagging far behind its rivals in top speed.",
+      "status": "machine"
+    }
+  },
+  "5000234/3": {
+    "19": {
+      "srcHash": "sha256:db1ded8c7dc20e3d05f2030adb92d2c8c3e2b258a2401f6a613047101b1b0b80",
+      "text": "After another tune-up, the machine was hailed as the coolest and fastest self-driving bike around, combining romance with functional beauty. This time, however, speed and looks took top priority, and it will be a little while yet before Invetra notices that its durability, equipment, and other areas still leave something to be desired.",
+      "status": "machine"
+    }
+  },
+  "5000340/3": {
+    "19": {
+      "srcHash": "sha256:fbdb8b25c5733bb69c918b092d89c4160efaf301b6d14a22f8cd5d150ad50aeb",
+      "text": "White Fest is an otherworldly White Day tradition that drifters brought to Palpebra, where it took on a life of its own. The House of Swes is leading an effort to establish it in the Farlands along with Valentine's Fest, and there are even plans underway to attract confectioneries to the kingdom.",
+      "status": "machine"
+    }
+  },
+  "5000390/3": {
+    "19": {
+      "srcHash": "sha256:14c338b3aa451ab7e739a8419735a23d35d77d4f365d049e80f3d9fb59f33ba7",
+      "text": "Even after the monster outbreak in the Farlands, Ziggurat has not changed his ways one bit, carrying on his work while avoiding his brothers.\n\nYet the strength of his ideals is something his brothers share. \"I doubt it will be long before our paths cross again.\" So says the third son.",
+      "status": "machine"
+    }
+  },
+  "5000423/2": {
+    "19": {
+      "srcHash": "sha256:96d07bcc4e657913b4086dd14432eba70f247e8d8c22f87289aef53c2a0d66b3",
+      "text": "The parts designer who took Zantetsu's commission for the Flashing Fundoshi turned out to be Kasivars.\n\nIt has come to light that the request for \"a swimsuit that shines in all the colors of the rainbow\" was only accepted out of pity, after a deep bow to the floor and a hefty commission fee wore her down.\n\nThough reluctant when the request came in, she apparently had fun making it, partly thanks to Zantetsu's circumstances.",
+      "status": "machine"
+    }
+  },
+  "5000468/3": {
+    "19": {
+      "srcHash": "sha256:7e7da52019d3a6c2d84436777fb9421e5f9b6616ff80b33cca8def3dd35dca1a",
+      "text": "Interfering with a dracostream normally requires a large-scale ritual or a dedicated facility. Indeed, Gram had to build an enormous labyrinth to do so. However, if the caster has some kind of bond with the dracostream or with something inside it, even a small ritual can be enough.",
+      "status": "machine"
+    }
+  },
+  "5000471/3": {
+    "19": {
+      "srcHash": "sha256:49f2ba30fed8052d58d58a360f8446c9e24e71abf022cd27999214e994930cf8",
+      "text": "Taichi Yuhino, a man who drifted from Japan to the Land of Wa, turned out to be none other than the only son of this shop's owner.\n\nFive years had passed since the town of Shibuya vanished from Japan. Some had accepted their loved ones as dead, some could not, and some truly believed they were alive somewhere. Each of those left behind coped in their own way, but for Taichi, who had drifted for a further fifteen years, it was an unhoped-for reunion after twenty years.\n\nFor the owner, it was a middle-aged man suddenly appearing and claiming to be his son, but one look at that tear-streaked face was apparently enough to convince him it was his boy.",
+      "status": "machine",
+      "note": "Wa no Kuni rendered 'the Land of Wa' (not found in EN data)."
+    }
+  },
+  "5000486/4": {
+    "19": {
+      "srcHash": "sha256:3495ce4e732dfca01fe213f19a2f1af00c4e8fbe076e6677691366e4155b032b",
+      "text": "The fifth match fulfilled Celtie's long-held wish to cross blades with strong opponents. Such bouts have become something of a tradition, and though few are willing to show her what they can really do (Alk being the exception), with Zekhel never revealing his hand and Soushiro breezily refusing to even take her on, the sword fiend seems to be enjoying a fulfilling life.",
+      "status": "machine",
+      "note": "kenki rendered 'sword fiend'."
+    }
+  },
+  "5000496/1": {
+    "16": {
+      "srcHash": "sha256:1aeb7b5522974dbda1ad04e5bc31369136ea252429a5cf4fa7d9be63371b1996",
+      "text": "Special Tech Defense Force, Shibuya Branch",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:77e8158173e0cdf361fe597bc7a2558c3edecde28d5861455f95185f89ec9482",
+      "text": "The first otherworldly branch of the Special Tech Defense Force, hastily set up to help Shibuya.\n\nIts main work is dealing with the monsters that appear in Shibuya because of its crossed wires with the Kaleidoscope, yet the branch has an oddly laid-back air. With manga hand-picked by Shota Inori and Seiji Takamori, novels recommended by Yuki Mishima, a kotatsu with mandarin oranges, and a full set of games, it has become the ideal hangout.",
+      "status": "machine"
+    }
+  },
+  "5000496/2": {
+    "19": {
+      "srcHash": "sha256:e48d1fb2d98d30dc5d790e49fe6fa34a281c8df6104d4c7fd626913912c985ca",
+      "text": "The operation was originally meant to be temporary, but by Tink's decision the Special Tech Defense Force went independent from 3MM Security and continues under a new name: the Shibuya Underground Defense Force.\n\nBesides the boys and girls of Shibuya who now lend their strength as part-timers, some former 3MM Security staff have joined too, and the place is livelier than ever.",
+      "status": "machine",
+      "note": "Shibuya Chika Taiouka coined as 'Shibuya Underground Defense Force' after the approved 'Special Tech Defense Force'."
+    }
+  },
+  "5000497/1": {
+    "16": {
+      "srcHash": "sha256:d41dd7ec3694e80c979268f6ef783a733de20e2e1c362809b8924ad7b414f8e1",
+      "text": "Snowflake Barrier",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:1b5923966555312950be0bebe578b40d2758962c5755afa753f0ecb41d024819",
+      "text": "The power that awakened in Yuki Mishima: an \"isolation\" ability that blocks any force or vector directed at her.\n\nOriginally a power to separate herself from the outside world, it grew in proportion to the size of what she wished to protect.\n\nThe barrier, which resembles a snow crystal, blooms like a flower.",
+      "status": "machine"
+    }
+  },
+  "5000497/2": {
+    "19": {
+      "srcHash": "sha256:f6a4bb761e11945db74f44c477cbf4c5ad6bd94e9febb0f08dd428e028589811",
+      "text": "Wondering whether she could somehow use this ability in hand-to-hand combat, which she isn't good at, Yuki came up with a new technique: firing layered Snowflake Barriers along with her fist to \"push\" her target away.\n\nThe move has plenty of flaws. It's hard to combine with her regular Snowflake Barrier, and it never works twice on the same foe. Still, \"It looks cool, and it's just like that move from that anime,\" says Yuki, looking very pleased with herself.",
+      "status": "machine"
+    }
+  },
+  "5000607/1": {
+    "16": {
+      "srcHash": "sha256:94bcf6aa2619dd5d2888c2a84f05ec12b94b23f5d049173323dea745f32931ed",
+      "text": "Tanakiela's Teachings",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:c631a4e567d12a8e17f4c48863ecfe171a54a80ddbffa0f2fd2ac87dac0a0732",
+      "text": "An all-round martial art founded by the martial artist Tanakiela, combining weapon techniques with unarmed combat.\n\nIt shows the path to martial mastery by awakening the beast within the heart and honing a fighting spirit close to pure instinct.\n\nYet the further one masters it, the more likely one is to be swallowed by the beast raging within. Disciples who meet that fate are never in short supply...",
+      "status": "machine"
+    }
+  },
+  "5000608/1": {
+    "16": {
+      "srcHash": "sha256:c3314b8652519e2f4868120e75619551ee6eb7da29947e27c91edaf1b9e91d09",
+      "text": "Vala Pastma",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:82f02926df725fd68704b99e48e575a536d42d90d76e00afd6a519410085e69f",
+      "text": "A brand run by Kasivars, an android body designer.\n\nIts eccentric designs, many of them with multiple arms and legs, stand out, yet customer satisfaction is remarkably high and its fanbase in Starview Village keeps growing.\n\nBeyond android bodies, the brand also designs clothing and swimwear. It has recently expanded even further, setting up a production base in Qualia City with investment from the president of a certain advertising company.",
+      "status": "machine"
+    }
+  },
+  "5000609/1": {
+    "16": {
+      "srcHash": "sha256:191675e4fd444e47fa24aacbb06524f645ca7465a4f85857f599445ebeaf0d00",
+      "text": "Ghost Hunter",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:39ad2d403c792700a497339c869ff9042be2e7b4f14045752c69e84772e2a069",
+      "text": "Specialists in exorcising the supernatural in the world of the sea, Kowloon Float.\n\nThe term covers anyone who uses martial arts, special talismans, qi techniques and the like to drive off inhuman beings, and it is a well-known profession in Kowloon Float.\n\nHowever, there are also fraudsters peddling fake spiritual services, so the quality of ghost hunters varies wildly.",
+      "status": "machine"
+    }
+  },
+  "5000610/1": {
+    "19": {
+      "srcHash": "sha256:535ee42ce5282fa7e82d0aef1e0a84521e042ac1fd4d97f5143a8295e5b6d361",
+      "text": "A group-style idol unit led by Silkhare, made up of Silkhare, Rabirabi, and eleven other members (plushies).\n\nTheir perfectly synchronized combinations and acrobatic performances are simply breathtaking, but...\n\n...in truth, they were assassins sent with a mission to destroy the idol industry.",
+      "status": "machine"
+    }
+  },
+  "5000610/2": {
+    "19": {
+      "srcHash": "sha256:ba27a7cc5f21bddc9c18743998332fe01630ed159a23947e75ce51d0547793cf",
+      "text": "With their parent organization busted and rumors of a new group, FRD100, some fans now fear the group may disband.\n\nWhen we caught her for a surprise interview, however, Ms. Silkhare brushed these worries aside. \"That was then, this is now,\" she declared, making it clear that CRT13 will carry on, no longer as assassins, but simply as idols.",
+      "status": "machine"
+    }
+  },
+  "5000611/1": {
+    "16": {
+      "srcHash": "sha256:2dfab8a2ebcc249ad96951a6dcd6627437d47b27db5e43b3d10dc35848665927",
+      "text": "Rabirabi",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:77ea3f2d997f471828b0610e58c90da4f209840cccabfd4168a8917d94b93457",
+      "text": "One of the Twelve Heavenly Cosmic Beasts.\n\nTogether with Silkhare, he performs in Rabbiton's idol unit, CRT13.\n\nTo Silkhare, he is like family.",
+      "status": "machine"
+    }
+  },
+  "5000611/2": {
+    "19": {
+      "srcHash": "sha256:b3bdcee0bb5f08965fe27c35644ea91d1c6d4df09bb75e953a816338c689321a",
+      "text": "A gentleman of calm demeanor, he was once a notorious playboy in his day. The scars of the many messy affairs he has survived are still etched all over his body.\n\nRumor has it that a certain farewell was what changed him... but the truth remains unclear.",
+      "status": "machine"
+    }
+  },
+  "5000612/1": {
+    "16": {
+      "srcHash": "sha256:fdecf91827a084f2889ba605eace5800cb95d7f758514d7d21cc1b2ebfde1719",
+      "text": "Vorpal Circus",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:625bb956324bc7a965d467085fb61c12b75ea060554dd453662a49ce93984af3",
+      "text": "A great troupe that was once hugely popular. As times changed, however, the public's attention shifted to the idol industry.\n\nHoping to win back their fading popularity, they plotted to destroy the idol industry, but the scheme was exposed by a CIPD investigation, and the troupe was wiped out in a mass arrest.\n\nIncidentally, the blame they placed on idols was nothing more than a grudge on Vorpal's part. Other circus troupes continue to delight large audiences to this day.",
+      "status": "machine",
+      "note": "CIPO written 'CIPD' as in the EN lore text (EN name row 5000313 is 'CIPO')."
+    }
+  },
+  "5000613/1": {
+    "19": {
+      "srcHash": "sha256:697d0899a0183914d316c344d82eb5d9d8c0b0b1b625b15895ca66f256fe868d",
+      "text": "Silkhare's dream of an idol group made up of one hundred friends. Long abandoned as impossible, the project got moving again thanks to the friends she made in Starview Village.\n\nLying in bed before falling asleep, Silkhare grins to herself as she frets: \"What if I end up with more than a hundred someday...?!\"",
+      "status": "machine"
+    }
+  },
+  "5000615/1": {
+    "16": {
+      "srcHash": "sha256:ddba2f6c67f7b6cf0c99ede5f58f38ee603a5440f76132c16f46b6d887453edc",
+      "text": "Sachika Harusaki",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:80cf89398196f4b337fbadce3854460a5e51cd2bf0b4e8ad80d295e65fd49cf9",
+      "text": "A girl from Shibuya who was saved by Yuki Mishima, and who fell in love with her.\n\nShe hides it with contact lenses, but she too has powers. When Shibuya was sealed off, Aegis tried to forcibly recruit her, and Yuki's refusal to stand for it filled her with admiration.\n\nHer love was never returned, but she became someone Yuki will never forget.",
+      "status": "machine"
+    }
+  },
+  "5000616/1": {
+    "16": {
+      "srcHash": "sha256:7a77f10eaba1c75194565a723b5979af9171d5eee2a6d20d08b68b0d632984cf",
+      "text": "Cosmic Idol Power",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:bdba1cd1b77f814a91674c869e25d9ade20dcfcbf0277b146497af9b3c79a786",
+      "text": "The mysterious power that Cosmic Idols possess. Nothing at all is known about how it works or what it does, but one can feel its sheer chaotic momentum.\n\nWhen it is unleashed at full force, people sometimes see visions of a strange space filled with twinkling stars, though the cause of this is also unknown. Perhaps it resonates with the observer?",
+      "status": "machine"
+    }
+  },
+  "5000616/2": {
+    "19": {
+      "srcHash": "sha256:6eeef4566e1e5d3a3a95f5fdadcd7fb18d2c0294e2826a22209c4eea4a144290",
+      "text": "Several variants of Cosmic Idol Power have been confirmed so far. One of them is Cosmic Gravure Power. Those under its influence tend to fall into a state of mind much like when they're staring intently at an alluring gravure shoot.",
+      "status": "machine"
+    }
+  },
+  "5000616/3": {
+    "19": {
+      "srcHash": "sha256:9d4e442f8147c4b57a28aa17984bdeef6a39b21a9147b0f2bfde102dbb8bb62e",
+      "text": "Cosmic Detective Power\nOne of the variants of Cosmic Idol Power.\n\nThose under its influence tend to fall into a state of mind much like a suspect being served a bowl of katsudon in the interrogation room.",
+      "status": "machine",
+      "note": "Joke on the Japanese cop-drama cliche of the detective offering katsudon to make a suspect confess."
+    }
+  },
+  "5000616/4": {
+    "19": {
+      "srcHash": "sha256:81ae59a66eee1f362803a89a475e23065ec117f72fc26ec473c667c7584d275e",
+      "text": "Cosmic Friendship Power\nOne of the variants of Cosmic Idol Power.\n\nThose under its influence tend to fall into a state of mind much like when they're hanging out with friends on the way home from school. It does not, however, make it any easier to make friends.",
+      "status": "machine"
+    }
+  },
+  "5000617/1": {
+    "16": {
+      "srcHash": "sha256:b4364e03f8f324d23b6d957cbea6acf3f21930f16d3df2a1cea080062733378e",
+      "text": "Idol List",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:f0844ee64cc50ece7b98d1d24a7941ba605a81fe01b822c61ac99b81dbcb6bef",
+      "text": "A list of the idols Beaucy supports. All idols are equally precious, but time and money are finite, so this list is the bitter fruit of having to rank them through tears. Mindful that observation could interfere with and unsettle the very nature of the idols on it, Beaucy keeps the list top secret.",
+      "status": "machine"
+    }
+  },
+  "5000618/1": {
+    "16": {
+      "srcHash": "sha256:29b9fd611d347cbe742fdd9bc41f84b4086a635405ac07c0b75d514c3d0c254d",
+      "text": "Cuddle Sweet",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:1d92f6d173a80986fe3c06464002cc1640edb8d362a2428b92aac9850d59ebd9",
+      "text": "A popular confectionery in Palpebra, and an old shop that has been around since Palpebra was still a caravan.\n\nIts founder, Cuddle, has handed the shop over to her son and his wife, and now devotes herself to supporting the business and passing on her skills to her granddaughter.",
+      "status": "machine"
+    }
+  },
+  "5000618/2": {
+    "19": {
+      "srcHash": "sha256:1047f7e6cb65ce2161985194f5eefb141ede67a4eabe254dcbe414e86429b84a",
+      "text": "For a while, the shop was plagued by counterfeiters using its brand, but thanks to the efforts of a certain gravure idol, the matter was neatly resolved.\n\nRumor has it that this incident has led to a collaboration in the works: BRASS x Cuddle Sweet sweets.",
+      "status": "machine"
+    }
+  },
+  "5000618/3": {
+    "19": {
+      "srcHash": "sha256:0b4bc0b463d8b7f334b2e349439f5c08be831f5728098273abb0dc0b1d6fa0b7",
+      "text": "Word of its delicious treats has spread to Starview Village as well.\n\nA sweet-toothed mage and a fierce desert general can often be seen buying from it for a tasty sugar fix, and a well-informed fox yokai princess who read its magazine feature sometimes gathers the town's sweets lovers for tasting parties of the shop's new creations.",
+      "status": "machine"
+    }
+  },
+  "5000619/1": {
+    "16": {
+      "srcHash": "sha256:0f1976150bdf03d661fd808af7423080352701dcf1db43d3560160edc4910a0c",
+      "text": "Seafood Monster Chocolate",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:8adff702cd3c5d6cbf9ed262eec5f055921ebf1adf2e91bb7ec198fdd2452c7d",
+      "text": "A giant chocolate of indescribable shape that gives form to Denah's devotion to her king, produced by the monster chef Parfait. It tastes good, but the smell of the seashore is its one flaw.\n\nPerhaps overwhelmed by its sheer presence and mass, the king's tentacles trembled in confusion.",
+      "status": "machine"
+    }
+  },
+  "5000620/1": {
+    "16": {
+      "srcHash": "sha256:42f1ddd27685e2202d2ae20cc1ba398f2d24929285b1cd8d7087caa9f7ec3f11",
+      "text": "Love Rehearsal",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:81f9b9573742609b0553132d8c04e401ff350d38db7c69ebb8e8ed8d0c6035b0",
+      "text": "Rehearsals for love confessions and dates, using Feanie's ability to \"let you meet the person you want to see in your dreams.\" It was a hit at parts of Valentine's Fest, but Light, wary of how the requests kept escalating, now flatly turns them all down.",
+      "status": "machine"
+    }
+  },
+  "5000621/1": {
+    "16": {
+      "srcHash": "sha256:45f201a57b9724e2682c212c4749f688a840662f445e0a429edc6d482ee34dbc",
+      "text": "Pretzen",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:fb4a33ef8bf0bcf9c237eeadb436889cbd67f005a858ed529f010d6845f75a87",
+      "text": "A traditional treat handed down for generations in Feanie's hometown: a simple snack made by tying long strands of dough into a knot and baking it until firm. The Pretzen she handed out as a token of friendship went down well with Palpebra's adventurers, and some members of the Company of the Fang were even moved to tears, reminded of their faraway homeland.",
+      "status": "machine"
+    }
+  },
+  "5000622/1": {
+    "16": {
+      "srcHash": "sha256:5ce1bc3b23435bdfa7446dff6325e1f5ff1c0c1d15d289d78a6912847eeb6e7f",
+      "text": "Gravekeeper",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:1f24608c83664fed82ae70e6f1acdcb81a560bb88afc9c2713a1d407f5c78b85",
+      "text": "As the name suggests, this refers to those whose job is to tend graves.\n\nIn the Farlands, burials usually follow the teachings of the widely practiced Church of Farlana, and nearly all gravekeepers are priests of the Church.",
+      "status": "machine"
+    }
+  },
+  "5000622/2": {
+    "19": {
+      "srcHash": "sha256:2bd36ea444614eeb1b01a890a7cbe7bd23f06a7f21c312a3f9573d7d614efa57",
+      "text": "Behind the scenes of a Palpebra in the middle of Halloween, where the dead had been rising from their graves, the Church of Farlana is said to have been working hard, with every gravekeeper kept busy pulling strings and cleaning up from start to finish.",
+      "status": "machine"
+    }
+  },
+  "5000623/1": {
+    "16": {
+      "srcHash": "sha256:d952d873e83e953e9389fc7f1c66b909dab50acc97c61a46f5d39a5241d43b49",
+      "text": "Hizakura Girls' Academy",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:dbcd656d6401268b5c88aa66e76ba93cd71d83d21b55f93ab3cd3268dc72d6ec",
+      "text": "The most prestigious girls' school in the Shibuya area. Known as a school for the daughters of distinguished families and the wealthy, it covers every grade from elementary through high school, so students can normally move straight up from one level to the next.",
+      "status": "machine"
+    }
+  },
+  "5000623/2": {
+    "19": {
+      "srcHash": "sha256:96f4522d468445c79228fa2141575692e77764c9a3fb982107424c912f208350",
+      "text": "However, as a private school, Hizakura charges steep fees, so most of its students come from wealthy families. Some, like the free-spirited Yae Asato, had to transfer to other schools when their parents' finances could no longer support their studies.",
+      "status": "machine",
+      "note": "'jiyu no noryokusha' rendered 'free-spirited' to echo her approved title 'Free Spirit'."
+    }
+  },
+  "5000627/1": {
+    "16": {
+      "srcHash": "sha256:808fb0b9ac97546547927234ca2b827df00fd3267b042df3a7e5d68b04d6a564",
+      "text": "Yuni",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:c4cffcacacd20da2723958f96e1630201c779a5516f03932d834e6c5ec731540",
+      "text": "A sparkling wine made from apples native to the Farlands.\n\nIt is one of the specialties of Oinas territory, and is known for having been backed by the late Princess Etheria. It is gradually becoming more common in Palpebra too, and is turning into a symbol of friendship between the two cities.",
+      "status": "machine"
+    }
+  },
+  "5000627/2": {
+    "19": {
+      "srcHash": "sha256:974b402e56687b347bc186ed5bc02582675caf6e218ee1a7b4823ac8d44e0937",
+      "text": "Its trademark is the perfect harmony of the apple's tartness and sweetness. Easy to drink even for those who don't usually like alcohol, it is very popular among commoners.\n\nNobles, however, especially outside Oinas territory, consider it unbecoming of their station, which makes Marden, second son of the House of Oxtan and a devoted drinker of Yuni, something of a rare case.",
+      "status": "machine"
+    }
+  },
+  "5000627/3": {
+    "19": {
+      "srcHash": "sha256:7353b1a62b5e2909f2fb6222b68c15feb76ab0490d9e829d7512f2c58090ec6e",
+      "text": "Yuni was originally just one of many nameless wines brewed on a small scale in Oinas territory, until it was discovered and given its name by Etheria, who loved the land of the Oinas and traveled all over it with her knight. As it spreads through Palpebra, it seems to be winning more and more fans in Starview Village as well.",
+      "status": "machine"
+    }
+  },
+  "5000628/1": {
+    "16": {
+      "srcHash": "sha256:933244aba6e7bf0496d63c28f06f1bcf1ff01945172ecfba4d7d261fd6f6dfe9",
+      "text": "Gerda",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:073cdd54e449ef89e43cc1f629baa20e40239c3e9feb16c4a03e501c7f1c4504",
+      "text": "The late wife of Rolf, hailed as the strongest of the dogfolk knights. Rolf was on the battlefield by royal decree when she died, and still regrets not being at her side. Yet her last words, spoken by a woman who loved even that side of him, became the guiding light of his life. In life, she was a dazzlingly bright, warm woman and a good wife who always supported Rolf.",
+      "status": "machine"
+    }
+  },
+  "5000628/2": {
+    "19": {
+      "srcHash": "sha256:360a2495b5818158df89a35f0ebb3c3b6835f77dfd57b66928c23db0c607cd80",
+      "text": "Gerda often picked out Rolf's clothes for him, as he knew little about fashion. Rolf still remembers how she put his outfits together and thinks back on it whenever he dresses up. His clothes are one of the bonds connecting him to his late wife, so being complimented on them makes him very happy, not least out of pride in her.",
+      "status": "machine"
+    }
+  },
+  "5000629/1": {
+    "16": {
+      "srcHash": "sha256:6f42cde4993ac792e32e4c59818f75308cc31eb0fb6d2fa7b62d9f5e30133505",
+      "text": "Hero Development Division R&D Lab",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:e78311609d13e000cdbde24693c32694dc31477bbe43f75f7783f1eb99cde273",
+      "text": "Invetra's workplace, the department that researches and develops the gadgets carried by PBC's heroes day in, day out. In their pursuit of romance, many of its products have practical issues, yet toy manufacturers always respond enthusiastically, and countless of its designs have been turned into toys.",
+      "status": "machine"
+    }
+  },
+  "5000630/1": {
+    "16": {
+      "srcHash": "sha256:8be3f0afc9ebdecfe8b4989dd454fd01af04b34b4e3c95810b419f40b453f635",
+      "text": "Luvetra",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:7350666fa4ebb18ee6ca078d2d07737f2eaa8a8741de4799773648b8bf780377",
+      "text": "Invetra's brother, five years his senior. Like his younger brother, he is a skilled gadget developer, but unlike Invetra, who chases romance and coolness, he values efficiency and practicality. He works for Megatro Techno, a major security company.",
+      "status": "machine",
+      "note": "Megatoro Tekuno-sha transliterated 'Megatro Techno'."
+    }
+  },
+  "5000633/1": {
+    "16": {
+      "srcHash": "sha256:ef9773b6a3c71197bce3253f8e411ab6821f1dee4d3839492580239f30082b76",
+      "text": "Losrend",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:41f913ef0ba1439d67a736365c07e02539851d3277d715084337833bd29cb043",
+      "text": "A high elf man who is always fussing over the reborn Rustamov.\n\nThough he understands that Rustamov after his rebirth is not the same being as before, he devotedly looks after him, hoping to repay even a little of what he was given.",
+      "status": "machine"
+    }
+  },
+  "5000634/1": {
+    "16": {
+      "srcHash": "sha256:9be973a866fc3f99e4dd7f7a30b903eb416c6532f580e109f1410750d163e62d",
+      "text": "Dragon King",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:0e5fd6b211ad92b989fe7fcc22dc51a8c7c248879bba18a14b8755bba4349d5d",
+      "text": "The one who stands at the top of all dragons. A great dragon.\n\nThe title, which probably carries that kind of meaning, was known as the one Vagner uses to refer to himself, but at some point Rustamov started calling himself that too, and so, for some reason, there are now two Dragon Kings.",
+      "status": "machine"
+    }
+  },
+  "5000635/1": {
+    "16": {
+      "srcHash": "sha256:87bd9c209c2064979e4894cfc933d94cf34eb5cb80f851c5ec34dc6fb8625b05",
+      "text": "Amo Style",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:41c1582b2a31ff5626bf420184a7dbcfdeaa680cb7a50740985daf1556a116a9",
+      "text": "A school of quick-draw swordsmanship handed down for generations in Nagiri Amo's family. An ancient style of practical combat swordsmanship that has survived to the present day, it combined with Nagiri's natural talent and her special power to make her an outstanding swordswoman even by Palpebra's standards. Nagiri's grandfather, who taught her its techniques, admonished her: \"Train your heart to be strong as well, so you never wield great power recklessly.\"",
+      "status": "machine"
+    }
+  },
+  "5000636/1": {
+    "16": {
+      "srcHash": "sha256:3d7217cff3cb415493dceeee79abee4e36800238b83b2a1a9eb33a249ce65e27",
+      "text": "Fang Welfare Society",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:639128216e5c3891ae0b8692870f38710151fc717ae754af87f2d5876b62b41c",
+      "text": "The social welfare organization that Penelone's parents work for. Founded after the peace, it covers a wide range of work, from reconstruction and food aid to rebuilding infrastructure.\n\nThanks to the efforts of its workers, the recovery is making progress, but the long hours the workers themselves put in have recently become an issue, and the society is working to solve it.",
+      "status": "machine"
+    }
+  },
+  "5000637/1": {
+    "16": {
+      "srcHash": "sha256:eeeaba46c00f91e06e95112c0bf2a90c5e29c27e1fad690a899794e319d89eda",
+      "text": "Pirate A",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:47aa38b8b188f6ebd9cb52aed2d41b647fe3a1dee0b80d4cb249ada17df616a3",
+      "text": "One of the Crimson Blades pirates. Short, one-eyed, and recognizable by his chin beard. Brisk-tempered and quick with his tongue. Loves Marina like a total idiot.",
+      "status": "machine"
+    }
+  },
+  "5000637/2": {
+    "19": {
+      "srcHash": "sha256:99fbd0b4e877792ae4ff0ddc2bbabd2b9f600c864bf3f41871fb61fa404c1251",
+      "text": "Believe it or not, he does have a proper name: Eiji.",
+      "status": "machine",
+      "note": "Pun: his real name Eiji sounds like 'A'."
+    }
+  },
+  "5000638/1": {
+    "16": {
+      "srcHash": "sha256:c35ade2ee40d60409ba603305a666beb7a511fecbdcabf3df239d92de6ebb0e9",
+      "text": "Pirate B",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:68b72acb75ec3d43a673d9be3c5ef19f74a3dd0494f93c2ff2674410734c7b1b",
+      "text": "One of the Crimson Blades pirates. Big and absolutely bursting with muscle. Simple-hearted and easygoing. Loves Marina like a complete fool.",
+      "status": "machine"
+    }
+  },
+  "5000638/2": {
+    "19": {
+      "srcHash": "sha256:cc683d8e6f494e23c3bfe8fac986fe7adf9756b4fe0991aa55b0e82875535dd2",
+      "text": "Believe it or not, he has a perfectly good name too: Beads.",
+      "status": "machine",
+      "note": "Pun: his real name Beads (Bizu) sounds like 'B'."
+    }
+  },
+  "5000639/1": {
+    "16": {
+      "srcHash": "sha256:7d59e4cb002fb15414da80983b5c4afffc62e9f766eea2debd81db3bff13aae7",
+      "text": "Yamato: Aftermath",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:dbc23c0585003fee23375fc61dded6146fd2af0d938b3f56e8a1aa88d0c63806",
+      "text": "The fragments of the West have continued to merge with the East on and off ever since. The growing number of yokai from the West, as well as the vanishing and reappearing of the East's pleasure quarter, Hakunroh, can be seen as part of this phenomenon.\n\nMeanwhile, even now that all seven domains have been gathered, the West itself has yet to be found. Suizen suspects that it may have been \"knocked away\" during the first merging.\n\nThe West, lost somewhere in between or in a distant world, may one day fully merge with the East, so it seems the diviners' worries will never end.",
+      "status": "machine"
+    }
+  },
+  "5000652/1": {
+    "16": {
+      "srcHash": "sha256:0a2b13e044af57b041c139cd7b54716a1342edfc38b534e6e50b00ebac6b6a38",
+      "text": "The Guiding Hand",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:68591e2d798aee1a94b7509829c1af36a605554a577923c33ed15783cbfe9ea8",
+      "text": "One of the teachings handed down in the Church of Farlana, a principle that some factions regard as the very heart of its doctrine.\n\n\"Even beyond a darkened sky, the Stars still shine. Yet not all people are strong enough to believe it. If there are those who cannot see the light of the Stars and lose their way, reach out your own hand and take hold of the hand that wanders. As a person, become a guide.\"",
+      "status": "machine"
+    }
+  },
+  "5000653/1": {
+    "16": {
+      "srcHash": "sha256:c41fc371a325102c525b48b372e16557a1104f96369e42b12441d29329bab54e",
+      "text": "Lost",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:51029ab1ee446f09eec10e0cf4bd2dcbe4d3b92c17fa9f1c75e3770463242ea3",
+      "text": "A terminal of the Devourer of Stars that followed the bond formed by Parasite Abyss's parasitism and appeared before Marden. It has the power to grant the wishes of the human it inhabits. At first, like Parasite Abyss, it resonated with Marden's urge to destroy, but in the end it acknowledged his most fundamental wish. To them, wishes are neither good nor evil. Nor, of course, are the means of granting them.",
+      "status": "machine"
+    }
+  },
+  "5000655/1": {
+    "16": {
+      "srcHash": "sha256:b42bfd104107851ef1850f881ae1f3dff41d56de00b966dd35f9341ceabf7951",
+      "text": "Tsangli",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:230f62e121426dd55a298d4385f9f94eb5dc6e0e70b4fd5b97c4b136998d7e85",
+      "text": "One of the mafia groups that have made a name for themselves in Kowloon Float. It has fought countless gang wars, and its boss, Lanmei, is said to have swallowed up many organizations, and to have connections with many more.",
+      "status": "machine"
+    }
+  },
+  "5000656/1": {
+    "16": {
+      "srcHash": "sha256:60b029140c0d6899cb616cb35c102c09443d6ccef55d2ad76f4fd1525f8a23e2",
+      "text": "House of Sextan Villa",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:70ec3ec1bb1f70d57a7463def7704c5752865755c361050d05e606528c158e1f",
+      "text": "A lakeside villa built in a highland summer retreat on the outskirts of Sextan territory in the Kingdom of the Farlands. The picturesque scenery seen from its windows makes one forget the worries of everyday life, and with swimming and boating on the lake, visitors never get bored. Rumor has it that last year, a composer from a foreign land and a princess were invited here.",
+      "status": "machine"
+    }
+  },
+  "5000657/1": {
+    "16": {
+      "srcHash": "sha256:0ae952a0e00820ec12674501a9981b307263995ae436ab8697a7ae35ec5b5b7d",
+      "text": "Doyomosu",
+      "status": "machine"
+    },
+    "19": {
+      "srcHash": "sha256:3b2ad4f3e43fe73ed8be270dae029cba00604343ed5208d5fdbb314b7f76fe0a",
+      "text": "The alias used by Hibiki Suminami. It comes from \"doyomosu,\" an old word meaning \"to make resound,\" written with the same character as her name, Hibiki. It was also the name she used when she published her song \"Binary Planet\" on a video site.\n\nSince Magia Fest, however, Hibiki has mostly been active under her real name, and this alias now seems to be reserved for her private accounts and the like.",
+      "status": "machine",
+      "note": "Explains the pun: the archaic verb toyomosu (to resound) is written with the kanji of her name Hibiki."
+    }
+  }
+}

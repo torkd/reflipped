@@ -1,0 +1,45 @@
+node_modules
+out
+mitm_redirect
+.database
+scripts/in
+master-out
+.cdn
+# translation overlays built by npm run i18n:build (patched game data)
+.cdn-overlay
+.misc
+web/public/tailwind.css
+scripts/__pycache__
+dist
+build
+.coredns/coredns.exe
+.mitmproxy/mitmproxy.exe
+.mitmproxy/mitmweb.exe
+.mitmproxy/mitmdump.exe
+.unzip-temp
+.cn-cdn
+.mitmproxy/mitmproxy
+.mitmproxy/mitmweb
+.mitmproxy/mitmdump
+.wireguard
+cdn.tar.gz
+*.apk
+# AIR SDK / AIR SDK Manager downloads (third-party binaries)
+AIRSDK*.zip
+AIRSDK*/
+*.jks
+*.keystore
+*.p12
+*.idsig
+__pycache__/
+
+# Local overrides for the docker/ compose stacks (copied from .env.example)
+docker/**/.env
+# TLS=custom certificates (CUSTOM_CERT_DIR's default)
+docker/certs/
+.logs
+
+# agent worktrees
+.claude/worktrees/
+# docker compose run --rm backup (BACKUP_DIR default)
+docker/backups/

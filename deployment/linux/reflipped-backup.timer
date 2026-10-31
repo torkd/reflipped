@@ -1,0 +1,12 @@
+# Daily database backup (reflipped-backup.service). Enable with `systemctl enable --now reflipped-backup.timer`.
+
+[Unit]
+Description=Daily Reflipped database backup
+
+[Timer]
+OnCalendar=*-*-* 04:30:00
+RandomizedDelaySec=30min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,499 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:53af6fff37fdfc2e9c0fa3e5b3fe65103e420a0b2730aa657288d3c98fe91bdc",
+      "text": "How about this one? A delivery\nrequest.",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:123ae897c38b862f8b2ad40e56320648acdb00234e97e1d78595bcd043c17e54",
+      "text": "...That's the Golem Club. Trouble's\ngonna happen...",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:d02fc213665f2aead227f590f377e5f8a31d44add7e8f8595c9d7b56da1a02fc",
+      "text": "From Voluntas Arcane Arts Academy.\nYou know, that super fancy\ncastle-looking place—",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:be76ee2003cec101118cb663a2f818f4d7e0c833b7a98e3831b81e8c16c056d7",
+      "text": "An arcane academy...? A place where\nyou can learn magic?",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:78fe754969a1103525aeedc4635d4106113b0a01c12d05315bf641cbb63833a6",
+      "text": "Yeah. They do all sorts of magic\nresearch, and you can take classes\nthere, but...",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:d759b5c50d246ed31b86b7cccb0a13faed00a14f85a65e0412d0c41f18223314",
+      "text": "Nisues wants to go...!",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:465e05ca387cfb686adcdf78cfcde99b449290b622aaff720629746168247226",
+      "text": "That's unusual, isn't it?",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:ee701bc6b5a341f0339c9b2c92bbcae343f57be36a91f9f136fb432851fd3457",
+      "text": "Alk, this is part of Nisues's\n\"search for what I want to do.\"",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:9341ccb5f58871b99340c03797d46962bcc56a5c0d18e86ed002a4f1172db7ff",
+      "text": "Nisues can use magic too. But only\nVesta magic.",
+      "status": "machine"
+    }
+  },
+  "42": {
+    "5": {
+      "srcHash": "sha256:79915458d6b854566cc8ec87d16b25ea0fa4a893a33af79d19a463829ef9f528",
+      "text": "Gaining new knowledge feels like it\nwill lead to what Nisues wants to\ndo...!",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:bbe20b533e997cdbdf3b5228adb1051ab5509a705158e6b4b46e259d584f6dbb",
+      "text": "Serious much.",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:dc51a07ed94867dc00d23d1911839417cf46a2a143a91e6f0a0e8eed5b79b6ba",
+      "text": "Um... Is that not like Nisues after\nall...?",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:018a0a1a22279e893946796851bff20a0cdc122e86e6e0000a389f7481a944f0",
+      "text": "No, if anything I thought it was\nvery much like you, and good.",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:e2cfa44a0be737cc21a2e83b26610e14113734fe620f8276affdf9fa54592de4",
+      "text": "Then let's deliver it and take a\ntour while we're at it.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:8221ce63e7229546e05768f864ebc747e92093ebf2bd7b6957d9a2c311cdc778",
+      "text": "—Yes! Thank you...!",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:fec3c992ee8042dc9e90f6616d194e2eb7d7898d08bf9de7b0bbae9871d5b8ca",
+      "text": "Once this is done, the club president\nis waiting on the field. He'd like\nyou to help test the latest model.",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:e403dc2f72adee960884b9b2d34b3e21e0ddabfab7cc2bbb020dd293eb29410e",
+      "text": "Also, Professor Nicola said to tell\nAlk it's an emergency! She was kind\nof vague about what it's for, though—",
+      "status": "machine"
+    }
+  },
+  "78": {
+    "5": {
+      "srcHash": "sha256:06dd5662efe6821a711d7bb87ead1cab0b3800a9ddbe97a88de882fc67fc1b63",
+      "text": "Sorry, Nisues. Mind if I go check\non things?",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:f44833afd9f93a286463a54e12ef913da80614eaade15584d562d4f7a579c468",
+      "text": "It is all right. Nisues is enjoying\nthe tour.",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:ae10157453ab9cb55311191c89f1c241faa19d155b425ab2409841936d699c6b",
+      "text": "Shut up!! Can you make golems\nwithout chasing romance?!!!",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:7fa244355c0384e5a2c2013350de0a45cf2265243faafe54a487516fd8cdf41e",
+      "text": "What is the matter?",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:9faf873ee4ab7bd8862cb0c682997aaee6edd24f7b048762b7d1db10056446c0",
+      "text": "Anger— but not only that? Very\nfun-looking Oudo...?",
+      "status": "machine"
+    }
+  },
+  "94": {
+    "5": {
+      "srcHash": "sha256:e4b6ff78a3bc6ff9ec0224f4e1eb125d59a4f7a1b9033489427bbcb4118c3ca8",
+      "text": "Um, why are you two fighting?",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:736d9a15223bcbc6b117bab21953706a213f3c026cf7c759ebd9c809b43608bc",
+      "text": "Hey, you look at this spell formula\ntoo! If we run a golem with this,\nit'll definitely explode! Right?!?!",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:ae38002e6185dda76ab6121050d4799a6915724f3b965b5f935a087e45b1bef9",
+      "text": "No! My formula is flawless! In\ntheory it holds just short of\nexploding! You agree, don't you?!",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:ee68b09cdd4a0489a56f3128dcaa7553c25a4c0118b89e27b7a45482a8dd31f6",
+      "text": "U-um... Nisues doesn't really\nunderstand spell formulas...?",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:e813e828b9212e2069422d3ac076e4cf5d5e0b71f4668f92c625b7ac7512b6e9",
+      "text": "You both think you cannot give way.\nThat is why you argue.",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:dc53e38e201157f99eec6199592270ea7e50da4ef2a6b8be5379c8f6808bb5b1",
+      "text": "But why is it fun? Your Oudo are\nnot scary at all.",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:d328ffc0d3c34785fd7fc84a114da3c7429201e21b42e61e4bae3307ecd1b031",
+      "text": "F-fun...? Well, I guess, now that\nyou mention it...?",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:9aeabc7ce90a2f614d37d8125e8ad99778702332e7246cd4e04701329eae3ef9",
+      "text": "Well... If it weren't fun, we\ncouldn't clash this hard, right?",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:41166eba664e372dd4236909e407f947fa08a8b398fcadeb116e7760e2230398",
+      "text": "It is fun because it is what you\nlike... Anger and fear are part of\nit too—?",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:d8d7ecff20f053a0ec64290821323062060cc5a38f1ee777e337ce9ae628387b",
+      "text": "...Nisues thinks that is wonderful.",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:4d6b537f05a0a0a0398510a6461fa8da836ef31cb877dab9341a00e6184e778e",
+      "text": "Could it be— you're interested in\ngolems too?!",
+      "status": "machine"
+    }
+  },
+  "129": {
+    "5": {
+      "srcHash": "sha256:caf77081e2b3d8923132173f6fc88ca936c79917b61f254748f382d61e0e602d",
+      "text": "Oh. Um, no, Nisues is... Just\nlooking for what Nisues wants to\ndo—",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:3bd3a68c65ab9ba249b0b3a812a9ba9a5b52554e3675c15bbe958a20bd28aba7",
+      "text": "Nisues only wondered what you two\nlike—",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:d77e416afbb3aba21b8a3357e55699a32c52ef140d3c4e75315bdcb2d1eaf40a",
+      "text": "Oh! Is that so! Then why not build\na golem?!",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:05488b2ff5a073fe7963d3c20d8e98e8d61e0f36672240567e3c9a15cf3158a7",
+      "text": "What...?!",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:08f527023d6e11c0fcc10e187c52f3f440e22d3a85e2e004ce28c37fedbb666e",
+      "text": "Right. In that case, a golem it is.",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:78d4ffda44e9182331fda2a86d1ffce934d3f8b71d66c1f45d2d0a54a9da8e18",
+      "text": "What...?!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:18697ca83bec5f2f4c2ec860e462d615c8ec881ff16f1fec5f6629d73ac44460",
+      "text": "B-but didn't you have things to\ndo...?!",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:a800e9c9f358a41702f3173ebaade10164bbe2e75e632066f8f2299d955d26d7",
+      "text": "New people come first!!",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:a6c95288d7f450df0f0f68150861719d95a3cdbe3cb334ced7ea5c859f91d327",
+      "text": "...So, this formula adjusts the\nelement output. It's like the heart\nof a living thing. Got it?",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:e8b0cab38c7ccbb0c33791df3dae6dd03ccd8e78342ffbcf3ce86ae2aa033c58",
+      "text": "S-somewhat... I understand...!",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:353dadaebfa6a93654d751fea3110fb1fad4c6b71614ba704a36fa77933e7769",
+      "text": "...The Oudo is truly fun...",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:a5c5db0fc75b2a7552399ababb64f6fd4461305b67dd78943e426645b06b1154",
+      "text": "......... ...I see...?",
+      "status": "machine"
+    }
+  },
+  "171": {
+    "5": {
+      "srcHash": "sha256:27667d3309c7cb8ece5b3ca7764f445974b06f0affa7dd41e7bb6a30be2061ed",
+      "text": "...So, this part—this function—",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:1f4566a705d6fe80151acc18f59ab60c0cd9d7064cb846629784b94bf1b174aa",
+      "text": "—And that's about it. Any questions\nso far?",
+      "status": "machine"
+    }
+  },
+  "178": {
+    "5": {
+      "srcHash": "sha256:564eb9fbc858291eddc8a4062caf43a9ba962ac8cf96ae521408fa7e30220791",
+      "text": "Nisues has a question. How does\nthis formula act on the golem's\ndrive?",
+      "status": "machine"
+    }
+  },
+  "181": {
+    "5": {
+      "srcHash": "sha256:7bb88c346f3b1e477f3e4eb458b558fec97d34625fbff350edec07a91cedc003",
+      "text": "Oh, that's not actually the drive\nsystem, it's the control formula.\nIn other words—",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:1fee276f279539706edaaf4de8db696d6bcb2790c5d4fc7550b0cbc98bc2b396",
+      "text": "—Nisues understands...! Th-then—!",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:fd4743bf5e2d1a9b45aa6d251e925e2fb532b108155cdaf61c17e310ccab38b3",
+      "text": "...It is moving...! Nisues's\ngolem...!",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:e782bcd52cabcc1fc2e5ba4a97377f6304f8b623f9821a206996f4baeef5ba90",
+      "text": "Th-thank you...! Thanks to\neveryone...?",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:0abfd05ba6b4ae2fc265ec253871e693e2b6d7fa1f156496642d24040e689328",
+      "text": "—S-sorry!! You were in the middle\nof important work...! Nisues\ninterrupted you—!",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:faac1320b2b6a8a83cbbc417545b8fc87a78b3d10a159f24ac2bcff805b2b3c8",
+      "text": "Don't worry. It was a nice break\nfor us too. Now, back to it...!",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:93740b6c5e9f6394b86eb3a9b7a3f300939beb2853edc01befa26394cc3faca8",
+      "text": "What do you say? Want to join us?",
+      "status": "machine"
+    }
+  },
+  "213": {
+    "5": {
+      "srcHash": "sha256:b89f5e63b5f4c75764776773db957ad1462cd2716c2ffa40e1ff7224aba1fc6e",
+      "text": "...Yes! If Nisues is good enough!",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:18fe2f3170798b85499130c7b2738027b0aa5efa39d92cd9cfc462dcfa8d985c",
+      "text": "Sorry—to keep you waiting... Huh?",
+      "status": "machine"
+    }
+  },
+  "227": {
+    "5": {
+      "srcHash": "sha256:5cdcb7bab0993e3674d09011f9b0b6f6c77cd985f24814840da3c7b1a61627b5",
+      "text": "I am sorry...! It was only a\ndelivery, and because of Nisues it\ngot this late...",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:dc7f1eb94e350095f318e83fb4ab46f839b740da3422e97c436bb69a16800f82",
+      "text": "No, it was clearly Nicola's crying\nfor help.",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:b7105dde2246c65c0ec89b76929b79c30432cef6c48978e1549b215f47b2fddb",
+      "text": "Still, you really got absorbed. I\ndidn't expect the Golem Club.",
+      "status": "machine"
+    }
+  },
+  "241": {
+    "5": {
+      "srcHash": "sha256:aa28ab12f620239d7e63b1f1a0c71d9ffff7f8443018ebaac8649388e8f190aa",
+      "text": "Did you find Nisues's treasure?",
+      "status": "machine"
+    }
+  },
+  "246": {
+    "5": {
+      "srcHash": "sha256:ca3942d676f7168030ceb01212a23b3852fd16b258fcd4ba1504e01b49ed1c7e",
+      "text": "Did Nisues look like she was having\nfun?",
+      "status": "machine"
+    }
+  },
+  "250": {
+    "5": {
+      "srcHash": "sha256:a1d76a86ad4aebf3ccfa61885e7fce9af460145bd681728f78d2762a7527b72b",
+      "text": "You did.",
+      "status": "machine"
+    }
+  },
+  "254": {
+    "5": {
+      "srcHash": "sha256:cd9c70c193b13e66b3fce0219ea42e05975fd012c8676c392fa225908624ef1e",
+      "text": "...Knowing one's own Oudo is\ndifficult...",
+      "status": "machine"
+    }
+  },
+  "257": {
+    "5": {
+      "srcHash": "sha256:35d7429bab63f429c2cc464bcb5dd556044b75937ff5b1d84f2decee87037869",
+      "text": "But learning something new. The\ngolem moving. Nisues was happy.",
+      "status": "machine"
+    }
+  },
+  "260": {
+    "5": {
+      "srcHash": "sha256:89233c14746b9ca3a25c3933da1828a0930cd35531e927fa1c470dc8f0e07233",
+      "text": "So Nisues has surely found it...!",
+      "status": "machine"
+    }
+  },
+  "264": {
+    "5": {
+      "srcHash": "sha256:2910a18eec8fd2dd5cd180079f7daaa70fc264fbed0798ef916403245c1c3d55",
+      "text": "Yes.",
+      "status": "machine"
+    }
+  },
+  "269": {
+    "5": {
+      "srcHash": "sha256:00934577d2f9bbd982fe5324e48e641d06ddd272ae5175d7c9f2de76b0327d5d",
+      "text": "Why not just join the Golem Club?\nThey won't mind an outsider. Memram\nwould be surprised, though.",
+      "status": "machine"
+    }
+  },
+  "273": {
+    "5": {
+      "srcHash": "sha256:66bdc3d2fe9d8ddc443699f4b40df585741b0e6a215cfdb4dbaf6d3edab01624",
+      "text": "Would the chief be troubled?",
+      "status": "machine"
+    }
+  },
+  "278": {
+    "5": {
+      "srcHash": "sha256:db1b3005dcfd07f3a7175579bb653d217a80cdd88e437581313a67eadfdc0859",
+      "text": "No, no, it's fine. Actually, I\nthink she'd be impressed.",
+      "status": "machine"
+    }
+  },
+  "282": {
+    "5": {
+      "srcHash": "sha256:2a59c7026976c323bd049c010dd67b565f23b8519048af67db36bcfc3d9e25ba",
+      "text": "...If she objects, Nisues would\nlike you to help persuade her...!",
+      "status": "machine"
+    }
+  }
+}

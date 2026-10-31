@@ -1,0 +1,25 @@
+            <header class="page-header">
+                <h1 class="page-title">Settings</h1>
+                <p class="page-subtitle">Settings for everyone on this Reflipped server, in seconds. Saved values apply at once and survive a restart.</p>
+            </header>
+{{notice}}
+            <section class="grid gap-4 grid-cols-2">
+                <div class="stat">
+                    <span class="stat-label">Rooms recruiting now</span>
+                    <span class="stat-value">{{recruitingRooms}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Players who could join</span>
+                    <span class="stat-value">{{availablePlayers}}</span>
+                </div>
+            </section>
+            <!-- every setting field joins this form with form="{{formId}}", so the preset forms can sit between them -->
+            <form id="{{formId}}" method="post" action="/api/server/settings"></form>
+{{sections}}
+            <div class="action-bar">
+                <span id="unsaved-status" class="card-text mr-auto text-primary" aria-live="polite"></span>
+                <button type="submit" form="{{formId}}" formaction="/api/server/resetSettings" formnovalidate class="btn-outline">Reset all to defaults</button>
+                <button type="submit" form="{{formId}}" id="save-settings" class="btn-primary">Save changes</button>
+            </div>
+            <script src="/public/js/stepper.js" defer></script>
+            <script src="/public/js/settings.js" defer></script>

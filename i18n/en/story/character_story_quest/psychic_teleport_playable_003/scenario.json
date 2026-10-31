@@ -1,0 +1,464 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:07604b0e9aff7c7aa6d7cce5bc5762aca726d097919c4e7e64329ff0f0aa7ae7",
+      "text": "...Um. This is the new song I was\nstruggling with.",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:f073cbcb3dbdad29096594b2e22dac2e2fd5ef2f19b9ff3984c0907503118b3d",
+      "text": "Um...? I'll premiere it at next\nweek's concert, so if possible, I'd\nlike your thoughts...",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:aaf032b4856db00ecb7e23af73fcd5f042022ffc10c638f205c1bfe3d056ffa0",
+      "text": "Well, I mean... That was seriously\namazing...",
+      "status": "machine"
+    }
+  },
+  "19": {
+    "5": {
+      "srcHash": "sha256:b43d0bf53ea613175e27cda09dc9d4420f8590d49496c3f0c53e75041bd501fe",
+      "text": "It was very lovely. Very...!",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:0fbb1b97d9e17f7f1504b1e55049b9c0dabadcce2f723976a7931bcce1ca356d",
+      "text": "I have no regrets in this life...!",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:c5e5f2581915740d5ff0ded39380666734f8914998071b0bc887afb0b5c0cca7",
+      "text": "You heard her! Great job, Hibiki!",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:a6f55507b7242a8d9a0aa92faaac45e361d1ef6a6ec8c96283d7d2e31a6a129f",
+      "text": "Yeah...!",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:220bae95431005dd6a052a1bd6b7285ee28aae9edef4a4998ba48ffca733f51e",
+      "text": "...Truly wonderful. But it's a\nshame this is a rushed stage...",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:0c83684e87ba89203071bc3e288bd821eddf4d5215a1a41d1a3c657e99d22183",
+      "text": "N-no, not at all...! I'm grateful\njust to have a proper venue\nprepared!",
+      "status": "machine"
+    }
+  },
+  "49": {
+    "5": {
+      "srcHash": "sha256:deceee5d23a1fbf2a105bf567eca480da64d47a8f121b04d5930413808504e3f",
+      "text": "It's actually a good opportunity.\nWe can't spend all our time on\nreconstruction.",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:862b8f62ecc2fa6b7daa1a6b6c4b43c8a9f8b85b4b6276452f2dc3ef32a458f3",
+      "text": "Everyone needs a breather somewhere.\nThings are moving fast, but the\nreconstruction will still take time.",
+      "status": "machine"
+    }
+  },
+  "55": {
+    "5": {
+      "srcHash": "sha256:8160c3ca2000a49ec2b7cd721f87e79452c69835abf0016ba80936669f2adbe1",
+      "text": "In that case, we absolutely have to\nmake next week's show a success!",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:2ab305e9cd9ec72c775ee1bb5b097c59dc64ca34a01ffe9eb8e03ef5405544aa",
+      "text": "Y-yeah!",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:46b33bb94e1ca4dfa065e4f0e800ef1243255a397b66fbccef1fe6025c877711",
+      "text": "...But before that, I have to—",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:1b0689213663dbe9aefbd9561591e9e6f14c70b4106d5134dced053d94c44105",
+      "text": "Um...! You're Regis, right? Thank\nyou for your time today.",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:1e317fa96709e6224e37857adc8a71ea7bcb4b62d5fb75974f0c040fc7bdc650",
+      "text": "I'm Hibiki Suminami. Nice to meet\nyou.",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:a01da2bf4c3ed77228b91b154a67a90af8562c3e60f6809aef1304a5dff84d87",
+      "text": "...I suppose this is our first\nmeeting. But I know you well,\nHibiki Suminami.",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:344fd04f742a1a6cbd66363fa79e00c317997cf2d988c7d14c43571babcc80c3",
+      "text": "So? What business do you have with\nme?",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:dbd95d7aa47927d86f4a240236fbd3bc1e9f4dc662da3ef73bbf5a8ccde5587b",
+      "text": "...Next week, Dia and I are holding\nan outdoor concert in Shibuya. If\nyou'd like, please come see it.",
+      "status": "machine"
+    }
+  },
+  "87": {
+    "5": {
+      "srcHash": "sha256:967bbf1e0150e1f14a4d9dd129b81ebb54cf520d5e2026c69b1bd2e64302a9a6",
+      "text": "Hm. Why give this to me?",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:60b54b51370034c3e2e9196302a5c3f2cc03e423b847f3632fe1f05d5726bcdd",
+      "text": "I want the stage I'm doing with Dia\nto be seen by someone important to\nher.",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:01c04dd2ca7f66a857bf37736be03b76e0780845ba5b10d4b9c04ffff44b19f1",
+      "text": "I hear this next song is to\nencourage the people of Palpebra\nand Shibuya.",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:42776600060a9a09c36fe11703872be9c1d2fb4a9e2e3c228b46539928343539",
+      "text": "With this, you two will become the\nsymbols of both cities, in name and\nreality.",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:194d2e63be9b9b9f91aea847b530b868c694aa993d73ce0e31fd0e375be7e43c",
+      "text": "...I can't say I'm ready for that.",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:45a1962ae476c7756e0525a7101a191f4b6e6407663fe3d88fafe0fc926b0b50",
+      "text": "...Hm?",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:a2632bf38330797d9e61753a9a388622612058b1cbbe974774417cb24233e899",
+      "text": "—But making this song, I realized\nsomething.",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:199d0fa49277af9f42ab36606c1ce37fca65889fe81aa108d67f7fa789b3dc2a",
+      "text": "...I'll keep making songs that\nanswer my own feelings and the\nfeelings everyone's given me.",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:5beaa71fd632e5d825cdc7604a45ce859eadc7e0ecea4f2b7d766d3f95eeaedf",
+      "text": "...Hm?",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:eea8069fdc4cd72d81b69ee372d077d48e654d72594d2df97383a5e816c92ef1",
+      "text": "I don't know yet whether that's a\ngood thing or a bad thing. I'm sure\nI'll have lots of regrets.",
+      "status": "machine"
+    }
+  },
+  "122": {
+    "5": {
+      "srcHash": "sha256:094ef0a35843ae099c1010bf36840fb3b05cf5bafc12236c7b5aec2696c5ef47",
+      "text": "...But I'm sure I'll be even more\nglad I did it.",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:4f8b9be05282b69c760cdc26adebc9c4c8a52d3ba5368b30d347a942058b64f3",
+      "text": "I want to live that way, resonating\nwith everyone and with the world.",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:8f34b5f03656233325809021c115e5aceaaf153969b318a0bb4ad5eabd257b9f",
+      "text": "...That's all.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:270dfe8267e52e5a6fd218d24027e5a8988c69b26a276561198a58dc69c7e6ac",
+      "text": "...Heh. Hehehe. Hahahahaha...!!!",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:6091c2e5619870984464e26995ba994ac80b978b8fa9d70af97278646c0ce5f6",
+      "text": "...It seems you are far more\nconfident than I expected.",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:3dd3dbd2b0160b604b2f68c913544b00ae4b643bdb61a368557d6629e46c5c4e",
+      "text": "I'm sorry...! I talked as if\nsuccess is guaranteed... how\nembarrassing...!!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:dd5e0efcbeea3be1a04a968caf951b121ed09a007db4a9b45b97341187646e96",
+      "text": "I have no need for this ticket.",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:2ff7fc3fc70d434f1e8a5a11c0c5dd66b79714d53212c04b6fb518822dd0bfe5",
+      "text": "I see...",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:07d33d11b51a3c80d478107ab0e92eec3fd03090b67a193c6655920cd2ed6594",
+      "text": "I already have one, you see.",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:39061c61cfaaa00b8642f9d31bdd5b8136beae035028b2b8cb597a41c649d46c",
+      "text": "However, if you speak of the future,\nstand a little prouder. As befits\none beside my diva, hmm?",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:715aad2ef968af57b84e51abc0845773b0c842281e29f8a51053b68d9e3ae177",
+      "text": "Yes...!",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:7bcea30f17223bba8affc0bae738efd4e7226ec6bb0f9e9fa7e86882258ddd8b",
+      "text": "...Honestly. I wanted to keep you\nas a hateful rival, but things\nnever go as I expect.",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:a66bc7b5273c5a379dfb568d9260b1028758801ad68e20b7a7e9361c2092f152",
+      "text": "Everyone! Here we go!!",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:0e07bc1edfcb0f4f65d41dd10c7b7afbe24a160ba526eb7b21aaedcc934b8c39",
+      "text": "Wooooooo!!!",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:eb5d5dc697c0f39361114bd850bf6f6d3c7e68087aca3284717d28a47e9dc02e",
+      "text": "Whew! We did it!",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:650977e47f52e552e398ab0fbba22d4e3dae7e5f9e5204514c52b240bcc9c5b7",
+      "text": "Hehe, me too...! I really enjoyed\nplaying...!",
+      "status": "machine"
+    }
+  },
+  "191": {
+    "5": {
+      "srcHash": "sha256:87f85c3802613600f3b2e89c909bee35eaebc370b3120d896bba335c9844b583",
+      "text": "...I hope it reached everyone\ntoo...",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:8a9c1ab84ca0e26f46a8bb3966daec8e215cb48d9d9c11086e23580b834ce450",
+      "text": "Oh, Hibiki! There you are!",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:1ba4ecc0618c4036eb8028eb37ca79d07f12a499c9c9509adb6baf62698cb59b",
+      "text": "Good work! That concert earlier was\nso... So wonderful...!!",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:d30b1c20ed297043920bfb6e78319c0196ef25bdc53019ae6e1559a8fce348aa",
+      "text": "Wooo! Seriously! Seriously the\nbest!!",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:e27f465b1eba97708cb102382d29d822bb53962fd73b4e777c6a13476bf93308",
+      "text": "Honestly... Seriously... Thank\nyou... Yeah... ...*sniff*...",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:29695d1c3dd6b0ea91b7697f84c76675ae1f680f59ea25635a4bdac0ec9086cc",
+      "text": "Hey, boss! Quit crying!! You'll\nmake me...!",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:28ad2d61b343c05cef181fd9f6c64b3cd3263458702678807c7a5174f4b49ac5",
+      "text": "Wooooooo...!!!",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:0d397287d867f8c82681cbcd045b4e75b769f8287358e19528c7f90f109b0a12",
+      "text": "N-no, I'm the one who... !",
+      "status": "machine"
+    }
+  },
+  "211": {
+    "5": {
+      "srcHash": "sha256:5e9ac865d79bbc971f23093a7c7c69ff37641af77127e69ac57b61d0c600c357",
+      "text": "...Thank you...!",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:d6e1d00219a9f0a941c9a2a44e3c9988ea171fff0cb8f7e7c0548051e9b1a99b",
+      "text": "See? I told you before. ...Hibiki's\nsongs stay close to people.",
+      "status": "machine"
+    }
+  },
+  "219": {
+    "5": {
+      "srcHash": "sha256:eb6e177afee7fd4f7039769377cf2b2ad9dfe4cd2d2af8d29439b352650b33b9",
+      "text": "That song you gave me, and today's\nconcert too...!",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:96c16c667e6e58c3f39721d068f9bee39329b88d1347a5acbf593e3d111bf170",
+      "text": "...Yes—!",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:f650607b8fbd4723c381d26f153afe113d596fcd0044784db6fb53c26fc1858d",
+      "text": "...No, Luciada. Wait a moment.",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:10632cd977bc39641ca74232a5a5094fa6ec4b5f87a3b10bb808990a1ebb2603",
+      "text": "How do you know what kind of song I\ngave you?",
+      "status": "machine"
+    }
+  },
+  "234": {
+    "5": {
+      "srcHash": "sha256:02408c2f98b161b28219da3e88255edc8a77801a7eb401f1083762c2a7b91200",
+      "text": "I told you, remember? After you\nreturn to the Farlands.",
+      "status": "machine"
+    }
+  },
+  "241": {
+    "5": {
+      "srcHash": "sha256:c70a60c0d0d9a1f5aed2ddfede28a90a440dbb55f37e5a455eade80f98c24cca",
+      "text": "Eeek?!",
+      "status": "machine"
+    }
+  },
+  "246": {
+    "5": {
+      "srcHash": "sha256:13883476b2e2a1f5ba6a558a7f1ad27e221aad8df946edfcbe8ebeb265384ea9",
+      "text": "Ugh, honestly...! You've ruined so\nmuch of it...!",
+      "status": "machine"
+    }
+  },
+  "251": {
+    "5": {
+      "srcHash": "sha256:a5b8b6f400aaa8c6d6eaa3198eedf6cc6cd2805e246d32295c5b169c2b884dd1",
+      "text": "I'm sorry...! But I was truly,\ntruly happy, so I couldn't help\nit...!!",
+      "status": "machine"
+    }
+  },
+  "255": {
+    "5": {
+      "srcHash": "sha256:2ef43aca3927e8f096ec7d045a856aa965f1dbea615de0b313ba577c6ab10059",
+      "text": "I know that. Honestly.",
+      "status": "machine"
+    }
+  },
+  "259": {
+    "5": {
+      "srcHash": "sha256:1078cfaf7a7e5bfe27b7112ca9b6b6b16553e7555820d97163ca11e55b69bb80",
+      "text": "I heard the great battle is over.\nBut our days will keep going.",
+      "status": "machine"
+    }
+  },
+  "262": {
+    "5": {
+      "srcHash": "sha256:f9be2061d77ebabc498c9365962b55b4ace417bed9499fd7563b11f84a36867d",
+      "text": "Meeting, parting, dreaming the same\nfuture, joining hands—",
+      "status": "machine"
+    }
+  }
+}

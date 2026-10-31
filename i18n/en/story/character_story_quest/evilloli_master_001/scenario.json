@@ -1,0 +1,415 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:82fd7017ffc3b5e8e979ea4b010d71c06daeebee9d7df3339acc64dc5907d020",
+      "text": "Fraud, robbery, and human\ntrafficking...? No room for\nleniency here, is there~?",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:adf8fd07bf0cb0f3d2a1ae122c9a01e146ca0c210eed63cdae6345295bf870b5",
+      "text": "Eek, f-forgive me...!\nGhk...!?",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:20d13522251518c1da121b5fe33e8f00ad879f1c7e5fdadc84d1bdb9b879e08a",
+      "text": "Haah... go easy, would you?\nWe need him to talk.",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:657b4f44ce3f412f37f51fb898382369c86502bbbae6bb72f3de63555c50eb5a",
+      "text": "B-but... Master told me, 'When you\nfight an enemy, you have to destroy\ntheir dignity completely'...",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:8cf054847b0a5d4ea81ffd337979f2f8f6d02b472a8f7b2bf34b25fec81c5683",
+      "text": "Exactly right!",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:1714f35fc00501bb187649d237ae4496ce1113867978cb5bdf4e7da2937f6126",
+      "text": "I see you remember my teachings\nwell~",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:64f2a4ead96c97225ea6d97bf3df4d7c1509b1b81fb68b8a1a75a532bf2ddc1d",
+      "text": "Eek...!?\nT-that voice just now—!?",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:ae41ea2a697f1fb1b91c689baac21bcfe4f48f4e07611c79db19a9b8d1f3a40c",
+      "text": "—M-Master Tanakiela!!",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:11e71b21c1286878d62466a688385358a8397eea7b334364c1c0001d446805ef",
+      "text": "Master... MASTER!?\nTHE Master!?",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:d6764b0b8c48e1a7122b9bf8c14532bd1cbe73f634be97364d6a3caaa2eddb9b",
+      "text": "Ahaha~! As expected of my\nnumber-one pupil! You even\nremember my voice, huh?",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:491c1631945c094803822165d014f974ff3408c3f0665b8eb0cdde223cbd5389",
+      "text": "Well then... since it's been so long,\nlet's play~",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:143b677eed847ebfd6d2c3c404addabc2f5a2eae1ca01eb931f8914943d785d6",
+      "text": "I'll see how much you've grown.\nOh, no need to thank me.\nIt's a master's duty, after all.",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:da79264143f730f55d0d6cc330494e4ba36e6aef0d2596801483383cb2b4f32c",
+      "text": "This girl...!?",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:7ba0fb9bef3ff70f3656a4ee62e3dcc3f7d1e7149501f177bd751d09eb63a34f",
+      "text": "I-I'll take on Master...!\nYou two, run...!!",
+      "status": "machine"
+    }
+  },
+  "62": {
+    "5": {
+      "srcHash": "sha256:1aae1aa1b0a6659247d2fb2718c9dc4ca3370068a294cc4c06260064526a2b42",
+      "text": "Kyaaaaaaah!?!?",
+      "status": "machine"
+    }
+  },
+  "65": {
+    "5": {
+      "srcHash": "sha256:df2578a62953622df54ddd0ab17cc1af3f00411740a18d656803ae2533e40127",
+      "text": "Melmynaaa!!",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:6a5710b76bd009cd99b2f90067f9dc1ad566d1ba8523d0586ef18091232259fc",
+      "text": "...Huh?",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:f3e09b523112546b19156dd8cbc083c04ea42fea2adec68def81787f8c735b14",
+      "text": "Hoo~? Hooo~?? Well, well, well...!",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:93d71fdbd7f7574644a812bd03cf297563f3037d5bf4bf7bc45af93b2d07452d",
+      "text": "You've gotten so toned...!\nHere, and here!",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:1abd8b06ffda57c11f3c4b90246195fcffefbe855312df2e3a12ad5cc7a18d24",
+      "text": "Eek!?\nP-please let go—",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:db1f90b2701929e6eca9165f36564af2ec1a48fcc0e1daad44450c16676a1718",
+      "text": "Do you really want me to let go?",
+      "status": "machine"
+    }
+  },
+  "91": {
+    "5": {
+      "srcHash": "sha256:862e7d894652d9fc6232a7275b075ad3fffc4b3b9118b683d8f79df6e9d4b78d",
+      "text": "Be honest~ You don't dislike it,\ndo you?",
+      "status": "machine"
+    }
+  },
+  "94": {
+    "5": {
+      "srcHash": "sha256:dd9bb189a419d31f98befc67400a8ef23a0e81ef47a2a7a6ff5933e463c19b6e",
+      "text": "After all, you want to stab me,\ndon't you? Hit me? And you need\nan excuse for it, don't you?",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:84a197b193500b5e603eb7938fc77c19d0ff9ae7cca6bd1d31b6e1a1f758bfde",
+      "text": "W-well, that's... ah...!",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:c4f620b3a777122ebd674ed8c39aafda5ee61903fad52c6cba9449b206d7c1f7",
+      "text": "Um...? I think you should stop\nthat kind of sexual harassment...",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:a2981371a50ad1f4a8aa6a373ebe2a7851e03b339a820b1aecb2ee515dfc73b6",
+      "text": "Eh? It's consensual, though~",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:307c150106707c8f6f96cea5afdbfda52f4f2eb2285177a4cce698202dba1820",
+      "text": "Then take it somewhere else,\nwill you...",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:b80d1ff763a8ed422085c32c57bb6544f4fd05fc4832c56bd672ab373efd534d",
+      "text": "What a fiery gaze. Why not throw that\ncontempt and anger at me? I'll be\nyour partner.",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:8cc070c08ca7250e7548627d341e27f87ae6f88d0cb8b760ab3e5a7805dc2af5",
+      "text": "I'm sorry. I'd like to stay out of\nthis as much as possible.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:e39d09bb635ef1b553cc865aa70a72e5764d0213f5f5e86ecccb4607534924ce",
+      "text": "...Anyway, let go of her.\nWe'll talk after that.",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:e620883b33d4333762c717936415580e61fbb78ed65aa367c5085dc44a08811d",
+      "text": "Tsk, how cold.",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:a459ee92843a10626bf4b42d1afeec509b9aba32aead7a194ff8a8e796f7d047",
+      "text": "...I'd heard about her, but\nthat's your master...?",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:901f7ae2447ebacf5bce49930269aa5d26a7c91e242f5853fa71a699af6e122b",
+      "text": "Uuu... I'm sorry... I don't want to\nnod, but yes...",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:963fb8621b5ab686c68cb5f6ab883fb7eb1da08c3a2e0b0c81015db327117d49",
+      "text": "Hey, that's awful! There's no better\nperson than me in this world!\nRight, Melmyna?",
+      "status": "machine"
+    }
+  },
+  "149": {
+    "5": {
+      "srcHash": "sha256:63b17fd90fabb2932eb85beecc61d716c17fc8225c0b50c933c400f150d73c45",
+      "text": "Y-yes! Master is a super-saint who\nloves love and courage...! She saved\nme, too...!",
+      "status": "machine"
+    }
+  },
+  "153": {
+    "5": {
+      "srcHash": "sha256:bc46a3f02fde666bbb681ae989de1cf54d35da130acf66559ff49f0cb49c67bf",
+      "text": "You made her say that...",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:ba6a71483abfe4a92ea883fb3b247197502d20284ebb3d67f6259de9a8bb1fac",
+      "text": "So? What do you want? You didn't come\njust to harass your pupil, did you?",
+      "status": "machine"
+    }
+  },
+  "161": {
+    "5": {
+      "srcHash": "sha256:a8971cf0137816170b38f804f19064b249981c5a9c4814e7d2d87d3b59fffc0e",
+      "text": "Right, the main point!\nThe main point!",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:1001c6906e63dd739952edb1d10b11265385bc43b9368c1be263c81b16ba46fe",
+      "text": "I want you to take me to your bed...\ner, to Starview Village!",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:a4efeb45cc14ca92a362195b442ab6c3f5369c26367ee6093981039c96e92d58",
+      "text": "...What are you up to?",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:6625d5e398d3ef7b625f5e2e28f3302f4864254a51964531f225d5b66ec3511e",
+      "text": "Don't be so wary~ I don't mean you\nany harm. I'd actually like to get\nalong with you.",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:0526dade69b3ea34baf4e4d6f3152903c7f8bb8806de44375158f214bdd35764",
+      "text": "After all, I'm your fan!",
+      "status": "machine"
+    }
+  },
+  "182": {
+    "5": {
+      "srcHash": "sha256:bdc7ebd2abc4ef537ee896ff3fedbef6f6fb7c468e76748cec65782418c01500",
+      "text": "Fan...?",
+      "status": "machine"
+    }
+  },
+  "186": {
+    "5": {
+      "srcHash": "sha256:219db42f591b4f52a4f44f29f96967837ee0f2f1997c4d82c48ea69308c6d6e4",
+      "text": "You took in my Melmyna and even set\nher kinks free. I wondered what\nkind of perverts you were, but—",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:387eddca88e2da38d824ffdcd74b61cf5409d750232d25f6cebe94887e0e46c6",
+      "text": "You're such kind, earnest people\nwho are fun to tease!",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:640488f53be50d246a4daf2884645bfe4d2e5ac80f0260d6748862c8829f3350",
+      "text": "I'm interested in you~ Do\nlet me join you. ...In\nevery sense, of course~",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:4c19dd6cb3b35e2a541b9173b9a2e6a06d78f2974e23371c006e8f61f6edef38",
+      "text": "...Please give us a moment to\ngather our thoughts.",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:bef0163930a139fe1c33384b333d13694887e7568ca8847dce7a2325713eb972",
+      "text": "This is a tough case.",
+      "status": "machine"
+    }
+  },
+  "207": {
+    "5": {
+      "srcHash": "sha256:aaef29fad704a707fe848a689faa4ddd2f263233aac5f319330c63f21894499b",
+      "text": "...So, what do you think?\nCan she be trusted?",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:cf23e0f4bcc1c069911d4e1932b90dc16bfa9f893ec6d0ea57def2b7302060ee",
+      "text": "S-she's not a bad person... Her\nhabits are just awful... And she c-can\nbe kind... a little, sometimes...!",
+      "status": "machine"
+    }
+  },
+  "216": {
+    "5": {
+      "srcHash": "sha256:0e1b2875183faeafa8e3aa24be84ff3e971eff26e3707249e3c10a38156443e6",
+      "text": "Somewhere, huh...",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:dbf4dcdade272ba5807393e24db8b0926d8d2850fd70313af8d8d0847291eca2",
+      "text": "Come on~? You're fine with Melmyna,\nright? Then acknowledge me too~",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:a46eda3ab7ea0e5ca13005431a4ac44e8ed6dfa35d1e3d639097d0ac62ebf83f",
+      "text": "...Anything without consent is out.\nCan you keep to just that?",
+      "status": "machine"
+    }
+  },
+  "230": {
+    "5": {
+      "srcHash": "sha256:e464098688bfcd64a1eeeaf15d4e54f5e1bbb89c797b4fd923b30d2369c95ca8",
+      "text": "Is that your rule?",
+      "status": "machine"
+    }
+  },
+  "234": {
+    "5": {
+      "srcHash": "sha256:5e89942ec317514aa55d8bfdcae5e26375da238a21538ce037ee5223f063827d",
+      "text": "Hmm... Well, at least for me.",
+      "status": "machine"
+    }
+  },
+  "238": {
+    "5": {
+      "srcHash": "sha256:a70a004566967c4eead27fb7f023ed72896b0e8763b1542275a1b7ed8c175a12",
+      "text": "Don't worry so much. After\nall, I'm on the side of\nlove and courage, right?",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:bca63d28fb3f6ed443af22eed6b20846da60967e316ae648231d0deff4adf0aa",
+      "text": "Let's get cozy and friendly,\nshall we? Hee hee hee...",
+      "status": "machine"
+    }
+  },
+  "247": {
+    "5": {
+      "srcHash": "sha256:27b5fa4bd4f818fe06fb4e15b2811958679af05c5d8fe076d1085dd0158e01bb",
+      "text": "Ugh... so annoying...",
+      "status": "machine"
+    }
+  },
+  "252": {
+    "5": {
+      "srcHash": "sha256:f9098185487caeb2f7c21b7d73d62dd4009da5c1119cf93a3700d3529b0e6366",
+      "text": "It'll be fine, fine! Trust me!",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:1641f7c4c12d4f99808491178cbca8297c3bb759fb582b24002dd2d825afb884",
+      "text": "This is your masters' curse.\nThey suffered, resented, hated.",
+      "status": "machine"
+    }
+  },
+  "6": {
+    "5": {
+      "srcHash": "sha256:add85aad84b48acc05cf0ed2f7c24ddc936fa7beb88b5e9cef9e32cb57e9ebc2",
+      "text": "And then they wished. To be\nswallowed by the curse. For all\nthings to perish—",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:6bf05b54571cc83ac93cb7594f7e87e6296c5d2d0e0195b4ef0acf0be30d8ba6",
+      "text": "...Ah, pitiful humans.",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:205b2c7cbd67483481a41c0027fa5cf6fe9300d03340d4594befd8acee7d2fec",
+      "text": "You too will give birth to curses,\nwon't you?",
+      "status": "machine"
+    }
+  },
+  "16": {
+    "5": {
+      "srcHash": "sha256:b39c884c15f86063348425fdb1cd08ba243e246e4b2946285dbf0e5d92e66f1b",
+      "text": "I'm looking for a magatama.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:f2eeea415641bd57c8b04bf39d1958c62203ee02dc1f9e7a09418cf594c0baba",
+      "text": "It's one of the Three Sacred\nTreasures. Have you ever seen one?",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:13b24535199619a427e240e9729c812fbe3b1764fb9927c79b9b2e2a1dc2c2fc",
+      "text": "Huh? I dunno. What's a sacred\ntreasure?",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:aeb30fdb8f56d84cdac4125ab3b7f5849a16aa5b4683c2bbbb8958977543294a",
+      "text": "They're treasures with great power.\nThe magatama is the only one not\nfound yet.",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:592d1aa38605bff43e934bb468cf65844b2e468631accc3387f1c8ab477342f9",
+      "text": "...Some ninja are trying to use that\nmagatama to summon a dangerous\nyokai. We have to find it first—",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:45ea87106a02833f1d8d109ccb70aa42394edb86293880bb19900e2578b4808a",
+      "text": "Magatama, are you here, too?",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:b250dff3a605373adef7b064c60556dcece37f6c00336f2b109ee97b04b41956",
+      "text": "...Murakumo and Alk are asking\naround in other villages. If we\ncan get any clues...",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:22e81a5b8232af931357744e0f47807ad5ed1cfddb293e59990b4ed15ab168b5",
+      "text": "...Do the ninja still want to revive\nOrochi?",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:335fec5d274ae41bbe958363c146f208bb385a78e8704c52d28584cd0748a571",
+      "text": "...I think fewer wish for it now.\nBut they haven't completely gone.",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:ab81ae9885a77e7f91265205a8d47f50d5ed8e53688d86573b663b3b7f5180cc",
+      "text": "I don't sense any sinister aura now,\nbut if the magatama has fallen into\ntheir hands...",
+      "status": "machine"
+    }
+  },
+  "48": {
+    "5": {
+      "srcHash": "sha256:cb924aedd80fde9da5b62a7025b8a4280cbc6aa09e3e1595f94cf6b23a6e5ce5",
+      "text": "My, my. Such gloomy faces you have.",
+      "status": "machine"
+    }
+  },
+  "52": {
+    "5": {
+      "srcHash": "sha256:261677ccd4455dfea595fefba2c02b86bad4487eb0682eb96cb98933ad1af32e",
+      "text": "If you like, tell this old lady your\nstory. It might lift your spirits a\nlittle.",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:e08102eb9657544b17f650f4271a254a25ea71851516a4f0834a1bd06f5d42d5",
+      "text": "You are—",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:d6a70d03c150115a59d6732676dbba3ceb4f5f4d7434aa1cc31802ff0d511c8c",
+      "text": "...Yasakani no Magatama?",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:0ef69a6240a38a67ad8b1b6f1b385a4a01051c6fcea000e4e0422a1b1566a335",
+      "text": "Hohoho, well now. Found out already,\nhave I?",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:9aa0aeeaf7dbe3cf6a21e49e090911884f937c5722d51a67cec3ecc80559dc89",
+      "text": "—Spirit of the Magatama, Tamako,\nat your service.",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:69c2221dcb70383baa98394712e227b104155ef4ac71dae8e76f772875e9525f",
+      "text": "Hohoho. I'm the charm-warding\nmagatama, Granny Tama. Just call me\nGranny Tama, dears.",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:dd90cf1b1e75c50d464c52e041932c6fc5718998b595a5366b1de2c13f40bdfb",
+      "text": "Wow! What was that?! Granny Tama,\nare you a sacred treasure?!",
+      "status": "machine"
+    }
+  },
+  "81": {
+    "5": {
+      "srcHash": "sha256:e34d98b2ba62e34ef9e4200e39e10f909f3a30d6e688b3a0c38d1a87a82eae21",
+      "text": "I was called that once. Now I'm\neveryone's Granny Tama.",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:ed93544f6a6c295fd7a59487679b0d7f22426b4ea5a3b79a4e0cbb3960a79fb6",
+      "text": "What is this...",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:b9adeefbf66b63a48e52f1e0d8dac4284fa794c1825a43b30b7392c4a117256f",
+      "text": "Well, we likely have a lot to talk\nabout. But first—",
+      "status": "machine"
+    }
+  },
+  "92": {
+    "5": {
+      "srcHash": "sha256:1287ebdfb180087d21faedeaffd1897d0cfcfa7700315816281c4fdd53149b78",
+      "text": "Do you young ones like ohagi?",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:d455983f4c1620a90191ad6f3f2b1482fc5e98866936e5014734cc10c8585009",
+      "text": "It's delicious. Sweet and chewy.",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:24fd29b66186f5774c459cfd72593049d07d255930ad66b9056808ff6d3c429e",
+      "text": "Hohoho, you eat so well. It makes\nit worth the effort to make them.\nWant some of these, too?",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:cca312c43156ecdff1456ab46ff298fb82eef606faebfa747b58bb18366c3ba7",
+      "text": "Delicious. Thank you...!",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:8e706a69f3bda2965a00028b7fdff54934d540b101101df2de5fefa493799cea",
+      "text": "My, it must have been hard. To think\nthe ninja and the Diviners'\nCommission had such a feud.",
+      "status": "machine"
+    }
+  },
+  "113": {
+    "5": {
+      "srcHash": "sha256:da67a6b63c91057b2d9dfb35bc3b9acf88d49cc90701a8fea349484bbe30d2a8",
+      "text": "Sorry for the trouble. Thank you\nfor searching for me.",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:77ea80f7d25ef765865c7878cca84f96901196ef191e18e40688aea8cac37199",
+      "text": "N-no. More importantly, you are...\num...",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:e7632c877132e381b2e9615ed7c5c18dbb957de4cca6278f6f8216def8d3c4f5",
+      "text": "Why do I look like a bright young\ngirl, you mean?",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:1fa1883de025fde8583c056d9ac3fec594beef5c5940ec072590426405c39025",
+      "text": "Simple. The children of this\nvillage wished me to be this way.",
+      "status": "machine"
+    }
+  },
+  "127": {
+    "5": {
+      "srcHash": "sha256:6c5205f9a873faffe2dcd06a1e1831a2d5da555a2ed2aeb7a197beb72ae31bfe",
+      "text": "The child who picked me up was a\ngood one. Kept me by their side as a\nsimple charm. The villagers, too...",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:b77449e80c8c8cccd2e420d320dfd8cda2d2cd5eeec2aba29b86d912b19d2b9f",
+      "text": "Everyone gets along.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:68eaeff0c58ad197634e1bca614cda4052817e9661d8c2169e4f5cfd63070710",
+      "text": "Watching them, my hardened heart\nloosened up completely.",
+      "status": "machine"
+    }
+  },
+  "139": {
+    "5": {
+      "srcHash": "sha256:98bd831167e8667c802dc8a286a418f0834618229f62267a48631d06965f2a35",
+      "text": "And the children love me like this.\nA cute granny is nice, isn't it?",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:f14558e962b711df70590df15ca9dec54f63f18df4bb883173ff7b439759288e",
+      "text": "Have you forgotten the past?\n...Your masters, who were killed.",
+      "status": "machine"
+    }
+  },
+  "149": {
+    "5": {
+      "srcHash": "sha256:669dc9b5ed21f02bf8ea55afae205dc5515fde427d77e588181f1dd3f146a5c6",
+      "text": "No. I remember, Manoka. ...And how\nwe became Orochi together, with me\nunable to do a thing for them.",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:63731f4878b5a1ec3a48387dd08fb75ca93aaa4fc565e91b86a38ea8adaa3aec",
+      "text": "That's why this old woman never\nwants to be swallowed by a curse\nagain.",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:b7191c2184501858ef5f0f50de933d241d5a311b3645677cf44ed3688d0742c9",
+      "text": "Nor to see people swallowed by it. I\nwant to spend peaceful, relaxed days\nwith humans.",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:abeecd5cadd38cffb7236ea0546245872c3a0790aa09428913d0067e5e7371b4",
+      "text": "That is my wish now. Maybe it's a\nlittle selfish.",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:44c2ae0d079123298255e0190274e7074f296cb26523996a8ef7fbb4cdd0fe49",
+      "text": "...As the Diviners' Commission, it\nwould be preferable for you to be\nwith us. But if you want to stay—",
+      "status": "machine"
+    }
+  },
+  "167": {
+    "5": {
+      "srcHash": "sha256:abbe16c6825c6121d703440d296fadb13835076168d98f12cbb20455778b0105",
+      "text": "...Oh! No, no, sorry. It's the\nopposite.",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:2c7a93e7c1f178bc39726603cb5336183cef7130c1d63d55fa3b427f78bd3bbf",
+      "text": "Dear children. Could you let this\nold lady stay with you?",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:738d54a8a10f183c5a1c35f1ebf84b822852a79a81902d1eaad3f629af2fa435",
+      "text": "...Granny Tama, are you going\nsomewhere?",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:1e6e87380020dfc2456f09a892cc607ac765d16641d493c3433669b76e78805b",
+      "text": "Don't worry, I won't forget to visit.\nThis is my hometown now.",
+      "status": "machine"
+    }
+  },
+  "177": {
+    "5": {
+      "srcHash": "sha256:3f1e7d8f5755192dad98bf41b08f3df9276c210dad4f74d256dd87a76213f17a",
+      "text": "If ninja come to this village, I'd\nworry. I'd be grateful if you'd\nlook after me.",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:cb7951e1aedbef15e5da48782a6a4dc46a2e9ae726e0554fe410db7ff71741df",
+      "text": "And you seem to have loosened the\ncurse of Manoka, the Mirror. Let me\nthank you for that, too.",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:2b780727bbe398b68ec65c80181bf2247db5f3ca6cbe504ef9cd2a6cc8519a70",
+      "text": "...Loosened...? No, I...",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:3a8477d01e9f13394c5305e614e6a1e21fb023ab2734502be670564eb0e4c192",
+      "text": "Hohoho. I see. Perhaps you loosened\neach other.",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:4809b3ac83749286c36f8cd4ebd597325b29f66da4ca2d6294fe024f0d14b303",
+      "text": "...But you still look troubled about\nthe ninja, don't you?",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:97a2a0c09869c70cb3962ef86ce276f951eac30675363a99accc7cf2dcf8b1d6",
+      "text": "Don't worry. I'm confident in my\nyears. I can help loosen your\ntroubles.",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:a8a37d5bbc7427458b5ea2193846940554ca979f83c401d5e98907ac785c3011",
+      "text": "For example, by making ohagi for\nyou?",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:bc163433801c61ebc67635547affbaaf25666a1bdc84710fee9ed4c3f26f20c3",
+      "text": "...Stella. Is that all right?",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:7a0d79694ca209061b8451654c15a623fd4390b08b83421de63248ad4d95cd9c",
+      "text": "Yes. We welcome you, Tamako.",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:dcc85f3b31b1fb9dbbfba1b2b4a6d25f7c6cf00941fa91b176a13b0b72cc799f",
+      "text": "All right, here we go~!\nHyper Granny Tama Straight Ball!",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:0ab76fdae730316f4241ae96002428abdb46e3d8e5ff2f00a9a86f1e0d900528",
+      "text": "Truly a wonderful place. No wonder\nyou two became what you are.\nMurakumo, Manoka.",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:36857e2290b0a0c922c86c491736e35b131b68c959261d6fa32d8614934215eb",
+      "text": "You've become quite human...\nMore than us, no?",
+      "status": "machine"
+    }
+  },
+  "225": {
+    "5": {
+      "srcHash": "sha256:5cd8af5cc945023c311fbab86908ad3d3b0d6d3375fefad912ff28a51970f3c3",
+      "text": "Oh, you think so too, Murakumo?\nI was surprised.",
+      "status": "machine"
+    }
+  },
+  "227": {
+    "5": {
+      "srcHash": "sha256:12420599a391f848a70dbaa964ed084187290a2be748d7cc8970977a0835d1cf",
+      "text": "She talks about her own \"wish.\"\n...Aren't we supposed to want to\ngrant people's wishes?",
+      "status": "machine"
+    }
+  },
+  "231": {
+    "5": {
+      "srcHash": "sha256:922ef7b2f86a8f317c75740357a89ae758990fc6e1ea2b5166c5ae7491c78511",
+      "text": "Hohoho, true. I'm no different\nfrom you.",
+      "status": "machine"
+    }
+  },
+  "234": {
+    "5": {
+      "srcHash": "sha256:8dcda94a3fa828fa8f4f4e7ac40848fce124273d459b1ce92ddbe6629043b022",
+      "text": "But now I'm Granny Tama, you see?\nMy way of life might differ a\nlittle from yours, but—",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:2149047bf550d2e98436602487a820f1303c2283c95406932d1de48adb3a35c4",
+      "text": "I just want to loosen everyone's\nhearts. That's all.",
+      "status": "machine"
+    }
+  }
+}

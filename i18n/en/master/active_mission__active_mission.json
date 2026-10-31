@@ -1,0 +1,241 @@
+{
+  "20001": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:d69e37fb1d47028eecdd3039e13747c70ad76361b7fc3d27c549080ec1ac0667",
+      "text": "Start the Content Guide",
+      "status": "machine"
+    }
+  },
+  "20002": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:163185403b98612e0c16613cda1221e609bd5a38d298b8f9040d5c56dd61bb86",
+      "text": "Clear a multiplayer battle with Shuilong as leader, Rakisha 2nd and both reward armaments equipped",
+      "status": "machine"
+    }
+  },
+  "20003": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:2ff53198ecc4b17ed7b8429b856536d94ce80ad3a4f67988d0ac1f99d3202bff",
+      "text": "Raise Shuilong to level 80 and clear a multiplayer battle",
+      "status": "machine"
+    }
+  },
+  "20004": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:9b3479c1aa91dd1b9a0d50af2f01554e91fc8968ff5f905b939cf662095e470a",
+      "text": "Clear the boss battle Ancient Golem Godly in multiplayer",
+      "status": "machine",
+      "note": "'Ruin Golem' taken as the Ancient Golem boss (guardian_golem); uncertain"
+    }
+  },
+  "20005": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:d1603e11809c3b919e4c2c6a22f8459499f4cb4a1d20ec5c88ef8045f058568f",
+      "text": "Raise Shuilong to level 100 and clear a multiplayer battle",
+      "status": "machine"
+    }
+  },
+  "20006": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:de32257079c1d6038d40d0e164c7592c6d7c79692b3c84ca00c3aebd0c720ad8",
+      "text": "Clear Ancient Golem Godly+ with Shuilong as leader",
+      "status": "machine"
+    }
+  },
+  "20007": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:8f7253fe0a32ced33d04041c86c385ca1a4ca86a1832da12aa416ee1c6dbc7bf",
+      "text": "Unlock Shuilong's abilities 4 to 6 and clear a multiplayer battle",
+      "status": "machine"
+    }
+  },
+  "20008": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:6982033afafe1cadb52dcd95a4f7f4d06efa1c3fac9fe67f2d53f1a7e8dbeaa4",
+      "text": "Clear any Solo Boss Challenge on Hell difficulty",
+      "status": "machine"
+    }
+  },
+  "20009": {
+    "2": {
+      "srcHash": "sha256:df1ff7cb59aa8882d9fa945369c41766e17dc5cfafe1bb829ba970f723d2952e",
+      "text": "Content Guide",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:12b912e72c43d1e79a82504c1a3371bb8a2ff5b8fea30e5a95a5145efbb87f1b",
+      "text": "Clear the Necropolis: The Beast of the Abyss",
+      "status": "machine"
+    }
+  },
+  "21010": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:b6d8c3c649f6a689d858c39e23cfa6f86ce751e0b60f1012c084c8bbabfb8a33",
+      "text": "Add a unit to your party",
+      "status": "machine"
+    }
+  },
+  "21020": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:72d70ce9ab52e48d5054f973bc7f05b8e408999d0a7b8d2df3ba1d80fe556655",
+      "text": "Clear Chapter 1",
+      "status": "machine"
+    }
+  },
+  "21030": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:6fae1143baf3db2092b7614f6e7544da981f9e10f385af980a6aea26ea2dc737",
+      "text": "Take part in People's Choice Reward",
+      "status": "machine"
+    }
+  },
+  "21040": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:82a3a53229ae5103397a465032dc21c262406666b0e695a556d92255193acba0",
+      "text": "Unlock an ability",
+      "status": "machine"
+    }
+  },
+  "21050": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:bbe998a8192b95147677fd943278510c7618a17813e5cf3d89171c75e520cf8b",
+      "text": "Clear a multiplayer battle",
+      "status": "machine"
+    }
+  },
+  "21060": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:753588dbfceafad0b9925d5032e3c849bd047ba3bc27e61320d8a2d1e046c09c",
+      "text": "Trade for something at the Boss Coin Exchange",
+      "status": "machine"
+    }
+  },
+  "21070": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:b992239ede4cb69ce649c4cfb1b7237a9f6f94ff8abda3b11791f43c34c0c2e2",
+      "text": "Clear Chapter 2",
+      "status": "machine"
+    }
+  },
+  "21080": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:a4d5988a635969243ac4121d71fc1d65a8d3396484db853fda1263544c59fefe",
+      "text": "Do the free 10-pull twice",
+      "status": "machine"
+    }
+  },
+  "21090": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:ddd2d42f12d1257cd23b8306d24db63153058e24ab35d2e513e7ec5e3268a3c0",
+      "text": "Clear the Kaleidoscope: Training Items quest",
+      "status": "machine"
+    }
+  },
+  "21100": {
+    "2": {
+      "srcHash": "sha256:421432817420c081f9b9e6e206d9a4b8c4f77adafd7e003bebfad247a67e3b10",
+      "text": "1M Yen",
+      "status": "machine",
+      "note": "real-money campaign mission group (JP only)"
+    },
+    "4": {
+      "srcHash": "sha256:a7626d285b335efa4c2f46fd78b5b9986b00005893cb1398beb3bcd276959e6d",
+      "text": "Watch \"A Past Resurfaced\" in Distant Succession",
+      "status": "machine"
+    }
+  }
+}

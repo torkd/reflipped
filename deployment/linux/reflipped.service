@@ -1,0 +1,68 @@
+# Reflipped as a sandboxed systemd service (no containers). Setup, upgrade and restore: docs/deployment.md
+# ("Without Docker: systemd").
+#
+# The code is read-only to the service: it runs as a throwaway user (DynamicUser) that can write only its
+# state directory, /var/lib/reflipped (the database), and logs to the journal. Settings come from the
+# checkout's .env, and Environment= lines here (or in `systemctl edit reflipped`) take precedence over it.
+# TLS and the asset downloads belong to a reverse proxy in front (docker/proxy/nginx or caddy configs).
+
+[Unit]
+Description=Reflipped: Server emulator for the global version of a mobile pinball game.
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=exec
+# The checkout, built with `npm ci && npm run build`. Outside /home, which the sandbox hides.
+# The install script replaces this with the repo's location.
+WorkingDirectory=/reflipped
+ExecStart=node --env-file=.env out/server.js
+Restart=on-failure
+RestartSec=10
+
+# Data and logs outside the checkout.
+Environment=NODE_ENV=production
+Environment=DATABASE_DIR=/var/lib/reflipped/database
+Environment=LOG_FILE=
+# Behind a reverse proxy on this host: trust its X-Forwarded-For (docs/hardening.md, SEC-4).
+Environment=TRUST_PROXY=127.0.0.1,::1
+StateDirectory=reflipped
+StateDirectoryMode=0700
+
+# Sandbox. `systemd-analyze security reflipped` scores what is left.
+DynamicUser=yes
+User=reflipped
+UMask=0077
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+PrivateUsers=yes
+ProtectHostname=yes
+ProtectClock=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectProc=invisible
+ProcSubset=pid
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+RemoveIPC=yes
+LockPersonality=yes
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+SystemCallFilter=~@privileged @resources
+# A filtered call fails with EPERM instead of killing the process.
+SystemCallErrorNumber=EPERM
+# Not MemoryDenyWriteExecute: V8's JIT needs writable executable memory.
+# Reflipped only reads CDN_DIR and CDN_OVERLAY_DIR (the asset version is kept in the database), so they stay
+# read-only here. Run `npm run i18n:build` as the user that owns the checkout, then restart the service.
+
+[Install]
+WantedBy=multi-user.target

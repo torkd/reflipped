@@ -1,0 +1,436 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:ad2cfc03de4fa9efa9b86059068c6f543cef53b868cc633523b255383f20c90f",
+      "text": "It really is... Shibuya...",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:a0cfb4d66cc9b2ed6f378f96b1a8b8970467370288ff3b953ea160f760cce746",
+      "text": "But of course, not everyone's okay,\nhuh...",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:70880daff13f082a4c969299b5fed6c27ab99359f98e7f395bd53936c659b996",
+      "text": "Hey, hey! This isn't something for\nyou to worry about, right?",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:46aae5e6e0eb49d47362ef826a9a3916082f584c8fcbfc2a1467b07e8da2edb6",
+      "text": "It's just how things are— No...\nthat's not right either.",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:8fc33f5b279f498c05770df8b6adf2ff3cf3b38fd4786a827c29ec5cf9afb9cd",
+      "text": "...Mamiya told me! That you're the\none who saved this town.",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:e1bd1d9ad024aab0fd033915a76a7b9f8dc4e223c0fcbf6d4f8a0ed89605e87f",
+      "text": "...And now it's another big\nincident, though.",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:3246a101da5fa862c0135a0f3ee2273eafb948ce24a6e23bf31b81e4d45cf0e5",
+      "text": "Well, that's that and this is this,\nyou know?",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:fc6642b657e201e25090969d6033428d028db4bbf3256e949c52cd0ffcd9c431",
+      "text": "You're so casual.",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:f45e6172a799a488f922b7af8bb9dd8407801aaf5eebe7f55e12647f743028e0",
+      "text": "Besides, those \"psychic\" kids, you\nknow.",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:ed73571df2df9d2082f589775d06587a4b02778fc21b029820f4a0d9d559c3df",
+      "text": "I hear there was a lot going on,\nbut if they can laugh like that...",
+      "status": "machine"
+    }
+  },
+  "43": {
+    "5": {
+      "srcHash": "sha256:110e1192d3147d602f3650529c2b8a9019c839e80c473a614b6994f7ad34ee82",
+      "text": "...You said psychics appeared in\nJapan too, right?",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:cd3e2aa68fc996b9584ccbb228b81f4eb64d975dad76d7aa9300f634b2eb6e6f",
+      "text": "Yeah. People who'd \"heard a kaiju's\nvoice\" or \"seen an eye in a dream\"\nstarted popping up here and there.",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:162bfebde5128d7490520037a96916c74d054bdc486d788220247222e6540f79",
+      "text": "It was awful at first... No basis,\nno facts. Just anxiety, and some\ncrap exclusion movement.",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:7128f85a7909e4a2502317a1ad27921c0ef8f7a71473ec4dc6c135252e5ec844",
+      "text": "\"Ever heard of human rights?\"\nNamino was always furious...",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:5663951ce898acc3087c82ef33d2692f2f2388a26356b0ca978dd3fe42bac653",
+      "text": "\"At first,\" so... Did it calm down?",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:62803af0f9625d9e0def0caed04659648ac59e3895a2e5140d76694b39d9ca0a",
+      "text": "For an awful reason, too. Psychics\nkept multiplying worldwide, fast\nenough to repaint everything, y'know?",
+      "status": "machine"
+    }
+  },
+  "64": {
+    "5": {
+      "srcHash": "sha256:c396521dea2aa5725bec167bd15fb05058d188ac81d0289354c4a58f9c919f0c",
+      "text": "When everyone's on \"that side,\"\npeople without powers become the\nminority. The wind changes, right?",
+      "status": "machine"
+    }
+  },
+  "67": {
+    "5": {
+      "srcHash": "sha256:37032e8832290c49fc8f55ea99a22ff0a64080058d453799f5d4e766e60f3bd5",
+      "text": "As you can see, I'm a psychic too.\nA plain power, psychometry.",
+      "status": "machine"
+    }
+  },
+  "71": {
+    "5": {
+      "srcHash": "sha256:b9010b1d7265fe5c728676153fda0da952ff5697819ea12300044eb5f3aa30bb",
+      "text": "Did you... see it?",
+      "status": "machine"
+    }
+  },
+  "75": {
+    "5": {
+      "srcHash": "sha256:cf4edacce7c79bc9cc94a1f909da129824d3e1323e74c23f12fc6d382e4f59bd",
+      "text": "......Yeah. I saw it. The day I\nchased my father's phantom.",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:ecf1245a013040e791d1c00ee258a8e1ef3d3f5e7a60f35aab14d7800a8e5fae",
+      "text": "It was a \"dragon.\" ...I believe\nit's what destroyed our world.",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:e365392e44a244cb62cd933ed807ef4593647b4f6156d751529d5cd2ff48e978",
+      "text": "Stylish music playing. But if we\ndawdle, night will fall. Time to\ngo.",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:69cab4866715cee84d7c11f0d86d1803a2f4a70d0cc3b8861e3ec4ff546aa65b",
+      "text": "I'd at least like to find the\nremains of the shop...",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:1928ea897e9d1f59311b4827fd1afbd84fd3607dca089cb2b6456333c541930f",
+      "text": "A shop?",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:38ae0acd684d57c5b4d749362ded6f9336f0a092c952e24e6c8eab66861cdebf",
+      "text": "Oh, didn't I say? My dad was a cook\ntoo. He ran the best curry house in\nthe world.",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:1281448cd8f5ff3e1549b850964f6fe30f5b97fb36fa68a465b3b3aba5c03594",
+      "text": "......Wait a moment. The best in\nthe world...?",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:c6aac3b834fef5615b2ab2a3302ebd60baf244fd1f66e72dee74de414f2b1ce9",
+      "text": "Ha...... Ah. Ah...",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:36679663a009965373f770d74ba0cec05154ec94477da5ce20a8689adc8c9ad0",
+      "text": "Sorry about this, customer, we're\nstill prepping—",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:5160a786417e4bffdfd175cbedd7d92b1a57a2ccbc5ad8c527a42186e03ea5b2",
+      "text": "......Taichi? Is that you, Taichi?",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:6bd48381311556391667cfb468c7a350e630209134a131d6819b18cfe4062910",
+      "text": "Haaah... Aaaaah......!",
+      "status": "machine"
+    }
+  },
+  "119": {
+    "5": {
+      "srcHash": "sha256:adf27c81827449558fb4a2b73d69793a3c8c7fa731fe7b2d023f2fa9c123bb32",
+      "text": "Ha, hahaha! Those droopy eyebrows!\nIt really is Taichi! How'd you turn\ninto a middle-aged man—",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:5c32f7cc246a49bc219e663fb7bfb9899d311a7b26d8b81fa8a5faacdda3a07b",
+      "text": "Dad... Dad...! Daaad!",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:e78c7ed9a759ec8532ad4becfe2befee5404c58bd5fa83eabed546fa2b33aa4e",
+      "text": "I... I... I've wanted to see you\nall this time...! But, but I...!",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:272398217329f0ea0f116cff8a214ac1ac50e947d15e305bfd6d465aedaaa922",
+      "text": "Waaaaaah...",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:f152e84855dabf2941a3f2579a6f4b42ab000b18631979b312a9743ad708549b",
+      "text": "Idiot. You... That's my line...",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:2f45cdb09b071a5124a968a206782eee491175ecb2232d01c2f00686ca3af734",
+      "text": "Ugh, my head hurts from crying so\nmuch.",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:3dc2e5f4b0dd54c41c46c613672dd6362ecc38cd4906ec90e77f8e9412fa8602",
+      "text": "Why are you crying too, Alk...",
+      "status": "machine"
+    }
+  },
+  "144": {
+    "5": {
+      "srcHash": "sha256:3bd144e4e73f8a56cc3779da17437dddbcfb152133375c56d389fc512889403a",
+      "text": "No, I just... can't take it...",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:65cd62638ebe838b243c0531aa0ebe4b3dd9c519e27b61c98c796d3ea7336ef8",
+      "text": "Ha, hahaha. I've decided.",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:6df3d80719a531126907b8cc2f82b5203743097e60264dbbf0858883f66560cb",
+      "text": "I'm gonna spend about half of my\nremaining life on you.",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:3e30faa80de01e9852eb3ab74c01218d43a418628c8b693aac39ccead8429b15",
+      "text": "What?!",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:f733613dbfdcf2a30378d09da590b8ac5d49a3ff2e1193610edd4f69395be35d",
+      "text": "You're carrying a lot, aren't you?\nAbout this town, maybe having made\na mistake, something like that.",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:22230966f556df9634e0261f169dd15539e0e1c34ec97ea28e534de819727d94",
+      "text": "But I'm done for. Completely\nhooked. Even if you're wrong, it\ndoesn't matter.",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:6a0b5117b411cc6a200229b293330e012df19e5deb099833b1b7c29dbfe56e0e",
+      "text": "I'll always be on your side. Reason\nand justice come second.",
+      "status": "machine"
+    }
+  },
+  "170": {
+    "5": {
+      "srcHash": "sha256:dc453545e84fe7813d9899a36f343403449c7dd7cb25ee4cea390705710dc948",
+      "text": "...Is that something an adult says?",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:6b0ae945e45c8d27a0b1524fc629adce1a98225405c15814135d7638f7208a68",
+      "text": "Like I said. I don't know about\n\"proper adults.\"",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:e14f293709bd1fa2af528422e364cfbbde2cd640c4a2e368a60f0e89125ee8fc",
+      "text": "Alk! Let's go have fun!!",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:a9eeb3d9cca26ab5a9b3cf75e3af7ae33f43447b694858b3cae1d8f35a36ce8e",
+      "text": "That's what being on my side\nmeans?!",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:22cc65f7f59f5264c57ed2bcf389db92c2e53889602c2a1a4a466a9a8c37d551",
+      "text": "Of course! I'm not that strong,\neither! But I can spoil you rotten\nwithout limit!",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:f18476ae44bb0793fd2be331c08a1b0f27fa07bfadbf61bab7473be3c6a7b6a0",
+      "text": "N-no, I don't really need that in\nparticular—",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:9f91dd1a7cd022322351d67a9744ce4e3cc590fe22b270e96c2d144a5d18dc64",
+      "text": "Interested in a spot in this\nEdo-style fantasy world where you\ncan catch super-tasty river fish!?",
+      "status": "machine"
+    }
+  },
+  "202": {
+    "5": {
+      "srcHash": "sha256:cb21a14efbbcd6437e2caea226605a8d6c36d119a5acfb19f7e70660ba8923dc",
+      "text": "Yes!!! Let's go, Taichi! Right\nnow!!",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:2068a5046957730c3a13cbbc0d488b4c210b49931bf9eb01f7ae06ba2eb1410a",
+      "text": "They've become friends before we\nknew it.",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:52a5d2b6b5c3be98dda5524d48f19ffff71905d9ac14368d04b3fff6c3eb61a6",
+      "text": "Haha... It feels like it's been a\nwhile since I've seen Alk like\nthat.",
+      "status": "machine"
+    }
+  },
+  "215": {
+    "5": {
+      "srcHash": "sha256:30e06c0eeb513dab561e1ad68d2c61c0fd96fbacfaada1e5a695545973f73317",
+      "text": "They seem to be having fun?",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:ce825671f6b5da2a0e76c528eee60182f8f85f3c42bfc96e9a5d60465b32bf69",
+      "text": "Yeah, they do.",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:c5ae1484311d858b768f5ef8f2d1a57979a65a456d96af729195b82042346c0f",
+      "text": "Taichi? You came late, so aren't\nyou getting a bit too excited?",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:aec5d13f462f0adf4e14332ab6f46457757ba366f4dbe10772adb0a9a093f5bd",
+      "text": "Huh? Pirates say such lame stuff.\nIf you're jealous, use your sex\nappeal or whatever.",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:ec4a4e855cbe46e43ed58c94abdf2be3e21b7e9608af0602511cbe58945e8acc",
+      "text": "Huh? Sexual harassment? Don't you\nknow people hate that?",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:d0a3db8d441c2457c317fe940fe71854ab8a8b17d0748a56a3257c785df7ebc8",
+      "text": "Ha, fool. You know nothing about\nAlk! He's a total closet—",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:33e187608cdaf7a2ea663776f75f35605e6d2cfe75967b05c3c17b783ac547fc",
+      "text": "Hey! What are you saying?!?!",
+      "status": "machine"
+    }
+  },
+  "247": {
+    "5": {
+      "srcHash": "sha256:664479af752d7b84b7b5bf431b1dd7027ad26402e2ac50c3141ca29cb98e0644",
+      "text": "Wow, amazing...! Big Sis turned\ninto a kid!",
+      "status": "machine"
+    }
+  }
+}

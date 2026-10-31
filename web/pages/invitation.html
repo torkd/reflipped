@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
+    <title>Join a co-op room</title>
+</head>
+
+<body class="bg-background text-on-surface m-auto max-w-screen-sm min-h-screen box-border flex flex-col px-5 py-8 gap-5">
+    <header class="flex gap-3 items-center">
+        <img src="/public/img/logo.svg" class="w-9 h-9" alt="">
+        <h1 class="page-title">Join a co-op room</h1>
+    </header>
+    <section class="card">
+        <p class="card-text">You were invited to a World Flipper co-op room.</p>
+        <a class="btn-primary" href="{{link}}">Open in World Flipper</a>
+        <p class="card-text">If the game doesn't open, enter this room number in Co-op instead:</p>
+        <p class="stat-value">{{roomNumber}}</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:c1bd78e6d488f27aeb76b944405ad03c7227192cf0949ffcf280eaa20d5de51d",
+      "text": "—The Vesta, registered with the\nGuild as adventurers?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:a4411e700d89c4665976e56c65bc68b7f67ca0791469a604a61284c53557b98a",
+      "text": "Indeed, Champion. This time it is a\nformal matter, bound by covenant.",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:8f058b679a3ab48f180ae6ae650671d8109c529e5ad0fe45d3d60b198e51b2b2",
+      "text": "To discern the proper relationship\nbetween humans and the Vesta.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:e5fb8362a05e1b020bc29acfcbf4cabf3eb2137877f253db6ab7654750b3171e",
+      "text": "...Such kind Oudo. Warm people—",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:0005110654522a52533e02426c721711642baf1eaa1942fd0101a219f11945c6",
+      "text": "Nisues is the Vesta's staff. Nisues\nwill do her best for the future.",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:1b80b48e995b59d3f8f0b8cd7d198e6659ed50ee54d317debcf1798a2cbde3de",
+      "text": "Nisues is nothing like that\ntroublemaker. She is fit to bear\nthis duty.",
+      "status": "machine"
+    }
+  },
+  "31": {
+    "5": {
+      "srcHash": "sha256:c3c88fe784844a2bad1480c505e4072b0417173b9274bb096f99b844988962e2",
+      "text": "...So you want to work with the\nadventurers, not just the Guild\nKnights? Yeah. If that's the case—",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:cb9e2df2933bd1b97edaa61d2891a0153dbebb035f51073c287f63205108b9ee",
+      "text": "Yes. You are welcome here, Nisues.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:29f2955ffe1ca9bfc6a600a91dfff66decc87fd193a011c7259f2fbbea0bfb5b",
+      "text": "Nisues is happy. Please take care\nof Nisues.",
+      "status": "machine"
+    }
+  },
+  "46": {
+    "5": {
+      "srcHash": "sha256:778b7a72992ab2c36459b344af073d66f472ce124a1212b48f3c9a7105460e2e",
+      "text": "You too. So, shall we look at some\nquests right away?",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:4c9b22c51bee827bd276634308ecd59372e94863acf513f8ec3823f272c7c5bf",
+      "text": "Yes. Nisues has heard the\nexplanation. But Nisues wants to\nexperience it in person—",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:8812f952f5df0b63d7498a302b744c5d236559b71c2a9ac79f3cf433cf122921",
+      "text": "Right now: a delivery to a nearby\nvillage... a caravan escort, for big\ngroups... and a big monster hunt...",
+      "status": "machine"
+    }
+  },
+  "58": {
+    "5": {
+      "srcHash": "sha256:29ad23e249489b077a81a282c170964b3c25cda405befdccdd810c9e0ec641ae",
+      "text": "Nisues would like this delivery.",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:f2015e6ce0fb46797d712a582cdefb1c258e523afd1dbdc921273980ad635bc9",
+      "text": "While doing adventurer work, Nisues\ncan learn the geography here.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:6bb0ab3f18cb2491bcaf9264828797409411b25d7feae00aa148d8f65b75985a",
+      "text": "Right. Yeah, in that case it's just\nright.",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:e59903b2c414c23afc0621b81f39d04e115974f773b0834c3cdc35e5b340449c",
+      "text": "This is Nisues's first adventure.\nNisues is excited...!",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:df1580e66572f7f51fc3914b2e132b904c3fe4047e7375dfe3122d18dc44163e",
+      "text": "Let life flourish—!",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:4e90d56f51ec15a8d6b16d4f6f721ed4bbea0ae538dbb42603b7f2e40d255525",
+      "text": "Good call. The Vesta's teamwork\nreally is something else...",
+      "status": "machine"
+    }
+  },
+  "88": {
+    "5": {
+      "srcHash": "sha256:8274f83c318c3d61affd0a00dd51daf241f9c2f36cbd5dbea860db28a4e45d3e",
+      "text": "Thank you— Ah.",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:90b006676576be112ec4adcbe498f926b08a343cb0db99ee8c2a4b973acea037",
+      "text": "There. Your injury is healed.",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:dbdb16b460b31933c181ac06a8c2caccf74a1fbb5d77d8a9759bdddbee1012d7",
+      "text": "Thanks, Nisues. ...But that's\namazing, isn't it? I hadn't even\nnoticed it myself—",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:26eeb7e6e7920dcc03cde3e02acdd520c8c3feca75585be7f2c1cab331352033",
+      "text": "Hehehe. Nisues has good eyes.",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:3daa1a0f8c1be9de25f521687da63d114fe77657cbfafecbf19b23eef9e179fa",
+      "text": "The Oudo of pain... Over there...!",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:a6a799b32493f28a7f8d4469ce47574345a60b2b2e9f32d05d41ce365c54f93f",
+      "text": "Hold on...! Can you hear Nisues's\nvoice...?",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:fca4d1aedeccef883c76773efb318998a101919c7dfde825d7dea8f60e888dbe",
+      "text": "...Uh, uuh? Where am I...?",
+      "status": "machine"
+    }
+  },
+  "118": {
+    "5": {
+      "srcHash": "sha256:1380494d8d0acacfd706b1c153432b441ef475749f11611c92fe72d28e389b72",
+      "text": "Thank goodness. It doesn't hurt\nanymore, does it?",
+      "status": "machine"
+    }
+  },
+  "123": {
+    "5": {
+      "srcHash": "sha256:5270208f27a5b240b756fd34c5d3584748aa997f381ed6c37ed5ec0f882cf56f",
+      "text": "...Y-you are...?",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:f3b09ca180e979c4e5583ff56d8bc9b378f6d36f8a1136f597a4450eb8bd62a6",
+      "text": "Nisues. A new adventurer.",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:a3d81dfaee82c44d62b7dfb1db764eae8a7112aec3efb4476251c19c5edb33ec",
+      "text": "Nisues is returning to the Guild.\nAnd you? Are you an adventurer too?",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:5812caa95392dc746c569bb9a0a3365c81f83f3956560bcb208144e7f8bef28d",
+      "text": "Y-yeah... Me too... I was heading\nfor the Guild—",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:58e1deb62343abcff30c9772ab06c42523019caf13be82a38829116f2af786c9",
+      "text": "Nisues...! Is he going to be okay?!",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:d201da578c10b901eea55f0fcde45d84d4f62d193d2093297581f000ec7d3112",
+      "text": "Yes...! We made it in time.",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:d5fdf5a094341dc0a108f270ae58b7604dd54329fe2d3fa3fe02b2ec663f674f",
+      "text": "Thank goodness... If you need\nanything else—",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:d51d953b3d35bbcd53b7191000e55b867b9c1fbd7400fa4dfa4f05cd064a0c73",
+      "text": "O-oh... N-no, that's, um...",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:1716e2c7b4c64ac62adb13f02ec953260836a4079a7ac567d53a7be555bf0fe7",
+      "text": "...Thanks for helping me. Well,\nI'll be off—!",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:0eafa1b324a536ff037ea5f3d78261d8e008fe09161efddc7d9ae3614358c1dc",
+      "text": "You are coming to the Guild too. Let\nus go home together.",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:914f1ff72efdb79f8ad45c44a74bda0db36a67c5176c0fea3429d00bde22eb79",
+      "text": "N-no, really, I'm fine! I'm used to\nbeing alone—!!",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:eb6e97b0386a385104a8c487f90b2f547697a2bac0ce035bb41f5c568a4d5332",
+      "text": "...It is all right. You will get\nhome safely.",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:d530723d0297a657604e3303fb5a0f99c1655015b3a4230975ccade9cf4a63b0",
+      "text": "Do not worry. Neither Nisues nor\nanyone will be a burden.",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:76957c69eb69438b33575c384c206ad6d5aa6f71eb63d9e4da57250845d906f2",
+      "text": "Because they are strong people.",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:127eff16d1710bad683d062d026f455c07e1be39c3cccc7d6692fa950d461421",
+      "text": "...Really, is that okay? I'm, um...\nHonestly, I'm already—",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:00038a254a59117edb8988c668dfeeb91e6c599c42f0bc24d33b0343d6d1ecd8",
+      "text": "No reason to move separately. You\ncan at least keep watch behind us.",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:5ee3430b37e87a5adfd25404fb1876894ae77a475f6db47c072366eeff42cad5",
+      "text": "...Th-thank you.",
+      "status": "machine"
+    }
+  },
+  "175": {
+    "5": {
+      "srcHash": "sha256:f3ea611cbca50a40117cb49a01369b4890dc406dce0c2a21e8996135409b2243",
+      "text": "Nisues wants to hear stories on the\nway. Will you tell Nisues about\nbeing an adventurer?",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:04a2397e3ea5924959f86e244859eb8d911c75ed7c95fbe1c63eb869de931487",
+      "text": "...I'm all right now. Sorry... For\nmaking you waste your time on\nsomeone like me—",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:f5542a377fb6bb36514c82b16737d6611d259af8fbdf6ee3a1f7c0842c8c1761",
+      "text": "Nisues had fun. Will you teach\nNisues again next time?",
+      "status": "machine"
+    }
+  },
+  "188": {
+    "5": {
+      "srcHash": "sha256:cb96e30b3d89a45a83cfc24c533cde19d3997a27cd6b868ff99305af2a2af283",
+      "text": "...You really go for it, huh.",
+      "status": "machine"
+    }
+  },
+  "192": {
+    "5": {
+      "srcHash": "sha256:3d49b0adf9d59ce4720ca89bedf4aabeda1dd73c590c8c1b6ff117488e26e5e6",
+      "text": "That person's Oudo was about to be\ncrushed by anxiety. That is not\nfun.",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:6273f947a3f57f5e0935f097dce1ed4dedddabae8e5d7ac2e13150ab556ea64a",
+      "text": "—When everyone is having fun. That\nis best, isn't it?",
+      "status": "machine"
+    }
+  },
+  "198": {
+    "5": {
+      "srcHash": "sha256:08291715f08537f2346d05ed7bdf99552c99ffc3daaa06f80c2c5020a5b510ea",
+      "text": "Next is the quest completion\nreport, right? Will you check if\nNisues is doing it properly?",
+      "status": "machine"
+    }
+  },
+  "202": {
+    "5": {
+      "srcHash": "sha256:f757d4250978a902f12316b9209b8e391b50267d89b73d2aefd0532406fec97f",
+      "text": "Yeah, yeah... All right.",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:dc4ce408ca4786f0f289c8205b4e7946abcc04f48669a9b399f030c158320011",
+      "text": "How is Nisues?",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:2d5c34c49d72717d5414086911cab1765e8d4ed5af0e7d6f614865017474d05e",
+      "text": "Great. Really easy to work with.\nAnd she's careful about her work.",
+      "status": "machine"
+    }
+  },
+  "213": {
+    "5": {
+      "srcHash": "sha256:db98b948d573989c2a50d59a02c325676f741a0096f692aa3c5e5c9b67b09e04",
+      "text": "...She pays close attention to her\nsurroundings.",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:9dc107a881743e9067e6ff4c38c83db3ce7b47f0a63abb842d140c440e9f2a0d",
+      "text": "Yes. But for that very reason, she\ndoes not yet know herself.",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:639a38c311bc52ea6ae38fd13fde67f157ee7ec42ab8c24fb291777f02151ef7",
+      "text": "One day she will take in another's\nOudo and change. Not knowing herself\nthen, she can't be a good Vesta.",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:a0d1ea146241172f7f340ca3f1639950c74730f224cfdd14cc1a19209889838e",
+      "text": "...So you mean, you want her to\nfind what she likes?",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:a702ef18d079903a71625ac19d147bab9e5a4a4b4b7eaff34be33ceeec8a0ae0",
+      "text": "Champion. I leave her in your care.",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:bbd02615c6868d00d804dd5c67c1a428135a0f6e11ce8419f0f1d1f81e810434",
+      "text": "Sure. Leave it to me.",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:c9e74e6cfbd36b5734b85ef1133352f83620743e4a83173682727695ab18b8a2",
+      "text": "Well? Do you get it?",
+      "status": "machine"
+    }
+  },
+  "242": {
+    "5": {
+      "srcHash": "sha256:d5d924f4b24c9da77dd8ba2f0756f2aeb86e63902659226078ccab46943fbee1",
+      "text": "Yes. Nisues understands!",
+      "status": "machine"
+    }
+  },
+  "245": {
+    "5": {
+      "srcHash": "sha256:ca05b38b0c65de540c56614d4d348f4026215afd16c0d4e4e046ea0ca2a243dd",
+      "text": "Nisues will work harder and harder\nfrom now on...!",
+      "status": "machine"
+    }
+  }
+}

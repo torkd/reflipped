@@ -1,0 +1,102 @@
+            {{notice}}
+            <header class="flex items-center gap-4">
+                <div class="avatar w-14 h-14 text-2xl">{{playerInitial}}</div>
+                <div class="flex flex-col gap-1 min-w-0">
+                    <h1 class="page-title truncate">{{playerName}}</h1>
+                    <p class="page-subtitle">Player #{{playerId}} · last login {{lastLogin}}</p>
+                </div>
+            </header>
+            <section class="grid gap-4 grid-cols-2 md:grid-cols-4">
+                <div class="stat"><span class="stat-label">Characters</span><span class="stat-value">{{characterCount}}</span></div>
+                <div class="stat"><span class="stat-label">Beads</span><span class="stat-value">{{beads}}</span></div>
+                <div class="stat"><span class="stat-label">Mana</span><span class="stat-value">{{mana}}</span></div>
+                <div class="stat"><span class="stat-label">Stamina</span><span class="stat-value">{{stamina}}</span></div>
+            </section>
+            <section class="grid-cards">
+                <div class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Save data</h2>
+                        <p class="card-text">Download a copy of this player's progress as JSON, or replace it with a save file.</p>
+                    </div>
+                    <a href="/api/player/save?id={{playerId}}" class="btn-outline w-fit">Download save</a>
+                    <form class="flex flex-col gap-3" method="post" action="/api/player/save?id={{playerId}}" enctype="multipart/form-data">
+                        <input id="save-data" name="save-data" type="file" accept=".json,.txt" class="file-input" required />
+                        <button type="submit" class="btn-primary w-fit">Upload save</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Developer mode</h2>
+                        <span class="{{developerModeBadge}}">{{developerModeState}}</span>
+                    </div>
+                    <p class="card-text">{{developerModeHelp}}</p>
+                    <form method="post" action="/api/player/developer-mode?id={{playerId}}&state={{developerModeNext}}" enctype="multipart/form-data" class="mt-auto">
+                        <button type="submit" class="btn-primary">{{developerModeButton}}</button>
+                    </form>
+                </div>
+            </section>
+            <form id="send-mail" class="card" data-player-id="{{playerId}}">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">Send mail</h2>
+                    <p class="card-text">Put a gift in this player's gift box. They see it after the next load.</p>
+                </div>
+                <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))">
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Contents
+                        <select name="type" class="input">
+                            <option value="FREE_VMONEY">Free beads</option>
+                            <option value="PAID_VMONEY">Paid beads</option>
+                            <option value="FREE_MANA">Mana</option>
+                            <option value="EXP_POOL">Pooled exp</option>
+                            <option value="STAR_CRUMB">Star crumbs</option>
+                            <option value="BOND_TOKEN">Bond tokens</option>
+                            <option value="BOOST_POINT">Boost points</option>
+                            <option value="BOSS_BOOST_POINT">Boss boost points</option>
+                            <option value="ITEM">Item</option>
+                            <option value="EQUIPMENT">Armament</option>
+                            <option value="CHARACTER">Unit</option>
+                            <option value="DEGREE">Title</option>
+                        </select>
+                    </label>
+                    <label id="mail-type-id-label" class="flex flex-col gap-1 text-sm text-on-surface-variant">ID (pick below or type it)
+                        <input name="typeId" type="number" min="1" class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Amount
+                        <input name="number" type="number" min="1" value="1" required class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Expires (UTC, optional)
+                        <input name="rewardLimitTime" type="datetime-local" class="input" />
+                    </label>
+                </div>
+                <div id="mail-picker" class="flex flex-col gap-3">
+                    <input id="mail-picker-search" type="search" placeholder="Search by name or ID" class="input w-full" />
+                    <div id="mail-picker-unit-filters" class="flex flex-wrap gap-2"></div>
+                    <p id="mail-picker-summary" class="text-xs text-on-surface-variant"></p>
+                    <div id="mail-picker-grid" class="grid gap-2 overflow-y-auto pr-1" style="grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); max-height: 22rem"></div>
+                    <p id="mail-picker-selection" class="text-sm font-semibold"></p>
+                </div>
+                <div class="grid gap-3">
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Subject
+                        <input name="subject" type="text" required maxlength="100" value="A gift from Reflipped" class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Message
+                        <input name="description" type="text" required maxlength="500" value="Thank you for playing!" class="input" />
+                    </label>
+                </div>
+                <p id="send-mail-status" class="text-sm font-semibold"></p>
+                <button type="submit" class="btn-primary w-fit">Send mail</button>
+            </form>
+            <script src="/public/js/mail-picker.js"></script>
+            <section class="card card-danger">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title text-error">Danger zone</h2>
+                    <p class="card-text">Reset starts this player over from the beginning on the same account. Delete removes the account and everything on it; the device signs in as a new guest next time. Neither can be undone, so download the save first if you might want it back.</p>
+                </div>
+                <div class="flex gap-3 flex-wrap">
+                    <form method="post" action="/api/player/reset?id={{playerId}}" enctype="multipart/form-data" data-confirm="Reset this player? All progress is lost.">
+                        <button type="submit" class="btn-danger">Reset progress</button>
+                    </form>
+                    <form method="post" action="/api/player/delete?id={{playerId}}" enctype="multipart/form-data" data-confirm="Delete this player and their account? This cannot be undone.">
+                        <button type="submit" class="btn-danger">Delete player</button>
+                    </form>
+                </div>
+            </section>

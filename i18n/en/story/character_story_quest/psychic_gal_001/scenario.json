@@ -1,0 +1,464 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:106d2a68e8c6ccae3f6a3a60ab282ac3e5a60d5ae10e231c3e68fdb7b0d7b00d",
+      "text": "Okay, that oughta do it. Wheels\naren't busted or anything, right?",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:62979093a485266b51a80b6a6f9cfb89ecae5694239e8e8e2870f8344ad174a9",
+      "text": "This is cargo for Shibuya, right?\nWe'll tag along while we're at it.\nThere might be trouble again.",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:162943e02df48fb5692ac676462ee7f46d9bd45d0152ab53e33ce5701ca155c4",
+      "text": "Guess getting stuck is bound to\nhappen on roads that aren't paved.",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:ead9a7724934c9f557576a43bb7ca8594e3d9412ff07db72ff3dc3701ef4e840",
+      "text": "Apparently the construction plans\nare moving ahead. They're building a\nhighway to connect with Shibuya—",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:1cbca68f350a89b58ad6869027fdd089bba4329e662165e52212ad408ff26d32",
+      "text": "Yuki! Protect the caravan people!",
+      "status": "machine"
+    }
+  },
+  "28": {
+    "5": {
+      "srcHash": "sha256:c5a8c04022537733f5add810af409bb90ee5513676233ceb315a651173bfcf67",
+      "text": "I'll scatter these guys in no time!",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:16c0ee6433138d5b0aa219ec61be7f0ad62f996f824c5e6d30e16e497cf2fc1b",
+      "text": "Heeey, you guys over there! We're\ncoming to help, like, right now!!",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:8adac82cda2ce8a78ec8dd6960ea7bf2fdaf6899f3c24cbbdc9f367a0d064795",
+      "text": "This arrow... Asato?",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:617391b1a51874b11b2f220fd7f3ae9e1ea4499aa139dde23968eac8d80fdb2c",
+      "text": "Huh? Yuki? And Sho too? So, like,\nyou didn't even need help?",
+      "status": "machine"
+    }
+  },
+  "46": {
+    "5": {
+      "srcHash": "sha256:b619b0e1eb1f51fe7e21a7e23b3846716f3a3a2313e74f6b1f90a6ce6d2679dd",
+      "text": "Nah, you saved us the trouble.\nThanks.",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:d37b4ffacf73f637d338acc25d25aad11117abb6deb3c3fb51b958c8d87ef5c7",
+      "text": "Um... Do you two know each other?\nThat's our school uniform, right?",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:b03192c8689636d11e940b1a3de7b0f04e3e00e59b9e0e5d9c5e4434496bfa02",
+      "text": "Whoa! Whoa!! It's Alk, for real\nlife! And Stella-chan in the flesh!",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:3d63432bedd9eed86e322925ddeaf6c8d0732f28b0105fb51c1e6c2417c0ae02",
+      "text": "Wait, no way, so cute!! Big eyes!\nSmooth skin!! What is this, a child\nof the gods?!?!",
+      "status": "machine"
+    }
+  },
+  "64": {
+    "5": {
+      "srcHash": "sha256:6b604da404fa98e414aa807b78ee35b64fa9deb30e626854f8a72cb0efef7f33",
+      "text": "Let me introduce myself! First-year\nJK, Yae Asato here! Full-on\ndisaster survivor!",
+      "status": "machine"
+    }
+  },
+  "68": {
+    "5": {
+      "srcHash": "sha256:e9de764742ee006bfa1551bbfe098c5705908c12fb45ac625298d3dc918a124a",
+      "text": "Lately I've been pulling Shibuya\nfolks out of the labyrinth and doing\nsome vibey other-world sightseeing★",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:0b4a7f056a464ec241db5ccd33d4ab97eb183d237b13e917b33c4c6324509942",
+      "text": "We only met recently too. We were\nin different shelters. She spoke to\nus at the Guild, and that's how.",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:cccef045800ef59f066345162be24e267f25858b9c38615fe1ff61d0ac2391a1",
+      "text": "I saw you guys at Magia Fest, and\nI've wanted to talk to Stella and\neveryone ever since!",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:e16912667dc799fafc3f180724cd54e96dd4a2ff3de0a093e54b462f6a23563a",
+      "text": "You've been doing a ton for\neveryone, right? But I don't really\nknow the details, you know?",
+      "status": "machine"
+    }
+  },
+  "83": {
+    "5": {
+      "srcHash": "sha256:c37ef417cdfa15d4975a0a594e3fc80fba3a6595498177f1ec912c69e29ea35f",
+      "text": "So go ahead and brag to me about\neverything you've done so far!",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:60965598e0bc77c3c36c16ed232bf844dd35340b72fad6a18dd5c60ef656bdad",
+      "text": "Understood. Let's talk a lot.",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:a7ab987c519cba32005b2a3cfb8107c9b718359aaef1141a31d1cbf07e77ea86",
+      "text": "Hehe, thanks! Oh, can I come hang\nout soon? You've got a secret\nhideout, right? Star-something!",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:62fe2225205a52e005bf47aae7cb5761b140d9fa024d60e3a7ed0c8d36173721",
+      "text": "Yes. You are welcome.",
+      "status": "machine"
+    }
+  },
+  "102": {
+    "5": {
+      "srcHash": "sha256:dd767dd130fd48810f122827be5810a3bd5d749408f9a774fa1eb7ebdd73392b",
+      "text": "Seriously?! Thank you!! Stella,\nyou're a total goddess!",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:3e9a66d2b4c69c4c3689eb91a8ae9ee6b7e2e5619850b1787b61a10c379cc5f2",
+      "text": "Wow... What an energy...",
+      "status": "machine"
+    }
+  },
+  "111": {
+    "5": {
+      "srcHash": "sha256:3ef780dee9d0b6419a0df7e2a4e9385300497d1bbfa039431f25d6b8f4cab3eb",
+      "text": "Oh, oh! I've got an idea! Let's all\ngo to the sea sometime! I bought a\nmap in Palpebra!",
+      "status": "machine"
+    }
+  },
+  "115": {
+    "5": {
+      "srcHash": "sha256:b9118ef99f8c089c4893008871ba65c8ca6934a22e19c8f4e320d0aac7e39270",
+      "text": "I think it'd be like, a two-week\ntrip one way, maybe!",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:15a949806d5ea9ff63c4c7b64efc2441674a2c42210133ea4c6cfe57b73cb9c5",
+      "text": "That's way too far! That's a legit\njourney!",
+      "status": "machine"
+    }
+  },
+  "125": {
+    "5": {
+      "srcHash": "sha256:4febd533164e3a88aa5c2e5ae0fa5a1603ae6396900a177bff75390d07962cd5",
+      "text": "Also, why the sea...?",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:62e2bb1848a75b1c089f21a877458a067e081fe917b48383b8d2f8a44bf43b02",
+      "text": "Because going to the sea for no\nreason is totally peak youth,\nright?",
+      "status": "machine"
+    }
+  },
+  "135": {
+    "5": {
+      "srcHash": "sha256:e2b078f17317019780fe8709535984ceac7a691f63f834122be5f486109fdafe",
+      "text": "Okay... I kind of get that...!!",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:f4f22290bacfd5e0d6a3f745b00819aef8c2d359b234aa5dc79b1e279f18478b",
+      "text": "Then let's go.",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:e6c7dc7b50df60e3b2dd508835cc2cc7c510228a0bfd0003b9faeaec8d40f040",
+      "text": "Seriouslyyyyyyyy?!?!",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:c6efa45836533239fe2e22bbbaffe2d41bc884e37bf70dc32604208808b05a92",
+      "text": "Wait, wait... So it's another world\ninside another world...?! For real,\nfor real?",
+      "status": "machine"
+    }
+  },
+  "156": {
+    "5": {
+      "srcHash": "sha256:232b068ee639e2faa5370a8682a70ab33db2723b3ab1c1e2c97cbe6ea7b98cdf",
+      "text": "Yeah. Pretty shocking, huh?",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:00b37542b0edbcc10051cc5f676dbf593c8dbe6a25798d19932c7aad0c1a5032",
+      "text": "Yeah. Wow... Haaaaah...",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:42cf735ae7caff2ea8eb4276d62386d4cd480792e5f68ac56634b159af39f8a1",
+      "text": "...I don't really have a big \"real\ndream\" like you all do yet, you\nknow?",
+      "status": "machine"
+    }
+  },
+  "166": {
+    "5": {
+      "srcHash": "sha256:3cebc03a03e4a22350fa6a1a9c15e4b95e3e59e46f38f5152c960132067b6a21",
+      "text": "So I just talk to all kinds of\npeople, and run around on a whim...",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:8cc32f98c0be7945147ab838f82de08de322c1db950ddf8d4ab0ecc57a73db69",
+      "text": "...Wow. So this is the sea of\nanother world...!!",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:641b00c60a4d29c1a52c4804edbfc0b1639898f803c229616dae79e97fc33cef",
+      "text": "Is this youth?",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:8bc21b265a2df40276fd44b2a4fe54f875752343d7c65ba3a23475237f2e7c9c",
+      "text": "Totally youth! Seriously, thank\nyou!",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:8dc410722513c9e05dbebbd5092143299a4fed8d93f4946ff87831d691232fae",
+      "text": "Hm? ...Hey, that ship over there.\nDoesn't look good.",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:36ae4267e416ecd2c5b49c8cacd2442a034d96abdb40f2673a26ce09d00c7a67",
+      "text": "It's being attacked by monsters...!\nSho!!",
+      "status": "machine"
+    }
+  },
+  "195": {
+    "5": {
+      "srcHash": "sha256:764a4e7c77ef16ca94c824788a6e9eede972d1d23234b555fb5b4f202d687400",
+      "text": "Phew... Glad we made it in time...",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:cd1fd22a6bb2177270b127779e45053569965e003556177bbf3b6b40af8c1d06",
+      "text": "That's everyone who fell in the\nsea, right?",
+      "status": "machine"
+    }
+  },
+  "204": {
+    "5": {
+      "srcHash": "sha256:a602eb6aaa9542814c7c88fff03778e56bf9189181a0cc153f4880df975fb1e3",
+      "text": "Yep. Though, Sho's psychic power is\ntotally crazy, right? Awesome.",
+      "status": "machine"
+    }
+  },
+  "210": {
+    "5": {
+      "srcHash": "sha256:7478aee13f0ea11e2e70fa26edcc575fd6cd31fbf2de08a5ca1574a0d87e819c",
+      "text": "Well, yeah? But if we're talking\npowers, yours is the one that makes\nno sense to me—",
+      "status": "machine"
+    }
+  },
+  "217": {
+    "5": {
+      "srcHash": "sha256:e41eac041e3bee4b738b03d5ac5dae887e270e93a820843ccad99baa96fcdbfe",
+      "text": "Eeeeeeeek?!?!",
+      "status": "machine"
+    }
+  },
+  "221": {
+    "5": {
+      "srcHash": "sha256:db42c7e2de05b8aa1728fefeec1791a2de0dfd348c80629f2b2738b7f3ed38f3",
+      "text": "Asato!!",
+      "status": "machine"
+    }
+  },
+  "227": {
+    "5": {
+      "srcHash": "sha256:00b2a947c26b0c81ea8913c5b028c06e0335c162831f18b23da1a8f7a5be58c8",
+      "text": "Eh, she'll be fine in a situation\nlike this.",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:6120a0aa9d1549276302ae8551cc1f59fb806b249e47603cd7d5a604a3e4fe4f",
+      "text": "Ahahahaha! What is this, so gross!\nSuper slimy! It smells like fish!",
+      "status": "machine"
+    }
+  },
+  "236": {
+    "5": {
+      "srcHash": "sha256:3469850ea645b182c3670c87df1606dc35d0dc40027299a8e6b82db016fbeb8a",
+      "text": "Huh? She just passed right\nthrough... What?",
+      "status": "machine"
+    }
+  },
+  "240": {
+    "5": {
+      "srcHash": "sha256:0fe756596269424f970f0564cc6250c3e5115f3b2029934672044f1073f67ce4",
+      "text": "Ahaha! Looks like my power is,\nlike, \"not being bound by things.\"\nGravity, walls, everything!",
+      "status": "machine"
+    }
+  },
+  "244": {
+    "5": {
+      "srcHash": "sha256:80f4d3c92b79ad78de9425fc39a5118ec4cc1ecfea50b81c3b8e7990f873139e",
+      "text": "What's that supposed to mean...? Is\nthis a conceptual battle manga?",
+      "status": "machine"
+    }
+  },
+  "248": {
+    "5": {
+      "srcHash": "sha256:01fe26912841bdc2c8a3ab5b3511529f78204c226e1e474b167d8cd3489544c4",
+      "text": "Right? Even I don't really get it\nmyself, but—",
+      "status": "machine"
+    }
+  },
+  "252": {
+    "5": {
+      "srcHash": "sha256:4a31d3e2246d331118cc62a006f7117f7a554a16f968f62e7d12e743359c83d3",
+      "text": "...Oops, gotta deal with these guys\nfirst. Here I go!",
+      "status": "machine"
+    }
+  },
+  "256": {
+    "5": {
+      "srcHash": "sha256:fa18b4c45b6712192cbe107182a1a961ef025bc3e986e4c9181b31e2f868fcfc",
+      "text": "Super Asato Arrow!!!",
+      "status": "machine"
+    }
+  },
+  "262": {
+    "5": {
+      "srcHash": "sha256:4477ae12a7ad3acc0d3c29d3f4e2e9d18609be20797005cb2d52584fbc06c9d0",
+      "text": "Whew! I got to do youth and help\npeople! I'm so satisfied!",
+      "status": "machine"
+    }
+  },
+  "266": {
+    "5": {
+      "srcHash": "sha256:57b7c1f4059a785080482fb643dbc99cb42b4eb0bec6f0c85eb1ba8a9574a7dd",
+      "text": "Thanks for today, seriously! Next\ntime I'll be your escort. Look\nforward to it!",
+      "status": "machine"
+    }
+  },
+  "270": {
+    "5": {
+      "srcHash": "sha256:a2e2b17b2344b7ca67eb351a6dba9ea5ffc5a48b40576121858ff27fc4d5cb3a",
+      "text": "Yes. I look forward to it.",
+      "status": "machine"
+    }
+  },
+  "274": {
+    "5": {
+      "srcHash": "sha256:c6fc8c210f3a2fd60a6c84936f92bd0b6d6f7e7f7f2b0d68e683fac8d76f318b",
+      "text": "Alk, you're back. Parfait stopped\nby earlier and asked to use the\nkitchen tomorrow—",
+      "status": "machine"
+    }
+  },
+  "279": {
+    "5": {
+      "srcHash": "sha256:9087e4a5c243ecb38ed60f698f1db468d8d0779024811bd27ccf7f0760fbba58",
+      "text": "Whaaaaat?! A rabbit is floating and\ntalking?!",
+      "status": "machine"
+    }
+  },
+  "283": {
+    "5": {
+      "srcHash": "sha256:c3715fb29a43fe201150da129eb401da0993b33f36effe3adfda35bab26f2358",
+      "text": "Wait, an other world is the best!\nSo fluffy! Healing so hard right\nnow!",
+      "status": "machine"
+    }
+  },
+  "289": {
+    "5": {
+      "srcHash": "sha256:d9e638b2eb26a74768143bb16f861524ea3f52a0d4d4d0a4363750244b125126",
+      "text": "Wh-who are you?! I... Gyaaah?!",
+      "status": "machine"
+    }
+  },
+  "294": {
+    "5": {
+      "srcHash": "sha256:ee009643e84e4838168ae5853892c55d6a641b563bb3fe1b878566f805ea66db",
+      "text": "Wow... That girl's seriously a\nforce of nature.",
+      "status": "machine"
+    }
+  },
+  "298": {
+    "5": {
+      "srcHash": "sha256:a01cae73fe782dfd10f7ddf87eb5d247d9688c9866a3e941813a5227f1fd5654",
+      "text": "What, Light, are you a champion?\nWhoa, that's amazing! A champion\nwho's this cute? Unbeatable!",
+      "status": "machine"
+    }
+  },
+  "302": {
+    "5": {
+      "srcHash": "sha256:b7bba493aa8faf398247466c85d7602e12751f7036ab2663d124b06bebdb855e",
+      "text": "I'm Yae Asato! Nice to meet you!",
+      "status": "machine"
+    }
+  }
+}

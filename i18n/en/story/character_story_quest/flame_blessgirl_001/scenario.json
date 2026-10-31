@@ -1,0 +1,443 @@
+{
+  "4": {
+    "5": {
+      "srcHash": "sha256:15b5bf3224013d03f4073a6701dbf693994aa66c0c4b3cd1eb9924ff13b63d7b",
+      "text": "That completes your request.\nNow, if you'd just sign here—",
+      "status": "machine"
+    }
+  },
+  "8": {
+    "5": {
+      "srcHash": "sha256:74a0aa1874ee4073219910647a27bd1358abea6b0359fbe05938085b988bed49",
+      "text": "W-WAAAAH...!!",
+      "status": "machine"
+    }
+  },
+  "13": {
+    "5": {
+      "srcHash": "sha256:c5122dd60567e0c1f4d474cfba7f1951d6719addc4c989387dc0bccc637d8b29",
+      "text": "Uuuugh!! Gosh, they just won't\ngive up...!!",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:8c24aec3198a8f051d21612237f5436175a6c4b31960b0f2aa046bf724c8f868",
+      "text": "You'll help me?! I'm so happy!\nThank you so much!\n...Oh, your names—!",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:97f13648b44589a0d312b0d63e2c3ec75bcd949097a16ee972f23d29e54cc777",
+      "text": "Talk later!\nFirst, let's deal with these guys—!",
+      "status": "machine"
+    }
+  },
+  "25": {
+    "5": {
+      "srcHash": "sha256:b237ca7286182ca2efbec6d9c0337989325bce86eaa1733dbb4e898b264dc225",
+      "text": "Spirits, lend me your strength...!",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:7af3bbd85a3e8636e5bad15ef6baffb3bb7c069dc3d0369db82004a66d430c14",
+      "text": "Nimbus, back off!\nWe need to clear the line of fire!",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:119cd311908e6a1668bf87355a7400fa13e39e281a38ca6bda091666027de313",
+      "text": "Wow... and I didn't even have to\nsay anything... Yes! If I don't\nhave to worry about hitting anyone—!",
+      "status": "machine"
+    }
+  },
+  "39": {
+    "5": {
+      "srcHash": "sha256:834282a43c3a56b5697b72242d77eb0ba4535fcedc590f0d278d40669abcbfd7",
+      "text": "Burn bright, my flames!!",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:43c6d2d1b93b7fd7e0913e3ae386f3a9c4fd84d1539f6006e05872c8ab412a34",
+      "text": "...What's your name...?",
+      "status": "machine"
+    }
+  },
+  "47": {
+    "5": {
+      "srcHash": "sha256:ca8caf31c1d487de154654f231379a50ceb8936cda107c72a3814268f998ad3b",
+      "text": "It's Lunetta!\nWe're all in this together, right?\nI'm so glad I could help!",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:9dd0ff5ac22bca2d3a67fe25c786af2e04996dda999310d1de89d712f761ce0e",
+      "text": "Thank you, Lunetta...\nI'll repay this favor, I promise...",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:6734fcd84e62df3afdc211a6f099809a41fa496caab2247bfd25ff442080042d",
+      "text": "Thank you all, too!\nYou were a huge help!",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:116f3577dbd5608bbdbe08b7778c4dc21e3446fdfcc7f6e1d38a764c18b1b1e8",
+      "text": "You were amazing! Jumping in\nwithout a word, and rescuing the\ninjured so quickly...!",
+      "status": "machine"
+    }
+  },
+  "61": {
+    "5": {
+      "srcHash": "sha256:aa810287ed1f6e4b8f6a14537e17bb4a03d881696dc5a3c4663fb4fd8701996a",
+      "text": "...That was top-class work!\nAre you famous adventurers\nor something?!",
+      "status": "machine"
+    }
+  },
+  "64": {
+    "5": {
+      "srcHash": "sha256:f64de24de6a4a2479f6814df812a20b4f386385ad7f363e7716d1f4970a0a12d",
+      "text": "Well... I do know a lot of\npeople like that, but—",
+      "status": "machine"
+    }
+  },
+  "68": {
+    "5": {
+      "srcHash": "sha256:eaf665266cc89c90ed9d25bf3a5251047bd4f94e1914a286f4a2e4eca6a2196e",
+      "text": "Wow, wow, wow! Amazing!\nThis must be fate!",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:9722f86ba377455387546711244a485429f2b30559c015fbbb90a9062f3b43da",
+      "text": "Please! Let me join your party!",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:bbdbbcb1c75e582d11a6476a030511f7e8d166e362bf93f5b3c19885ea2b9cf7",
+      "text": "Oh... Ah... Waaah...",
+      "status": "machine"
+    }
+  },
+  "82": {
+    "5": {
+      "srcHash": "sha256:e6dd3a78814132c71db939c35d65aaef6d35d8560d0949af71b72a4ea56d0d6b",
+      "text": "H-hey! What's wrong?!",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:c30a92beb09b0cb0b374e803284ec19183db41e6eaf0f558e60f29aa53cddb86",
+      "text": "I'm... hungry...",
+      "status": "machine"
+    }
+  },
+  "95": {
+    "5": {
+      "srcHash": "sha256:f8a1328864492d22e4dc7ed931be7d728552ac50218338f49ad8a27382e1bb6e",
+      "text": "Seriously?! That's such a cliche!\nHey, come on!",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:4aa9fa7d872d686f97af50db1e1dfb0a11fd77e7c991cfa105fc22d2405a4dbe",
+      "text": "Mmf! Mmmf!\nMmm-mmm-mmf-mmf!!",
+      "status": "machine"
+    }
+  },
+  "103": {
+    "5": {
+      "srcHash": "sha256:d4b117de647a11cbaca46748063305d986acc4fa6bd1fdcd48ef58a0f043b810",
+      "text": "You can talk after you eat.\nTake your time, okay?",
+      "status": "machine"
+    }
+  },
+  "107": {
+    "5": {
+      "srcHash": "sha256:667f1d01ffd1b80182c715bf2b261f290f65b864ac62fedfe0821bb08002a9c4",
+      "text": "...So why do you want to join\nus?",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:70e268dd35de4351eb37a387613d1cb0bb6d9bc42e330a14efb08975df7d507f",
+      "text": "I want to become a top-class\nadventurer! But I'm still training...",
+      "status": "machine"
+    }
+  },
+  "116": {
+    "5": {
+      "srcHash": "sha256:28dc6653a94f5d12285c80fcac0323c940390bf55619bf43a4d5efd819d99daf",
+      "text": "And then you all showed up with\nthose moves! You're my ideal\nadventurers! Please let me join!",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:8bfa3032ac329008f7fb20dff58d91dcfa8f8473c2235078a045287abda13099",
+      "text": "Then I'd steer clear of this\nbunch, if I were you.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:96f97af44c221a11533665adfb88a354db3fad535e739e64cf6ee339fdc0117c",
+      "text": "The two in charge are lunatics who'll\ncharge to the ends of the world if\nsomething bugs 'em. Try elsewhere.",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:53d6d300fba22b4d11975d355ae1883b4e5d6b618817c58b01bada278f4ac6d6",
+      "text": "I don't care about success or\nmoney! It's you I want! You helped\nme without asking for anything...!",
+      "status": "machine"
+    }
+  },
+  "132": {
+    "5": {
+      "srcHash": "sha256:65eddbfecdffc09e6e1d461015ca833ac2bb2825d83b4e0952997dbd8dfa6200",
+      "text": "Because I want to be like that!\nAn adventurer who can help\nevery single person in need!",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:732e448c019b277211b0be0aba6985464f30c87088675913fda225dfbe53090d",
+      "text": "Greedy, huh. Well then...\nyou know how this goes, right?",
+      "status": "machine"
+    }
+  },
+  "140": {
+    "5": {
+      "srcHash": "sha256:059ae40d6cb6db172f8014cac405893b75aa11e5bcc44c8afcfddecf75640606",
+      "text": "Yes. Lunetta, we welcome you.",
+      "status": "machine"
+    }
+  },
+  "145": {
+    "5": {
+      "srcHash": "sha256:eaabd69f713c78e223756c11e71c3ec95ef113c6476e5c94693496fc38abc20c",
+      "text": "Oh, but I'm still terrible!\nI can't control my fire spirit's\npower at all yet...!",
+      "status": "machine"
+    }
+  },
+  "150": {
+    "5": {
+      "srcHash": "sha256:b752ad6292e8bc3b3262675b48d92cb2bde3ba5264f4d5cf364c5536f3493a19",
+      "text": "...So you're a spirit user.\nAre you from a village that\nworships spirits?",
+      "status": "machine"
+    }
+  },
+  "154": {
+    "5": {
+      "srcHash": "sha256:f248f60ba6a525caba600ccea5ca05517e5afab6ee9efc481eb1e415d230039b",
+      "text": "No, just an ordinary farming\nvillage.",
+      "status": "machine"
+    }
+  },
+  "157": {
+    "5": {
+      "srcHash": "sha256:208cf83227c00eae9e03784fdcc7c2a73205592b9871f63c24e4be9368b79fa3",
+      "text": "The fire spirit lent me its power\nwhen I tried to save a village\nchild from a monster!",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:76959a89841c40f4b1b5c93a539341e7b8568d107b461b456b53710c7c5a3b76",
+      "text": "A spirit...? Like Challua and the\nothers? Can you actually\ncommunicate with it?",
+      "status": "machine"
+    }
+  },
+  "164": {
+    "5": {
+      "srcHash": "sha256:84f62271f9e6f3b56a1b4731da7d970e08190996725385e678a20c23f95cac6a",
+      "text": "No! I can't really talk to it!\nSpirits are kind of fluffy!\nBut I could tell it was there!",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:1f832a8ec3f1f8e065ffd1bb36554cd57cb855c1de56dbba7421eb12e58ddce8",
+      "text": "Hmm... Shywe would probably hold\nher head if she heard that...",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:b4acbea382e49e0cfcca746b9ac9ccb21900c41009a581f994474f7a782e8673",
+      "text": "But thanks to it, I can help with\nso many more things now!",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:e5bf36636cfe077ee398f8269cadc7ca84e2e10582c07a02545060f24b2dec96",
+      "text": "So I wanted to help even more\npeople and decided to become a\ntop-class adventurer, but...",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:118b0c773610babc4427e87dc51465aa57048c04e8343c9736a36a7f9de0e7c5",
+      "text": "I flap whenever something\nunexpected happens!",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:a75d56991211707ac3b78bed2c9b11515748bf4eba210fd98b846084f4a3c710",
+      "text": "Flapping?",
+      "status": "machine"
+    }
+  },
+  "189": {
+    "5": {
+      "srcHash": "sha256:e7bf0bc7a72f421d73350dbd7ec2304d27657b26b06892c1f3d7384854e0202a",
+      "text": "Yes, flapping...! But I can't stay\nlike this...!",
+      "status": "machine"
+    }
+  },
+  "193": {
+    "5": {
+      "srcHash": "sha256:e4132e21b0a4dac27a66965158170ba4923bb87b81f67edb0594d051789f7f3f",
+      "text": "Ah... so that's why you wanted\ncompanions. In that case—",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:ff1fd07e0f1cb20c211ade190353299c833e6061c3a91da431bae3f3a8604271",
+      "text": "Oh! Is joining right away\ntoo pushy?!",
+      "status": "machine"
+    }
+  },
+  "202": {
+    "5": {
+      "srcHash": "sha256:e13db683c15a3808f6112367217964d67b4a15dfc21c3f0a5718a1123a760164",
+      "text": "Then at first, just as a servant or\nan apprentice! Please!\nMaster!",
+      "status": "machine"
+    }
+  },
+  "206": {
+    "5": {
+      "srcHash": "sha256:4c2fbe1d3f67aa11a9de4d093fdc3612dab30437cfb1f00411479bb3a523866a",
+      "text": "N-no, as a companion is fine,\nreally...",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:7ea1e1c4df91a014139b064090339efc3f1c6d1bd2b37cfc6d446c4edd2c6fad",
+      "text": "...Well, it might actually work\nout well for us.",
+      "status": "machine"
+    }
+  },
+  "216": {
+    "5": {
+      "srcHash": "sha256:b524ecdc30463d17304f382b0c7cd69830bcfd9a6869e5e2996a03171a7a37b0",
+      "text": "Oh! Oh? Ohhhhh!!",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:30b01dadcc60bc19e57de4204bfe9efe37ddec64be0b46f16629c77e5ec74bff",
+      "text": "Wow, wow, wow! Is that a star?\nIt's huge! Oh! I can see something!\nWhat's that?!",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:d68798077ddb8a444b228f78229e352e04f9134fe4aad2e271eaf21d420f60dd",
+      "text": "That is a world. A different one\nfrom the one you know.\nWe were traveling there.",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:693365dc8a5b7bbbcc0980294b5270bc1b764e8750999a9a996b74282280a9a1",
+      "text": "A world... a different one...?",
+      "status": "machine"
+    }
+  },
+  "232": {
+    "5": {
+      "srcHash": "sha256:43b1017173613894a6bace0397df863314267cf3cb388561df48717f9c19e34b",
+      "text": "So that means I can help people\nall over the world, right?!\nBring it on!",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:226c050f5438e9789f9bf42f805e35a1dafa4013018d7c2ad0b154c766b8a3bb",
+      "text": "Wow... You really are greedy.\nWelcome aboard, Lunetta!",
+      "status": "machine"
+    }
+  },
+  "241": {
+    "5": {
+      "srcHash": "sha256:af78e6406206cae72f88b0c71910dddf6e6af6de7eed6ab2b3a2397e80661f82",
+      "text": "Yes! Thank you!",
+      "status": "machine"
+    }
+  },
+  "245": {
+    "5": {
+      "srcHash": "sha256:2023b9df0b85040e06fbe9ec26b94dd22ceb8f23953616e2156847846d1cbddc",
+      "text": "I feel fired up!\nI'll definitely become a top-class\nadventurer...!",
+      "status": "machine"
+    }
+  },
+  "250": {
+    "5": {
+      "srcHash": "sha256:977228815c34495942021682f2115493ca0a69fa587d7199c8785c02d63aeb06",
+      "text": "Lunetta?! Calm down!\nFire! There's fire everywhere...!!",
+      "status": "machine"
+    }
+  },
+  "255": {
+    "5": {
+      "srcHash": "sha256:836456fb096c43217fef898bbde5d4a6f6da8b44a11e9932316e03e031ad3b02",
+      "text": "Eek!! S-sorry!\nI still can't control it...!!",
+      "status": "machine"
+    }
+  },
+  "259": {
+    "5": {
+      "srcHash": "sha256:f8328c5289bd57e7a9c11524725bfe6f256d645ed35060e903c32fa1a6d8ef0b",
+      "text": "Her firepower is insane...\nbut so is how clumsy she is.",
+      "status": "machine"
+    }
+  },
+  "262": {
+    "5": {
+      "srcHash": "sha256:b7858b91b09478007d66fd93e99a033bbc783457ba60d99d4a23bc30b371938f",
+      "text": "It's all about practice and\nknack. This is just another day for\nus, isn't it?",
+      "status": "machine"
+    }
+  },
+  "268": {
+    "5": {
+      "srcHash": "sha256:93bb4419f064949040952277c93f00e19e159534e62e30adef99196ddbfcc10c",
+      "text": "W-water!! Somebody get water!!",
+      "status": "machine"
+    }
+  }
+}

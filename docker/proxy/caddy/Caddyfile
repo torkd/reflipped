@@ -1,0 +1,43 @@
+# Reflipped behind a Caddy you already run (docker/proxy flavour: Reflipped on 127.0.0.1:8000).
+# Caddy gets and renews the certificate itself. Replace the hostname and the asset path, then
+# `caddy reload` (or merge the site block into your existing Caddyfile).
+#
+# To put Caddy in front of a flavour's edge instead (stack, api or assets, with TLS off and
+# EDGE_BIND=127.0.0.1), replace the whole block body with `reverse_proxy 127.0.0.1:8080`.
+
+reflipped.example.com {
+	# Translation overlays (npm run i18n:build; the folder CDN_OVERLAY_DIR points at): only their
+	# archives, not the manifest. Caddy tries the longer path before the asset block below.
+	handle_path /patch/Live/2.0.0/overlay/* {
+		root * /srv/reflipped/.cdn-overlay
+		@notarchive not path_regexp ^/[a-z]{2}/[A-Za-z0-9_.-]+\.zip$
+		respond @notarchive 404
+		header Cache-Control "public, max-age=31536000, immutable"
+		file_server
+	}
+
+	# Asset archives straight from disk (the folder CDN_DIR points at). Without this, the requests
+	# fall through to Reflipped, which serves them too (slower).
+	handle_path /patch/Live/2.0.0/* {
+		root * /srv/reflipped/.cdn
+		# Dotfiles and Reflipped's own bookkeeping stay private.
+		@private path_regexp (^|/)\.|^/metadata\.json$
+		respond @private 403
+		# Archive names contain a content hash, so they never change; the rest revalidates.
+		@archive path_regexp ^/[a-z]+/archive-[^/]+/[^/]+\.zip$
+		header @archive Cache-Control "public, max-age=31536000, immutable"
+		@mutable not path_regexp ^/[a-z]+/archive-[^/]+/[^/]+\.zip$
+		header @mutable Cache-Control "public, max-age=0, must-revalidate"
+		file_server
+	}
+
+	handle {
+		# Caddy sets X-Forwarded-For/-Proto and keeps headers with underscores (device_lang, res_ver, ...).
+		# In a container on PROXY_NETWORK, use reflipped:8000.
+		reverse_proxy 127.0.0.1:8000
+	}
+
+	request_body {
+		max_size 50MB
+	}
+}

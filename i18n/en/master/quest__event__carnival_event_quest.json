@@ -1,0 +1,110 @@
+{
+  "100002/1": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:12dac1c2bbc4669413f393a13de3ba89980ddaa5c5c6761966b47340af6b0358",
+      "text": "Flashfire S Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/2": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:12dac1c2bbc4669413f393a13de3ba89980ddaa5c5c6761966b47340af6b0358",
+      "text": "Flashfire S Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/3": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:12dac1c2bbc4669413f393a13de3ba89980ddaa5c5c6761966b47340af6b0358",
+      "text": "Flashfire S Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/4": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:52b8c9430c8466f9ccc59151ba3ded1eb0f63087a4427c7cf38d4069d192e517",
+      "text": "Flashfire PF Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/5": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:52b8c9430c8466f9ccc59151ba3ded1eb0f63087a4427c7cf38d4069d192e517",
+      "text": "Flashfire PF Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/6": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:52b8c9430c8466f9ccc59151ba3ded1eb0f63087a4427c7cf38d4069d192e517",
+      "text": "Flashfire PF Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/7": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:aedc7cf1ea8aa1d5d4b814c66a5a5b453ad7a38d8bfd5c7021a89aff465622ea",
+      "text": "Flashfire DH Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/8": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:aedc7cf1ea8aa1d5d4b814c66a5a5b453ad7a38d8bfd5c7021a89aff465622ea",
+      "text": "Flashfire DH Hani ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100002/9": {
+    "3": {
+      "srcHash": "sha256:1ae3c0c9901790090574dfb64e83a40309ce1be78eb7163865d531e6727945be",
+      "text": "Hanifolk Carnival",
+      "status": "machine"
+    },
+    "4": {
+      "srcHash": "sha256:aedc7cf1ea8aa1d5d4b814c66a5a5b453ad7a38d8bfd5c7021a89aff465622ea",
+      "text": "Flashfire DH Hani ::quest_rank::",
+      "status": "machine"
+    }
+  }
+}

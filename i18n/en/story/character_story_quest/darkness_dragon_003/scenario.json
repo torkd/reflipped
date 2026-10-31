@@ -1,0 +1,387 @@
+{
+  "5": {
+    "5": {
+      "srcHash": "sha256:997c7bd4956c63fdc1d6f699130b852577531767ce43d9ca109c4af32ae28e35",
+      "text": "Purge, commencing.",
+      "status": "machine"
+    }
+  },
+  "7": {
+    "5": {
+      "srcHash": "sha256:d3e1f9a9bfeed8cd6306d919462ff4861e822c277c32331077badb685e0ad4d0",
+      "text": "Damn it, what ARE these things!?\nWhat the hell are they!?",
+      "status": "machine"
+    }
+  },
+  "10": {
+    "5": {
+      "srcHash": "sha256:b4b247dc639c5ac6f562dd149da22dcb544ca67c48e8e18bd01dc6119a87043c",
+      "text": "I won't let you...!!",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:2c176a191e4dbc9dd37819f084937fc7a62459890b4ceff4ddecc2444558d264",
+      "text": "Darkness. Devour them.",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:6363c7c59df82a72b9c730e83285b8b7f096e28c7b932adf1aa4eb833e031ef7",
+      "text": "Deus ex Arma...!!",
+      "status": "machine"
+    }
+  },
+  "22": {
+    "5": {
+      "srcHash": "sha256:58577cd367aa533d3bab88cbb8cbd93a7445efd605af5195eebdd12edfd826f3",
+      "text": "Iten Shu!!",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:6f5c5a1c642216bd6c680d819d040f75ba7a069c466e3f8c5f553b9ac4fb1a1c",
+      "text": "Hmph! They gave us trouble at first,\nbut they're just puppets!\nThey're no match for us!",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:c6fe7b7561ef5020082c349f2b5234334443330029f36c8664dc0209fa8f635a",
+      "text": "How many of them are there...?\nThere's no end to this...!",
+      "status": "machine"
+    }
+  },
+  "33": {
+    "5": {
+      "srcHash": "sha256:719cbafb841c777c7969d6c524ac535950c5e12111bb40d38bb7553ff99b9c76",
+      "text": "It's a pain fighting every one.\nWhy not ignore them and head\nfor Couette?",
+      "status": "machine"
+    }
+  },
+  "36": {
+    "5": {
+      "srcHash": "sha256:19cd2122e4d9a44cdf074022ca866a0b86784715713306c20f5e3eceff135a35",
+      "text": "Maybe so.\nBut...",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:508fa215110abd9411fb9b8a930a67233d911ecd816748a28f510d073d7c819a",
+      "text": "I can't abandon the people\nright in front of me.",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:51e5258747713f4938e4a279a4569b794eab5440334167d93bd247da0a0e1df5",
+      "text": "There it is. Always helping humans\nyou've never even met.",
+      "status": "machine"
+    }
+  },
+  "45": {
+    "5": {
+      "srcHash": "sha256:f68e3eb545a3a85fde62201769d35e362e9374120d98cdd24c5ee8e9ad9bf04f",
+      "text": "That person is...!?",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:61d1bba07f2b18b7b5e1543697d7706b825c5eb7683d6a94ac173c6daacf51e1",
+      "text": "Huh, wait!? H-hey, hold on!",
+      "status": "machine"
+    }
+  },
+  "54": {
+    "5": {
+      "srcHash": "sha256:0325911add9825a5773a1963db1091ce2944a83b1e85579daa4143265f8eaf98",
+      "text": "So the time of purging has come.\nWretched as it is, this world ends\nhere too...",
+      "status": "machine"
+    }
+  },
+  "55": {
+    "5": {
+      "srcHash": "sha256:e58343cdd025f6e4465566a916f8679aad0ccd5e7e996e5894705fabec813ff4",
+      "text": "But the Sword has crossed over to\nthe realm of the stars...",
+      "status": "machine"
+    }
+  },
+  "57": {
+    "5": {
+      "srcHash": "sha256:cef4d25c8d5bc46a125c683cb3ff2ed2b4d0a02146fce379c58bec1b2aad11ac",
+      "text": "Capella!!!",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:b37f56bb2a706185eab192882c64c2b631116b1e6d1ece89552eef7c8d871832",
+      "text": "...Armadeus............\nNo, Rooma...?",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:8cc866d3ead45a6ee1e7dad6c59b3b4940e001135cf099ee07b322eb07c2dea8",
+      "text": "It is you, Capella...\nEven with a totally different look,\nI can tell.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:77ebd860fbff7c19c1ff776741de3fa7c04482fda1ec946c2b96c71147f4ba97",
+      "text": "...I see.\nAnd you are not Arma after all.\nHow disappointing.",
+      "status": "machine"
+    }
+  },
+  "69": {
+    "5": {
+      "srcHash": "sha256:13ae3886868fd5103f050e10b40f775eca7c3df367418f3059737b16df92990f",
+      "text": "Who are you...?",
+      "status": "machine"
+    }
+  },
+  "73": {
+    "5": {
+      "srcHash": "sha256:c6dd0c5f9a2d46a9de646fcfc571b345f15b9f821d63367ab89f521905b2a28d",
+      "text": "It's okay, Rustamov.\nI already knew.",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:8d069f87fb53bc5bcfb56503dd965a8d69f2ec53f135118edf269b2f8e034d1f",
+      "text": "Forgive me. With Maiko Warren's\nbody and brain, perhaps you'd have\nfelt something.",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:5eefc68ea379ab5a7fe4a984fe360fbbfc3f69d287a2a592728db6f49df16fdd",
+      "text": "...What is this guy?\nHis insides are a mess.\nThey're all mixed together...?",
+      "status": "machine"
+    }
+  },
+  "81": {
+    "5": {
+      "srcHash": "sha256:97fe5588ccf8f0e4d4d9090d2720a1a700f76d9722ba40e468b34b536c89b65f",
+      "text": "You have some weird friends.",
+      "status": "machine"
+    }
+  },
+  "85": {
+    "5": {
+      "srcHash": "sha256:36632825ea06cf9ecc8c221d9d8762d668269b113152cdd34fccb175e7857560",
+      "text": "...No.\nCapella is like...\na parent to me.",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:577805c1b05c83d0fee72c3b73b3ded4bb4361caeed5c0f53a767eacbd9b2c25",
+      "text": "A parent? You...",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:bda3e013bf415cb642a2d68a9db957177bc8916a2769f5cdff8fa445f32c58e4",
+      "text": "So, what do you want? Depending on\nthe circumstances, I might oblige.\nWhat do you ask of me?",
+      "status": "machine"
+    }
+  },
+  "96": {
+    "5": {
+      "srcHash": "sha256:151e6a3a6450f205ee5a069d0a8c29a20d0fd1058aecfaaec61e089ae0aaafe6",
+      "text": "W-what...",
+      "status": "machine"
+    }
+  },
+  "99": {
+    "5": {
+      "srcHash": "sha256:59b80f7fd927d2c5dfce7d54a5b28db25a509753d17a46a62aab293766ada8f7",
+      "text": "...I don't know.\nI thought it might be Capella,\nso I just...",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:cef4d25c8d5bc46a125c683cb3ff2ed2b4d0a02146fce379c58bec1b2aad11ac",
+      "text": "Capella!!!",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:2ebf7442e5d708eb0eb61b4b049d4388e875cd25becd8378dc51f25e6c6dbbf2",
+      "text": "...Even to me, you would still\n'help humans,' then.",
+      "status": "machine"
+    }
+  },
+  "112": {
+    "5": {
+      "srcHash": "sha256:99e5a2d8778d596eaf5dcd51cffe9b4cb7d17feccbcada3515dbe6d2cc925351",
+      "text": "I withdraw what I said earlier.\nArma, will you come with me?",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:2ccc0ac4a4c369364a06c57dd3f60bf9867ad2538f36c1af7adb9d9861eb2c9d",
+      "text": "You want to help humans,\ndon't you?",
+      "status": "machine"
+    }
+  },
+  "117": {
+    "5": {
+      "srcHash": "sha256:24937c679def5f2242d4891ca06026d6f5b5aa9ff731405e9f59d1d142bc7f95",
+      "text": "...Yes.\nI do want to protect humans.",
+      "status": "machine"
+    }
+  },
+  "120": {
+    "5": {
+      "srcHash": "sha256:a85c2b5fe3d1155efbbc5135252dfe83684c0108d86e8ca54fbc7941f5a45c77",
+      "text": "But that's not because\nI'm Armadeus.",
+      "status": "machine"
+    }
+  },
+  "124": {
+    "5": {
+      "srcHash": "sha256:4657695c28b4b9436de8139d584db43160e0e45c96d89965de9782425a504582",
+      "text": "I want to protect the wish he\nconnected for me, as Rooma.",
+      "status": "machine"
+    }
+  },
+  "128": {
+    "5": {
+      "srcHash": "sha256:07c8c615a380d5f2e82eeb78eca023360bc627ad2bb90a88ac372aa1bb9e32db",
+      "text": "...So I'm sorry.\nI won't go with you, Capella.",
+      "status": "machine"
+    }
+  },
+  "131": {
+    "5": {
+      "srcHash": "sha256:18d8817694776f1570b8d544c8772348d0d1048cb634a0900d39dcba235d1ca9",
+      "text": "Oh, I see.\nI understand now, Capella.",
+      "status": "machine"
+    }
+  },
+  "133": {
+    "5": {
+      "srcHash": "sha256:734d3ac283758a5d1243e66e54507870da05c8c5c0e5008c903f644a49e8fb2a",
+      "text": "I came here to say\ngoodbye to you.",
+      "status": "machine"
+    }
+  },
+  "136": {
+    "5": {
+      "srcHash": "sha256:c62ddb126817ff2d5741891303242aaf722d1d0151dffaf0ffc755d8d7a4e367",
+      "text": "...Then there is nothing to be done.",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:49fd4dcf65cdeca260820bafaa8bbecd005d9628ed4d5dba7ee734ed5a8f17b1",
+      "text": "............Farewell, Arma.",
+      "status": "machine"
+    }
+  },
+  "142": {
+    "5": {
+      "srcHash": "sha256:7a4bfa80ac3972b52eda9437d3d259f6d68de75a650d376c096773fe8f7ccfd2",
+      "text": "............I don't get it.",
+      "status": "machine"
+    }
+  },
+  "146": {
+    "5": {
+      "srcHash": "sha256:65d0aa4576f1e28e6f71ed061a01092d6022040ec8285450193350479d5b2d3a",
+      "text": "Eeeek!!\nS-someone, help me...!!!",
+      "status": "machine"
+    }
+  },
+  "148": {
+    "5": {
+      "srcHash": "sha256:1fb74c161241268d0c996725cd8cc568980b491f99588d3d7e9b50cf3642afee",
+      "text": "Sacred—",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:6363c7c59df82a72b9c730e83285b8b7f096e28c7b932adf1aa4eb833e031ef7",
+      "text": "Deus ex Arma...!!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:96cc4bbfe94cc9cd18515d9b946d6a55d8790b5230cdc7efd5bf72c5cdfe1cfa",
+      "text": "Seriously, how many more of\nthese things are there...!",
+      "status": "machine"
+    }
+  },
+  "159": {
+    "5": {
+      "srcHash": "sha256:e6bf2cbed77aa6897601d5dc1da7c02abf177c74b3c3587b595745e3fed4df37",
+      "text": "...What now?\nShould we link up with Sis Rams\nand the others?",
+      "status": "machine"
+    }
+  },
+  "163": {
+    "5": {
+      "srcHash": "sha256:7fe16dbe16c897a920dc399e9fc518a70e3eafe226ddb90e89c9da09df69edef",
+      "text": "...No.\nI can't abandon these people.",
+      "status": "machine"
+    }
+  },
+  "168": {
+    "5": {
+      "srcHash": "sha256:75d7c1796c576ef705ae20194d6c23f0a0045d11cb5d732d226a905590d86934",
+      "text": "Figured. Fine, then.\nThe Holy Dragon King Rustamov will\nkeep you company...!",
+      "status": "machine"
+    }
+  },
+  "172": {
+    "5": {
+      "srcHash": "sha256:c8f146d9b666c8768d0e4c714eaa4d4fa57d6b345742d8e0a28231435bbc42f7",
+      "text": "Ha ha...\n...Thanks, Rustamov.",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:98fc83e61aba48aa4559efb84ffcbcf2e50b168184e7e95951e1bcdb3e715633",
+      "text": "Besides, taking orders is a pain.\nLet's run wild on our own!",
+      "status": "machine"
+    }
+  },
+  "181": {
+    "5": {
+      "srcHash": "sha256:e592f488e505d8683717316559868364d76cbcb560e64f0db4450d647b1c0a70",
+      "text": "...Goodbye, Capella.",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:2fa230330c24f0407d6b276919ce64a4e5cf669985d2a5bbff66f6e2bf8f3472",
+      "text": "I'll fly through this sky\nas myself.",
+      "status": "machine"
+    }
+  },
+  "185": {
+    "5": {
+      "srcHash": "sha256:3e1b9333b3f5a69946088c545f765c27bbd2efcae89b87f33f26b64cc46b27be",
+      "text": "To connect everyone's feelings—!",
+      "status": "machine"
+    }
+  }
+}

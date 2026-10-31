@@ -1,0 +1,151 @@
+# Service definitions shared by the deployment flavours (docker/{stack,api,assets,proxy}/compose.yaml),
+# which pull them in with `extends`. Not a stack on its own. Relative paths resolve against this folder.
+# Named volumes (reflipped-data, certs, acme-webroot) are declared by each flavour. See docker/README.md.
+
+services:
+  # The game server, built from the Dockerfile in the repo root.
+  reflipped:
+    build:
+      context: ../..
+    image: reflipped:local
+    restart: unless-stopped
+    environment:
+      PARAM_CHECK: ${PARAM_CHECK:-enforce}
+      # Host players reach the co-op socket at; empty = the host they used for the API.
+      COOP_PUBLIC_HOST: ${COOP_PUBLIC_HOST:-}
+      # Translation overlay for en devices (docs/i18n.md, "Overlay"): off until the device test passes.
+      I18N: ${I18N:-on}
+    healthcheck:
+      # The image's check, polled every 2s while starting: Traefik only routes to healthy containers.
+      test: ["CMD", "node", "-e", "require('net').connect(8000,'127.0.0.1').on('connect',()=>process.exit(0)).on('error',()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+      start_interval: 2s
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging: &logging
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # nginx in front: TLS (when TLS is set), the asset archives from disk, the API proxied to Reflipped.
+  # Each flavour mounts the location blocks it needs into templates/locations/.
+  edge:
+    # Unprivileged build of the official image: runs as uid 101 and listens on 8080/8443.
+    image: nginxinc/nginx-unprivileged:${NGINX_TAG:-1.28-alpine}
+    restart: unless-stopped
+    environment:
+      # Substituted into templates/*.template by the image's entrypoint (only defined vars are replaced).
+      REFLIPPED_UPSTREAM: ${REFLIPPED_UPSTREAM:-http://reflipped:8000}
+      PUBLIC_HOST: ${PUBLIC_HOST:-}
+      TLS: ${TLS:-}
+      # For the HTTP-to-HTTPS redirect (scripts/edge-env.envsh).
+      HTTPS_PORT: ${HTTPS_PORT:-8443}
+    volumes:
+      # Both sites are rendered; scripts/edge-site.sh keeps the one TLS asks for.
+      - ./nginx/site-http.conf.template:/etc/nginx/templates/site-http.conf.template:ro
+      - ./nginx/site-tls.conf.template:/etc/nginx/templates/site-tls.conf.template:ro
+      - ./scripts/edge-env.envsh:/docker-entrypoint.d/05-reflipped-env.envsh:ro
+      - ./scripts/edge-site.sh:/docker-entrypoint.d/25-reflipped-site.sh:ro
+      - certs:/etc/letsencrypt:ro
+      - acme-webroot:/var/www/acme:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+      # The entrypoint renders the templates here as uid 101, so the tmpfs must belong to it.
+      - /etc/nginx/conf.d:uid=101,gid=101,mode=0755
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+      start_interval: 2s
+    logging: *logging
+
+  # TLS=letsencrypt: get the first certificate with the standalone HTTP-01 challenge on host port 80,
+  # before the edge starts. Does nothing if one is already in the volume.
+  letsencrypt-init:
+    image: certbot/certbot:${CERTBOT_TAG:-v3.0.1}
+    entrypoint: ["/bin/sh", "/certbot.sh", "init"]
+    environment: &cert-env
+      PUBLIC_HOST: ${PUBLIC_HOST:-}
+      LE_EMAIL: ${LE_EMAIL:-}
+      LE_STAGING: ${LE_STAGING:-}
+      CERT_NAMES: ${CERT_NAMES:-}
+      SELFSIGNED_DAYS: ${SELFSIGNED_DAYS:-}
+    ports:
+      - "${ACME_BIND:-0.0.0.0}:80:80"
+    volumes: &cert-volumes
+      - certs:/etc/letsencrypt
+      - acme-webroot:/var/www/acme
+      - ./scripts/certbot.sh:/certbot.sh:ro
+
+  # TLS=letsencrypt: renew twice a day through the edge's /.well-known/acme-challenge/.
+  letsencrypt-renew:
+    image: certbot/certbot:${CERTBOT_TAG:-v3.0.1}
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "/certbot.sh", "renew"]
+    environment: *cert-env
+    volumes: *cert-volumes
+    logging: *logging
+
+  # TLS=selfsigned: generate a self-signed certificate for PUBLIC_HOST (plus CERT_NAMES) once.
+  selfsigned-init:
+    image: certbot/certbot:${CERTBOT_TAG:-v3.0.1}
+    entrypoint: ["/bin/sh", "/certbot.sh", "selfsigned"]
+    environment: *cert-env
+    volumes: *cert-volumes
+
+  # TLS=custom: copy fullchain.pem and privkey.pem from CUSTOM_CERT_DIR into the volume on every `up`.
+  custom-cert:
+    image: certbot/certbot:${CERTBOT_TAG:-v3.0.1}
+    entrypoint: ["/bin/sh", "/certbot.sh", "custom"]
+    environment: *cert-env
+    volumes:
+      - certs:/etc/letsencrypt
+      - ./scripts/certbot.sh:/certbot.sh:ro
+      - ${CUSTOM_CERT_DIR:-../certs}:/custom:ro
+
+  # One-shot build of the translation overlay (src/i18n/build.ts) into CDN_OVERLAY_DIR on the host:
+  # `docker compose --profile i18n run --rm i18n-build [options]`, then restart reflipped. The folder must
+  # be writable by uid 1000; the flavour mounts the CDN read-only and the repo's i18n/ folder.
+  i18n-build:
+    extends:
+      service: reflipped
+    restart: "no"
+    entrypoint: ["node", "out/i18n/build.js"]
+    command: []
+    environment:
+      I18N_MIN_STATUS: ${I18N_MIN_STATUS:-}
+    healthcheck:
+      disable: true
+    network_mode: none
+
+  # One-shot online backup of the database (src/backup.ts) into BACKUP_DIR on the host:
+  # `docker compose run --rm backup`. The folder must be writable by uid 1000 (the image's node user).
+  backup:
+    extends:
+      service: reflipped
+    restart: "no"
+    command: ["node", "out/backup.js"]
+    environment:
+      BACKUP_DIR: /backups
+      BACKUP_KEEP: ${BACKUP_KEEP:-14}
+    healthcheck:
+      disable: true
+    network_mode: none
+    volumes:
+      - ${BACKUP_DIR:-../backups}:/backups

@@ -1,0 +1,8 @@
+#!/bin/sh
+# nginx image hook, sourced before the templates are rendered: the port suffix of the HTTP-to-HTTPS
+# redirect (empty for 443), from the host's HTTPS_PORT.
+case "${HTTPS_PORT:-443}" in
+443) HTTPS_REDIRECT_PORT= ;;
+*) HTTPS_REDIRECT_PORT=":$HTTPS_PORT" ;;
+esac
+export HTTPS_REDIRECT_PORT

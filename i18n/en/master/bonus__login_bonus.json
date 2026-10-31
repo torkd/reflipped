@@ -1,0 +1,72 @@
+{
+  "login_bonus_gw/1": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/2": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/3": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/4": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/5": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/6": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/7": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/8": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/9": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  },
+  "login_bonus_gw/10": {
+    "3": {
+      "srcHash": "sha256:32eee6daf15cbef71826acb4bb82c544ac6719085b4c9dfbe99fe53b25ec276e",
+      "text": "Golden Week Login Perks",
+      "status": "machine"
+    }
+  }
+}

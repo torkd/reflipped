@@ -1,0 +1,23 @@
+{
+  "2": {
+    "2": {
+      "srcHash": "sha256:60dd14a0dcd4face81cdd99f78952c5ebe8954a8950e7beb56dcfef787f72a8e",
+      "text": "The Reckoning Windwrath Steambot",
+      "status": "machine"
+    }
+  },
+  "3": {
+    "2": {
+      "srcHash": "sha256:27910514a6d7d870a38ad21cf998de3d9671436da11e03bc716cad66ba3eec00",
+      "text": "The Reckoning Maelstrom Steambot",
+      "status": "machine"
+    }
+  },
+  "100000": {
+    "2": {
+      "srcHash": "sha256:67fcbb03edb0fef083b0138096ab74d8c47c27c60bcacf8ac3e91eefca5b14e8",
+      "text": "The Reckoning Radiant Steambot",
+      "status": "machine"
+    }
+  }
+}

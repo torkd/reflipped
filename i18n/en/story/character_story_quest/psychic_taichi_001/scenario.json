@@ -1,0 +1,492 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:cb64f86c9a6ab1d8cb47008587cab7b4d247d693937cd37b9e5f8a6e5d67fe70",
+      "text": "Well... Can't be helped, I guess...",
+      "status": "machine"
+    }
+  },
+  "11": {
+    "5": {
+      "srcHash": "sha256:4bc515238515431630da34162a5eacd32786aa8887d55324133753d86f68b1ce",
+      "text": "Heh. Relax, I used the back of the\nblade. ...Not that it's a real\nsword, just a wooden one.",
+      "status": "machine"
+    }
+  },
+  "14": {
+    "5": {
+      "srcHash": "sha256:0a8d86cf42b5f73a06649ec33113e82f181060f236d6f911fca88628dd8d6bc3",
+      "text": "Ngh, uuugh...! You mess with our\nturf like this... Don't think this\nends here...!",
+      "status": "machine"
+    }
+  },
+  "17": {
+    "5": {
+      "srcHash": "sha256:5c5f3a546cacdcafd629a2418028d278d4c25f79a1e7582b3b01749de426f5e8",
+      "text": "Don't. We're done here. I'm\nskipping town, obviously.",
+      "status": "machine"
+    }
+  },
+  "20": {
+    "5": {
+      "srcHash": "sha256:2f4705128c7a01597207606546f8d517d14dc526f8b4a8edfd0d9b533aa1fb5b",
+      "text": "Taichi...!",
+      "status": "machine"
+    }
+  },
+  "23": {
+    "5": {
+      "srcHash": "sha256:5a708004d99d18de732fb3e1836c9c8e22c9fe1f500fcc7e94502b25888d6221",
+      "text": "Osei... Sorry, kid. I couldn't hold\nback.",
+      "status": "machine"
+    }
+  },
+  "26": {
+    "5": {
+      "srcHash": "sha256:470e6c928822ae962b90982781194d69180f42517c343b7f164a3479794b4c92",
+      "text": "...I'm sorry! It's my fault,\nmine...!",
+      "status": "machine"
+    }
+  },
+  "29": {
+    "5": {
+      "srcHash": "sha256:18da319b79c12a0f5d0735dcf745257ec4a4c375ea2c72cd07270ea63f3a1577",
+      "text": "Hey, hey! Don't cry. ...You\ncouldn't let that crooked deal\nslide. That's all, right?",
+      "status": "machine"
+    }
+  },
+  "32": {
+    "5": {
+      "srcHash": "sha256:8f09616d836453d262fef6a9b565e7310a52985525fbdd567e9075fdf83cbc03",
+      "text": "But, Taichi...! ...I thought we'd\nalways be together...",
+      "status": "machine"
+    }
+  },
+  "35": {
+    "5": {
+      "srcHash": "sha256:ba0108f3eff6ed9ac06a77cbc45b1a7576c1e999ff80caf72733ed57b0cf718c",
+      "text": "...All things pass, the bell tolls.\nThat's how it goes.",
+      "status": "machine"
+    }
+  },
+  "38": {
+    "5": {
+      "srcHash": "sha256:1c780fcc94231eaafae39202804becbdfb26dcc58826008416fdb9fd07f3479c",
+      "text": "Can't be helped. Besides, I'm used\nto this by now...",
+      "status": "machine"
+    }
+  },
+  "41": {
+    "5": {
+      "srcHash": "sha256:1b26792f9057f2023a80d445f3ab5ec9f325b68b8c6fd9c85cc835cea7846684",
+      "text": "Don't cry, Osei. Take care of your\nold man and stay well, okay?",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:d4e5cf6c06736842bf32e595d4719a0fcb91fa71a2b0d315da579b953ce25c67",
+      "text": "Taichi...!!",
+      "status": "machine"
+    }
+  },
+  "50": {
+    "5": {
+      "srcHash": "sha256:8faaffecdbe30bdac44a29c9b39c3cacfc05619e9467727dc6d3c0cfbe56fef1",
+      "text": "...And after that cool exit, what\ndo I do now?",
+      "status": "machine"
+    }
+  },
+  "53": {
+    "5": {
+      "srcHash": "sha256:33cb92ac2292471a5f0203ccb8f55d4336f061a02206b7a076c6c43260864a06",
+      "text": "Penniless and homeless again. If I\ndawdle, that rotten boss's goons\nwill chase me...",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:88c0b02c7d92b01d0afaaf0f421c1e7e1acea45dddd64caf82f5e9cae51303cd",
+      "text": "...Time to head somewhere far away\nagain. Guess I'm a drifter for\nlife...",
+      "status": "machine"
+    }
+  },
+  "59": {
+    "5": {
+      "srcHash": "sha256:c6008078711a3fa2192e44f4928dd1e6ea4bc4d525b3e704658c7c6a6f6a32b3",
+      "text": "Well, can't be helped...",
+      "status": "machine"
+    }
+  },
+  "63": {
+    "5": {
+      "srcHash": "sha256:804cd07c56bdcd663e0bda14fd036e430b85e8ba75fb68d0a76387b86d43f7bf",
+      "text": "...This feeling... A yokai...?",
+      "status": "machine"
+    }
+  },
+  "68": {
+    "5": {
+      "srcHash": "sha256:34a5ed7659d44faeb532120169112b9ba861a529ad27466238e339f1b4f8af20",
+      "text": "It's headed your way! Take it down,\nAlk!",
+      "status": "machine"
+    }
+  },
+  "72": {
+    "5": {
+      "srcHash": "sha256:753a6a3da6f4a2a451595fd60f4ce7c0e37f41e6f6ebcf30b80aa61f94fd41ec",
+      "text": "I know!",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:5722a6c6fbc8c6a6ef491938b83f168df3b5f80a32beeeee967cce8272f8da2e",
+      "text": "Thanks, Eiji! Beads! ...But\nnormally you don't use a rocket\nlauncher for backup, you know...?",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:658082b06951aaf888edbaf099d064129b85689608e1cfbf48722fa673a5ed32",
+      "text": "A rocket launcher...? Wrong \"era,\"\nisn't it...?",
+      "status": "machine"
+    }
+  },
+  "86": {
+    "5": {
+      "srcHash": "sha256:11bd29a7ead02219ab7611d4ac4bfb122a641c7aacc45e0b24e4103ebbc111d2",
+      "text": "...Suizen was right. There really are\nmore yokai now. And they're nearly\nall the kind that attack people.",
+      "status": "machine"
+    }
+  },
+  "90": {
+    "5": {
+      "srcHash": "sha256:24b594cd534c768b5a9dd65d78b2493290f0372bcda7c0408e6a80b1e555337f",
+      "text": "Yokai from the western lands. We\nheard Inaho's mother was holding\nthem back, but—",
+      "status": "machine"
+    }
+  },
+  "94": {
+    "5": {
+      "srcHash": "sha256:7fc731ddea4b64dfe349f77fb95bfbff7f099b401579fff74d8c5184fc17bc86",
+      "text": "If they slip past that too, the way\neast and west mix is changing. The\n\"hole\" must be widening here too.",
+      "status": "machine"
+    }
+  },
+  "98": {
+    "5": {
+      "srcHash": "sha256:2ef3775d35e3560f74b5c93385d1d94be04bee342d1cb58897828a7b17600657",
+      "text": "...Suizen helps us out like it's all\nno sweat for her, but...",
+      "status": "machine"
+    }
+  },
+  "101": {
+    "5": {
+      "srcHash": "sha256:9dd12e3e6227951e024566738464cf589489d0c96e22d41436e150791a0cbeb2",
+      "text": "She's carrying way too much.",
+      "status": "machine"
+    }
+  },
+  "106": {
+    "5": {
+      "srcHash": "sha256:8189057a30e85e9002463f960fac28b1cb63f7eb8a135c356a0db6403d0e892c",
+      "text": "Oh ho. Easy to see when it's\nsomeone else's problem, huh?",
+      "status": "machine"
+    }
+  },
+  "110": {
+    "5": {
+      "srcHash": "sha256:091fcbe61484d9ef0ee2a0c493236a4c12de633cb888bfbdb95d118501423000",
+      "text": "Then we should clear away at least\none of her worries, right?",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:540ed9668db809ac64cd2112df6fd52fc6cc05e97a0dda565b8127629186e05e",
+      "text": "...Yeah.",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:36204b49aa8fa7217ab0a1477fa5fefeac69085dad2cae71b7e3b43bd52579b6",
+      "text": "Guh...!?",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:3fbd356715d0e18c9bdcf44cdfb27c91f98cc92389e4b93aec4d8ab25c689a11",
+      "text": "Shogunate agent? Or one of those\nStar Augurs? Sorry, but you're not\ngetting away...!",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:a9a3196e1dbc2e3df0cbc78ed70a0ad67081233d0a47c88c848f75fe691cbbcf",
+      "text": "N-no! I just—!",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:4ff5575bdcdf390f0542d5a8fe2dad7bfec353d22087f52297def7d634b472c1",
+      "text": "I just...?",
+      "status": "machine"
+    }
+  },
+  "137": {
+    "5": {
+      "srcHash": "sha256:ff85773f74a9f5f04399dfa1bb0e07791b30fe2d0b9e28bc2b34285ac9cc6d4a",
+      "text": "......Mamiya???",
+      "status": "machine"
+    }
+  },
+  "141": {
+    "5": {
+      "srcHash": "sha256:714882381988c7e5497fc919fcd110345c63043d683ac55ca5540c688744eb07",
+      "text": "What...? ...Huh...?",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:69e304a207dda68c85b05e332e6d0a3c61e02768415136b68a92874ff3faedb2",
+      "text": "Wait, what. No way... Huh?! What?!\nSeriously, for real???",
+      "status": "machine"
+    }
+  },
+  "151": {
+    "5": {
+      "srcHash": "sha256:3c2e8552390e591328302f79d3154fcdb2ff40ff80ee14f60b8b4998f7f4a328",
+      "text": "...Mamiya. It's Mamiya, right?!\nIt's you! It's me! Me!!!",
+      "status": "machine"
+    }
+  },
+  "155": {
+    "5": {
+      "srcHash": "sha256:c3a2141c4c4b805a47462e164e170d658b6bd907917c61675736e06b01f769cd",
+      "text": "......Taichi...?",
+      "status": "machine"
+    }
+  },
+  "160": {
+    "5": {
+      "srcHash": "sha256:1ec38c1b081bd2a328ae9c9b1453fd1607a8e924f1d54aacfcd92e4ab5e3cc78",
+      "text": "Heeeey! Seriously?! Seriously!?!\nIt's Mamiya!!!",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:b8d533a138dfec47d3a44a08c3f1e1bc3dc3245b54343f2f2322629a58961d17",
+      "text": "Taichiiiii?! Taichi! It's Taichi!",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:79efcb519132f48953b91e3de1df2283ef04ceee7171f4ccd6a1588749993e26",
+      "text": "Huh... What... Who...?",
+      "status": "machine"
+    }
+  },
+  "173": {
+    "5": {
+      "srcHash": "sha256:da6a0a02f0a423c35afbc3276d28437861b670c8b0f6fa54f0bde0d4644ce504",
+      "text": "Let's kill him.",
+      "status": "machine"
+    }
+  },
+  "179": {
+    "5": {
+      "srcHash": "sha256:f7a3187586f0ef6ac423e010c98c4e70e7ba9bc3c713149790c6923ca20a99c8",
+      "text": "Taichi Yuhino. Me and Mamiya, well,\nwe're... Friends, I guess, or more\nlike a bad penny?",
+      "status": "machine"
+    }
+  },
+  "183": {
+    "5": {
+      "srcHash": "sha256:69b26d5fe658ff21505a99e043ea32ad7f47fd0da0d513c4763d6427917270c1",
+      "text": "A bad penny? What kind of bad\npenny? Spit it out. Hey? Hey??",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:40cece26a37183413392b871e633cda8968aa5a6719550e2bf59c743ea32557e",
+      "text": "Idiot. It's not like that.",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:1dd7c1e11d1916fe2fb01644e3aa846056ccf6491c8bdc7ad76e8c9f785bd6c6",
+      "text": "More importantly, I've been\nwondering this whole time.\n...Taichi, why do you look so old?",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:e253b674a261c248fda50a3e0ad356004af97c5f796b65ec774e1b2dfd2ca1dd",
+      "text": "You're the one who's too young,\naren't you?! Why's your skin so\ntight?!",
+      "status": "machine"
+    }
+  },
+  "199": {
+    "5": {
+      "srcHash": "sha256:74af6cf9410723e2229f0adac0e3e3703dd5647409581e703616a4676faefe38",
+      "text": "...Does that mean—? Um, Taichi, how\nold are you now?",
+      "status": "machine"
+    }
+  },
+  "203": {
+    "5": {
+      "srcHash": "sha256:280a9ef624b2faf4a6c8e5b859c9f11297541e4fb2092fee989a37ed159898b5",
+      "text": "Huh...? Let me think. Forty-two...\nor so?",
+      "status": "machine"
+    }
+  },
+  "209": {
+    "5": {
+      "srcHash": "sha256:7127634efc8e887f164d5201a4e6e77f11544316634eedee4f8738985dceae90",
+      "text": "What?! No way?! I'm... in my\nthirties, almost, but...?",
+      "status": "machine"
+    }
+  },
+  "214": {
+    "5": {
+      "srcHash": "sha256:1e31945876dee322b2a91e41f68919e969c8f7a3c6e394d40e402b29fe477b8a",
+      "text": "So young?! Seriously young?! But\nhow...?",
+      "status": "machine"
+    }
+  },
+  "219": {
+    "5": {
+      "srcHash": "sha256:d424f0575e6357a0eeaeabdee369bf9b61d77a9c6c8a28dd8e1d429abd527347",
+      "text": "...Um, have you heard of time\ndilation? The Urashima effect?",
+      "status": "machine"
+    }
+  },
+  "223": {
+    "5": {
+      "srcHash": "sha256:f904a3d1a2e2d87a7672d2231ae07b8ad56f73077eb53c966f220377dd2ad8c8",
+      "text": "Twelve thousand years...\nSeriously...",
+      "status": "machine"
+    }
+  },
+  "226": {
+    "5": {
+      "srcHash": "sha256:eaa4ce4a866981f4c4c848c49d18471e2d10d8480fb3a5d209f973fff43b1381",
+      "text": "Since I last saw Mamiya, it's\nprobably been about twenty years...",
+      "status": "machine"
+    }
+  },
+  "229": {
+    "5": {
+      "srcHash": "sha256:20c32c3ad8eb0f8db62720a3d24de6f8e88b5cd0a189c56465be84fc6dc93f90",
+      "text": "Fifteen or so in this Edo-flavored\nfantasy world. And five in Japan\nafter it all went to hell.",
+      "status": "machine"
+    }
+  },
+  "233": {
+    "5": {
+      "srcHash": "sha256:060b514d41d78b09a9e9ae8ec3fb3c346a9130f1db04d6e66e605254e952dbd1",
+      "text": "After it went to hell...?",
+      "status": "machine"
+    }
+  },
+  "237": {
+    "5": {
+      "srcHash": "sha256:4b863c88394e84dddc021a15d557a4203f20e3b44c9a3d365fd37dffeb953546",
+      "text": "The incident where Mamiya and the\nothers vanished. Tons of people...\nand the whole city of Shibuya, gone.",
+      "status": "machine"
+    }
+  },
+  "240": {
+    "5": {
+      "srcHash": "sha256:ea7331831df07da23a895864dc6744a53cacb42564a69807f8a9e3a067f41469",
+      "text": "What followed was crazy... The\neconomy in shreds. I figured war\nwas next, but then came \"psychics.\"",
+      "status": "machine"
+    }
+  },
+  "243": {
+    "5": {
+      "srcHash": "sha256:f230afd07b670d9a2795a0918e1a99a4f09a657212f60e2673f007732b1301d6",
+      "text": "Panic broke out because the laws of\nphysics had changed. All kinds of\nweird cults sprang up too.",
+      "status": "machine"
+    }
+  },
+  "246": {
+    "5": {
+      "srcHash": "sha256:eb6b45a2af51061077eb550ce1b1c7a3c147cc72343b34fc3b972b8f940a00fc",
+      "text": "...I couldn't even tell if I should\nhold my dad's funeral.",
+      "status": "machine"
+    }
+  },
+  "250": {
+    "5": {
+      "srcHash": "sha256:017c42586f74bc63b0e5027f627dc9d2372e7b1bdb358603ca923252aa7ff91d",
+      "text": "Well, no use longing for a home I\ncan't return to. Meeting Mamiya was\na miracle. Gotta be glad!",
+      "status": "machine"
+    }
+  },
+  "255": {
+    "5": {
+      "srcHash": "sha256:5e9d1c4550cb903331cc339f808abbf0658632e3e7943b431c543bb7374a56b6",
+      "text": "Hehe. In that case, Taichi, want to\nsee something good?",
+      "status": "machine"
+    }
+  },
+  "261": {
+    "5": {
+      "srcHash": "sha256:11af514ce985c2569c3bdbbac3b2b33ebd90510ed77440ca1efb8a9eeacddd24",
+      "text": "......Seriously...... That's\nShibuya...",
+      "status": "machine"
+    }
+  },
+  "265": {
+    "5": {
+      "srcHash": "sha256:8e2c5b5603845a41372f515b3749d732453e78856c6d2940a4e347bb790b951b",
+      "text": "Some crazy person shoved that town,\nwhich was supposed to vanish, into\nanother world.",
+      "status": "machine"
+    }
+  },
+  "269": {
+    "5": {
+      "srcHash": "sha256:0597e83a37d3b5759c5652525379d823bb9ce5360db948c9bd5d2e7ebf2e363b",
+      "text": "What the... That's way too big...",
+      "status": "machine"
+    }
+  },
+  "273": {
+    "5": {
+      "srcHash": "sha256:51653d1e9db004fd5d190151ba566401bfef1025888022fd3eeaab08340bee1c",
+      "text": "Right? I knew they'd do it, but\nthis blew past my wildest guess.",
+      "status": "machine"
+    }
+  },
+  "277": {
+    "5": {
+      "srcHash": "sha256:446f1ecef029964287ba2abad829afb2d0b661257d6dfd2177dd9ec49c456245",
+      "text": "...That kid from before? ...No,\nwait. Nope, my brain can't keep\nup...",
+      "status": "machine"
+    }
+  },
+  "280": {
+    "5": {
+      "srcHash": "sha256:5245570743b126bb8788d9a197b193a300e2974db9f952b28476a8c513621a74",
+      "text": "...Anyway. I'm glad I got to see\nyou again. Mamiya...",
+      "status": "machine"
+    }
+  },
+  "284": {
+    "5": {
+      "srcHash": "sha256:154816d70749f83d2798c25e2a48187539c244719da28db9de8428e3be243d83",
+      "text": "...Yeah. Me too......",
+      "status": "machine"
+    }
+  }
+}

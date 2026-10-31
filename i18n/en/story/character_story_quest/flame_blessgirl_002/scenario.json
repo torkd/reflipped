@@ -1,0 +1,443 @@
+{
+  "6": {
+    "5": {
+      "srcHash": "sha256:086a5d887d8c0a96db90df3c98480f21d6230a3ff3bcb0023e189c5658cde63d",
+      "text": "—Haaaaaaaaah!!",
+      "status": "machine"
+    }
+  },
+  "9": {
+    "5": {
+      "srcHash": "sha256:eb5f9ca870f17c679532e94d95bf46c1eccd61380eff96fffbc24fdf6c25b8fd",
+      "text": "Y-you're lifting all that at once?\nAre you all right...?!",
+      "status": "machine"
+    }
+  },
+  "12": {
+    "5": {
+      "srcHash": "sha256:f8390a3fbcf4fc539489596ca2cde0ca74f3d1c64fdcb19fc165603f5a138265",
+      "text": "This is nothing!\nShould I put it behind the shop?",
+      "status": "machine"
+    }
+  },
+  "15": {
+    "5": {
+      "srcHash": "sha256:ef2efdf549dfea8415c5512e93ac1f91f88e428c0be100a2565e3017278ba646",
+      "text": "Thank you, dear. Your reward—",
+      "status": "machine"
+    }
+  },
+  "18": {
+    "5": {
+      "srcHash": "sha256:fd42869586ef601089c0372d9e3be150cdc22c9a79b2b08db3ba74c511622e51",
+      "text": "I'm doing this because I want to,\nso no need to pay me!\nWe all help each other out!",
+      "status": "machine"
+    }
+  },
+  "21": {
+    "5": {
+      "srcHash": "sha256:7a278b78dd3ff4eceb7d15b3b66f4155ee311f95dc0bba4f15eaae09825ab398",
+      "text": "Big sis, play with me!\nLet's play tag!",
+      "status": "machine"
+    }
+  },
+  "24": {
+    "5": {
+      "srcHash": "sha256:9170f993d0b4c04cd885a2e5a401a5d7f2f7253a3a2a01a6d90c74462fa5075d",
+      "text": "Okay! ...Oh, but I still have\nwork to do. Let's play when\nI'm done!",
+      "status": "machine"
+    }
+  },
+  "27": {
+    "5": {
+      "srcHash": "sha256:287a926d898ef7042ea4d8200e92da43f37ccdf2fa73ed82c9ee296f8b34de79",
+      "text": "Okay! I'll wait in the plaza!\nThis time I'll get away from you!",
+      "status": "machine"
+    }
+  },
+  "30": {
+    "5": {
+      "srcHash": "sha256:ffddeb11829499877159ecb2cae3c4148b6a6eb3eb1a522cf31f1ce2e9922dae",
+      "text": "Hey, you've become quite popular.",
+      "status": "machine"
+    }
+  },
+  "34": {
+    "5": {
+      "srcHash": "sha256:04fc1a4f5168d14a53472920f0ae57245691a7a88103351ddf7ac2b042ed37a3",
+      "text": "Hehe... I'm happy everyone\ntalks to me!",
+      "status": "machine"
+    }
+  },
+  "37": {
+    "5": {
+      "srcHash": "sha256:ef17a91904ba821b3e0c4ac40210d1f4394ff0616ac61c3526e5d8176e61c1ef",
+      "text": "Lunetta, can you give me a hand?\nI've got too much to carry!",
+      "status": "machine"
+    }
+  },
+  "40": {
+    "5": {
+      "srcHash": "sha256:25a4c1e10e3489e67bf7d0b3d54d2f316d40655908732ce31f996d947de0fc9a",
+      "text": "Sure! ...Oh, but!",
+      "status": "machine"
+    }
+  },
+  "44": {
+    "5": {
+      "srcHash": "sha256:69563c0f785d32d31d85f4ca0d0e8c48659364b83b8c95fde6900617ae00e8c6",
+      "text": "...Why not go help him?",
+      "status": "machine"
+    }
+  },
+  "48": {
+    "5": {
+      "srcHash": "sha256:e597631403e9eef9b8ff66235033389f6503ab9cffcbba1e606615fc486e5430",
+      "text": "But today I'm supposed to help\nyou with your shopping...",
+      "status": "machine"
+    }
+  },
+  "51": {
+    "5": {
+      "srcHash": "sha256:fe4fb7af4b50e357c4bb85b5d1cb9fa374171fd0a9436855657332717d6188b0",
+      "text": "We don't have much to carry, and\nhe looks like he's got it worse.\nYou want to help, right?",
+      "status": "machine"
+    }
+  },
+  "56": {
+    "5": {
+      "srcHash": "sha256:5d829b82c29dfc2e56c82c0ecd4aa98ba920bf6dbead48efa148de096c0485c8",
+      "text": "Yes! Then I'll carry everything\non the way back, leave it to me!",
+      "status": "machine"
+    }
+  },
+  "60": {
+    "5": {
+      "srcHash": "sha256:e070dfcd1e8c8d054104d601b6a4ae11eae828602f6e932b0dc617434bd7a1d6",
+      "text": "Okay, we'll meet back here\nwhen you're done.",
+      "status": "machine"
+    }
+  },
+  "66": {
+    "5": {
+      "srcHash": "sha256:535dbf0cea7f176ded6b4b574da577bec7807319d55a8c231a5dcd61895a7fd7",
+      "text": "...All right! I'll finish fast and\nhelp Alk with his...",
+      "status": "machine"
+    }
+  },
+  "70": {
+    "5": {
+      "srcHash": "sha256:b0c1a9118394f653bc63c50bc69430fc51dcb5dbb3b2484add23d3aa0329a4fb",
+      "text": "...Stop selling yourself short.",
+      "status": "machine"
+    }
+  },
+  "74": {
+    "5": {
+      "srcHash": "sha256:70d75f777e27a8d02f7b0930ccd2e5c68883e2212cae2448bd70c796cf4e2d7e",
+      "text": "Huh...?",
+      "status": "machine"
+    }
+  },
+  "76": {
+    "5": {
+      "srcHash": "sha256:30364801a92de27a16ab1295e8fb0ee18fd4d33703296f69d1d99361387a4598",
+      "text": "Helping people out now and then\nis fine. But you're an adventurer,\nright?",
+      "status": "machine"
+    }
+  },
+  "77": {
+    "5": {
+      "srcHash": "sha256:d0d156db9f59a65bb51a9dbc2d76158197ccf4355816557bbf11926ed924b505",
+      "text": "Then don't take on adventurer\n\"jobs,\" like slaying monsters or\nescort duty, for free.",
+      "status": "machine"
+    }
+  },
+  "79": {
+    "5": {
+      "srcHash": "sha256:aea28f5495af493d43cb185756ab901186a8a229fc2aa918b520b5b8dde32de8",
+      "text": "Adventurers aren't people who just\ndo favors. We get a request, take\nthe reward, and that's how it works.",
+      "status": "machine"
+    }
+  },
+  "80": {
+    "5": {
+      "srcHash": "sha256:261f7a127c88e731ec12077381f7534745213e65d7c7c36fc79f1b1d504179f1",
+      "text": "If you do it for free, we lose\nour jobs. That's a problem for us.",
+      "status": "machine"
+    }
+  },
+  "84": {
+    "5": {
+      "srcHash": "sha256:b366c6dc394a557559a3b7b7ccf15fb7e373fdcfe9c56387a316a00e2292d345",
+      "text": "...Lunetta?",
+      "status": "machine"
+    }
+  },
+  "89": {
+    "5": {
+      "srcHash": "sha256:ce700cce90fda82fc3537125209c7c7f7ad1ca5c524422d57c18338991ba474f",
+      "text": "Eek?! When did you get here?!",
+      "status": "machine"
+    }
+  },
+  "93": {
+    "5": {
+      "srcHash": "sha256:730aa53dafa4331be83136fa594dab44a3df7bbf15e5a9b13de09f2acc3eaae4",
+      "text": "I just walked over, normally...",
+      "status": "machine"
+    }
+  },
+  "97": {
+    "5": {
+      "srcHash": "sha256:e302f62b4a1a93ef736672c0bd52ff36d6609afe22980e3a6324b71594112323",
+      "text": "I-I see! So, what's up?!",
+      "status": "machine"
+    }
+  },
+  "100": {
+    "5": {
+      "srcHash": "sha256:fc258f13f9eff85b4e955fdca05f77d911ceb3a934ce6e813a1bacc24f06f4b0",
+      "text": "Hmm. I know it's none of my\nbusiness, but Nimbus mentioned it.\n...Did something happen?",
+      "status": "machine"
+    }
+  },
+  "105": {
+    "5": {
+      "srcHash": "sha256:d42c1ef75933aec50c4eaa033ceb024aa3008226fb8fafdd8913c2999265064e",
+      "text": "Can you read minds, Alk?!",
+      "status": "machine"
+    }
+  },
+  "109": {
+    "5": {
+      "srcHash": "sha256:c6e8126f74cfb16d643c47f7e119b91186210d398e925d71c7d21256ae2bfa99",
+      "text": "It's written on your face.\nYou can't keep secrets, can you?",
+      "status": "machine"
+    }
+  },
+  "114": {
+    "5": {
+      "srcHash": "sha256:480bf29c65095da68dbdf97ef3551959b0328cc69acb96cffe4d3b8e30741574",
+      "text": "Mmmmm... You sound just like my\ngrandma back home...",
+      "status": "machine"
+    }
+  },
+  "119": {
+    "5": {
+      "srcHash": "sha256:b46fe4cb496311171b693bae908e36b22fd88a8bb776cf70281ad0147629a9d9",
+      "text": "It's about today. An older\nadventurer told me...",
+      "status": "machine"
+    }
+  },
+  "121": {
+    "5": {
+      "srcHash": "sha256:2ba7d25c723dd44a5382b2e6981c2c42439495621c187b98ab6ff76c2c2e8bef",
+      "text": "\"Don't take everything for free.\nYou're taking our jobs.\"",
+      "status": "machine"
+    }
+  },
+  "126": {
+    "5": {
+      "srcHash": "sha256:d1b4a5eb08b9bafd6c6443ff3af3bd52d192f437cd05d1afe27c00953d8154e1",
+      "text": "Ah... that problem...",
+      "status": "machine"
+    }
+  },
+  "130": {
+    "5": {
+      "srcHash": "sha256:a122427706b70b26a8af43bdec5c8abad02ca7f6fba65f9cd61ea46c1b459a9e",
+      "text": "I never realized I was troubling\nother adventurers...",
+      "status": "machine"
+    }
+  },
+  "134": {
+    "5": {
+      "srcHash": "sha256:6f79a1097712be23225149678c47c3f7c751d8b842c5ad67d5e7729679e6fb85",
+      "text": "Ugh... Maybe I'm not cut out to be\nan adventurer...",
+      "status": "machine"
+    }
+  },
+  "138": {
+    "5": {
+      "srcHash": "sha256:0fa3cbfda371cb9a5291f73101a92233ee316f2c8e386f3e238456b7e89d7dcd",
+      "text": "Hmm... You don't think it's okay\nto steal requests, though?",
+      "status": "machine"
+    }
+  },
+  "143": {
+    "5": {
+      "srcHash": "sha256:89ebed58ffd9d90a031d9197e0c5b1d06afe63c4b8d846602247ab739b77e855",
+      "text": "B-but! Even if there's no request,\nif someone's in trouble...!\nI probably can't just walk away!",
+      "status": "machine"
+    }
+  },
+  "147": {
+    "5": {
+      "srcHash": "sha256:ed066e9724356ce21da14264ce3c88823c0c4ccd50334e61f3149e7351877926",
+      "text": "So in those cases...\nI, I...?!\nMmmmm...!",
+      "status": "machine"
+    }
+  },
+  "152": {
+    "5": {
+      "srcHash": "sha256:a6d869f9fb63a97b37e211768eaa404d85ca5c62e63f3ba170d2f47b020c6c37",
+      "text": "Ugh... Maybe I really can't be\na top-class adventurer...",
+      "status": "machine"
+    }
+  },
+  "158": {
+    "5": {
+      "srcHash": "sha256:966c19238fbf8991e14478af5b24aecd367f5d6a98d5fd351c8245bf4feeb813",
+      "text": "What does \"top-class adventurer\"\nmean?",
+      "status": "machine"
+    }
+  },
+  "162": {
+    "5": {
+      "srcHash": "sha256:2190b5b3b6d8756e7080020d52fe012319c4f1bdba3b895402eee61017f0bb0b",
+      "text": "Top-class is top-class, isn't it?\n...Oh! Is that a deeper question?!",
+      "status": "machine"
+    }
+  },
+  "165": {
+    "5": {
+      "srcHash": "sha256:44ee772eebb51eb80d64f705396df77aa5e39b215a022913db9d2062e6c29b03",
+      "text": "A question... No, it isn't\nsome kind of riddle...?",
+      "status": "machine"
+    }
+  },
+  "169": {
+    "5": {
+      "srcHash": "sha256:028147765dd309ec7ed8d59e954531a32f52a2de15f9eb6803b47c122d292a9c",
+      "text": "Lunetta, why did you want to\nbecome an adventurer?",
+      "status": "machine"
+    }
+  },
+  "174": {
+    "5": {
+      "srcHash": "sha256:678dba92f42c09e9ac4cea549482b27679820e2f024f49e543c69e589740fc91",
+      "text": "My hometown was a small village\nin the forest...",
+      "status": "machine"
+    }
+  },
+  "176": {
+    "5": {
+      "srcHash": "sha256:a977f92b12b9f23ec5475a15a973f458208d777aac0a4fc7d77f8a23ea111b1a",
+      "text": "For some reason, I got the power of\nfire. It was pretty scary at first...",
+      "status": "machine"
+    }
+  },
+  "180": {
+    "5": {
+      "srcHash": "sha256:52c02f17d3cb2f902099bd43934087e47d7d47611d8a13817856310e03d96ef4",
+      "text": "Scary...?",
+      "status": "machine"
+    }
+  },
+  "184": {
+    "5": {
+      "srcHash": "sha256:3e440c33434a9db4f7fa853e5aed4742d857a2848e4fc511222d0a53e1d150f4",
+      "text": "I mean, it's a forest! If my power\nwent out of control, it'd be a\ndisaster.",
+      "status": "machine"
+    }
+  },
+  "187": {
+    "5": {
+      "srcHash": "sha256:603320e3f0a8a8902f937565596e66df7e1b152218d10ef12f10b389f19db80b",
+      "text": "Even without that... I thought\neveryone would be afraid of me\nwith such a dangerous power...",
+      "status": "machine"
+    }
+  },
+  "190": {
+    "5": {
+      "srcHash": "sha256:6e5588de8145b0fdd9eb4a5b82ee1d634a835c5d766256a9e2e16a579678c423",
+      "text": "But the whole village accepted me\nand helped me. That made me so\nhappy...!",
+      "status": "machine"
+    }
+  },
+  "194": {
+    "5": {
+      "srcHash": "sha256:b8b4eef1e56ceb57dd92e70ce7628383aaa2ee1132d25627bb5a8d374b835175",
+      "text": "Right! I wanted to share that\nfeeling with other people, so I\naimed to be an adventurer...!",
+      "status": "machine"
+    }
+  },
+  "197": {
+    "5": {
+      "srcHash": "sha256:73ed3d7a3eb98ff910e4fc3e3497f5c75db0126929e3df5ff5bda788a7b9b829",
+      "text": "Ignoring people in need would\ndefeat the purpose! So I—!",
+      "status": "machine"
+    }
+  },
+  "201": {
+    "5": {
+      "srcHash": "sha256:8063f82126781bfa3b11a4e140c28ff8866d4a27c0258e962dcc299fb4e42da3",
+      "text": "Ugh... I thought too hard. I'm\nhungry...",
+      "status": "machine"
+    }
+  },
+  "205": {
+    "5": {
+      "srcHash": "sha256:b23917466afb41f99fc35dba53d1617f47c57ddef8e5ab76b9fc648588ee0a9b",
+      "text": "...I can make something simple\nright away, if you like?",
+      "status": "machine"
+    }
+  },
+  "212": {
+    "5": {
+      "srcHash": "sha256:6442fcad0922b437b5688e043cfe047e857f08a65039264b7aab7eab5ee4a8c3",
+      "text": "Seconds, please!!",
+      "status": "machine"
+    }
+  },
+  "216": {
+    "5": {
+      "srcHash": "sha256:2203a12fa0a106dd15891468bdbb845cf86608bfee5c444bd69224919c302d62",
+      "text": "You're still eating?!",
+      "status": "machine"
+    }
+  },
+  "220": {
+    "5": {
+      "srcHash": "sha256:5e2330bd68d159ddd26bf074104f285e527017e8d1c7f9e14a029f9573720700",
+      "text": "Yes! To become a full-fledged\nadventurer and help lots of people,\nI need energy!!",
+      "status": "machine"
+    }
+  },
+  "224": {
+    "5": {
+      "srcHash": "sha256:24c9f01fc14bb8c2f0e6820175ccf858782897412af72a6761d0161834947dd0",
+      "text": "Is that what a top-class\nadventurer is?",
+      "status": "machine"
+    }
+  },
+  "228": {
+    "5": {
+      "srcHash": "sha256:c1d76e4c04a815422d8dba508b770e7d0f51d0f9edc8026729cf3d8e23b0a13b",
+      "text": "Yes!! The way I did things was\nunfit for an adventurer...\nI'm really sorry about that...!",
+      "status": "machine"
+    }
+  },
+  "230": {
+    "5": {
+      "srcHash": "sha256:10ba1e6af9d2f6d530cf9f4981d9dde52b18c0d65c80a7726767c1db63bd79ae",
+      "text": "But if I become a proper adventurer\nand take requests properly, I can\nhelp lots of people, right?",
+      "status": "machine"
+    }
+  },
+  "234": {
+    "5": {
+      "srcHash": "sha256:6b7c6f8a39ba77a068bcf8f3369f0e835a462b6cb715e8acaaaadc73ce1079b0",
+      "text": "Then I'll aim for it! I wanted to\nhelp people in trouble with this\npower, that's why I started!",
+      "status": "machine"
+    }
+  },
+  "238": {
+    "5": {
+      "srcHash": "sha256:649f1ecde2604ab82a556689822a9bbadf920e39eb62904fddc67d128984bc56",
+      "text": "So, with that said—\nseconds, please!!",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "200012": {
+    "2": {
+      "srcHash": "sha256:15d4e2c06176dcd9d9062fd849e33186d17e8c0f08fdffaf09bbf15f1b081ae6",
+      "text": "Maelstrom Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200017": {
+    "2": {
+      "srcHash": "sha256:841f579d5f4f798d5f112844b60c2a719ea2a2eba4cf9a167b18b8134cdcaa6d",
+      "text": "Windwrath Steambot",
+      "status": "machine"
+    }
+  },
+  "200018": {
+    "2": {
+      "srcHash": "sha256:7c676a6fe98eadc40417cf8ee44e3785db59d15fefd17392d0f9fa68f5c7df68",
+      "text": "Maelstrom Steambot",
+      "status": "machine"
+    }
+  },
+  "200019": {
+    "2": {
+      "srcHash": "sha256:2f5b2d340997108d79632c639800a7a181f65709baf64b7ac8279258d36e7775",
+      "text": "Inferno Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200020": {
+    "2": {
+      "srcHash": "sha256:6e1dd8e1653684e062dc09aff14386cb123c212302f68822a26d5799b0ce2f31",
+      "text": "Radiant Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200021": {
+    "2": {
+      "srcHash": "sha256:6cba830a141e5987a0057f3bf01bf6481347f54dfed67fb4fdfdc029da259f2b",
+      "text": "The Purge",
+      "status": "machine"
+    }
+  },
+  "200025": {
+    "2": {
+      "srcHash": "sha256:c86b206d7ae4e7f8ee58743bf385e1ab9ea9fd67c557bbbb0ae31e3eba04077a",
+      "text": "Thundering Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200028": {
+    "2": {
+      "srcHash": "sha256:49df7bbd2f0859427ec05a42d5b01b34c8f7c94bf8e06913b4ebc0e101eb0ef7",
+      "text": "Kugui and Ryouki's Special Training!",
+      "status": "machine"
+    }
+  },
+  "200037": {
+    "2": {
+      "srcHash": "sha256:49df7bbd2f0859427ec05a42d5b01b34c8f7c94bf8e06913b4ebc0e101eb0ef7",
+      "text": "Kugui and Ryouki's Special Training!",
+      "status": "machine"
+    }
+  },
+  "200038": {
+    "2": {
+      "srcHash": "sha256:6e1dd8e1653684e062dc09aff14386cb123c212302f68822a26d5799b0ce2f31",
+      "text": "Radiant Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200050": {
+    "2": {
+      "srcHash": "sha256:6cba830a141e5987a0057f3bf01bf6481347f54dfed67fb4fdfdc029da259f2b",
+      "text": "The Purge",
+      "status": "machine"
+    }
+  },
+  "200051": {
+    "2": {
+      "srcHash": "sha256:2f5b2d340997108d79632c639800a7a181f65709baf64b7ac8279258d36e7775",
+      "text": "Inferno Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200052": {
+    "2": {
+      "srcHash": "sha256:7f04f23b99a8c25e64f4bb54a66753bb137780db874134623d713db259a1285c",
+      "text": "Slitherwind Spiritbeast",
+      "status": "machine"
+    }
+  },
+  "200053": {
+    "2": {
+      "srcHash": "sha256:fab4208bcaa3811ac52af1cf7a62968782112b0eee625ebe4552ed4538b04e7e",
+      "text": "Radiant Steambot",
+      "status": "machine"
+    }
+  },
+  "200056": {
+    "2": {
+      "srcHash": "sha256:6e1dd8e1653684e062dc09aff14386cb123c212302f68822a26d5799b0ce2f31",
+      "text": "Radiant Spiritbeast",
+      "status": "machine"
+    }
+  }
+}

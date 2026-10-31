@@ -1,0 +1,23 @@
+{
+  "2/1": {
+    "2": {
+      "srcHash": "sha256:c86c7a65e8e50929f28e9768a647dd622c69fadec1e6906671bf6db5dd0012af",
+      "text": "Clarg ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "3/1": {
+    "2": {
+      "srcHash": "sha256:5613502d6e86151d95d4efa4bd93ccd00a6a7b8e89ccb3338c5aad78ffc6ce50",
+      "text": "Vernus ::quest_rank::",
+      "status": "machine"
+    }
+  },
+  "100000/1": {
+    "2": {
+      "srcHash": "sha256:3de915b5ef63a36235af807955e6a18689dff897ba27130e1977710720521f29",
+      "text": "Aizan ::quest_rank::",
+      "status": "machine"
+    }
+  }
+}

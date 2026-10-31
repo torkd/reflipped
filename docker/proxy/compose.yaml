@@ -1,0 +1,62 @@
+# Reflipped only, for a reverse proxy you already run (nginx, Caddy, Traefik): the proxy terminates
+# TLS, serves the asset archives (or forwards them), and passes the rest to Reflipped's game port,
+# which is published on host loopback. Config for each proxy is next to this file.
+#
+#   cd docker/proxy && cp .env.example .env
+#   docker compose up -d --build                                     # proxy on the host -> 127.0.0.1:8000
+#   docker compose -f compose.yaml -f compose.network.yaml up -d     # proxy in a container on PROXY_NETWORK
+#
+# See docker/README.md, "Behind an existing reverse proxy".
+
+name: reflipped-proxy
+
+services:
+  reflipped:
+    extends:
+      file: ../common/services.yaml
+      service: reflipped
+    environment:
+      # Requests arrive from the proxy through Docker's network: trust X-Forwarded-For from it.
+      # With compose.network.yaml, set TRUST_PROXY to the proxy network's subnet.
+      TRUST_PROXY: ${TRUST_PROXY:-${STACK_SUBNET:-172.28.43.0/24}}
+    ports:
+      # The game port for the proxy. Keep it on loopback: players must come through the proxy.
+      - "${API_BIND:-127.0.0.1}:${API_PORT:-8000}:8000"
+      # The admin UI has no login: host loopback only (reach it over SSH or a VPN).
+      - "${ADMIN_BIND:-127.0.0.1}:${ADMIN_PORT:-8001}:8001"
+      # Co-op realtime socket, spoken by the game directly (not HTTP, so not through the proxy).
+      - "${COOP_BIND:-0.0.0.0}:${COOP_PORT:-18888}:18888"
+    volumes:
+      - reflipped-data:/data
+      # Reflipped reads the asset tree for the entities lists and mods, and serves it itself
+      # (/patch/Live/2.0.0) when the proxy forwards that path instead of serving it from disk.
+      - ${CDN_DIR:-../../.cdn}:/srv/cdn:ro
+      # Translation overlays (npm run i18n:build): Reflipped reads their manifests and serves them itself
+      # when the requests reach it. Create the folder first (mkdir, owned by uid 1000) or Docker makes it as root.
+      - ${CDN_OVERLAY_DIR:-../../.cdn-overlay}:/srv/cdn-overlay:ro
+    networks:
+      - stack
+
+  i18n-build:
+    extends: { file: ../common/services.yaml, service: i18n-build }
+    profiles: ["i18n"]
+    volumes:
+      - ${CDN_DIR:-../../.cdn}:/srv/cdn:ro
+      - ${CDN_OVERLAY_DIR:-../../.cdn-overlay}:/srv/cdn-overlay
+      - ${I18N_DIR:-../../i18n}:/app/i18n:ro
+
+  backup:
+    extends: { file: ../common/services.yaml, service: backup }
+    profiles: ["backup"]
+    volumes:
+      - reflipped-data:/data
+
+networks:
+  stack:
+    ipam:
+      config:
+        - subnet: ${STACK_SUBNET:-172.28.43.0/24}
+
+volumes:
+  reflipped-data:
+    name: ${DATA_VOLUME:-reflipped-data}
