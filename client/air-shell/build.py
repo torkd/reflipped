@@ -567,8 +567,9 @@ def server_bundle(prebuilt, game_data):
 
 def pack_server(bundle, game_data):
     """build/app/reflipped-server.zip: the bundle's code and web pages, entries stored (the APK deflates the whole
-    file). Its assets/ (tables converted from the game's data) stay out unless `game_data`: they come with the data
-    pack, outside the APK."""
+    file). Its assets/ (tables converted from the game's data) stay out unless `game_data`: the server reads them from
+    the data pack. A `--no-assets` bundle's datapack-source/ (SH-29: the converted data and the list of master files)
+    goes in, so the app builds that pack itself from the game files on the phone."""
     out = os.path.join(BUILD, "app", SERVER_ZIP)
     count = size = 0
     with zipfile.ZipFile(out, "w", zipfile.ZIP_STORED) as z:
@@ -589,6 +590,9 @@ def pack_server(bundle, game_data):
                 z.writestr(info, data)
                 count += 1
                 size += len(data)
+    if not game_data and not os.path.isfile(os.path.join(bundle, "datapack-source", "source.json")):
+        log("note: the server bundle has no datapack-source/ (made before SH-29): Local play can't build its data pack"
+            " from the game files, only download it or install a saved one")
     log(f"packed the server ({count} files, {size / 1e6:.1f} MB{', with assets/' if game_data else ''}) into {out}")
 
 

@@ -18,7 +18,7 @@ Want to run a server instead? See [running Reflipped at home](air-shell-install.
 
 The app installs next to the official one, without replacing it.
 
-**Already have a Reflipped app you built yourself?** Android won't install the ready-made one over it ("App not installed"). See [Moving from an app you built](#moving-from-an-app-you-built) first.
+**Already have a Reflipped app you built yourself?** The ready-made app is a separate app: it installs next to yours, with its own game data and saves. See [Moving from an app you built](#moving-from-an-app-you-built).
 
 **To check the download** (optional): each release lists the file's SHA-256 next to it, in a `.sha256` file. On a computer, `sha256sum <file>` must print the same code.
 
@@ -49,15 +49,18 @@ The download keeps going in the background and continues where it stopped if it'
 ## Local play
 Local play runs the Reflipped server inside the app, so you play alone, without anyone else's server.
 1. On the first screen, choose **Local play**.
-2. The phone's server needs the game's data tables once (about 7 MB). Choose **From a server** and pick an online Reflipped server that offers them, or **From a file** if you saved one.
-3. The game data (about 9 GB) downloads from that server too, unless the phone already has it.
+2. The phone's server needs the game's data tables once (about 7 MB). If the phone already has the game data in English, the app makes the tables from it by itself and skips this question. Otherwise:
+   - **From a file** takes a [game data pack](game-data-pack.md), or a `.tar` or `.zip` of a server's game data folder. The app installs the game data from it (about 10 GB) and makes the tables from that, so you don't need any server.
+   - **From a file** also takes a tables file you saved from a server.
+   - **From a server** gets the tables from an online Reflipped server that offers them.
+3. Without game data on the phone, the game data (about 9 GB) then downloads from that server.
 4. Tap to start playing.
 
 Good to know:
 - **Menu → Account Info → Admin panel** opens your own admin site, already signed in: change the event mode, the date and other settings, or download your save (**Players**, your name, **Download save**).
 - Your save lives in the app. **Uninstalling the app or clearing its data deletes it**, so download a copy from time to time.
 - To continue a Local play save on a server, import the downloaded file on that server's player portal (if its owner allows it), or ask its owner to import it.
-- Local play is in English: on a phone set to Korean or Thai, some event and quest names show in English.
+- Local play is in English: on a phone set to Korean or Thai, some event and quest names show in English. The app makes the data tables only from English game data. With Korean or Thai game data, get the tables from a server or a saved file.
 
 ## Your account on the server's website
 Every Reflipped server has a player portal at `<server address>/portal`. Sign in with your Reflipped account to:
@@ -83,10 +86,11 @@ When a newer app is out, a server may show **Update available** once, or say **T
 The title screen shows the app's version and the server's, for example "Reflipped · app 0.1.0 · server 1.0.1".
 
 ## Moving from an app you built
-An app you built yourself is signed with your own key, so Android won't install the ready-made app over it.
-1. **Keep your progress:** if you play as a guest, link an account first (**Menu → Account Info → Link an account**). Saves in Local play: download a copy from the Admin panel.
-2. Uninstall your old Reflipped app. This deletes its downloaded game data.
-3. Install the ready-made app (step 1) and sign in to your account.
+The ready-made app installs next to an app you built yourself. They are separate apps: each has its own game data, guest saves and Local play saves.
+1. **Keep your progress** in the old app: if you play as a guest, link an account (**Menu → Account Info → Link an account**). For Local play, download your save from the Admin panel.
+2. **Optional, to skip the 10 GB download:** in the old app, sign out and choose **Export game data** on the welcome screen (see [game data packs](game-data-pack.md)).
+3. Install the ready-made app (step 1) and sign in to your account. Install the exported file with **Install from a file** when the app asks for the game data. For Local play, upload your save in the new app's Admin panel (**Players**, your name); switch **Settings → Rewards** to Managed first, since Automatic rules block uploads.
+4. Once everything is there, uninstall the old app to free its space.
 
 ## Event modes on server cards
 Each server card shows how that server schedules events:
@@ -103,7 +107,7 @@ Each server card shows how that server schedules events:
 ## Problems
 | What you see | What to do |
 |---|---|
-| "App not installed" or "package conflicts" | Another Reflipped app is installed, signed with a different key (for example one you built). See [Moving from an app you built](#moving-from-an-app-you-built). |
+| "App not installed" or "package conflicts" | A copy of the app signed by someone else is installed (not one from the Releases page). Sign in to an account in it to keep your save, then uninstall it first. |
 | "Set up the game" says the version is wrong | Your copy isn't version 0.0.81. Use another copy. |
 | "No Reflipped server at that address" | Check the address and port with the server's owner. Open `<address>/shell/config` in the phone's browser: it should show a line starting with `{"reflipped":1`. |
 | "This server needs a newer Reflipped app" | Update the app (see "Updating the app"). |

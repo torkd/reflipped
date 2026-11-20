@@ -11,7 +11,9 @@
 // `--out <dir>` writes it elsewhere; `--minify` shrinks the code (stack traces keep the function names).
 // `--no-assets` leaves `assets/` out too (SH-13 step 3, "Server data pack" in docs/on-device-server.md): the bundle then
 // reads the converted game data from the data pack, `$DATA_PACK_DIR/assets/` (`npm run datapack` builds it), and refuses
-// a pack whose assets differ from the ones it was built with. The bundle then holds no game content at all.
+// a pack whose assets differ from the ones it was built with. Its code holds no game content then; the app still
+// carries a copy of the converted data in `datapack-source/` (SH-29), from which it builds the pack itself with the
+// master tables of the game files on the phone. The server never reads that folder.
 import { build } from "esbuild";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -120,6 +122,14 @@ execFileSync(process.execPath, [path.join(root, "scripts", "build-info.mjs"), "-
 // in client/air-shell/java/.../service/ServerBundle.java)
 if (packAssets) writeFileSync(path.join(outDir, "datapack-assets-digest.txt"), assetsDigest() + "\n");
 if (packAssets && mastersPin !== null) writeFileSync(path.join(outDir, "datapack-masters-digest.txt"), mastersPin + "\n");
+// SH-29: what the app needs to build that pack itself from the game files on the phone: the list of files it takes
+// from them (src/datapack/source.ts) and the converted game data, which the server reads only from the pack
+if (packAssets) {
+    const source = path.join(outDir, "datapack-source");
+    cpSync(assetsDir, path.join(source, "assets"), { recursive: true });
+    execFileSync(process.execPath, ["--import", "tsx", path.join(root, "src", "datapack", "source.ts"),
+        path.join(source, "source.json")], { cwd: root, stdio: "inherit" });
+}
 
 const externalAssets = new Set();
 for (const input of Object.values(result.metafile.inputs))

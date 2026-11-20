@@ -107,7 +107,7 @@ public final class ServerSetup {
                     Log.w(StubContext.TAG, "local server config failed (" + failure.getClass().getSimpleName() + ")");
                     continue;
                 }
-                if (apply(activity, address, config, assetsFrom)) return address;
+                if (apply(activity, address, config)) return address;
                 continue;
             }
             String initial = known;
@@ -131,7 +131,7 @@ public final class ServerSetup {
                 }, memory);
                 if (checked == null) break;
                 initial = checked.address;
-                if (apply(activity, checked.address, checked.config, assetsFrom)) return checked.address;
+                if (apply(activity, checked.address, checked.config)) return checked.address;
             }
         }
     }
@@ -140,9 +140,11 @@ public final class ServerSetup {
      * Makes `server` the chosen one: what happens to the downloaded game files, the sign-in choice, and the stored
      * address and metadata. False when the player went back (or applying it failed), so the list stays open.
      */
-    private static boolean apply(Activity activity, String server, JSONObject config, String assetsFrom) {
+    private static boolean apply(Activity activity, String server, JSONObject config) {
         try {
             SharedPreferences prefs = ShellConfig.prefs(activity);
+            // read now, not when the welcome screen opened: Local play's setup may have installed game files (SH-29)
+            String assetsFrom = prefs.getString("assetServer", "");
             boolean resetPending = prefs.getBoolean("serverAssetReset", false);
             String name = ServerDirectory.reported(server, config).name;
             // Game files from another server (or of unknown origin) are replaced before playing, unless nothing of

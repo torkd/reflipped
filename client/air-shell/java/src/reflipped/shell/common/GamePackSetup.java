@@ -83,17 +83,18 @@ public final class GamePackSetup {
             }
             Uri file = LocalPlaySetup.pickFile(activity, TITLE);
             if (file == null) continue;
-            String problem = install(activity, server, file);
+            String problem = install(activity, server, ShellConfig.cdn(activity), file);
             if (problem == null) return true;
             ShellDialogs.choose(activity, TITLE, problem, "OK");
         }
     }
 
     /**
-     * Installs the pack, or the copy of the {@code .cdn} folder (SH-29), in {@code file}; null when done, else what
-     * went wrong, for the player.
+     * Installs the pack, or the copy of the {@code .cdn} folder (SH-29), in {@code file} as the base files of
+     * {@code server}, whose downloads would come from {@code cdn}; null when done, else what went wrong, for the player.
+     * Also Local play's setup (SH-29), for the server on this phone before it runs: it builds its data pack from them.
      */
-    private static String install(Activity activity, String server, Uri file) {
+    static String install(Activity activity, String server, String cdn, Uri file) {
         ShellDialogs.Progress cover = ShellDialogs.progress(activity, "Installing game data", "Checking the file…");
         AtomicLong done = new AtomicLong();
         AtomicLong total = new AtomicLong(1);
@@ -138,7 +139,7 @@ public final class GamePackSetup {
             boolean complete = pack != null ? pack.install(target, progress, closed::get)
                     : copy.install(manifest, target, progress, closed::get);
             if (!complete) return "The installation stopped. Try again.";
-            GameFiles.installedFromPack(activity, manifest.lang, manifest.totalSize, ShellConfig.cdn(activity));
+            GameFiles.installedFromPack(activity, manifest.lang, manifest.totalSize, cdn);
             // the files now hold the base set, and the game takes this server's layers on top
             prefs(activity).edit().putString("assetServer", server)
                     .putString("assetInfo", prefs(activity).getString("serverAssets", "")).apply();

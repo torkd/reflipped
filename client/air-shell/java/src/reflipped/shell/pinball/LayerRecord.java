@@ -195,6 +195,25 @@ public final class LayerRecord {
         return true;
     }
 
+    /**
+     * SH-29: the base game's copy of the archive path {@code path} (a CDN member name, {@code production/upload/…}),
+     * under either of its names (the game may keep it as its shortened twin): the file in {@code assetDir}, or the kept
+     * original when a layer changed it. Null when the base files hold none, or when a layer changed it and its original
+     * wasn't kept (a version 1 record). {@code changed} is {@link #read}'s answer; with null (no record) the files
+     * are taken as they are, and the caller's checks must tell a layer's copy from the base one.
+     */
+    public static File baseFile(File root, File assetDir, Set<String> changed, String path) {
+        String twin = ArchiveExtractor.isShortened(path) ? ArchiveExtractor.shortenedToActual(path)
+                : ArchiveExtractor.actualToShortened(path);
+        for (String name : twin == null ? new String[]{path} : new String[]{path, twin}) {
+            File file;
+            if (changed != null && changed.contains(name)) file = new File(originals(root), name);
+            else file = new File(assetDir, name);
+            if (file.isFile()) return file;
+        }
+        return null;
+    }
+
     /** The files under {@code dir}, as paths relative to it. */
     static Set<String> listFiles(File dir) {
         Set<String> out = new LinkedHashSet<>();

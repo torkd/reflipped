@@ -9,8 +9,10 @@
 # identity. The public history is one commit per release and only moves forward, so clones just pull.
 #
 # Without `--push` it is a dry run: it checks SOURCE, builds the commit locally and shows what changed
-# since the last public release. `--tag NAME` also tags the release on the mirror. With the tag, `--release` then
-# copies the forge's release of that name (the app's APK and .sha256) to a GitHub release, and `--image` the server's
+# since the last public release. `--tag NAME` also tags the release on the mirror (as a bare tag object, so a forge
+# tag of the same name in this clone doesn't matter); when the mirror already has the tree, a run with `--tag` only
+# adds the missing tag and goes on to the release, and a tag of that name on another commit stops it. With the tag,
+# `--release` then copies the forge's release of that name (the app's APK and .sha256) to a GitHub release, and `--image` the server's
 # image to ghcr.io, through scripts/release/github-release.sh (its header has what they need: GITHUB_TOKEN,
 # FORGE_TOKEN, registry logins); `--notes-file` gives the release notes. In a dry run they show their plan too. If
 # the push worked but the release step didn't, run github-release.sh --push on its own to finish.
@@ -100,22 +102,45 @@ fi
 if [ "$status" -eq 0 ]; then
     git fetch -q "$remote" "+refs/heads/$branch:refs/publish/$branch"
     parent=$(git rev-parse "refs/publish/$branch")
-    if [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
-        echo "the mirror's $branch already has $source's tree; nothing to publish"
-        if [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; then
-            echo "to (re)make the GitHub release of a tag that is already there: sh scripts/release/github-release.sh [--push] [--image] $tag"
-        fi
-        exit 0
-    fi
 fi
 
-commit=$(GIT_AUTHOR_NAME="$name" GIT_AUTHOR_EMAIL="$email" \
-    GIT_COMMITTER_NAME="$name" GIT_COMMITTER_EMAIL="$email" \
-    git commit-tree "$tree" ${parent:+-p "$parent"} -m "$message")
+# The tag on the mirror, if it has one already (its commit, peeled).
+mirror_tag=""
+if [ -n "$tag" ]; then
+    # an annotated tag lists its object first, then the commit as `<tag>^{}`; a lightweight one only the commit
+    mirror_tag=$(git ls-remote "$remote" "refs/tags/$tag" "refs/tags/$tag^{}" |
+        awk '$2 ~ /\^\{\}$/ { peeled = $1 } $2 !~ /\^\{\}$/ { plain = $1 } END { print (peeled != "" ? peeled : plain) }')
+fi
+
+# The mirror already has this tree: nothing new to commit, but a release run can still add the tag (and the release)
+# to that commit, e.g. after a run that stopped between pushing the branch and the tag.
+new_commit=1
+if [ -n "$parent" ] && [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
+    if [ -z "$tag" ]; then
+        echo "the mirror's $branch already has $source's tree; nothing to publish"
+        exit 0
+    fi
+    new_commit=0
+    commit=$parent
+else
+    commit=$(GIT_AUTHOR_NAME="$name" GIT_AUTHOR_EMAIL="$email" \
+        GIT_COMMITTER_NAME="$name" GIT_COMMITTER_EMAIL="$email" \
+        git commit-tree "$tree" ${parent:+-p "$parent"} -m "$message")
+fi
+if [ -n "$mirror_tag" ] && [ "$mirror_tag" != "$commit" ]; then
+    echo "the mirror already has a tag $tag, on $mirror_tag, not on this release; nothing published" >&2
+    exit 1
+fi
 
 echo "source:  $source ($source_commit)"
-echo "release: $commit \"$message\" by $name <$email>"
-if [ -n "$parent" ]; then
+if [ "$new_commit" -eq 0 ]; then
+    echo "release: $commit, already the mirror's $branch; only the tag${mirror_tag:+ (already there)} and release are left"
+else
+    echo "release: $commit \"$message\" by $name <$email>"
+fi
+if [ "$new_commit" -eq 0 ]; then
+    :
+elif [ -n "$parent" ]; then
     echo "changes since the last public release ($parent):"
     git diff --stat "$parent" "$commit" | tail -n 20
 else
@@ -132,15 +157,19 @@ if [ "$push" -eq 0 ]; then
 fi
 
 # A plain push: if the mirror moved since the fetch, it is refused instead of overwritten.
-git push "$remote" "$commit:refs/heads/$branch"
-if [ -n "$tag" ]; then
-    GIT_COMMITTER_NAME="$name" GIT_COMMITTER_EMAIL="$email" git tag -a -m "$message" "$tag" "$commit"
-    git push "$remote" "refs/tags/$tag"
-    # the tag belongs to the mirror only, so it never reaches origin with the other tags
-    git tag -d "$tag" >/dev/null
+if [ "$new_commit" -eq 1 ]; then
+    git push "$remote" "$commit:refs/heads/$branch"
+fi
+if [ -n "$tag" ] && [ -z "$mirror_tag" ]; then
+    # The annotated tag is made as a bare object and pushed by its id: the tag belongs to the mirror only, so it never
+    # becomes a local tag (which would reach origin with the other tags), and a local or forge tag of the same name,
+    # on the forge's own commit, doesn't get in the way.
+    tag_object=$(printf 'object %s\ntype commit\ntag %s\ntagger %s <%s> %s +0000\n\n%s\n' \
+        "$commit" "$tag" "$name" "$email" "$(date -u +%s)" "$message" | git mktag)
+    git push "$remote" "$tag_object:refs/tags/$tag"
 fi
 git update-ref "refs/publish/$branch" "$commit"
-echo "published $source as $commit"
+echo "published $source as $commit${tag:+, tagged $tag}"
 if [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; then
     github_release --push
 fi

@@ -88,6 +88,17 @@ public final class GameFiles {
         return to.optBoolean("schedule", false) || !from.optBoolean("schedule", true);
     }
 
+    /**
+     * SH-29: the base game files on the phone, for Local play's data pack ({@link reflipped.shell.service.DataPackBuilder}):
+     * each path from the extraction folder, or its kept original where a layer changed it.
+     */
+    static reflipped.shell.service.DataPackBuilder.Files baseFiles(Activity activity) {
+        File root = root(activity);
+        File dir = downloadDir(activity);
+        java.util.Set<String> changed = LayerRecord.read(root);
+        return member -> LayerRecord.baseFile(root, dir, changed, member);
+    }
+
     /** Where the game extracts its archives: {@code production---latest/download} (AssetDownloader's downloadDir). */
     public static File downloadDir(Activity activity) {
         return new File(root(activity), "download");

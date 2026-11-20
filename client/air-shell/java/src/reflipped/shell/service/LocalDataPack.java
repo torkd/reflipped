@@ -25,7 +25,8 @@ import java.util.zip.ZipInputStream;
 /**
  * The server data pack on the phone (SH-13 step 5): the game-derived tables the server reads (src/lib/dataPack.ts),
  * kept in {@code <files>/server/datapack} and never in the APK. Local play setup gets it from an online Reflipped
- * server that offers it ({@code GET /shell/datapack}) or from a zip file the player picks. A pack fits when its
+ * server that offers it ({@code GET /shell/datapack}) or from a zip file the player picks, or (SH-29) is built here
+ * from the game files on the phone ({@link #buildFromGameFiles}, {@link DataPackBuilder}). A pack fits when its
  * manifest's {@code assetsDigest} is the one this app's server bundle names ({@code datapack-assets-digest.txt}); an
  * app update with another server bundle may need another pack. The server checks every file again when it starts.
  */
@@ -167,6 +168,69 @@ public final class LocalDataPack {
         }
     }
 
+    /** Whether this app can build the pack from the game files ({@link #buildFromGameFiles}). */
+    public static boolean canBuild(Context context) {
+        try {
+            return DataPackBuilder.available(context.getAssets().open(ServerBundle.ASSET));
+        } catch (IOException missing) {
+            return false;
+        }
+    }
+
+    /**
+     * SH-29: builds the pack from the base game files on this phone ({@code files} finds them) and installs it. Returns
+     * the CDN version. Refused, with a reason for the player, when the files can't give the official pack: missing
+     * tables, another language, or files a server's layers changed without the originals kept. Call off the UI thread.
+     */
+    public static String buildFromGameFiles(Context context, DataPackBuilder.Files files, Progress progress)
+            throws Problem, IOException {
+        File staging = new File(ServerBundle.root(context), "datapack.new");
+        deleteTree(staging);
+        String cdnVersion;
+        try {
+            DataPackBuilder.Built built;
+            try {
+                built = DataPackBuilder.build(context.getAssets().open(ServerBundle.ASSET), files, staging,
+                        progress == null ? null : progress::at);
+            } catch (DataPackBuilder.Refused refused) {
+                throw new Problem(refused.getMessage());
+            }
+            if (!built.missingOptional.isEmpty())
+                Log.i(ServerService.TAG, "data pack from the game files: " + built.missingOptional.size()
+                        + " optional files missing (" + built.missingOptional.get(0) + " first)");
+            String pinned = expectedMastersDigest(context);
+            JSONArray listed = built.manifest.optJSONArray("files");
+            if (pinned != null && listed != null && !pinned.equals(DataPackBuilder.mastersDigest(listed)))
+                throw new Problem("The game files on this phone don't hold the official English data tables of this"
+                        + " version of the Reflipped app (game files in another language, or changed by a server"
+                        + " before this version of the app kept the originals).");
+            cdnVersion = check(context, staging);
+        } catch (Problem | IOException | RuntimeException failed) {
+            deleteTree(staging);
+            throw failed;
+        }
+        commit(context, staging);
+        Log.i(ServerService.TAG, "built the data pack for CDN " + cdnVersion + " from the game files");
+        return cdnVersion;
+    }
+
+    /**
+     * Whether the file read from {@code in} (closed here) looks like a server data pack zip rather than other game
+     * data (a game data pack or a copy of the CDN folder, which only the game's files take): its first entry is a pack
+     * path. Only a few bytes are read.
+     */
+    public static boolean looksLikePack(InputStream in) {
+        try (ZipInputStream zip = new ZipInputStream(in)) {
+            ZipEntry first = zip.getNextEntry();
+            if (first == null) return false;
+            String name = first.getName();
+            return name.equals("manifest.json") || name.startsWith("master/") || name.startsWith("assets/")
+                    || name.startsWith("files/");
+        } catch (IOException | IllegalArgumentException notZip) {
+            return false;
+        }
+    }
+
     /** Unpacks into a staging folder, checks the manifest and every file, then swaps it in. Returns the CDN version. */
     private static String install(Context context, File zip, Progress progress) throws Problem, IOException {
         File root = ServerBundle.root(context);
@@ -215,6 +279,14 @@ public final class LocalDataPack {
             deleteTree(staging);
             throw failed;
         }
+        commit(context, staging);
+        Log.i(ServerService.TAG, "installed the data pack for CDN " + cdnVersion + " (" + entries + " entries)");
+        return cdnVersion;
+    }
+
+    /** Puts the checked pack in {@code staging} in place of the installed one. */
+    private static void commit(Context context, File staging) throws IOException {
+        File root = ServerBundle.root(context);
         File current = dir(context);
         File old = new File(root, "datapack.old");
         deleteTree(old);
@@ -224,8 +296,6 @@ public final class LocalDataPack {
             throw new IOException("can't put the new game data in place");
         }
         deleteTree(old);
-        Log.i(ServerService.TAG, "installed the data pack for CDN " + cdnVersion + " (" + entries + " entries)");
-        return cdnVersion;
     }
 
     /** The checks the server makes at start-up (src/lib/dataPack.ts), so a bad pack is refused here, not by Node. */
@@ -243,8 +313,10 @@ public final class LocalDataPack {
             throw new Problem("This game data is for another version of the Reflipped app.");
         JSONArray files = manifest.optJSONArray("files");
         if (files == null || files.length() == 0) throw new Problem("This file isn't the game data for Local play.");
+        if (!DataPackBuilder.assetsDigest(files).equals(manifest.optString("assetsDigest")))
+            throw new Problem("The game data is damaged. Get it again.");
         String pinned = expectedMastersDigest(context);
-        if (pinned != null && !pinned.equals(mastersDigest(files)))
+        if (pinned != null && !pinned.equals(DataPackBuilder.mastersDigest(files)))
             throw new Problem("This game data isn't the official data for this version of the Reflipped app.");
         for (int i = 0; i < files.length(); i++) {
             JSONObject file = files.optJSONObject(i);
@@ -254,22 +326,6 @@ public final class LocalDataPack {
                 throw new Problem("The game data is damaged. Get it again.");
         }
         return manifest.optString("cdnVersion");
-    }
-
-    /** As src/lib/dataPack.ts mastersDigest: SHA-256 over the sorted `path sha256\n` lines of the master/ and files/ files. */
-    private static String mastersDigest(JSONArray files) {
-        java.util.List<String> lines = new java.util.ArrayList<>();
-        for (int i = 0; i < files.length(); i++) {
-            JSONObject file = files.optJSONObject(i);
-            String path = file == null ? "" : file.optString("path");
-            // as src/lib/dataPack.ts mastersDigest: the master tables and, since FT-74, the battle scripts in files/
-            if (path.startsWith("master/") || path.startsWith("files/"))
-                lines.add(path + " " + file.optString("sha256") + "\n");
-        }
-        java.util.Collections.sort(lines);
-        MessageDigest digest = sha256();
-        for (String line : lines) digest.update(line.getBytes(StandardCharsets.UTF_8));
-        return hex(digest.digest());
     }
 
     private static HttpURLConnection open(String url) throws IOException {

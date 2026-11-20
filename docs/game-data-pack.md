@@ -15,6 +15,8 @@ One pack works on every Reflipped server.
 
 You can delete the file afterwards. The same question comes up whenever the phone has no game data: on first start, after **Clear Cache** on the title screen, or after switching to a server whose extras don't fit.
 
+**Local play** needs no server at all with a pack. When the app asks for the game's data tables, choose **From a file** and pick the pack. The app installs the game data and makes the tables from it. If the phone already has the game data, the app makes them without asking.
+
 If the app refuses the file, its message says why (not a pack, incomplete, damaged, compressed, or not the official game data).
 
 ## Exporting the game data from a phone

@@ -19,10 +19,12 @@ import java.util.zip.ZipInputStream;
 
 /**
  * The server's code in the APK and its unpacked copy. build.py puts the bundle ({@code npm run bundle}: server.js,
- * build-info.json, web/, and datapack-assets-digest.txt, the data pack it accepts) into the APK as the AIR application file {@value #ASSET}, a zip of stored
+ * build-info.json, web/, datapack-assets-digest.txt, the data pack it accepts, and datapack-source/, what the app builds
+ * that pack from: {@link DataPackBuilder}) into the APK as the AIR application file {@value #ASSET}, a zip of stored
  * entries (the APK compresses it). The service unpacks it into {@code <files>/server}, the server's working directory,
  * on the first start and again after every install or update of the app. The data there ({@code .database/}, the data
- * pack in {@code datapack/}) is never touched: only the names the previous unpack wrote are removed first.
+ * pack in {@code datapack/}) is never touched: only the names the previous unpack wrote are removed first. The
+ * {@code datapack-source/} entries stay in the APK.
  */
 final class ServerBundle {
     static final String ASSET = "reflipped-server.zip";
@@ -83,6 +85,8 @@ final class ServerBundle {
                 File target = new File(root, name);
                 if (!target.getCanonicalPath().startsWith(canonicalRoot) || name.startsWith("."))
                     throw new IllegalStateException("bad entry in the server bundle: " + name);
+                // SH-29: what the app builds the data pack from, read from the APK (LocalDataPack), never by the server
+                if (name.startsWith(DataPackBuilder.SOURCE_DIR)) continue;
                 top.add(name.split("/", 2)[0]);
                 if (entry.isDirectory()) {
                     target.mkdirs();
