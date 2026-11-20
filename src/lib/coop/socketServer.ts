@@ -16,6 +16,8 @@ import net from "net"
 import { randomBytes } from "crypto"
 import { everyoneEnded, getRoom, openRound, startRound, takeAdmission, takeBattleAdmission } from "./rooms"
 import { establisherOf } from "./mates"
+import { LoungeHub, LoungeStartMember } from "./loungeHub"
+import type { Lounge } from "./lounges"
 
 // --- variant indices (docs/coop-protocol.md) ---------------------------------------------------
 const HandshakeResult = { Accept: 0, Denied: 1, Reconnect: 2, Exception: 3, Complete: 4 }
@@ -48,6 +50,9 @@ const COM_PLAYER_ROLE_KIND = 99
 /** Players per room, AI companions included. */
 export const ROOM_CAPACITY = 3
 
+/** Summoned companions a room remembers (each summon issues at most two). */
+const MAX_ISSUED_COMS = 32
+
 // Limits against a single client tying the server up (SEC-12). Messages are small JSON (a lobby mate, a few battle
 // commands); the client sends lobby or battle traffic, or gets a keepalive, well within the idle limit.
 export const MAX_MESSAGE_BYTES = 64 * 1024
@@ -61,7 +66,7 @@ type Json = any
 interface Peer {
     socket: net.Socket
     id: number
-    kind?: "meeting" | "battle"
+    kind?: "meeting" | "battle" | "lounge"
     connectionId?: string
     roomNumber?: string
     viewerId?: number
@@ -80,9 +85,24 @@ interface Peer {
     send(value: Json, quiet?: boolean): void
 }
 
+interface LobbyMember {
+    peer: Peer
+    /** the member's mate as it last entered; kept while it is away (suspendedAt) or entering again after a resume */
+    mate: Json | null
+    /** it sent Enter on its current connection and got its Welcome, so it takes room messages */
+    entered: boolean
+    /**
+     * When the member's game went to the background (Suspend) or its socket closed without Bye before the battle: its
+     * slot stays reserved and the others still see it, until it comes back with a fresh handshake or `graceTimer`
+     * (the resume grace) removes it (CO-3).
+     */
+    suspendedAt?: number
+    graceTimer?: NodeJS.Timeout
+}
+
 interface Lobby {
     roomNumber: string
-    members: Map<string, { peer: Peer, mate: Json | null }>
+    members: Map<string, LobbyMember>
     /** AI companions added by EnterComs, keyed by their synthetic connection id */
     coms: Map<string, Json>
     /** connection ids at the time the battle started; the battle waits for all of them */
@@ -94,6 +114,8 @@ interface Lobby {
     startedFrom: Map<string, string>
     /** the viewer id of each of those members */
     startedViewers: Map<string, number>
+    /** the next tick of the host's start countdown (coop.start_countdown_seconds), while it runs */
+    countdown: NodeJS.Timeout | null
 }
 
 interface Battle {
@@ -139,6 +161,21 @@ export interface CoopSocketServerOptions {
      * relayed as the client sends them. src/server.ts passes the save check (SEC-15).
      */
     checkMate?: (playerId: number, mate: Json) => Json | null
+    /**
+     * How long (ms) a lobby member whose game went to the background, or whose socket closed without Bye, keeps its slot
+     * so that it can come back (restore_room and a fresh handshake); 0 removes it at once. A host away for longer closes
+     * the room (`onExpire`). Default 0; src/server.ts passes the admin setting.
+     */
+    resumeGraceMs?: number | (() => number)
+    /** Seconds the host's StartBattle counts down (StartRemainingTime toasts) before Start; 0 starts at once (default). */
+    startCountdownSeconds?: number | (() => number)
+    /** How long (ms) a battle waits for players who never connect (default BATTLE_START_WAIT_MS). */
+    battleStartWaitMs?: number | (() => number)
+    /**
+     * Decides the members' exchange tickets when a lounge's host taps Go (src/lib/multiSpecialExchangeLounge.ts); false
+     * refuses the start. Without it a lounge starts without deciding anything (tests of the socket alone).
+     */
+    onLoungeStart?: (lounge: Lounge, members: LoungeStartMember[]) => boolean
 }
 
 function resolveMs(value: number | (() => number)): number {
@@ -159,6 +196,11 @@ export class CoopSocketServer {
     private lobbies = new Map<string, Lobby>()
     /** each room's host mate as last entered, so the room keeps its establisher while the host is away (Return to Room) */
     private hostMates = new Map<string, Json>()
+    /**
+     * the AI companions the server handed out for each room (`multi_battle_quest/summon`), by comId, in lobby format:
+     * EnterComs adds only these, as issued (SEC-16)
+     */
+    private issuedComs = new Map<string, Map<number, Json>>()
     private battles = new Map<string, Battle>()
     private nextPeerId = 1
     private connectionsPerAddress = new Map<string, number>()
@@ -171,9 +213,14 @@ export class CoopSocketServer {
     private abandonedRoomMs: number | (() => number)
     private onExpire: ((roomNumber: string) => void) | null
     private checkMate: ((playerId: number, mate: Json) => Json | null) | null
+    private resumeGraceMs: number | (() => number)
+    private startCountdownSeconds: number | (() => number)
+    private battleStartWaitMs: number | (() => number)
     /** rooms whose host is away, closed by onExpire unless the host comes back first */
     private expiries = new Map<string, NodeJS.Timeout>()
     private listening = false
+    /** the multi special exchange lounges' socket side (`multi_special_exchange_socklet`, CO-3) */
+    readonly lounges: LoungeHub
 
     constructor(options: CoopSocketServerOptions = {}) {
         this.log = options.log ?? (line => console.log(line))
@@ -182,6 +229,14 @@ export class CoopSocketServer {
         this.abandonedRoomMs = options.abandonedRoomMs ?? ABANDONED_ROOM_MS
         this.onExpire = options.onExpire ?? null
         this.checkMate = options.checkMate ?? null
+        this.resumeGraceMs = options.resumeGraceMs ?? 0
+        this.startCountdownSeconds = options.startCountdownSeconds ?? 0
+        this.battleStartWaitMs = options.battleStartWaitMs ?? BATTLE_START_WAIT_MS
+        this.lounges = new LoungeHub({
+            log: line => this.log(line),
+            resumeGraceMs: () => resolveMs(this.resumeGraceMs),
+            onStart: options.onLoungeStart
+        })
         this.server = net.createServer(socket => this.accept(socket))
         this.server.maxConnections = MAX_CONNECTIONS
     }
@@ -211,10 +266,12 @@ export class CoopSocketServer {
     }
 
     private ackLobbies() {
+        this.lounges.ackAll()
         for (const lobby of this.lobbies.values()) {
             for (const member of lobby.members.values()) {
-                // a member that hasn't entered yet (no Enter, so no Welcome) isn't waiting on the room's timers
-                if (member.mate === null) continue
+                // a member that hasn't entered yet (no Enter, so no Welcome) isn't waiting on the room's timers, and one
+                // that is away has no socket to take it
+                if (!member.entered || member.suspendedAt !== undefined) continue
                 member.peer.send([MeetingServer2Client.Message, [MeetingServerMessage.AckHeartbeat, member.peer.connectionId]], true)
             }
         }
@@ -226,6 +283,7 @@ export class CoopSocketServer {
         this.keepAliveTimer = null
         for (const timer of this.expiries.values()) clearTimeout(timer)
         this.expiries.clear()
+        this.lounges.close()
         return new Promise(resolve => {
             for (const peer of this.peers) peer.socket.destroy()
             this.server.close(() => resolve())
@@ -250,6 +308,36 @@ export class CoopSocketServer {
             })
         }
         this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Mates, this.mates(lobby)]])
+    }
+
+    /**
+     * Records the AI companions the summon route handed out for a room ([{comId, degreeId, party (lobby format),
+     * rank}]), the only ones its host's EnterComs may add. A room keeps the last MAX_ISSUED_COMS.
+     */
+    issueCompanions(roomNumber: string, coms: Json[]) {
+        const issued = this.issuedComs.get(roomNumber) ?? new Map<number, Json>()
+        for (const com of coms) issued.set(Number(com.comId), com)
+        while (issued.size > MAX_ISSUED_COMS) issued.delete(issued.keys().next().value!)
+        this.issuedComs.set(roomNumber, issued)
+    }
+
+    /**
+     * The companions of an EnterComs that the server issued for the room, each once and not already in the lobby,
+     * rebuilt from what was issued: the host's game only picks their names (at most 32 characters, like a player's).
+     */
+    private issuedCompanions(lobby: Lobby, sent: Json[]): Json[] {
+        const issued = this.issuedComs.get(lobby.roomNumber)
+        const inLobby = new Set([...lobby.coms.values()].map(com => Number(com.comId)))
+        const out: Json[] = []
+        for (const com of Array.isArray(sent) ? sent : []) {
+            const comId = Number(com?.comId)
+            const own = issued?.get(comId)
+            if (own === undefined || inLobby.has(comId)) continue
+            inLobby.add(comId)
+            const name = typeof com.name === "string" && com.name !== "" ? com.name.slice(0, 32) : (own.name ?? "")
+            out.push({ ...own, name })
+        }
+        return out
     }
 
     /** The host's lobby mate: as it is in the lobby, or as it last was (null if the host never entered). */
@@ -297,8 +385,10 @@ export class CoopSocketServer {
         const lobby = this.lobbies.get(roomNumber)
         this.cancelExpiry(roomNumber)
         this.hostMates.delete(roomNumber)
+        this.issuedComs.delete(roomNumber)
         if (!lobby) return
-        this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Disbanded, textKey]])
+        // also to members still entering: EnterRoomService shows the text and leaves
+        this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Disbanded, textKey]], undefined, true)
         this.forgetLobby(lobby)
     }
 
@@ -374,6 +464,8 @@ export class CoopSocketServer {
         if (!lobby) return "open"
         // a finished round's lobby opens again for whoever comes in first (handshake)
         if (lobby.startedWith) return this.roundOver(roomNumber) ? "open" : "battle"
+        // the host's start countdown runs: the battle is as good as started
+        if (lobby.countdown !== null) return "battle"
         return lobby.members.size >= ROOM_CAPACITY ? "filled" : "open"
     }
 
@@ -469,6 +561,7 @@ export class CoopSocketServer {
         }
         const message = JSON.parse(text)
         if (!peer.kind) return this.handshake(peer, message)
+        if (peer.kind === "lounge") return this.lounges.receive(peer, message)
         if (peer.kind === "meeting") return this.meeting(peer, message)
         return this.battle(peer, message)
     }
@@ -480,6 +573,12 @@ export class CoopSocketServer {
     }
 
     private handshake(peer: Peer, command: Json) {
+        // the exchange campaign's lounge: no room number, its own registry (src/lib/coop/loungeHub.ts)
+        if (command?.socklet === "multi_special_exchange_socklet") {
+            peer.kind = "lounge"
+            peer.viewerId = Number(command.viewerId)
+            return this.lounges.handshake(peer, command)
+        }
         const roomNumber = normaliseRoomNumber(String(command?.roomNumber ?? ""))
         const room = getRoom(roomNumber)
         if (!room) {
@@ -503,6 +602,12 @@ export class CoopSocketServer {
             // number): the room opens again for its next round. While the battle runs, the lobby is closed.
             if (room.inBattle && !this.reopen(roomNumber)) return this.deny(peer, "multibattle_room_already_started")
             const existing = this.lobbies.get(roomNumber)
+            // the same player again in a lobby that hasn't started: back from the background, or a stale connection
+            // still open; it takes its own slot over (CO-3)
+            const resumed = existing && !existing.startedWith
+                ? [...existing.members].find(([, member]) => member.peer.viewerId === viewerId) : undefined
+            if (resumed) return this.resume(peer, existing!, resumed[0], resumed[1], admission.playerId)
+            if (existing && existing.countdown !== null) return this.deny(peer, "multibattle_room_already_started")
             if (existing && existing.members.size + existing.coms.size >= ROOM_CAPACITY) {
                 // a player takes an AI companion's place; with no companion left the room is full
                 const companion = [...existing.coms.keys()].pop()
@@ -517,7 +622,7 @@ export class CoopSocketServer {
             const lobby = this.lobbyFor(roomNumber)
             if (this.isHost(lobby, peer)) this.cancelExpiry(roomNumber)
             peer.lobby = lobby
-            lobby.members.set(peer.connectionId, { peer, mate: null })
+            lobby.members.set(peer.connectionId, { peer, mate: null, entered: false })
             peer.send([HandshakeResult.Accept, peer.connectionId, roomNumber])
             return
         }
@@ -527,6 +632,11 @@ export class CoopSocketServer {
             // (Wi-Fi to mobile data, a carrier NAT handing out another address) is let in once with the battle
             // admission of its own signed `start`, which the client sends right before it connects (CO-4).
             const connectionId = String(command.connectionId ?? "")
+            // a player the battle already started without (its start timeout) can't come in late
+            if (this.battles.get(roomNumber)?.absent.has(connectionId)) {
+                this.log(`[coop] #${peer.id} battle handshake for ${connectionId} after the battle started without it`)
+                return this.deny(peer, "multibattle_room_already_started")
+            }
             const lobby = this.lobbies.get(roomNumber)
             const member = lobby?.startedWith?.includes(connectionId) === true
                 && !this.battles.get(roomNumber)?.members.has(connectionId)
@@ -551,6 +661,66 @@ export class CoopSocketServer {
         this.log(`[coop] #${peer.id} unknown socklet ${command?.socklet}`)
         peer.send([HandshakeResult.Exception, `unknown socklet ${command?.socklet}`])
         peer.socket.end()
+    }
+
+    /**
+     * A lobby member's new connection takes its slot over: its game came back from the background
+     * (RestoreRoomProcessingFlow: restore_room, then a fresh handshake), or the old socket is stale. The connection keeps
+     * the member's connection id, so the others' StateChanged and the battle's ids stay the same. Its mate stays in the
+     * lobby; its Enter then sends it the Welcome (which has it, or the client throws 15202) and the others Mates.
+     */
+    private resume(peer: Peer, lobby: Lobby, connectionId: string, member: LobbyMember, playerId?: number) {
+        const old = member.peer
+        if (member.graceTimer !== undefined) clearTimeout(member.graceTimer)
+        const away = member.suspendedAt !== undefined ? ` after ${Math.round((Date.now() - member.suspendedAt) / 1000)} s away` : ", replacing a stale connection"
+        member.graceTimer = undefined
+        member.suspendedAt = undefined
+        this.cancelCountdown(lobby, "a member reconnected")
+        // the old socket's close no longer finds itself in the lobby (Peer.lobby, disconnect's peer check)
+        old.lobby = undefined
+        if (old !== peer && !old.socket.destroyed) old.socket.destroy()
+        peer.kind = "meeting"
+        peer.viewerId = old.viewerId
+        peer.playerId = playerId ?? old.playerId
+        peer.connectionId = connectionId
+        peer.lobby = lobby
+        member.peer = peer
+        member.entered = false
+        if (this.isHost(lobby, peer)) this.cancelExpiry(lobby.roomNumber)
+        this.log(`[coop] room ${lobby.roomNumber}: ${connectionId} is back${away}`)
+        peer.send([HandshakeResult.Accept, connectionId, lobby.roomNumber])
+    }
+
+    /**
+     * Keeps an entered member's slot while its game is away (Suspend, or its socket closed without Bye before the
+     * battle): nobody is told, and the resume grace starts. False when there is no grace (the member leaves).
+     */
+    private suspend(lobby: Lobby, connectionId: string, reason: string): boolean {
+        const member = lobby.members.get(connectionId)
+        if (!member || !member.entered || lobby.startedWith) return false
+        if (member.suspendedAt !== undefined) return true
+        const ms = resolveMs(this.resumeGraceMs)
+        if (ms <= 0) return false
+        member.suspendedAt = Date.now()
+        this.cancelCountdown(lobby, "a member went away")
+        member.graceTimer = setTimeout(() => this.graceExpired(lobby, connectionId, member), ms)
+        member.graceTimer.unref()
+        this.log(`[coop] room ${lobby.roomNumber}: ${connectionId} is away (${reason}), keeping its slot ${Math.round(ms / 1000)} s`)
+        return true
+    }
+
+    /** A member didn't come back in time: it leaves; a host takes its room with it (restore_room then answers 9). */
+    private graceExpired(lobby: Lobby, connectionId: string, member: LobbyMember) {
+        member.graceTimer = undefined
+        if (lobby.members.get(connectionId) !== member || member.suspendedAt === undefined) return
+        if (this.lobbies.get(lobby.roomNumber) === lobby && !lobby.startedWith && this.isHost(lobby, member.peer)) {
+            this.log(`[coop] room ${lobby.roomNumber}: its host didn't come back, closing it`)
+            if (this.onExpire !== null) this.onExpire(lobby.roomNumber)
+            else this.disband(lobby.roomNumber)
+            return
+        }
+        this.log(`[coop] room ${lobby.roomNumber}: ${connectionId} didn't come back`)
+        this.leaveLobby(lobby, connectionId)
     }
 
     // --- lobby ("meeting") ----------------------------------------------------------------------
@@ -581,6 +751,7 @@ export class CoopSocketServer {
                 const mate = this.savedMate(peer, params[0])
                 if (mate === null) return this.refuseMate(peer)
                 self.mate = this.withHostReady(lobby, peer, { ...mate, connectionId: peer.connectionId })
+                self.entered = true
                 if (this.isHost(lobby, peer)) this.hostMates.set(lobby.roomNumber, self.mate)
                 const mates = this.mates(lobby)
                 peer.send([MeetingServer2Client.Message, [MeetingServerMessage.Welcome, this.roomInfo(lobby), mates]])
@@ -592,6 +763,7 @@ export class CoopSocketServer {
                 if (mate === null) return this.refuseMate(peer)
                 self.mate = this.withHostReady(lobby, peer, { ...mate, connectionId: peer.connectionId })
                 if (this.isHost(lobby, peer)) this.hostMates.set(lobby.roomNumber, self.mate)
+                if (!isReady(self.mate.state)) this.cancelCountdown(lobby, "a member changed its party")
                 this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Mates, this.mates(lobby)]])
                 break
             }
@@ -600,6 +772,7 @@ export class CoopSocketServer {
                 // StartBattle requires every member to be Ready: the host is always Ready.
                 const state = this.isHost(lobby, peer) ? READY_STATE_READY : params[0]
                 if (self.mate) self.mate.state = state
+                if (!isReady(state)) this.cancelCountdown(lobby, "a member is no longer ready")
                 this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.StateChanged, peer.connectionId, state]])
                 break
             }
@@ -619,16 +792,15 @@ export class CoopSocketServer {
                 break
             }
             case MeetingNotify.StartBattle: {
-                lobby.startedWith = [...lobby.members.keys()]
-                lobby.startedFrom = new Map([...lobby.members].map(([id, member]) => [id, member.peer.address]))
-                lobby.startedViewers = new Map([...lobby.members].map(([id, member]) => [id, member.peer.viewerId!]))
-                const room = getRoom(lobby.roomNumber)
-                if (room) startRound(room, [...lobby.members.values()].map(m => m.peer.viewerId!))
-                // a battle of an earlier round whose last socket is still open keeps running on its own (Peer.battle);
-                // this round's players get a new one
-                const previous = this.battles.get(lobby.roomNumber)
-                if (previous && previous.lobby !== lobby) this.forgetBattle(previous)
-                this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Start, this.mates(lobby)]])
+                // The host's Start button (the client checks that at least two are in and nobody is preparing). A
+                // guest's, a second one, or one during the countdown is ignored; an Error would make the client leave.
+                if (!this.isHost(lobby, peer) || lobby.startedWith || lobby.countdown !== null) {
+                    this.log(`[coop] #${peer.id} StartBattle ignored (${!this.isHost(lobby, peer) ? "not the host" : "already starting"})`)
+                    break
+                }
+                const seconds = Math.floor(resolveMs(this.startCountdownSeconds))
+                if (seconds > 0) this.countDown(lobby, seconds)
+                else this.startLobby(lobby)
                 break
             }
             case MeetingNotify.Bye:
@@ -639,20 +811,87 @@ export class CoopSocketServer {
                 peer.lobby = undefined
                 break
             case MeetingNotify.EnterComs: {
-                // AI companions from the summon route: [{comId, degreeId, name, party, rank}].
-                // The server may have filled the room in the meantime (its fallback timer), so add only as many as
-                // still fit.
+                // AI companions from the summon route: [{comId, degreeId, name, party, rank}]. Only the host summons,
+                // and only companions the server issued, as issued (SEC-16: they were relayed as sent, so a host could
+                // add any party). The server may have filled the room in the meantime (its fallback timer), so add only
+                // as many as still fit.
+                if (!this.isHost(lobby, peer)) {
+                    this.log(`[coop] #${peer.id} EnterComs from a guest ignored`)
+                    break
+                }
                 const [coms] = params
+                const companions = this.issuedCompanions(lobby, coms)
+                if (companions.length < (Array.isArray(coms) ? coms.length : 0)) this.log(`[coop] #${peer.id} EnterComs: companions the server didn't issue were left out`)
                 const free = Math.max(0, ROOM_CAPACITY - lobby.members.size - lobby.coms.size)
-                this.addCompanions(lobby, (coms ?? []).slice(0, free))
+                if (companions.length > 0) this.addCompanions(lobby, companions.slice(0, free))
                 break
             }
             case MeetingNotify.Suspend:
+                // the game went to the background and closes its socket next; it may come back (CO-3)
+                this.suspend(lobby, peer.connectionId!, "Suspend")
+                break
             case MeetingNotify.Log:
                 break // logged above
             default:
                 this.log(`[coop] #${peer.id} unhandled meeting notify ${notify}`)
         }
+    }
+
+    /**
+     * Starts the battle with the members who have entered: the host sees only those (Mates), and one still between its
+     * handshake and its Welcome would never get Start, so the battle would wait for it (CO-7). Such a member is told
+     * the battle started and leaves the lobby (Disbanded is the one message EnterRoomService takes before its Welcome).
+     * A member still away (suspended) is dropped quietly: its game finds the battle started when it comes back.
+     */
+    private startLobby(lobby: Lobby) {
+        for (const [id, member] of [...lobby.members]) {
+            if (member.suspendedAt !== undefined) {
+                if (member.graceTimer !== undefined) clearTimeout(member.graceTimer)
+                lobby.members.delete(id)
+                this.log(`[coop] room ${lobby.roomNumber}: ${id} was away at the battle start`)
+                continue
+            }
+            if (member.entered) continue
+            member.peer.send([MeetingServer2Client.Message, [MeetingServerMessage.Disbanded, "multibattle_room_already_started"]])
+            lobby.members.delete(id)
+            member.peer.lobby = undefined
+            this.log(`[coop] room ${lobby.roomNumber}: ${id} was still entering at the battle start`)
+        }
+        lobby.startedWith = [...lobby.members.keys()]
+        lobby.startedFrom = new Map([...lobby.members].map(([id, member]) => [id, member.peer.address]))
+        lobby.startedViewers = new Map([...lobby.members].map(([id, member]) => [id, member.peer.viewerId!]))
+        const room = getRoom(lobby.roomNumber)
+        if (room) startRound(room, [...lobby.members.values()].map(m => m.peer.viewerId!))
+        // a battle of an earlier round whose last socket is still open keeps running on its own (Peer.battle);
+        // this round's players get a new one
+        const previous = this.battles.get(lobby.roomNumber)
+        if (previous && previous.lobby !== lobby) this.forgetBattle(previous)
+        this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Start, this.mates(lobby)]])
+    }
+
+    /**
+     * The host's start countdown: StartRemainingTime(n) each second from `seconds` down to 1 (a toast on every client),
+     * then Start. Joins are refused meanwhile; a member leaving, going away or no longer ready cancels it quietly, and
+     * the host can start again.
+     */
+    private countDown(lobby: Lobby, seconds: number) {
+        const tick = (remaining: number) => {
+            lobby.countdown = null
+            if (this.lobbies.get(lobby.roomNumber) !== lobby || lobby.startedWith) return
+            if (remaining <= 0) return this.startLobby(lobby)
+            this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.StartRemainingTime, remaining]])
+            lobby.countdown = setTimeout(() => tick(remaining - 1), 1000)
+            lobby.countdown.unref()
+        }
+        this.log(`[coop] room ${lobby.roomNumber}: starting in ${seconds} s`)
+        tick(seconds)
+    }
+
+    private cancelCountdown(lobby: Lobby, reason: string) {
+        if (lobby.countdown === null) return
+        clearTimeout(lobby.countdown)
+        lobby.countdown = null
+        this.log(`[coop] room ${lobby.roomNumber}: start countdown cancelled (${reason})`)
     }
 
     /** The room's establisher: the member whose viewer id created the room over HTTP. */
@@ -703,9 +942,18 @@ export class CoopSocketServer {
         }
     }
 
-    private toLobby(lobby: Lobby, value: Json, exceptConnectionId?: string) {
+    /**
+     * Sends to every member but `exceptConnectionId` that has entered (sent Enter, so got its Welcome). A member between
+     * its handshake and its Welcome gets only `Disbanded` (`toEntering`): the client's EnterRoomService takes nothing
+     * else then, and its queue hands every other message to the room scene after the Welcome. A `Mates` from another
+     * player's entry lacks the newcomer (its mate is still null), and the room scene's `serverMessage_Mates` then fails
+     * to find its own viewer id in it (refreshReadyButtonLabel: error 15202, back to the title; CO-6). The Welcome
+     * already carries the room as it is when the member enters.
+     */
+    private toLobby(lobby: Lobby, value: Json, exceptConnectionId?: string, toEntering = false) {
         for (const [id, member] of lobby.members) {
-            if (id !== exceptConnectionId) member.peer.send(value)
+            if (id === exceptConnectionId || member.suspendedAt !== undefined || (!member.entered && !toEntering)) continue
+            member.peer.send(value)
         }
     }
 
@@ -742,12 +990,19 @@ export class CoopSocketServer {
                 battle.sceneReady.add(peer.connectionId!)
                 this.startIfReady(battle)
                 if (!battle.started && battle.startTimer === null) {
+                    const waitMs = resolveMs(this.battleStartWaitMs)
                     battle.startTimer = setTimeout(() => {
                         if (battle.started) return
-                        for (const id of this.expected(battle)) if (!battle.sceneReady.has(id)) battle.absent.add(id)
-                        this.log(`[coop] room ${battle.roomNumber}: starting without ${[...battle.absent].join(", ")}`)
+                        const missing = this.expected(battle).filter(id => !battle.sceneReady.has(id))
+                        for (const id of missing) battle.absent.add(id)
+                        this.log(`[coop] room ${battle.roomNumber}: starting without ${missing.join(", ")}`)
+                        // the others then play the missing players themselves, as for one who left (a connected but
+                        // never ready one is left in: it may still be loading)
+                        for (const id of missing) {
+                            if (!battle.members.has(id)) this.toBattle(battle, [BattleServer2Client.Message, [BattleServerMessage.Leave, id]])
+                        }
                         this.startIfReady(battle)
-                    }, BATTLE_START_WAIT_MS)
+                    }, waitMs)
                     battle.startTimer.unref()
                 }
                 break
@@ -818,6 +1073,12 @@ export class CoopSocketServer {
 
     /** Drops the lobby from its room's slot, if it is still the room's lobby (not a later round's). */
     private forgetLobby(lobby: Lobby) {
+        if (lobby.countdown !== null) clearTimeout(lobby.countdown)
+        lobby.countdown = null
+        for (const member of lobby.members.values()) {
+            if (member.graceTimer !== undefined) clearTimeout(member.graceTimer)
+            member.graceTimer = undefined
+        }
         if (this.lobbies.get(lobby.roomNumber) === lobby) this.lobbies.delete(lobby.roomNumber)
     }
 
@@ -831,7 +1092,10 @@ export class CoopSocketServer {
      * started is dropped once empty, and without its host the room starts waiting for it (armExpiry).
      */
     private leaveLobby(lobby: Lobby, connectionId: string) {
+        const member = lobby.members.get(connectionId)
+        if (member?.graceTimer !== undefined) clearTimeout(member.graceTimer)
         lobby.members.delete(connectionId)
+        this.cancelCountdown(lobby, "a member left")
         if (lobby.members.size > 0) {
             this.toLobby(lobby, [MeetingServer2Client.Message, [MeetingServerMessage.Mates, this.mates(lobby)]])
         } else if (!lobby.startedWith) {
@@ -844,7 +1108,7 @@ export class CoopSocketServer {
     private lobbyFor(roomNumber: string): Lobby {
         let lobby = this.lobbies.get(roomNumber)
         if (!lobby) {
-            lobby = { roomNumber, members: new Map(), coms: new Map(), startedWith: null, startedFrom: new Map(), startedViewers: new Map() }
+            lobby = { roomNumber, members: new Map(), coms: new Map(), startedWith: null, startedFrom: new Map(), startedViewers: new Map(), countdown: null }
             this.lobbies.set(roomNumber, lobby)
         }
         return lobby
@@ -865,10 +1129,13 @@ export class CoopSocketServer {
     }
 
     private disconnect(peer: Peer) {
+        if (peer.kind === "lounge") return this.lounges.disconnect(peer)
         if (!peer.roomNumber || !peer.connectionId) return
         if (peer.kind === "meeting") {
             const lobby = peer.lobby
             if (!lobby || lobby.members.get(peer.connectionId)?.peer !== peer) return
+            // closed without Bye before the battle (backgrounded, a lost network): the slot waits for it (CO-3)
+            if (this.suspend(lobby, peer.connectionId, "connection closed")) return
             this.leaveLobby(lobby, peer.connectionId)
         } else if (peer.kind === "battle") {
             const battle = peer.battle
@@ -893,6 +1160,11 @@ export class CoopSocketServer {
 }
 
 /** The client strips a leading "Debug" from room numbers (developer leftover); do the same. */
+/** ReadyState.Ready ([1]); Preparation is [0]. */
+function isReady(state: Json): boolean {
+    return Array.isArray(state) && state[0] === READY_STATE_READY[0]
+}
+
 function normaliseRoomNumber(roomNumber: string): string {
     return roomNumber.startsWith("Debug") ? roomNumber.slice(5) : roomNumber
 }
@@ -915,6 +1187,14 @@ export let coopSocketServer: CoopSocketServer | null = null
 
 export function setCoopSocketServer(server: CoopSocketServer | null): void {
     coopSocketServer = server
+}
+
+/**
+ * Host the co-op socket is reached at: COOP_PUBLIC_HOST, or else the host the client used to reach the API (the same
+ * machine, as the client sees it).
+ */
+export function coopSocketHost(requestHostname: string): string {
+    return process.env.COOP_PUBLIC_HOST || requestHostname
 }
 
 /** Port the co-op socket listens on and that `select_room` advertises. */

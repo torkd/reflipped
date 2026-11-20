@@ -1,0 +1,3097 @@
+{
+    "start": "2024-02-29 14:00:00",
+    "categories": {
+        "3": {
+            "start": "2024-05-28 14:00:00",
+            "end": null
+        },
+        "4": {
+            "start": "2024-08-17 14:00:00",
+            "end": null
+        },
+        "2": {
+            "start": "2024-04-28 14:00:00",
+            "end": null
+        },
+        "1": {
+            "start": "2024-02-29 14:00:00",
+            "end": null
+        }
+    },
+    "equipment": {
+        "5010073": {
+            "maxLevel": 99,
+            "start": "2024-05-28 14:00:00"
+        },
+        "5020042": {
+            "maxLevel": 99,
+            "start": "2024-07-25 15:00:00"
+        },
+        "5090047": {
+            "maxLevel": 99,
+            "start": "2024-07-25 15:00:00"
+        },
+        "5100020": {
+            "maxLevel": 99,
+            "start": "2024-07-25 15:00:00"
+        },
+        "5100011": {
+            "maxLevel": 120,
+            "start": "2024-08-17 14:00:00"
+        },
+        "5030028": {
+            "maxLevel": 120,
+            "start": "2024-08-17 14:00:00"
+        },
+        "5010056": {
+            "maxLevel": 120,
+            "start": "2024-08-17 14:00:00"
+        },
+        "5010045": {
+            "maxLevel": 120,
+            "start": "2024-09-14 14:00:00"
+        },
+        "5040020": {
+            "maxLevel": 120,
+            "start": "2024-09-14 14:00:00"
+        },
+        "5010032": {
+            "maxLevel": 120,
+            "start": "2024-09-14 14:00:00"
+        },
+        "5010070": {
+            "maxLevel": 99,
+            "start": "2024-04-28 14:00:00"
+        },
+        "5020035": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5010060": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5030029": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5070033": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5060020": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5040025": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5090023": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5010064": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5090024": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5040033": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5060029": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5020040": {
+            "maxLevel": 99,
+            "start": "2024-02-29 14:00:00"
+        },
+        "5070042": {
+            "maxLevel": 99,
+            "start": "2024-12-01 14:00:00"
+        },
+        "5060045": {
+            "maxLevel": 99,
+            "start": "2024-12-01 14:00:00"
+        },
+        "5010074": {
+            "maxLevel": 99,
+            "start": "2024-12-01 14:00:00"
+        }
+    },
+    "shop": {
+        "2001": {
+            "category": 3,
+            "chain": 21,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40401,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5020042,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "2002": {
+            "category": 3,
+            "chain": 21,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40401,
+                    "count": 10
+                },
+                {
+                    "id": 40407,
+                    "count": 1
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5020042,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "2003": {
+            "category": 3,
+            "chain": 21,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40401,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5020042,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "2004": {
+            "category": 3,
+            "chain": 21,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40401,
+                    "count": 10
+                },
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14041,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5020042,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "2005": {
+            "category": 3,
+            "chain": 22,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40402,
+                    "count": 1
+                }
+            ],
+            "start": "2024-05-28 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010073,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "2006": {
+            "category": 3,
+            "chain": 22,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40402,
+                    "count": 10
+                },
+                {
+                    "id": 40408,
+                    "count": 1
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-05-28 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010073,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "2007": {
+            "category": 3,
+            "chain": 22,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40402,
+                    "count": 1
+                }
+            ],
+            "start": "2024-05-28 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010073,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "2008": {
+            "category": 3,
+            "chain": 22,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40402,
+                    "count": 10
+                },
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14042,
+                    "count": 1
+                }
+            ],
+            "start": "2024-05-28 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010073,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "2009": {
+            "category": 3,
+            "chain": 23,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40403,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5090047,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "2010": {
+            "category": 3,
+            "chain": 23,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40403,
+                    "count": 10
+                },
+                {
+                    "id": 40409,
+                    "count": 1
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5090047,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "2011": {
+            "category": 3,
+            "chain": 23,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40403,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5090047,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "2012": {
+            "category": 3,
+            "chain": 23,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40403,
+                    "count": 10
+                },
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14043,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5090047,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "2013": {
+            "category": 3,
+            "chain": 24,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40406,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100020,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "2014": {
+            "category": 3,
+            "chain": 24,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40406,
+                    "count": 10
+                },
+                {
+                    "id": 40412,
+                    "count": 1
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100020,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "2015": {
+            "category": 3,
+            "chain": 24,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40406,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100020,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "2016": {
+            "category": 3,
+            "chain": 24,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40406,
+                    "count": 10
+                },
+                {
+                    "id": 14038,
+                    "count": 30
+                },
+                {
+                    "id": 14046,
+                    "count": 1
+                }
+            ],
+            "start": "2024-07-25 15:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100020,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "3001": {
+            "category": 4,
+            "chain": 1,
+            "stage": 1,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14035,
+                    "count": 5
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3002": {
+            "category": 4,
+            "chain": 1,
+            "stage": 2,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3003": {
+            "category": 4,
+            "chain": 1,
+            "stage": 3,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3004": {
+            "category": 4,
+            "chain": 1,
+            "stage": 4,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3005": {
+            "category": 4,
+            "chain": 1,
+            "stage": 5,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14043,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3006": {
+            "category": 4,
+            "chain": 1,
+            "stage": 6,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14035,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5100011,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "3007": {
+            "category": 4,
+            "chain": 2,
+            "stage": 1,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14036,
+                    "count": 5
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3008": {
+            "category": 4,
+            "chain": 2,
+            "stage": 2,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3009": {
+            "category": 4,
+            "chain": 2,
+            "stage": 3,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14036,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3010": {
+            "category": 4,
+            "chain": 2,
+            "stage": 4,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3011": {
+            "category": 4,
+            "chain": 2,
+            "stage": 5,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14036,
+                    "count": 30
+                },
+                {
+                    "id": 14044,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3012": {
+            "category": 4,
+            "chain": 2,
+            "stage": 6,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14036,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5030028,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "3013": {
+            "category": 4,
+            "chain": 3,
+            "stage": 1,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14038,
+                    "count": 5
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3014": {
+            "category": 4,
+            "chain": 3,
+            "stage": 2,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3015": {
+            "category": 4,
+            "chain": 3,
+            "stage": 3,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14038,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3016": {
+            "category": 4,
+            "chain": 3,
+            "stage": 4,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3017": {
+            "category": 4,
+            "chain": 3,
+            "stage": 5,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14038,
+                    "count": 30
+                },
+                {
+                    "id": 14046,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3018": {
+            "category": 4,
+            "chain": 3,
+            "stage": 6,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14038,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-08-17 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010056,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "3019": {
+            "category": 4,
+            "chain": 4,
+            "stage": 1,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14033,
+                    "count": 5
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3020": {
+            "category": 4,
+            "chain": 4,
+            "stage": 2,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3021": {
+            "category": 4,
+            "chain": 4,
+            "stage": 3,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3022": {
+            "category": 4,
+            "chain": 4,
+            "stage": 4,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3023": {
+            "category": 4,
+            "chain": 4,
+            "stage": 5,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14041,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3024": {
+            "category": 4,
+            "chain": 4,
+            "stage": 6,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14033,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010045,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "3025": {
+            "category": 4,
+            "chain": 5,
+            "stage": 1,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14034,
+                    "count": 5
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3026": {
+            "category": 4,
+            "chain": 5,
+            "stage": 2,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3027": {
+            "category": 4,
+            "chain": 5,
+            "stage": 3,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3028": {
+            "category": 4,
+            "chain": 5,
+            "stage": 4,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3029": {
+            "category": 4,
+            "chain": 5,
+            "stage": 5,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14042,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3030": {
+            "category": 4,
+            "chain": 5,
+            "stage": 6,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14034,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5040020,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "3031": {
+            "category": 4,
+            "chain": 6,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                },
+                {
+                    "id": 14037,
+                    "count": 5
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 1,
+            "awakening": 1
+        },
+        "3032": {
+            "category": 4,
+            "chain": 6,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 69,
+            "awakening": 1
+        },
+        "3033": {
+            "category": 4,
+            "chain": 6,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 3
+                },
+                {
+                    "id": 40504,
+                    "count": 1
+                },
+                {
+                    "id": 14037,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 10
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 70,
+            "awakening": 1
+        },
+        "3034": {
+            "category": 4,
+            "chain": 6,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 98,
+            "awakening": 1
+        },
+        "3035": {
+            "category": 4,
+            "chain": 6,
+            "stage": 5,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40504,
+                    "count": 3
+                },
+                {
+                    "id": 14037,
+                    "count": 30
+                },
+                {
+                    "id": 14045,
+                    "count": 1
+                },
+                {
+                    "id": 12002,
+                    "count": 1
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "3036": {
+            "category": 4,
+            "chain": 6,
+            "stage": 6,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40503,
+                    "count": 50
+                },
+                {
+                    "id": 40504,
+                    "count": 2
+                },
+                {
+                    "id": 14037,
+                    "count": 150
+                },
+                {
+                    "id": 14040,
+                    "count": 30
+                }
+            ],
+            "start": "2024-09-14 14:00:00",
+            "end": null,
+            "releaseRank": 90,
+            "equipmentId": 5010032,
+            "maxLevel": 120,
+            "awakening": 1
+        },
+        "1001": {
+            "category": 2,
+            "chain": 1,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 40313,
+                    "count": 1
+                }
+            ],
+            "start": "2024-04-28 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010070,
+            "maxLevel": 99,
+            "awakening": 1
+        },
+        "1": {
+            "category": 1,
+            "chain": 8,
+            "stage": 1,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020035,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "2": {
+            "category": 1,
+            "chain": 8,
+            "stage": 2,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020035,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "3": {
+            "category": 1,
+            "chain": 8,
+            "stage": 3,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020035,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "4": {
+            "category": 1,
+            "chain": 8,
+            "stage": 4,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020035,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "5": {
+            "category": 1,
+            "chain": 8,
+            "stage": 5,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14041,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020035,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "6": {
+            "category": 1,
+            "chain": 9,
+            "stage": 1,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010060,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "7": {
+            "category": 1,
+            "chain": 9,
+            "stage": 2,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010060,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "8": {
+            "category": 1,
+            "chain": 9,
+            "stage": 3,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010060,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "9": {
+            "category": 1,
+            "chain": 9,
+            "stage": 4,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010060,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "10": {
+            "category": 1,
+            "chain": 9,
+            "stage": 5,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14041,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010060,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "11": {
+            "category": 1,
+            "chain": 11,
+            "stage": 1,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5030029,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "12": {
+            "category": 1,
+            "chain": 11,
+            "stage": 2,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5030029,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "13": {
+            "category": 1,
+            "chain": 11,
+            "stage": 3,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5030029,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "14": {
+            "category": 1,
+            "chain": 11,
+            "stage": 4,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5030029,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "15": {
+            "category": 1,
+            "chain": 11,
+            "stage": 5,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14042,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5030029,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "16": {
+            "category": 1,
+            "chain": 12,
+            "stage": 1,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070033,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "17": {
+            "category": 1,
+            "chain": 12,
+            "stage": 2,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070033,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "18": {
+            "category": 1,
+            "chain": 12,
+            "stage": 3,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070033,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "19": {
+            "category": 1,
+            "chain": 12,
+            "stage": 4,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070033,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "20": {
+            "category": 1,
+            "chain": 12,
+            "stage": 5,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14042,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070033,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "21": {
+            "category": 1,
+            "chain": 14,
+            "stage": 1,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060020,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "22": {
+            "category": 1,
+            "chain": 14,
+            "stage": 2,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060020,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "23": {
+            "category": 1,
+            "chain": 14,
+            "stage": 3,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060020,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "24": {
+            "category": 1,
+            "chain": 14,
+            "stage": 4,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060020,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "25": {
+            "category": 1,
+            "chain": 14,
+            "stage": 5,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14043,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060020,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "26": {
+            "category": 1,
+            "chain": 15,
+            "stage": 1,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040025,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "27": {
+            "category": 1,
+            "chain": 15,
+            "stage": 2,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040025,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "28": {
+            "category": 1,
+            "chain": 15,
+            "stage": 3,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040025,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "29": {
+            "category": 1,
+            "chain": 15,
+            "stage": 4,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040025,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "30": {
+            "category": 1,
+            "chain": 15,
+            "stage": 5,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14043,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040025,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "31": {
+            "category": 1,
+            "chain": 17,
+            "stage": 1,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090023,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "32": {
+            "category": 1,
+            "chain": 17,
+            "stage": 2,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090023,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "33": {
+            "category": 1,
+            "chain": 17,
+            "stage": 3,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090023,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "34": {
+            "category": 1,
+            "chain": 17,
+            "stage": 4,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090023,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "35": {
+            "category": 1,
+            "chain": 17,
+            "stage": 5,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14044,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090023,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "36": {
+            "category": 1,
+            "chain": 18,
+            "stage": 1,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010064,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "37": {
+            "category": 1,
+            "chain": 18,
+            "stage": 2,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010064,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "38": {
+            "category": 1,
+            "chain": 18,
+            "stage": 3,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010064,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "39": {
+            "category": 1,
+            "chain": 18,
+            "stage": 4,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010064,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "40": {
+            "category": 1,
+            "chain": 18,
+            "stage": 5,
+            "order": 3,
+            "costs": [
+                {
+                    "id": 14036,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14044,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010064,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "41": {
+            "category": 1,
+            "chain": 23,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090024,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "42": {
+            "category": 1,
+            "chain": 23,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090024,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "43": {
+            "category": 1,
+            "chain": 23,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090024,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "44": {
+            "category": 1,
+            "chain": 23,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090024,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "45": {
+            "category": 1,
+            "chain": 23,
+            "stage": 5,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14045,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5090024,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "46": {
+            "category": 1,
+            "chain": 24,
+            "stage": 1,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040033,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "47": {
+            "category": 1,
+            "chain": 24,
+            "stage": 2,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040033,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "48": {
+            "category": 1,
+            "chain": 24,
+            "stage": 3,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040033,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "49": {
+            "category": 1,
+            "chain": 24,
+            "stage": 4,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040033,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "50": {
+            "category": 1,
+            "chain": 24,
+            "stage": 5,
+            "order": 2,
+            "costs": [
+                {
+                    "id": 14037,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14045,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5040033,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "51": {
+            "category": 1,
+            "chain": 20,
+            "stage": 1,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060029,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "52": {
+            "category": 1,
+            "chain": 20,
+            "stage": 2,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060029,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "53": {
+            "category": 1,
+            "chain": 20,
+            "stage": 3,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060029,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "54": {
+            "category": 1,
+            "chain": 20,
+            "stage": 4,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060029,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "55": {
+            "category": 1,
+            "chain": 20,
+            "stage": 5,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14046,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060029,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "56": {
+            "category": 1,
+            "chain": 21,
+            "stage": 1,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020040,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "57": {
+            "category": 1,
+            "chain": 21,
+            "stage": 2,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 1
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020040,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "58": {
+            "category": 1,
+            "chain": 21,
+            "stage": 3,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020040,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "59": {
+            "category": 1,
+            "chain": 21,
+            "stage": 4,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 2
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020040,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "60": {
+            "category": 1,
+            "chain": 21,
+            "stage": 5,
+            "order": 1,
+            "costs": [
+                {
+                    "id": 14038,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14046,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-02-29 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5020040,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "61": {
+            "category": 1,
+            "chain": 26,
+            "stage": 1,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070042,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "62": {
+            "category": 1,
+            "chain": 26,
+            "stage": 2,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070042,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "63": {
+            "category": 1,
+            "chain": 26,
+            "stage": 3,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070042,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "64": {
+            "category": 1,
+            "chain": 26,
+            "stage": 4,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 2
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070042,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "65": {
+            "category": 1,
+            "chain": 26,
+            "stage": 5,
+            "order": 6,
+            "costs": [
+                {
+                    "id": 14033,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14041,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5070042,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "66": {
+            "category": 1,
+            "chain": 28,
+            "stage": 1,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060045,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "67": {
+            "category": 1,
+            "chain": 28,
+            "stage": 2,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060045,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "68": {
+            "category": 1,
+            "chain": 28,
+            "stage": 3,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060045,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "69": {
+            "category": 1,
+            "chain": 28,
+            "stage": 4,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 2
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060045,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "70": {
+            "category": 1,
+            "chain": 28,
+            "stage": 5,
+            "order": 5,
+            "costs": [
+                {
+                    "id": 14034,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14042,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5060045,
+            "maxLevel": 99,
+            "awakening": 5
+        },
+        "71": {
+            "category": 1,
+            "chain": 30,
+            "stage": 1,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 10
+                },
+                {
+                    "id": 14040,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010074,
+            "maxLevel": 1,
+            "awakening": 5
+        },
+        "72": {
+            "category": 1,
+            "chain": 30,
+            "stage": 2,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 1
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010074,
+            "maxLevel": 69,
+            "awakening": 5
+        },
+        "73": {
+            "category": 1,
+            "chain": 30,
+            "stage": 3,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 30
+                },
+                {
+                    "id": 14040,
+                    "count": 8
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010074,
+            "maxLevel": 70,
+            "awakening": 5
+        },
+        "74": {
+            "category": 1,
+            "chain": 30,
+            "stage": 4,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 2
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010074,
+            "maxLevel": 98,
+            "awakening": 5
+        },
+        "75": {
+            "category": 1,
+            "chain": 30,
+            "stage": 5,
+            "order": 4,
+            "costs": [
+                {
+                    "id": 14035,
+                    "count": 36
+                },
+                {
+                    "id": 14040,
+                    "count": 2
+                },
+                {
+                    "id": 14043,
+                    "count": 1
+                },
+                {
+                    "id": 30028,
+                    "count": 4
+                }
+            ],
+            "start": "2024-12-01 14:00:00",
+            "end": null,
+            "releaseRank": 70,
+            "equipmentId": 5010074,
+            "maxLevel": 99,
+            "awakening": 5
+        }
+    }
+}

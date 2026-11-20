@@ -1,0 +1,39 @@
+            <header class="page-header">
+                <h1 class="page-title">News</h1>
+                <p class="page-subtitle">The posts the game's news page shows, newest first, with the date they went live. Write your own here; the server also announces every event, portal and boosted-drop campaign a week before it opens.</p>
+            </header>
+{{notice}}
+            <section class="card">
+                <div class="card-header">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Automatic event posts</h2>
+                        <p class="card-text">{{autoText}}</p>
+                    </div>
+                </div>
+                <form method="post" action="/api/news/auto" class="flex flex-wrap items-center gap-3">
+                    <input type="hidden" name="enabled" value="{{autoNext}}" />
+                    <button type="submit" class="{{autoButtonClass}}">{{autoButton}}</button>
+                </form>
+            </section>
+            <section class="card">
+                <div class="card-header">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Write a post</h2>
+                        <p class="card-text">It goes live now and shows today's date. Plain text: a blank line starts a new paragraph, a line starting with <code>## </code> is a heading, lines starting with <code>- </code> make a list, and a web address (https) or a <code>/game/…</code> page becomes a link.</p>
+                    </div>
+                </div>
+                <form class="flex flex-col gap-4" method="post" action="/api/news">
+                    <label class="field">Title
+                        <input class="input" name="title" autocomplete="off" required maxlength="{{titleMax}}">
+                    </label>
+                    <label class="field">Text
+                        <textarea class="input" name="body" rows="8" required maxlength="{{bodyMax}}"></textarea>
+                    </label>
+                    <div class="flex justify-end"><button type="submit" class="btn-primary">Publish</button></div>
+                </form>
+            </section>
+            <section class="flex flex-col gap-3">
+                <h2 class="card-title">Posts ({{postCount}})</h2>
+{{posts}}
+{{pager}}
+            </section>

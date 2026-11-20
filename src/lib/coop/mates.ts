@@ -6,9 +6,6 @@
 
 type Json = any
 
-/** FollowState for "not following"; there are no follows between players yet (FT-15). */
-export const FOLLOW_STATE_NONE = 0
-
 /** The party's first character: party.characters is Array<Option<{id, evolution_level, ...}>>, Some(x) = [0, x]. */
 export function leaderCharacter(mate: Json | null): { id: number, evolutionLevel: number } | null {
     const first = mate?.party?.characters?.[0]

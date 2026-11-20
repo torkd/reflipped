@@ -1,14 +1,14 @@
 /**
- * Browser-facing protection for the admin listener (SEC-10). The admin site has no login yet (ACC-5), so what
- * keeps it to its operator is the bind address (SEC-1). These hooks stop a web page the operator visits from using
- * their browser against it:
+ * Browser-facing protection for the admin listener (SEC-10). The admin login (ACC-5, src/lib/adminAuth.ts) and the
+ * bind address (SEC-1) keep it to its operators. These hooks stop a web page an operator visits from using their
+ * browser (and its login cookie) against it:
  * - Host check: a request must name the server by an IP address, `localhost`, or a name in `ADMIN_ALLOWED_HOSTS`
  *   (comma-separated), so a DNS-rebinding page (attacker name → 127.0.0.1) can't read or change anything;
  * - CSRF: a state-changing request (anything but GET/HEAD/OPTIONS) from a browser must come from the admin site
  *   itself (`Sec-Fetch-Site`, or `Origin` on browsers without it). Requests without either header are not from a
  *   browser form or fetch (curl, scripts, tests) and pass;
  * - `@fastify/helmet` headers with a CSP that allows only the site's own scripts, forms and frames.
- * There are no cookies yet; portal sessions (ACC-2) must be `Secure`, `HttpOnly` and `SameSite`.
+ * The admin login's cookie is `HttpOnly` and `SameSite=Lax`, and its forms carry no CSRF token: this check is it.
  */
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import helmet from "@fastify/helmet";

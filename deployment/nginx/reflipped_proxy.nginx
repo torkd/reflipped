@@ -1,5 +1,10 @@
 #Sample nginx configuration for Reflipped. Change as needed per env.
 
+#The game sends headers with underscores in their names (device_lang, res_ver, asset_size, short_udid). nginx drops
+#them by default, and the game then gets H400 when it connects. This file is included in the http block, so the
+#setting covers every server here; nginx takes it from the default server of each port, so keep it at this level.
+underscores_in_headers on;
+
 #TODO: Consider potentially making these environment variables.
 #TODO: Consider doing redirects to the same hosts that the coredns file does
 map $host $REFLIPPED_REMOTE_URL {
@@ -26,6 +31,8 @@ server {
                 proxy_set_header Host $host;
                 proxy_set_header X-Forwarded-For $remote_addr;
                 proxy_set_header X-Real-IP $remote_addr;
+                # the portal's login cookie is Secure only when Reflipped knows the request came over HTTPS
+                proxy_set_header X-Forwarded-Proto $scheme;
                 proxy_pass_request_headers on;
                 proxy_pass ${REFLIPPED_REMOTE_URL}$request_uri;
         }

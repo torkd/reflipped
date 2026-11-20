@@ -1,134 +1,112 @@
-# Playing on a Reflipped server (Android)
+# Playing with the Reflipped app (Android)
 
-This guide is for players. It turns your own copy of the flipper game's app (the APK file) into the **Reflipped app**, a version of the game that connects to a Reflipped server: one a friend or a community runs, or your own.
-
-You build the app on a computer, then copy it to your phone. It takes about half an hour the first time, most of it waiting for downloads. You can't download a ready-made app instead: the game files have to come from your own APK, and the Adobe AIR tools that package them may only be downloaded by people who accept their licence themselves (see [the AIR SDK licence](air-licence.md)).
+This guide is for players. It takes you from nothing to the game running on your phone, with the ready-made **Reflipped app**. No computer is needed.
 
 Want to run a server instead? See [running Reflipped at home](air-shell-install.md) or [running a public server](deployment.md).
 
 ## What you need
-- **An Android phone**, or an Android emulator on your computer, with about 12 GB of free space. The game downloads about 10 GB of data the first time it starts. Nearly every phone from recent years works; very old 32-bit phones need a special build (see "Options").
-- **A computer** with about 3 GB free:
-  - **Linux**: builds directly;
-  - **Windows 10 or 11**: builds inside **WSL2**, Windows' built-in Linux;
-  - **macOS**, or anything else that runs Docker: builds inside a ready-made **build container**.
-- **The server's address**, from whoever runs it, for example `https://wf.example.org` or `http://192.168.1.10:8000`. You type it into the app the first time it starts.
-- **The flipper game's original APK, version 0.0.81.** Below, `<game.apk>` stands for its file name. To check you have exactly the right file, run this in a terminal and compare the result with the long code below:
-  ```sh
-  sha256sum "<game.apk>"      # Linux / WSL2
-  shasum -a 256 "<game.apk>"  # macOS
-  # eeeab302b4b3bdbe180d59561b38d92ffb85ed395155e778278ed60b3f2ba77f
-  ```
+- **An Android phone** with Android 7 or newer and about 12 GB of free space, or an Android emulator that runs ARM apps (most current ones do).
+- **Your own copy of the flipper game**, version 0.0.81: either the original app still installed on the phone, or its APK file (`.apk` or `.xapk`). The Reflipped app holds none of the game's files and takes them from your copy, once.
+- **Wi-Fi**: the game data is about 10 GB.
+- **A server's address**, if you want to play on a server that isn't in the app's list. For playing alone, you don't need one.
 
-## Step 1: get the AIR SDK
-The flipper game is built on Adobe AIR, so building the app needs the **AIR SDK**, a free toolkit now published by Wipro at <https://airsdk.wxlift.com>. You download it yourself and accept its licence yourself.
+## 1. Install the app
+1. On your phone, open the [Releases page](https://github.com/torkd/reflipped/releases) and download `reflipped-app-<version>-….apk` from the newest release.
+2. Open the downloaded file and tap **Install**.
+3. If Android asks whether your browser or Files app may install apps ("Install unknown apps"), allow it.
+4. If Google Play Protect wants to scan the app, let it: the app doesn't come from the Play Store.
+
+The app installs next to the official one, without replacing it.
+
+**Already have a Reflipped app you built yourself?** Android won't install the ready-made one over it ("App not installed"). See [Moving from an app you built](#moving-from-an-app-you-built) first.
+
+**To check the download** (optional): each release lists the file's SHA-256 next to it, in a `.sha256` file. On a computer, `sha256sum <file>` must print the same code.
+
+## 2. Set up the game (first launch only)
+1. Open the Reflipped app. After the AIR logo, it shows **Set up the game**.
+2. Choose **Use the installed game** if the original app is on the phone, or **Choose the APK file** and pick your copy.
+3. Wait a few seconds while the app checks and copies the game. If it says the version is wrong, your copy isn't version 0.0.81.
+
+From then on the app no longer needs the original app or the file.
+
+## 3. Choose where to play
+The app asks how you want to play:
+- **Server**: play online, with other players. Go on with step 4.
+- **Local play**: play alone, with the server running on your phone. Go to [Local play](#local-play).
+
+## 4. Join a server
+1. Pick a server in **My servers**. The project's community server is already listed.
+2. To add another one, tap **Add**, paste the address its owner gave you (for example `https://wf.example.org`, or `192.168.1.10:8000` for a server at home), and save it.
+3. Select the server and tap **Join server**.
+4. Choose **Reflipped account** and sign in or create one, then tap **Play as** your name. Or choose **Play as guest**.
+5. When the app asks how to get the game data, choose **Download** (about 10 GB, on Wi-Fi), or **Install from a file** if you have a [game data pack](game-data-pack.md).
+6. Tap to start playing.
+
+**Account or guest?** An account keeps your save on the server, so a new phone or a reinstall picks it up again by signing in. A guest save is tied to this app on this phone. You can turn a guest into an account later: **Menu → Account Info → Link an account**.
+
+The download keeps going in the background and continues where it stopped if it's interrupted. On Android 13 and newer, allow notifications to see its progress.
+
+## Local play
+Local play runs the Reflipped server inside the app, so you play alone, without anyone else's server.
+1. On the first screen, choose **Local play**.
+2. The phone's server needs the game's data tables once (about 7 MB). Choose **From a server** and pick an online Reflipped server that offers them, or **From a file** if you saved one.
+3. The game data (about 9 GB) downloads from that server too, unless the phone already has it.
+4. Tap to start playing.
 
 Good to know:
-- The free version shows a short AIR logo when the app starts. That's expected; leave it in.
-- The free version is meant for individuals and small companies; check the current limit on the website.
-- Pick a normal (stable) version, not a beta.
+- **Menu → Account Info → Admin panel** opens your own admin site, already signed in: change the event mode, the date and other settings, or download your save (**Players**, your name, **Download save**).
+- Your save lives in the app. **Uninstalling the app or clearing its data deletes it**, so download a copy from time to time.
+- To continue a Local play save on a server, import the downloaded file on that server's player portal (if its owner allows it), or ask its owner to import it.
+- Local play is in English: on a phone set to Korean or Thai, some event and quest names show in English.
 
-Which file to download:
-- **Linux and Windows (WSL2):** the **Linux AIR SDK Manager** (`AIRSDKManager_linux_amd64_<version>.zip`) from <https://airsdk.wxlift.com/download>. Step 2A installs the SDK with it. On Windows 11 the manager's window should open from WSL2, but this hasn't been tried yet; if it doesn't start, get `AIRSDK_Linux.zip` another way and use the `--air-zip` shortcut in step 2A.
-- **macOS (Docker):** the Linux SDK itself, `AIRSDK_Linux.zip`, from the download page or the AIR SDK Manager. If your manager only offers the macOS SDK, do this step on a Linux machine or virtual machine. (Not tested on a Mac yet.)
+## Your account on the server's website
+Every Reflipped server has a player portal at `<server address>/portal`. Sign in with your Reflipped account to:
+- change your password and turn on two-step login with an authenticator app;
+- download your save, or import one if the server's owner allows it;
+- unlink a lost or sold phone (its game stops; your save stays);
+- delete your save and start over;
+- choose a historical event period, on servers in Time Travel mode.
 
-## Step 2A: build on Linux or Windows (WSL2)
-**Windows only, once:** open PowerShell as administrator and run `wsl --install -d Ubuntu`. Restart, open **Ubuntu** from the Start menu and create a user. Your Windows files are under `/mnt/c/Users/<you>/` there. Work in your Linux home folder (`cd ~`): it is much faster.
+To bring a phone that plays as a guest (or the original app) into your account, get a short code on the portal and type it in the game as your profile comment.
 
-1. **Install the basic tools** (Ubuntu, Debian and WSL2; for Arch Linux see [running Reflipped at home](air-shell-install.md)):
-   ```sh
-   sudo apt update && sudo apt install -y git curl tar unzip python3 python3-pil
-   ```
-2. **Download Reflipped** and copy your APK into its folder:
-   ```sh
-   git clone https://github.com/torkd/reflipped.git reflipped && cd reflipped
-   cp "/mnt/c/Users/<you>/Downloads/<game.apk>" .     # WSL2; change the path to where your APK is
-   ```
-3. **Install the build tools** (Java and the Android tools). They go into one folder, `~/sdk-wf`, and nothing else on your system changes. The script shows a link to Google's Android SDK terms; installing means you accept them (older versions ask you to type `y`).
-   ```sh
-   client/air-shell/setup-sdk.sh
-   ```
-4. **Install the AIR SDK.** Unpack the manager, start it, accept the licence, set its install folder to `~/sdk-wf/air-sdks` and install the newest SDK. Then tell Reflipped where it is:
-   ```sh
-   client/air-shell/setup-sdk.sh --manager-zip ~/Downloads/AIRSDKManager_linux_amd64_<version>.zip
-   ~/sdk-wf/bin/airsdkmanager
-   client/air-shell/setup-sdk.sh --air-dir ~/sdk-wf/air-sdks/AIRSDK_<version>   # for example AIRSDK_51.5.1
-   ```
-   Already have `AIRSDK_Linux.zip`? Then `client/air-shell/setup-sdk.sh --air-zip AIRSDK_Linux.zip` does all three lines at once.
-5. **Build the app:**
-   ```sh
-   . ~/sdk-wf/env.sh
-   python3 -I client/air-shell/build.py --apk "<game.apk>"
-   ```
-   Your app is `client/air-shell/build/reflipped-shell.apk` (about 47 MB). On WSL2, copy it to your Windows Downloads folder with `cp client/air-shell/build/reflipped-shell.apk /mnt/c/Users/<you>/Downloads/`.
+## Switching servers or accounts
+1. Open **Menu → Account Info → Sign out**.
+2. Choose another server, or sign in with another account.
 
-The build also created your **signing key**, `~/.config/starpoint/air-shell.p12`. Keep it safe: see "Keep your signing key" below.
+Your save stays on each server. The downloaded game data is usually kept: the app only replaces the few files the last server changed (a few MB). If that isn't possible, it warns you first that the data will be downloaded again.
 
-## Step 2B: build in the container (macOS, or any computer with Docker)
-Install Docker Desktop (or Docker Engine on Linux). On a Mac with an Apple chip the build is slower, because the Android tools only exist for Intel/AMD Linux and have to be emulated.
+## Updating the app
+When a newer app is out, a server may show **Update available** once, or say **This server needs a newer Reflipped app**.
+1. Tap **Install update** if the notice offers it, and confirm the install. Otherwise download the newest `reflipped-app-….apk` from the [Releases page](https://github.com/torkd/reflipped/releases).
+2. Install it over the old app. Your game data and progress stay.
 
-1. **Download Reflipped:** `git clone https://github.com/torkd/reflipped.git reflipped`, or download it as a ZIP from <https://github.com/torkd/reflipped> (the green "Code" button, then "Download ZIP").
-2. **Make a work folder**, for example `~/reflipped-build`, and put exactly two files in it: your APK and `AIRSDK_Linux.zip`. The finished app and your signing key will appear in this folder too.
-3. **Prepare the builder** (once, and again after you update Reflipped). From the Reflipped folder:
-   ```sh
-   docker build --platform linux/amd64 -t reflipped-shell-builder -f client/air-shell/container/Dockerfile client/air-shell
-   ```
-   The builder only holds Reflipped's own scripts: no game files and no AIR SDK.
-4. **Build the app:**
-   ```sh
-   docker run --rm -it --platform linux/amd64 -v reflipped-shell-sdk:/sdk -v ~/reflipped-build:/work reflipped-shell-builder
-   ```
-   The first time, it downloads Java and the Android tools (about 1 GB, kept for next time) and shows a link to Google's Android SDK terms, which you accept by going ahead (older tools ask you to type `y`). Then it writes `reflipped-shell.apk` and your signing key `air-shell.p12` into your work folder. Options (see "Options") go after the name `reflipped-shell-builder`, for example `… reflipped-shell-builder --arch armv7`.
+The title screen shows the app's version and the server's, for example "Reflipped · app 0.1.0 · server 1.0.1".
 
-To free the space again: `docker volume rm reflipped-shell-sdk` removes the downloaded tools, `docker image rm reflipped-shell-builder` the builder.
+## Moving from an app you built
+An app you built yourself is signed with your own key, so Android won't install the ready-made app over it.
+1. **Keep your progress:** if you play as a guest, link an account first (**Menu → Account Info → Link an account**). Saves in Local play: download a copy from the Admin panel.
+2. Uninstall your old Reflipped app. This deletes its downloaded game data.
+3. Install the ready-made app (step 1) and sign in to your account.
 
-## Step 3: install the app on your phone or emulator
-1. Copy `reflipped-shell.apk` to your phone, any way you like: a USB cable, a cloud drive, or a message to yourself.
-2. Open it in the phone's Files app and tap **Install**.
-3. Android asks once whether that app may install apps ("Install unknown apps"): allow it.
-4. Google Play Protect may want to scan the app, because it doesn't come from the Play Store: allow it.
+## Event modes on server cards
+Each server card shows how that server schedules events:
 
-Look for the Reflipped icon: the app installs next to the official one, without replacing it.
-
-**On an emulator:** most emulators install an APK when you drag it onto their window; otherwise use `adb install -r reflipped-shell.apk`. The emulator must be able to run ARM apps, as most current ones can. If the server runs on the same computer, the emulator usually reaches it at `http://10.0.2.2:8000` (Android's own emulator) or at the computer's network IP.
-
-(Developers can also install it over a cable or Wi-Fi with `adb install -r reflipped-shell.apk`; see [running Reflipped at home](air-shell-install.md).)
-
-## Step 4: first launch
-1. You see the AIR logo, then the game's own start screens.
-2. **Type the server's address** and tap **Connect**. If you leave out `http://` or `https://`, the app uses `https://`. If it says "No Reflipped server at that address", check the address, and that your phone can reach the server (for a server at home: same Wi-Fi).
-3. The game signs in and creates your player on that server.
-4. **The game data downloads**: about 10 GB. Use Wi-Fi and keep the app open on screen. If the download gets interrupted, it carries on from where it stopped the next time you open the app.
-5. The tutorial starts. Have fun!
-
-If the server can't be reached on a later start, the app offers **Retry** and **Change server**. Changing the server starts a new player on the new server.
-
-## Keep your signing key
-The first build creates a signing key: `~/.config/starpoint/air-shell.p12` (step 2A) or `air-shell.p12` in your work folder (step 2B). **Keep a backup of that file.**
-
-Android only lets you update the app if the new version is signed with the same key. With a different key you have to uninstall the old app first, which deletes the downloaded game data and your player's link to the server: your progress stays on the server, but the new install starts as a new player.
-
-**Updating to a new Reflipped version:** get the latest Reflipped (`git pull` in its folder), build again the same way, and install the new app over the old one.
-
-## Options
-Add these to the `build.py` command (step 2A) or after `reflipped-shell-builder` (step 2B):
-
-| Option | What it does |
+| Mode | What it means |
 |---|---|
-| `--server https://wf.example.org` | Builds the server's address into the app. It never asks for an address and has no "Change server". Handy if you only ever play on one server. |
-| `--arch armv7` | Builds a separate app for old 32-bit phones. |
-| `--out <file>` | Saves the app under another name (step 2A only). |
-
-To sign with a key of your own instead of the generated one, set `SHELL_KEYSTORE=<path to .p12>` and `SHELL_KEYSTORE_PASS=<password>` before building (step 2B: `docker run -e SHELL_KEYSTORE=/work/<file> -e SHELL_KEYSTORE_PASS=… …`, with the key in your work folder).
+| Classic | Past events come back at their original pace. |
+| Accelerated | The event timeline runs faster; the card shows the speed, such as 2×. |
+| Time travel | Each player can choose a historical event period. |
+| Manual | The server's owner chooses which events run. |
+| Legacy schedule | The server uses an older scheduling system. |
+| Event mode: not listed | The server doesn't say. |
 
 ## Problems
 | What you see | What to do |
 |---|---|
-| "No Reflipped server at that address" | Check the address and port with whoever runs the server. Open `<address>/shell/config` in your phone's browser: it should show a short line starting with `{"reflipped":1`. |
-| "App not installed" or "package conflicts" | An older copy signed with a different key is installed. Uninstall it first (this deletes its downloaded data). |
-| The download stops when the screen turns off | Keep the app open on screen. It carries on the next time you start it. |
-| Container: "put the AIR SDK zip … in your folder" | `AIRSDK_Linux.zip` must be in your work folder. |
-| Container: "more than one APK in your folder" | Leave only one APK in the folder, or name it with `-e APK=<file name>`. |
-| A black screen after the logo, or an "Error No." message | Tell whoever runs the server, with the time it happened. |
-
-More help with the build: [running Reflipped at home](air-shell-install.md), "Troubleshooting".
+| "App not installed" or "package conflicts" | Another Reflipped app is installed, signed with a different key (for example one you built). See [Moving from an app you built](#moving-from-an-app-you-built). |
+| "Set up the game" says the version is wrong | Your copy isn't version 0.0.81. Use another copy. |
+| "No Reflipped server at that address" | Check the address and port with the server's owner. Open `<address>/shell/config` in the phone's browser: it should show a line starting with `{"reflipped":1`. |
+| "This server needs a newer Reflipped app" | Update the app (see "Updating the app"). |
+| The download stops when the screen turns off | Keep the app open; it continues next time you start it. |
+| An "H404" error in the game | That part of the game isn't supported yet (see the [feature list](features.md)). |
+| A black screen after the logo, or an "Error No." message | Tell the server's owner, with the time it happened. |

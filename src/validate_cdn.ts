@@ -3,19 +3,18 @@ import path from "path";
 import cliProgress, { SingleBar } from "cli-progress";
 import readlineSync from "readline-sync";
 import { createHash } from "crypto";
+import { assetPath, cdnDir } from "./lib/paths";
 
 const CDN_URL = "http://patch.wdfp.kakaogames.com/Live/2.0.0"
 
-const ROOT = __dirname
-const cdn_dir = process.env.CDN_DIR || ".cdn"
-const OUTPUT_DIR = path.isAbsolute(cdn_dir) ? cdn_dir : path.join(ROOT, "..", cdn_dir)
+const OUTPUT_DIR = cdnDir()
 if (!existsSync(OUTPUT_DIR)) {
     mkdirSync(OUTPUT_DIR, {
         recursive: true
     })
 }
 
-const ASSET_LISTS_DIR = path.join(ROOT, "..", "assets/asset_lists")
+const ASSET_LISTS_DIR = assetPath("asset_lists")
 const assetListsPaths: Record<string, string[]> = {
     "en-android": [
         path.join(ASSET_LISTS_DIR, "en-android-full.json"),

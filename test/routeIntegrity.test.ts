@@ -151,18 +151,28 @@ test("shop/buy keeps to the product's amount per purchase, stock and period", as
     const salesEntry = async (shopItemId: number) => (await gameRequest("shop/get_sales_list", { viewer_id: viewerId, shop_types: [ShopType.TREASURE], boss_coin_shop_category_ids: [], event_list: [] }))
         .body.data.sales_list.find((entry: any) => entry.shop_item_id === shopItemId)
 
-    // treasure 200032: at most 10 at once and 10 a day (the captured sales list shows the same daily stock)
+    // a Trove product in the player's lineup today and again on a later day (the lineup changes daily, FT-9): at most
+    // its daily stock at once and in a day (the captured sales list shows the same daily stock)
+    const { troveLineup } = await import("../src/lib/trove")
+    const treasureShop = (await import("../assets/treasure_shop.json")).default as unknown as Record<string, { buyMaxCount: number, dailyStock: number }>
     const start = getServerDate()
+    const day = 24 * 60 * 60 * 1000
+    const lineup = (offset: number) => troveLineup(playerId, new Date(start.getTime() + offset * day)).map(product => product.shopItemId)
+    let later = 1
+    while (!lineup(later).some(id => lineup(0).includes(id))) later++
+    const product = lineup(0).find(id => lineup(later).includes(id))!
+    const { buyMaxCount, dailyStock } = treasureShop[String(product)]
     try {
-        assert.equal((await buy(ShopType.TREASURE, 200032, 11)).status, 400, "more than one purchase allows")
-        assert.equal((await buy(ShopType.TREASURE, 200032, 0)).status, 400)
-        assert.equal((await buy(ShopType.TREASURE, 200032, 10)).status, 200)
-        assert.equal((await buy(ShopType.TREASURE, 200032, 1)).status, 400, "the day's stock is gone")
-        assert.deepEqual([(await salesEntry(200032)).today_purchase_num, (await salesEntry(200032)).total_purchase_num], [10, 10])
+        assert.equal((await buy(ShopType.TREASURE, product, buyMaxCount + 1)).status, 400, "more than one purchase allows")
+        assert.equal((await buy(ShopType.TREASURE, product, 0)).status, 400)
+        assert.equal((await buy(ShopType.TREASURE, product, dailyStock)).status, 200)
+        assert.equal((await buy(ShopType.TREASURE, product, 1)).status, 400, "the day's stock is gone")
+        assert.deepEqual([(await salesEntry(product)).today_purchase_num, (await salesEntry(product)).total_purchase_num], [dailyStock, dailyStock])
+        assert.equal((await salesEntry(product)).stock_quantity, 0)
 
-        setServerTime(new Date(start.getTime() + 24 * 60 * 60 * 1000))
-        assert.equal((await buy(ShopType.TREASURE, 200032, 1)).status, 200, "a new day")
-        assert.deepEqual([(await salesEntry(200032)).today_purchase_num, (await salesEntry(200032)).total_purchase_num], [1, 11])
+        setServerTime(new Date(start.getTime() + later * day))
+        assert.equal((await buy(ShopType.TREASURE, product, 1)).status, 200, "a new day")
+        assert.deepEqual([(await salesEntry(product)).today_purchase_num, (await salesEntry(product)).total_purchase_num], [1, dailyStock + 1])
     } finally {
         setServerTime(start)
     }

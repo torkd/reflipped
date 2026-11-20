@@ -19,8 +19,16 @@ let player: TestPlayer
 let playerId: number
 let data: typeof import("../src/data/wdfpData")
 
+let drops: typeof import("../src/lib/quest").scoreRewardDrops
+let realRandom: () => number
+let toggle = false
+
 before(async () => {
     ({ fastify, cleanup } = await createTestServer())
+    // the lottery draws alternately in the first and the second half of the weights
+    drops = (await import("../src/lib/quest")).scoreRewardDrops
+    realRandom = drops.random
+    drops.random = () => (toggle = !toggle) ? 0.25 : 0.75
     player = await createTestPlayer(fastify)
 
     // the data layer opens the test database, so import it only after createTestServer()
@@ -32,20 +40,30 @@ before(async () => {
 })
 
 after(async () => {
+    drops.random = realRandom
     await cleanup()
 })
 
-interface RawQuest { manaReward: number, poolExpReward: number, scoreRewardGroup: number, clearRewardId?: number }
+interface RawQuest { manaReward: number, poolExpReward: number, scoreRewardGroup: number, scoreRewardRolls: number, clearRewardId?: number }
 
 function quest(questId: number): RawQuest {
     return (storyEventSingleQuests as unknown as Record<string, RawQuest>)[String(questId)]
 }
 
-/** The total of a score reward group's fixed rewards of one currency, as granted without a boost point (count × 10). */
-function scoreRewardTotal(groupId: number, rewardType: number): number {
-    const group = (scoreRewards as unknown as Record<string, { type: number, reward_type?: number, count?: number }[]>)[String(groupId)]
+/**
+ * What a score reward group pays of one currency without a boost point when the lottery's draws alternate between
+ * the group's first and second entry (two entries of weight 500, like 2900, or a single entry of weight 1000, like
+ * 30001, which every draw hits): the quest's own number of draws, the entry's fixed count each.
+ */
+function scoreRewardTotal(groupId: number, rewardType: number, rolls: number): number {
+    const group = (scoreRewards as unknown as Record<string, { type: number, reward_type?: number, count?: number, field5?: number }[]>)[String(groupId)]
     assert.ok(group.every(reward => reward.type === 0), "the group has no random rare pool")
-    return group.filter(reward => reward.reward_type === rewardType).reduce((sum, reward) => sum + reward.count! * 10, 0)
+    const position = group.findIndex(reward => reward.reward_type === rewardType)
+    assert.ok(position >= 0)
+    const entry = group[position]
+    // the first draw hits the first entry, the next the second, and so on
+    const hits = entry.field5 === 1000 ? rolls : position === 0 ? Math.ceil(rolls / 2) : Math.floor(rolls / 2)
+    return entry.count! * hits
 }
 
 async function post(route: string, body: Record<string, unknown>) {
@@ -61,6 +79,7 @@ async function post(route: string, body: Record<string, unknown>) {
 
 /** Plays a quest through start and finish with an empty party, slower than every rank time, so it skips the S+ reward. */
 async function playQuest(questId: number) {
+    toggle = false   // every battle's draws start with the first entry
     await post("single_battle_quest/start", {
         quest_id: questId, category: STORY_EVENT_SINGLE, party_id: 1,
         use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: false, api_count: 1, play_id: "test"
@@ -78,9 +97,9 @@ async function playQuest(questId: number) {
 test("a mana score reward raises free mana by the reward and leaves beads alone", async () => {
     // 100002007: mana and exp score rewards; its clear reward (beads) is taken on the first run
     const questId = 100002007
-    const { manaReward, poolExpReward, scoreRewardGroup } = quest(questId)
-    const scoreMana = scoreRewardTotal(scoreRewardGroup, MANA)
-    const scoreExp = scoreRewardTotal(scoreRewardGroup, EXP)
+    const { manaReward, poolExpReward, scoreRewardGroup, scoreRewardRolls } = quest(questId)
+    const scoreMana = scoreRewardTotal(scoreRewardGroup, MANA, scoreRewardRolls)
+    const scoreExp = scoreRewardTotal(scoreRewardGroup, EXP, scoreRewardRolls)
     assert.ok(scoreMana > 0 && scoreExp > 0)
     await playQuest(questId)
 
@@ -91,7 +110,10 @@ test("a mana score reward raises free mana by the reward and leaves beads alone"
     assert.equal(after.freeMana, before.freeMana + manaReward + scoreMana)
     assert.equal(after.freeVmoney, before.freeVmoney, "beads unchanged")
     assert.equal(after.expPool, before.expPool + poolExpReward + scoreExp)
-    assert.ok(result.drop_score_reward_ids.some((drop: { number: number }) => drop.number === scoreMana))
+    // every hit drops the entry's own count, never the whole group: the quest's own number of draws, alternating
+    assert.equal(result.drop_score_reward_ids.length, scoreRewardRolls)
+    assert.deepEqual(result.drop_score_reward_ids.map((drop: { index: number, number: number }) => [drop.index, drop.number]),
+        Array.from({ length: scoreRewardRolls }, (_, draw) => [draw % 2 + 1, 20]))
 
     // the reply carries the stored balances
     assert.equal(result.user_info.free_mana, after.freeMana)
@@ -102,10 +124,10 @@ test("a mana score reward raises free mana by the reward and leaves beads alone"
 test("a mana clear reward is kept along with the score reward", async () => {
     // 200004001: first clear gives mana (clear reward 104), plus a mana score reward
     const questId = 200004001
-    const { manaReward, scoreRewardGroup, clearRewardId } = quest(questId)
+    const { manaReward, scoreRewardGroup, scoreRewardRolls, clearRewardId } = quest(questId)
     const clearReward = (clearRewards as unknown as Record<string, { type: number, count: number }>)[String(clearRewardId)]
     assert.equal(clearReward.type, MANA)
-    const scoreMana = scoreRewardTotal(scoreRewardGroup, MANA)
+    const scoreMana = scoreRewardTotal(scoreRewardGroup, MANA, scoreRewardRolls)
 
     const before = data.getPlayerSync(playerId)!
     const result = await playQuest(questId)

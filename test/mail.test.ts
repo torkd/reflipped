@@ -21,6 +21,11 @@ before(async () => {
     const { getSession, getAccountPlayers } = await import("../src/data/wdfpData")
     const session = await getSession(String(player.viewerId))
     playerId = (await getAccountPlayers(session!.accountId))[0]
+    // Complete the day's automatic login delivery before testing an otherwise empty gift box.
+    await gameRequest("load", { ...readCapturedRoute("load").requestBody, access_token: player.zat })
+    const initial = await indexMail()
+    await gameRequest("mail/receive_all", { mail_ids: initial.mail.map((mail: { id: number }) => mail.id) })
+    await gameRequest("bonus/shown", {})
 })
 
 after(async () => {
@@ -92,7 +97,7 @@ test("mail: send, list, receive one, receive all", async (t) => {
         assert.equal((await sendMail({ ...base, type: "ITEM" })).statusCode, 400, "item without type id")
         assert.equal((await sendMail({ ...base, type: "FREE_VMONEY", typeId: 1 })).statusCode, 400, "currency with type id")
         assert.equal((await sendMail({ ...base, type: "NOPE" })).statusCode, 400, "unknown type")
-        assert.equal((await sendMail({ ...base, type: "DAILY_CHALLENGE_POINT", typeId: 1 })).statusCode, 400, "type with no server storage")
+        assert.equal((await sendMail({ ...base, type: "DAILY_CHALLENGE_POINT", typeId: 999999 })).statusCode, 400, "unknown daily challenge point")
         assert.equal((await sendMail({ ...base, type: "CHARACTER", typeId: 1234567 })).statusCode, 400, "unknown character")
         assert.equal((await sendMail({ ...base, type: "CHARACTER", typeId: 700000 })).statusCode, 400, "event or guest unit")
         assert.equal((await sendMail({ ...base, type: "FREE_MANA", number: 0 })).statusCode, 400, "zero amount")
@@ -103,15 +108,22 @@ test("mail: send, list, receive one, receive all", async (t) => {
         const mails: Record<string, Record<string, unknown>> = {
             beads: { type: "FREE_VMONEY", number: 300, subject: "Beads", description: "Compensation" },
             item: { type: 1, typeId: itemId, number: 5, subject: "Items", description: "Some items" },
-            character: { type: "CHARACTER", typeId: characterId, number: 1, subject: "Unit", description: "A unit", rewardLimitTime: "2030-01-01T00:00Z" }, // the admin page sends datetime-local + "Z"
-            // the default server clock is 2025-01-03, so this one has already expired
-            expired: { type: "FREE_MANA", number: 1000, subject: "Old", description: "Expired", rewardLimitTime: "2025-01-01T00:00:00Z" }
+            character: { type: "CHARACTER", typeId: characterId, number: 1, subject: "Unit", description: "A unit", rewardLimitTime: "2030-01-01T00:00Z" } // the admin page sends datetime-local + "Z"
         }
         for (const [name, mail] of Object.entries(mails)) {
             const response = await sendMail(mail)
             assert.equal(response.statusCode, 200, response.body)
             ids[name] = response.json().id
         }
+        // the default server clock is 2025-01-03: a mail that has expired already is refused...
+        const expired = { type: "FREE_MANA", number: 1000, subject: "Old", description: "Expired", rewardLimitTime: "2025-01-01T00:00:00Z" }
+        assert.equal((await sendMail(expired)).statusCode, 400)
+        // ...but one can still be in the box (it expired while it waited)
+        const { insertPlayerMailSync } = await import("../src/data/wdfpData")
+        ids.expired = insertPlayerMailSync(playerId, {
+            type: 8, typeId: null, number: 1000, reasonId: 0, subject: "Old", description: "Expired",
+            createTime: new Date("2024-12-20T00:00:00Z"), receiveTime: null, rewardLimitTime: new Date("2025-01-01T00:00:00Z")
+        })
     })
 
     await t.test("load lights the gift box badge", async () => {
@@ -136,7 +148,8 @@ test("mail: send, list, receive one, receive all", async (t) => {
         assert.equal(typeof beads.reason_id, "number")
         assert.equal(item.type_id, itemId)
         assert.equal(character.type, 5)
-        assert.equal(character.reward_limit_time, "2030-01-01 00:00:00")
+        // sent as 2030-01-01T00:00Z; the client reads gift box times as Japan time
+        assert.equal(character.reward_limit_time, "2030-01-01 09:00:00")
         assert.equal(character.reward_period_limited, true)
     })
 

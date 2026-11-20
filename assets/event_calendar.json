@@ -1,0 +1,1224 @@
+{
+    "events": [
+        {
+            "id": "story_event/200001",
+            "kind": "story_event",
+            "name": "10 Million Reroll Celebration",
+            "start": "2021-07-29 13:00:00",
+            "end": "2021-08-05 13:59:59"
+        },
+        {
+            "id": "story_event/100001",
+            "kind": "story_event",
+            "name": "A Not-So-Silent Night",
+            "start": "2021-08-12 14:00:00",
+            "end": "2021-08-27 13:59:59"
+        },
+        {
+            "id": "advent_event/1",
+            "kind": "advent_event",
+            "name": "Shadowflash Serpent",
+            "start": "2021-08-22 14:00:00",
+            "end": "2021-09-06 13:59:59"
+        },
+        {
+            "id": "story_event/100002",
+            "kind": "story_event",
+            "name": "New Year, New Flipper",
+            "start": "2021-08-28 00:00:00",
+            "end": "2021-09-11 13:59:59"
+        },
+        {
+            "id": "story_event/300001",
+            "kind": "story_event",
+            "name": "Towa Kiseki Crossover",
+            "start": "2021-09-11 14:00:00",
+            "end": "2021-10-12 13:59:59"
+        },
+        {
+            "id": "story_event/100003",
+            "kind": "story_event",
+            "name": "Valentine's Fest: All's Fair in Love and War",
+            "start": "2021-09-27 14:00:00",
+            "end": "2021-10-18 13:59:59"
+        },
+        {
+            "id": "advent_event/2",
+            "kind": "advent_event",
+            "name": "Flamewing Serpent",
+            "start": "2021-10-12 14:00:00",
+            "end": "2021-10-26 13:59:59"
+        },
+        {
+            "id": "world_story_event/100100",
+            "kind": "world_story_event",
+            "name": "Neon Skyline",
+            "start": "2021-11-08 14:00:00",
+            "end": "2021-12-01 13:59:59"
+        },
+        {
+            "id": "advent_event/3",
+            "kind": "advent_event",
+            "name": "Lightcrest Serpent",
+            "start": "2021-11-26 14:00:00",
+            "end": "2021-12-11 13:59:59"
+        },
+        {
+            "id": "world_story_event/100200",
+            "kind": "world_story_event",
+            "name": "The Poppet Princess",
+            "start": "2022-01-26 14:00:00",
+            "end": "2022-02-07 13:59:59"
+        },
+        {
+            "id": "advent_event/4",
+            "kind": "advent_event",
+            "name": "Epikureischer Abenteurer",
+            "start": "2022-02-07 14:00:00",
+            "end": "2022-02-18 13:59:59"
+        },
+        {
+            "id": "story_event/200003",
+            "kind": "story_event",
+            "name": "Spring Cleaning Quests",
+            "start": "2022-02-08 14:00:00",
+            "end": "2022-02-23 13:59:59"
+        },
+        {
+            "id": "advent_event/5",
+            "kind": "advent_event",
+            "name": "Seafang Serpent",
+            "start": "2022-02-25 14:00:00",
+            "end": "2022-03-10 13:59:59"
+        },
+        {
+            "id": "story_event/200004",
+            "kind": "story_event",
+            "name": "Training Quests",
+            "start": "2022-03-10 14:00:00",
+            "end": "2022-03-18 13:59:59"
+        },
+        {
+            "id": "world_story_event/100300",
+            "kind": "world_story_event",
+            "name": "Legacy of the Deep",
+            "start": "2022-03-28 14:00:00",
+            "end": "2022-04-10 13:59:59"
+        },
+        {
+            "id": "advent_event/6",
+            "kind": "advent_event",
+            "name": "Flamewing Serpent",
+            "start": "2022-04-10 14:00:00",
+            "end": "2022-04-18 13:59:59"
+        },
+        {
+            "id": "ranking_event/1",
+            "kind": "ranking_event",
+            "name": "Trial by Water",
+            "start": "2022-04-18 14:00:00",
+            "end": "2022-04-28 13:59:59"
+        },
+        {
+            "id": "advent_event/7",
+            "kind": "advent_event",
+            "name": "Darkbane Serpent",
+            "start": "2022-04-28 14:00:00",
+            "end": "2022-05-08 13:59:59"
+        },
+        {
+            "id": "advent_event/100001",
+            "kind": "advent_event",
+            "name": "Not Today, Romero",
+            "start": "2022-05-13 14:00:00",
+            "end": "2022-05-30 13:59:59"
+        },
+        {
+            "id": "story_event/200005",
+            "kind": "story_event",
+            "name": "Mushroom Madness",
+            "start": "2022-05-19 14:00:00",
+            "end": "2022-06-03 13:59:59"
+        },
+        {
+            "id": "world_story_event/100400",
+            "kind": "world_story_event",
+            "name": "The Yokai Encyclopedia: The Art of Change",
+            "start": "2022-05-28 14:00:00",
+            "end": "2022-06-11 20:59:59"
+        },
+        {
+            "id": "advent_event/9",
+            "kind": "advent_event",
+            "name": "The Descension: A Requiem for You",
+            "start": "2022-06-12 14:00:00",
+            "end": "2022-06-20 13:59:59"
+        },
+        {
+            "id": "ranking_event/2",
+            "kind": "ranking_event",
+            "name": "Trial by Light",
+            "start": "2022-06-28 14:00:00",
+            "end": "2022-07-07 13:59:59"
+        },
+        {
+            "id": "world_story_event/100401",
+            "kind": "world_story_event",
+            "name": "Neon Skyline",
+            "start": "2022-07-07 14:00:00",
+            "end": "2022-07-14 20:59:59"
+        },
+        {
+            "id": "advent_event/10",
+            "kind": "advent_event",
+            "name": "Shadowflash Serpent",
+            "start": "2022-07-14 14:00:00",
+            "end": "2022-07-24 20:59:59"
+        },
+        {
+            "id": "story_event/200011",
+            "kind": "story_event",
+            "name": "1st Flipperversary Countdown Quests",
+            "start": "2022-07-15 14:00:00",
+            "end": "2022-07-25 13:59:59"
+        },
+        {
+            "id": "story_event/200012",
+            "kind": "story_event",
+            "name": "1st Flipperversary Celebration Quests",
+            "start": "2022-07-25 14:00:00",
+            "end": "2022-08-04 13:59:59"
+        },
+        {
+            "id": "world_story_event/100402",
+            "kind": "world_story_event",
+            "name": "Driven by Hope, Guided by Light",
+            "start": "2022-07-25 14:00:00",
+            "end": "2022-08-11 20:59:59"
+        },
+        {
+            "id": "advent_event/11",
+            "kind": "advent_event",
+            "name": "Violent Night, Holy Night",
+            "start": "2022-08-11 14:00:00",
+            "end": "2022-08-22 20:59:59"
+        },
+        {
+            "id": "story_event/201011",
+            "kind": "story_event",
+            "name": "The White-Tailed Reindeer",
+            "start": "2022-08-11 14:00:00",
+            "end": "2022-08-25 13:59:59"
+        },
+        {
+            "id": "story_event/201012",
+            "kind": "story_event",
+            "name": "Challua's Holiday Cheer",
+            "start": "2022-08-18 14:00:00",
+            "end": "2022-08-25 13:59:59"
+        },
+        {
+            "id": "story_event/202011",
+            "kind": "story_event",
+            "name": "Happy Mew Year!",
+            "start": "2022-08-29 14:00:00",
+            "end": "2022-09-08 13:59:59"
+        },
+        {
+            "id": "story_event/202012",
+            "kind": "story_event",
+            "name": "Greeting the New Year",
+            "start": "2022-08-29 14:00:00",
+            "end": "2022-09-08 13:59:59"
+        },
+        {
+            "id": "advent_event/100002",
+            "kind": "advent_event",
+            "name": "Wanderers from Another World",
+            "start": "2022-09-13 14:00:00",
+            "end": "2022-09-27 20:59:59"
+        },
+        {
+            "id": "advent_event/100006",
+            "kind": "advent_event",
+            "name": "Wanderers from Another World",
+            "start": "2022-09-13 14:00:00",
+            "end": "2022-09-27 20:59:59"
+        },
+        {
+            "id": "ranking_event/3",
+            "kind": "ranking_event",
+            "name": "Trial by Wind",
+            "start": "2022-09-28 14:00:00",
+            "end": "2022-10-06 20:59:59"
+        },
+        {
+            "id": "story_event/100006",
+            "kind": "story_event",
+            "name": "Valentine's Fest: All's Fair in Love and War",
+            "start": "2022-10-07 14:00:00",
+            "end": "2022-10-13 20:59:59"
+        },
+        {
+            "id": "story_event/202013",
+            "kind": "story_event",
+            "name": "Valentine's Antics",
+            "start": "2022-10-07 14:00:00",
+            "end": "2022-10-14 13:59:59"
+        },
+        {
+            "id": "advent_event/12",
+            "kind": "advent_event",
+            "name": "Seafang Serpent",
+            "start": "2022-10-15 14:00:00",
+            "end": "2022-10-25 20:59:59"
+        },
+        {
+            "id": "story_event/400001",
+            "kind": "story_event",
+            "name": "Speed Run",
+            "start": "2022-10-26 14:00:00",
+            "end": "2022-11-04 13:59:59"
+        },
+        {
+            "id": "advent_event/13",
+            "kind": "advent_event",
+            "name": "Windwrath Serpent",
+            "start": "2022-11-05 14:00:00",
+            "end": "2022-11-14 20:59:59"
+        },
+        {
+            "id": "world_story_event/100403",
+            "kind": "world_story_event",
+            "name": "The Poppet Princess",
+            "start": "2022-11-14 14:00:00",
+            "end": "2022-11-21 20:59:59"
+        },
+        {
+            "id": "world_story_event/100404",
+            "kind": "world_story_event",
+            "name": "Oath to the Dawn",
+            "start": "2022-11-26 14:00:00",
+            "end": "2022-12-07 20:59:59"
+        },
+        {
+            "id": "story_event/200007",
+            "kind": "story_event",
+            "name": "Mushroom Madness 2: Shroombo Boogaloo",
+            "start": "2022-12-05 14:00:00",
+            "end": "2022-12-15 13:59:59"
+        },
+        {
+            "id": "world_story_event/100405",
+            "kind": "world_story_event",
+            "name": "Legacy of the Deep",
+            "start": "2022-12-12 14:00:00",
+            "end": "2022-12-22 20:59:59"
+        },
+        {
+            "id": "advent_event/100003",
+            "kind": "advent_event",
+            "name": "Not Today, Romero",
+            "start": "2022-12-20 14:00:00",
+            "end": "2022-12-26 20:59:59"
+        },
+        {
+            "id": "ranking_event/4",
+            "kind": "ranking_event",
+            "name": "Trial by Thunder",
+            "start": "2022-12-24 14:00:00",
+            "end": "2023-01-01 20:59:59"
+        },
+        {
+            "id": "advent_event/100004",
+            "kind": "advent_event",
+            "name": "Cross Blue",
+            "start": "2023-01-07 14:00:00",
+            "end": "2023-01-16 20:59:59"
+        },
+        {
+            "id": "story_event/200013",
+            "kind": "story_event",
+            "name": "1.5 Flipperversary Countdown Quests",
+            "start": "2023-01-12 14:00:00",
+            "end": "2023-01-22 13:59:59"
+        },
+        {
+            "id": "story_event/200027",
+            "kind": "story_event",
+            "name": "발매 900일 기념 퀘스트",
+            "start": "2023-01-12 14:00:00",
+            "end": "2023-01-22 13:59:59"
+        },
+        {
+            "id": "carnival_event/1",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2023-01-22 14:00:00",
+            "end": "2023-01-29 20:59:59"
+        },
+        {
+            "id": "story_event/200014",
+            "kind": "story_event",
+            "name": "1.5 Flipperversary Celebration Quests",
+            "start": "2023-01-22 14:00:00",
+            "end": "2023-02-01 13:59:59"
+        },
+        {
+            "id": "world_story_event/100406",
+            "kind": "world_story_event",
+            "name": "HERO:BEGINNING",
+            "start": "2023-01-26 14:00:00",
+            "end": "2023-02-09 20:59:59"
+        },
+        {
+            "id": "advent_event/14",
+            "kind": "advent_event",
+            "name": "Thundering Spiritbeast",
+            "start": "2023-02-25 14:00:00",
+            "end": "2023-03-09 20:59:59"
+        },
+        {
+            "id": "story_event/200028",
+            "kind": "story_event",
+            "name": "발매 950일 기념 퀘스트",
+            "start": "2023-02-27 14:00:00",
+            "end": "2023-03-09 13:59:59"
+        },
+        {
+            "id": "ranking_event/5",
+            "kind": "ranking_event",
+            "name": "Trial by Fire",
+            "start": "2023-03-13 14:00:00",
+            "end": "2023-03-21 20:59:59"
+        },
+        {
+            "id": "world_story_event/100407",
+            "kind": "world_story_event",
+            "name": "The Yokai Encyclopedia: The Art of Change",
+            "start": "2023-03-13 14:00:00",
+            "end": "2023-03-23 20:59:59"
+        },
+        {
+            "id": "story_event/200008",
+            "kind": "story_event",
+            "name": "Mushroom Madness 3 Quests",
+            "start": "2023-03-15 14:00:00",
+            "end": "2023-03-25 13:59:59"
+        },
+        {
+            "id": "carnival_event/2",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2023-03-28 14:00:00",
+            "end": "2023-04-08 20:59:59"
+        },
+        {
+            "id": "world_story_event/100408",
+            "kind": "world_story_event",
+            "name": "Love ★ Adrift",
+            "start": "2023-03-28 14:00:00",
+            "end": "2023-04-09 13:59:59"
+        },
+        {
+            "id": "story_event/200009",
+            "kind": "story_event",
+            "name": "Mushroom Madness 4 Quests",
+            "start": "2023-05-04 14:00:00",
+            "end": "2023-05-14 13:59:59"
+        },
+        {
+            "id": "advent_event/15",
+            "kind": "advent_event",
+            "name": "Maelstrom Spiritbeast",
+            "start": "2023-05-13 14:00:00",
+            "end": "2023-05-27 20:59:59"
+        },
+        {
+            "id": "world_story_event/100409",
+            "kind": "world_story_event",
+            "name": "Crown of the Beast King",
+            "start": "2023-05-28 14:00:00",
+            "end": "2023-06-16 20:59:59"
+        },
+        {
+            "id": "advent_event/16",
+            "kind": "advent_event",
+            "name": "Not Today, Romero",
+            "start": "2023-06-15 14:00:00",
+            "end": "2023-06-28 20:59:59"
+        },
+        {
+            "id": "carnival_event/3",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2023-06-15 14:00:00",
+            "end": "2023-06-28 20:59:59"
+        },
+        {
+            "id": "story_event/200010",
+            "kind": "story_event",
+            "name": "Mushroom Madness 5 Quests",
+            "start": "2023-06-22 14:00:00",
+            "end": "2023-07-02 13:59:59"
+        },
+        {
+            "id": "world_story_event/100410",
+            "kind": "world_story_event",
+            "name": "Driven by Hope, Guided by Light",
+            "start": "2023-07-09 14:00:00",
+            "end": "2023-07-17 20:59:59"
+        },
+        {
+            "id": "story_event/200021",
+            "kind": "story_event",
+            "name": "2nd Flipperversary Countdown Quest",
+            "start": "2023-07-15 14:00:00",
+            "end": "2023-07-25 13:59:59"
+        },
+        {
+            "id": "raid_event/1",
+            "kind": "raid_event",
+            "name": "Raid Event: Sagas of Conquest",
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-08-13 20:59:59"
+        },
+        {
+            "id": "story_event/200022",
+            "kind": "story_event",
+            "name": "2nd Flipperversary Celebration Quests",
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-08-14 13:59:59"
+        },
+        {
+            "id": "world_story_event/100411",
+            "kind": "world_story_event",
+            "name": "Driven by Dreams, Guided through Darkness",
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-08-13 20:59:59"
+        },
+        {
+            "id": "story_event/200023",
+            "kind": "story_event",
+            "name": "Mushroom Madness 6: Return of the Shroombo",
+            "start": "2023-08-12 14:00:00",
+            "end": "2023-08-22 13:59:59"
+        },
+        {
+            "id": "advent_event/17",
+            "kind": "advent_event",
+            "name": "Violent Night, Holy Night",
+            "start": "2023-08-29 14:00:00",
+            "end": "2023-09-11 20:59:59"
+        },
+        {
+            "id": "carnival_event/4",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2023-08-29 14:00:00",
+            "end": "2023-09-11 20:59:59"
+        },
+        {
+            "id": "story_event/200024",
+            "kind": "story_event",
+            "name": "Autumnal Event Quests",
+            "start": "2023-09-12 14:00:00",
+            "end": "2023-09-22 13:59:59"
+        },
+        {
+            "id": "world_story_event/100412",
+            "kind": "world_story_event",
+            "name": "Oath to the Dawn",
+            "start": "2023-09-23 14:00:00",
+            "end": "2023-10-06 20:59:59"
+        },
+        {
+            "id": "rush_event/700001",
+            "kind": "rush_event",
+            "name": "Grand Gauntlet",
+            "start": "2023-10-12 14:00:00",
+            "end": "2023-10-19 14:00:00"
+        },
+        {
+            "id": "world_story_event/100420",
+            "kind": "world_story_event",
+            "name": "Confessions of a Coward",
+            "start": "2023-10-12 14:00:00",
+            "end": "2023-10-26 20:59:59"
+        },
+        {
+            "id": "story_event/200025",
+            "kind": "story_event",
+            "name": "Mushroom Madness 7 Quests",
+            "start": "2023-10-15 14:00:00",
+            "end": "2023-10-25 13:59:59"
+        },
+        {
+            "id": "advent_event/19",
+            "kind": "advent_event",
+            "name": "Inferno Spiritbeast",
+            "start": "2023-10-26 14:00:00",
+            "end": "2023-11-09 20:59:59"
+        },
+        {
+            "id": "raid_event/2",
+            "kind": "raid_event",
+            "name": "Raid Event: Sagas of Conquest",
+            "start": "2023-11-06 14:00:00",
+            "end": "2023-11-19 20:59:59"
+        },
+        {
+            "id": "story_event/200026",
+            "kind": "story_event",
+            "name": "Mushroom Madness 7 Quests",
+            "start": "2023-11-20 14:00:00",
+            "end": "2023-11-30 13:59:59"
+        },
+        {
+            "id": "carnival_event/5",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-12-11 20:59:59"
+        },
+        {
+            "id": "world_story_event/100421",
+            "kind": "world_story_event",
+            "name": "HERO:BEGINNING",
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-12-11 20:59:59"
+        },
+        {
+            "id": "advent_event/20",
+            "kind": "advent_event",
+            "name": "Radiant Spiritbeast",
+            "start": "2023-12-11 14:00:00",
+            "end": "2023-12-26 20:59:59"
+        },
+        {
+            "id": "raid_event/3",
+            "kind": "raid_event",
+            "name": "Raid Event: Sagas of Conquest",
+            "start": "2023-12-26 14:00:00",
+            "end": "2024-01-01 20:59:59"
+        },
+        {
+            "id": "world_story_event/100422",
+            "kind": "world_story_event",
+            "name": "Love ★ Adrift",
+            "start": "2024-01-01 14:00:00",
+            "end": "2024-01-12 20:59:59"
+        },
+        {
+            "id": "advent_event/22",
+            "kind": "advent_event",
+            "name": "Slitherwind Spiritbeast",
+            "start": "2024-01-17 14:00:00",
+            "end": "2024-02-01 20:59:59"
+        },
+        {
+            "id": "world_story_event/100423",
+            "kind": "world_story_event",
+            "name": "A Song for the Future",
+            "start": "2024-01-17 14:00:00",
+            "end": "2024-02-01 20:59:59"
+        },
+        {
+            "id": "carnival_event/6",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-02-01 14:00:00",
+            "end": "2024-02-11 20:59:59"
+        },
+        {
+            "id": "advent_event/23",
+            "kind": "advent_event",
+            "name": "Nightfall Spiritbeast",
+            "start": "2024-02-11 14:00:00",
+            "end": "2024-02-23 20:59:59"
+        },
+        {
+            "id": "world_story_event/100424",
+            "kind": "world_story_event",
+            "name": "Blue Skies, Sunny Smiles",
+            "start": "2024-02-17 14:00:00",
+            "end": "2024-03-03 20:59:59"
+        },
+        {
+            "id": "world_story_event/500002",
+            "kind": "world_story_event",
+            "name": "Crown of the Beast King",
+            "start": "2024-02-29 14:00:00",
+            "end": "2024-03-10 20:59:59"
+        },
+        {
+            "id": "world_story_event/500006",
+            "kind": "world_story_event",
+            "name": "Driven by Dreams, Guided through Darkness",
+            "start": "2024-03-06 14:00:00",
+            "end": "2024-03-12 20:59:59"
+        },
+        {
+            "id": "advent_event/100007",
+            "kind": "advent_event",
+            "name": "Shifting Tracks, Distant Worlds",
+            "start": "2024-03-17 14:00:00",
+            "end": "2024-04-01 13:59:59"
+        },
+        {
+            "id": "carnival_event/7",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-04-01 14:00:00",
+            "end": "2024-04-11 13:59:59"
+        },
+        {
+            "id": "advent_event/200010",
+            "kind": "advent_event",
+            "name": "A Requiem for You",
+            "start": "2024-04-11 14:00:00",
+            "end": "2024-04-21 20:59:59"
+        },
+        {
+            "id": "carnival_event/8",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-04-11 14:00:00",
+            "end": "2024-04-21 20:59:59"
+        },
+        {
+            "id": "advent_event/200013",
+            "kind": "advent_event",
+            "name": "The Purge",
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-05-15 20:59:59"
+        },
+        {
+            "id": "story_event/200030",
+            "kind": "story_event",
+            "name": "3rd Flipperversary Celebration Quests",
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-05-15 13:59:59"
+        },
+        {
+            "id": "world_story_event/500005",
+            "kind": "world_story_event",
+            "name": "Distant Succession",
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-05-15 20:59:59"
+        },
+        {
+            "id": "advent_event/200002",
+            "kind": "advent_event",
+            "name": "Slitherwind Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/200004",
+            "kind": "advent_event",
+            "name": "Maelstrom Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/200005",
+            "kind": "advent_event",
+            "name": "Inferno Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/200011",
+            "kind": "advent_event",
+            "name": "Radiant Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/200014",
+            "kind": "advent_event",
+            "name": "Inferno Steambot",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-06-07 20:59:59"
+        },
+        {
+            "id": "advent_event/200016",
+            "kind": "advent_event",
+            "name": "Nightfall Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/21",
+            "kind": "advent_event",
+            "name": "Thundering Spiritbeast",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "hard_multi_event/1",
+            "kind": "hard_multi_event",
+            "name": "The Reckoning Inferno Steambot",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-06-07 20:59:59"
+        },
+        {
+            "id": "world_story_event/500009",
+            "kind": "world_story_event",
+            "name": "Ceremony",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        {
+            "id": "advent_event/200012",
+            "kind": "advent_event",
+            "name": "Maelstrom Spiritbeast",
+            "start": "2024-07-25 15:00:00",
+            "end": "2024-08-03 20:59:59"
+        },
+        {
+            "id": "advent_event/200020",
+            "kind": "advent_event",
+            "name": "Radiant Spiritbeast",
+            "start": "2024-08-03 14:00:00",
+            "end": "2024-08-17 20:59:59"
+        },
+        {
+            "id": "carnival_event/9",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-08-03 14:00:00",
+            "end": "2024-08-17 20:59:59"
+        },
+        {
+            "id": "world_story_event/500008",
+            "kind": "world_story_event",
+            "name": "Confessions of a Coward",
+            "start": "2024-08-10 14:00:00",
+            "end": "2024-08-24 20:59:59"
+        },
+        {
+            "id": "advent_event/200015",
+            "kind": "advent_event",
+            "name": "Violent Night, Holy Night",
+            "start": "2024-08-11 14:00:00",
+            "end": "2024-08-26 20:59:59"
+        },
+        {
+            "id": "advent_event/200025",
+            "kind": "advent_event",
+            "name": "Thundering Spiritbeast",
+            "start": "2024-08-17 14:00:00",
+            "end": "2024-08-31 20:59:59"
+        },
+        {
+            "id": "advent_event/200017",
+            "kind": "advent_event",
+            "name": "Windwrath Steambot",
+            "start": "2024-08-31 14:00:00",
+            "end": "2024-09-14 20:59:59"
+        },
+        {
+            "id": "hard_multi_event/2",
+            "kind": "hard_multi_event",
+            "name": "The Reckoning Windwrath Steambot",
+            "start": "2024-08-31 14:00:00",
+            "end": "2024-09-14 20:59:59"
+        },
+        {
+            "id": "advent_event/200019",
+            "kind": "advent_event",
+            "name": "Inferno Spiritbeast",
+            "start": "2024-09-07 14:00:00",
+            "end": "2024-09-21 20:59:59"
+        },
+        {
+            "id": "advent_event/200021",
+            "kind": "advent_event",
+            "name": "The Purge",
+            "start": "2024-09-07 14:00:00",
+            "end": "2024-09-21 20:59:59"
+        },
+        {
+            "id": "advent_event/200028",
+            "kind": "advent_event",
+            "name": "Kugui and Ryouki's Special Training!",
+            "start": "2024-09-14 14:00:00",
+            "end": "2024-10-01 20:59:59"
+        },
+        {
+            "id": "advent_event/200018",
+            "kind": "advent_event",
+            "name": "Maelstrom Steambot",
+            "start": "2024-10-01 14:00:00",
+            "end": "2024-10-15 20:59:59"
+        },
+        {
+            "id": "hard_multi_event/3",
+            "kind": "hard_multi_event",
+            "name": "The Reckoning Maelstrom Steambot",
+            "start": "2024-10-01 14:00:00",
+            "end": "2024-10-15 20:59:59"
+        },
+        {
+            "id": "carnival_event/100000",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-10-08 14:00:00",
+            "end": "2024-10-22 20:59:59"
+        },
+        {
+            "id": "advent_event/200037",
+            "kind": "advent_event",
+            "name": "Kugui and Ryouki's Special Training!",
+            "start": "2024-10-15 14:00:00",
+            "end": "2024-10-29 20:59:59"
+        },
+        {
+            "id": "advent_event/200038",
+            "kind": "advent_event",
+            "name": "Radiant Spiritbeast",
+            "start": "2024-10-15 14:00:00",
+            "end": "2024-10-29 20:59:59"
+        },
+        {
+            "id": "world_story_event/500010",
+            "kind": "world_story_event",
+            "name": "A Song for the Future",
+            "start": "2024-11-05 14:00:00",
+            "end": "2024-11-19 20:59:59"
+        },
+        {
+            "id": "advent_event/200050",
+            "kind": "advent_event",
+            "name": "The Purge",
+            "start": "2024-11-15 14:00:00",
+            "end": "2024-12-01 20:59:59"
+        },
+        {
+            "id": "advent_event/200051",
+            "kind": "advent_event",
+            "name": "Inferno Spiritbeast",
+            "start": "2024-11-15 14:00:00",
+            "end": "2024-12-01 20:59:59"
+        },
+        {
+            "id": "advent_event/200053",
+            "kind": "advent_event",
+            "name": "Radiant Steambot",
+            "start": "2024-12-01 14:00:00",
+            "end": "2024-12-17 20:59:59"
+        },
+        {
+            "id": "hard_multi_event/100000",
+            "kind": "hard_multi_event",
+            "name": "The Reckoning Radiant Steambot",
+            "start": "2024-12-01 14:00:00",
+            "end": "2024-12-17 20:59:59"
+        },
+        {
+            "id": "advent_event/200052",
+            "kind": "advent_event",
+            "name": "Slitherwind Spiritbeast",
+            "start": "2024-12-09 14:00:00",
+            "end": "2024-12-23 20:59:59"
+        },
+        {
+            "id": "advent_event/200056",
+            "kind": "advent_event",
+            "name": "Radiant Spiritbeast",
+            "start": "2024-12-17 14:00:00",
+            "end": "2024-12-31 20:59:59"
+        },
+        {
+            "id": "carnival_event/100002",
+            "kind": "carnival_event",
+            "name": "Hanifolk Carnival",
+            "start": "2024-12-31 14:00:00",
+            "end": "2025-01-14 20:59:59"
+        },
+        {
+            "id": "rush_event/700002",
+            "kind": "rush_event",
+            "name": "Grand Gauntlet",
+            "start": "2025-01-11 14:00:00",
+            "end": "2025-01-26 14:00:00"
+        },
+        {
+            "id": "rush_event/700003",
+            "kind": "rush_event",
+            "name": "Grand Gauntlet",
+            "start": "2025-04-11 14:00:00",
+            "end": "2025-04-27 14:00:00"
+        },
+        {
+            "id": "story_event/200029",
+            "kind": "story_event",
+            "name": "1,000-Day Celebration Quests",
+            "start": "2025-04-18 14:00:00",
+            "end": "2025-04-28 13:59:59"
+        },
+        {
+            "id": "raid_event/4",
+            "kind": "raid_event",
+            "name": "Raid Event: Sagas of Conquest",
+            "start": "2025-05-12 14:00:00",
+            "end": "2025-05-18 20:59:59"
+        },
+        {
+            "id": "advent_event/200009",
+            "kind": "advent_event",
+            "name": "Thundering Spiritbeast",
+            "start": "2025-06-03 14:00:00",
+            "end": "2025-06-10 13:59:59"
+        },
+        {
+            "id": "rush_event/700004",
+            "kind": "rush_event",
+            "name": "Grand Gauntlet",
+            "start": "2025-07-12 14:00:00",
+            "end": "2025-07-25 14:00:00"
+        },
+        {
+            "id": "rush_event/700005",
+            "kind": "rush_event",
+            "name": "Grand Gauntlet",
+            "start": "2025-07-19 14:00:00",
+            "end": "2025-08-03 14:00:00"
+        },
+        {
+            "id": "raid_event/5",
+            "kind": "raid_event",
+            "name": "Raid Event: Sagas of Conquest",
+            "start": "2025-10-29 14:00:00",
+            "end": "2025-11-05 20:59:59"
+        }
+    ],
+    "portals": {
+        "1": "Launch Gala Portal",
+        "3": "Armament Portal",
+        "156": "Spotlight Portal",
+        "119": "Spotlight Portal",
+        "93": "Spotlight Portal",
+        "78": "Spotlight Portal",
+        "63": "Spotlight Portal",
+        "48": "Spotlight Portal",
+        "158": "Light Spotlight Portal",
+        "79": "Spotlight Portal",
+        "40": "Thunder Spotlight Portal",
+        "168": "Spotlight Portal",
+        "72": "Returning Units Spotlight",
+        "150": "Returning Units Spotlight",
+        "126": "Returning Units Spotlight",
+        "183": "Spotlight Portal",
+        "144": "Returning Units Spotlight",
+        "105": "Returning Units Spotlight",
+        "120": "Returning Units Spotlight",
+        "138": "Returning Units Spotlight",
+        "112": "Returning Units Spotlight",
+        "140": "Returning Units Spotlight",
+        "114": "Returning Units Spotlight",
+        "136": "Returning Units Spotlight",
+        "122": "Returning Units Spotlight",
+        "71": "Returning Units Spotlight",
+        "70": "Returning Units Spotlight",
+        "109": "Returning Units Spotlight",
+        "128": "Returning Units Spotlight",
+        "107": "Returning Units Spotlight",
+        "134": "Returning Units Spotlight",
+        "142": "Returning Units Spotlight",
+        "96": "Returning Units Spotlight",
+        "148": "Returning Units Spotlight",
+        "76": "Returning Units Spotlight",
+        "172": "Spotlight Portal",
+        "146": "Returning Units Spotlight",
+        "164": "Returning Units Spotlight",
+        "124": "Returning Units Spotlight",
+        "171": "Spotlight Portal",
+        "153": "Returning Units Spotlight",
+        "177": "Spotlight Portal",
+        "166": "Returning Units Spotlight",
+        "161": "Returning Units Spotlight",
+        "58": "Returning Units Spotlight",
+        "178": "Spotlight Portal",
+        "100": "Returning Units Spotlight",
+        "175": "Spotlight Portal",
+        "130": "Returning Units Spotlight",
+        "108": "Returning Units Spotlight",
+        "180": "Spotlight Portal",
+        "132": "Returning Units Spotlight",
+        "53": "Returning Units Spotlight",
+        "2001": "Returning Units Spotlight",
+        "2002": "Returning Units Spotlight",
+        "2003": "Returning Units Spotlight",
+        "2004": "Returning Units Spotlight",
+        "42": "Fire Spotlight Portal",
+        "174": "Spotlight Portal",
+        "163": "Spotlight Portal",
+        "91": "Spotlight Portal",
+        "44": "New Faces Spotlight Portal",
+        "43": "New Faces Spotlight Portal",
+        "59": "New Faces Spotlight Portal",
+        "143": "New Faces Spotlight Portal",
+        "127": "New Faces Spotlight Portal",
+        "89": "New Faces Spotlight Portal",
+        "184": "New Faces Spotlight Portal",
+        "181": "New Faces Spotlight Portal",
+        "179": "Star Fest Portal",
+        "176": "New Faces Spotlight Portal",
+        "173": "New Faces Spotlight Portal",
+        "170": "New Faces Spotlight Portal",
+        "167": "Star Fest Portal",
+        "165": "New Faces Spotlight Portal",
+        "162": "New Faces Spotlight Portal",
+        "159": "New Faces Spotlight Portal",
+        "157": "Star Fest Portal",
+        "154": "New Faces Spotlight Portal",
+        "152": "New Faces Spotlight Portal",
+        "149": "New Faces Spotlight Portal",
+        "147": "Star Fest Portal",
+        "145": "New Faces Spotlight Portal",
+        "141": "New Faces Spotlight Portal",
+        "139": "New Faces Spotlight Portal",
+        "137": "New Faces Spotlight Portal",
+        "135": "New Faces Spotlight Portal",
+        "133": "New Faces Spotlight Portal",
+        "131": "New Faces Spotlight Portal",
+        "129": "New Faces Spotlight Portal",
+        "125": "New Faces Spotlight Portal",
+        "123": "New Faces Spotlight Portal",
+        "121": "New Faces Spotlight Portal",
+        "118": "New Faces Spotlight Portal",
+        "115": "New Faces Spotlight Portal",
+        "113": "New Faces Spotlight Portal",
+        "111": "New Faces Spotlight Portal",
+        "110": "New Faces Spotlight Portal",
+        "106": "New Faces Spotlight Portal",
+        "104": "New Faces Spotlight Portal",
+        "103": "New Faces Spotlight Portal",
+        "101": "New Faces Spotlight Portal",
+        "99": "New Faces Spotlight Portal",
+        "98": "New Faces Spotlight Portal",
+        "97": "New Faces Spotlight Portal",
+        "900002": "New Faces Spotlight Portal",
+        "94": "New Faces Spotlight Portal",
+        "92": "New Faces Spotlight Portal",
+        "90": "New Faces Spotlight Portal",
+        "86": "New Faces Spotlight Portal",
+        "84": "New Faces Spotlight Portal",
+        "82": "New Faces Spotlight Portal",
+        "80": "New Faces Spotlight Portal",
+        "77": "New Faces Spotlight Portal",
+        "75": "New Faces Spotlight Portal",
+        "74": "New Faces Spotlight Portal",
+        "73": "New Faces Spotlight Portal",
+        "68": "New Faces Spotlight Portal",
+        "66": "New Faces Spotlight Portal",
+        "65": "New Faces Spotlight Portal",
+        "64": "New Faces Spotlight Portal",
+        "62": "New Faces Spotlight Portal",
+        "61": "New Faces Spotlight Portal",
+        "60": "New Faces Spotlight Portal",
+        "56": "New Faces Spotlight Portal",
+        "54": "New Faces Spotlight Portal",
+        "52": "New Faces Spotlight Portal",
+        "51": "New Faces Spotlight Portal",
+        "49": "New Faces Spotlight Portal",
+        "47": "New Faces Spotlight Portal",
+        "46": "New Faces Spotlight Portal",
+        "45": "New Faces Spotlight Portal",
+        "41": "New Faces Spotlight Portal",
+        "39": "New Faces Spotlight Portal",
+        "116": "New Faces Spotlight Portal",
+        "117": "New Faces Spotlight Portal",
+        "160": "Spotlight Portal",
+        "169": "Spotlight Portal",
+        "5035": "Armament Portal",
+        "5026": "Armament Portal Spotlight (Wind Boosted)",
+        "5033": "Armament Portal",
+        "5031": "Armament Portal Spotlight (Light Boosted)",
+        "5028": "Armament Portal Spotlight (Light Boosted)",
+        "5038": "Armament Portal",
+        "5034": "Armament Portal",
+        "5032": "Armament Portal Spotlight (Water Boosted)",
+        "5027": "Armament Portal Spotlight (Water Boosted)",
+        "5036": "Armament Portal",
+        "5029": "Armament Portal Spotlight (Fire Boosted)",
+        "5000": "Armament Portal",
+        "5001": "Armament Portal",
+        "5002": "Armament Portal",
+        "5003": "Armament Portal",
+        "5004": "Armament Portal",
+        "5005": "Armament Portal",
+        "5006": "Armament Portal",
+        "5007": "Armament Portal",
+        "5008": "Armament Portal",
+        "5009": "Armament Portal",
+        "5010": "Armament Portal",
+        "5011": "Armament Portal",
+        "5012": "Armament Portal",
+        "5013": "Armament Portal",
+        "5014": "Armament Portal",
+        "5015": "Armament Portal",
+        "5016": "Armament Portal",
+        "5017": "Armament Portal",
+        "5018": "Armament Portal",
+        "5019": "Armament Portal",
+        "5020": "Armament Portal",
+        "5021": "Armament Portal",
+        "5022": "Armament Portal",
+        "5023": "Armament Portal",
+        "5024": "Armament Portal",
+        "5025": "Armament Portal",
+        "5037": "Armament Portal",
+        "5030": "Armament Portal Spotlight (Dark Boosted)",
+        "95": "Spotlight Portal",
+        "87": "Spotlight Portal",
+        "85": "Spotlight Portal",
+        "83": "Spotlight Portal",
+        "81": "Spotlight Portal",
+        "69": "Spotlight Portal",
+        "50": "Spotlight Portal",
+        "185": "Spotlight Portal",
+        "151": "Spotlight Portal",
+        "88": "Spotlight Portal",
+        "67": "Spotlight Portal",
+        "55": "Spotlight Portal",
+        "182": "Spotlight Portal",
+        "155": "Farewell Portal",
+        "13": "Woman Warriors Spotlight Portal",
+        "11": "New Faces Spotlight Portal",
+        "7": "Shadowflash Serpent Spotlight Portal",
+        "10": "New Faces Spotlight Portal",
+        "9090": "New Year's Spotlight Portal",
+        "8": "New Year's Spotlight Portal",
+        "6": "Holiday Festival Spotlight Portal",
+        "5": "The Necropolis: Conquest Spotlight Portal",
+        "38": "Water Spotlight Portal",
+        "36": "Wind Spotlight Portal",
+        "34": "Thunder Spotlight Portal",
+        "37": "New Faces Spotlight Portal",
+        "35": "New Faces Spotlight Portal",
+        "33": "New Faces Spotlight Portal",
+        "30": "Light Spotlight Portal",
+        "32": "Dark Spotlight Portal",
+        "29": "New Faces Spotlight Portal",
+        "24": "Wind Spotlight Portal",
+        "28": "Fire Spotlight Portal",
+        "26": "Thunder Spotlight Portal",
+        "22": "W.F. Portal",
+        "20": "Light Spotlight Portal",
+        "31": "New Faces Spotlight Portal",
+        "27": "New Faces Spotlight Portal",
+        "25": "New Faces Spotlight Portal",
+        "23": "New Faces Spotlight Portal",
+        "19": "New Faces Spotlight Portal",
+        "16": "Thunder Spotlight Portal",
+        "17": "New Faces Spotlight Portal",
+        "21": "New Faces Spotlight Portal",
+        "14": "New Faces Spotlight Portal",
+        "18": "Dark Spotlight Portal",
+        "12": "Spotlight Portal"
+    }
+}

@@ -2,13 +2,14 @@
  * The lobby mate a client sends (`Enter` / `ChangeParty`, docs/coop-protocol.md) as its save has it (SEC-15). The other
  * players' games show and simulate the party from the mate, so a client could otherwise show a name, a rank or units
  * it doesn't have. The player's own choices (which units and armaments, its battle settings) are kept; everything the
- * save knows comes from the save: name, rank, title, and each unit's and armament's growth. A unit, armament or ability
+ * save knows comes from the save: name, rank, title, role, and each unit's and armament's growth. A unit, armament or ability
  * soul the player doesn't own becomes an empty slot.
  *
  * Every client, the sender included, builds that player's battle from this mate (the lobby's Start), so what comes
  * back here is what the player fights with.
  */
 import { getPlayerCharacterManaNodesSync, getPlayerCharactersSync, getPlayerEquipmentListSync, getPlayerItemsSync, getPlayerSync } from "../../data/wdfpData"
+import { visibleManaNodes } from "../balance";
 import { clampEquipmentLevel, playerRankSync } from "../assets"
 
 type Json = any
@@ -38,7 +39,8 @@ export function checkMateAgainstSave(playerId: number, mate: Json): Json | null 
             evolution_level: owned.evolutionLevel,
             exp: owned.exp,
             over_limit_step: owned.overLimitStep,
-            mana_node_ids: getPlayerCharacterManaNodesSync(playerId, id),
+            // without a second board that isn't out yet (FT-47): the mates' clients don't have its nodes
+            mana_node_ids: visibleManaNodes(id, getPlayerCharacterManaNodesSync(playerId, id)),
             ex_boost: owned.exBoost === undefined ? NONE : some({ status_id: owned.exBoost.statusId, ability_id_list: owned.exBoost.abilityIdList }),
             illustration_settings: owned.illustrationSettings === undefined ? NONE : some(owned.illustrationSettings)
         })
@@ -69,6 +71,9 @@ export function checkMateAgainstSave(playerId: number, mate: Json): Json | null 
         name: player.name,
         rank: playerRankSync(player.rankPoint),
         degreeId: player.degreeId,
+        // the save's role (user_info.role, which the client sends here): role 99 marks an AI companion, which every
+        // other client plays itself, so a player sending it would be taken over by the others' games (SEC-16)
+        playerRoleKind: player.role,
         party: {
             ...party,
             characters: optionList(party.characters).map(character),

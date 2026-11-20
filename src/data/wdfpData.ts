@@ -1,11 +1,43 @@
 import { randomBytes } from "crypto";
+import { createStatementCache } from "./statementCache";
 import getDatabase, { Database } from ".";
 import { generateViewerId, getServerTime } from "../utils";
 import { Account, PlayerMission, PlayerResets, PlayerShopPurchases, DailyChallengePointListCampaign, DailyChallengePointListEntry, MergedPlayerData, PartyCategory, Player, PlayerActiveMission, PlayerBoxGacha, PlayerBoxGachaDrawnReward, PlayerCharacter, PlayerCharacterBondToken, PlayerCharacterExBoost, PlayerDrawnQuest, PlayerEquipment, PlayerGachaCampaign, PlayerGachaInfo, PlayerMail, PlayerMultiSpecialExchangeCampaign, PlayerParty, PlayerPartyGroup, PlayerPeriodicRewardPoint, PlayerQuestProgress, PlayerRushEvent, PlayerRushEventClearedFolders, PlayerRushEventPlayedParty, PlayerStartDashExchangeCampaign, RawAccount, RawDailyChallengePointListCampaign, RawDailyChallengePointListEntry, RawPlayer, RawPlayerActiveMission, RawPlayerActiveMissionStage, RawPlayerBoxGacha, RawPlayerCharacter, RawPlayerCharacterBondToken, RawPlayerCharacterManaNode, RawPlayerClearedRegularMission, RawPlayerDrawnQuest, RawPlayerEquipment, RawPlayerGachaCampaign, RawPlayerGachaInfo, RawPlayerItem, RawPlayerMail, RawPlayerMultiSpecialExchangeCampaign, RawPlayerOption, RawPlayerParty, RawPlayerPartyGroup, RawPlayerQuestProgress, RawPlayerRushEvent, RawPlayerRushEventClearedFolder, RawPlayerRushEventPlayedParty, RawPlayerRushEventRanking, RawPlayerStartDashExchangeCampaign, RawPlayerTriggeredTutorial, RawSession, RushEventBattleType, GetRushEventEndlessRankingListResult, Session, SessionType, UserRushEventEndlessBattleRanking, UserRushEventPlayedParty } from "./types";
 import { deserializeBoolean, deserializeNumberList, getDefaultPlayerData, serializeBoolean, serializeNumberList } from "./utils";
 import { getPlayerRushEventEndlessBattleRankingSync } from "../lib/rush";
+import { retainRewardMailForImportSync, restoreRewardMailSourcesSync } from "./rewardMailSources";
+import { retainedMissionDegreeIds } from "./missionDegrees";
+import { captureEventContext, scheduledContentEnabled } from "../lib/eventSchedule";
 
 const db = getDatabase(Database.WDFP_DATA)
+const prepare = createStatementCache(db)
+
+/**
+ * Tables of event records kept per run of the event rather than per event: raid, ranking, carnival, score attack and
+ * rush scores, their leaderboards and the rewards already received. An event that comes round again in a new run (the
+ * next cycle of the schedule, a new Manual run, the admin Calendar's "Go to") starts with none of them.
+ */
+export const EVENT_RUN_TABLES = ["players_raid_records", "players_raid_state", "players_ranking_records", "players_carnival_records",
+    "players_carnival_paid", "players_score_attack_best", "players_score_attack_battles", "players_rush_events",
+    "players_rush_events_cleared_folders", "players_rush_events_played_parties"] as const
+
+let legacyRunsAdopted = false
+
+/**
+ * The run event records are kept under (`run`, bound as `@run`): the schedule's occurrence of the events playing for this
+ * request (src/lib/eventSchedule.ts; a battle keeps the one it started in), or "" with event scheduling off. Records
+ * stored without a run (before runs, or while scheduling was off) join the current run the first time it is asked for.
+ */
+export function currentEventRun(): string {
+    if (!scheduledContentEnabled()) return ""
+    const run = captureEventContext().occurrenceKey
+    if (!legacyRunsAdopted) {
+        legacyRunsAdopted = true
+        // a row whose key the current run already holds stays under "" (seen again if scheduling is turned off)
+        for (const table of EVENT_RUN_TABLES) prepare(`UPDATE OR IGNORE ${table} SET run = ? WHERE run = ''`).run(run)
+    }
+    return run
+}
 const expPoolMax = 100000 // the maximum amount of exp that can be pooled
 
 // Transactions
@@ -17,7 +49,7 @@ const rollbackSignal = Symbol("rollback")
  * Runs `fn` in one SQLite transaction: every write it makes commits together, or none does.
  * It rolls back when `fn` throws (the error is rethrown) or when `shouldRollback(result)` is true (the result
  * is still returned). Calls nest: inside another transaction this one becomes a savepoint, so an inner
- * rollback undoes only the inner writes. `fn` must be synchronous: a better-sqlite3 transaction can't span
+ * rollback undoes only the inner writes. `fn` must be synchronous: a transaction of src/data/sqlite.ts can't span
  * an `await`, and while it is synchronous no other request can run between its check and its write.
  */
 export function runInTransactionSync<T>(fn: () => T, shouldRollback?: (result: T) => boolean): T {
@@ -70,11 +102,11 @@ function buildAccount(
  * @param accountId The ID of the Account to get.
  * @returns The Account that was found or null.
  */
-function getAccountSync(
+export function getAccountSync(
     accountId: number
 ): Account | null {
 
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id, app_id, first_login_time, idp_alias, idp_code, idp_id, reg_time, last_login_time, status
     FROM accounts
     WHERE id = ?
@@ -94,7 +126,7 @@ function getAccountSync(
 export function getAccountsFromDeviceSecretHashSync(
     hash: string
 ): Account[] {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id, app_id, first_login_time, idp_alias, idp_code, idp_id, reg_time, last_login_time, status
     FROM accounts
     WHERE device_secret_hash = ?
@@ -114,7 +146,27 @@ export function setAccountDeviceSecretHashSync(
     accountId: number,
     hash: string | null
 ) {
-    db.prepare(`UPDATE accounts SET device_secret_hash = ? WHERE id = ?`).run(hash, accountId)
+    prepare(`UPDATE accounts SET device_secret_hash = ? WHERE id = ?`).run(hash, accountId)
+}
+
+/** The account's device secret hash (SEC-5), or null when no device is bound to it. */
+export function getAccountDeviceSecretHashSync(
+    accountId: number
+): string | null {
+    const row = prepare(`SELECT device_secret_hash FROM accounts WHERE id = ?`).get(accountId) as { device_secret_hash: string | null } | undefined
+    return row?.device_secret_hash ?? null
+}
+
+/**
+ * Unbinds a device secret from every account that holds it (ACC-4: before it is bound to another account, so
+ * loginDevice can only find that one; duplicates from before SEC-5 may share a hash).
+ *
+ * @returns How many accounts let go of it.
+ */
+export function clearDeviceSecretHashSync(
+    hash: string
+): number {
+    return prepare(`UPDATE accounts SET device_secret_hash = NULL WHERE device_secret_hash = ?`).run(hash).changes
 }
 
 /** Whether an account is bound to this device secret hash. */
@@ -122,7 +174,7 @@ export function accountHasDeviceSecretHashSync(
     accountId: number,
     hash: string
 ): boolean {
-    return db.prepare(`SELECT 1 FROM accounts WHERE id = ? AND device_secret_hash = ?`).get(accountId, hash) !== undefined
+    return prepare(`SELECT 1 FROM accounts WHERE id = ? AND device_secret_hash = ?`).get(accountId, hash) !== undefined
 }
 
 /**
@@ -149,10 +201,10 @@ export function getAccount(
  * @param accountId The account's id.
  * @returns A list of player ids.
  */
-function getAccountPlayersSync(
+export function getAccountPlayersSync(
     accountId: number
 ): number[] {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id
     FROM players
     WHERE account_id = ?
@@ -185,14 +237,14 @@ export function getAccountPlayers(
  * @param account An Account object that doesn't include its id, firstLoginTime, lastLoginTime, nor regTime.
  * @returns The Account that was inserted into the database.
  */
-function insertAccountSync(
+export function insertAccountSync(
     account: Omit<Account, "id" | "firstLoginTime" | "regTime" | "lastLoginTime">
 ): Account {
 
     const dateNow = new Date()
     const dateNowISO = dateNow.toISOString()
 
-    const result = db.prepare(`
+    const result = prepare(`
     INSERT INTO accounts (app_id, first_login_time, idp_alias, idp_code, idp_id, reg_time, last_login_time, status)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `).run(
@@ -272,7 +324,7 @@ function updateAccountSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE accounts
         SET ${sets.join(', ')}
         WHERE id = ?
@@ -314,8 +366,37 @@ function buildSession(
         accountId: rawSession.account_id,
         expires: new Date(rawSession.expires),
         type: rawSession.type,
-        udid: rawSession.udid
+        udid: rawSession.udid,
+        authenticatedAt: rawSession.authenticated_at === null || rawSession.authenticated_at === undefined ? null : new Date(rawSession.authenticated_at)
     }
+}
+
+/**
+ * How many accounts were created since a date (SEC-16: the server-wide cap on new guest accounts).
+ *
+ * @param since The start of the window.
+ */
+export function countAccountsCreatedSinceSync(since: Date): number {
+    return (prepare(`SELECT COUNT(*) AS count FROM accounts WHERE reg_time >= ?`).get(since.toISOString()) as { count: number }).count
+}
+
+/**
+ * Deletes the accounts that never signed up (SEC-16): created before `createdBefore`, with no player, no viewer
+ * session, no portal user and no session left at all. A login's refresh token (ZRT) lasts 30 days and only expired
+ * tokens are cleaned up, so an account goes at the earliest 30 days after its last login. Everything that belongs to
+ * an account goes with it (ON DELETE CASCADE). A device whose account went gets a new one at its next login, as a
+ * new device would.
+ *
+ * @returns How many accounts were deleted.
+ */
+export function deleteUnusedAccountsSync(createdBefore: Date): number {
+    return prepare(`
+    DELETE FROM accounts
+    WHERE reg_time < ?
+        AND user_id IS NULL
+        AND NOT EXISTS (SELECT 1 FROM players WHERE players.account_id = accounts.id)
+        AND NOT EXISTS (SELECT 1 FROM sessions WHERE sessions.account_id = accounts.id)
+    `).run(createdBefore.toISOString()).changes
 }
 
 /**
@@ -328,8 +409,8 @@ function getSessionSync(
     token: string
 ): Session | null {
 
-    const raw = db.prepare(`
-    SELECT token, account_id, expires, type, udid
+    const raw = prepare(`
+    SELECT token, account_id, expires, type, udid, authenticated_at
     FROM sessions
     WHERE token = ?
     `).get(token) as RawSession | undefined
@@ -381,8 +462,8 @@ function getAccountSessionsOfTypeSync(
     accountId: number,
     type: SessionType
 ): Session[] {
-    const rawResult = db.prepare(`
-    SELECT token, account_id, expires, type, udid
+    const rawResult = prepare(`
+    SELECT token, account_id, expires, type, udid, authenticated_at
     FROM sessions
     WHERE account_id = ? AND type = ?    
     `).all(accountId, type) as RawSession[]
@@ -418,15 +499,16 @@ export function getAccountSessionsOfType(
 function insertSessionWithTokenSync(
     session: Session
 ): Session {
-    db.prepare(`
-    INSERT INTO sessions (token, account_id, expires, type, udid)
-    VALUES (?, ?, ?, ?, ?)
+    prepare(`
+    INSERT INTO sessions (token, account_id, expires, type, udid, authenticated_at)
+    VALUES (?, ?, ?, ?, ?, ?)
     `).run(
         session.token,
         session.accountId,
         session.expires.toISOString(),
         session.type,
-        session.udid ?? null
+        session.udid ?? null,
+        session.authenticatedAt?.toISOString() ?? null
     )
 
     return session
@@ -492,7 +574,7 @@ export function insertSession(
 function deleteSessionSync(
     token: string
 ) {
-    db.prepare(`DELETE FROM sessions WHERE token = ?`).run(token)
+    prepare(`DELETE FROM sessions WHERE token = ?`).run(token)
 }
 
 /**
@@ -518,10 +600,10 @@ export function deleteSession(
  * 
  * @param playerId The id of the player to delete all the sessions of.
  */
-function deleteAccountSessionsSync(
+export function deleteAccountSessionsSync(
     playerId: number
 ) {
-    db.prepare(`DELETE FROM sessions WHERE account_id = ?`).run(playerId)
+    prepare(`DELETE FROM sessions WHERE account_id = ?`).run(playerId)
 }
 
 /**
@@ -552,7 +634,7 @@ function deleteAccountSessionsOfTypeSync(
     accountId: number,
     type: SessionType
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM sessions
     WHERE account_id = ? AND type = ?
     `).run(accountId, type)
@@ -590,7 +672,7 @@ export const ZRT_TTL_MS = 30 * 24 * 60 * 60 * 1000
  * Viewer sessions are kept unless `viewer` is set: the client keeps its viewer ID across launches and /load
  * renews it. Set it when the device itself loses access (unlink), because a viewer session alone keeps signed
  * game requests working until it expires. With it gone, a device that logs in again (on another account) can
- * have its viewer ID adopted by /load.
+ * have its viewer ID adopted by /load. Until then /load refuses that viewer ID to any other account.
  *
  * @param accountId The account.
  * @param options `viewer`: also delete the viewer sessions.
@@ -601,7 +683,7 @@ export function revokeAccountSessionsSync(
     options: { viewer?: boolean } = {}
 ): number {
     const types = options.viewer ? [SessionType.ZAT, SessionType.ZRT, SessionType.VIEWER] : [SessionType.ZAT, SessionType.ZRT]
-    return db.prepare(`
+    return prepare(`
     DELETE FROM sessions
     WHERE account_id = ? AND type IN (${types.map(() => "?").join(", ")})
     `).run(accountId, ...types).changes
@@ -617,7 +699,7 @@ export function revokeAccountSessionsSync(
 export function deleteExpiredTokenSessionsSync(
     now: Date = new Date()
 ): number {
-    return db.prepare(`
+    return prepare(`
     DELETE FROM sessions
     WHERE type IN (?, ?) AND expires <= ?
     `).run(SessionType.ZAT, SessionType.ZRT, now.toISOString()).changes
@@ -641,7 +723,40 @@ export function updateSessionExpirySync(
     token: string,
     expires: Date
 ) {
-    db.prepare(`UPDATE sessions SET expires = ? WHERE token = ?`).run(expires.toISOString(), token)
+    prepare(`UPDATE sessions SET expires = ? WHERE token = ?`).run(expires.toISOString(), token)
+}
+
+/**
+ * Sets when a viewer session last proved its account's zat (`/load`, `tool/signup`), the start of the most a game
+ * request can renew it to (`src/lib/gameAuth.ts`, SEC-16).
+ */
+export function updateSessionAuthenticatedSync(
+    token: string,
+    authenticatedAt: Date
+) {
+    prepare(`UPDATE sessions SET authenticated_at = ? WHERE token = ?`).run(authenticatedAt.toISOString(), token)
+}
+
+/**
+ * Moves an account's viewer sessions to another account (ACC-3): a device that signs in to a user's save keeps the
+ * viewer ID its game already holds, which belongs to the device's guest account until then.
+ *
+ * @returns How many sessions moved.
+ */
+export function moveAccountViewerSessionsSync(
+    fromAccountId: number,
+    toAccountId: number
+): number {
+    return prepare(`UPDATE sessions SET account_id = ? WHERE account_id = ? AND type = ?`).run(toAccountId, fromAccountId, SessionType.VIEWER).changes
+}
+
+/**
+ * Whether a session row with this token exists, expired or not (an expired viewer session still holds its ID).
+ */
+export function sessionTokenExistsSync(
+    token: string
+): boolean {
+    return prepare(`SELECT 1 FROM sessions WHERE token = ?`).get(token) !== undefined
 }
 
 /**
@@ -654,7 +769,30 @@ export function updateSessionUdidSync(
     token: string,
     udid: string
 ) {
-    db.prepare(`UPDATE sessions SET udid = ? WHERE token = ?`).run(udid, token)
+    prepare(`UPDATE sessions SET udid = ? WHERE token = ?`).run(udid, token)
+}
+
+/**
+ * Makes `token` the account's only viewer session, in one transaction: the account's other viewer sessions end. The
+ * caller checks that no other account holds `token`.
+ *
+ * @param accountId The account.
+ * @param token The viewer ID.
+ * @returns The new viewer session.
+ */
+export function replaceAccountViewerSessionSync(
+    accountId: number,
+    token: string
+): Session {
+    return runInTransactionSync(() => {
+        deleteAccountSessionsOfTypeSync(accountId, SessionType.VIEWER)
+        return insertSessionWithTokenSync({
+            token: token,
+            expires: viewerSessionExpiry(),
+            accountId: accountId,
+            type: SessionType.VIEWER
+        })
+    })
 }
 
 export function generateViewerIdSession(
@@ -662,16 +800,7 @@ export function generateViewerIdSession(
 ): Promise<Session> {
     return new Promise<Session>((resolve, reject) => {
         try {
-            // replace any existing viewer ID sessions, in one transaction
-            resolve(runInTransactionSync(() => {
-                deleteAccountSessionsOfTypeSync(accountId, SessionType.VIEWER)
-                return insertSessionWithTokenSync({
-                    token: generateViewerId().toString(),
-                    expires: viewerSessionExpiry(),
-                    accountId: accountId,
-                    type: SessionType.VIEWER
-                })
-            }))
+            resolve(replaceAccountViewerSessionSync(accountId, generateViewerId().toString()))
         } catch (error) {
             reject(error)
         }
@@ -690,13 +819,13 @@ export function getPlayerDailyChallengePointListSync(
     playerId: number
 ): DailyChallengePointListEntry[] {
 
-    const rawEntries = db.prepare(`
+    const rawEntries = prepare(`
     SELECT id, point
     FROM daily_challenge_point_list_entries
     WHERE player_id = ?
     `).all(playerId) as RawDailyChallengePointListEntry[]
 
-    const rawCampaigns = db.prepare(`
+    const rawCampaigns = prepare(`
     SELECT campaign_id, additional_point, list_entry_id
     FROM daily_challenge_point_list_campaigns
     WHERE player_id = ?
@@ -731,6 +860,19 @@ export function getPlayerDailyChallengePointListSync(
     return entries
 }
 
+/** Sets what is left of a daily challenge point campaign's extra attempts (FT-7). */
+export function setPlayerDailyChallengePointCampaignSync(
+    playerId: number,
+    pointId: number,
+    campaignId: number,
+    additionalPoint: number
+) {
+    prepare(`
+    UPDATE daily_challenge_point_list_campaigns SET additional_point = ?
+    WHERE player_id = ? AND list_entry_id = ? AND campaign_id = ?
+    `).run(additionalPoint, playerId, pointId, campaignId)
+}
+
 /**
  * Inserts a singular DailyChallengePointListEntry into the database.
  * 
@@ -744,7 +886,7 @@ function insertPlayerDailyChallengePointListEntrySync(
     const id = entry.id
 
     // insert into the list entry table
-    db.prepare(`
+    prepare(`
     INSERT INTO daily_challenge_point_list_entries (id, point, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -755,7 +897,7 @@ function insertPlayerDailyChallengePointListEntrySync(
 
     // insert campaigns
     for (const campaign of entry.campaignList) {
-        db.prepare(`
+        prepare(`
         INSERT INTO daily_challenge_point_list_campaigns (campaign_id, additional_point, list_entry_id, player_id)
         VALUES (?, ?, ?, ?)
         `).run(
@@ -785,6 +927,25 @@ function insertPlayerDailyChallengePointListSync(
 }
 
 /**
+ * Sets the point of one of a player's daily challenge points, adding it to their list if it isn't there (its
+ * campaigns are left as they are).
+ *
+ * @param playerId The ID of the player.
+ * @param pointId The daily challenge point's ID (`quest/event/daily_challenge_point`).
+ * @param point The new point.
+ */
+export function setPlayerDailyChallengePointSync(
+    playerId: number,
+    pointId: number,
+    point: number
+) {
+    prepare(`
+    INSERT INTO daily_challenge_point_list_entries (id, point, player_id) VALUES (?, ?, ?)
+    ON CONFLICT (id, player_id) DO UPDATE SET point = excluded.point
+    `).run(pointId, point, playerId)
+}
+
+/**
  * Gets a player's triggered tutorials.
  * 
  * @param playerId The ID of the player to get the triggered tutorials of.
@@ -794,7 +955,7 @@ export function getPlayerTriggeredTutorialsSync(
     playerId: number
 ): number[] {
 
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id
     FROM players_triggered_tutorials
     WHERE player_id = ?
@@ -813,7 +974,7 @@ export function insertPlayerTriggeredTutorialSync(
     playerId: number,
     tutorialId: number
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_triggered_tutorials (id, player_id)
     VALUES (?, ?)
     `).run(tutorialId, playerId)
@@ -846,7 +1007,7 @@ export function getPlayerClearedRegularMissionListSync(
     playerId: number
 ): Record<string, number> {
 
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id, value
     FROM players_cleared_regular_missions
     WHERE player_id = ?
@@ -873,7 +1034,7 @@ function insertPlayerClearedRegularMissionSync(
     missionId: number | string,
     value: number
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_cleared_regular_missions (id, value, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -895,7 +1056,7 @@ export function setPlayerClearedRegularMissionSync(
     missionId: number,
     stage: number
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_cleared_regular_missions (id, value, player_id)
     VALUES (?, ?, ?)
     ON CONFLICT (id, player_id) DO UPDATE SET value = excluded.value
@@ -990,7 +1151,7 @@ export function playerOwnsCharacterSync(
     playerId: number,
     characterId: number
 ): boolean {
-    return db.prepare(`
+    return prepare(`
     SELECT id
     FROM players_characters
     WHERE player_id = ? AND id = ?
@@ -1009,7 +1170,7 @@ export function getPlayerCharacterSync(
     characterId: number
 ): PlayerCharacter | null {
 
-    const rawCharacter = db.prepare(`
+    const rawCharacter = prepare(`
     SELECT id, entry_count, evolution_level, over_limit_step, protection,
         join_time, update_time, exp, stack, mana_board_index, ex_boost_status_id,
         ex_boost_ability_id_list, illustration_settings
@@ -1020,10 +1181,11 @@ export function getPlayerCharacterSync(
     if (rawCharacter === undefined) return null
 
     // get bond tokens
-    const rawBondTokens = db.prepare(`
+    const rawBondTokens = prepare(`
     SELECT mana_board_index, status, character_id
     FROM players_characters_bond_tokens
     WHERE player_id = ? AND character_id = ?
+    ORDER BY mana_board_index
     `).all(playerId, characterId) as RawPlayerCharacterBondToken[]
 
     return buildPlayerCharacter(
@@ -1042,7 +1204,7 @@ export function getPlayerCharactersSync(
     playerId: number
 ): Record<string, PlayerCharacter> {
 
-    const rawCharacters = db.prepare(`
+    const rawCharacters = prepare(`
     SELECT id, entry_count, evolution_level, over_limit_step, protection,
         join_time, update_time, exp, stack, mana_board_index, ex_boost_status_id,
         ex_boost_ability_id_list, illustration_settings
@@ -1051,10 +1213,11 @@ export function getPlayerCharactersSync(
     `).all(playerId) as RawPlayerCharacter[]
 
     // get bond tokens
-    const rawBondTokens = db.prepare(`
+    const rawBondTokens = prepare(`
     SELECT mana_board_index, status, character_id
     FROM players_characters_bond_tokens
     WHERE player_id = ?
+    ORDER BY character_id, mana_board_index
     `).all(playerId) as RawPlayerCharacterBondToken[]
 
     const bondBuckets: Record<string, PlayerCharacterBondToken[]> = {}
@@ -1095,7 +1258,7 @@ function insertPlayerCharacterBondTokenSync(
     characterId: number | string,
     bondToken: PlayerCharacterBondToken
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_characters_bond_tokens (mana_board_index, status, player_id, character_id)
     VALUES (?, ?, ?, ?)
     `).run(
@@ -1118,7 +1281,7 @@ export function updatePlayerCharacterBondTokenSync(
     characterId: number | string,
     bondToken: PlayerCharacterBondToken
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_characters_bond_tokens
     SET status = ?
     WHERE player_id = ? AND character_id = ? AND mana_board_index = ?
@@ -1143,7 +1306,7 @@ export function insertPlayerCharacterSync(
     character: PlayerCharacter
 ) {
     // insert into characters table
-    db.prepare(`
+    prepare(`
     INSERT INTO players_characters (id, entry_count, evolution_level, over_limit_step, 
         protection, join_time, update_time, exp, stack, mana_board_index, player_id,
         ex_boost_status_id, ex_boost_ability_id_list, illustration_settings)
@@ -1285,7 +1448,7 @@ export function updatePlayerCharacterSync(
         values.push(serializeNumberList(illustration_settings))
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_characters
         SET ${sets.join(', ')}
         WHERE id = ? AND player_id = ?
@@ -1302,7 +1465,7 @@ export function getPlayerCharactersManaNodesSync(
     playerId: number
 ): Record<string, number[]> {
 
-    const rawNodes = db.prepare(`
+    const rawNodes = prepare(`
     SELECT value, character_id
     FROM players_characters_mana_nodes
     WHERE player_id = ?
@@ -1335,7 +1498,7 @@ export function getPlayerCharacterManaNodesSync(
     playerId: number,
     characterId: number
 ): number[] {
-    const rawNodes = db.prepare(`
+    const rawNodes = prepare(`
     SELECT value, character_id
     FROM players_characters_mana_nodes
     WHERE character_id = ? AND player_id = ?
@@ -1357,7 +1520,7 @@ export function hasPlayerUnlockedCharacterManaNodeSync(
     characterId: number,
     manaNodeId: string | number
 ): boolean {
-    return db.prepare(`
+    return prepare(`
     SELECT value
     FROM players_characters_mana_nodes
     WHERE player_id = ? AND character_id = ? AND value = ?
@@ -1377,7 +1540,7 @@ export function insertPlayerCharacterManaNodesSync(
     manaNodes: number[]
 ) {
     for (const node of manaNodes) {
-        db.prepare(`
+        prepare(`
         INSERT INTO players_characters_mana_nodes (value, character_id, player_id)
         VALUES (?, ?, ?)
         `).run(
@@ -1418,14 +1581,14 @@ export function getPlayerPartyGroupListSync(
 ): Record<string, PlayerPartyGroup> {
 
     // get party groups
-    const rawPartyGroups = db.prepare(`
+    const rawPartyGroups = prepare(`
     SELECT id, color_id, category
     FROM players_party_groups
     WHERE player_id = ? AND category = ?
     `).all(playerId, category) as RawPlayerPartyGroup[]
 
     // get raw parties
-    const rawParties = db.prepare(`
+    const rawParties = prepare(`
     SELECT slot, name, character_id_1, character_id_2, character_id_3, unison_character_1,
         unison_character_2, unison_character_3, equipment_1, equipment_2, equipment_3,
         ability_soul_1, ability_soul_2, ability_soul_3, edited, group_id, category
@@ -1484,7 +1647,7 @@ function insertPlayerPartySync(
     groupId: number | string,
     party: PlayerParty
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_parties (slot, name, character_id_1, character_id_2, character_id_3, 
         unison_character_1, unison_character_2, unison_character_3, equipment_1, equipment_2,
         equipment_3, ability_soul_1, ability_soul_2, ability_soul_3, edited, player_id, group_id, category)
@@ -1524,7 +1687,7 @@ function insertPlayerPartyGroupSync(
     group: PlayerPartyGroup
 ) {
     // insert the group data
-    db.prepare(`
+    prepare(`
     INSERT INTO players_party_groups (id, color_id, player_id, category)
     VALUES (?, ?, ?, ?)
     `).run(
@@ -1558,6 +1721,22 @@ export function insertPlayerPartyGroupListSync(
 }
 
 /**
+ * Deletes all of a player's party groups and parties of one category.
+ *
+ * @param playerId The ID of the player.
+ * @param category The category of parties to delete.
+ */
+export function deletePlayerPartyGroupListSync(
+    playerId: number,
+    category: PartyCategory
+) {
+    db.transaction(() => {
+        prepare(`DELETE FROM players_parties WHERE player_id = ? AND category = ?`).run(playerId, category)
+        prepare(`DELETE FROM players_party_groups WHERE player_id = ? AND category = ?`).run(playerId, category)
+    })()
+}
+
+/**
  * Updates a singular party within a player's data.
  * 
  * @param playerId The ID of the player.
@@ -1569,7 +1748,7 @@ export function updatePlayerPartySync(
     slot: number,
     party: PlayerParty
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_parties
     SET name = ?,
         character_id_1 = ?,
@@ -1607,13 +1786,27 @@ export function updatePlayerPartySync(
     )
 }
 
+/**
+ * Whether an armament is equipped in any of a player's parties (every party category).
+ *
+ * @param playerId The ID of the player.
+ * @param equipmentId The ID of the armament.
+ */
+export function isPlayerEquipmentInPartySync(playerId: number, equipmentId: number): boolean {
+    return prepare(`
+    SELECT 1 FROM players_parties
+    WHERE player_id = ? AND (equipment_1 = ? OR equipment_2 = ? OR equipment_3 = ?)
+    LIMIT 1
+    `).get(playerId, equipmentId, equipmentId, equipmentId) !== undefined
+}
+
 export function updatePlayerPartyGroupSync(
     playerId: number,
     groupId: number,
     colorId: number,
     category: PartyCategory = PartyCategory.NORMAL
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_party_groups
     SET color_id = ?
     WHERE id = ? AND player_id = ? AND category = ?
@@ -1636,7 +1829,7 @@ export function getPlayerItemSync(
     playerId: number,
     itemId: number | string
 ): number | null {
-    const rawItem = db.prepare(`
+    const rawItem = prepare(`
     SELECT id, amount
     FROM players_items
     WHERE player_id = ? AND id = ?
@@ -1655,7 +1848,7 @@ export function getPlayerItemsSync(
     playerId: number
 ): Record<string, number> {
 
-    const rawItems = db.prepare(`
+    const rawItems = prepare(`
     SELECT id, amount
     FROM players_items
     WHERE player_id = ?
@@ -1681,7 +1874,7 @@ function insertPlayerItemSync(
     itemId: number | string,
     amount: number
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_items (id, amount, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -1720,7 +1913,7 @@ export function updatePlayerItemSync(
     itemId: string | number,
     amount: number
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_items
     SET amount = ?
     WHERE player_id = ? AND id = ?
@@ -1768,7 +1961,7 @@ export function getPlayerShopPurchasesSync(
     shopType: number,
     itemId: number
 ): PlayerShopPurchases | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT total, day, day_count, month, month_count
     FROM players_shop_purchases
     WHERE player_id = ? AND shop_type = ? AND item_id = ?
@@ -1790,7 +1983,7 @@ export function setPlayerShopPurchasesSync(
     itemId: number,
     purchases: PlayerShopPurchases
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_shop_purchases (player_id, shop_type, item_id, total, day, day_count, month, month_count)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT (player_id, shop_type, item_id) DO UPDATE SET
@@ -1807,7 +2000,7 @@ export function setPlayerShopPurchasesSync(
 export function getPlayerResetsSync(
     playerId: number
 ): PlayerResets | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT day, month
     FROM players_resets
     WHERE player_id = ?
@@ -1825,29 +2018,493 @@ export function setPlayerResetsSync(
     playerId: number,
     resets: PlayerResets
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_resets (player_id, day, month)
     VALUES (?, ?, ?)
     ON CONFLICT (player_id) DO UPDATE SET day = excluded.day, month = excluded.month
     `).run(playerId, resets.day, resets.month)
 }
 
+/** A Hanifolk Carnival boss's record (FT-11). */
+export interface CarnivalRecord {
+    folderId: number
+    bestScore: number
+    previousScore: number
+    characterIds: (number | null)[]
+    unisonCharacterIds: (number | null)[]
+}
+
+/** A player's record on a raid quest (FT-12): clears, best score and the party group that set it. */
+export interface RaidRecord {
+    questId: number
+    killCount: number
+    /** SEC-18: of killCount, the clears anti-cheat (enforce) kept off the shared tally and the raid ranking (none if unset) */
+    excludedKillCount?: number
+    highScore: number
+    /** the party group's parties: each one's units, unison units, armaments and ability cores, slot by slot */
+    party: { characterIds: (number | null)[], unisonCharacterIds: (number | null)[], equipmentIds: (number | null)[], abilitySoulIds: (number | null)[] }[]
+}
+
+function raidRecordFromRow(row: Record<string, any>): RaidRecord {
+    return { questId: row.quest_id, killCount: row.kill_count, excludedKillCount: row.excluded_kill_count ?? 0, highScore: row.high_score, party: JSON.parse(row.party) }
+}
+
+export function getPlayerRaidRecordsSync(playerId: number, eventId: number): RaidRecord[] {
+    return (prepare(`SELECT * FROM players_raid_records WHERE player_id = ? AND event_id = ? AND run = @run ORDER BY quest_id`).all(playerId, eventId, { run: currentEventRun() }) as Record<string, any>[]).map(raidRecordFromRow)
+}
+
+export function setPlayerRaidRecordSync(playerId: number, eventId: number, record: RaidRecord) {
+    prepare(`INSERT INTO players_raid_records (player_id, event_id, quest_id, kill_count, excluded_kill_count, high_score, party, run) VALUES (?, ?, ?, ?, ?, ?, ?, @run)
+    ON CONFLICT (player_id, event_id, quest_id, run) DO UPDATE SET kill_count = excluded.kill_count, excluded_kill_count = excluded.excluded_kill_count,
+        high_score = excluded.high_score, party = excluded.party`)
+        .run(playerId, eventId, record.questId, record.killCount, record.excludedKillCount ?? 0, record.highScore, JSON.stringify(record.party), { run: currentEventRun() })
+}
+
+/** Every player's record on a raid quest: the server's ranking for it. */
+export function getRaidQuestRecordsSync(eventId: number, questId: number): (RaidRecord & { playerId: number })[] {
+    return (prepare(`SELECT * FROM players_raid_records WHERE event_id = ? AND quest_id = ? AND run = @run`).all(eventId, questId, { run: currentEventRun() }) as Record<string, any>[])
+        .map(row => ({ ...raidRecordFromRow(row), playerId: row.player_id }))
+}
+
+/**
+ * The clears of every player in a raid event, by quest: the server's damage to the boss, and its participants. Clears
+ * anti-cheat kept off the shared boards (excluded_kill_count, SEC-18) are left out.
+ */
+export function getRaidEventKillsSync(eventId: number): { playerId: number, questId: number, killCount: number }[] {
+    return (prepare(`SELECT player_id, quest_id, kill_count - excluded_kill_count AS kill_count FROM players_raid_records WHERE event_id = ? AND run = @run`).all(eventId, { run: currentEventRun() }) as Record<string, number>[])
+        .map(row => ({ playerId: row.player_id, questId: row.quest_id, killCount: row.kill_count }))
+}
+
+/** A player's per-event raid state (FT-12). */
+export interface RaidState {
+    killsReceived: number
+    rankingRewarded: boolean
+    autoDay: string | null
+    autoUsed: number
+}
+
+export function getPlayerRaidStateSync(playerId: number, eventId: number): RaidState {
+    const row = prepare(`SELECT * FROM players_raid_state WHERE player_id = ? AND event_id = ? AND run = @run`).get(playerId, eventId, { run: currentEventRun() }) as Record<string, any> | undefined
+    return row === undefined ? { killsReceived: 0, rankingRewarded: false, autoDay: null, autoUsed: 0 }
+        : { killsReceived: row.kills_received, rankingRewarded: row.ranking_rewarded === 1, autoDay: row.auto_day, autoUsed: row.auto_used }
+}
+
+export function setPlayerRaidStateSync(playerId: number, eventId: number, state: RaidState) {
+    prepare(`INSERT INTO players_raid_state (player_id, event_id, kills_received, ranking_rewarded, auto_day, auto_used, run) VALUES (?, ?, ?, ?, ?, ?, @run)
+    ON CONFLICT (player_id, event_id, run) DO UPDATE SET kills_received = excluded.kills_received, ranking_rewarded = excluded.ranking_rewarded,
+        auto_day = excluded.auto_day, auto_used = excluded.auto_used`)
+        .run(playerId, eventId, state.killsReceived, state.rankingRewarded ? 1 : 0, state.autoDay, state.autoUsed, { run: currentEventRun() })
+}
+
+/** How many players last logged in at or after `since` (the server clock's time, as `/load` stores it). */
+export function countPlayersLoggedInSinceSync(since: Date): number {
+    const rows = prepare(`SELECT last_login_time FROM players`).all() as { last_login_time: string }[]
+    return rows.filter(row => new Date(row.last_login_time).getTime() >= since.getTime()).length
+}
+
+/** A player's best record in a ranking event (FT-33). */
+export interface RankingRecord {
+    accomplished: boolean
+    elapsedTimeMs: number
+    score: number
+    leaderCharacterId: number
+    rewarded: boolean
+}
+
+function rankingRecordFromRow(row: Record<string, any>): RankingRecord {
+    return {
+        accomplished: row.accomplished === 1,
+        elapsedTimeMs: row.elapsed_time_ms,
+        score: row.score,
+        leaderCharacterId: row.leader_character_id,
+        rewarded: row.rewarded === 1
+    }
+}
+
+export function getPlayerRankingRecordSync(playerId: number, eventId: number): RankingRecord | null {
+    const row = prepare(`SELECT * FROM players_ranking_records WHERE player_id = ? AND event_id = ? AND run = @run`).get(playerId, eventId, { run: currentEventRun() }) as Record<string, any> | undefined
+    return row === undefined ? null : rankingRecordFromRow(row)
+}
+
+export function setPlayerRankingRecordSync(playerId: number, eventId: number, record: RankingRecord) {
+    prepare(`INSERT INTO players_ranking_records (player_id, event_id, accomplished, elapsed_time_ms, score, leader_character_id, rewarded, run)
+    VALUES (?, ?, ?, ?, ?, ?, ?, @run)
+    ON CONFLICT (player_id, event_id, run) DO UPDATE SET accomplished = excluded.accomplished, elapsed_time_ms = excluded.elapsed_time_ms,
+        score = excluded.score, leader_character_id = excluded.leader_character_id, rewarded = excluded.rewarded`)
+        .run(playerId, eventId, record.accomplished ? 1 : 0, record.elapsedTimeMs, record.score, record.leaderCharacterId, record.rewarded ? 1 : 0, { run: currentEventRun() })
+}
+
+/** Every player's record in a ranking event: the server's leaderboard. */
+export function getRankingRecordsSync(eventId: number): (RankingRecord & { playerId: number })[] {
+    const rows = prepare(`SELECT * FROM players_ranking_records WHERE event_id = ? AND run = @run`).all(eventId, { run: currentEventRun() }) as Record<string, any>[]
+    return rows.map(row => ({ ...rankingRecordFromRow(row), playerId: row.player_id }))
+}
+
+/** The unit a player voted for in a character election, null before voting. */
+export function getPlayerCharacterElectionVoteSync(playerId: number, electionId: number): number | null {
+    const row = prepare(`SELECT keyword_id FROM players_character_election_votes WHERE player_id = ? AND election_id = ?`).get(playerId, electionId) as { keyword_id: number } | undefined
+    return row?.keyword_id ?? null
+}
+
+export function insertPlayerCharacterElectionVoteSync(playerId: number, electionId: number, keywordId: number) {
+    prepare(`INSERT INTO players_character_election_votes (player_id, election_id, keyword_id) VALUES (?, ?, ?)`).run(playerId, electionId, keywordId)
+}
+
+/** The highest Hanifolk Carnival total whose rewards a player was paid in an event, 0 before any. */
+export function getPlayerCarnivalPaidTotalSync(playerId: number, eventId: number): number {
+    const row = prepare(`SELECT total_score FROM players_carnival_paid WHERE player_id = ? AND event_id = ? AND run = @run`).get(playerId, eventId, { run: currentEventRun() }) as { total_score: number } | undefined
+    return row?.total_score ?? 0
+}
+
+export function setPlayerCarnivalPaidTotalSync(playerId: number, eventId: number, totalScore: number) {
+    prepare(`INSERT INTO players_carnival_paid (player_id, event_id, total_score, run) VALUES (?, ?, ?, @run)
+    ON CONFLICT (player_id, event_id, run) DO UPDATE SET total_score = excluded.total_score`).run(playerId, eventId, totalScore, { run: currentEventRun() })
+}
+
+/** A player's Hanifolk Carnival records in an event, by boss. */
+export function getPlayerCarnivalRecordsSync(playerId: number, eventId: number): CarnivalRecord[] {
+    const rows = prepare(`SELECT * FROM players_carnival_records WHERE player_id = ? AND event_id = ? AND run = @run ORDER BY folder_id`)
+        .all(playerId, eventId, { run: currentEventRun() }) as Record<string, any>[]
+    return rows.map(row => ({
+        folderId: row.folder_id,
+        bestScore: row.best_score,
+        previousScore: row.previous_score,
+        characterIds: JSON.parse(row.character_ids),
+        unisonCharacterIds: JSON.parse(row.unison_character_ids)
+    }))
+}
+
+export function setPlayerCarnivalRecordSync(playerId: number, eventId: number, record: CarnivalRecord) {
+    prepare(`INSERT INTO players_carnival_records (player_id, event_id, folder_id, best_score, previous_score, character_ids, unison_character_ids, run)
+    VALUES (?, ?, ?, ?, ?, ?, ?, @run)
+    ON CONFLICT (player_id, event_id, folder_id, run) DO UPDATE SET best_score = excluded.best_score, previous_score = excluded.previous_score,
+        character_ids = excluded.character_ids, unison_character_ids = excluded.unison_character_ids`)
+        .run(playerId, eventId, record.folderId, record.bestScore, record.previousScore, JSON.stringify(record.characterIds), JSON.stringify(record.unisonCharacterIds), { run: currentEventRun() })
+}
+
+/** A player's best Score Scramble score on a quest (FT-11), or null before their first battle there. */
+export function getPlayerScoreAttackBestSync(playerId: number, questId: number): number | null {
+    const row = prepare(`SELECT score FROM players_score_attack_best WHERE player_id = ? AND quest_id = ? AND run = @run`).get(playerId, questId, { run: currentEventRun() }) as { score: number } | undefined
+    return row?.score ?? null
+}
+
+export function setPlayerScoreAttackBestSync(playerId: number, questId: number, score: number) {
+    prepare(`INSERT INTO players_score_attack_best (player_id, quest_id, score, run) VALUES (?, ?, ?, @run)
+    ON CONFLICT (player_id, quest_id, run) DO UPDATE SET score = excluded.score`).run(playerId, questId, score, { run: currentEventRun() })
+}
+
+/** A Score Scramble battle as `history/score_attack_event_battle` lists it (FT-11). */
+export interface ScoreAttackBattle {
+    eventId: number
+    questId: number
+    /** null for a retired battle (a wipe or a give-up, which end with abort); the client's history takes no score then */
+    score: number | null
+    elapsedTimeMs: number
+    clearRank: number | null
+    /** 0 cleared, 1 retired (the client's history shows "Cleared" for 0 only) */
+    finishKind: number
+    totalDamage: number
+    /**
+     * the party's units, unison units, armaments and ability souls, slot by slot (null for an empty slot); the armaments'
+     * levels and each slot's damage are absent from battles recorded before FT-86
+     */
+    party: { characters: (number | null)[], unisonCharacters: (number | null)[], equipments: (number | null)[], abilitySouls: (number | null)[],
+        equipmentLevels?: (number | null)[], enhancementLevels?: (number | null)[], damage?: (number | null)[] }
+    createTime: Date
+}
+
+/** How many battles a player's Score Scramble history keeps per event. */
+export const SCORE_ATTACK_HISTORY_SIZE = 50
+
+/** Records a Score Scramble battle and keeps only the event's latest `SCORE_ATTACK_HISTORY_SIZE`. */
+export function insertPlayerScoreAttackBattleSync(playerId: number, battle: ScoreAttackBattle) {
+    const run = { run: currentEventRun() }
+    prepare(`INSERT INTO players_score_attack_battles (player_id, event_id, quest_id, score, elapsed_time_ms, clear_rank, finish_kind, total_damage, party, create_time, run)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, @run)`).run(playerId, battle.eventId, battle.questId, battle.score, battle.elapsedTimeMs, battle.clearRank,
+        battle.finishKind, battle.totalDamage, JSON.stringify(battle.party), battle.createTime.getTime(), run)
+    prepare(`DELETE FROM players_score_attack_battles WHERE player_id = ? AND event_id = ? AND run = @run AND rowid NOT IN (
+        SELECT rowid FROM players_score_attack_battles WHERE player_id = ? AND event_id = ? AND run = @run ORDER BY create_time DESC, rowid DESC LIMIT ?
+    )`).run(playerId, battle.eventId, playerId, battle.eventId, SCORE_ATTACK_HISTORY_SIZE, run)
+}
+
+/** A player's Score Scramble battles in an event, the latest first. */
+export function getPlayerScoreAttackBattlesSync(playerId: number, eventId: number): ScoreAttackBattle[] {
+    const rows = prepare(`SELECT * FROM players_score_attack_battles WHERE player_id = ? AND event_id = ? AND run = @run ORDER BY create_time DESC, rowid DESC`)
+        .all(playerId, eventId, { run: currentEventRun() }) as Record<string, any>[]
+    return rows.map(row => ({
+        eventId: row.event_id,
+        questId: row.quest_id,
+        score: row.score,
+        elapsedTimeMs: row.elapsed_time_ms,
+        clearRank: row.clear_rank,
+        finishKind: row.finish_kind,
+        totalDamage: row.total_damage,
+        party: JSON.parse(row.party),
+        createTime: new Date(row.create_time)
+    }))
+}
+
+/** A player's special exchange campaigns (FT-39): campaign id to stored status (1 entered, 3 exchanged). */
+export function getPlayerSpecialExchangeSync(playerId: number): Map<number, number> {
+    const rows = prepare(`SELECT campaign_id, status FROM players_special_exchange WHERE player_id = ?`).all(playerId) as { campaign_id: number, status: number }[]
+    return new Map(rows.map(row => [row.campaign_id, row.status]))
+}
+
+export function setPlayerSpecialExchangeSync(playerId: number, campaignId: number, status: number) {
+    prepare(`INSERT INTO players_special_exchange (player_id, campaign_id, status) VALUES (?, ?, ?)
+    ON CONFLICT (player_id, campaign_id) DO UPDATE SET status = excluded.status`).run(playerId, campaignId, status)
+}
+
+/** Whether a player has received a scheduled campaign gift (FT-39). */
+export function hasPlayerCampaignGiftSync(playerId: number, giftKey: string): boolean {
+    return prepare(`SELECT 1 FROM players_campaign_gifts WHERE player_id = ? AND gift_key = ?`).get(playerId, giftKey) !== undefined
+}
+
+export function insertPlayerCampaignGiftSync(playerId: number, giftKey: string, time: Date) {
+    prepare(`INSERT OR IGNORE INTO players_campaign_gifts (player_id, gift_key, sent_time) VALUES (?, ?, ?)`).run(playerId, giftKey, time.getTime())
+}
+
+/** The lineup a player chose in a select item campaign (FT-38), or null. */
+export function getPlayerLineupChoiceSync(playerId: number, shopType: number, campaignId: number): number | null {
+    const row = prepare(`SELECT lineup_id FROM players_lineup_choices WHERE player_id = ? AND shop_type = ? AND campaign_id = ?`)
+        .get(playerId, shopType, campaignId) as { lineup_id: number } | undefined
+    return row?.lineup_id ?? null
+}
+
+export function setPlayerLineupChoiceSync(playerId: number, shopType: number, campaignId: number, lineupId: number) {
+    prepare(`INSERT INTO players_lineup_choices (player_id, shop_type, campaign_id, lineup_id) VALUES (?, ?, ?, ?)`)
+        .run(playerId, shopType, campaignId, lineupId)
+}
+
+/** A follow (FT-15): the other player and when the follow was made. */
+export interface PlayerFollow {
+    playerId: number
+    time: Date
+}
+
+/** The players this player follows. */
+export function getPlayerFollowingSync(playerId: number): PlayerFollow[] {
+    return (prepare(`SELECT followee_id, follow_time FROM players_follows WHERE player_id = ?`).all(playerId) as { followee_id: number, follow_time: number }[])
+        .map(row => ({ playerId: row.followee_id, time: new Date(row.follow_time) }))
+}
+
+/** The players who follow this player. */
+export function getPlayerFollowersSync(playerId: number): PlayerFollow[] {
+    return (prepare(`SELECT player_id, follow_time FROM players_follows WHERE followee_id = ?`).all(playerId) as { player_id: number, follow_time: number }[])
+        .map(row => ({ playerId: row.player_id, time: new Date(row.follow_time) }))
+}
+
+export function getPlayerFollowTimeSync(playerId: number, followeeId: number): Date | null {
+    const row = prepare(`SELECT follow_time FROM players_follows WHERE player_id = ? AND followee_id = ?`).get(playerId, followeeId) as { follow_time: number } | undefined
+    return row === undefined ? null : new Date(row.follow_time)
+}
+
+export function countPlayerFollowingSync(playerId: number): number {
+    return (prepare(`SELECT COUNT(*) AS count FROM players_follows WHERE player_id = ?`).get(playerId) as { count: number }).count
+}
+
+export function countPlayerFollowersSync(playerId: number): number {
+    return (prepare(`SELECT COUNT(*) AS count FROM players_follows WHERE followee_id = ?`).get(playerId) as { count: number }).count
+}
+
+/** Follows a player; false when the follow already existed. */
+export function insertPlayerFollowSync(playerId: number, followeeId: number, time: Date): boolean {
+    return prepare(`INSERT OR IGNORE INTO players_follows (player_id, followee_id, follow_time) VALUES (?, ?, ?)`)
+        .run(playerId, followeeId, time.getTime()).changes > 0
+}
+
+export function deletePlayerFollowSync(playerId: number, followeeId: number): boolean {
+    return prepare(`DELETE FROM players_follows WHERE player_id = ? AND followee_id = ?`).run(playerId, followeeId).changes > 0
+}
+
+/** How many co-op battles two players played to the end together as mutual follows (FT-43). */
+export function getCoopPartnerBattlesSync(playerId: number, partnerId: number): number {
+    const [low, high] = playerId < partnerId ? [playerId, partnerId] : [partnerId, playerId]
+    const row = prepare(`SELECT battles FROM players_coop_partners WHERE player_id = ? AND partner_id = ?`).get(low, high) as { battles: number } | undefined
+    return row?.battles ?? 0
+}
+
+/** Counts one more co-op battle two players played to the end together as mutual follows (FT-43); returns the new count. */
+export function addCoopPartnerBattleSync(playerId: number, partnerId: number): number {
+    const [low, high] = playerId < partnerId ? [playerId, partnerId] : [partnerId, playerId]
+    return (prepare(`INSERT INTO players_coop_partners (player_id, partner_id, battles) VALUES (?, ?, 1)
+        ON CONFLICT (player_id, partner_id) DO UPDATE SET battles = battles + 1 RETURNING battles`).get(low, high) as { battles: number }).battles
+}
+
+/**
+ * The player a viewer ID belongs to (any viewer session of their account, expired or not: the client keeps its viewer
+ * ID across launches), or null. Other players know each other by viewer ID: it is the ID the follow screens show.
+ */
+export function getViewerPlayerIdSync(viewerId: number | string): number | null {
+    const row = prepare(`SELECT players.id AS id FROM sessions JOIN players ON players.account_id = sessions.account_id
+    WHERE sessions.token = ? AND sessions.type = ? ORDER BY players.id LIMIT 1`).get(String(viewerId), SessionType.VIEWER) as { id: number } | undefined
+    return row?.id ?? null
+}
+
+/** The viewer ID other players see for a player: their account's most recently signed-in viewer session, or null. */
+export function getPlayerPublicViewerIdSync(playerId: number): number | null {
+    const row = prepare(`SELECT sessions.token AS token FROM sessions JOIN players ON players.account_id = sessions.account_id
+    WHERE players.id = ? AND sessions.type = ? ORDER BY COALESCE(sessions.authenticated_at, '') DESC, sessions.expires DESC LIMIT 1`)
+        .get(playerId, SessionType.VIEWER) as { token: string } | undefined
+    const viewerId = row === undefined ? NaN : Number(row.token)
+    return Number.isSafeInteger(viewerId) ? viewerId : null
+}
+
+/** The profile's show/hide settings (FT-36): which counts other players see. */
+export interface ProfileSettings {
+    showOwnedCharacterCount: boolean
+    showOpenedManaBoardSecondCount: boolean
+    showOwnedDegreeCount: boolean
+}
+
+/** A player's profile settings; all shown for a player who never changed them. */
+export function getPlayerProfileSettingsSync(playerId: number): ProfileSettings {
+    const row = prepare(`SELECT show_owned_character_count, show_opened_mana_board_second_count, show_owned_degree_count
+    FROM players_profile_settings WHERE player_id = ?`).get(playerId) as Record<string, number> | undefined
+    return {
+        showOwnedCharacterCount: row === undefined || row.show_owned_character_count !== 0,
+        showOpenedManaBoardSecondCount: row === undefined || row.show_opened_mana_board_second_count !== 0,
+        showOwnedDegreeCount: row === undefined || row.show_owned_degree_count !== 0
+    }
+}
+
+export function setPlayerProfileSettingsSync(playerId: number, settings: ProfileSettings) {
+    prepare(`INSERT INTO players_profile_settings (player_id, show_owned_character_count, show_opened_mana_board_second_count, show_owned_degree_count)
+    VALUES (?, ?, ?, ?)
+    ON CONFLICT (player_id) DO UPDATE SET show_owned_character_count = excluded.show_owned_character_count,
+        show_opened_mana_board_second_count = excluded.show_opened_mana_board_second_count,
+        show_owned_degree_count = excluded.show_owned_degree_count`).run(playerId, serializeBoolean(settings.showOwnedCharacterCount),
+        serializeBoolean(settings.showOpenedManaBoardSecondCount), serializeBoolean(settings.showOwnedDegreeCount))
+}
+
+/** Each owned unit's id and the mana board it has open (2 once its second board is open), for the profile's counts. */
+export function getPlayerCharacterBoardsSync(playerId: number): { id: number, manaBoardIndex: number }[] {
+    return (prepare(`SELECT id, mana_board_index FROM players_characters WHERE player_id = ?`).all(playerId) as { id: number, mana_board_index: number }[])
+        .map(row => ({ id: row.id, manaBoardIndex: row.mana_board_index }))
+}
+
+/** A Practice Combat battle as `history/practice_battle` lists it (FT-17). */
+export interface PracticeBattle {
+    questId: number
+    /** null for a battle given up (the abort sends no score) */
+    score: number | null
+    elapsedTimeMs: number
+    clearRank: number | null
+    /** 0 cleared, 1 given up (the abort's own finish_kind) */
+    finishKind: number
+    totalDamage: number
+    /** slot by slot (null for an empty slot); an armament's level and enhancement level are those at the battle */
+    party: {
+        characters: (number | null)[]
+        unisonCharacters: (number | null)[]
+        equipments: (number | null)[]
+        equipmentLevels: (number | null)[]
+        enhancementLevels: (number | null)[]
+        abilitySouls: (number | null)[]
+        damage: (number | null)[]
+    }
+    createTime: Date
+}
+
+/** How many battles a player's Practice Combat history keeps. */
+export const PRACTICE_HISTORY_SIZE = 50
+
+/** Records a Practice Combat battle and keeps only the player's latest `PRACTICE_HISTORY_SIZE`. */
+export function insertPlayerPracticeBattleSync(playerId: number, battle: PracticeBattle) {
+    prepare(`INSERT INTO players_practice_battles (player_id, quest_id, score, elapsed_time_ms, clear_rank, finish_kind, total_damage, party, create_time)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`).run(playerId, battle.questId, battle.score, battle.elapsedTimeMs, battle.clearRank, battle.finishKind,
+        battle.totalDamage, JSON.stringify(battle.party), battle.createTime.getTime())
+    prepare(`DELETE FROM players_practice_battles WHERE player_id = ? AND rowid NOT IN (
+        SELECT rowid FROM players_practice_battles WHERE player_id = ? ORDER BY create_time DESC, rowid DESC LIMIT ?
+    )`).run(playerId, playerId, PRACTICE_HISTORY_SIZE)
+}
+
+/** A player's Practice Combat battles, the latest first. */
+export function getPlayerPracticeBattlesSync(playerId: number): PracticeBattle[] {
+    const rows = prepare(`SELECT * FROM players_practice_battles WHERE player_id = ? ORDER BY create_time DESC, rowid DESC`)
+        .all(playerId) as Record<string, any>[]
+    return rows.map(row => ({
+        questId: row.quest_id,
+        score: row.score,
+        elapsedTimeMs: row.elapsed_time_ms,
+        clearRank: row.clear_rank,
+        finishKind: row.finish_kind,
+        totalDamage: row.total_damage,
+        party: JSON.parse(row.party),
+        createTime: new Date(row.create_time)
+    }))
+}
+
+/** A player's state in a Haunt event (FT-6), see `players_tower_dungeon`. */
+export interface PlayerTowerDungeon {
+    cycle: string | null
+    noticeMonth: number | null
+    noticeStatus: number | null
+}
+
+export function getPlayerTowerDungeonSync(playerId: number, eventId: number): PlayerTowerDungeon | null {
+    const raw = prepare(`
+    SELECT cycle, notice_month, notice_status
+    FROM players_tower_dungeon
+    WHERE player_id = ? AND event_id = ?
+    `).get(playerId, eventId) as { cycle: string | null, notice_month: number | null, notice_status: number | null } | undefined
+    return raw === undefined ? null : { cycle: raw.cycle, noticeMonth: raw.notice_month, noticeStatus: raw.notice_status }
+}
+
+export function setPlayerTowerDungeonSync(playerId: number, eventId: number, state: PlayerTowerDungeon) {
+    prepare(`
+    INSERT INTO players_tower_dungeon (player_id, event_id, cycle, notice_month, notice_status)
+    VALUES (?, ?, ?, ?, ?)
+    ON CONFLICT (player_id, event_id) DO UPDATE SET cycle = excluded.cycle, notice_month = excluded.notice_month,
+        notice_status = excluded.notice_status
+    `).run(playerId, eventId, state.cycle, state.noticeMonth, state.noticeStatus)
+}
+
+/**
+ * Deletes a player's progress on some quests of a section.
+ *
+ * @param playerId The ID of the player.
+ * @param section The section (quest category) of the quests.
+ * @param questIds The quests.
+ */
+export function deletePlayerQuestProgressSync(playerId: number, section: number, questIds: number[]) {
+    const statement = prepare(`DELETE FROM players_quest_progress WHERE player_id = ? AND section = ? AND quest_id = ?`)
+    for (const questId of questIds) statement.run(playerId, section, questId)
+}
+
 /**
  * Gets a player's progress on the missions of a category.
  *
  * @param playerId The ID of the player.
- * @param category The mission category (1 regular, 2 daily, 3 event).
+ * @param category The mission category (1 regular, 2 daily, 3 event, 4 collect item event, 5 degree).
  * @returns The missions the player has progress on.
  */
 export function getPlayerMissionsSync(
     playerId: number,
     category: number
 ): PlayerMission[] {
-    return db.prepare(`
+    return prepare(`
     SELECT mission_id AS missionId, progress, cleared_stage AS clearedStage
     FROM players_missions
     WHERE player_id = ? AND category = ?
     `).all(playerId, category) as PlayerMission[]
+}
+
+/** Mission category 4: a collect item event's missions (src/lib/missions.ts). */
+const COLLECT_ITEM_EVENT_MISSION_CATEGORY = 4
+
+/**
+ * The last stage a player has cleared of each collect item event mission, the value `/load` lists in
+ * `cleared_collect_item_event_mission_list` (`{mission_id: stage}`, like `cleared_regular_mission_list`).
+ *
+ * @param playerId The ID of the player.
+ */
+export function getPlayerClearedCollectItemEventMissionListSync(playerId: number): Record<string, number> {
+    const cleared: Record<string, number> = {}
+    for (const mission of getPlayerMissionsSync(playerId, COLLECT_ITEM_EVENT_MISSION_CATEGORY)) {
+        if (mission.clearedStage > 0) cleared[String(mission.missionId)] = mission.clearedStage
+    }
+    return cleared
 }
 
 /**
@@ -1862,11 +2519,22 @@ export function setPlayerMissionSync(
     category: number,
     mission: PlayerMission
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_missions (player_id, category, mission_id, progress, cleared_stage)
     VALUES (?, ?, ?, ?, ?)
     ON CONFLICT (player_id, category, mission_id) DO UPDATE SET progress = excluded.progress, cleared_stage = excluded.cleared_stage
     `).run(playerId, category, mission.missionId, mission.progress, mission.clearedStage)
+}
+
+/** Earned stages whose old daily counter was removed by a reset. */
+export function getPlayerMissionRewardBacklogSync(playerId: number): { id: number, category: number, missionId: number, stage: number, rewardsJson: string | null }[] {
+    return prepare(`SELECT id, category, mission_id AS missionId, stage, rewards_json AS rewardsJson FROM players_mission_reward_backlog WHERE player_id = ? ORDER BY id`).all(playerId) as { id: number, category: number, missionId: number, stage: number, rewardsJson: string | null }[]
+}
+export function insertPlayerMissionRewardBacklogSync(playerId: number, category: number, missionId: number, stage: number, rewardsJson: string | null = null) {
+    prepare(`INSERT INTO players_mission_reward_backlog (player_id, category, mission_id, stage, rewards_json) VALUES (?, ?, ?, ?, ?)`).run(playerId, category, missionId, stage, rewardsJson)
+}
+export function deletePlayerMissionRewardBacklogSync(playerId: number, id: number) {
+    prepare(`DELETE FROM players_mission_reward_backlog WHERE player_id = ? AND id = ?`).run(playerId, id)
 }
 
 /**
@@ -1879,7 +2547,7 @@ export function deletePlayerMissionsSync(
     playerId: number,
     category: number
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM players_missions
     WHERE player_id = ? AND category = ?
     `).run(playerId, category)
@@ -1912,7 +2580,7 @@ export function getPlayerEquipmentListSync(
     playerId: number
 ): Record<string, PlayerEquipment> {
 
-    const rawEquipment = db.prepare(`
+    const rawEquipment = prepare(`
     SELECT id, level, enhancement_level, protection, stack
     FROM players_equipment
     WHERE player_id = ?
@@ -1939,7 +2607,7 @@ export function getPlayerEquipmentSync(
     equipmentId: number | string
 ): PlayerEquipment | null {
 
-    const rawEquipment = db.prepare(`
+    const rawEquipment = prepare(`
     SELECT id, level, enhancement_level, protection, stack
     FROM players_equipment
     WHERE player_id = ? AND id = ?
@@ -1959,7 +2627,7 @@ export function playerOwnsEquipmentSync(
     playerId: number,
     equipmentId: number
 ): boolean {
-    return db.prepare(`
+    return prepare(`
     SELECT id
     FROM players_equipment
     WHERE id = ? AND player_id = ?
@@ -1978,7 +2646,7 @@ export function insertPlayerEquipmentSync(
     equipmentId: string | number,
     equipment: PlayerEquipment
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_equipment (id, level, enhancement_level, protection, stack, player_id)
     VALUES (?, ?, ?, ?, ?, ?)
     `).run(
@@ -2042,7 +2710,7 @@ export function updatePlayerEquipmentSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_equipment
         SET ${sets.join(', ')}
         WHERE id = ? AND player_id = ?
@@ -2059,7 +2727,7 @@ export function deletePlayerEquipmentSync(
     playerId: number,
     equipmentId: string | number
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM players_equipment
     WHERE id = ? AND player_id = ?
     `).run(
@@ -2096,7 +2764,7 @@ export function getPlayerQuestProgressSync(
     playerId: number
 ): Record<string, PlayerQuestProgress[]> {
 
-    const rawProgress = db.prepare(`
+    const rawProgress = prepare(`
     SELECT section, quest_id, finished, high_score, clear_rank, best_elapsed_time_ms
     FROM players_quest_progress
     WHERE player_id = ?
@@ -2131,7 +2799,7 @@ export function getPlayerSingleQuestProgressSync(
     questId: number | string
 ): PlayerQuestProgress | null {
 
-    const rawProgress = db.prepare(`
+    const rawProgress = prepare(`
     SELECT section, quest_id, finished, high_score, clear_rank, best_elapsed_time_ms
     FROM players_quest_progress
     WHERE player_id = ? AND section = ? AND quest_id = ?
@@ -2154,7 +2822,7 @@ export function insertPlayerQuestProgressSync(
     section: number | string,
     data: PlayerQuestProgress
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_quest_progress (section, quest_id, finished, high_score, clear_rank, best_elapsed_time_ms, player_id)
     VALUES (?, ?, ?, ?, ?, ?, ?)
     `).run(
@@ -2221,7 +2889,7 @@ export function updatePlayerQuestProgressSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_quest_progress
         SET ${sets.join(', ')}
         WHERE section = ? AND quest_id = ? AND player_id = ?
@@ -2254,7 +2922,7 @@ function buildPlayerGachaInfo(
 export function getPlayerGachaInfoListSync(
     playerId: number
 ): PlayerGachaInfo[] {
-    const rawInfo = db.prepare(`
+    const rawInfo = prepare(`
     SELECT gacha_id, is_daily_first, is_account_first, gacha_exchange_point
     FROM players_gacha_info
     WHERE player_id = ?
@@ -2276,7 +2944,7 @@ export function getPlayerGachaInfoSync(
     playerId: number,
     gachaId: number
 ): PlayerGachaInfo | null {
-    const rawInfo = db.prepare(`
+    const rawInfo = prepare(`
     SELECT gacha_id, is_daily_first, is_account_first, gacha_exchange_point
     FROM players_gacha_info
     WHERE player_id = ? AND gacha_id = ?
@@ -2295,7 +2963,7 @@ export function insertPlayerGachaInfoSync(
     playerId: number,
     gachaInfo: PlayerGachaInfo
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_gacha_info (gacha_id, is_daily_first, is_account_first, gacha_exchange_point, player_id)
     VALUES (?, ?, ?, ?, ?)
     `).run(
@@ -2357,7 +3025,7 @@ export function updatePlayerGachaInfoSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_gacha_info
         SET ${sets.join(', ')}
         WHERE gacha_id = ? AND player_id = ?
@@ -2393,7 +3061,7 @@ export function getPlayerGachaCampaignSync(
     gachaId: number,
     campaignId: number,
 ): PlayerGachaCampaign | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT gacha_id, campaign_id, count
     FROM players_gacha_campaigns
     WHERE player_id = ? AND gacha_id = ? AND campaign_id = ?
@@ -2411,7 +3079,7 @@ export function getPlayerGachaCampaignSync(
 export function getPlayerGachaCampaignListSync(
     playerId: number
 ): PlayerGachaCampaign[] {
-    const rawList = db.prepare(`
+    const rawList = prepare(`
     SELECT gacha_id, campaign_id, count
     FROM players_gacha_campaigns
     WHERE player_id = ?
@@ -2430,7 +3098,7 @@ export function insertPlayerGachaCampaignSync(
     playerId: number,
     campaign: PlayerGachaCampaign
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_gacha_campaigns (gacha_id, campaign_id, count, player_id)
     VALUES (?, ?, ?, ?)
     `).run(
@@ -2466,7 +3134,7 @@ export function updatePlayerGachaCampaignSync(
     campaignId: number,
     newCount: number
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_gacha_campaigns
     SET count = ?
     WHERE player_id = ? AND gacha_id = ? AND campaign_id = ?
@@ -2487,7 +3155,7 @@ export function updatePlayerGachaCampaignSync(
 export function getPlayerDrawnQuestsSync(
     playerId: number
 ): PlayerDrawnQuest[] {
-    const rawQuests = db.prepare(`
+    const rawQuests = prepare(`
     SELECT category_id, quest_id, odds_id
     FROM players_drawn_quests
     WHERE player_id = ?
@@ -2512,7 +3180,7 @@ function insertPlayerDrawnQuestSync(
     playerId: number,
     drawnQuest: PlayerDrawnQuest
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_drawn_quests (category_id, quest_id, odds_id, player_id)
     VALUES (?, ?, ?, ?)    
     `).run(
@@ -2549,11 +3217,29 @@ function insertPlayerDrawnQuestsSync(
 export function getPlayerPeriodicRewardPointsSync(
     playerId: number
 ): PlayerPeriodicRewardPoint[] {
-    return db.prepare(`
+    return prepare(`
     SELECT id, point
     FROM players_periodic_reward_points
     WHERE player_id = ?
     `).all(playerId) as PlayerPeriodicRewardPoint[]
+}
+
+/**
+ * Sets one of a player's periodic reward points, adding it to their list if it isn't there.
+ *
+ * @param playerId The ID of the player.
+ * @param pointId The periodic reward point's ID (`reward/periodic_reward_point`).
+ * @param point The new point.
+ */
+export function setPlayerPeriodicRewardPointSync(
+    playerId: number,
+    pointId: number,
+    point: number
+) {
+    prepare(`
+    INSERT INTO players_periodic_reward_points (id, point, player_id) VALUES (?, ?, ?)
+    ON CONFLICT (id, player_id) DO UPDATE SET point = excluded.point
+    `).run(pointId, point, playerId)
 }
 
 /**
@@ -2566,7 +3252,7 @@ function insertPlayerPeriodicRewardPointsSync(
     playerId: number,
     periodicReward: PlayerPeriodicRewardPoint
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_periodic_reward_points (id, point, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -2614,25 +3300,38 @@ function buildPlayerMail(
         description: raw.description,
         createTime: new Date(raw.create_time),
         receiveTime: raw.receive_time === null ? null : new Date(raw.receive_time),
-        rewardLimitTime: raw.reward_limit_time === null ? null : new Date(raw.reward_limit_time)
+        rewardLimitTime: raw.reward_limit_time === null ? null : new Date(raw.reward_limit_time),
+        ...(raw.reward_source_key == null ? {} : { rewardSourceKey: raw.reward_source_key })
     }
 }
 
 /**
- * Inserts a mail into a player's mailbox.
+ * The next number in the order a player receives mail in (`receive_seq`): the history's order and retention follow it,
+ * not `receive_time`, which goes back with the clock (calendar wraps, player clocks, Reset). `playerId` is the SQL
+ * parameter that holds the player's ID.
+ */
+const nextReceiveSeq = (playerId = "?") => `(SELECT COALESCE(MAX(receive_seq), 0) + 1 FROM players_mail WHERE player_id = ${playerId})`
+
+/**
+ * Inserts a mail into a player's mailbox. A received mail counts as received after every mail the player already
+ * has, so a list of mails inserted in order (a save import) keeps the order it was received in.
  *
  * @param playerId The ID of the player.
- * @param mail The mail to insert.
+ * @param mail The mail to insert, with its ID to keep it.
  * @returns The ID of the new mail.
  */
 export function insertPlayerMailSync(
     playerId: number,
-    mail: Omit<PlayerMail, 'id'>
+    mail: Omit<PlayerMail, 'id'> & { id?: number }
 ): number {
-    const result = db.prepare(`
-    INSERT INTO players_mail (type, type_id, number, reason_id, subject, description, create_time, receive_time, reward_limit_time, player_id)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    // a mail kept through a save import keeps its ID; a new one (null) gets the next free one. Only a received mail
+    // gets a number in the order of receipt.
+    const receiveTime = mail.receiveTime === null ? null : mail.receiveTime.toISOString()
+    const result = prepare(`
+    INSERT INTO players_mail (id, type, type_id, number, reason_id, subject, description, create_time, receive_time, reward_limit_time, player_id, receive_seq)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, @receiveTime, ?, @playerId, CASE WHEN @receiveTime IS NULL THEN NULL ELSE ${nextReceiveSeq("@playerId")} END)
     `).run(
+        mail.id ?? null,
         mail.type,
         mail.typeId,
         mail.number,
@@ -2640,9 +3339,8 @@ export function insertPlayerMailSync(
         mail.subject,
         mail.description,
         mail.createTime.toISOString(),
-        mail.receiveTime === null ? null : mail.receiveTime.toISOString(),
         mail.rewardLimitTime === null ? null : mail.rewardLimitTime.toISOString(),
-        playerId
+        { receiveTime, playerId }
     )
     return Number(result.lastInsertRowid)
 }
@@ -2658,8 +3356,8 @@ export function getPlayerMailSync(
     playerId: number,
     mailId: number
 ): PlayerMail | null {
-    const raw = db.prepare(`
-    SELECT id, type, type_id, number, reason_id, subject, description, create_time, receive_time, reward_limit_time
+    const raw = prepare(`
+    SELECT ${mailColumns}
     FROM players_mail
     WHERE player_id = ? AND id = ?
     `).get(playerId, mailId) as RawPlayerMail | undefined
@@ -2682,8 +3380,8 @@ export function getPlayerReceivableMailListSync(
     offset: number,
     limit: number
 ): PlayerMail[] {
-    const rawList = db.prepare(`
-    SELECT id, type, type_id, number, reason_id, subject, description, create_time, receive_time, reward_limit_time
+    const rawList = prepare(`
+    SELECT ${mailColumns}
     FROM players_mail
     WHERE player_id = ? AND receive_time IS NULL AND (reward_limit_time IS NULL OR reward_limit_time > ?)
     ORDER BY id DESC
@@ -2704,7 +3402,7 @@ export function getPlayerReceivableMailCountSync(
     playerId: number,
     now: Date
 ): number {
-    const result = db.prepare(`
+    const result = prepare(`
     SELECT COUNT(*) AS count
     FROM players_mail
     WHERE player_id = ? AND receive_time IS NULL AND (reward_limit_time IS NULL OR reward_limit_time > ?)
@@ -2713,8 +3411,138 @@ export function getPlayerReceivableMailCountSync(
     return result.count
 }
 
+const mailColumns = `id, type, type_id, number, reason_id, subject, description, create_time, receive_time, reward_limit_time,
+    (SELECT source_key FROM players_reward_mail_sources
+        WHERE player_id = players_mail.player_id AND mail_id = players_mail.id) AS reward_source_key`
+
 /**
- * Marks a player's mail as received.
+ * Gets a player's received mail (the gift box history) in the order it was received, most recently received first.
+ *
+ * @param playerId The ID of the player.
+ * @param offset How many mails to skip.
+ * @param limit The maximum number of mails to return.
+ * @returns A list of received mail.
+ */
+export function getPlayerMailHistorySync(
+    playerId: number,
+    offset: number,
+    limit: number
+): PlayerMail[] {
+    const rawList = prepare(`
+    SELECT ${mailColumns}
+    FROM players_mail
+    WHERE player_id = ? AND receive_seq IS NOT NULL
+    ORDER BY receive_seq DESC
+    LIMIT ? OFFSET ?
+    `).all(playerId, limit, offset) as RawPlayerMail[]
+
+    return rawList.map(raw => buildPlayerMail(raw))
+}
+
+/**
+ * Counts a player's received mail (all that is stored, see `trimPlayerMailHistorySync`).
+ *
+ * @param playerId The ID of the player.
+ * @returns The number of received mails.
+ */
+export function getPlayerMailHistoryCountSync(
+    playerId: number
+): number {
+    return (prepare(`
+    SELECT COUNT(*) AS count FROM players_mail WHERE player_id = ? AND receive_seq IS NOT NULL
+    `).get(playerId) as { count: number }).count
+}
+
+/**
+ * Deletes a player's received mail past the `keep` received last (the history's retention).
+ *
+ * @param playerId The ID of the player.
+ * @param keep How many received mails to keep.
+ * @returns How many mails were deleted.
+ */
+export function trimPlayerMailHistorySync(
+    playerId: number,
+    keep: number
+): number {
+    return prepare(`
+    DELETE FROM players_mail
+    WHERE id IN (
+        SELECT id FROM players_mail
+        WHERE player_id = ? AND receive_seq IS NOT NULL
+        ORDER BY receive_seq DESC
+        LIMIT -1 OFFSET ?
+    )
+    `).run(playerId, keep).changes
+}
+
+/**
+ * The mail a save file keeps: the newest `pendingLimit` mails the player can still receive, oldest first, then the
+ * `historyLimit` received last, in the order they were received (an import inserts them in that order, which keeps
+ * it). Expired mail is left out; it can't be received or seen any more. More than a gift box holds can be receivable
+ * when the clock went back past expiry dates; the limit keeps the save importable.
+ *
+ * @param playerId The ID of the player.
+ * @param now The time to check expiry against.
+ * @param pendingLimit How many receivable mails to keep.
+ * @param historyLimit How many received mails to keep.
+ * @returns The mail to save.
+ */
+export function getPlayerSaveMailListSync(
+    playerId: number,
+    now: Date,
+    pendingLimit: number,
+    historyLimit: number
+): PlayerMail[] {
+    const pending = getPlayerReceivableMailListSync(playerId, now, 0, pendingLimit)
+    const history = getPlayerMailHistorySync(playerId, 0, historyLimit)
+    return [...pending.reverse(), ...history.reverse()]
+}
+
+/**
+ * Every mail row a player has, to carry them through a save import: waiting and expired mail oldest first, then the
+ * received mail in the order it was received (inserting them in this order keeps it).
+ *
+ * @param playerId The ID of the player.
+ * @returns The player's mail.
+ */
+export function getPlayerAllMailSync(
+    playerId: number
+): PlayerMail[] {
+    return (prepare(`
+    SELECT ${mailColumns} FROM players_mail WHERE player_id = ? ORDER BY receive_seq, id
+    `).all(playerId) as RawPlayerMail[]).map(raw => buildPlayerMail(raw))
+}
+
+/**
+ * The highest mail ID handed out so far (0 before the first): a mail created later has a higher one, since mail IDs
+ * are never reused (AUTOINCREMENT).
+ */
+export function getLastMailIdSync(): number {
+    const row = prepare(`SELECT seq FROM sqlite_sequence WHERE name = 'players_mail'`).get() as { seq: number } | undefined
+    return row?.seq ?? 0
+}
+
+/**
+ * Counts every player's mail that can still be received, for sending to all players at once.
+ *
+ * @param now The time to check expiry against.
+ * @returns Player ID → number of receivable mails (players with none are missing).
+ */
+export function getReceivableMailCountsSync(
+    now: Date
+): Map<number, number> {
+    const rows = prepare(`
+    SELECT player_id, COUNT(*) AS count
+    FROM players_mail
+    WHERE receive_time IS NULL AND (reward_limit_time IS NULL OR reward_limit_time > ?)
+    GROUP BY player_id
+    `).all(now.toISOString()) as { player_id: number, count: number }[]
+
+    return new Map(rows.map(row => [row.player_id, row.count]))
+}
+
+/**
+ * Marks a player's mail as received, after every mail the player has received so far.
  *
  * @param playerId The ID of the player.
  * @param mailId The ID of the mail.
@@ -2725,11 +3553,11 @@ export function setPlayerMailReceivedSync(
     mailId: number,
     receiveTime: Date
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_mail
-    SET receive_time = ?
+    SET receive_time = ?, receive_seq = ${nextReceiveSeq()}
     WHERE player_id = ? AND id = ?
-    `).run(receiveTime.toISOString(), playerId, mailId)
+    `).run(receiveTime.toISOString(), playerId, playerId, mailId)
 }
 
 /**
@@ -2741,13 +3569,13 @@ export function setPlayerMailReceivedSync(
 export function getPlayerActiveMissionsSync(
     playerId: number
 ): Record<string, PlayerActiveMission> {
-    const rawMissions = db.prepare(`
+    const rawMissions = prepare(`
     SELECT id, progress
     FROM players_active_missions
     WHERE player_id = ?
     `).all(playerId) as RawPlayerActiveMission[]
 
-    const rawStages = db.prepare(`
+    const rawStages = prepare(`
     SELECT id, status, mission_id
     FROM players_active_missions_stages
     WHERE player_id = ?
@@ -2794,7 +3622,7 @@ function insertPlayerActiveMissionStageSync(
     missionId: number | string,
     status: boolean
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_active_missions_stages (id, status, player_id, mission_id)
     VALUES (?, ?, ?, ?)   
     `).run(
@@ -2817,7 +3645,7 @@ function insertPlayerActiveMissionSync(
     missionId: number | string,
     mission: PlayerActiveMission
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_active_missions (id, progress, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -2863,7 +3691,7 @@ export function setPlayerActiveMissionProgressSync(
     missionId: number,
     progress: number
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_active_missions (id, progress, player_id)
     VALUES (?, ?, ?)
     ON CONFLICT (id, player_id) DO UPDATE SET progress = excluded.progress
@@ -2884,7 +3712,7 @@ export function setPlayerActiveMissionStageSync(
     stage: number,
     received: boolean
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_active_missions_stages (id, status, player_id, mission_id)
     VALUES (?, ?, ?, ?)
     ON CONFLICT (id, mission_id, player_id) DO UPDATE SET status = excluded.status
@@ -2905,16 +3733,16 @@ export function getPlayerCollectionSync(
     equipment: { id: number, level: number }[],
     bondTokens: { characterId: number, manaBoardIndex: number, status: number }[]
 } {
-    const characters = db.prepare(`
+    const characters = prepare(`
     SELECT id, exp, over_limit_step AS overLimitStep FROM players_characters WHERE player_id = ?
     `).all(playerId) as { id: number, exp: number, overLimitStep: number }[]
-    const manaNodes = db.prepare(`
+    const manaNodes = prepare(`
     SELECT character_id AS characterId, value FROM players_characters_mana_nodes WHERE player_id = ?
     `).all(playerId) as { characterId: number, value: number }[]
-    const equipment = db.prepare(`
+    const equipment = prepare(`
     SELECT id, level FROM players_equipment WHERE player_id = ?
     `).all(playerId) as { id: number, level: number }[]
-    const bondTokens = db.prepare(`
+    const bondTokens = prepare(`
     SELECT character_id AS characterId, mana_board_index AS manaBoardIndex, status FROM players_characters_bond_tokens WHERE player_id = ?
     `).all(playerId) as { characterId: number, manaBoardIndex: number, status: number }[]
     return { characters, manaNodes, equipment, bondTokens }
@@ -2929,7 +3757,7 @@ export function getPlayerCollectionSync(
 export function getPlayerDegreesSync(
     playerId: number
 ): number[] {
-    return (db.prepare(`
+    return (prepare(`
     SELECT degree_id FROM players_degrees WHERE player_id = ? ORDER BY degree_id
     `).all(playerId) as { degree_id: number }[]).map(row => row.degree_id)
 }
@@ -2945,7 +3773,7 @@ export function insertPlayerDegreeSync(
     playerId: number,
     degreeId: number
 ): boolean {
-    return db.prepare(`
+    return prepare(`
     INSERT OR IGNORE INTO players_degrees (player_id, degree_id) VALUES (?, ?)
     `).run(playerId, degreeId).changes > 0
 }
@@ -2980,7 +3808,7 @@ export function getPlayerBoxGachaSync(
     gachaId: number,
     boxId: number
 ): PlayerBoxGacha | null {
-    const rawBox = db.prepare(`
+    const rawBox = prepare(`
     SELECT id, box_id, reset_times, remaining_number, is_closed
     FROM players_box_gacha
     WHERE player_id = ? AND id = ? AND box_id = ?
@@ -3001,7 +3829,7 @@ export function getPlayerBoxGachasSync(
     playerId: number
 ): Record<string, PlayerBoxGacha[]> {
 
-    const rawBoxes = db.prepare(`
+    const rawBoxes = prepare(`
     SELECT id, box_id, reset_times, remaining_number, is_closed
     FROM players_box_gacha
     WHERE player_id = ?
@@ -3034,7 +3862,7 @@ export function insertPlayerBoxGachaSync(
     gachaId: number | string,
     boxGacha: PlayerBoxGacha
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_box_gacha (id, box_id, reset_times, remaining_number, is_closed, player_id)
     VALUES (?, ?, ?, ?, ?, ?)
     `).run(
@@ -3100,7 +3928,7 @@ export function updatePlayerBoxGachaSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_box_gacha
         SET ${sets.join(', ')}
         WHERE player_id = ? AND id = ? AND box_id = ?
@@ -3125,11 +3953,16 @@ export function getPlayerBoxGachaDrawnRewardsSync(
     gachaId: number,
     boxId: string | number
 ): PlayerBoxGachaDrawnReward[] {
-    return db.prepare(`
+    return prepare(`
     SELECT id, number
     FROM players_box_gacha_drawn_rewards
     WHERE box_id = ? AND gacha_id = ? AND player_id = ?
     `).all(Number(boxId), gachaId, playerId) as PlayerBoxGachaDrawnReward[]
+}
+
+/** Empties a box's drawn rewards: a reset refills the box (FT-14). */
+export function deletePlayerBoxGachaDrawnRewardsSync(playerId: number, gachaId: number, boxId: number) {
+    prepare(`DELETE FROM players_box_gacha_drawn_rewards WHERE box_id = ? AND gacha_id = ? AND player_id = ?`).run(boxId, gachaId, playerId)
 }
 
 /**
@@ -3146,7 +3979,7 @@ export function insertPlayerBoxGachaDrawnRewardSync(
     boxId: string | number,
     reward: PlayerBoxGachaDrawnReward
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_box_gacha_drawn_rewards (id, box_id, gacha_id, number, player_id)
     VALUES (?, ?, ?, ?, ?)
     `).run(
@@ -3174,7 +4007,7 @@ export function updatePlayerBoxGachaDrawnRewardSync(
     rewardId: string | number,
     newNumber: number
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_box_gacha_drawn_rewards
     SET number = ?
     WHERE player_id = ? AND gacha_id = ? AND box_id = ? AND id = ?
@@ -3196,7 +4029,7 @@ export function updatePlayerBoxGachaDrawnRewardSync(
 export function getPlayerStartDashExchangeCampaignsSync(
     playerId: number
 ): PlayerStartDashExchangeCampaign[] {
-    const rawCampaigns = db.prepare(`
+    const rawCampaigns = prepare(`
     SELECT campaign_id, gacha_id, term_index, status, period_start_time, period_end_time
     FROM players_start_dash_exchange_campaigns
     WHERE player_id = ?
@@ -3220,11 +4053,11 @@ export function getPlayerStartDashExchangeCampaignsSync(
  * @param playerId The player's ID.
  * @param campaign The campaign's data.
  */
-function insertPlayerStartDashExchangeCampaignSync(
+export function insertPlayerStartDashExchangeCampaignSync(
     playerId: number,
     campaign: PlayerStartDashExchangeCampaign
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_start_dash_exchange_campaigns (campaign_id, gacha_id, term_index, status, period_start_time, period_end_time, player_id)
     VALUES (?, ?, ?, ?, ?, ?, ?)
     `).run(
@@ -3236,6 +4069,11 @@ function insertPlayerStartDashExchangeCampaignSync(
         campaign.periodEndTime.toISOString(),
         playerId
     )
+}
+
+/** Sets a player's start dash exchange campaign status (FT-44: 1 entered, 2 ticket bought, 3 exchanged). */
+export function updatePlayerStartDashExchangeStatusSync(playerId: number, campaignId: number, status: number) {
+    prepare(`UPDATE players_start_dash_exchange_campaigns SET status = ? WHERE player_id = ? AND campaign_id = ?`).run(status, playerId, campaignId)
 }
 
 /**
@@ -3264,7 +4102,7 @@ function insertPlayerStartDashExchangeCampaignsSync(
 export function getPlayerMultiSpecialExchangeCampaignsSync(
     playerId: number
 ): PlayerMultiSpecialExchangeCampaign[] {
-    const rawCampaigns = db.prepare(`
+    const rawCampaigns = prepare(`
     SELECT campaign_id, status, ticket_item_id
     FROM players_multi_special_exchange_campaigns
     WHERE player_id = ?
@@ -3294,7 +4132,7 @@ export function getPlayerMultiSpecialExchangeCampaignSync(
     playerId: number,
     campaignId: number
 ): PlayerMultiSpecialExchangeCampaign | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT campaign_id, status, ticket_item_id
     FROM players_multi_special_exchange_campaigns
     WHERE player_id = ? AND campaign_id = ?
@@ -3313,7 +4151,7 @@ export function upsertPlayerMultiSpecialExchangeCampaignSync(
     playerId: number,
     campaign: PlayerMultiSpecialExchangeCampaign
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_multi_special_exchange_campaigns (campaign_id, status, ticket_item_id, player_id)
     VALUES (?, ?, ?, ?)
     ON CONFLICT (campaign_id, player_id) DO UPDATE SET status = excluded.status, ticket_item_id = excluded.ticket_item_id
@@ -3326,6 +4164,36 @@ export function upsertPlayerMultiSpecialExchangeCampaignSync(
 }
 
 /**
+ * Records who shared a multi special exchange lounge with the player in a campaign (CO-3), replacing earlier mates.
+ *
+ * @param playerId The player's ID.
+ * @param campaignId The campaign's ID.
+ * @param matePlayerIds The other members' player IDs.
+ */
+export function setPlayerMultiSpecialExchangeLoungeMatesSync(playerId: number, campaignId: number, matePlayerIds: number[]) {
+    prepare(`DELETE FROM players_multi_special_exchange_lounge_mates WHERE player_id = ? AND campaign_id = ?`).run(playerId, campaignId)
+    const insert = prepare(`
+    INSERT OR IGNORE INTO players_multi_special_exchange_lounge_mates (campaign_id, player_id, mate_player_id)
+    VALUES (?, ?, ?)
+    `)
+    for (const mate of matePlayerIds) if (mate !== playerId) insert.run(campaignId, playerId, mate)
+}
+
+/**
+ * The players who shared the player's multi special exchange lounge in a campaign (CO-3); empty for a solo draw.
+ *
+ * @param playerId The player's ID.
+ * @param campaignId The campaign's ID.
+ */
+export function getPlayerMultiSpecialExchangeLoungeMatesSync(playerId: number, campaignId: number): number[] {
+    return (prepare(`
+    SELECT mate_player_id FROM players_multi_special_exchange_lounge_mates
+    WHERE player_id = ? AND campaign_id = ?
+    ORDER BY mate_player_id
+    `).all(playerId, campaignId) as { mate_player_id: number }[]).map(row => row.mate_player_id)
+}
+
+/**
  * Inserts a singular multi special exchange campaign into the database.
  * 
  * @param playerId The player's ID.
@@ -3335,7 +4203,7 @@ function insertPlayerMultiSpecialExchangeCampaignSync(
     playerId: number,
     campaign: PlayerMultiSpecialExchangeCampaign
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_multi_special_exchange_campaigns (campaign_id, status, ticket_item_id, player_id)
     VALUES (?, ?, ?, ?)
     `).run(
@@ -3424,11 +4292,11 @@ export function getPlayerRushEventSync(
     eventId: number
 ): PlayerRushEvent | null {
 
-    const rawData = db.prepare(`
+    const rawData = prepare(`
     SELECT *
     FROM players_rush_events
-    WHERE player_id = ? AND event_id = ?
-    `).get(playerId, eventId) as RawPlayerRushEvent
+    WHERE player_id = ? AND event_id = ? AND run = @run
+    `).get(playerId, eventId, { run: currentEventRun() }) as RawPlayerRushEvent
 
     // get next endless round
     const nextEndlessBattleRound = getPlayerRushEventNextEndlessBattleRoundSync(playerId, eventId)
@@ -3445,11 +4313,11 @@ export function getPlayerRushEventSync(
 export function getPlayerRushEventListSync(
     playerId: number
 ): PlayerRushEvent[] {
-    const rawData = db.prepare(`
+    const rawData = prepare(`
     SELECT *
     FROM players_rush_events
-    WHERE player_id = ?
-    `).all(playerId) as RawPlayerRushEvent[]
+    WHERE player_id = ? AND run = @run
+    `).all(playerId, { run: currentEventRun() }) as RawPlayerRushEvent[]
 
     return rawData.map(raw => deserializeRushEvent(raw, 1))
 }
@@ -3465,15 +4333,16 @@ export function getPlayerRushEventListSync(
 export function getRushEventEndlessRankingListSync(
     eventId: number,
     page: number,
-    pageSize: number = 100
+    pageSize: number = 100,
+    exclude: Iterable<number> = []
 ): GetRushEventEndlessRankingListResult {
     const offset = page * pageSize
 
-    const results = db.prepare(`
+    const results = prepare(`
     SELECT *,
         COUNT(*) OVER() as total_count
     FROM players_rush_events
-    WHERE event_id = ?
+    WHERE event_id = ? AND run = @run${playersNotIn(exclude)}
     ORDER BY endless_battle_max_round DESC,
         endless_battle_max_round_time ASC
     LIMIT ?
@@ -3481,7 +4350,8 @@ export function getRushEventEndlessRankingListSync(
     `).all(
         eventId,
         pageSize,
-        offset
+        offset,
+        { run: currentEventRun() }
     ) as RawPlayerRushEventRanking[]
 
     const totalCount = results[0]?.total_count ?? 0;
@@ -3506,6 +4376,15 @@ export function getRushEventEndlessRankingListSync(
 }
 
 /**
+ * ` AND player_id NOT IN (...)` for players a shared board leaves out (SEC-18: developer mode), or "" for none. The IDs
+ * are checked as whole numbers and written as literals, so a list of any length keeps one statement per list.
+ */
+function playersNotIn(exclude: Iterable<number>): string {
+    const ids = [...exclude].filter(id => Number.isSafeInteger(id))
+    return ids.length === 0 ? "" : ` AND player_id NOT IN (${ids.join(",")})`
+}
+
+/**
  * Gets the player ID who is at a specific rank for the endless battle leaderboard for a raid event.
  * 
  * @param rank The rank to get the player ID of.
@@ -3514,19 +4393,21 @@ export function getRushEventEndlessRankingListSync(
  */
 export function getPlayerIdFromRushEventEndlessRankSync(
     rank: number,
-    eventId: number
+    eventId: number,
+    exclude: Iterable<number> = []
 ): number | null {
-    const result = db.prepare(`
+    const result = prepare(`
     SELECT player_id
     FROM players_rush_events
-    WHERE event_id = ?
+    WHERE event_id = ? AND run = @run${playersNotIn(exclude)}
     ORDER BY endless_battle_max_round DESC,
         endless_battle_max_round_time ASC
     LIMIT 1
     OFFSET ?
     `).get(
         eventId,
-        rank - 1
+        rank - 1,
+        { run: currentEventRun() }
     ) as { player_id: number } | undefined
 
     return result?.player_id ?? null
@@ -3542,9 +4423,12 @@ export function insertPlayerRushEventSync(
     playerId: number,
     rushEvent: PlayerRushEvent
 ) {
-    db.prepare(`
-    INSERT INTO players_rush_events
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    prepare(`
+    INSERT INTO players_rush_events (player_id, event_id, active_rush_battle_folder_id, endless_battle_max_round, endless_battle_max_round_time,
+        endless_battle_max_round_character_id_1, endless_battle_max_round_character_id_2, endless_battle_max_round_character_id_3,
+        endless_battle_max_round_character_evolution_img_lvl_1, endless_battle_max_round_character_evolution_img_lvl_2,
+        endless_battle_max_round_character_evolution_img_lvl_3, run)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, @run)
     `).run(
         playerId,
         rushEvent.eventId,
@@ -3552,7 +4436,8 @@ export function insertPlayerRushEventSync(
         rushEvent.endlessBattleMaxRound,
         rushEvent.endlessBattleMaxRoundTime,
         ...rushEvent.endlessBattleMaxRoundCharacterIds,
-        ...rushEvent.endlessBattleMaxRoundCharacterEvolutionImgLvls
+        ...rushEvent.endlessBattleMaxRoundCharacterEvolutionImgLvls,
+        { run: currentEventRun() }
     )
 }
 
@@ -3608,15 +4493,11 @@ export function updatePlayerRushEventSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players_rush_events
         SET ${sets.join(', ')}
-        WHERE player_id = ? AND event_id = ?
-        `).run([
-        ...values,
-        playerId,
-        rushEvent.eventId
-    ]);
+        WHERE player_id = ? AND event_id = ? AND run = @run
+        `).run(...values, playerId, rushEvent.eventId, { run: currentEventRun() });
 }
 
 /**
@@ -3630,11 +4511,11 @@ export function getPlayerRushEventClearedFoldersSync(
     playerId: number,
     eventId: number
 ): PlayerRushEventClearedFolders {
-    const rawCleared = db.prepare(`
+    const rawCleared = prepare(`
     SELECT player_id, event_id, folder_id
     FROM players_rush_events_cleared_folders
-    WHERE player_id = ? AND event_id = ?
-    `).all(playerId, eventId) as RawPlayerRushEventClearedFolder[]
+    WHERE player_id = ? AND event_id = ? AND run = @run
+    `).all(playerId, eventId, { run: currentEventRun() }) as RawPlayerRushEventClearedFolder[]
 
     return rawCleared.map(raw => raw.folder_id)
 }
@@ -3648,11 +4529,11 @@ export function getPlayerRushEventClearedFoldersSync(
 export function getPlayerRushEventListClearedFoldersSync(
     playerId: number
 ): Record<string, PlayerRushEventClearedFolders> {
-    const rawCleared = db.prepare(`
+    const rawCleared = prepare(`
     SELECT player_id, event_id, folder_id
     FROM players_rush_events_cleared_folders
-    WHERE player_id = ?
-    `).all(playerId) as RawPlayerRushEventClearedFolder[]
+    WHERE player_id = ? AND run = @run
+    `).all(playerId, { run: currentEventRun() }) as RawPlayerRushEventClearedFolder[]
 
     const eventFolderBuckets: Record<string, PlayerRushEventClearedFolders> = {}
     for (const clearedFolder of rawCleared) {
@@ -3679,10 +4560,10 @@ export function insertPlayerRushEventClearedFolderSync(
     eventId: number,
     folderId: number
 ) {
-    db.prepare(`
-    INSERT OR IGNORE INTO players_rush_events_cleared_folders (player_id, event_id, folder_id)
-    VALUES (?, ?, ?)
-    `).run(playerId, eventId, folderId)
+    prepare(`
+    INSERT OR IGNORE INTO players_rush_events_cleared_folders (player_id, event_id, folder_id, run)
+    VALUES (?, ?, ?, @run)
+    `).run(playerId, eventId, folderId, { run: currentEventRun() })
 }
 
 /**
@@ -3794,7 +4675,7 @@ export function getPlayerRushEventPlayedPartiesSync(
     playerId: number,
     eventId: number,
 ): PlayerRushEventPlayedParty[] {
-    const rawParties = db.prepare(`
+    const rawParties = prepare(`
     SELECT character_id_1, character_id_2, character_id_3,
         unison_character_id_1, unison_character_id_2, unison_character_id_3,
         equipment_id_1, equipment_id_2, equipment_id_3, ability_soul_id_1,
@@ -3804,8 +4685,8 @@ export function getPlayerRushEventPlayedPartiesSync(
         unison_evolution_img_level_3, player_id, event_id, round,
         battle_type
     FROM players_rush_events_played_parties
-    WHERE player_id = ? AND event_id = ?
-    `).all(playerId, eventId) as RawPlayerRushEventPlayedParty[]
+    WHERE player_id = ? AND event_id = ? AND run = @run
+    `).all(playerId, eventId, { run: currentEventRun() }) as RawPlayerRushEventPlayedParty[]
 
     return rawParties.map(raw => deserializePlayerRushEventPlayedParty(raw))
 }
@@ -3820,11 +4701,11 @@ export function getPlayerRushEventListPlayedPartiesSync(
     playerId: number
 ): Record<string, PlayerRushEventPlayedParty[]> {
 
-    const rawParties = db.prepare(`
+    const rawParties = prepare(`
     SELECT *
     FROM players_rush_events_played_parties
-    WHERE player_id = ?
-    `).all(playerId) as RawPlayerRushEventPlayedParty[]
+    WHERE player_id = ? AND run = @run
+    `).all(playerId, { run: currentEventRun() }) as RawPlayerRushEventPlayedParty[]
 
     const eventPartyBuckets: Record<string, PlayerRushEventPlayedParty[]> = {}
     for (const rawParty of rawParties) {
@@ -3850,14 +4731,15 @@ export function getPlayerRushEventNextEndlessBattleRoundSync(
     playerId: number,
     eventId: number
 ): number {
-    const rawRounds = db.prepare(`
+    const rawRounds = prepare(`
     SELECT round
     FROM players_rush_events_played_parties
-    WHERE player_id = ? AND event_id = ? AND battle_type = ?
+    WHERE player_id = ? AND event_id = ? AND battle_type = ? AND run = @run
     `).all(
         playerId,
         eventId,
-        RushEventBattleType.ENDLESS
+        RushEventBattleType.ENDLESS,
+        { run: currentEventRun() }
     ) as { round: number }[]
 
     let nextRound: number = 1
@@ -3880,9 +4762,12 @@ export function insertPlayerRushEventPlayedPartySync(
     eventId: number,
     party: PlayerRushEventPlayedParty
 ) {
-    db.prepare(`
-    INSERT INTO players_rush_events_played_parties
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    prepare(`
+    INSERT INTO players_rush_events_played_parties (character_id_1, character_id_2, character_id_3,
+        unison_character_id_1, unison_character_id_2, unison_character_id_3, equipment_id_1, equipment_id_2, equipment_id_3,
+        ability_soul_id_1, ability_soul_id_2, ability_soul_id_3, evolution_img_level_1, evolution_img_level_2, evolution_img_level_3,
+        unison_evolution_img_level_1, unison_evolution_img_level_2, unison_evolution_img_level_3, player_id, event_id, round, battle_type, run)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, @run)
     `).run(
         party.characterIds[0],
         party.characterIds[1],
@@ -3905,7 +4790,8 @@ export function insertPlayerRushEventPlayedPartySync(
         playerId,
         eventId,
         party.round,
-        party.battleType
+        party.battleType,
+        { run: currentEventRun() }
     )
 }
 
@@ -3941,13 +4827,14 @@ export function deletePlayerRushEventPlayedPartyListSync(
     eventId: number,
     battleType: RushEventBattleType
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM players_rush_events_played_parties
-    WHERE player_id = ? AND event_id = ? AND battle_type = ?
+    WHERE player_id = ? AND event_id = ? AND battle_type = ? AND run = @run
     `).run(
         playerId,
         eventId,
-        battleType
+        battleType,
+        { run: currentEventRun() }
     )
 }
 
@@ -3965,14 +4852,15 @@ export function deletePlayerRushEventPlayedPartySync(
     round: number,
     battleType: RushEventBattleType,
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM players_rush_events_played_parties
-    WHERE player_id = ? AND event_id = ? AND round = ? AND battle_type = ?
+    WHERE player_id = ? AND event_id = ? AND round = ? AND battle_type = ? AND run = @run
     `).run(
         playerId,
         eventId,
         round,
-        battleType
+        battleType,
+        { run: currentEventRun() }
     )
 }
 
@@ -3990,15 +4878,16 @@ export function deletePlayerRushEventPlayedPartiesUntilSync(
     battleType: RushEventBattleType,
     untilRound: number
 ) {
-    db.prepare(`
+    prepare(`
     DELETE FROM players_rush_events_played_parties
     WHERE player_id = ? AND event_id = ? AND battle_type = ?
-        AND round >= ?
+        AND round >= ? AND run = @run
     `).run(
         playerId,
         eventId,
         battleType,
-        untilRound
+        untilRound,
+        { run: currentEventRun() }
     )
 }
 
@@ -4014,7 +4903,7 @@ export function updatePlayerRushEventPlayedPartySync(
     eventId: number,
     party: PlayerRushEventPlayedParty
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_rush_events_played_parties
     SET character_id_1 = ?,
         character_id_2 = ?,
@@ -4033,8 +4922,8 @@ export function updatePlayerRushEventPlayedPartySync(
         evolution_img_level_3 = ?,
         unison_evolution_img_level_1 = ?,
         unison_evolution_img_level_2 = ?,
-        unison_evolution_img_level_3 = ?,
-    WHERE player_id = ? AND event_id = ? AND round = ? AND battle_type = ?
+        unison_evolution_img_level_3 = ?
+    WHERE player_id = ? AND event_id = ? AND round = ? AND battle_type = ? AND run = @run
     `).run(
         party.characterIds[0] ?? null,
         party.characterIds[1] ?? null,
@@ -4057,7 +4946,8 @@ export function updatePlayerRushEventPlayedPartySync(
         playerId,
         eventId,
         party.round,
-        party.battleType
+        party.battleType,
+        { run: currentEventRun() }
     )
 }
 
@@ -4073,7 +4963,7 @@ export function insertPlayerOptionSync(
     key: string,
     value: boolean
 ) {
-    db.prepare(`
+    prepare(`
     INSERT INTO players_options (key, value, player_id)
     VALUES (?, ?, ?)
     `).run(
@@ -4109,7 +4999,7 @@ export function insertPlayerOptionsSync(
 export function getPlayerOptionsSync(
     playerId: number
 ): Record<string, boolean> {
-    const rawOptions = db.prepare(`
+    const rawOptions = prepare(`
     SELECT key, value
     FROM players_options
     WHERE player_id = ?
@@ -4136,7 +5026,7 @@ export function updatePlayerOptionSync(
     key: string,
     value: boolean
 ) {
-    db.prepare(`
+    prepare(`
     UPDATE players_options
     SET value = ?
     WHERE key = ? AND player_id = ?    
@@ -4179,7 +5069,7 @@ export function updatePlayerOptionsSync(
 export function getPlayerFromAccountIdSync(
     accountId: number
 ): Player | null {
-    const response = db.prepare(`
+    const response = prepare(`
     SELECT id
     FROM players
     WHERE account_id = ?
@@ -4199,13 +5089,19 @@ export function getPlayerFromAccountIdSync(
 export function getAccountFromPlayerIdSync(
     playerId: number
 ): Account | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT account_id
     FROM players
     WHERE id = ?
     `).get(playerId) as { account_id: number } | undefined
 
     return raw === undefined ? null : getAccountSync(raw.account_id)
+}
+
+/** Every player's account ID (the PID the game shows), by player ID, in one query for the admin Players list (ADM-3). */
+export function getPlayerAccountIdsSync(): Map<number, number> {
+    const rows = prepare(`SELECT id, account_id FROM players`).all() as { id: number, account_id: number }[]
+    return new Map(rows.map(row => [row.id, row.account_id]))
 }
 
 /**
@@ -4250,7 +5146,7 @@ function buildPlayer(
 export function getPlayerSync(
     playerId: number
 ): Player | null {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id, stamina, stamina_heal_time, boost_point, boss_boost_point,
         transition_state, role, name, last_login_time, comment,
         vmoney, free_vmoney, rank_point, star_crumb,
@@ -4269,7 +5165,7 @@ export function getAllPlayersSync(
     offset: number = 0,
     limit: number = 25
 ): Player[] {
-    const raw = db.prepare(`
+    const raw = prepare(`
     SELECT id, stamina, stamina_heal_time, boost_point, boss_boost_point,
         transition_state, role, name, last_login_time, comment,
         vmoney, free_vmoney, rank_point, star_crumb,
@@ -4285,7 +5181,7 @@ export function getAllPlayersSync(
 
 /**
  * Inserts a player into the database.
- * 
+ *
  * @param accountId The ID of the account that this player is linked to.
  * @param player The player data to insert.
  * @returns The ID of the player that was inserted.
@@ -4329,7 +5225,7 @@ export function insertPlayerSync(
     if (playerIdGiven)
         values.push(playerId);
 
-    const insert = db.prepare(`
+    const insert = prepare(`
     INSERT INTO players (stamina, stamina_heal_time, boost_point, boss_boost_point,
         transition_state, role, name, last_login_time, comment, vmoney, free_vmoney,
         rank_point, star_crumb, bond_token, exp_pool, exp_pooled_time, leader_character_id,
@@ -4398,6 +5294,9 @@ function insertMergedPlayerDataUnsafeSync(
     if (rushEventPlayedPartyList !== undefined) {
         insertPlayerRushEventPlayedPartyListSync(playerId, rushEventPlayedPartyList)
     }
+
+    for (const mail of toInsert.mailList ?? []) insertPlayerMailSync(playerId, mail)
+    for (const degreeId of toInsert.degreeList ?? []) insertPlayerDegreeSync(playerId, degreeId)
 }
 
 export function getDefaultPlayerPartyGroupsSync(
@@ -5020,11 +5919,44 @@ export function updatePlayerSync(
         }
     }
 
-    if (sets.length > 0) db.prepare(`
+    if (sets.length > 0) prepare(`
         UPDATE players
         SET ${sets.join(', ')}
         WHERE id = ?
         `).run([...values, id]);
+}
+
+/**
+ * The player's server-side records that a save file doesn't carry: mission progress, rewards waiting for room after a
+ * daily reset, the last reset days, the Haunt's cycle, login bonus receipts, shop purchase counts (FT-22: the original's
+ * /load has none; the client gets them from shop/get_sales_list) and the sources of earned reward mail. An ordinary save
+ * import keeps them, so loading an older save can't make a product bought up for sale again. Developer mode keeps them
+ * with its backup, so turning it off puts them back as they were.
+ */
+const progressRecordTables = ["players_encyclopedia", "players_point_reset_days", "players_mission_event_current_run", "players_mission_event_runs", "players_mission_reward_snapshots", "players_missions", "players_mission_reward_backlog", "players_resets", "players_tower_dungeon", "players_score_attack_best", "players_score_attack_battles", "players_practice_battles", "players_profile_settings", "players_lineup_choices", "players_special_exchange", "players_campaign_gifts", "players_carnival_records", "players_carnival_paid", "players_ranking_records", "players_character_election_votes", "players_raid_records", "players_raid_state", "players_login_bonus_receipts", "players_shop_purchases", "players_recent_quest_parties", "players_reward_mail_sources"] as const
+export type PlayerProgressRecords = Partial<Record<typeof progressRecordTables[number], Record<string, unknown>[]>>
+
+export function getPlayerProgressRecordsSync(playerId: number): PlayerProgressRecords {
+    return Object.fromEntries(progressRecordTables.map(table =>
+        [table, prepare(`SELECT * FROM ${table} WHERE player_id = ? ORDER BY rowid`).all(playerId) as Record<string, unknown>[]]))
+}
+
+function insertProgressRecordsSync(table: typeof progressRecordTables[number], rows: Record<string, unknown>[]) {
+    const perRun = (EVENT_RUN_TABLES as readonly string[]).includes(table)
+    // a developer mode backup from before runs has no run column: its records belong to the current run
+    for (const row of perRun && rows.some(row => !("run" in row)) ? rows.map(row => "run" in row ? row : { ...row, run: currentEventRun() }) : rows) {
+        const columns = Object.keys(row)
+        prepare(`INSERT INTO ${table} (${columns.join(", ")}) VALUES (${columns.map(() => "?").join(", ")})`).run(...columns.map(column => row[column]))
+    }
+}
+
+export interface ReplacePlayerDataOptions {
+    /**
+     * Restore these records (developer mode Off) instead of keeping the player's current ones: the save is then put
+     * back as it is, without the earned rewards and claims an ordinary import keeps. Empty for a backup made before
+     * they were kept, which drops them.
+     */
+    progressRecords?: PlayerProgressRecords
 }
 
 /**
@@ -5033,7 +5965,8 @@ export function updatePlayerSync(
  * @param replaceWith The MergedPlayerData to replace.
  */
 export function replacePlayerDataSync(
-    replaceWith: MergedPlayerData
+    replaceWith: MergedPlayerData,
+    options: ReplacePlayerDataOptions = {}
 ) {
     try {
         const playerId = replaceWith.player.id
@@ -5044,12 +5977,113 @@ export function replacePlayerDataSync(
 
         // delete and insert in one transaction, so a failed insert keeps the old player
         runInTransactionSync(() => {
+            if (options.progressRecords !== undefined) return restorePlayerDataSync(account.id, replaceWith, options.progressRecords)
+            const currentMail = getPlayerAllMailSync(playerId)
+            const rewards = retainRewardMailForImportSync(playerId, replaceWith.mailList, currentMail)
+            const ownedDegrees = getPlayerDegreesSync(playerId)
+            // A save from before mail and titles were saved carries neither: the player keeps their own (mail with
+            // its IDs) rather than losing them with the deleted rows.
+            const kept: MergedPlayerData = {
+                ...replaceWith,
+                mailList: rewards.mailList,
+                degreeList: replaceWith.degreeList === undefined ? ownedDegrees : [...new Set([
+                    ...replaceWith.degreeList,
+                    ...retainedMissionDegreeIds(ownedDegrees, getPlayerMissionsSync(playerId, 5))
+                ])]
+            }
+            // Mission rewards and claims belong to this account's history. Loading an older save cannot
+            // reopen a claimed stage or discard earned rewards. FT-4 mail import still uses `kept.mailList`.
+            const regular = getPlayerClearedRegularMissionListSync(playerId)
+            for (const [id, stage] of Object.entries(regular)) kept.clearedRegularMissionList[id] = Math.max(stage, kept.clearedRegularMissionList[id] ?? 0)
+            for (const [id, mission] of Object.entries(getPlayerActiveMissionsSync(playerId))) {
+                const imported = kept.allActiveMissionList[id]
+                const stages: Record<string, boolean> = {}
+                for (const [stage, received] of Object.entries(imported?.stages ?? {})) stages[stage] = received === true
+                for (const [stage, received] of Object.entries(mission.stages)) stages[stage] = received || stages[stage] === true
+                kept.allActiveMissionList[id] = { progress: Math.max(mission.progress, imported?.progress ?? 0), stages }
+            }
+            // the mail sources go back by restoreRewardMailSourcesSync, once their retained mails exist again
+            const { players_reward_mail_sources: _, ...records } = getPlayerProgressRecordsSync(playerId)
+            const restoreFollows = keepPlayerFollowsSync(playerId)
+            const restoreRush = keepOtherRunRushRecordsSync(playerId)
             deletePlayerSync(playerId)
-            insertMergedPlayerDataSync(account.id, replaceWith)
+            insertMergedPlayerDataSync(account.id, kept)
+            restoreFollows()
+            restoreRush()
+            restoreRewardMailSourcesSync(playerId, rewards.sources)
+            for (const [table, rows] of Object.entries(records)) insertProgressRecordsSync(table as typeof progressRecordTables[number], rows)
         })
     } catch (error: Error | any) {
         console.error(error)
         throw error
+    }
+}
+
+const RUSH_RUN_TABLES = ["players_rush_events", "players_rush_events_cleared_folders", "players_rush_events_played_parties"] as const
+
+/**
+ * A save holds the rush events of the current run only, so a replacement keeps the player's rush records of other runs:
+ * read before the player row's cascade drops them, put back once the player exists again.
+ */
+function keepOtherRunRushRecordsSync(playerId: number): () => void {
+    const kept = RUSH_RUN_TABLES.map(table => [table, prepare(`SELECT * FROM ${table} WHERE player_id = ? AND run <> @run`)
+        .all(playerId, { run: currentEventRun() }) as Record<string, unknown>[]] as const)
+    return () => {
+        for (const [table, rows] of kept) for (const row of rows) {
+            const columns = Object.keys(row)
+            prepare(`INSERT INTO ${table} (${columns.join(", ")}) VALUES (${columns.map(() => "?").join(", ")})`).run(...columns.map(column => row[column]))
+        }
+    }
+}
+
+/**
+ * Follows (FT-15) aren't save data: they are other players' too. A replacement deletes the player row, whose cascade
+ * would drop the follows both ways, so they are read first and put back once the player exists again. The co-op
+ * battles counted for the follow bonus (FT-43) are kept the same way.
+ */
+function keepPlayerFollowsSync(playerId: number): () => void {
+    const rows = prepare(`SELECT player_id, followee_id, follow_time FROM players_follows WHERE player_id = ? OR followee_id = ?`)
+        .all(playerId, playerId) as { player_id: number, followee_id: number, follow_time: number }[]
+    const partners = prepare(`SELECT player_id, partner_id, battles FROM players_coop_partners WHERE player_id = ? OR partner_id = ?`)
+        .all(playerId, playerId) as { player_id: number, partner_id: number, battles: number }[]
+    return () => {
+        const insert = prepare(`INSERT OR IGNORE INTO players_follows (player_id, followee_id, follow_time) VALUES (?, ?, ?)`)
+        for (const row of rows) insert.run(row.player_id, row.followee_id, row.follow_time)
+        const insertPartner = prepare(`INSERT OR IGNORE INTO players_coop_partners (player_id, partner_id, battles) VALUES (?, ?, ?)`)
+        for (const row of partners) insertPartner.run(row.player_id, row.partner_id, row.battles)
+    }
+}
+
+/** Developer mode Off: the backup's save and records as they were, so nothing earned while unlocked stays. */
+function restorePlayerDataSync(accountId: number, replaceWith: MergedPlayerData, records: PlayerProgressRecords) {
+    const playerId = replaceWith.player.id
+    const sources = records.players_reward_mail_sources ?? []
+    // an earned mail gets its old ID back, so its source points at it again
+    const mailIdOf = new Map(sources.map(source => [source.source_key, source.mail_id]))
+    const restored: MergedPlayerData = {
+        ...replaceWith,
+        mailList: replaceWith.mailList?.map(mail => {
+            const id = mail.rewardSourceKey === undefined ? undefined : mailIdOf.get(mail.rewardSourceKey)
+            return typeof id === "number" ? { ...mail, id } : mail
+        }) ?? getPlayerAllMailSync(playerId),
+        degreeList: replaceWith.degreeList ?? getPlayerDegreesSync(playerId)
+    }
+    // a backup from before purchase counts were kept (FT-22) has none: keep the player's own rather than reopen
+    // products bought up (counts only ever refuse a purchase)
+    const shopPurchases = records.players_shop_purchases
+        ?? prepare(`SELECT * FROM players_shop_purchases WHERE player_id = ? ORDER BY rowid`).all(playerId) as Record<string, unknown>[]
+    const restoreFollows = keepPlayerFollowsSync(playerId)
+    const restoreRush = keepOtherRunRushRecordsSync(playerId)
+    deletePlayerSync(playerId)
+    insertMergedPlayerDataSync(accountId, restored)
+    restoreFollows()
+    restoreRush()
+    const mailIds = new Set((restored.mailList ?? []).map(mail => mail.id).filter(id => id !== undefined))
+    for (const table of progressRecordTables) {
+        const rows = table === "players_shop_purchases" ? shopPurchases : records[table] ?? []
+        // a source whose mail isn't in the backup (trimmed from the history) stays as a mark that it was received
+        insertProgressRecordsSync(table, table !== "players_reward_mail_sources" ? rows
+            : rows.map(row => mailIds.has(row.mail_id as number) ? row : { ...row, mail_id: null }))
     }
 }
 
@@ -5061,7 +6095,7 @@ export function replacePlayerDataSync(
 export function deletePlayerSync(
     playerId: number
 ) {
-    db.prepare(`DELETE FROM players WHERE id = ?`).run(playerId)
+    prepare(`DELETE FROM players WHERE id = ?`).run(playerId)
 }
 
 /**
@@ -5073,7 +6107,7 @@ export function deletePlayerSync(
 export function deleteAccountSync(
     accountId: number
 ) {
-    db.prepare(`DELETE FROM accounts WHERE id = ?`).run(accountId)
+    prepare(`DELETE FROM accounts WHERE id = ?`).run(accountId)
 }
 
 export function collectPlayerDataPooledExpSync(
@@ -5107,4 +6141,40 @@ export function collectPlayerPooledExpSync(
     if (!playerData) return;
 
     collectPlayerDataPooledExpSync(playerData)
+}
+
+/** A player's party from their latest clear of a quest (FT-50, src/lib/recentParties.ts). Slots hold ids or null. */
+export interface RecentQuestParty {
+    name: string
+    characters: (number | null)[]
+    unisonCharacters: (number | null)[]
+    equipments: (number | null)[]
+    abilitySouls: (number | null)[]
+    evolutionImgLevels: (number | null)[]
+    unisonEvolutionImgLevels: (number | null)[]
+    /** the party's power score when it was kept (src/lib/partyPower.ts); missing on parties kept before FT-63 */
+    power?: number
+}
+
+/** Keeps `party` as the player's latest clearing party of the quest, replacing an earlier one. */
+export function upsertPlayerRecentQuestPartySync(playerId: number, category: number, questId: number, party: RecentQuestParty, clearTime: Date) {
+    prepare(`INSERT OR REPLACE INTO players_recent_quest_parties (player_id, category, quest_id, party, clear_time) VALUES (?, ?, ?, ?, ?)`)
+        .run(playerId, category, questId, JSON.stringify(party), clearTime.getTime())
+}
+
+/** The latest clearing parties of a quest, newest first, one per player, leaving out `excludePlayerId`'s. */
+export function getRecentQuestPartiesSync(category: number, questId: number, excludePlayerId: number, limit: number,
+                                          exclude: Iterable<number> = []): RecentQuestParty[] {
+    const rows = prepare(`SELECT party FROM players_recent_quest_parties WHERE category = ? AND quest_id = ? AND player_id != ?${playersNotIn(exclude)}
+        ORDER BY clear_time DESC, rowid DESC LIMIT ?`).all(category, questId, excludePlayerId, limit) as { party: string }[]
+    return rows.map(row => JSON.parse(row.party) as RecentQuestParty)
+}
+
+/** A party's name and main units, by its slot (the party_id the battle started with) in a party category (normal by
+ * default; an event party set's for the quests that play one, src/lib/eventParties.ts), or null. */
+export function getPlayerPartyBySlotSync(playerId: number, slot: number, category: PartyCategory = PartyCategory.NORMAL): { name: string, characterIds: (number | null)[] } | null {
+    const row = prepare(`SELECT name, character_id_1, character_id_2, character_id_3 FROM players_parties
+        WHERE player_id = ? AND slot = ? AND category = ? LIMIT 1`).get(playerId, slot, category) as
+        { name: string, character_id_1: number | null, character_id_2: number | null, character_id_3: number | null } | undefined
+    return row === undefined ? null : { name: row.name, characterIds: [row.character_id_1, row.character_id_2, row.character_id_3] }
 }

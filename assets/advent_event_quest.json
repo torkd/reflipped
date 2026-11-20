@@ -6,8 +6,9 @@
     "1002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2717,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -15,7 +16,11 @@
         "rankPointReward": 27,
         "characterExpReward": 112,
         "manaReward": 80,
-        "poolExpReward": 112
+        "poolExpReward": 112,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "1003": {
         "name": "",
@@ -24,8 +29,9 @@
     "1004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2718,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -33,13 +39,18 @@
         "rankPointReward": 250,
         "characterExpReward": 400,
         "manaReward": 200,
-        "poolExpReward": 400
+        "poolExpReward": 400,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "1005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2719,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -47,7 +58,11 @@
         "rankPointReward": 509,
         "characterExpReward": 1400,
         "manaReward": 280,
-        "poolExpReward": 1400
+        "poolExpReward": 1400,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "2001": {
         "name": "",
@@ -56,8 +71,9 @@
     "2002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2817,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -65,7 +81,11 @@
         "rankPointReward": 27,
         "characterExpReward": 112,
         "manaReward": 80,
-        "poolExpReward": 112
+        "poolExpReward": 112,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "2003": {
         "name": "",
@@ -74,8 +94,9 @@
     "2004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2818,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -83,13 +104,18 @@
         "rankPointReward": 250,
         "characterExpReward": 400,
         "manaReward": 200,
-        "poolExpReward": 400
+        "poolExpReward": 400,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "2005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2819,
+        "scoreRewardRolls": 16,
         "bRankTime": 1219000,
         "aRankTime": 901500,
         "sRankTime": 584000,
@@ -97,7 +123,11 @@
         "rankPointReward": 509,
         "characterExpReward": 1400,
         "manaReward": 280,
-        "poolExpReward": 1400
+        "poolExpReward": 1400,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "3001": {
         "name": "",
@@ -106,8 +136,9 @@
     "3002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2917,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -115,7 +146,11 @@
         "rankPointReward": 27,
         "characterExpReward": 112,
         "manaReward": 240,
-        "poolExpReward": 112
+        "poolExpReward": 112,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "3003": {
         "name": "",
@@ -124,8 +159,9 @@
     "3004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2918,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -133,13 +169,18 @@
         "rankPointReward": 250,
         "characterExpReward": 400,
         "manaReward": 600,
-        "poolExpReward": 400
+        "poolExpReward": 400,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "3005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2919,
+        "scoreRewardRolls": 16,
         "bRankTime": 1228000,
         "aRankTime": 918000,
         "sRankTime": 608000,
@@ -147,7 +188,11 @@
         "rankPointReward": 509,
         "characterExpReward": 1400,
         "manaReward": 840,
-        "poolExpReward": 1400
+        "poolExpReward": 1400,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "4001": {
         "name": "",
@@ -156,8 +201,9 @@
     "4002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2921,
+        "scoreRewardRolls": 10,
         "bRankTime": 798000,
         "aRankTime": 588000,
         "sRankTime": 378000,
@@ -165,7 +211,11 @@
         "rankPointReward": 27,
         "characterExpReward": 112,
         "manaReward": 240,
-        "poolExpReward": 112
+        "poolExpReward": 112,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "4003": {
         "name": "",
@@ -174,8 +224,9 @@
     "4004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2922,
+        "scoreRewardRolls": 14,
         "bRankTime": 912000,
         "aRankTime": 672000,
         "sRankTime": 432000,
@@ -183,13 +234,18 @@
         "rankPointReward": 250,
         "characterExpReward": 400,
         "manaReward": 600,
-        "poolExpReward": 400
+        "poolExpReward": 400,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "4005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2923,
+        "scoreRewardRolls": 16,
         "bRankTime": 1201000,
         "aRankTime": 868500,
         "sRankTime": 536000,
@@ -197,7 +253,11 @@
         "rankPointReward": 509,
         "characterExpReward": 1400,
         "manaReward": 840,
-        "poolExpReward": 1400
+        "poolExpReward": 1400,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "5001": {
         "name": "",
@@ -206,8 +266,9 @@
     "5002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2925,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -215,13 +276,18 @@
         "rankPointReward": 27,
         "characterExpReward": 112,
         "manaReward": 240,
-        "poolExpReward": 112
+        "poolExpReward": 112,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "5003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2926,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -229,13 +295,18 @@
         "rankPointReward": 250,
         "characterExpReward": 400,
         "manaReward": 600,
-        "poolExpReward": 400
+        "poolExpReward": 400,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "5004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2927,
+        "scoreRewardRolls": 16,
         "bRankTime": 1219000,
         "aRankTime": 901500,
         "sRankTime": 584000,
@@ -243,7 +314,11 @@
         "rankPointReward": 509,
         "characterExpReward": 1400,
         "manaReward": 840,
-        "poolExpReward": 1400
+        "poolExpReward": 1400,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "6001": {
         "name": "",
@@ -252,8 +327,9 @@
     "6002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2821,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -261,13 +337,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "6003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2822,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -275,13 +356,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "6004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2823,
+        "scoreRewardRolls": 16,
         "bRankTime": 1219000,
         "aRankTime": 901500,
         "sRankTime": 584000,
@@ -289,13 +375,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "6005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2824,
+        "scoreRewardRolls": 20,
         "bRankTime": 1368000,
         "aRankTime": 1008000,
         "sRankTime": 648000,
@@ -303,7 +394,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "7001": {
         "name": "",
@@ -312,8 +407,9 @@
     "7002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2825,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -321,13 +417,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "7003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2826,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -335,13 +436,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "7004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2827,
+        "scoreRewardRolls": 16,
         "bRankTime": 1228000,
         "aRankTime": 918000,
         "sRankTime": 608000,
@@ -349,13 +455,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "7005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2828,
+        "scoreRewardRolls": 20,
         "bRankTime": 1316000,
         "aRankTime": 996000,
         "sRankTime": 676000,
@@ -363,7 +474,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1700000
     },
     "9001": {
         "name": "",
@@ -376,8 +491,9 @@
     "9003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2829,
+        "scoreRewardRolls": 10,
         "bRankTime": 816000,
         "aRankTime": 621000,
         "sRankTime": 426000,
@@ -385,7 +501,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "9004": {
         "name": "",
@@ -394,8 +514,9 @@
     "9005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2830,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -403,7 +524,11 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "9006": {
         "name": "",
@@ -412,8 +537,9 @@
     "9007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2831,
+        "scoreRewardRolls": 16,
         "bRankTime": 1149000,
         "aRankTime": 856500,
         "sRankTime": 564000,
@@ -421,13 +547,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "9008": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2832,
+        "scoreRewardRolls": 20,
         "bRankTime": 1228000,
         "aRankTime": 918000,
         "sRankTime": 608000,
@@ -435,7 +566,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1600000
     },
     "10001": {
         "name": "",
@@ -444,8 +579,9 @@
     "10002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2833,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -453,13 +589,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "10003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2834,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -467,13 +608,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "10004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2835,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -481,13 +627,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "10005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2836,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -495,13 +646,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "11001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2837,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -509,13 +665,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "11002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2838,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -523,13 +684,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "11003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2839,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -537,13 +703,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "11004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2840,
+        "scoreRewardRolls": 20,
         "bRankTime": 1289000,
         "aRankTime": 946500,
         "sRankTime": 604000,
@@ -551,7 +722,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1700000
     },
     "12001": {
         "name": "",
@@ -560,8 +735,9 @@
     "12002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2841,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -569,13 +745,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "12003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2842,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -583,13 +764,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "12004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2843,
+        "scoreRewardRolls": 16,
         "bRankTime": 1219000,
         "aRankTime": 901500,
         "sRankTime": 584000,
@@ -597,13 +783,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "12005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2844,
+        "scoreRewardRolls": 20,
         "bRankTime": 1368000,
         "aRankTime": 1008000,
         "sRankTime": 648000,
@@ -611,7 +802,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 1,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "13001": {
         "name": "",
@@ -620,8 +815,9 @@
     "13002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2845,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -629,13 +825,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "13003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2846,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -643,13 +844,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "13004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2847,
+        "scoreRewardRolls": 16,
         "bRankTime": 1158000,
         "aRankTime": 873000,
         "sRankTime": 588000,
@@ -657,13 +863,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "13005": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2848,
+        "scoreRewardRolls": 20,
         "bRankTime": 1386000,
         "aRankTime": 1041000,
         "sRankTime": 696000,
@@ -671,13 +882,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "14001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2853,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -685,13 +901,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "14002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2854,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -699,13 +920,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "14003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2855,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -713,13 +939,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "14004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2856,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -727,13 +958,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "15001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2861,
+        "scoreRewardRolls": 10,
         "bRankTime": 825000,
         "aRankTime": 637500,
         "sRankTime": 450000,
@@ -741,13 +977,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "15002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2862,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -755,13 +996,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "15003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2863,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -769,13 +1015,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "15004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2864,
+        "scoreRewardRolls": 20,
         "bRankTime": 1341000,
         "aRankTime": 958500,
         "sRankTime": 576000,
@@ -783,7 +1034,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 1,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "16001": {
         "name": "",
@@ -796,8 +1051,9 @@
     "16003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2865,
+        "scoreRewardRolls": 10,
         "bRankTime": 816000,
         "aRankTime": 621000,
         "sRankTime": 426000,
@@ -805,7 +1061,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "16004": {
         "name": "",
@@ -814,8 +1074,9 @@
     "16005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2866,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -823,7 +1084,11 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "16006": {
         "name": "",
@@ -832,8 +1097,9 @@
     "16007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2867,
+        "scoreRewardRolls": 16,
         "bRankTime": 1149000,
         "aRankTime": 856500,
         "sRankTime": 564000,
@@ -841,13 +1107,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "16008": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2868,
+        "scoreRewardRolls": 20,
         "bRankTime": 1228000,
         "aRankTime": 918000,
         "sRankTime": 608000,
@@ -855,13 +1126,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1600000
     },
     "17001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2869,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -869,13 +1145,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "17002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2870,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -883,13 +1164,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "17003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2871,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -897,13 +1183,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "17004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2872,
+        "scoreRewardRolls": 20,
         "bRankTime": 1289000,
         "aRankTime": 946500,
         "sRankTime": 604000,
@@ -911,13 +1202,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1700000
     },
     "19001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2873,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -925,13 +1221,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "19002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2874,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -939,13 +1240,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "19003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2875,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -953,13 +1259,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "19004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2876,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -967,13 +1278,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "20001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2877,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -981,13 +1297,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "20002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2878,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -995,13 +1316,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "20003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2879,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1009,13 +1335,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "20004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2880,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1023,13 +1354,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "21001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2929,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -1037,13 +1373,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "21002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2930,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -1051,13 +1392,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "21003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2931,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -1065,13 +1411,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "21004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2932,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -1079,13 +1430,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "22001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2881,
+        "scoreRewardRolls": 10,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1093,13 +1449,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "22002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2882,
+        "scoreRewardRolls": 14,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1107,13 +1468,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "22003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2883,
+        "scoreRewardRolls": 16,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1121,13 +1487,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "22004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2884,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -1135,13 +1506,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "23001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2885,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1149,13 +1525,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "23002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2886,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1163,13 +1544,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "23003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2887,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1177,13 +1563,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "23004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2888,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1191,7 +1582,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "100001001": {
         "name": "",
@@ -1208,8 +1603,9 @@
     "100001004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000,
+        "scoreRewardRolls": 10,
         "bRankTime": 816000,
         "aRankTime": 621000,
         "sRankTime": 426000,
@@ -1217,7 +1613,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "100001005": {
         "name": "",
@@ -1226,8 +1626,9 @@
     "100001006": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11001,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -1235,13 +1636,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "100001007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11002,
+        "scoreRewardRolls": 16,
         "bRankTime": 1065000,
         "aRankTime": 802500,
         "sRankTime": 540000,
@@ -1249,13 +1655,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1380000
     },
     "100001008": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11003,
+        "scoreRewardRolls": 20,
         "bRankTime": 1158000,
         "aRankTime": 873000,
         "sRankTime": 588000,
@@ -1263,7 +1674,11 @@
         "rankPointReward": 722,
         "characterExpReward": 1635,
         "manaReward": 2010,
-        "poolExpReward": 1635
+        "poolExpReward": 1635,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1500000
     },
     "100002001": {
         "name": "",
@@ -1276,8 +1691,9 @@
     "100002003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 12000,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -1285,7 +1701,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "100002004": {
         "name": "",
@@ -1294,8 +1714,9 @@
     "100002005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 12001,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -1303,13 +1724,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "100002006": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 12002,
+        "scoreRewardRolls": 16,
         "bRankTime": 1140000,
         "aRankTime": 840000,
         "sRankTime": 540000,
@@ -1317,13 +1743,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "100002007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 12003,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -1331,7 +1762,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "100003001": {
         "name": "",
@@ -1348,8 +1783,9 @@
     "100003004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11100,
+        "scoreRewardRolls": 10,
         "bRankTime": 816000,
         "aRankTime": 621000,
         "sRankTime": 426000,
@@ -1357,7 +1793,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "100003005": {
         "name": "",
@@ -1366,8 +1806,9 @@
     "100003006": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11101,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -1375,13 +1816,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "100003007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11102,
+        "scoreRewardRolls": 16,
         "bRankTime": 1065000,
         "aRankTime": 802500,
         "sRankTime": 540000,
@@ -1389,13 +1835,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1380000
     },
     "100003008": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11103,
+        "scoreRewardRolls": 20,
         "bRankTime": 1158000,
         "aRankTime": 873000,
         "sRankTime": 588000,
@@ -1403,7 +1854,11 @@
         "rankPointReward": 722,
         "characterExpReward": 1635,
         "manaReward": 2010,
-        "poolExpReward": 1635
+        "poolExpReward": 1635,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1500000
     },
     "100004001": {
         "name": "",
@@ -1412,8 +1867,9 @@
     "100004002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2849,
+        "scoreRewardRolls": 10,
         "bRankTime": 762000,
         "aRankTime": 522000,
         "sRankTime": 282000,
@@ -1421,7 +1877,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "100004003": {
         "name": "",
@@ -1430,8 +1890,9 @@
     "100004004": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 2850,
+        "scoreRewardRolls": 14,
         "bRankTime": 876000,
         "aRankTime": 606000,
         "sRankTime": 336000,
@@ -1439,7 +1900,11 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "100004005": {
         "name": "",
@@ -1448,8 +1913,9 @@
     "100004006": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2851,
+        "scoreRewardRolls": 16,
         "bRankTime": 1095000,
         "aRankTime": 757500,
         "sRankTime": 420000,
@@ -1457,13 +1923,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "100004007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 2852,
+        "scoreRewardRolls": 20,
         "bRankTime": 1323000,
         "aRankTime": 925500,
         "sRankTime": 528000,
@@ -1471,7 +1942,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "100006001": {
         "name": "",
@@ -1484,8 +1959,9 @@
     "100006003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 13000,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -1493,7 +1969,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "100006004": {
         "name": "",
@@ -1502,8 +1982,9 @@
     "100006005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 13001,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -1511,13 +1992,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "100006006": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 13002,
+        "scoreRewardRolls": 16,
         "bRankTime": 1140000,
         "aRankTime": 840000,
         "sRankTime": 540000,
@@ -1525,13 +2011,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "100006007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 13003,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -1539,7 +2030,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "100007001": {
         "name": "",
@@ -1552,8 +2047,9 @@
     "100007003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 14000,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1561,7 +2057,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "100007004": {
         "name": "",
@@ -1570,8 +2070,9 @@
     "100007005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 14001,
+        "scoreRewardRolls": 14,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -1579,13 +2080,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "100007006": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 14002,
+        "scoreRewardRolls": 16,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1593,13 +2099,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "100007007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 14003,
+        "scoreRewardRolls": 20,
         "bRankTime": 729000,
         "aRankTime": 586500,
         "sRankTime": 444000,
@@ -1607,13 +2118,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200002001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000027,
+        "scoreRewardRolls": 10,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1621,13 +2137,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200002002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000028,
+        "scoreRewardRolls": 14,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1635,13 +2156,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200002003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000029,
+        "scoreRewardRolls": 16,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -1649,13 +2175,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200002004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000030,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -1663,13 +2194,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200004001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000049,
+        "scoreRewardRolls": 10,
         "bRankTime": 825000,
         "aRankTime": 637500,
         "sRankTime": 450000,
@@ -1677,13 +2213,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "200004002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000050,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -1691,13 +2232,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "200004003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000051,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -1705,13 +2251,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "200004004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000052,
+        "scoreRewardRolls": 20,
         "bRankTime": 1341000,
         "aRankTime": 958500,
         "sRankTime": 576000,
@@ -1719,13 +2270,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 1,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "200005001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000053,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1733,13 +2289,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200005002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000054,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1747,13 +2308,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200005003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000055,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1761,13 +2327,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200005004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000056,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1775,13 +2346,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200009001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000093,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -1789,13 +2365,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "200009002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000094,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -1803,13 +2384,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "200009003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000095,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -1817,13 +2403,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "200009004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000096,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -1831,7 +2422,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "200010001": {
         "name": "",
@@ -1844,8 +2439,9 @@
     "200010003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000097,
+        "scoreRewardRolls": 10,
         "bRankTime": 816000,
         "aRankTime": 621000,
         "sRankTime": 426000,
@@ -1853,7 +2449,11 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "200010004": {
         "name": "",
@@ -1862,8 +2462,9 @@
     "200010005": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000098,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -1871,7 +2472,11 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "200010006": {
         "name": "",
@@ -1880,8 +2485,9 @@
     "200010007": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000099,
+        "scoreRewardRolls": 16,
         "bRankTime": 1149000,
         "aRankTime": 856500,
         "sRankTime": 564000,
@@ -1889,13 +2495,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1500000
     },
     "200010008": {
         "name": "",
         "clearRewardId": 10042500,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 10042501,
         "scoreRewardGroup": 11000100,
+        "scoreRewardRolls": 20,
         "bRankTime": 1228000,
         "aRankTime": 918000,
         "sRankTime": 608000,
@@ -1903,13 +2514,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1600000
     },
     "200011001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000101,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1917,13 +2533,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200011002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000102,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1931,13 +2552,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200011003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000103,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1945,13 +2571,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200011004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000104,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1959,13 +2590,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200011005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000105,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -1973,13 +2609,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 4,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200012001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000113,
+        "scoreRewardRolls": 10,
         "bRankTime": 825000,
         "aRankTime": 637500,
         "sRankTime": 450000,
@@ -1987,13 +2628,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "200012002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000114,
+        "scoreRewardRolls": 14,
         "bRankTime": 930000,
         "aRankTime": 705000,
         "sRankTime": 480000,
@@ -2001,13 +2647,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "200012003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000115,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -2015,13 +2666,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "200012004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000116,
+        "scoreRewardRolls": 20,
         "bRankTime": 1341000,
         "aRankTime": 958500,
         "sRankTime": 576000,
@@ -2029,13 +2685,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 1,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "200012005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000117,
+        "scoreRewardRolls": 25,
         "bRankTime": 1341000,
         "aRankTime": 958500,
         "sRankTime": 576000,
@@ -2043,7 +2704,11 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 1,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 1800000
     },
     "200013001": {
         "name": "",
@@ -2052,8 +2717,9 @@
     "200013002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000109,
+        "scoreRewardRolls": 20,
         "bRankTime": 246000,
         "aRankTime": 201000,
         "sRankTime": 156000,
@@ -2061,7 +2727,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 300000
     },
     "200013003": {
         "name": "",
@@ -2074,8 +2744,9 @@
     "200013005": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000110,
+        "scoreRewardRolls": 20,
         "bRankTime": 684000,
         "aRankTime": 504000,
         "sRankTime": 324000,
@@ -2083,13 +2754,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 85,
+        "timeLimitMs": 900000
     },
     "200013006": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000111,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -2097,7 +2773,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 89,
+        "timeLimitMs": 900000
     },
     "200013007": {
         "name": "",
@@ -2110,8 +2790,9 @@
     "200013009": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000112,
+        "scoreRewardRolls": 30,
         "bRankTime": 774000,
         "aRankTime": 669000,
         "sRankTime": 564000,
@@ -2119,13 +2800,27 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "useItems": {
+            "always": true,
+            "items": [
+                {
+                    "id": 40314,
+                    "count": 1
+                }
+            ]
+        },
+        "staminaCost": 30,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200014001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000134,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2133,13 +2828,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200014002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000135,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2147,13 +2847,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200014003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000136,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2161,13 +2866,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200014004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000137,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2175,13 +2885,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200015001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000121,
+        "scoreRewardRolls": 10,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2189,13 +2904,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200015002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000122,
+        "scoreRewardRolls": 14,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2203,13 +2923,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200015003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000123,
+        "scoreRewardRolls": 16,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2217,13 +2942,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200015004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000124,
+        "scoreRewardRolls": 20,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2231,13 +2961,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200015005": {
         "name": "",
         "clearRewardId": 11000000,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 11000000,
         "scoreRewardGroup": 11000133,
+        "scoreRewardRolls": 25,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2245,13 +2980,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 3,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200016001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000125,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2259,13 +2999,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200016002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000126,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2273,13 +3018,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200016003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000127,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2287,13 +3037,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200016004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000128,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2301,13 +3056,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200016005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000129,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2315,13 +3075,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 5,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200017001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000143,
+        "scoreRewardRolls": 10,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -2329,13 +3094,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200017002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000144,
+        "scoreRewardRolls": 14,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -2343,13 +3113,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200017003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000145,
+        "scoreRewardRolls": 16,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -2357,13 +3132,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200017004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000146,
+        "scoreRewardRolls": 20,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -2371,13 +3151,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200018001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000203,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2385,13 +3170,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 1,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200018002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000204,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2399,13 +3189,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 1,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200018003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000205,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2413,13 +3208,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 1,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200018004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000206,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2427,13 +3227,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 1,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200019001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000193,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2441,13 +3246,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200019002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000194,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2455,13 +3265,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200019003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000195,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2469,13 +3284,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200019004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000196,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2483,13 +3303,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200019005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000197,
+        "scoreRewardRolls": 25,
         "bRankTime": 729000,
         "aRankTime": 586500,
         "sRankTime": 444000,
@@ -2497,13 +3322,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 0,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200020001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000157,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2511,13 +3341,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200020002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000158,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2525,13 +3360,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200020003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000159,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2539,13 +3379,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200020004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000160,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2553,13 +3398,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200020005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000161,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2567,7 +3417,11 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 4,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200021001": {
         "name": "",
@@ -2576,8 +3430,9 @@
     "200021002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000169,
+        "scoreRewardRolls": 20,
         "bRankTime": 246000,
         "aRankTime": 201000,
         "sRankTime": 156000,
@@ -2585,7 +3440,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 300000
     },
     "200021003": {
         "name": "",
@@ -2598,8 +3457,9 @@
     "200021005": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000170,
+        "scoreRewardRolls": 20,
         "bRankTime": 684000,
         "aRankTime": 504000,
         "sRankTime": 324000,
@@ -2607,13 +3467,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 85,
+        "timeLimitMs": 900000
     },
     "200021006": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000171,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -2621,7 +3486,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 89,
+        "timeLimitMs": 900000
     },
     "200021007": {
         "name": "",
@@ -2634,8 +3503,9 @@
     "200021009": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000172,
+        "scoreRewardRolls": 30,
         "bRankTime": 774000,
         "aRankTime": 669000,
         "sRankTime": 564000,
@@ -2643,13 +3513,27 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "useItems": {
+            "always": true,
+            "items": [
+                {
+                    "id": 40323,
+                    "count": 1
+                }
+            ]
+        },
+        "staminaCost": 30,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200025001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000185,
+        "scoreRewardRolls": 10,
         "bRankTime": 807000,
         "aRankTime": 604500,
         "sRankTime": 402000,
@@ -2657,13 +3541,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 1050000
     },
     "200025002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000186,
+        "scoreRewardRolls": 14,
         "bRankTime": 921000,
         "aRankTime": 688500,
         "sRankTime": 456000,
@@ -2671,13 +3560,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 1200000
     },
     "200025003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000187,
+        "scoreRewardRolls": 16,
         "bRankTime": 1210000,
         "aRankTime": 885000,
         "sRankTime": 560000,
@@ -2685,13 +3579,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 1600000
     },
     "200025004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000188,
+        "scoreRewardRolls": 20,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -2699,13 +3598,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 1800000
     },
     "200025005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000189,
+        "scoreRewardRolls": 25,
         "bRankTime": 1359000,
         "aRankTime": 991500,
         "sRankTime": 624000,
@@ -2713,13 +3617,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 2,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 1800000
     },
     "200028001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000198,
+        "scoreRewardRolls": 10,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2727,13 +3636,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 2,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200028002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000199,
+        "scoreRewardRolls": 14,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2741,13 +3655,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 2,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200028003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000200,
+        "scoreRewardRolls": 16,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2755,13 +3674,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 2,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200028004": {
         "name": "",
         "clearRewardId": 11500000,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 11500000,
         "scoreRewardGroup": 11000201,
+        "scoreRewardRolls": 20,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2769,13 +3693,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 2,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200028005": {
         "name": "",
         "clearRewardId": 11500001,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 11500001,
         "scoreRewardGroup": 11000202,
+        "scoreRewardRolls": 25,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2783,13 +3712,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 2,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200037001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000248,
+        "scoreRewardRolls": 10,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2797,13 +3731,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 5,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200037002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000249,
+        "scoreRewardRolls": 14,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2811,13 +3750,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 5,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200037003": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000250,
+        "scoreRewardRolls": 16,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2825,13 +3769,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 5,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200037004": {
         "name": "",
         "clearRewardId": 11500000,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 11500000,
         "scoreRewardGroup": 11000251,
+        "scoreRewardRolls": 20,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2839,13 +3788,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 5,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200037005": {
         "name": "",
         "clearRewardId": 11500001,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 11500001,
         "scoreRewardGroup": 11000252,
+        "scoreRewardRolls": 25,
         "bRankTime": 693000,
         "aRankTime": 520500,
         "sRankTime": 348000,
@@ -2853,13 +3807,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 5,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200038001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000253,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2867,13 +3826,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200038002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000254,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2881,13 +3845,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200038003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000255,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2895,13 +3864,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200038004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000256,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2909,13 +3883,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200038005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000257,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -2923,7 +3902,11 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 4,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200050001": {
         "name": "",
@@ -2932,8 +3915,9 @@
     "200050002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000324,
+        "scoreRewardRolls": 20,
         "bRankTime": 246000,
         "aRankTime": 201000,
         "sRankTime": 156000,
@@ -2941,7 +3925,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 300000
     },
     "200050003": {
         "name": "",
@@ -2954,8 +3942,9 @@
     "200050005": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000325,
+        "scoreRewardRolls": 20,
         "bRankTime": 684000,
         "aRankTime": 504000,
         "sRankTime": 324000,
@@ -2963,13 +3952,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 85,
+        "timeLimitMs": 900000
     },
     "200050006": {
         "name": "",
         "clearRewardId": 71,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 71,
         "scoreRewardGroup": 11000326,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -2977,7 +3971,11 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 89,
+        "timeLimitMs": 900000
     },
     "200050007": {
         "name": "",
@@ -2990,8 +3988,9 @@
     "200050009": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000327,
+        "scoreRewardRolls": 30,
         "bRankTime": 774000,
         "aRankTime": 669000,
         "sRankTime": 564000,
@@ -2999,13 +3998,27 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "useItems": {
+            "always": true,
+            "items": [
+                {
+                    "id": 40335,
+                    "count": 1
+                }
+            ]
+        },
+        "staminaCost": 30,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200051001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000328,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3013,13 +4026,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 0,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200051002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000329,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3027,13 +4045,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 0,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200051003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000330,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3041,13 +4064,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 0,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200051004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000331,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3055,13 +4083,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 0,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200051005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000332,
+        "scoreRewardRolls": 25,
         "bRankTime": 729000,
         "aRankTime": 586500,
         "sRankTime": 444000,
@@ -3069,13 +4102,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 0,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200052001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000333,
+        "scoreRewardRolls": 10,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -3083,13 +4121,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 3,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200052002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000334,
+        "scoreRewardRolls": 14,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -3097,13 +4140,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 3,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200052003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000335,
+        "scoreRewardRolls": 16,
         "bRankTime": 720000,
         "aRankTime": 570000,
         "sRankTime": 420000,
@@ -3111,13 +4159,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 3,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200052004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000336,
+        "scoreRewardRolls": 20,
         "bRankTime": 711000,
         "aRankTime": 553500,
         "sRankTime": 396000,
@@ -3125,13 +4178,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 3,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200052005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000337,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3139,13 +4197,18 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 3,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     },
     "200053001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000338,
+        "scoreRewardRolls": 10,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -3153,13 +4216,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200053002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000339,
+        "scoreRewardRolls": 14,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -3167,13 +4235,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200053003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000340,
+        "scoreRewardRolls": 16,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -3181,13 +4254,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200053004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000341,
+        "scoreRewardRolls": 20,
         "bRankTime": 738000,
         "aRankTime": 603000,
         "sRankTime": 468000,
@@ -3195,13 +4273,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200056001": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000351,
+        "scoreRewardRolls": 10,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3209,13 +4292,18 @@
         "rankPointReward": 47,
         "characterExpReward": 117,
         "manaReward": 390,
-        "poolExpReward": 117
+        "poolExpReward": 117,
+        "enemyElement": 4,
+        "staminaCost": 10,
+        "enemyLevel": 20,
+        "timeLimitMs": 900000
     },
     "200056002": {
         "name": "",
         "clearRewardId": 1,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 3,
         "scoreRewardGroup": 11000352,
+        "scoreRewardRolls": 14,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3223,13 +4311,18 @@
         "rankPointReward": 290,
         "characterExpReward": 410,
         "manaReward": 900,
-        "poolExpReward": 410
+        "poolExpReward": 410,
+        "enemyElement": 4,
+        "staminaCost": 14,
+        "enemyLevel": 50,
+        "timeLimitMs": 900000
     },
     "200056003": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000353,
+        "scoreRewardRolls": 16,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3237,13 +4330,18 @@
         "rankPointReward": 569,
         "characterExpReward": 1415,
         "manaReward": 1290,
-        "poolExpReward": 1415
+        "poolExpReward": 1415,
+        "enemyElement": 4,
+        "staminaCost": 16,
+        "enemyLevel": 70,
+        "timeLimitMs": 900000
     },
     "200056004": {
         "name": "",
         "clearRewardId": 31,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 32,
         "scoreRewardGroup": 11000354,
+        "scoreRewardRolls": 20,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3251,13 +4349,18 @@
         "rankPointReward": 1013,
         "characterExpReward": 2435,
         "manaReward": 2490,
-        "poolExpReward": 2435
+        "poolExpReward": 2435,
+        "enemyElement": 4,
+        "staminaCost": 20,
+        "enemyLevel": 80,
+        "timeLimitMs": 900000
     },
     "200056005": {
         "name": "",
         "clearRewardId": 34,
-        "sPlusRewardId": 1,
+        "sPlusRewardId": 34,
         "scoreRewardGroup": 11000355,
+        "scoreRewardRolls": 25,
         "bRankTime": 702000,
         "aRankTime": 537000,
         "sRankTime": 372000,
@@ -3265,6 +4368,10 @@
         "rankPointReward": 1190,
         "characterExpReward": 2600,
         "manaReward": 2590,
-        "poolExpReward": 2600
+        "poolExpReward": 2600,
+        "enemyElement": 4,
+        "staminaCost": 25,
+        "enemyLevel": 100,
+        "timeLimitMs": 900000
     }
 }

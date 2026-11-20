@@ -3,6 +3,11 @@
 # (REFLIPPED_UPSTREAM, PUBLIC_HOST, TLS, HTTPS_REDIRECT_PORT) are substituted. scripts/edge-site.sh removes it when TLS is off.
 # Host ports 80 and 443 map to 8080 and 8443 here (the image runs unprivileged).
 
+# The scheme Reflipped is told (X-Forwarded-Proto, in api.inc): this edge ends TLS itself, so its own.
+map $scheme $reflipped_proto {
+    default $scheme;
+}
+
 # Plain HTTP only answers Let's Encrypt challenges and the health check; the rest redirects.
 server {
     listen 8080;

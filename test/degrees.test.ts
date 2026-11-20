@@ -65,13 +65,15 @@ test("a new player owns the default title only", async () => {
 
 test("a degree mission gives its title at once, without mail", async () => {
     const player = await newPlayer()
+    // the first /load mailed the day's login bonus already
+    const waiting = data.getPlayerReceivableMailCountSync(player.playerId, new Date())
     // degree 49000: "Tap a unit 5 times on the Town page" (the captured update_mission_progress cleared it)
     const reply = await post(player, "mission/update_mission_progress", { api_count: 1, mission_param_list: [{ mission_pattern: "home_tap_town_character_count", progress_value: 5 }] })
     assert.ok(reply.mission_info.some((info: { mission_category_id: number, mission_id: number, mission_reward_id: number }) =>
         info.mission_category_id === DEGREE && info.mission_id === 49000 && info.mission_reward_id === 49000001))
     assert.deepEqual(reply.degree_list, [{ viewer_id: player.viewerId, degree_id: 49000 }])
     assert.ok((await degreeIds(player)).includes(49000))
-    assert.equal(data.getPlayerReceivableMailCountSync(player.playerId, new Date()), 0)
+    assert.equal(data.getPlayerReceivableMailCountSync(player.playerId, new Date()), waiting)
 
     // the title screen's progress
     const progress = await post(player, "mission/get_mission_progress", { api_count: 2, category_list: [{ category: DEGREE }] })
@@ -94,6 +96,7 @@ test("profile/update_degree sets an owned title only", async () => {
 
 test("a title mail (type 13) gives the title when received", async () => {
     const player = await newPlayer()
+    const waiting = data.getPlayerReceivableMailCountSync(player.playerId, new Date())
     const send = (mail: Record<string, unknown>) => admin.inject({ method: "POST", url: `/api/player/mail?id=${player.playerId}`, payload: { subject: "Title", description: "A title", ...mail } })
     assert.equal((await send({ type: "DEGREE", typeId: 999999999, number: 1 })).statusCode, 400, "unknown title")
     assert.equal((await send({ type: "DEGREE", typeId: 1000, number: 2 })).statusCode, 400, "a title is sent once")
@@ -105,7 +108,7 @@ test("a title mail (type 13) gives the title when received", async () => {
     assert.deepEqual([mail.type, mail.type_id, mail.number], [13, 1000, 1])
 
     const received = await post(player, "mail/receive", { api_count: 2, mail_id: mail.id })
-    assert.equal(received.total_count, 0)
+    assert.equal(received.total_count, waiting)
     assert.ok((await degreeIds(player)).includes(1000))
 })
 

@@ -63,6 +63,12 @@ export class OrderedMapLeaf {
         return true
     }
 
+    /** Replaces every record (the leaf's line endings stay). */
+    setRecords(records: string[][]): void {
+        this.document().records = records.map(r => [...r])
+        this.dirty = true
+    }
+
     get changed(): boolean {
         return this.dirty
     }
@@ -98,6 +104,17 @@ export class OrderedMapBranch {
 
     get(key: string): OrderedMapNode | undefined {
         return this.entries.find(e => e.key === key)?.value
+    }
+
+    /** Removes an entry; the map then encodes anew. Returns whether it was there. */
+    delete(key: string): boolean {
+        const index = this.entries.findIndex(e => e.key === key)
+        if (index < 0) return false
+        this.entries.splice(index, 1)
+        this.raw = null
+        this.header = null
+        this.valueLengths = null
+        return true
     }
 
     /** The node at a key path (empty path: this map). */

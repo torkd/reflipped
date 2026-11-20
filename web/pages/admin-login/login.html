@@ -1,0 +1,15 @@
+        <header class="page-header">
+            <h1 class="page-title">Log in</h1>
+            <p class="page-subtitle">The admin website is for the people who run this server. Log in with a portal account that has the admin role.</p>
+        </header>
+{{notice}}
+        <form class="card" method="post" action="{{action}}">
+            <label class="field">Username
+                <input class="input" name="username" autocomplete="username" required maxlength="{{usernameMax}}" autofocus>
+            </label>
+            <label class="field">Password
+                <input class="input" name="password" type="password" autocomplete="current-password" required maxlength="{{passwordMax}}">
+            </label>
+            <button type="submit" class="btn-primary">Log in</button>
+        </form>
+        <p class="card-text">Forgot your password? Another admin can set a new one on the Users page.</p>

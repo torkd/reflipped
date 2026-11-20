@@ -1,0 +1,17 @@
+        <header class="page-header">
+            <h1 class="page-title">Play on this device</h1>
+            <p class="page-subtitle">You are logged in as <b>{{username}}</b>.</p>
+        </header>
+        <section class="card">
+            <p class="card-text">Your account has one save, and it plays on one device at a time. Playing here moves it to this device, and a device you played on before stops until you log in there again.</p>
+            <p class="card-text">The first time, if you played on this device without an account, that progress becomes your account's save.</p>
+            <form method="post" action="/portal/shell">
+                <input type="hidden" name="csrf" value="{{csrf}}">
+                <button type="submit" class="btn-primary">Play as {{username}}</button>
+            </form>
+        </section>
+        <form method="post" action="/portal/logout?next=shell">
+            <input type="hidden" name="csrf" value="{{csrf}}">
+            <button type="submit" class="btn-outline">Use another account</button>
+        </form>
+{{guestLink}}

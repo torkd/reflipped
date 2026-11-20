@@ -1,3 +1,4 @@
+import { contentDate, isContentPeriodOpen } from "./eventSchedule";
 // Shop purchase limits (SEC-15): what the client checks before it lets a player buy (its `canBuy`), checked again on
 // the server. The limits come from the shop master tables (scripts/converter.py, `shop_limits`); the player's counts
 // are in `players_shop_purchases`.
@@ -24,11 +25,30 @@ export function currentPurchases(playerId: number, shopType: number, itemId: num
     }
 }
 
+/**
+ * A product's entry in a sales list (shop/get_sales_list, how_to_get/get_list): the player's counts, which the client
+ * compares with the product's limits (its canBuy). There is no stock shared by all players (-1).
+ */
+export function salesListEntry(playerId: number, shopType: number, shopItemId: number, date: Date) {
+    const purchases = currentPurchases(playerId, shopType, shopItemId, date)
+    return {
+        "shop_item_id": shopItemId,
+        "stock_quantity": -1,
+        "today_purchase_num": purchases.dayCount,
+        "this_month_purchase_num": purchases.monthCount,
+        "total_purchase_num": purchases.total,
+        "group_info": {
+            "group_total_stock_quantity": -1,
+            "group_total_purchase_num": 0,
+            "multi_stage": false
+        },
+        "shop_type": shopType
+    }
+}
+
 /** Whether the product is on sale at `date`: its period, and its months for products sold only in some. */
 export function isOnSale(item: ShopItem, date: Date): boolean {
-    const now = date.getTime()
-    if (now < masterDate(item.availableFrom).getTime()) return false
-    if (item.availableUntil !== null && masterDate(item.availableUntil).getTime() <= now) return false
+    if (!isContentPeriodOpen(masterDate(item.availableFrom).getTime(), item.availableUntil === null ? undefined : masterDate(item.availableUntil).getTime(), date, false)) return false
     if (item.specifiedMonths !== undefined) {
         const month = Number(gameDay(date).month.slice(5, 7))
         if (!item.specifiedMonths.includes(month)) return false

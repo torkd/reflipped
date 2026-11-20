@@ -1,0 +1,972 @@
+{
+    "200001": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 101,
+                "count": 10
+            },
+            {
+                "type": 0,
+                "id": 102,
+                "count": 5
+            },
+            {
+                "type": 0,
+                "id": 106,
+                "count": 5
+            },
+            {
+                "type": 1,
+                "count": 2500
+            }
+        ],
+        "availableFrom": "2016-11-13 15:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 400
+        }
+    },
+    "200002": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 101,
+                "count": 20
+            },
+            {
+                "type": 0,
+                "id": 102,
+                "count": 10
+            },
+            {
+                "type": 0,
+                "id": 106,
+                "count": 5
+            }
+        ],
+        "availableFrom": "2016-11-13 15:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 600
+        }
+    },
+    "200003": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 1,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 2,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 3,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 4,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200004": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 5,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 6,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 7,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 8,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200005": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 9,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 10,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 11,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 12,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200006": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 13,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 14,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 15,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 16,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200007": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 46,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 47,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 48,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 49,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200008": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 42,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 43,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 44,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 45,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2022-11-01 14:00:00",
+        "availableUntil": "2023-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200009": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 1,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 2,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 3,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 4,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200010": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 5,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 6,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 7,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 8,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200011": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 9,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 10,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 11,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 12,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200012": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 13,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 14,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 15,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 16,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200013": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 46,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 47,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 48,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 49,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200014": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 42,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 43,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 44,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 45,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-01-10 14:00:00",
+        "availableUntil": "2024-01-10 13:59:59",
+        "buyMaxCount": 1,
+        "maxFrequency": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200015": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 101,
+                "count": 20
+            },
+            {
+                "type": 0,
+                "id": 102,
+                "count": 10
+            },
+            {
+                "type": 0,
+                "id": 106,
+                "count": 5
+            }
+        ],
+        "availableFrom": "2023-08-12 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "maxFrequency": 3,
+        "userCost": {
+            "type": 0,
+            "amount": 600
+        }
+    },
+    "200016": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 50,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 51,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 52,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 4,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200017": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 53,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 54,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 55,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 8,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200018": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 56,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 57,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 58,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 12,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200019": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 59,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 60,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 61,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 16,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200020": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 65,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 66,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 67,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 49,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200021": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 62,
+                "count": 150
+            },
+            {
+                "type": 0,
+                "id": 63,
+                "count": 70
+            },
+            {
+                "type": 0,
+                "id": 64,
+                "count": 40
+            },
+            {
+                "type": 0,
+                "id": 45,
+                "count": 50
+            }
+        ],
+        "availableFrom": "2023-11-09 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 300
+        }
+    },
+    "200022": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 1,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 2,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 3,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 4,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    },
+    "200023": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 5,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 6,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 7,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 8,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    },
+    "200024": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 9,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 10,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 11,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 12,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    },
+    "200025": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 13,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 14,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 15,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 16,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    },
+    "200026": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 46,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 47,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 48,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 49,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    },
+    "200027": {
+        "costs": [],
+        "rewards": [
+            {
+                "type": 0,
+                "id": 42,
+                "count": 700
+            },
+            {
+                "type": 0,
+                "id": 43,
+                "count": 550
+            },
+            {
+                "type": 0,
+                "id": 44,
+                "count": 300
+            },
+            {
+                "type": 0,
+                "id": 45,
+                "count": 100
+            },
+            {
+                "type": 0,
+                "id": 99,
+                "count": 100
+            }
+        ],
+        "availableFrom": "2023-12-20 14:00:00",
+        "availableUntil": null,
+        "buyMaxCount": 1,
+        "monthlyStock": 1,
+        "userCost": {
+            "type": 0,
+            "amount": 200
+        }
+    }
+}

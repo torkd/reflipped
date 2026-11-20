@@ -1,9 +1,10 @@
 // Mail (gift box): sending mail to players and granting its contents on receive.
 
-import { clientSerializeDate } from "../data/utils";
-import { MailType, PlayerMail } from "../data/types";
-import { getPlayerItemSync, getPlayerMailSync, insertPlayerDegreeSync, getPlayerReceivableMailCountSync, getPlayerSync, givePlayerItemSync, insertPlayerMailSync, setPlayerMailReceivedSync, updatePlayerSync } from "../data/wdfpData";
+import { clientSerializeJapanDate } from "../data/utils";
+import { DailyChallengePointListEntry, MailType, Player, PlayerMail, PlayerPeriodicRewardPoint } from "../data/types";
+import { getAllPlayersSync, getPlayerItemSync, getPlayerMailHistorySync, getPlayerMailSync, insertPlayerDegreeSync, getPlayerReceivableMailCountSync, getPlayerSync, getReceivableMailCountsSync, givePlayerItemSync, insertPlayerMailSync, runInTransactionSync, setPlayerMailReceivedSync, trimPlayerMailHistorySync, updatePlayerSync, setPlayerDailyChallengePointSync, setPlayerPeriodicRewardPointSync, getPlayerDailyChallengePointListSync, getPlayerPeriodicRewardPointsSync } from "../data/wdfpData";
 import { getServerDate, getServerTime } from "../utils";
+import { gameDayOf, GAME_DAY_MS } from "./calendar";
 import { getPlayableCharacterIds } from "./catalog";
 import { getEquipmentMaxLevelSync } from "./assets";
 import { getItemMaxCountSync, mailLimits, playerLimits } from "./limits";
@@ -11,6 +12,11 @@ import { getPlayerCharacterSync, getPlayerEquipmentSync } from "../data/wdfpData
 import { givePlayerCharacterSync } from "./character";
 import { givePlayerEquipmentSync } from "./equipment";
 import { isKnownDegree } from "./degrees";
+import { requestClockOf, runOnPlayerClockSync } from "./playerClock";
+import { getAllPlayerClocksSync, SERVER_CLOCK } from "../data/accountClocks";
+import { runOnClock } from "./serverClock";
+import { dailyChallengePointTotal, getDailyChallengePoint, getPeriodicRewardPoint, getPlayerDailyChallengePointSync, getPlayerPeriodicRewardPointValueSync, serializeDailyChallengePoints } from "./rewardPoints";
+import { recordRewardMailSourceSync } from "../data/rewardMailSources";
 
 // mail/index pages hold this many mails; the client's list pager is hardcoded to the same size.
 export const mailPageSize = 100
@@ -20,8 +26,7 @@ export const mailPageSize = 100
 // an id outside the table.
 export const customMailReasonId = 0
 
-// Mail types Reflipped can grant. DAILY_CHALLENGE_POINT and PERIODIC_REWARD_POINT are valid in the client
-// but have no storage on the server yet.
+// Mail types Reflipped can grant: every type the client has.
 const supportedMailTypes = new Set<MailType>([
     MailType.ITEM,
     MailType.PAID_VMONEY,
@@ -34,7 +39,9 @@ const supportedMailTypes = new Set<MailType>([
     MailType.BOND_TOKEN,
     MailType.BOSS_BOOST_POINT,
     MailType.BOOST_POINT,
-    MailType.DEGREE
+    MailType.DEGREE,
+    MailType.DAILY_CHALLENGE_POINT,
+    MailType.PERIODIC_REWARD_POINT
 ])
 
 // Types the client requires a type_id for; every other type must not have one.
@@ -68,6 +75,8 @@ export function maxMailNumber(type: MailType, typeId: number | null): number {
         case MailType.BOOST_POINT: return playerLimits.boostPoint
         // a title is owned or not
         case MailType.DEGREE: return 1
+        case MailType.DAILY_CHALLENGE_POINT: return (typeId !== null ? getDailyChallengePoint(typeId)?.max : null) ?? 0
+        case MailType.PERIODIC_REWARD_POINT: return (typeId !== null ? getPeriodicRewardPoint(typeId)?.max : null) ?? 0
         default: return 0
     }
 }
@@ -84,10 +93,88 @@ export interface SendMailOptions {
     rewardLimitTime?: Date | null
     /** a row of the client's mail reason table (`master/mail/reason`), whose text then replaces subject and description */
     reasonId?: number
+    /** Earned gameplay mail keeps its identity and receipt state through save replacement and history trimming. */
+    durableReward?: boolean
+}
+
+/** A mail that can't be sent or imported as it is; the message says why (for the admin page). */
+export class InvalidMailError extends Error { }
+
+/** What a mail grants: the part of it the game checks. */
+type MailContents = Pick<PlayerMail, "type" | "typeId" | "number">
+
+/**
+ * Checks that a mail grants something the game has, in an amount it can grant.
+ *
+ * @throws If the mail type, type ID or number is not valid (the message says why, for the admin page).
+ */
+export function checkMailContents(mail: MailContents): void {
+    const typeId = mail.typeId
+    if (!supportedMailTypes.has(mail.type)) throw new InvalidMailError(`Unsupported mail type ${mail.type}.`);
+    if (typeIdMailTypes.has(mail.type) !== (typeId !== null)) throw new InvalidMailError(`Mail type ${mail.type} ${typeIdMailTypes.has(mail.type) ? "needs" : "takes no"} type ID.`);
+    if (!Number.isInteger(mail.number) || mail.number <= 0) throw new InvalidMailError("Mail number must be a positive integer.");
+    // 7xxxxx event and guest units break the client's unit list (C8601), so only playable units
+    if (mail.type === MailType.CHARACTER && !playableCharacterIds.has(typeId!)) throw new InvalidMailError(`${typeId} is not a playable unit.`);
+    // ids the game has no data for crash the client's lists (C8601)
+    if (mail.type === MailType.ITEM && getItemMaxCountSync(typeId!) === null) throw new InvalidMailError(`${typeId} is not an item the game has.`);
+    if (mail.type === MailType.EQUIPMENT && getEquipmentMaxLevelSync(typeId!) === null) throw new InvalidMailError(`${typeId} is not an armament the game has.`);
+    if (mail.type === MailType.DEGREE && !isKnownDegree(typeId!)) throw new InvalidMailError(`${typeId} is not a title the game has.`);
+    // the client looks these up in its master tables and throws on a missing row
+    if (mail.type === MailType.DAILY_CHALLENGE_POINT && getDailyChallengePoint(typeId!) === null) throw new InvalidMailError(`${typeId} is not a daily challenge point the game has.`);
+    if (mail.type === MailType.PERIODIC_REWARD_POINT && getPeriodicRewardPoint(typeId!) === null) throw new InvalidMailError(`${typeId} is not a periodic reward point the game has.`);
+    const max = maxMailNumber(mail.type, typeId)
+    if (mail.number > max) throw new InvalidMailError(`A mail of this kind can carry at most ${max}; the game can't grant more.`);
 }
 
 /**
- * Sends a mail to a player's gift box.
+ * Checks a mail's own text. Null is allowed for mail stored without text (it then shows its reason's text).
+ *
+ * @throws If the subject or description is too long, empty (the subject) or has control characters.
+ */
+export function checkMailText(subject: string | null, description: string | null): void {
+    if (subject !== null && (typeof subject !== "string" || subject.trim() === "" || subject.length > mailLimits.subjectLength || controlCharacters.test(subject)))
+        throw new InvalidMailError(`The subject must be 1 to ${mailLimits.subjectLength} characters without control characters.`);
+    if (description !== null && (typeof description !== "string" || description.length > mailLimits.descriptionLength || controlCharacters.test(description)))
+        throw new InvalidMailError(`The description must be at most ${mailLimits.descriptionLength} characters without control characters.`);
+}
+
+/** Mail can't expire past this year; a later date is a typo. */
+const latestMailYear = 2100
+
+/** Checks everything about a mail to send that doesn't depend on the player. */
+function checkSendMailOptions(options: SendMailOptions): void {
+    checkMailContents({ type: options.type, typeId: options.typeId ?? null, number: options.number })
+    if (typeof options.subject !== "string" || typeof options.description !== "string") throw new InvalidMailError("The mail needs a subject and a description.");
+    checkMailText(options.subject, options.description)
+    if (options.rewardLimitTime && options.rewardLimitTime.getUTCFullYear() > latestMailYear) throw new InvalidMailError("The expiry date is too far away.");
+}
+
+/** Whether a mail to send has expired at `now` (a player's "now"): it would arrive in the box already past receiving. */
+function hasExpired(options: SendMailOptions, now: Date): boolean {
+    return options.rewardLimitTime != null && options.rewardLimitTime.getTime() <= now.getTime()
+}
+
+function insertSendMailSync(playerId: number, options: SendMailOptions): number {
+    return runInTransactionSync(() => {
+        const id = insertPlayerMailSync(playerId, {
+            type: options.type,
+            typeId: options.typeId ?? null,
+            number: options.number,
+            reasonId: options.reasonId ?? customMailReasonId,
+            subject: options.subject,
+            description: options.description,
+            createTime: getServerDate(),
+            receiveTime: null,
+            rewardLimitTime: options.rewardLimitTime ?? null
+        })
+        if (options.durableReward) recordRewardMailSourceSync(playerId, id)
+        return id
+    })
+}
+
+/**
+ * Sends a mail to a player's gift box. It is dated, and its limits checked, on the player's clock (FT-5), as if the
+ * player's own request had sent it.
  *
  * @param playerId The ID of the player.
  * @param options What the mail contains.
@@ -98,41 +185,70 @@ export function sendPlayerMailSync(
     playerId: number,
     options: SendMailOptions
 ): number {
-    const typeId = options.typeId ?? null
-    if (!supportedMailTypes.has(options.type)) throw new Error(`Unsupported mail type ${options.type}.`);
-    if (typeIdMailTypes.has(options.type) !== (typeId !== null)) throw new Error(`Mail type ${options.type} ${typeIdMailTypes.has(options.type) ? "needs" : "takes no"} type ID.`);
-    if (!Number.isInteger(options.number) || options.number <= 0) throw new Error("Mail number must be a positive integer.");
-    // 7xxxxx event and guest units break the client's unit list (C8601), so only playable units
-    if (options.type === MailType.CHARACTER && !playableCharacterIds.has(typeId!)) throw new Error(`${typeId} is not a playable unit.`);
-    // ids the game has no data for crash the client's lists (C8601)
-    if (options.type === MailType.ITEM && getItemMaxCountSync(typeId!) === null) throw new Error(`${typeId} is not an item the game has.`);
-    if (options.type === MailType.EQUIPMENT && getEquipmentMaxLevelSync(typeId!) === null) throw new Error(`${typeId} is not an armament the game has.`);
-    if (options.type === MailType.DEGREE && !isKnownDegree(typeId!)) throw new Error(`${typeId} is not a title the game has.`);
-    const max = maxMailNumber(options.type, typeId)
-    if (options.number > max) throw new Error(`A mail of this kind can carry at most ${max}; the game can't grant more.`);
+    checkSendMailOptions(options)
+    return runOnPlayerClockSync(playerId, () => {
+        if (hasExpired(options, getServerDate())) throw new InvalidMailError("The expiry date has passed on this player's clock: the mail could never be received.");
+        if (getPlayerReceivableMailCountSync(playerId, getServerDate()) >= mailLimits.pendingMails) throw new InvalidMailError(`The gift box is full (${mailLimits.pendingMails} mails waiting).`);
+        return insertSendMailSync(playerId, options)
+    })
+}
 
-    if (typeof options.subject !== "string" || options.subject.trim() === "" || options.subject.length > mailLimits.subjectLength || controlCharacters.test(options.subject))
-        throw new Error(`The subject must be 1 to ${mailLimits.subjectLength} characters without control characters.`);
-    if (typeof options.description !== "string" || options.description.length > mailLimits.descriptionLength || controlCharacters.test(options.description))
-        throw new Error(`The description must be at most ${mailLimits.descriptionLength} characters without control characters.`);
-    if (options.rewardLimitTime && options.rewardLimitTime.getFullYear() > 2100) throw new Error("The expiry date is too far away.");
-    if (getPlayerReceivableMailCountSync(playerId, getServerDate()) >= mailLimits.pendingMails) throw new Error(`The gift box is full (${mailLimits.pendingMails} mails waiting).`);
+export interface SendToAllResult {
+    /** players on the server */
+    players: number
+    sent: number
+    /** players whose gift box was full */
+    skippedFull: number
+    /** players the mail would take past what the game lets them own */
+    skippedLimit: number
+    /** players on whose clock the mail's expiry date has passed already */
+    skippedExpired: number
+}
 
-    return insertPlayerMailSync(playerId, {
-        type: options.type,
-        typeId: typeId,
-        number: options.number,
-        reasonId: options.reasonId ?? customMailReasonId,
-        subject: options.subject,
-        description: options.description,
-        createTime: getServerDate(),
-        receiveTime: null,
-        rewardLimitTime: options.rewardLimitTime ?? null
+/**
+ * Sends the same mail to every player, in one transaction. A player whose gift box is full, whom the mail would take
+ * past a limit with what they own now, or on whose clock its expiry date has passed, is skipped and counted: a mail
+ * like that would only wait in the box (the client can't receive it). Players created later don't get it. Each mail
+ * is dated on its player's clock (FT-5).
+ *
+ * @throws If the mail isn't valid; nothing is sent then.
+ */
+export function sendMailToAllPlayersSync(options: SendMailOptions): SendToAllResult {
+    checkSendMailOptions(options)
+    const contents: MailContents = { type: options.type, typeId: options.typeId ?? null, number: options.number }
+    return runInTransactionSync(() => {
+        const now = getServerDate()
+        // one query for every gift box, rather than one per player
+        const pending = getReceivableMailCountsSync(now)
+        const players = getAllPlayersSync(0, Number.MAX_SAFE_INTEGER)
+        // and one for every player's clock
+        const clocks = getAllPlayerClocksSync()
+        const result: SendToAllResult = { players: players.length, sent: 0, skippedFull: 0, skippedLimit: 0, skippedExpired: 0 }
+        for (const player of players) {
+            const clock = clocks.get(player.id) ?? SERVER_CLOCK
+            runOnClock(requestClockOf(clock), () => {
+                // what has expired depends on the player's clock, so a player off the server clock is counted alone
+                const waiting = clock.offsetDays !== 0
+                    ? getPlayerReceivableMailCountSync(player.id, getServerDate())
+                    : pending.get(player.id) ?? 0
+                if (hasExpired(options, getServerDate())) {
+                    result.skippedExpired++
+                } else if (waiting >= mailLimits.pendingMails) {
+                    result.skippedFull++
+                } else if (wouldExceedLimit(player.id, contents, player)) {
+                    result.skippedLimit++
+                } else {
+                    insertSendMailSync(player.id, options)
+                    result.sent++
+                }
+            })
+        }
+        return result
     })
 }
 
 /**
- * Serializes a mail into the entry format of the mail/index response.
+ * Serializes a mail into the entry format of the mail/index response. Its times are Japan time.
  *
  * @param mail The mail to serialize.
  * @returns The serialized mail.
@@ -148,12 +264,81 @@ export function clientSerializeMail(
         "reason_id": mail.reasonId,
         "subject": mail.subject,
         "description": mail.description,
-        "create_time": clientSerializeDate(mail.createTime),
+        "create_time": clientSerializeJapanDate(mail.createTime),
         // the client treats this exact value as "not received"
-        "receive_time": mail.receiveTime === null ? "0000-00-00 00:00:00" : clientSerializeDate(mail.receiveTime),
-        "reward_limit_time": mail.rewardLimitTime === null ? null : clientSerializeDate(mail.rewardLimitTime),
+        "receive_time": mail.receiveTime === null ? "0000-00-00 00:00:00" : clientSerializeJapanDate(mail.receiveTime),
+        "reward_limit_time": mail.rewardLimitTime === null ? null : clientSerializeJapanDate(mail.rewardLimitTime),
         "reward_period_limited": mail.rewardLimitTime !== null
     }
+}
+
+// history/receive pages: the client's pager holds 100 (VerticalListPagerConfig), like the capture's first page
+export const mailHistoryPageSize = 100
+
+/**
+ * How far back the history goes: the client's footer says it shows "the latest 500 received within 1 week"
+ * (`receive_history_footer_notice`). Older received mail stays stored (and in a save) up to `mailLimits.historyMails`.
+ */
+const mailHistoryDays = 7
+
+/**
+ * The history at `now` (the player's clock), most recently received first: the mail received in the week up to now,
+ * since the clock last went back to an earlier game day. The order is the order of receipt (`receive_seq`), not the
+ * receive dates, which go back with the clock (a calendar wrap, a player clock, Reset). Walking back through the
+ * receipts, a mail received on a later game day than the one received after it, or than today, was received before
+ * the clock went back: it and everything older is left out, so the history starts over after each jump back like
+ * the eras do (src/lib/serverClock.ts) and never shows a stretch of the loop that has not come round again. A mail
+ * from today dated after now (the clock went back within the day) is left out too.
+ */
+export function listMailHistorySync(playerId: number, now: Date): PlayerMail[] {
+    const since = now.getTime() - mailHistoryDays * GAME_DAY_MS
+    const listed: PlayerMail[] = []
+    let laterDay = gameDayOf(now.getTime())
+    // at most mailLimits.historyMails rows are kept, so reading them all is cheap
+    for (const mail of getPlayerMailHistorySync(playerId, 0, mailLimits.historyMails)) {
+        const time = (mail.receiveTime ?? mail.createTime).getTime()
+        const day = gameDayOf(time)
+        if (day > laterDay) break
+        laterDay = day
+        if (since <= time && time <= now.getTime()) listed.push(mail)
+    }
+    return listed
+}
+
+/**
+ * Serializes a received mail into the entry format of the history/receive response. The capture's times are Japan
+ * time (its newest entry is 4 minutes before the reply's `servertime` in UTC+9) and are the receive time: each claim
+ * shares one time across mails created at different moments. Every captured entry carries `"null": 1`, which the
+ * client ignores; it is kept as captured. The client shows the reason table's text, and for a reason missing there
+ * (Reflipped's own mail, reason 0) the mail's subject and description, so those are sent too.
+ *
+ * @param mail A received mail.
+ * @returns The serialized history entry.
+ */
+export function clientSerializeMailHistory(
+    mail: PlayerMail
+): Object {
+    return {
+        "null": 1,
+        "reason_id": mail.reasonId,
+        "type": mail.type,
+        "type_id": mail.typeId,
+        "number": mail.number,
+        "subject": mail.subject,
+        "description": mail.description,
+        "create_time": clientSerializeJapanDate(mail.receiveTime ?? mail.createTime)
+    }
+}
+
+/**
+ * The daily challenge and periodic reward points a mail receive changed, as the mail/receive replies send them: the
+ * client upserts both lists by id, so only the changed entries go out, and only when there are any.
+ */
+export function rewardPointReplyFields(result: ReceiveMailsResult): Record<string, Object[]> {
+    const fields: Record<string, Object[]> = {}
+    if (result.dailyChallengePointList.length > 0) fields["user_daily_challenge_point_list"] = serializeDailyChallengePoints(result.dailyChallengePointList)
+    if (result.periodicRewardPointList.length > 0) fields["user_periodic_reward_point_list"] = result.periodicRewardPointList.map(entry => ({ "id": entry.id, "point": entry.point }))
+    return fields
 }
 
 export interface ReceiveMailsResult {
@@ -166,14 +351,20 @@ export interface ReceiveMailsResult {
     characterList: Object[]
     equipmentList: Object[]
     itemList: Record<string, number>
+    /** the daily challenge and periodic reward points that changed */
+    dailyChallengePointList: DailyChallengePointListEntry[]
+    periodicRewardPointList: PlayerPeriodicRewardPoint[]
     remainingCount: number
 }
+
+/** The balances a mail can add to (a `Player` has them all). */
+type MailBalances = Pick<Player, "vmoney" | "freeVmoney" | "starCrumb" | "freeMana" | "expPool" | "bondToken" | "bossBoostPoint" | "boostPoint">
 
 /** Whether granting a mail would take the player past what the game lets them own. */
 function wouldExceedLimit(
     playerId: number,
-    mail: PlayerMail,
-    balances: { vmoney: number, freeVmoney: number, starCrumb: number, freeMana: number, expPool: number, bondToken: number, bossBoostPoint: number, boostPoint: number }
+    mail: MailContents,
+    balances: MailBalances
 ): boolean {
     const typeId = mail.typeId
     switch (mail.type) {
@@ -197,6 +388,16 @@ function wouldExceedLimit(
         case MailType.BOND_TOKEN: return balances.bondToken + mail.number > playerLimits.bondToken
         case MailType.BOSS_BOOST_POINT: return balances.bossBoostPoint + mail.number > playerLimits.bossBoostPoint
         case MailType.BOOST_POINT: return balances.boostPoint + mail.number > playerLimits.boostPoint
+        // the client's own check: point plus open campaigns plus the mail within max_challenge_point
+        case MailType.DAILY_CHALLENGE_POINT: {
+            const max = getDailyChallengePoint(typeId!)?.max
+            return max === undefined || dailyChallengePointTotal(getPlayerDailyChallengePointSync(playerId, typeId!), typeId!, getServerDate()) + mail.number > max
+        }
+        // the client doesn't check these; the server keeps them within max_reward_point
+        case MailType.PERIODIC_REWARD_POINT: {
+            const max = getPeriodicRewardPoint(typeId!)?.max
+            return max === undefined || getPlayerPeriodicRewardPointValueSync(playerId, typeId!) + mail.number > max
+        }
         default: return false
     }
 }
@@ -227,13 +428,17 @@ export function receivePlayerMailsSync(
         characterList: [],
         equipmentList: [],
         itemList: {},
+        dailyChallengePointList: [],
+        periodicRewardPointList: [],
         remainingCount: 0
     }
 
     const characters: Map<number, Object> = new Map()
     const equipment: Map<number, Object> = new Map()
     const itemIds: Set<number> = new Set()
-    const balances = {
+    const dailyChallengePointIds: Set<number> = new Set()
+    const periodicRewardPointIds: Set<number> = new Set()
+    const balances: MailBalances = {
         vmoney: player.vmoney,
         freeVmoney: player.freeVmoney,
         starCrumb: player.starCrumb,
@@ -291,8 +496,16 @@ export function receivePlayerMailsSync(
             case MailType.BOOST_POINT: balances.boostPoint += mail.number; break;
             // a title the player owns already is received all the same
             case MailType.DEGREE: insertPlayerDegreeSync(playerId, mail.typeId!); break;
+            case MailType.DAILY_CHALLENGE_POINT:
+                setPlayerDailyChallengePointSync(playerId, mail.typeId!, (getPlayerDailyChallengePointSync(playerId, mail.typeId!)?.point ?? 0) + mail.number)
+                dailyChallengePointIds.add(mail.typeId!)
+                break;
+            case MailType.PERIODIC_REWARD_POINT:
+                setPlayerPeriodicRewardPointSync(playerId, mail.typeId!, getPlayerPeriodicRewardPointValueSync(playerId, mail.typeId!) + mail.number)
+                periodicRewardPointIds.add(mail.typeId!)
+                break;
             default:
-                // not grantable yet (see supportedMailTypes); leave it in the box
+                // a type the client doesn't have (sending refuses it); leave it in the box
                 continue
         }
 
@@ -301,6 +514,8 @@ export function receivePlayerMailsSync(
     }
 
     updatePlayerSync({ id: playerId, ...balances })
+    // the history keeps the mails received last only
+    if (result.receivedMailIds.length > 0) trimPlayerMailHistorySync(playerId, mailLimits.historyMails)
 
     result.userInfo = {
         "vmoney": balances.vmoney,
@@ -321,6 +536,8 @@ export function receivePlayerMailsSync(
     for (const itemId of itemIds) {
         result.itemList[itemId] = getPlayerItemSync(playerId, itemId) ?? 0
     }
+    result.dailyChallengePointList = getPlayerDailyChallengePointListSync(playerId).filter(entry => dailyChallengePointIds.has(entry.id))
+    result.periodicRewardPointList = getPlayerPeriodicRewardPointsSync(playerId).filter(entry => periodicRewardPointIds.has(entry.id))
     result.remainingCount = getPlayerReceivableMailCountSync(playerId, now)
 
     return result

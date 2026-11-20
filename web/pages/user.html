@@ -1,0 +1,119 @@
+            <header class="page-header">
+                <h1 class="page-title">{{username}}</h1>
+                <p class="page-subtitle">A portal user. Changes here apply at once.</p>
+            </header>
+{{notice}}
+            <section class="grid gap-4 grid-cols-2 md:grid-cols-3">
+                <div class="stat">
+                    <span class="stat-label">Role</span>
+                    <span class="stat-value">{{roleText}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Two-step login</span>
+                    <span class="stat-value">{{totpText}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Logged in on</span>
+                    <span class="stat-value">{{sessions}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Created</span>
+                    <span class="stat-value text-base">{{created}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Last login</span>
+                    <span class="stat-value text-base">{{lastLogin}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Players</span>
+                    <span class="stat-value text-base">{{players}}</span>
+                </div>
+            </section>
+            <div class="grid-cards">
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Save</h2>
+                        <p class="card-text">{{saveText}} A user has one save. Attaching another player's save replaces it: the old one stays as a guest save, and the user's device moves to the new one. Two saves are never merged, so pick the one the user keeps. A save of another user must be detached from them first.</p>
+                    </div>
+                    {{saveLink}}
+                    <form class="flex gap-3 flex-wrap items-end mt-auto" method="get" action="/user/{{userId}}/attach">
+                        <label class="field">Find the save by
+                            <select class="input" name="idKind">
+                                <option value="player" selected>Player number</option>
+                                <option value="pid">PID</option>
+                            </select>
+                        </label>
+                        <label class="field">Number
+                            <span>The player number is the # in the Players list; the PID is the number the game's Account Info shows.</span>
+                            <input class="input" name="playerId" type="text" inputmode="numeric" pattern="[0-9]{1,15}" required>
+                        </label>
+                        <button type="submit" class="btn-outline">Find the save</button>
+                    </form>
+                    <form method="post" action="/api/user/save/detach?id={{userId}}" data-confirm="Detach the save? It becomes a guest save and the game goes back to the title.">
+                        <button type="submit" class="btn-outline" {{detachDisabled}}>Detach save</button>
+                    </form>
+                </section>
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Set a new password</h2>
+                        <p class="card-text">For a player who forgot theirs. Their logins end; give them the new password.</p>
+                    </div>
+                    <form class="flex flex-col gap-4 mt-auto" method="post" action="/api/user/password?id={{userId}}">
+                        <label class="field">New password
+                            <input class="input" name="password" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+                        </label>
+                        <button type="submit" class="btn-primary self-start">Set password</button>
+                    </form>
+                </section>
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Role</h2>
+                        <p class="card-text">Admins log in to this website with their portal username and password. Players only use the portal.</p>
+                    </div>
+                    <form class="flex gap-3 flex-wrap items-end mt-auto" method="post" action="/api/user/role?id={{userId}}">
+                        <label class="field">Role
+                            <select class="input" name="role">
+{{roleOptions}}
+                            </select>
+                        </label>
+                        <button type="submit" class="btn-outline">Save role</button>
+                    </form>
+                </section>
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Time travel</h2>
+                        <p class="card-text">{{timeTravelText}}</p>
+                    </div>
+                    <form class="mt-auto" method="post" action="/api/user/time-travel?id={{userId}}">
+                        <input type="hidden" name="enabled" value="{{timeTravelNext}}">
+                        <button type="submit" class="btn-outline" {{timeTravelDisabled}}>{{timeTravelButton}}</button>
+                    </form>
+                </section>
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Two-step login</h2>
+                        <p class="card-text">Turn it off for a player who lost their authenticator app. They can turn it on again on the portal.</p>
+                    </div>
+                    <form class="mt-auto" method="post" action="/api/user/totp/reset?id={{userId}}">
+                        <button type="submit" class="btn-outline" {{totpResetDisabled}}>Turn off two-step login</button>
+                    </form>
+                </section>
+                <section class="card">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Log out everywhere</h2>
+                        <p class="card-text">Ends every portal login of this user, for example after a lost phone.</p>
+                    </div>
+                    <form class="mt-auto" method="post" action="/api/user/logout?id={{userId}}">
+                        <button type="submit" class="btn-outline">Log out everywhere</button>
+                    </form>
+                </section>
+                <section class="card card-danger">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Delete user</h2>
+                        <p class="card-text">Removes the login. Their players and saves stay, as guests on their devices.</p>
+                    </div>
+                    <form class="mt-auto" method="post" action="/api/user/delete?id={{userId}}" data-confirm="Delete this user? Their players stay, but the login is gone.">
+                        <button type="submit" class="btn-danger">Delete user</button>
+                    </form>
+                </section>
+            </div>

@@ -17,11 +17,15 @@
 import { CoopRoom, getRoom, listRooms } from "./rooms"
 import { coopSocketServer, ROOM_CAPACITY } from "./socketServer"
 import { getSetting } from "../../data/serverSettings"
-import { establisherOf, FOLLOW_STATE_NONE } from "./mates"
+import { establisherOf } from "./mates"
+import { establisherFollowSync, FollowState, followsHost } from "../follows"
+import { joinRefusedFor, roomHiddenFrom } from "./restricted"
 
 type Json = any
 
 /** share_type_list values (RoomShareDialog): 1 = mutual follows, 2 = followers, 3 = random players (attention). */
+export const SHARE_TYPE_MUTUALS = 1
+export const SHARE_TYPE_FOLLOWERS = 2
 export const SHARE_TYPE_RANDOM = 3
 
 /**
@@ -100,6 +104,45 @@ export function shareRoom(room: CoopRoom, makeCompanions: (count: number) => Jso
     return companionDelaySeconds(room, now)
 }
 
+/**
+ * share_room for the host's mutuals (1) or followers (2) (FT-15): their attention/check offers them the room, like a
+ * random recruitment but only to them. The client doesn't summon AI companions for these alone, so no fill is armed.
+ */
+export function shareRoomWithFollows(room: CoopRoom, now = Date.now()): void {
+    let recruitment = recruitmentFor(room)
+    if (!recruitment) {
+        stopRecruiting(room.roomNumber)
+        recruitment = {
+            roomNumber: room.roomNumber,
+            roomSequence: room.roomSequence,
+            since: now,
+            lastShared: now,
+            delivered: new Map(),
+            makeCompanions: () => [],
+            timer: null
+        }
+        recruitments.set(room.roomNumber, recruitment)
+    }
+    recruitment.lastShared = now
+}
+
+/** Whether the room's sharing reaches this player: anyone for random players, else the host's mutuals or followers. */
+function sharedWith(room: CoopRoom, followState: number): boolean {
+    if (room.shareTypes.length === 0 || room.shareTypes.includes(SHARE_TYPE_RANDOM)) return true
+    if (room.shareTypes.includes(SHARE_TYPE_MUTUALS) && followState === FollowState.MUTUAL) return true
+    return room.shareTypes.includes(SHARE_TYPE_FOLLOWERS) && followsHost(followState)
+}
+
+/**
+ * Whether a room the host recruited for follows only (Who To Invite without "anyone") is closed to this player
+ * (FT-43): the room list leaves it out and `select_room` from the list or an invitation answers NotFollowHost. The host,
+ * a room never shared and a room shared with anyone are open to all.
+ */
+export function followsOnlyRoomClosedTo(room: CoopRoom, viewerId: number): boolean {
+    if (viewerId === room.hostViewerId) return false
+    return !sharedWith(room, establisherFollowSync(viewerId, room.hostViewerId))
+}
+
 /** Forgets the room's recruitment (disbanded, battle started). */
 export function stopRecruiting(roomNumber: string): void {
     const recruitment = recruitments.get(roomNumber)
@@ -119,6 +162,8 @@ export function joinCandidates(room: CoopRoom, now = Date.now()): number[] {
         if (viewerId === room.hostViewerId) continue
         if (recruitment?.delivered.get(viewerId)?.declined) continue
         if (coopSocketServer?.isInLobby(viewerId)) continue
+        // not someone a restriction keeps out of this room (SEC-18): the host would wait for a player who can't join
+        if (roomHiddenFrom(room, viewerId) || joinRefusedFor(room, viewerId)) continue
         candidates.push(viewerId)
     }
     return candidates
@@ -174,8 +219,12 @@ export function takeAttentions(viewerId: number, max: number, now = Date.now()):
         if (room.hostViewerId === viewerId || room.inBattle) continue
         if (recruitment.delivered.has(viewerId)) continue
         if ((coopSocketServer?.joinStatus(room.roomNumber) ?? "open") !== "open") continue
+        const followState = establisherFollowSync(viewerId, room.hostViewerId)
+        if (!sharedWith(room, followState)) continue
+        // a restricted host's invitations go to their friends only (SEC-18)
+        if (roomHiddenFrom(room, viewerId)) continue
         recruitment.delivered.set(viewerId, { deliveredAt: now, declined: false })
-        entries.push(attentionEntry(room))
+        entries.push(attentionEntry(room, followState))
     }
     return entries
 }
@@ -192,8 +241,13 @@ export function noteAttentionAction(viewerId: number, factors: string[]): void {
     }
 }
 
+/** Whether the server offered this room to this player and they have not declined it. */
+export function wasAttentionDelivered(room: CoopRoom, viewerId: number): boolean {
+    return recruitmentFor(room)?.delivered.get(viewerId)?.declined === false
+}
+
 /** A `data.multi` entry for attention/check. */
-function attentionEntry(room: CoopRoom): Json {
+function attentionEntry(room: CoopRoom, followState: number): Json {
     const establisher = establisherOf(coopSocketServer?.hostMate(room.roomNumber) ?? null)
     return {
         "attention_key": `${room.roomNumber}-${room.roomSequence}`,
@@ -205,7 +259,7 @@ function attentionEntry(room: CoopRoom): Json {
             "establisher_rank": establisher.rank,
             "establisher_character": establisher.characterId,
             "establisher_character_evolution_img_level": establisher.evolutionLevel,
-            "establisher_follow": FOLLOW_STATE_NONE
+            "establisher_follow": followState
         }
     }
 }

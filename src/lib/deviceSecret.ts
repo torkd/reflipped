@@ -5,7 +5,7 @@
 // opted out of ad tracking), in which case the SDK's per-install `deviceId` is the fallback. Reflipped stores
 // only a SHA-256 of it (`accounts.device_secret_hash`). The `playerid` header never selects an account.
 
-import { createHash, randomInt } from "crypto"
+import { createHash, randomBytes, randomInt } from "crypto"
 
 /** Shortest secret accepted; the shell's UUIDs are 36 characters. */
 export const MIN_DEVICE_SECRET_LENGTH = 16
@@ -21,6 +21,21 @@ export function deviceSecretFromBody(body: { whiteKey?: unknown, deviceId?: unkn
 /** What `accounts.device_secret_hash` stores: hex SHA-256 of the secret. The secrets are random, so no salt or KDF. */
 export function hashDeviceSecret(secret: string): string {
     return createHash("sha256").update(secret, "utf8").digest("hex")
+}
+
+/**
+ * Device tokens (ACC-3) are the device secret of a shell signed in through the portal: `rfp1.` and 256 random bits.
+ * The prefix tells loginDevice that the device expects a portal account, so an unknown token is refused (the device
+ * was signed in elsewhere) instead of starting a new guest account.
+ */
+const DEVICE_TOKEN_PREFIX = "rfp1."
+
+export function generateDeviceToken(): string {
+    return DEVICE_TOKEN_PREFIX + randomBytes(32).toString("base64url")
+}
+
+export function isDeviceToken(secret: string): boolean {
+    return secret.startsWith(DEVICE_TOKEN_PREFIX)
 }
 
 /**

@@ -1,14 +1,18 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import "@fastify/multipart"; // request.file()
-import { deserializePlayerData, getClientSerializedData } from "../../data/utils";
-import { getAllPlayersSync, getPlayerReceivableMailListSync, getPlayerSync, replacePlayerDataSync } from "../../data/wdfpData";
+import { getClientSerializedData } from "../../data/utils";
+import { getAllPlayersSync, getPlayerReceivableMailListSync, getPlayerSync } from "../../data/wdfpData";
+import { rejectAutomaticRewardMutation, requireManagedRewards } from "../../lib/rewardPolicy";
+import { runOnPlayerClockSync } from "../../lib/playerClock";
 import { MailType } from "../../data/types";
 import { revertUnlock, unlockEverything } from "../../lib/developerMode";
-import { sendPlayerMailSync } from "../../lib/mail";
+import { InvalidMailError, sendMailToAllPlayersSync, sendPlayerMailSync, SendMailOptions } from "../../lib/mail";
 import { deletePlayer, resetPlayer } from "../../lib/playerAdmin";
+import { restoreDeletedSaveSync } from "../../lib/saveDeletion";
 import { getServerDate } from "../../utils";
+import { mailLimits } from "../../lib/limits";
 import { integer, jsonBody, nullable, query, string, stringOrInteger } from "../schemas";
-import { InvalidSaveError, validateSaveData } from "../../data/saveSchema";
+import { importPlayerSave } from "../../lib/playerSaveImport";
 
 interface SaveQuery {
     id: string | undefined
@@ -45,7 +49,33 @@ const sendMailSchema = {
         rewardLimitTime: nullable(string)
     }, ["type", "subject", "description"])
 }
+const sendMailToAllSchema = { body: sendMailSchema.body }
 const developerModeSchema = query({ id: digits, state: { enum: ["on", "off"] } }, ["id"])
+
+/** The send mail form's body as mail options, or null if it is malformed. */
+function parseSendMailBody(body: SendMailBody | undefined): SendMailOptions | null {
+    const type = typeof body?.type === "string" && isNaN(Number(body.type))
+        ? MailType[body.type.toUpperCase() as keyof typeof MailType]
+        : Number(body?.type)
+    const rewardLimitTime = body?.rewardLimitTime ? new Date(body.rewardLimitTime) : null
+    if (body === undefined || type === undefined || typeof body.subject !== "string" || typeof body.description !== "string"
+        || (rewardLimitTime !== null && isNaN(rewardLimitTime.getTime()))) return null
+    return {
+        type: type,
+        typeId: body.typeId ?? null,
+        number: body.number,
+        subject: body.subject,
+        description: body.description,
+        rewardLimitTime: rewardLimitTime
+    }
+}
+
+function invalidMailBody(reply: FastifyReply) {
+    return reply.status(400).send({
+        "error": "Bad Request",
+        "message": "Invalid request body."
+    })
+}
 
 const routes = async (fastify: FastifyInstance) => {
     fastify.get("/", { schema: getPlayersSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
@@ -70,46 +100,37 @@ const routes = async (fastify: FastifyInstance) => {
         const playerId = Number(id)
         if (isNaN(playerId)) return reply.redirect("/player");
 
-        // get player
-        const data = getClientSerializedData(playerId, { serializeRushEventData: true })
+        // on the player's clock (FT-5), as their own /load would see it: which mail has expired depends on it
+        const data = runOnPlayerClockSync(playerId, () => getClientSerializedData(playerId, { serializeRushEventData: true, serializeSaveData: true }))
         if (data === null) return reply.redirect("/player");
 
         // otherwise, send
-        reply.header("content-disposition", "attachment; save.json")
+        reply.header("content-disposition", `attachment; filename="reflipped-save-${playerId}.json"`)
         reply.type('application/json').send(data)
     })
 
     // Replaces a player's save with an uploaded file (the admin page's "Upload save"). The file is size-limited
     // (multipart `fileSize`, `maxSaveFileBytes`), checked against `saveSchema` and imported in one transaction, so a
     // bad file changes nothing. The page shows a fixed message per outcome; details go to the log.
-    fastify.post("/save", { schema: playerQuerySchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/save", { schema: playerQuerySchema, preHandler: requireManagedRewards }, async (request: FastifyRequest, reply: FastifyReply) => {
         const { id } = request.query as SaveQuery
         const playerId = Number(id)
         if (!Number.isInteger(playerId) || getPlayerSync(playerId) === null) return reply.redirect("/player");
 
-        let parsed
+        let buffer: Buffer
         try {
             const file = await request.file()
             if (file === undefined) return reply.redirect(`/player/${playerId}?error=save-missing`);
-            const saveData = validateSaveData(JSON.parse((await file.toBuffer()).toString("utf-8")))
-            parsed = deserializePlayerData(playerId, saveData)
+            buffer = await file.toBuffer()
         } catch (error) {
             const tooLarge = error instanceof Error && (error as { code?: string }).code === "FST_REQ_FILE_TOO_LARGE"
-            const code = tooLarge ? "save-too-large" : "save-invalid"
-            // JSON.parse quotes the file in its message, so only our own schema texts are logged (OPS-2)
-            const reason = error instanceof InvalidSaveError || tooLarge ? (error as Error).message
-                : error instanceof SyntaxError ? "not valid JSON" : "unreadable save"
-            request.log.warn({ playerId, reason }, "save import rejected")
-            return reply.redirect(`/player/${playerId}?error=${code}`);
+            request.log.warn({ playerId, reason: tooLarge ? (error as Error).message : "unreadable upload" }, "save import rejected")
+            return reply.redirect(`/player/${playerId}?error=${tooLarge ? "save-too-large" : "save-invalid"}`);
         }
-
-        try {
-            replacePlayerDataSync(parsed)
-        } catch (error) {
-            request.log.error({ playerId, err: error }, "save import failed")
-            return reply.redirect(`/player/${playerId}?error=save-failed`);
-        }
-
+        const result = importPlayerSave(playerId, buffer, request.log)
+        if (result === "automatic") return rejectAutomaticRewardMutation(reply)
+        if (result === "invalid") return reply.redirect(`/player/${playerId}?error=save-invalid`);
+        if (result === "failed") return reply.redirect(`/player/${playerId}?error=save-failed`);
         return reply.redirect(`/player/${playerId}?message=save-imported`);
     })
 
@@ -122,11 +143,12 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "No such player."
         })
 
-        return reply.status(200).send(getPlayerReceivableMailListSync(playerId, getServerDate(), 0, 1000))
+        // what the player can still receive on their own clock (FT-5)
+        return reply.status(200).send(runOnPlayerClockSync(playerId, () => getPlayerReceivableMailListSync(playerId, getServerDate(), 0, mailLimits.pendingMails)))
     })
 
     // sends a mail to a player's gift box; `type` is a MailType name ("ITEM") or number
-    fastify.post("/mail", { schema: sendMailSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/mail", { schema: sendMailSchema, preHandler: requireManagedRewards }, async (request: FastifyRequest, reply: FastifyReply) => {
         const { id } = request.query as SaveQuery
         const playerId = Number(id)
         if (isNaN(playerId) || getPlayerSync(playerId) === null) return reply.status(404).send({
@@ -134,28 +156,32 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "No such player."
         })
 
-        const body = request.body as SendMailBody | undefined
-        const type = typeof body?.type === "string" && isNaN(Number(body.type))
-            ? MailType[body.type.toUpperCase() as keyof typeof MailType]
-            : Number(body?.type)
-        const rewardLimitTime = body?.rewardLimitTime ? new Date(body.rewardLimitTime) : null
-        if (body === undefined || type === undefined || typeof body.subject !== "string" || typeof body.description !== "string"
-            || (rewardLimitTime !== null && isNaN(rewardLimitTime.getTime()))) return reply.status(400).send({
-            "error": "Bad Request",
-            "message": "Invalid request body."
-        })
+        const options = parseSendMailBody(request.body as SendMailBody | undefined)
+        if (options === null) return invalidMailBody(reply)
 
         try {
-            const mailId = sendPlayerMailSync(playerId, {
-                type: type,
-                typeId: body.typeId ?? null,
-                number: body.number,
-                subject: body.subject,
-                description: body.description,
-                rewardLimitTime: rewardLimitTime
+            return reply.status(200).send({ id: sendPlayerMailSync(playerId, options) })
+        } catch (error) {
+            // only our own texts reach the page; anything else is the shared error handler's 500 (src/lib/logging.ts)
+            if (!(error instanceof InvalidMailError)) throw error
+            return reply.status(400).send({
+                "error": "Bad Request",
+                "message": error.message
             })
-            return reply.status(200).send({ id: mailId })
-        } catch (error: Error | any) {
+        }
+    })
+
+    // sends the same mail to every player (the Players page); answers how many got it and how many were skipped
+    fastify.post("/mail/all", { schema: sendMailToAllSchema, preHandler: requireManagedRewards }, async (request: FastifyRequest, reply: FastifyReply) => {
+        const options = parseSendMailBody(request.body as SendMailBody | undefined)
+        if (options === null) return invalidMailBody(reply)
+
+        try {
+            return reply.status(200).send(sendMailToAllPlayersSync(options))
+        } catch (error) {
+            // An invalid mail is refused before anything is written. Anything else rolled the transaction back, so
+            // nothing was sent; the shared error handler logs it and answers 500 with the request ID (src/lib/logging.ts).
+            if (!(error instanceof InvalidMailError)) throw error
             return reply.status(400).send({
                 "error": "Bad Request",
                 "message": error.message
@@ -164,7 +190,7 @@ const routes = async (fastify: FastifyInstance) => {
     })
 
     // Developer mode: "on" unlocks everything (the player's own save is kept), "off" restores it.
-    fastify.post("/developer-mode", { schema: developerModeSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/developer-mode", { schema: developerModeSchema, preHandler: requireManagedRewards }, async (request: FastifyRequest, reply: FastifyReply) => {
         const { id, state } = request.query as SaveQuery & { state: string | undefined }
         const playerId = Number(id)
         if (isNaN(playerId)) return reply.redirect("/player");
@@ -187,13 +213,29 @@ const routes = async (fastify: FastifyInstance) => {
     })
 
     // Start over: a fresh default player on the same account (the device stays signed in).
-    fastify.post("/reset", { schema: playerQuerySchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/reset", { schema: playerQuerySchema, preHandler: requireManagedRewards }, async (request: FastifyRequest, reply: FastifyReply) => {
         const { id } = request.query as SaveQuery
         const playerId = Number(id)
         if (isNaN(playerId)) return reply.redirect("/player");
         const newPlayerId = resetPlayer(playerId)
         if (newPlayerId === null) return reply.redirect("/player");
         return reply.redirect(`/player/${newPlayerId}?message=reset`);
+    })
+
+    // FT-59: puts a save a player deleted back on its account (src/lib/saveDeletion.ts)
+    fastify.post("/restoreDeleted", { schema: playerQuerySchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+        const { id } = request.query as SaveQuery
+        const keptId = Number(id)
+        let result: ReturnType<typeof restoreDeletedSaveSync>
+        try {
+            result = restoreDeletedSaveSync(keptId)
+        } catch (error) {
+            request.log.error({ keptId, err: error }, "deleted save restore failed")
+            return reply.redirect("/player?error=restore-failed")
+        }
+        request.log.info({ userId: request.adminUser?.id ?? null, keptId, result }, "deleted save restore")
+        if (result === "restored") return reply.redirect("/player?message=restored")
+        return reply.redirect(`/player?error=restore-${result}`)
     })
 
     // Delete the player's account and everything on it.

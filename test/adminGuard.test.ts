@@ -97,12 +97,14 @@ test("admin pages get a CSP that allows only their own scripts, and use no inlin
     // with no-referrer, the browser's own form posts carry `Origin: null` and the CSRF check refuses them
     assert.equal(page.headers["referrer-policy"], "same-origin")
 
-    // the dashboard's clock form posts, and Reset is a button of it
+    // the dashboard's clock form posts; Reset, before it, posts a form of its own, so Enter in the field sets the time
     assert.match(page.body, /<form class="card" method="post" action="\/api\/server\/time">/)
-    assert.match(page.body, /formaction="\/api\/server\/resetTime"/)
+    assert.match(page.body, /<button type="submit" form="reset-time" class="btn-outline">Reset to default<\/button>\s*<button type="submit" class="btn-primary">Set time<\/button>/)
+    assert.match(page.body, /<form id="reset-time" method="post" action="\/api\/server\/resetTime"><\/form>/)
 
     const { readdirSync, readFileSync } = await import("fs")
-    for (const name of readdirSync("web/pages")) {
+    // the portal's pages (web/pages/portal/) too
+    for (const name of readdirSync("web/pages", { recursive: true }).map(String).filter(name => name.endsWith(".html"))) {
         const html = readFileSync(`web/pages/${name}`, "utf-8")
         assert.doesNotMatch(html, /\son[a-z]+="/, `${name} has an inline event handler`)
         assert.doesNotMatch(html, /<script(?![^>]*\ssrc=)/, `${name} has an inline script`)

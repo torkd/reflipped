@@ -1,7 +1,7 @@
 import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
 import type { FastifyInstance } from "fastify";
-import { createTestPlayer, createTestServer } from "./helpers";
+import { createTestPlayer, createTestServer, encodeGameBody } from "./helpers";
 import { Client, enterLobby, gameRequest, lobbyMate } from "./coopHelpers";
 
 // CO-4: what the client does around the SEC-12 admission and the SEC-15 mate check (docs/coop-research.md, "Admission").
@@ -75,7 +75,9 @@ test("a battle connection from a new address needs the member's own start", asyn
     assert.deepEqual(await battle(hostLobby.id, "127.0.0.1"), [0, hostLobby.id, roomNumber])
     // the guest's phone changed networks: refused until its own signed start
     assert.deepEqual(await battle(guestLobby.id, "127.0.0.2"), [1, "multibattle_room_not_found"])
-    await gameRequest(fastify, "multi_battle_quest/start", startBody(other.viewerId, roomNumber))
+    const outsiderStart = await fastify.inject({ method: "POST", url: "/latest/api/index.php/multi_battle_quest/start",
+        headers: { "content-type": "application/x-www-form-urlencoded" }, payload: encodeGameBody(startBody(other.viewerId, roomNumber)) })
+    assert.equal(outsiderStart.statusCode, 400)
     assert.deepEqual(await battle(guestLobby.id, "127.0.0.2"), [1, "multibattle_room_not_found"], "another viewer's start doesn't count")
     await gameRequest(fastify, "multi_battle_quest/start", startBody(guest.viewerId, roomNumber))
     assert.deepEqual(await battle(guestLobby.id, "127.0.0.2"), [0, guestLobby.id, roomNumber])

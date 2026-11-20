@@ -1,0 +1,897 @@
+{
+    "1": {
+        "1004": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 500,
+                "reasonId": 13001,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63000
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 501,
+                "to": 1000,
+                "reasonId": 13002,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63001
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 1001,
+                "to": 2000,
+                "reasonId": 13003,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63002
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 2001,
+                "to": 3000,
+                "reasonId": 13004,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63003
+                    }
+                ]
+            }
+        ],
+        "1003": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 2000,
+                "reasonId": 13005,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63004
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 2001,
+                "to": 4000,
+                "reasonId": 13006,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63005
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 4001,
+                "to": 7000,
+                "reasonId": 13007,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63006
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 7001,
+                "to": 10000,
+                "reasonId": 13008,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63007
+                    }
+                ]
+            }
+        ],
+        "1002": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 4000,
+                "reasonId": 13009,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63008
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 4001,
+                "to": 8000,
+                "reasonId": 13010,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63009
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 8001,
+                "to": 12000,
+                "reasonId": 13011,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63010
+                    }
+                ]
+            }
+        ],
+        "1001": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 5000,
+                "reasonId": 13012,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63011
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 5001,
+                "to": 10000,
+                "reasonId": 13013,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63012
+                    }
+                ]
+            }
+        ]
+    },
+    "2": {
+        "2004": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 500,
+                "reasonId": 13001,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63013
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 501,
+                "to": 1000,
+                "reasonId": 13002,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63014
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 1001,
+                "to": 2000,
+                "reasonId": 13003,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63015
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 2001,
+                "to": 3000,
+                "reasonId": 13004,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63016
+                    }
+                ]
+            }
+        ],
+        "2003": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 2000,
+                "reasonId": 13005,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63017
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 2001,
+                "to": 4000,
+                "reasonId": 13006,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63018
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 4001,
+                "to": 7000,
+                "reasonId": 13007,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63019
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 7001,
+                "to": 10000,
+                "reasonId": 13008,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63020
+                    }
+                ]
+            }
+        ],
+        "2002": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 4000,
+                "reasonId": 13009,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63021
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 4001,
+                "to": 8000,
+                "reasonId": 13010,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63022
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 8001,
+                "to": 12000,
+                "reasonId": 13011,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63023
+                    }
+                ]
+            }
+        ],
+        "2001": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 5000,
+                "reasonId": 13012,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63024
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 5001,
+                "to": 10000,
+                "reasonId": 13013,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63025
+                    }
+                ]
+            }
+        ]
+    },
+    "3": {
+        "3004": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 500,
+                "reasonId": 13001,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63026
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 501,
+                "to": 1000,
+                "reasonId": 13002,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63027
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 1001,
+                "to": 2000,
+                "reasonId": 13003,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63028
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 2001,
+                "to": 3000,
+                "reasonId": 13004,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63029
+                    }
+                ]
+            }
+        ],
+        "3003": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 2000,
+                "reasonId": 13005,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63030
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 2001,
+                "to": 4000,
+                "reasonId": 13006,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63031
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 4001,
+                "to": 7000,
+                "reasonId": 13007,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63032
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 7001,
+                "to": 10000,
+                "reasonId": 13008,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63033
+                    }
+                ]
+            }
+        ],
+        "3002": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 4000,
+                "reasonId": 13009,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63034
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 4001,
+                "to": 8000,
+                "reasonId": 13010,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63035
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 8001,
+                "to": 12000,
+                "reasonId": 13011,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63036
+                    }
+                ]
+            }
+        ],
+        "3001": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 5000,
+                "reasonId": 13012,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63037
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 5001,
+                "to": 10000,
+                "reasonId": 13013,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63038
+                    }
+                ]
+            }
+        ]
+    },
+    "4": {
+        "4004": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 500,
+                "reasonId": 13001,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63039
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 501,
+                "to": 1000,
+                "reasonId": 13002,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63040
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 1001,
+                "to": 2000,
+                "reasonId": 13003,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63041
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 2001,
+                "to": 3000,
+                "reasonId": 13004,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63042
+                    }
+                ]
+            }
+        ],
+        "4003": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 2000,
+                "reasonId": 13005,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63043
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 2001,
+                "to": 4000,
+                "reasonId": 13006,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63044
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 4001,
+                "to": 7000,
+                "reasonId": 13007,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63045
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 7001,
+                "to": 10000,
+                "reasonId": 13008,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63046
+                    }
+                ]
+            }
+        ],
+        "4002": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 4000,
+                "reasonId": 13009,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63047
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 4001,
+                "to": 8000,
+                "reasonId": 13010,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63048
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 8001,
+                "to": 12000,
+                "reasonId": 13011,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63049
+                    }
+                ]
+            }
+        ],
+        "4001": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 5000,
+                "reasonId": 13012,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63050
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 5001,
+                "to": 10000,
+                "reasonId": 13013,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63051
+                    }
+                ]
+            }
+        ]
+    },
+    "5": {
+        "5004": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 500,
+                "reasonId": 13001,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63052
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 501,
+                "to": 1000,
+                "reasonId": 13002,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63053
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 1001,
+                "to": 2000,
+                "reasonId": 13003,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63054
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 2001,
+                "to": 3000,
+                "reasonId": 13004,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63055
+                    }
+                ]
+            }
+        ],
+        "5003": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 2000,
+                "reasonId": 13005,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63056
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 2001,
+                "to": 4000,
+                "reasonId": 13006,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63057
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 4001,
+                "to": 7000,
+                "reasonId": 13007,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63058
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "from": 7001,
+                "to": 10000,
+                "reasonId": 13008,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63059
+                    }
+                ]
+            }
+        ],
+        "5002": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 4000,
+                "reasonId": 13009,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63060
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 4001,
+                "to": 8000,
+                "reasonId": 13010,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63061
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "from": 8001,
+                "to": 12000,
+                "reasonId": 13011,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63062
+                    }
+                ]
+            }
+        ],
+        "5001": [
+            {
+                "id": 1,
+                "from": 1,
+                "to": 5000,
+                "reasonId": 13012,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63063
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "from": 5001,
+                "to": 10000,
+                "reasonId": 13013,
+                "rewards": [
+                    {
+                        "kind": 6,
+                        "number": 1,
+                        "id": 63064
+                    }
+                ]
+            }
+        ]
+    }
+}

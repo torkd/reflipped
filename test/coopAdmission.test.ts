@@ -4,6 +4,7 @@ import net from "net";
 import { randomUUID } from "crypto";
 import type { FastifyInstance } from "fastify";
 import { createTestServer, decodeGameBody, encodeGameBody, readCapturedRoute } from "./helpers";
+import { lobbyMate } from "./coopHelpers";
 
 // SEC-12: the co-op socket only admits players the signed HTTP routes let into a room, and limits what one client can do.
 
@@ -141,6 +142,10 @@ test("co-op socket admission and limits", async (t) => {
         const accepted = await hostSocket.next()
         assert.equal(accepted[0], 0)
         hostConnection = accepted[1]
+        // Enter, as the client does: lobby broadcasts (Start among them) reach a member only after its Welcome (CO-6)
+        hostSocket.send([0, [0, lobbyMate("Host", 111001), 1]])
+        const hostWelcome = await hostSocket.next()
+        assert.deepEqual([hostWelcome[0], hostWelcome[1][0]], [1, 0], "the host's Welcome")
 
         const again = await connect()
         again.send(lobbyHandshake(host, roomNumber))
@@ -152,6 +157,10 @@ test("co-op socket admission and limits", async (t) => {
         const guestAccepted = await guestSocket.next()
         assert.equal(guestAccepted[0], 0)
         guestConnection = guestAccepted[1]
+        guestSocket.send([0, [0, lobbyMate("Guest", 111002), 1]])
+        const guestWelcome = await guestSocket.next()
+        assert.deepEqual([guestWelcome[0], guestWelcome[1][0]], [1, 0], "the guest's Welcome")
+        assert.deepEqual((await hostSocket.next()).slice(0, 2).map((part: unknown, i: number) => i === 1 ? (part as unknown[])[0] : part), [1, 1], "the host hears the guest's Mates")
 
         // start the battle from the lobby
         hostSocket.send([0, [6]])
@@ -243,6 +252,8 @@ test("after a battle only an admitted player's lobby connection opens the room a
     const lobby = await connect()
     lobby.send(lobbyHandshake(host, roomNumber))
     const connectionId = (await lobby.next())[1]
+    lobby.send([0, [0, lobbyMate("Host", 111001), 1]]) // Enter, as the client does (CO-6)
+    await lobby.next() // Welcome
     lobby.send([0, [6]])
     await lobby.next() // Start
     lobby.send([0, [1]]) // Bye

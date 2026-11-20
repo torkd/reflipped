@@ -13,6 +13,8 @@ let admin: FastifyInstance
 let cleanup: () => Promise<void>
 
 before(async () => {
+    // These fixtures explicitly cover the retained legacy clock, not projected event schedules.
+    process.env.EVENT_SCHEDULING = "off";
     ({ fastify, admin, cleanup } = await createTestServer())
 })
 

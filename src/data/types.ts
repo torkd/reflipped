@@ -36,6 +36,7 @@ export interface RawSession {
     type: number
     account_id: number
     udid: string | null
+    authenticated_at: string | null
 }
 
 export interface Session {
@@ -45,6 +46,8 @@ export interface Session {
     accountId: number
     /** Viewer sessions only: the device UDID that signs game requests, null until the device sends one. */
     udid?: string | null
+    /** Viewer sessions only: when it last proved the account's zat (/load, tool/signup); null before SEC-16. */
+    authenticatedAt?: Date | null
 }
 
 // game player
@@ -301,6 +304,7 @@ export interface RawPlayerMail {
     create_time: string
     receive_time: string | null
     reward_limit_time: string | null
+    reward_source_key?: string | null
 }
 
 export interface PlayerMail {
@@ -314,6 +318,10 @@ export interface PlayerMail {
     createTime: Date
     receiveTime: Date | null
     rewardLimitTime: Date | null
+    /** Opaque server-owned delivery identity; only save files carry it, never the game API. */
+    rewardSourceKey?: string
+    /** Original legacy save identity, captured before mail dates are rebased onto the importing player's clock. */
+    rewardImportFingerprint?: string
 }
 
 export interface RawPlayerActiveMissionStage {
@@ -678,6 +686,8 @@ export interface UserGachaInfo {
     is_daily_first: boolean
     is_account_first: boolean
     gacha_exchange_point?: number
+    /** a Welcome Back Portal's period for this player (src/lib/comebackGacha.ts), UnixTime seconds */
+    comeback_campaign?: { period_start_time: number, period_end_time: number }
 }
 
 export interface UserDrawnQuest {
@@ -745,18 +755,42 @@ export interface ClientPlayerData {
     mail_arrived: boolean
     user_periodic_reward_point_list: PlayerPeriodicRewardPoint[]
     all_active_mission_list: Record<string, PlayerActiveMission>
-    cleared_collect_item_event_mission_list: unknown[]
+    cleared_collect_item_event_mission_list: Record<string, number> | never[]
     box_gacha_list: Record<string, UserBoxGacha[]>
     gacha_campaign_list: UserGachaCampaign[]
     purchased_times_list: Object
     start_dash_exchange_campaign_list: UserStartDashCampaignList[]
     multi_special_exchange_campaign_list: UserMultiSpecialExchangeCampaignList[]
+    /** the Scouting Season and Dream Armament campaigns with their status (FT-80), sent by /load */
+    special_exchange_campaign_list?: { campaign_id: number, status: number }[]
+    /** the Welcome Back Boost's end (FT-65), sent by /load only while it runs (src/lib/comebackBoost.ts) */
+    comeback_campaign_boss_boost?: { period_end_time: number }
+    /** the Haunt's reset dialogs (FT-6), sent by /load only: `{ event_id, reset_month, reset_status }` */
+    tower_dungeon_list?: { event_id: number, reset_month: number, reset_status: number }[]
     associate_token: string
     config: Object,
     // rush event data
     user_rush_event_list?: Record<string, UserRushEvent> // { [eventId]: PlayerRushEvent}
     user_rush_event_cleared_folder_list?: Record<string, PlayerRushEventClearedFolders> // { [eventId]: [folderId] }
     user_rush_event_played_party_list?: UserRushEventPlayedPartyList // { [eventId]: { [RushEventBattleType]: { [round]: UserRushEventPlayedParty } } }
+    // Reflipped's own save fields, not sent to the client: the gift box (waiting and received mail) and the titles
+    // owned besides the default one. A save without them leaves the player's mail and titles as they are.
+    user_mail_list?: SaveMail[]
+    user_degree_list?: number[]
+}
+
+/** A gift box mail in a save file; times are "YYYY-MM-DD HH:MM:SS" (UTC, on the server clock), null when unset. */
+export interface SaveMail {
+    type: number
+    type_id: number | null
+    number: number
+    reason_id: number
+    subject: string | null
+    description: string | null
+    create_time: string
+    receive_time: string | null
+    reward_source_key?: string
+    reward_limit_time: string | null
 }
 
 export interface MergedPlayerData {
@@ -764,6 +798,8 @@ export interface MergedPlayerData {
     dailyChallengePointList: DailyChallengePointListEntry[],
     triggeredTutorial: number[],
     clearedRegularMissionList: Record<string, number>,
+    /** `/load` only (a save import doesn't read it): the collect item event missions' cleared stages */
+    clearedCollectItemEventMissionList?: Record<string, number>,
     characterList: Record<string, PlayerCharacter>,
     characterManaNodeList: Record<string, number[]>,
     partyGroupList: Record<string, PlayerPartyGroup>,
@@ -784,6 +820,10 @@ export interface MergedPlayerData {
     rushEventList?: PlayerRushEvent[],
     rushEventClearedFolderList?: Record<string, PlayerRushEventClearedFolders>,
     rushEventPlayedPartyList?: Record<string, PlayerRushEventPlayedParty[]>
+    // the gift box and titles: undefined keeps what the player has (an older save carries neither); a mail with an
+    // ID keeps it, one without gets a new one
+    mailList?: (Omit<PlayerMail, 'id'> & { id?: number })[],
+    degreeList?: number[]
 }
 /** A player's purchases of one shop product, for its limits. `day`/`month` are game days ("YYYY-MM-DD", "YYYY-MM"). */
 /** The game day ("YYYY-MM-DD") and month ("YYYY-MM") of a player's last daily and monthly reset. */

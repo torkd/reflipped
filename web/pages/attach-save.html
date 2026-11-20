@@ -1,0 +1,23 @@
+            <header class="page-header">
+                <h1 class="page-title">Attach this save?</h1>
+                <p class="page-subtitle">To user {{username}}. Nothing changes until you confirm.</p>
+            </header>
+            <section class="card">
+                <div class="flex gap-3 items-center">
+                    <div class="avatar">{{saveInitial}}</div>
+                    <div class="flex flex-col min-w-0">
+                        <span class="font-semibold text-on-background truncate">{{saveName}}</span>
+                        <span class="text-sm text-on-surface-variant">Player #{{savePlayerId}} · PID {{savePid}} · last login {{saveLastLogin}}</span>
+                        <span class="text-sm text-on-surface-variant">A guest save, not tied to a user.</span>
+                    </div>
+                </div>
+                <p class="card-text">{{consequence}}</p>
+                <div class="flex gap-3 flex-wrap">
+                    <form method="post" action="/api/user/save/attach?id={{userId}}">
+                        <input type="hidden" name="playerId" value="{{savePlayerId}}">
+                        <input type="hidden" name="idKind" value="player">
+                        <button type="submit" class="btn-primary">Attach save</button>
+                    </form>
+                    <a class="btn-outline" href="/user/{{userId}}">Cancel</a>
+                </div>
+            </section>

@@ -95,7 +95,8 @@ test("single_battle_quest/finish pays the first-clear reward only for a clear", 
     const before = beads()
     for (let i = 0; i < 2; i++) {
         assert.equal(await gameRequest("single_battle_quest/start", start), 200)
-        assert.equal(await gameRequest("single_battle_quest/finish", { ...finish, is_accomplished: false }), 200)
+        // a lost battle ends with abort; a lost finish is refused (SEC-16)
+        assert.equal(await gameRequest("single_battle_quest/finish", { ...finish, is_accomplished: false }), 400)
     }
     assert.equal(beads(), before, "a failed run pays nothing")
 

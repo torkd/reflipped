@@ -1,7 +1,7 @@
 import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
 import type { FastifyInstance } from "fastify";
-import { createTestPlayer, createTestServer, encodeGameBody, gameHeaders, readCapturedRoute, signedGameHeaders, TestPlayer } from "./helpers";
+import { createTestPlayer, createTestServer, decodeGameBody, encodeGameBody, gameHeaders, readCapturedRoute, signedGameHeaders, TestPlayer } from "./helpers";
 
 const apiPrefix = "/latest/api/index.php"
 
@@ -53,8 +53,9 @@ test("a request signed with the signup UDID is accepted", async () => {
 
 test("an unsigned request is rejected", async () => {
     const response = await send(gameHeaders(player.udid))
-    assert.equal(response.statusCode, 403)
-    assert.equal(response.json().message, "Invalid request signature.")
+    // the reply an unknown viewer id gets, so the two can't be told apart (SEC-16)
+    assert.equal(response.statusCode, 400)
+    assert.equal(response.json().message, "Invalid viewer id.")
 })
 
 test("a wrong UDID, GAME-APP-ID, path or body is rejected", async () => {
@@ -67,7 +68,7 @@ test("a wrong UDID, GAME-APP-ID, path or body is rejected", async () => {
     }
     for (const [name, headers] of Object.entries(cases)) {
         const response = await send(headers, payload)
-        assert.equal(response.statusCode, 403, name)
+        assert.equal(response.statusCode, 400, name)
     }
 })
 
@@ -82,7 +83,7 @@ test("/load binds the UDID of a viewer session that has none", async () => {
 
     const payload = optionsBody()
     const signed = signedGameHeaders(player.udid, player.viewerId, path, payload)
-    assert.equal((await send(signed, payload)).statusCode, 403)
+    assert.equal((await send(signed, payload)).statusCode, 400)
 
     const load = await fastify.inject({
         method: "POST",
@@ -112,7 +113,10 @@ test("co-op start and finish pass their signed requests on to the single-player 
         const url = `${apiPrefix}/${route}`
         return fastify.inject({ method: "POST", url, headers: signedGameHeaders(player.udid, player.viewerId, url, payload), payload })
     }
-    const start = await request("multi_battle_quest/start", { quest_id: 1001001, category: 2, party_id: 11, room_number: "000000", play_id: "SIGNED", use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: true, mate_player_ids: [] })
+    const created = await request("multi_battle_quest/create_room", { quest_id: 1001001, category: 2, party_id: 11 })
+    assert.equal(created.statusCode, 200, created.body)
+    const roomNumber = decodeGameBody(created.body).data.room_number
+    const start = await request("multi_battle_quest/start", { quest_id: 1001001, category: 2, party_id: 11, room_number: roomNumber, play_id: "SIGNED", use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: true, mate_player_ids: [] })
     assert.equal(start.statusCode, 200, start.body)
     const finish = await request("multi_battle_quest/finish", { ...readCapturedRoute("multi_battle_quest_finish").requestBody, quest_id: 1001001, category: 2 })
     assert.equal(finish.statusCode, 200, finish.body)

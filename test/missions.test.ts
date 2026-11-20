@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 import type { FastifyInstance } from "fastify";
 import { createTestPlayer, createTestServer, decodeGameBody, encodeGameBody, gameHeaders, readCapturedRoute, TestPlayer } from "./helpers";
 import mainQuests from "../assets/main_quest.json";
+import activeMissions from "../assets/active_mission.json";
 
 const apiPrefix = "/latest/api/index.php"
 // the default clock's day: daily missions 6-11 are open
@@ -138,12 +139,20 @@ test("a failed battle counts nothing", async () => {
         quest_id: questId, category: STORY_EVENT_SINGLE, party_id: 1,
         use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: false, api_count: 1, play_id: "test"
     })
-    const result = await post(player, "single_battle_quest/finish", {
-        quest_id: questId, category: STORY_EVENT_SINGLE, score: 1000, add_mana: 0, elapsed_time_ms: 700000,
-        is_accomplished: false, is_restored: false, continue_count: 0, api_count: 2, play_id: "test",
-        statistics: { clear_phase: 0, party: emptyParty, zones: [{ use_dash_count: 50 }] }
+    // the game ends a lost battle with abort; a lost finish is refused before it counts anything (SEC-16)
+    const lost = await fastify.inject({
+        method: "POST",
+        url: `${apiPrefix}/single_battle_quest/finish`,
+        headers: gameHeaders(player.udid),
+        payload: encodeGameBody({
+            quest_id: questId, category: STORY_EVENT_SINGLE, score: 1000, add_mana: 0, elapsed_time_ms: 700000,
+            is_accomplished: false, is_restored: false, continue_count: 0, api_count: 2, play_id: "test",
+            statistics: { clear_phase: 0, party: emptyParty, zones: [{ use_dash_count: 50 }] },
+            viewer_id: player.viewerId
+        })
     })
-    assert.deepEqual(result.mission_info, [])
+    assert.equal(lost.statusCode, 400, lost.body)
+    await post(player, "single_battle_quest/abort", { api_count: 3, finish_kind: 1, statistics: {}, quest_id: questId, play_id: "test", category: STORY_EVENT_SINGLE })
     assert.deepEqual(data.getPlayerMissionsSync(player.playerId, DAILY), [])
 })
 
@@ -253,7 +262,7 @@ test("Step Up stages clear unreceived and active_mission/receive grants their re
     const player = await newPlayer()
     data.updatePlayerSync({ id: player.playerId, expPool: 20000 })
     // 11090: "Give a unit experience" (1000 pooled exp); 12030: "Raise a unit to level 40" (3000 pooled exp)
-    const injected = await post(player, "expod/inject_exp", { character_id: 1, exp: 12000, api_count: 1 })
+    const injected = await post(player, "expod/inject_exp", { character_id: 1, exp: 14000, api_count: 1 })
     assert.deepEqual(activeEntry(injected, 11090), { mission_id: 11090, progress_value: 1, stages: [{ stage: 1, received: false }] })
     assert.equal(activeEntry(injected, 12030)!.progress_value, 40)
     assert.deepEqual(activeEntry(injected, 12030)!.stages, [{ stage: 1, received: false }])
@@ -261,6 +270,10 @@ test("Step Up stages clear unreceived and active_mission/receive grants their re
     const loaded = await post(player, "load", { ...readCapturedRoute("load").requestBody, access_token: player.zat })
     assert.deepEqual(loaded.all_active_mission_list["11090"], { progress: 1, stages: { "1": false } })
 
+    // Phase 2 can be claimed once every Rookie objective is complete, even if its rewards remain unclaimed.
+    for (const [id, mission] of Object.entries(activeMissions)) {
+        if (mission.phase === 1) data.setPlayerActiveMissionProgressSync(player.playerId, Number(id), mission.stages.at(-1)!.target)
+    }
     const expPool = data.getPlayerSync(player.playerId)!.expPool
     const received = await post(player, "active_mission/receive", { api_count: 2, active_mission_list: [{ mission_id: 11090, stages: [1] }, { mission_id: 12030, stages: [1] }] })
     assert.deepEqual(received.active_mission_list.map((entry: ActiveMissionEntry) => [entry.mission_id, entry.stages]), [

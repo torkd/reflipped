@@ -2,7 +2,7 @@
 import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
 import { randomUUID } from "crypto";
-import sqlite3 from "better-sqlite3";
+import SqliteDatabase from "../src/data/sqlite";
 import type { FastifyInstance } from "fastify";
 import { createTestServer, encodeGameBody, gameHeaders, readCapturedRoute } from "./helpers";
 
@@ -193,7 +193,7 @@ test("migration to v4 hashes the old whiteKey idp_id and replaces it with a publ
     const init = (await import("../src/data/initializers/wdfpData")).default
     const { hashDeviceSecret } = await import("../src/lib/deviceSecret")
 
-    const db = new sqlite3(":memory:")
+    const db = new SqliteDatabase(":memory:")
     db.prepare(`CREATE TABLE accounts (
         id INTEGER PRIMARY KEY AUTOINCREMENT, app_id TEXT NOT NULL, first_login_time DATE NOT NULL, idp_alias TEXT NOT NULL,
         idp_code TEXT NOT NULL, idp_id TEXT NOT NULL, reg_time DATE NOT NULL, last_login_time DATE NOT NULL, status TEXT NOT NULL

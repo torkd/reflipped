@@ -8,7 +8,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 20,
+        "timeLimitMs": 180000
     },
     "2001": {
         "name": "",
@@ -19,7 +21,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 20,
+        "timeLimitMs": 180000
     },
     "3001": {
         "name": "",
@@ -30,7 +34,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 20,
+        "timeLimitMs": 180000
     },
     "4001": {
         "name": "",
@@ -41,7 +47,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 20,
+        "timeLimitMs": 180000
     },
     "5001": {
         "name": "",
@@ -52,6 +60,8 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 20,
+        "timeLimitMs": 180000
     }
 }

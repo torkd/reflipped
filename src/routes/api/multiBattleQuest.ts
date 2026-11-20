@@ -1,16 +1,27 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { generateDataHeaders } from "../../utils";
+import { currentBalanceEpoch } from "../../lib/balance";
+import { generateDataHeaders, getServerDate } from "../../utils";
+import { battleClientChecks, clientChecksField } from "../../lib/missions";
+import { isQuestOpen } from "../../lib/questPeriods";
+import { hardMultiUnlockRefusal } from "../../lib/hardMultiEvent";
+import { QuestCategory } from "../../lib/types";
 import { pack, unpack } from "msgpackr";
-import { admit, admitToBattle, CoopRoom, createRoom, getRoom, getRoomByAccessToken, listRooms, noteRoundEnded, openRound, roomsHostedBy, startRound, TooManyRoomsError } from "../../lib/coop/rooms";
-import { coopSocketPort, coopSocketServer, ROOM_CAPACITY } from "../../lib/coop/socketServer";
+import { admit, admitToBattle, CoopRoom, createRoom, getRoom, getRoomByAccessToken, listRooms, noteRoundEnded, openRound, roomsHostedBy, runOnCoopStart, startRound, TooManyRoomsError } from "../../lib/coop/rooms";
+import { coopSocketHost as coopPublicHost, coopSocketPort, coopSocketServer, ROOM_CAPACITY } from "../../lib/coop/socketServer";
 import { COMPANION_NAMES, balancedCompanions, toMateParty } from "../../lib/coop/companions";
 import { any, arrayOf, boolean, gameBody, integer, number, string, stringOrInteger } from "../schemas";
-import { markActiveQuestCoop, statisticsSchema } from "./singleBattleQuest";
+import { markActiveQuestCoop, setActiveQuestStartParty, statisticsSchema } from "./singleBattleQuest";
 import { computeRequestParam } from "../../lib/gameAuth";
-import { joinCandidates, notePresence, SHARE_TYPE_RANDOM, shareRoom, stopRecruiting } from "../../lib/coop/recruitment";
+import { wasAttentionDelivered, joinCandidates, notePresence, SHARE_TYPE_FOLLOWERS, SHARE_TYPE_MUTUALS, SHARE_TYPE_RANDOM, followsOnlyRoomClosedTo, shareRoom, shareRoomWithFollows, stopRecruiting } from "../../lib/coop/recruitment";
 import { attentionConfig } from "../../lib/coop/attentionConfig";
+import { COOP_NOT_PLAYABLE, joinRefusedFor, roomHiddenFrom } from "../../lib/coop/restricted";
 import { closeRoom } from "../../lib/coop/closeRoom";
-import { establisherOf, FOLLOW_STATE_NONE } from "../../lib/coop/mates";
+import { establisherOf } from "../../lib/coop/mates";
+import { establisherFollowSync, followBonusRoundSync, noteFollowBonusFinishSync } from "../../lib/follows";
+import { captureEventContext } from "../../lib/eventSchedule";
+import { getRewardPolicy } from "../../lib/rewardPolicy";
+import { beginCoopWitnessFinish, collectCoopFinish, coopWitnessRoundEnded } from "../../lib/anticheatCoopWitness";
+import { noteFinishAddress } from "../../lib/anticheatStats";
 
 interface GetRoomsBody {
     event_id: number,
@@ -101,6 +112,8 @@ interface StartBody {
     is_auto_start_mode: boolean,
     /** per-player ids of the other mates in the room, e.g. [1, 2] */
     mate_player_ids: number[]
+    /** the party the battle is played with: character_ids, unison_character_ids, equipment_ids, ability_soul_ids */
+    client_battle_party?: unknown
 }
 
 const startSchema = gameBody({
@@ -200,6 +213,14 @@ function requestedRoom(body: { room_number?: string | number, access_token?: str
     return body.room_number === undefined ? undefined : getRoom(String(body.room_number))
 }
 
+/**
+ * Whether a room is in the balance epoch the server is in now (FT-47): a room from another shows its units another
+ * way, so it is not found when looking for one or joining (the shared timeline moved on, or back, since).
+ */
+function inCurrentBalance(room: CoopRoom | undefined): room is CoopRoom {
+    return room !== undefined && (room.balanceEpoch === undefined || room.balanceEpoch === currentBalanceEpoch())
+}
+
 /** Where a room link points: the page the shared link opens (src/routes/api/multiInvitation.ts). */
 function roomUrl(request: FastifyRequest, room: CoopRoom): string {
     // the client keeps only the part from "/multi_invitation/join" on and puts its own urlFriendFollowServer +
@@ -213,7 +234,7 @@ function roomUrl(request: FastifyRequest, room: CoopRoom): string {
  * quest, finish computes rewards, experience, drops and missions. Returns the decoded reply.
  */
 /** select_room `raising_state` values, from the client's selectRoomSuccessHandler. */
-const RAISING_STATE = { Ready: 1, Filled: 3, Battle: 4, Disbanded: 9 }
+const RAISING_STATE = { Ready: 1, Filled: 3, Battle: 4, Disbanded: 9, NotFollowHost: 12 }
 
 /** Room codes may be typed with spaces or dashes. */
 function normaliseRoomNumber(text: string): string {
@@ -221,7 +242,7 @@ function normaliseRoomNumber(text: string): string {
 }
 
 /** A get_rooms entry (pinball.remote.multiBattleQuest.RoomInformation), from the host's lobby mate. */
-function roomInformation(room: CoopRoom) {
+function roomInformation(room: CoopRoom, viewerId: number) {
     const establisher = establisherOf(coopSocketServer?.hostMate(room.roomNumber) ?? null)
     return {
         "room_number": room.roomNumber,
@@ -230,7 +251,7 @@ function roomInformation(room: CoopRoom) {
         "establisher_name": establisher.name,
         "establisher_character": establisher.characterId,
         "establisher_character_evolution_img_level": establisher.evolutionLevel,
-        "establisher_follow": FOLLOW_STATE_NONE,
+        "establisher_follow": establisherFollowSync(viewerId, room.hostViewerId),
         "host_entry_time": room.createdAt,
         "is_pickup": false,
         "mates": Math.max(1, coopSocketServer?.memberCount(room.roomNumber) ?? 1),
@@ -275,12 +296,8 @@ async function runSingleBattleQuestRoute(fastify: FastifyInstance, request: Fast
     return { statusCode: response.statusCode, body: decoded }
 }
 
-/**
- * Host the co-op socket is reached at: COOP_PUBLIC_HOST, or else the host the client used to
- * reach this API (the same machine, as the client sees it).
- */
 function coopSocketHost(request: FastifyRequest): string {
-    return process.env.COOP_PUBLIC_HOST || request.hostname
+    return coopPublicHost(request.hostname)
 }
 
 const routes = async (fastify: FastifyInstance) => {
@@ -289,11 +306,26 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as CreateRoomBody
         const viewerId = request.viewer.viewerId
 
+        // an event quest's room only within its event's period, on the host's clock (SEC-16); its guests are let in
+        if (!isQuestOpen(Number(body.category), Number(body.quest_id), getServerDate())) {
+            request.log.info({ questId: body.quest_id, category: body.category }, "create_room: the quest's event isn't open")
+            return reply.status(400).send({ "error": "Bad Request", "message": "This quest's event isn't open." })
+        }
+        // a co-op boss event's room only once the host has unlocked the event (FT-23)
+        const unlockRefusal = Number(body.category) === QuestCategory.HARD_MULTI_EVENT ? hardMultiUnlockRefusal(request.viewer.playerId, Number(body.quest_id)) : null
+        if (unlockRefusal !== null) {
+            request.log.info({ questId: body.quest_id, category: body.category }, `create_room: ${unlockRefusal}`)
+            return reply.status(400).send({ "error": "Bad Request", "message": unlockRefusal })
+        }
+
         // one room per host: a host who creates another has left the old one (and can't fill the room registry)
+        const eventContext = Object.freeze({ ...captureEventContext(), rewardMultiplier: getRewardPolicy().bossMultiplier })
         for (const old of roomsHostedBy(viewerId)) closeRoom(old.roomNumber)
         let room: CoopRoom
         try {
             room = createRoom(viewerId, Number(body.quest_id), Number(body.category))
+            room.eventContext = eventContext
+            room.balanceEpoch = currentBalanceEpoch()
         } catch (error) {
             if (!(error instanceof TooManyRoomsError)) throw error
             request.log.warn(error.message)
@@ -337,7 +369,9 @@ const routes = async (fastify: FastifyInstance) => {
         room.shareTypes = [...new Set([...room.shareTypes, ...shareTypes])]
 
         reply.header("content-type", "application/x-msgpack")
-        // Follows (1, 2) aren't implemented: nobody to notify. The client only recruits and auto-summons for 3.
+        // Follows (1, 2, FT-15): the host's mutuals or followers are offered the room through attention/check. The
+        // client only recruits and auto-summons for 3, so that is all these do.
+        if (shareTypes.includes(SHARE_TYPE_MUTUALS) || shareTypes.includes(SHARE_TYPE_FOLLOWERS)) shareRoomWithFollows(room)
         if (!shareTypes.includes(SHARE_TYPE_RANDOM)) return reply.status(200).send({
             "data_headers": generateDataHeaders({ viewer_id: viewerId }),
             "data": { "config": attentionConfig() }
@@ -378,9 +412,14 @@ const routes = async (fastify: FastifyInstance) => {
         const free = Math.max(0, ROOM_CAPACITY - humans)
         const hostMate = coopSocketServer?.hostMate(room.roomNumber) ?? null
         const data: Record<string, any> = {}
-        balancedCompanions(hostMate, free, room.roomSequence * 10 + 1).forEach((companion, i) => {
+        const companions = balancedCompanions(hostMate, free, room.roomSequence * 10 + 1)
+        companions.forEach((companion, i) => {
             data[`mate${i + 1}`] = companion
         })
+        // the host's EnterComs may add only these (SEC-16)
+        coopSocketServer?.issueCompanions(room.roomNumber, companions.map(companion => ({
+            comId: companion.com_id, degreeId: companion.degree_id, party: toMateParty(companion.party), rank: companion.rank
+        })))
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -395,23 +434,32 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as StartBody
         const viewerId = request.viewer.viewerId
 
-        // only a player the room let in marks it started (and stops its recruiting)
         const room = getRoom(String(body.room_number))
-        if (room?.members.has(viewerId)) {
-            // the lobby's StartBattle normally began the round (with its players); without it, the first start does
-            if (!room.inBattle) startRound(room, [])
-            if (!room.lastRoundViewerIds.includes(viewerId)) room.lastRoundViewerIds.push(viewerId)
-            stopRecruiting(room.roomNumber)
-            // the client opens its battle socket right after this reply: a signed proof that it is this player's
-            admitToBattle(room, viewerId)
+        if (!room || !room.members.has(viewerId) || room.questId !== Number(body.quest_id) || room.category !== Number(body.category)
+            || (room.inBattle && !room.lastRoundViewerIds.includes(viewerId))
+            || (room.inBattle && room.roundEndedViewerIds.includes(viewerId))
+            || (!room.inBattle && coopSocketServer !== null)) {
+            return reply.status(400).send({ "error": "Bad Request", "message": "Room or quest not found." })
         }
-        request.log.info({ roomNumber: body.room_number, questId: body.quest_id, playId: body.play_id }, "co-op battle started")
 
         // register the quest like a single-player start, so finish can award it
-        const single = await runSingleBattleQuestRoute(fastify, request, "start", body)
-        if (single.statusCode !== 200) request.log.warn(failureSummary(single), "co-op start: single_battle_quest/start failed")
-        // the finish then counts the co-op missions (host or guest) instead of the solo ones
-        else markActiveQuestCoop(request.viewer.playerId, room?.hostViewerId === viewerId)
+        const single = await runOnCoopStart(room, viewerId, () => runSingleBattleQuestRoute(fastify, request, "start", body))
+        if (single.statusCode !== 200) {
+            request.log.warn(failureSummary(single), "co-op start: single_battle_quest/start failed")
+            return reply.status(single.statusCode).send(single.body)
+        }
+        // Only admit the battle socket and stop recruitment once the underlying start succeeded.
+        if (!room.inBattle) startRound(room, [viewerId])
+        room.followBonus ??= followBonusRoundSync(room.lastRoundViewerIds)
+        stopRecruiting(room.roomNumber)
+        admitToBattle(room, viewerId)
+        markActiveQuestCoop(request.viewer.playerId, room.hostViewerId === viewerId, room.attentionMembers?.has(viewerId) === true, room.eventContext)
+        // SEC-18 (R6): the finish's party is compared with the one this start sent, not the slot its party_id names
+        const battleParty = body.client_battle_party as { character_ids?: unknown } | null | undefined
+        setActiveQuestStartParty(request.viewer.playerId, Array.isArray(battleParty?.character_ids)
+            ? battleParty.character_ids.slice(0, 3).map(id => typeof id === "number" && Number.isSafeInteger(id) ? id : null)
+            : null)
+        request.log.info({ roomNumber: body.room_number, questId: body.quest_id, playId: body.play_id }, "co-op battle started")
 
         const dataHeaders = generateDataHeaders({ viewer_id: viewerId })
         reply.header("content-type", "application/x-msgpack")
@@ -423,6 +471,10 @@ const routes = async (fastify: FastifyInstance) => {
                 "is_multi": "multi",
                 "start_time": dataHeaders["servertime"],
                 "quest_name": "",
+                // the mission conditions the battle checks itself (pattern 82); the original leaves the key out without any
+                ...clientChecksField(battleClientChecks(Number(body.category), Number(body.quest_id), true, getServerDate())),
+                // the follow bonus (FT-43); the captured start, with no mutual follows in the room, has no such key
+                ...(room.followBonus.info.some(info => info.total_follow_bonus > 0) ? { "follow_bonus_info": room.followBonus.info } : {}),
                 "mail_arrived": false
             }
         })
@@ -433,12 +485,25 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as FinishBody
         const viewerId = request.viewer.viewerId
 
-        noteRoundEnded(viewerId)
+        // the co-op witness (SEC-18 R7): the round's finishes are compared once they are all in
+        const witness = beginCoopWitnessFinish(viewerId, request.viewer.playerId, Number(body.quest_id), Number(body.category))
+        // R12 (SEC-18 phase 4): the single-player finish below arrives from loopback, so the network is noted here
+        noteFinishAddress(request.viewer.playerId, request.ip)
         const single = await runSingleBattleQuestRoute(fastify, request, "finish", body)
         if (single.statusCode !== 200 || !single.body?.data) {
             request.log.warn(failureSummary(single), "co-op finish: single_battle_quest/finish failed")
             return reply.status(single.statusCode === 200 ? 500 : single.statusCode).send(single.body)
         }
+        collectCoopFinish(witness, body, request.id)
+
+        // the follow bonus (FT-43) counts a battle its mutual pairs both played to the end
+        for (const room of listRooms()) {
+            if (room.inBattle && room.lastRoundViewerIds.includes(viewerId) && !room.roundEndedViewerIds.includes(viewerId)) {
+                noteFollowBonusFinishSync(room.followBonus, viewerId)
+            }
+        }
+        noteRoundEnded(viewerId)
+        coopWitnessRoundEnded(viewerId)
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -463,11 +528,15 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as { viewer_id: number, category?: number, room_number?: string | number }
         const viewerId = request.viewer.viewerId
 
-        noteRoundEnded(viewerId)
         const room = body.room_number === undefined ? undefined : getRoom(String(body.room_number))
         const category = Number(body.category ?? room?.category ?? 0)
         const single = await runSingleBattleQuestRoute(fastify, request, "abort", { ...body, category })
-        if (single.statusCode !== 200) request.log.warn(failureSummary(single), "co-op abort: single_battle_quest/abort failed")
+        if (single.statusCode !== 200 || !single.body?.data) {
+            request.log.warn(failureSummary(single), "co-op abort: single_battle_quest/abort failed")
+            return reply.status(single.statusCode === 200 ? 500 : single.statusCode).send(single.body)
+        }
+        noteRoundEnded(viewerId)
+        coopWitnessRoundEnded(viewerId)
 
         const dataHeaders = generateDataHeaders({ viewer_id: viewerId })
         reply.header("content-type", "application/x-msgpack")
@@ -556,7 +625,17 @@ const routes = async (fastify: FastifyInstance) => {
 
         // raising_state tells the client what to do (selectRoomSuccessHandler):
         // 1 = join, 3 = full, 4 = battle already started, 9 = disbanded
-        const room = requestedRoom(body)
+        const found = requestedRoom(body)
+        const room = inCurrentBalance(found) ? found : undefined
+
+        // a restricted player (SEC-18) can't join a stranger's room: answered as not playable, with no word about why
+        if (room && joinRefusedFor(room, viewerId)) {
+            reply.header("content-type", "application/x-msgpack")
+            return reply.status(200).send({
+                "data_headers": generateDataHeaders({ viewer_id: viewerId, result_code: COOP_NOT_PLAYABLE }),
+                "data": []
+            })
+        }
 
         // Return to Room on the result screen (accepted_type 6, host and guests alike): a player of the room's last
         // battle opens its lobby again for the next round, until the host's game disbands it (60 s, master data
@@ -570,11 +649,26 @@ const routes = async (fastify: FastifyInstance) => {
         }
 
         const status = room ? coopSocketServer?.joinStatus(room.roomNumber) ?? "open" : null
+        // a room recruited for follows only (FT-43) turns away anyone else who found it in the room list or through an
+        // invitation ("Only players who follow the host can join this room"); a typed room number or a link the host
+        // gave out still lets them in
+        const notFollowHost = room !== undefined && [ACCEPTED_TYPE.RoomList, ACCEPTED_TYPE.Attention].includes(Number(body.accepted_type))
+            && followsOnlyRoomClosedTo(room, viewerId)
         const raisingState = status === null ? RAISING_STATE.Disbanded
             : status === "battle" ? RAISING_STATE.Battle
             : status === "filled" ? RAISING_STATE.Filled
+            : notFollowHost ? RAISING_STATE.NotFollowHost
             : RAISING_STATE.Ready
-        if (room && raisingState === RAISING_STATE.Ready) admit(room, viewerId, request.viewer.playerId)
+        if (room && raisingState === RAISING_STATE.Ready) {
+            admit(room, viewerId, request.viewer.playerId)
+            if (Number(body.accepted_type) === ACCEPTED_TYPE.Attention && viewerId !== room.hostViewerId && wasAttentionDelivered(room, viewerId)) {
+                room.attentionMembers ??= new Set()
+                room.attentionMembers.add(viewerId)
+            } else if (Number(body.accepted_type) !== ACCEPTED_TYPE.Rejoin) {
+                // coming back by the room list, a number or a link carries no invitation (FT-60), so it costs stamina again
+                room.attentionMembers?.delete(viewerId)
+            }
+        }
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -605,9 +699,14 @@ const routes = async (fastify: FastifyInstance) => {
         // by an AI companion), not the player's own
         const rooms = listRooms()
             .filter(room => room.hostViewerId !== Number(viewerId))
+            .filter(room => inCurrentBalance(room))
             .filter(room => body.category_id === undefined || room.category === Number(body.category_id))
             .filter(room => !room.inBattle && (coopSocketServer?.joinStatus(room.roomNumber) ?? "open") === "open")
-            .map(room => roomInformation(room))
+            // a room recruited for follows only is listed to them alone (FT-43)
+            .filter(room => !followsOnlyRoomClosedTo(room, viewerId))
+            // a restricted host's room is listed to their friends only (SEC-18)
+            .filter(room => !roomHiddenFrom(room, viewerId))
+            .map(room => roomInformation(room, viewerId))
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -628,7 +727,8 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as { viewer_id: number, access_token: string }
         const viewerId = request.viewer.viewerId
 
-        const room = getRoomByAccessToken(String(body.access_token))
+        const found = getRoomByAccessToken(String(body.access_token))
+        const room = inCurrentBalance(found) ? found : undefined
         const establisher = establisherOf(room ? coopSocketServer?.hostMate(room.roomNumber) ?? null : null)
 
         reply.header("content-type", "application/x-msgpack")
@@ -645,7 +745,7 @@ const routes = async (fastify: FastifyInstance) => {
                 "establisher_rank": establisher.rank,
                 "establisher_character": establisher.characterId,
                 "establisher_character_evolution_img_level": establisher.evolutionLevel,
-                "establisher_follow": FOLLOW_STATE_NONE,
+                "establisher_follow": establisherFollowSync(viewerId, room.hostViewerId),
                 "host_entry_time": room.createdAt
             } : { "room_exists": false }
         })
@@ -657,14 +757,15 @@ const routes = async (fastify: FastifyInstance) => {
         const body = request.body as { viewer_id: number, room_number?: string | number }
         const viewerId = request.viewer.viewerId
 
-        const room = getRoom(normaliseRoomNumber(String(body.room_number ?? "")))
+        const found = getRoom(normaliseRoomNumber(String(body.room_number ?? "")))
+        const room = inCurrentBalance(found) ? found : undefined
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
             "data_headers": generateDataHeaders({ viewer_id: viewerId }),
             "data": room ? {
                 "room_exists": true,
                 "category_id": room.category,
-                "establisher_follow": FOLLOW_STATE_NONE,
+                "establisher_follow": establisherFollowSync(viewerId, room.hostViewerId),
                 "quest_id": room.questId,
                 "room_number": room.roomNumber
             } : { "room_exists": false }

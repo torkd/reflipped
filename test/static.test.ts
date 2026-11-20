@@ -57,10 +57,10 @@ test("static mounts don't escape their root", async () => {
 })
 
 test("the news page the game's urlHomeNews points at is served", async () => {
-    const response = await fastify.inject({ method: "GET", url: "/news" })
+    const response = await fastify.inject({ method: "GET", url: "/game/news" })
     assert.equal(response.statusCode, 200)
     assert.match(response.headers["content-type"] as string, /text\/html/)
-    assert.match(response.body, /Reflipped news/)
+    assert.match(response.body, /<h1 class="page-title">News<\/h1>/)
     assert.match(response.body, /2025-01-03 12:00:00 UTC/)
 })
 
@@ -82,5 +82,7 @@ test("the game server has no admin routes; they are only on the admin server", a
         assert.equal(response.statusCode, 404, `${method} ${url} is reachable on the game server`)
     }
     assert.equal((await admin.inject({ method: "GET", url: "/api/catalog" })).statusCode, 200)
-    assert.equal((await admin.inject({ method: "GET", url: "/news" })).statusCode, 404, "news is a game page")
+    // /news is the admin News page there, and no page of the game server: the news page is /game/news
+    assert.equal((await admin.inject({ method: "GET", url: "/news" })).statusCode, 200, "the admin News page")
+    assert.equal((await fastify.inject({ method: "GET", url: "/news" })).statusCode, 404, "the game server has no /news")
 })

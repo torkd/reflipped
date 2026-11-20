@@ -1,10 +1,13 @@
 // Dev tool entry: `npm run i18n:glossary`, `npm run i18n:limits`, `npm run i18n:check`. See docs/i18n.md.
-// Reads the master dumps of `scripts/extract_master.py` (JSON per table); the game text itself is never committed.
+// Checks CDN sources directly; glossary/limits and --master use extract_master.py JSON dumps.
 
+import { CdnIndex, regionCdnDir } from "../cdnIndex"
+import { decodeOrderedMap } from "../orderedmap"
+import { tableCells } from "../../i18n/cells"
 import fs from "node:fs"
 import path from "node:path"
 import { checkTranslation, type Issue } from "./checker"
-import { conflicts, dedupe, minePairs, PAIR_SPECS, type GlossaryEntry } from "./glossary"
+import { conflicts, dedupe, minePairs, PAIR_SPECS, preserveGlossaryReferences, type GlossaryEntry } from "./glossary"
 import { columnLimits } from "./stats"
 import { masterRows, rowKey, sha256 } from "./text"
 
@@ -39,9 +42,11 @@ function glossary(opts: Map<string, string>): void {
     }
     const multi = conflicts(all)
     console.log(`${all.length} entries, ${multi.size} Japanese terms with more than one English rendering`)
+    // Keep references only for identical source entries; refuse a malformed existing file.
+    const referenced = fs.existsSync(out) ? preserveGlossaryReferences(all, readJson(out)) : all
     // one entry per line keeps the file small and its diffs readable
     fs.mkdirSync(path.dirname(out), { recursive: true })
-    fs.writeFileSync(out, `{"version":1,"lang":"en","entries":[\n${all.map((e) => JSON.stringify(e)).join(",\n")}\n]}\n`)
+    fs.writeFileSync(out, `{"version":1,"lang":"en","entries":[\n${referenced.map((e) => JSON.stringify(e)).join(",\n")}\n]}\n`)
 }
 
 function limits(opts: Map<string, string>): void {
@@ -59,9 +64,36 @@ function limits(opts: Map<string, string>): void {
     console.log(`limits for ${Object.keys(tables).length} tables written to ${out}`)
 }
 
+interface TranslationFile { file: string; table: string; scenario: boolean }
+
+function translationFiles(dir: string): TranslationFile[] {
+    const files: TranslationFile[] = []
+    const masters = (root: string) => {
+        if (!fs.existsSync(root)) return
+        for (const item of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name)))
+            if (item.isFile() && item.name.endsWith(".json"))
+                files.push({ file: path.join(root, item.name), table: item.name.slice(0, -5).replace(/__/g, "/"), scenario: false })
+    }
+    const stories = (root: string, rel = "") => {
+        if (!fs.existsSync(root)) return
+        for (const item of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+            const name = rel ? `${rel}/${item.name}` : item.name
+            if (item.isDirectory()) stories(path.join(root, item.name), name)
+            else if (item.isFile() && item.name.endsWith(".json"))
+                files.push({ file: path.join(root, item.name), table: `story/${name.slice(0, -5)}`, scenario: true })
+        }
+    }
+    if (path.basename(path.resolve(dir)) === "story") stories(dir)
+    else if (fs.existsSync(path.join(dir, "master")) || fs.existsSync(path.join(dir, "story"))) {
+        masters(path.join(dir, "master"))
+        stories(path.join(dir, "story"))
+    } else masters(dir) // Preserve --dir pointing at a flat master translation folder.
+    return files
+}
+
 function check(opts: Map<string, string>, flags: Set<string>): number {
     const lang = opts.get("lang") ?? "en"
-    const dir = opts.get("dir") ?? path.join("i18n", lang, "master")
+    const dir = opts.get("dir") ?? path.join("i18n", lang)
     const master = opts.get("master")
     const limitsFile = opts.get("limits") ?? "i18n/limits.json"
     const glossaryFile = opts.get("glossary") ?? `i18n/glossary/${lang}.json`
@@ -73,26 +105,53 @@ function check(opts: Map<string, string>, flags: Set<string>): number {
         console.log(`no translation files in ${dir}`)
         return 0
     }
+    const files = translationFiles(dir)
+    const index = !master && files.length > 0
+        ? CdnIndex.build(regionCdnDir(opts.get("region") ?? "en", opts.get("cdn")), { maxVersion: opts.get("max-version") })
+        : undefined
     let errors = 0
     let warnings = 0
     let checked = 0
-    for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
-        const table = file.slice(0, -5).replace(/__/g, "/")
-        const entries: Record<string, Record<string, { srcHash?: string; text: string }>> = readJson(path.join(dir, file))
+    for (const { file, table, scenario } of files) {
+        const entries: Record<string, Record<string, { srcHash?: string; text: string; placeholdersFrom?: unknown }>> = readJson(file)
         const source = new Map<string, string[]>()
-        if (master && fs.existsSync(dumpPath(master, table)))
-            for (const row of masterRows(readJson(dumpPath(master, table)))) source.set(rowKey(row.keyPath), row.cells)
+        if (master && fs.existsSync(dumpPath(master, table))) {
+            const dump = readJson(dumpPath(master, table))
+            // Python scenario dumps retain the root wrapper; translation rows omit it.
+            const unwrapped = scenario && dump !== null && !Array.isArray(dump) && typeof dump === "object"
+                && Object.keys(dump).length === 1 && Object.prototype.hasOwnProperty.call(dump, table) ? dump[table] : dump
+            for (const row of masterRows(unwrapped)) source.set(rowKey(row.keyPath), row.cells)
+        } else if (index) {
+            const data = index.readMaster(table)
+            if (data) for (const cell of tableCells(decodeOrderedMap(data), table)) {
+                const row = source.get(cell.row) ?? []
+                row[cell.col] = cell.text
+                source.set(cell.row, row)
+            }
+        }
         for (const [key, cols] of Object.entries(entries)) {
             for (const [col, entry] of Object.entries(cols)) {
                 const src = source.get(key)?.[Number(col)]
                 const issues: Issue[] = []
-                if (master && src === undefined) issues.push({ severity: "warning", rule: "source", message: "row/column not found in the source dump" })
+                if (src === undefined) issues.push({ severity: "warning", rule: "source", message: "row/column not found in the source" })
                 else if (src !== undefined && entry.srcHash !== undefined && entry.srcHash !== sha256(src))
                     issues.push({ severity: "warning", rule: "stale", message: "srcHash does not match the current source cell" })
+                let placeholderSource: string | undefined
+                if (entry.placeholdersFrom !== undefined) {
+                    const row = source.get(key)
+                    placeholderSource = Number.isInteger(entry.placeholdersFrom) ? row?.[entry.placeholdersFrom as number] : undefined
+                    if (placeholderSource === undefined) {
+                        if (row) issues.push({ severity: "error", rule: "placeholdersFrom", message: "placeholdersFrom is not a column of this row" })
+                        // without a source row the other column is unknown, so the placeholders aren't compared
+                        placeholderSource = entry.text
+                    }
+                }
                 issues.push(
                     ...checkTranslation(src ?? "", entry.text, {
+                        kind: scenario ? "scenario" : "text",
                         maxLength: limitTables[table]?.[col],
                         glossary: terms,
+                        placeholderSource,
                     }),
                 )
                 checked++
@@ -111,8 +170,14 @@ function check(opts: Map<string, string>, flags: Set<string>): number {
 const { cmd, opts, flags } = parseArgs(process.argv.slice(2))
 if (cmd === "glossary") glossary(opts)
 else if (cmd === "limits") limits(opts)
-else if (cmd === "check") process.exitCode = check(opts, flags)
+else if (cmd === "check") {
+    try { process.exitCode = check(opts, flags) }
+    catch (error) {
+        console.error(`i18n:check: ${(error as Error).message}`)
+        process.exitCode = 2
+    }
+}
 else {
-    console.error("usage: cli.ts glossary|limits|check [--master <dump dir>] [--out file] [--lang en] [--dir dir] [--strict] [--quiet]")
+    console.error("usage: cli.ts glossary|limits|check [--master <dump dir> | --cdn dir] [--region en] [--max-version X] [--out file] [--lang en] [--dir dir] [--strict] [--quiet]")
     process.exitCode = 2
 }

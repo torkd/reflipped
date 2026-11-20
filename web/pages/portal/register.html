@@ -1,0 +1,21 @@
+        <header class="page-header">
+            <h1 class="page-title">Create an account</h1>
+            <p class="page-subtitle">One account per player on this Reflipped server.</p>
+        </header>
+{{notice}}
+        <form class="card" method="post" action="{{action}}">
+            <label class="field">Username
+                <input class="input" name="username" autocomplete="username" required minlength="{{usernameMin}}" maxlength="{{usernameMax}}" pattern="[A-Za-z0-9_.\-]+" autofocus>
+                <span>{{usernameMin}} to {{usernameMax}} letters, digits, dots, dashes or underscores.</span>
+            </label>
+            <label class="field">Password
+                <input class="input" name="password" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+                <span>At least {{passwordMin}} characters. A few unrelated words make a good one.</span>
+            </label>
+            <label class="field">Password again
+                <input class="input" name="confirm" type="password" autocomplete="new-password" required maxlength="{{passwordMax}}">
+            </label>
+            <button type="submit" class="btn-primary">Create account</button>
+        </form>
+        <p class="card-text">Already have one? <a class="text-primary font-semibold" href="{{loginUrl}}">Log in</a>.</p>
+{{guestLink}}

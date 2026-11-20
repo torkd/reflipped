@@ -12,10 +12,12 @@
 import { closeSync, existsSync, fstatSync, openSync, readdirSync, readSync, statSync } from "fs";
 import { createHash } from "crypto";
 import path from "path";
+import { cdnDir as defaultCdnDir } from "./paths";
 import { inflateRawSync } from "zlib";
 
 export const ASSET_SALT = "K6R9T9Hz22OpeIGEWB0ui6c6PYFQnJGy"
-const ARCHIVE_RE = /^s?_?asset-(\d+\.\d+\.\d+)-(?:(\d+\.\d+\.\d+)-)?\d+-[0-9a-f]+\.zip$/
+// global archives are `asset-<version>-…`, the Chinese version's `pinball-<version>-…` (same layout and member names)
+const ARCHIVE_RE = /^(?:s?_?asset|pinball)-(\d+\.\d+\.\d+)-(?:(\d+\.\d+\.\d+)-)?\d+-[0-9a-f]+\.zip$/
 
 /** The archive member name of an asset path. */
 export function digestPath(assetPath: string): string {
@@ -78,8 +80,8 @@ export interface CdnIndexOptions {
 }
 
 /** The CDN folder of a region: `CDN_DIR` (default `.cdn`, relative to the working directory) + region. */
-export function regionCdnDir(region = "en", cdnDir = process.env.CDN_DIR || ".cdn"): string {
-    const root = path.resolve(cdnDir)
+export function regionCdnDir(region = "en", cdnDir?: string): string {
+    const root = cdnDir === undefined ? defaultCdnDir() : path.resolve(cdnDir)
     const sub = path.join(root, region)
     return existsSync(sub) ? sub : root
 }
@@ -88,6 +90,7 @@ export class CdnIndex {
     readonly root: string
     private readonly entries = new Map<string, CdnEntry>()
     private archiveCount = 0
+    private latest: AssetVersion = [0, 0, 0]
 
     private constructor(root: string) {
         this.root = root
@@ -114,6 +117,7 @@ export class CdnIndex {
                     continue
                 }
                 index.archiveCount++
+                if (compareAssetVersions(version, index.latest) > 0) index.latest = version
                 for (const m of members) {
                     const known = index.entries.get(m.name)
                     if (known && compareAssetVersions(version, known.version) <= 0) continue
@@ -130,6 +134,11 @@ export class CdnIndex {
     /** Number of distinct members and of archives read. */
     get stats(): { members: number, archives: number } {
         return { members: this.entries.size, archives: this.archiveCount }
+    }
+
+    /** The newest asset version among the archives read (0.0.0 when there are none). */
+    get latestVersion(): AssetVersion {
+        return this.latest
     }
 
     /** The newest entry of an asset path (e.g. `master/item/item.orderedmap`). */
@@ -161,6 +170,11 @@ export class CdnIndex {
     /** A master table or scenario by name (`item/item`, `/string/ui_string`, `story/…/scenario`). */
     readMaster(table: string): Buffer | undefined {
         return this.read(masterAssetPath(table))
+    }
+
+    /** Any asset by its path (as `read`; the name the schedule overlay's sources share with the data pack). */
+    readAsset(assetPath: string): Buffer | undefined {
+        return this.read(assetPath)
     }
 }
 
@@ -226,6 +240,11 @@ export function readCentralDirectory(file: string): ZipMember[] {
     } finally {
         closeSync(fd)
     }
+}
+
+/** Reads one already-indexed member of any local layer archive (mods/translation/schedule). */
+export function readArchiveMember(archive: string, entry: ZipMember): Buffer {
+    return readEntry({ ...entry, member: entry.name, archive, version: [0, 0, 0] })
 }
 
 function readEntry(e: CdnEntry): Buffer {

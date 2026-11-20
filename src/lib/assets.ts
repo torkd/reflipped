@@ -1,3 +1,6 @@
+import { BASELINE_CHARACTER_GACHA_ID } from "./scheduleGacha";
+import { scheduledContentEnabled } from "./eventSchedule";
+import { contentDate, isContentPeriodOpen } from "./eventSchedule";
 import adventEventQuests from "../../assets/advent_event_quest.json";
 import bossBattleQuests from "../../assets/boss_battle_quest.json";
 import boxGacha from "../../assets/box_gacha.json";
@@ -12,8 +15,10 @@ import worldStoryEventBossBattleQuests from "../../assets/world_story_event_boss
 import worldStoryEventQuests from "../../assets/world_story_event_quest.json";
 import carnivalEventQuests from "../../assets/carnival_event_quest.json";
 import challengeDungeonEventQuests from "../../assets/challenge_dungeon_event_quest.json";
+import practiceQuests from "../../assets/practice_quest.json";
 import expertSingleEventQuests from "../../assets/expert_single_event_quest.json";
 import raidEventQuests from "../../assets/raid_event_quest.json";
+import hardMultiEventQuests from "../../assets/hard_multi_event_quest.json";
 import rankingEventSingleQuests from "../../assets/ranking_event_single_quest.json";
 import rushEventQuests from "../../assets/rush_event_quest.json";
 import scoreAttackEventQuests from "../../assets/score_attack_event_quest.json";
@@ -25,6 +30,9 @@ import exBoost from "../../assets/ex_boost.json";
 import exQuests from "../../assets/ex_quest.json";
 import exStatus from "../../assets/ex_status.json";
 import gachas from "../../assets/gacha.json";
+import ticketGachas from "../../assets/ticket_gacha.json";
+import starHeroesGachas from "../../assets/star_heroes_gacha.json";
+import comebackGachas from "../../assets/comeback_gacha.json";
 import mainQuests from "../../assets/main_quest.json";
 import manaNodes from "../../assets/mana_node.json";
 import rareScoreRewards from "../../assets/rare_score_reward.json";
@@ -36,6 +44,7 @@ import eventItemShopItems from "../../assets/event_item_shop.json";
 import eventItemShopIdMap from "../../assets/event_item_shop_id_map.json";
 import generalShopItems from "../../assets/general_shop.json";
 import starGrainShopItems from "../../assets/star_grain_shop.json";
+import specialPackShopItems from "../../assets/special_pack_shop.json";
 import treasureShopItems from "../../assets/treasure_shop.json";
 import rushEventQuestFolders from "../../assets/rush_event_quest_folder.json"
 import playerRankPoints from "../../assets/player_rank.json"
@@ -103,6 +112,7 @@ function getQuestSync(
         clearReward: quest.clearRewardId === undefined ? undefined : getClearRewardSync(quest.clearRewardId),
         sPlusReward: quest.sPlusRewardId === undefined ? undefined : getClearRewardSync(quest.sPlusRewardId),
         scoreRewardGroupId: quest.scoreRewardGroup,
+        scoreRewardRolls: quest.scoreRewardRolls ?? undefined,
         scoreRewardGroup: quest.scoreRewardGroup === undefined ? undefined : getScoreRewardGroup(quest.scoreRewardGroup),
         bRankTime: quest.bRankTime,
         aRankTime: quest.aRankTime,
@@ -113,9 +123,21 @@ function getQuestSync(
         manaReward: quest.manaReward,
         poolExpReward: quest.poolExpReward,
         fixedParty: quest.fixedParty,
+        questRankId: quest.questRankId,
         rushEventId: quest.rushEventId,
         rushEventFolderId: quest.rushEventFolderId,
-        rushEventRound: quest.rushEventRound
+        rushEventRound: quest.rushEventRound,
+        loseBattle: quest.loseBattle,
+        enemyElement: quest.enemyElement,
+        eventId: quest.eventId,
+        challengePointId: quest.challengePointId,
+        needQuest: quest.needQuest,
+        useItems: quest.useItems,
+        folderId: quest.folderId,
+        timeLimitMs: quest.timeLimitMs,
+        difficultyScore: quest.difficultyScore,
+        staminaCost: quest.staminaCost,
+        enemyLevel: quest.enemyLevel
     } as BattleQuest : {
         name: quest.name,
         clearReward: quest.clearRewardId === undefined ? undefined : getClearRewardSync(quest.clearRewardId),
@@ -251,12 +273,19 @@ export function getQuestFromCategorySync(
             return getQuestSync((carnivalEventQuests as RawQuests), questId)
         case QuestCategory.RAID_EVENT:
             return getQuestSync((raidEventQuests as RawQuests), questId)
+        // the co-op boss events (FT-23, src/lib/hardMultiEvent.ts)
+        case QuestCategory.HARD_MULTI_EVENT:
+            return getQuestSync((hardMultiEventQuests as RawQuests), questId)
         case QuestCategory.RUSH_EVENT:
             return getQuestSync((rushEventQuests as RawQuests), questId)
         case QuestCategory.SOLO_TIME_ATTACK_EVENT:
             return getQuestSync((soloTimeAttackEventQuests as RawQuests), questId)
         case QuestCategory.SCORE_ATTACK_EVENT:
             return getQuestSync((scoreAttackEventQuests as RawQuests), questId)
+        // Practice Combat (FT-17): the Lignoid fights. Skill previews (SKILL_PREVIEW) never reach the server: the client
+        // plays them from a replay log and leaves without a start or a finish (finishPlayingFromSkillPreview).
+        case QuestCategory.PRACTICE:
+            return getQuestSync((practiceQuests as RawQuests), questId)
         default:
             return null
     }
@@ -379,16 +408,20 @@ export function getBoxGachaSync(
 }
 
 /**
- * Gets the data for a gacha.
- * 
+ * Gets the data for a gacha: a bead portal (`assets/gacha.json`) or a ticket portal (`assets/ticket_gacha.json`: those
+ * drawn only with their own ticket, such as the 4 & 5-Star Exclusive Portal) or a Star Heroes portal
+ * (`assets/star_heroes_gacha.json`: one 10-pull per account) or a Welcome Back Portal (`assets/comeback_gacha.json`,
+ * open only to a returning player, src/lib/comebackGacha.ts). Those are kept apart so that what lists portals (open portals, Start Dash, co-op companions, the Calendar) still sees only the bead ones.
+ *
  * @param id The ID of the gacha.
  * @returns The gacha's data, or null.
  */
 export function getGachaSync(
     id: string | number
 ): Gacha | null {
-    const data = (gachas as Gachas)[String(id)];
-    
+    const data = (gachas as Gachas)[String(id)] ?? (ticketGachas as unknown as Gachas)[String(id)]
+        ?? (starHeroesGachas as unknown as Gachas)[String(id)] ?? (comebackGachas as unknown as Gachas)[String(id)];
+
     return data ?? null
 }
 
@@ -432,10 +465,32 @@ export function clampEquipmentLevel(
 export function getOpenGachaIdsSync(
     date: Date
 ): string[] {
-    const now = date.getTime()
-    return Object.entries(gachas as Gachas)
-        .filter(([, gacha]) => masterDate(gacha.startDate).getTime() <= now && now <= masterDate(gacha.endDate).getTime())
+    const open = Object.entries(gachas as Gachas)
+        .filter(([, gacha]) => isContentPeriodOpen(masterDate(gacha.startDate).getTime(), masterDate(gacha.endDate).getTime(), date))
         .map(([id]) => id)
+    if (isBaselineGachaOpen(date) && !open.includes(String(BASELINE_CHARACTER_GACHA_ID))) open.push(String(BASELINE_CHARACTER_GACHA_ID))
+    return open
+}
+
+/**
+ * The baseline portal (src/lib/scheduleGacha.ts) stays open from its start for as long as events are scheduled: the
+ * client's projected master gets the same end (src/lib/scheduleOverlay.ts).
+ */
+function isBaselineGachaOpen(date: Date): boolean {
+    return scheduledContentEnabled()
+        && contentDate(date).getTime() >= masterDate((gachas as Gachas)[String(BASELINE_CHARACTER_GACHA_ID)].startDate).getTime()
+}
+
+/**
+ * Whether any portal (bead, ticket or Star Heroes) is open at a date: within its start and end dates, as the client
+ * reads them from its projected master, or the baseline portal while events are scheduled. A portal past its end that
+ * a ticket still opens is `src/lib/gachaDraws.ts`'s `gachaDrawPeriodSync`.
+ */
+export function isGachaOpenSync(gachaId: string | number, date: Date): boolean {
+    const gacha = getGachaSync(gachaId)
+    if (gacha === null) return false
+    if (String(gachaId) === String(BASELINE_CHARACTER_GACHA_ID) && isBaselineGachaOpen(date)) return true
+    return isContentPeriodOpen(masterDate(gacha.startDate).getTime(), masterDate(gacha.endDate).getTime(), date)
 }
 
 /** The first start date and the last end date in the gacha table, in UTC ("YYYY-MM-DD HH:MM:SS"), as the admin site takes the clock. */
@@ -517,6 +572,9 @@ export function getGenericShopItemsSync(
             return generalShopItems as ShopItems
         case ShopType.STAR_GRAIN:
             return starGrainShopItems as ShopItems
+        // the Bundle Marketplace (FT-89, shop/special_pack_shop): bundles for beads
+        case ShopType.SPECIAL_PACK:
+            return specialPackShopItems as ShopItems
     }
     return null
 }
@@ -568,6 +626,8 @@ export function getShopItemSync(
             return (generalShopItems as ShopItems)[String(itemId)] ?? null
         case ShopType.STAR_GRAIN:
             return (starGrainShopItems as ShopItems)[String(itemId)] ?? null
+        case ShopType.SPECIAL_PACK:
+            return (specialPackShopItems as ShopItems)[String(itemId)] ?? null
         case ShopType.BOSS_COIN:
             const category = (bossCoinShopItemCategoryMap as Record<string, number>)[itemId]
             if (category === undefined) return null;

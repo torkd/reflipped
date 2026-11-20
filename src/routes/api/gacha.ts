@@ -1,7 +1,12 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import { isGachaCampaignOpen } from "../../lib/gachaCampaigns";
 import { getPlayerGachaCampaignSync, getPlayerGachaInfoListSync, getPlayerGachaInfoSync, getPlayerItemSync, getPlayerSync, insertPlayerGachaCampaignSync, insertPlayerGachaInfoSync, updatePlayerGachaCampaignSync, updatePlayerGachaInfoSync, updatePlayerItemSync, updatePlayerSync } from "../../data/wdfpData";
 import { generateDataHeaders, getServerDate } from "../../utils";
 import { drawGachaSync, rewardPlayerGachaDrawResultSync } from "../../lib/gacha";
+import { campaignPulls, ticketDraw } from "../../lib/gachaDraws";
+import { comebackGachaPeriodSync, isComebackGacha, serializeComebackCampaign } from "../../lib/comebackGacha";
+import { payBeads, starCrumbForPull } from "../../lib/beads";
+import { clampCount, playerLimits } from "../../lib/limits";
 import { getGachaCampaignIdSync, getGachaSync, isInGachaPoolSync } from "../../lib/assets";
 import { GachaType } from "../../lib/types";
 import { serializeGachaCampaign } from "../../data/utils";
@@ -11,6 +16,10 @@ import { givePlayerEquipmentSync } from "../../lib/equipment";
 import { gameBody, integer } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
 import { collectionUpdatesSync, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { gachaDrawPeriodSync, isOwnTicketDraw } from "../../lib/gachaDraws";
+
+/** gacha/exec on a portal outside its period (the client's GachaInvalidPeriodError; 7004 shows the same dialog). */
+const GACHA_OUT_OF_PERIOD = 1351
 
 interface ExecBody {
     api_count: number,
@@ -43,21 +52,21 @@ enum GachaPaymentType {
     CAMPAIGN
 }
 
+/** The client's GachaDrawKind (FT-14; src/lib/gachaDraws.ts has what each costs). */
 enum GachaExecType {
-    EMPTY,
-    VMONEY_SINGLE,
-    VMONEY_MULTI,
-    UNKNOWN_1,
-    UNKNOWN_2,
-    DAILY_SINGLE,
-    UNKNOWN_3,
-    CAMPAIGN_SINGLE,
-    CAMPAIGN_MULTI,
-    MULTI_TICKET,
-    SINGLE_TICKET,
-    UNKNOWN_4,
-    UNKNOWN_5,
-    MULTI_WEAPON_TICKET
+    VMONEY_SINGLE = 1,
+    VMONEY_MULTI = 2,
+    OWN_TICKET_SINGLE = 3,
+    OWN_TICKET_MULTI = 4,
+    DAILY_SINGLE = 5,
+    TEN_TIMES_PER_ACCOUNT = 7,
+    CAMPAIGN = 8,
+    MULTI_TICKET = 9,
+    SINGLE_TICKET = 10,
+    CAMPAIGN_OTHER = 11,
+    SINGLE_WEAPON_TICKET = 12,
+    MULTI_WEAPON_TICKET = 13,
+    RARE4_TICKET = 20
 }
 
 const exchangeRequiredPoints = 250
@@ -88,6 +97,16 @@ function collectionMissionFields(playerId: number): Record<string, unknown> {
 }
 
 const routes = async (fastify: FastifyInstance) => {
+    // Sent without waiting for the reply after the dialog saying a closed portal's leftover exchange points became Star
+    // Specks. The server never converts them, so the client never shows that dialog; there is nothing to record.
+    fastify.post("/shown_converted", { schema: gameBody({ gacha_id: integer }) }, (request: FastifyRequest, reply: FastifyReply) => {
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: request.viewer.viewerId }),
+            "data": []
+        })
+    })
+
     fastify.post("/exchange_equipment", { schema: exchangeEquipmentSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as ExchangeEquipmentBody
 
@@ -252,6 +271,37 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "Gacha doesn't exist."
         })
         const isCharacterGacha = gachaData.type == GachaType.CHARACTER
+        // a ticket portal (assets/ticket_gacha.json, the client's GachaPageKind 2 to 4: TicketOnly, OneTimeTicketOnly,
+        // TenTimesTicketOnly) takes only its tickets: it has no bead cost, so a bead or campaign draw there would be free
+        if (gachaData.paymentType >= 2 && gachaData.paymentType <= 4 && paymentType !== GachaPaymentType.TICKET) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "This portal takes only its ticket."
+        })
+        // a Star Heroes portal (assets/star_heroes_gacha.json, the client's GachaPageKind.TenTimesPerAccount) has only its
+        // once-per-account 10-pull, and that draw kind only it
+        const tenTimesPerAccount = gachaData.paymentType === 1
+        if (tenTimesPerAccount !== (type === GachaExecType.TEN_TIMES_PER_ACCOUNT)) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "This draw isn't available."
+        })
+        // a Welcome Back Portal (src/lib/comebackGacha.ts) opens only to a returning player, for a few days
+        const comebackPeriod = isComebackGacha(gachaId) ? comebackGachaPeriodSync(playerId, getServerDate()) : null
+        if (isComebackGacha(gachaId) && comebackPeriod?.gachaId !== gachaId) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "This portal isn't open to the player."
+        })
+
+        // the portal's period, as the client shows it from its (projected) master (FT-52): past its end only its own
+        // tickets still draw, until their expiry. A Welcome Back Portal's period is the player's own (checked above): the
+        // client ignores its master dates
+        const period = comebackPeriod !== null ? "open" : gachaDrawPeriodSync(gachaId, getServerDate())
+        if (period === "closed" || (period === "own-ticket" && !(paymentType === GachaPaymentType.TICKET && isOwnTicketDraw(type)))) {
+            reply.header("content-type", "application/x-msgpack")
+            return reply.status(200).send({
+                "data_headers": generateDataHeaders({ viewer_id: viewerId, result_code: GACHA_OUT_OF_PERIOD }),
+                "data": []
+            })
+        }
 
         // get player gacha data
         let playerGachaData = getPlayerGachaInfoSync(playerId, gachaId)
@@ -270,38 +320,75 @@ const routes = async (fastify: FastifyInstance) => {
         let gachaCampaigns: UserGachaCampaign[] = []
 
         let items: Record<number, number> = {}
+        // every pull at least 4 stars (the 4 & 5-Star Portal Ticket)
+        let guaranteedDraws = false
+        // the daily discounted pull was used: only it spends the day's one
+        let usedDailyPull = false
+        // Star Slivers for the beads a pull cost (FT-61, src/lib/beads.ts); tickets and free pulls give none
+        let starCrumbGained = 0
 
         switch (paymentType) {
-            case GachaPaymentType.FREE_VMONEY: {
-                const isMulti = type === GachaExecType.VMONEY_MULTI
-                const cost = (isMulti ? gachaData.multiCost : gachaData.singleCost)
-                const overflow = cost > playerFreeVmoney ? cost - playerFreeVmoney : 0
-                playerFreeVmoney = overflow > 0 ? 0 : playerFreeVmoney - cost
-                playerPaidVmoney = overflow > 0 ? playerPaidVmoney - overflow : playerPaidVmoney
-                
-                pullCount = isMulti ? 10 : 1
-                break;
-            }
-
-            // paid daily summon
+            // beads, free ones first then paid, for every bead draw (src/lib/beads.ts): the daily discounted pull (5) took
+            // paid beads only in the original (payment type 2); this server sells none, so it takes any beads, whichever
+            // payment type the client sends (the AIR shell's any-beads-portal patch sends 1, the original app 2)
+            case GachaPaymentType.FREE_VMONEY:
             case GachaPaymentType.VMONEY: {
-                if (!playerGachaData.isDailyFirst) return reply.status(400).send({
+                let cost: number
+                if (type === GachaExecType.VMONEY_SINGLE) {
+                    cost = gachaData.singleCost
+                    pullCount = 1
+                } else if (type === GachaExecType.VMONEY_MULTI) {
+                    cost = gachaData.multiCost
+                    pullCount = 10
+                } else if (type === GachaExecType.DAILY_SINGLE) {
+                    // a portal without one (the Welcome Back Portals, GachaPageKind.WithoutDaily) would draw it for free
+                    if (!(gachaData.discountCost > 0)) return reply.status(400).send({
+                        "error": "Bad Request",
+                        "message": "This portal has no daily discounted pull."
+                    })
+                    if (!playerGachaData.isDailyFirst) return reply.status(400).send({
+                        "error": "Bad Request",
+                        "message": "Already did the daily discounted pull."
+                    })
+                    cost = gachaData.discountCost
+                    pullCount = 1
+                    usedDailyPull = true
+                } else if (type === GachaExecType.TEN_TIMES_PER_ACCOUNT) {
+                    // the Star Heroes portals' 10-pull (one guaranteed 5-star pull, from the portal's guarantee): once per
+                    // account, for 1500 beads that took paid ones only in the original; here any beads, free ones first,
+                    // like the daily discounted pull (FT-46; the AIR shell's any-beads-portal patch sends payment type 1)
+                    if (!playerGachaData.isAccountFirst) return reply.status(400).send({
+                        "error": "Bad Request",
+                        "message": "Already did this portal's 10-pull."
+                    })
+                    cost = gachaData.multiCost
+                    pullCount = 10
+                } else {
+                    return reply.status(400).send({
+                        "error": "Bad Request",
+                        "message": "This draw isn't available."
+                    })
+                }
+                const paid = payBeads({ free: playerFreeVmoney, paid: playerPaidVmoney }, cost)
+                if (paid === null) return reply.status(400).send({
                     "error": "Bad Request",
-                    "message": "Already did daily paid summon."
+                    "message": "Not enough beads."
                 })
-
-                playerPaidVmoney -= isCharacterGacha ? 50 : 25
-
-                pullCount = 1
+                playerFreeVmoney = paid.free
+                playerPaidVmoney = paid.paid
+                starCrumbGained = starCrumbForPull(cost, usedDailyPull)
                 break;
             }
 
-            // tickets
+            // tickets (FT-14, src/lib/gachaDraws.ts): the draw kind names the ticket: the portal's own (3, 4), the
+            // wildcard unit (9, 10) or armament (12, 13) tickets, or the 4 & 5-Star Portal Ticket (20)
             case GachaPaymentType.TICKET: {
-                const isWeapon = type === GachaExecType.MULTI_WEAPON_TICKET
-                const isMulti = type === GachaExecType.MULTI_TICKET || isWeapon
-
-                const itemId = isMulti ? (isWeapon ? 999004 : 999001) : (isWeapon ? 999005 : 999003)
+                const ticket = ticketDraw(gachaId, gachaData.type, type)
+                if (ticket === null) return reply.status(400).send({
+                    "error": "Bad Request",
+                    "message": "This portal doesn't take that ticket."
+                })
+                const itemId = ticket.itemId
 
                 const itemCount = getPlayerItemSync(playerId, itemId)
                 const useTicketCount = Math.max(1, numberOfExec) 
@@ -311,7 +398,8 @@ const routes = async (fastify: FastifyInstance) => {
                     "message": "Not enough tickets."
                 })
 
-                pullCount = useTicketCount * (isMulti ? 10 : 1)
+                pullCount = useTicketCount * ticket.pulls
+                guaranteedDraws = ticket.guaranteed
 
                 items[itemId] = newItemCount
                 updatePlayerItemSync(playerId, itemId, newItemCount);
@@ -324,6 +412,11 @@ const routes = async (fastify: FastifyInstance) => {
                 if (gachaCampaignId === null) return reply.status(400).send({
                     "error": "Bad Request",
                     "message": "No gacha campaign assigned to gacha."
+                })
+                // only while the campaign is open (src/lib/gachaCampaigns.ts)
+                if (!isGachaCampaignOpen(gachaCampaignId, getServerDate())) return reply.status(400).send({
+                    "error": "Bad Request",
+                    "message": "This free pull campaign isn't open."
                 })
 
                 // get player campaign data
@@ -350,8 +443,8 @@ const routes = async (fastify: FastifyInstance) => {
 
                 gachaCampaigns.push(serializeGachaCampaign(playerCampaignData))
 
-                const isMulti = type === GachaExecType.CAMPAIGN_MULTI
-                pullCount = isMulti ? 10 : 1
+                // the campaign's own size (a free pull or a free 10-pull a day), whichever free kind (8, 11) was sent
+                pullCount = campaignPulls(gachaCampaignId)
                 break;
             }
         }
@@ -366,29 +459,41 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "Not enough beads."
         })
 
-        const drawResult = drawGachaSync(gachaData, pullCount)
+        const drawResult = drawGachaSync(gachaData, pullCount, guaranteedDraws)
         const rewardResult = rewardPlayerGachaDrawResultSync(playerId, gachaData, drawResult)
 
+        const isDailyFirst = playerGachaData.isDailyFirst && !usedDailyPull
         const newGachaExchangePoint = (playerGachaData.gachaExchangePoint ?? 0) + pullCount
         if (insertPlayerGachaData) {
             playerGachaData.isAccountFirst = false
-            playerGachaData.isDailyFirst = false
+            playerGachaData.isDailyFirst = isDailyFirst
             playerGachaData.gachaExchangePoint = newGachaExchangePoint
             insertPlayerGachaInfoSync(playerId, playerGachaData)
         } else {
             updatePlayerGachaInfoSync(playerId, {
                 gachaId: gachaId,
-                isDailyFirst: false,
+                ...(usedDailyPull ? { isDailyFirst: false } : {}),
                 isAccountFirst: false,
                 gachaExchangePoint: newGachaExchangePoint
             })
         }
 
+        // up to the client's limit, from the balance it was shown (an imported save may hold more); the client shows the
+        // difference to its last balance on the result screen ("You received ::point:: Star Slivers!")
+        const starCrumb = starCrumbGained > 0
+            ? Math.min(clampCount(player.starCrumb, playerLimits.starCrumb) + starCrumbGained, playerLimits.starCrumb)
+            : null
         updatePlayerSync({
             id: playerId,
             vmoney: playerPaidVmoney,
-            freeVmoney: playerFreeVmoney
+            freeVmoney: playerFreeVmoney,
+            ...(starCrumb !== null ? { starCrumb } : {})
         })
+        const userInfo = {
+            "free_vmoney": playerFreeVmoney,
+            "vmoney": playerPaidVmoney,
+            ...(starCrumb !== null ? { "star_crumb": starCrumb } : {})
+        }
 
         reply.header("content-type", "application/x-msgpack")
         if (isCharacterGacha) {
@@ -397,10 +502,7 @@ const routes = async (fastify: FastifyInstance) => {
                     viewer_id: viewerId
                 }),
                 "data": {
-                    "user_info": {
-                        "free_vmoney": playerFreeVmoney,
-                        "vmoney": playerPaidVmoney
-                    },
+                    "user_info": userInfo,
                     "draw": rewardResult.draw,
                     "character_list": rewardResult.characters,
                     "item_list": {
@@ -412,8 +514,10 @@ const routes = async (fastify: FastifyInstance) => {
                         {
                             "gacha_id": gachaId,
                             "is_account_first": false,
-                            "is_daily_first": false,
-                            "gacha_exchange_point": newGachaExchangePoint
+                            "is_daily_first": isDailyFirst,
+                            "gacha_exchange_point": newGachaExchangePoint,
+                            // the client keeps a known portal's period, but takes it from here for a new entry
+                            ...(comebackPeriod !== null ? { "comeback_campaign": serializeComebackCampaign(comebackPeriod) } : {})
                         }
                     ],
                     "encyclopedia_info": [],
@@ -426,10 +530,7 @@ const routes = async (fastify: FastifyInstance) => {
                     viewer_id: viewerId
                 }),
                 "data": {
-                    "user_info": {
-                        "free_vmoney": playerFreeVmoney,
-                        "vmoney": playerPaidVmoney
-                    },
+                    "user_info": userInfo,
                     "is_erupt": false,
                     "draw_equipment": rewardResult.draw,
                     "item_list": {
@@ -441,7 +542,7 @@ const routes = async (fastify: FastifyInstance) => {
                         {
                             "gacha_id": gachaId,
                             "is_account_first": false,
-                            "is_daily_first": false,
+                            "is_daily_first": isDailyFirst,
                             "gacha_exchange_point": newGachaExchangePoint
                         }
                     ],

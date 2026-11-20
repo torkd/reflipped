@@ -55,9 +55,18 @@ SALT = "K6R9T9Hz22OpeIGEWB0ui6c6PYFQnJGy"
 ARCHIVE_RE = re.compile(r"^s?_?asset-(\d+\.\d+\.\d+)-(?:(\d+\.\d+\.\d+)-)?\d+-[0-9a-f]+\.zip$")
 
 
-def digest_path(path):
+# The archives keep most assets under `production/upload/`; the tables the app also bundles (the `*_iosbundled` ones,
+# e.g. config/config_iosbundled, player/player_rank_iosbundled) are under `production/android_upload/`.
+UPLOAD_PREFIXES = ("production/upload", "production/android_upload")
+
+
+def digest_path(path, prefix=UPLOAD_PREFIXES[0]):
     h = hashlib.sha1((path + SALT).encode("utf-8")).hexdigest()
-    return f"production/upload/{h[:2]}/{h[2:]}"
+    return f"{prefix}/{h[:2]}/{h[2:]}"
+
+
+def digest_paths(path):
+    return [digest_path(path, prefix) for prefix in UPLOAD_PREFIXES]
 
 
 def table_name(name):
@@ -101,14 +110,22 @@ class Cdn:
                 except zipfile.BadZipFile:
                     print(f"skipping broken archive {zip_path}", file=sys.stderr)
 
+    def find(self, path):
+        """The archive member of an asset path (under any upload prefix) and its (version, zip path), or None."""
+        for member in digest_paths(path):
+            found = self.index.get(member)
+            if found is not None:
+                return member, found
+        return None
+
     def read(self, path):
         """Returns (bytes, version) of an asset path, or None."""
-        member = digest_path(path)
-        found = self.index.get(member)
+        found = self.find(path)
         if found is None:
             return None
-        with zipfile.ZipFile(found[1]) as z:
-            return z.read(member), found[0]
+        member, (version, zip_path) = found
+        with zipfile.ZipFile(zip_path) as z:
+            return z.read(member), version
 
 
 def parse_csv(data):
@@ -207,11 +224,11 @@ def main():
     if args.discover:
         found = []
         for name in swf_table_names(args.discover):
-            entry = cdn.index.get(digest_path(table_path(name)))
+            entry = cdn.find(table_path(name))
             if entry is None:
                 continue
             found.append(name)
-            print(f"{name}\t{'.'.join(map(str, entry[0]))}")
+            print(f"{name}\t{'.'.join(map(str, entry[1][0]))}")
         if args.dump:
             tables += found
 

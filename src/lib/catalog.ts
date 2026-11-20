@@ -3,11 +3,12 @@
  * Developer mode grants these, and the admin mail picker lists them.
  */
 import { existsSync, readFileSync } from "fs";
-import path from "path";
+import { assetPath } from "./paths";
 
 import characters from "../../assets/character.json";
 import manaNodes from "../../assets/mana_node.json";
 import degreeIds from "../../assets/degree.json";
+import { rewardPointCatalog } from "./rewardPoints";
 // reward and shop data, read for item and equipment ids
 import boxReward from "../../assets/box_reward.json";
 import bossCoinShop from "../../assets/boss_coin_shop.json";
@@ -95,16 +96,31 @@ export function scanAssetItemAndEquipmentIds(): { items: number[], equipment: nu
 // --- catalog for the admin mail picker -------------------------------------------------------------
 
 /**
- * Display names, keyed by id, extracted from the client's master data (ADM-1, docs/feature-gap.md). The file is
- * optional: without it the catalog lists ids only.
+ * Names, item categories and armament rarities, keyed by id, from the client's master data (ADM-1: `scripts/converter.py`
+ * writes it from `character/character_text`, `item/equipment`, `item/item` and `degree/degree`). Its ids are every armament,
+ * item and title the client knows, so the catalog lists those; without the file it lists the ids the rewards and shops
+ * hand out, without names.
  */
-const namesPath = path.join(__dirname, "..", "..", "assets", "catalog_names.json")
+const namesPath = assetPath("catalog_names.json")
 
 interface CatalogNames {
     characters?: Record<string, string>
-    equipment?: Record<string, string>
-    items?: Record<string, string>
+    equipment?: Record<string, { name: string | null, rarity: number }>
+    items?: Record<string, { name: string | null, category: number }>
     degrees?: Record<string, string>
+}
+
+/** `item/item` column 13, the client's item list category, with the names the picker shows. */
+export const ITEM_CATEGORIES: Record<number, string> = {
+    0: "Consumables",
+    2: "Growth materials",
+    3: "Event items",
+    4: "Tickets",
+    5: "Armament cores",
+    6: "Boss coins",
+    7: "Currencies",
+    8: "Currencies",
+    9: "Armament materials"
 }
 
 export interface CatalogUnit {
@@ -119,19 +135,37 @@ export interface CatalogEntry {
     name: string | null
 }
 
+export interface CatalogArmament extends CatalogEntry {
+    /** null without `assets/catalog_names.json` */
+    rarity: number | null
+}
+
+export interface CatalogItem extends CatalogEntry {
+    /** a value of `ITEM_CATEGORIES`, null without `assets/catalog_names.json` */
+    category: string | null
+}
+
 export interface ItemCatalog {
     hasNames: boolean
     units: CatalogUnit[]
-    equipment: CatalogEntry[]
-    items: CatalogEntry[]
+    equipment: CatalogArmament[]
+    items: CatalogItem[]
     degrees: CatalogEntry[]
+    /** the item categories in the order the picker shows them */
+    itemCategories: string[]
+    /** mail types 14 and 15, with their master names */
+    dailyChallengePoints: CatalogEntry[]
+    periodicRewardPoints: CatalogEntry[]
 }
 
 let cachedCatalog: ItemCatalog | null = null
 
+const sortedIds = (ids: Iterable<string | number>) => [...new Set([...ids].map(Number))].sort((a, b) => a - b)
+
 /**
- * Everything the admin can send by mail: playable units with rarity and element, the item and equipment ids
- * found in the game data, and the titles, with names when `assets/catalog_names.json` exists.
+ * Everything the admin can send by mail: playable units with rarity and element, the armaments, items and titles the
+ * game knows, with names, item categories and armament rarities when `assets/catalog_names.json` exists; the daily
+ * challenge and periodic reward points with their names from the master data.
  */
 export function getItemCatalog(): ItemCatalog {
     if (cachedCatalog !== null) return cachedCatalog
@@ -139,7 +173,9 @@ export function getItemCatalog(): ItemCatalog {
     const names: CatalogNames = existsSync(namesPath) ? JSON.parse(readFileSync(namesPath, "utf-8")) : {}
     const nameOf = (table: Record<string, string> | undefined, id: number) => table?.[String(id)] || null
     const characterData = characters as Record<string, { name: string, rarity: number, element: number }>
-    const { items, equipment } = scanAssetItemAndEquipmentIds()
+    const scanned = scanAssetItemAndEquipmentIds()
+    const equipmentIds = names.equipment ? sortedIds(Object.keys(names.equipment)) : scanned.equipment
+    const itemIds = names.items ? sortedIds(Object.keys(names.items)) : scanned.items
 
     cachedCatalog = {
         hasNames: Object.keys(names).length > 0,
@@ -149,9 +185,17 @@ export function getItemCatalog(): ItemCatalog {
             rarity: characterData[String(id)].rarity,
             element: characterData[String(id)].element
         })),
-        equipment: equipment.map(id => ({ id, name: nameOf(names.equipment, id) })),
-        items: items.map(id => ({ id, name: nameOf(names.items, id) })),
-        degrees: (degreeIds as number[]).map(id => ({ id, name: nameOf(names.degrees, id) }))
+        equipment: equipmentIds.map(id => {
+            const entry = names.equipment?.[String(id)]
+            return { id, name: entry?.name || null, rarity: entry?.rarity ?? null }
+        }),
+        items: itemIds.map(id => {
+            const entry = names.items?.[String(id)]
+            return { id, name: entry?.name || null, category: entry ? (ITEM_CATEGORIES[entry.category] ?? "Other") : null }
+        }),
+        degrees: (degreeIds as number[]).map(id => ({ id, name: nameOf(names.degrees, id) })),
+        itemCategories: [...new Set([...Object.values(ITEM_CATEGORIES), "Other"])],
+        ...rewardPointCatalog()
     }
     return cachedCatalog
 }

@@ -1,6 +1,6 @@
             <header class="page-header">
                 <h1 class="page-title">Settings</h1>
-                <p class="page-subtitle">Settings for everyone on this Reflipped server, in seconds. Saved values apply at once and survive a restart.</p>
+                <p class="page-subtitle">Settings for everyone on this Reflipped server. Saved values apply at once and survive a restart.</p>
             </header>
 {{notice}}
             <section class="grid gap-4 grid-cols-2">
@@ -13,13 +13,21 @@
                     <span class="stat-value">{{availablePlayers}}</span>
                 </div>
             </section>
-            <!-- every setting field joins this form with form="{{formId}}", so the preset forms can sit between them -->
-            <form id="{{formId}}" method="post" action="/api/server/settings"></form>
+{{tabs}}
+{{eventSettings}}
+            <div data-tab-panel="performance" class="flex flex-col gap-6"{{performanceHidden}}>
+            <!-- every setting field joins this form with form="{{formId}}", so the preset forms can sit between them; the empty forms are hidden so they add no gap to the layout -->
+            <form id="{{formId}}" method="post" action="/api/server/settings" hidden></form>
 {{sections}}
             <div class="action-bar">
                 <span id="unsaved-status" class="card-text mr-auto text-primary" aria-live="polite"></span>
-                <button type="submit" form="{{formId}}" formaction="/api/server/resetSettings" formnovalidate class="btn-outline">Reset all to defaults</button>
+                <button type="submit" form="reset-settings" class="btn-outline">Reset timing and database settings</button>
                 <button type="submit" form="{{formId}}" id="save-settings" class="btn-primary">Save changes</button>
             </div>
+            <!-- its own form, so Enter in a setting saves rather than resets (the first submit button of a form is its default) -->
+            <form id="reset-settings" method="post" action="/api/server/resetSettings" hidden></form>
+            </div>
+{{identityPanel}}
             <script src="/public/js/stepper.js" defer></script>
+            <script src="/public/js/settings-tabs.js" defer></script>
             <script src="/public/js/settings.js" defer></script>

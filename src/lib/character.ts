@@ -1,7 +1,17 @@
+import { creditEarnedCurrencySync, creditEarnedItemSync } from "./rewardCredits";
+import { playerLimits } from "./limits";
 import { clientSerializeDate } from "../data/utils";
 import { getPlayerCharacterSync, getPlayerSync, givePlayerItemSync, insertPlayerCharacterSync, updatePlayerCharacterSync, updatePlayerSync } from "../data/wdfpData";
 import { getCharacterDataSync } from "./assets";
 import { AddExpList, AddExpListItem, ClientReturnBondTokenStatus, ClientReturnBondTokenStatusList, ClientReturnCharacter, Element, GivePlayerCharacterResult, RewardPlayerCharacterExpResult } from "./types";
+
+/**
+ * A unit's encyclopedia entry key, as assets/encyclopedia.json and the client's master hold it: "1", the unit id padded to
+ * six digits, then "01" (unit 10 is "100001001", 512001 is "151200101"). An unknown key stops the client with C8601.
+ */
+export function characterEncyclopediaKey(characterId: number): string {
+    return `1${String(characterId).padStart(6, "0")}01`
+}
 
 export const characterExpCaps: Record<number, number[]> = {
     [1]: [ // 1* max exp amounts for each uncap level 
@@ -97,7 +107,8 @@ const dupeItemRewards: Record<number, Record<Element, number>> = {
  */
 export function givePlayerCharacterSync(
     playerId: number,
-    characterId: number
+    characterId: number,
+    capEarnedInventory: boolean = false
 ): GivePlayerCharacterResult | null {
 
     // get the character's asset data
@@ -106,23 +117,22 @@ export function givePlayerCharacterSync(
 
     // get the current character data
     const playerCharacter = getPlayerCharacterSync(playerId, characterId)
+    if (capEarnedInventory && playerCharacter !== null && playerCharacter.stack + 1 >= playerLimits.unitCopies) return null
 
     if (playerCharacter === null) {
+        // every unit gets a bond token entry for boards 1 and 2, even one with a single mana board (skill_count 3 or
+        // less): every unit in the original's captures has both (FIX-7). Whether board 2 exists is the mana node data's
+        // to say (open_mana_board), not this list.
         const bondTokenList = [
             {
                 manaBoardIndex: 1,
                 status: 0
-            }
-        ]
-
-        // add the second bond token list item
-        // if the character has more than 1 mana board
-        if (assetData.skill_count > 3) {
-            bondTokenList.push({
+            },
+            {
                 manaBoardIndex: 2,
                 status: 0
-            })
-        }
+            }
+        ]
 
         // give the player the character
         const joinTime = new Date()
@@ -166,11 +176,9 @@ export function givePlayerCharacterSync(
         let returnItem = undefined
         if (dupeRewards) {
             const itemId = dupeRewards[assetData.element]
-            givePlayerItemSync(playerId, itemId, 1)
-            returnItem = {
-                id: itemId,
-                count: 1
-            }
+            const amount = capEarnedInventory ? creditEarnedItemSync(playerId, itemId, 1).amount : 1
+            if (!capEarnedInventory) givePlayerItemSync(playerId, itemId, amount)
+            if (amount > 0) returnItem = { id: itemId, count: amount }
         }
 
         // update stack
@@ -213,6 +221,7 @@ export function givePlayerCharactersExpSync(
     const bondTokenStatusList: ClientReturnBondTokenStatusList = {}
 
     let addToExpPool = 0
+    let poolCapacity = Math.max(0, playerLimits.expPool - (getPlayerSync(playerId)?.expPool ?? 0))
 
     for (const characterId of characterIds) {
         const characterData = getPlayerCharacterSync(playerId, characterId)
@@ -222,11 +231,13 @@ export function givePlayerCharactersExpSync(
             const expCap = characterExpCaps[assetData.rarity][characterData.overLimitStep] || Number.MAX_SAFE_INTEGER
             const currentExp = characterData.exp
 
-            let afterExp = currentExp + expAmount
-            const overflowExp = afterExp > expCap ? afterExp - expCap : 0
-            addToExpPool += overflowExp
-
-            afterExp = Math.min(expCap, afterExp)
+            const requestedExp = Math.max(0, Math.floor(expAmount))
+            const characterGain = Math.min(requestedExp, Math.max(0, expCap - currentExp))
+            const afterExp = currentExp + characterGain
+            const overflowExp = requestedExp - characterGain
+            const pooled = Math.min(overflowExp, poolCapacity)
+            poolCapacity -= pooled
+            addToExpPool += pooled
 
             updatePlayerCharacterSync(playerId, characterId, {
                 exp: afterExp
@@ -234,9 +245,9 @@ export function givePlayerCharactersExpSync(
 
             addExpList.push({
                 character_id: characterId,
-                add_exp: overflowExp > 0 ? overflowExp - expAmount : expAmount,
+                add_exp: afterExp - currentExp,
                 after_exp: afterExp,
-                add_exp_pool: overflowExp
+                add_exp_pool: pooled
             })
 
             characterList.push({
@@ -273,14 +284,7 @@ export function givePlayerCharactersExpSync(
     // get player data
     const playerData = getPlayerSync(playerId)
     const currentExpPool = playerData ? playerData.expPool : null
-    const afterExpPool = currentExpPool === null ? null : currentExpPool + addToExpPool
-    
-    if (afterExpPool !== null && addToExpPool > 0) {
-        updatePlayerSync({
-            id: playerId,
-            expPool: afterExpPool
-        })
-    }
+    const afterExpPool = currentExpPool === null ? null : creditEarnedCurrencySync(playerId, "exp", addToExpPool).total
 
     return {
         add_exp_list: addExpList,

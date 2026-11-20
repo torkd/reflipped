@@ -1,0 +1,18 @@
+<header class="page-header"><h1 class="page-title">Calendar</h1>
+<p class="page-subtitle">What is running now, what comes next, and the full event catalog.</p></header>
+{{notice}}
+<section class="grid gap-4 grid-cols-2 md:grid-cols-3">
+<div class="stat"><span class="stat-label">Event mode</span><span class="stat-value">{{mode}}</span></div>
+<div class="stat"><span class="stat-label">Server time (UTC)</span><span class="stat-value">{{time}}</span></div>
+<div class="stat"><span class="stat-label">Reward multiplier</span><span class="stat-value">{{rewards}}</span></div>
+</section>
+<p class="card-text">{{summary}} <a class="text-primary" href="/settings#events">Change event and reward settings</a></p>
+<section class="settings-group"><div class="settings-group-header"><h2 class="card-title">Active events</h2></div>{{active}}</section>
+<section class="settings-group"><div class="settings-group-header"><h2 class="card-title">Coming next</h2></div>{{next}}</section>
+{{balance}}
+{{manual}}
+<details class="settings-group"{{catalogOpen}}><summary class="settings-group-header card-title">Browse the full event catalog</summary><div class="settings-group-header">
+<p class="card-text">Every period in the catalog is included in automatic rotation. "Go to" moves the shared timeline to an event's opening, so one event can be tested (as a new run, with its own missions, scores, leaderboards and rewards); rank and kill rewards come during the event's results announcement, so jumping past it skips them; players on a personal period keep their offset, and every player sees the change after returning to the title. Adding a period to a Manual playlist brings along the banners, shops and other content scheduled on its historical dates. Some event types still need gameplay implementation.</p>
+<form method="get" action="/calendar" class="flex gap-3"><label class="flex-1">Find an event<input class="input w-full" type="search" name="q" maxlength="100" value="{{query}}" /></label><button class="btn-outline" type="submit">Search</button></form></div>{{catalog}}</details>
+
+<script src="/public/js/stepper.js" defer></script>

@@ -1,3 +1,4 @@
+import { boardHiddenPlayers } from "./anticheat";
 import { Player, PlayerRushEvent, RushEventBattleType, UserRushEventEndlessBattleMyRankingPartyMemberListItem, UserRushEventEndlessBattleRanking, UserRushEventPlayedPartyList } from "../data/types";
 import { getPlayerIdFromRushEventEndlessRankSync, getPlayerRushEventPlayedPartiesSync, getPlayerRushEventSync, getPlayerSync, serializePlayerRushEventPlayedParty } from "../data/wdfpData";
 import { SerializedPlayerRushEventPlayedPartyList, SerializedPlayerRushEventPlayedParties } from "./types";
@@ -97,7 +98,7 @@ export function getRushEventEndlessBattleRankPlayedPartyListSync(
     eventId: number
 ): SerializedPlayerRushEventPlayedPartyList | null {
     // Get the ID of the player who is currently at rank [rank].
-    const playerId = getPlayerIdFromRushEventEndlessRankSync(rank, eventId);
+    const playerId = getPlayerIdFromRushEventEndlessRankSync(rank, eventId, boardHiddenPlayers());
     if (playerId === null) return null;
 
     // get the played party list

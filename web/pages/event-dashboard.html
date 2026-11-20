@@ -1,0 +1,10 @@
+<header class="page-header"><h1 class="page-title">Dashboard</h1><p class="page-subtitle">Your server at a glance.</p><p class="text-sm text-on-surface-variant">Reflipped server {{serverVersion}}</p></header>
+{{notice}}
+<section class="grid gap-4 grid-cols-2 md:grid-cols-3">
+<div class="stat"><span class="stat-label">Players</span><span class="stat-value">{{playerCount}}</span></div>
+<div class="stat"><span class="stat-label">Server clock (UTC)</span><span class="stat-value">{{currentServerTimeText}}</span></div>
+<div class="stat"><span class="stat-label">Clock</span><span class="stat-value">Real time</span></div>
+</section>
+<section class="card"><div class="card-header"><div class="flex flex-col gap-1"><h2 class="card-title">Events and progression</h2>
+<p class="card-text">The clock keeps advancing normally. Event rotation and personal travel change available content without resetting daily rewards.</p></div></div>
+<div class="flex gap-3"><a href="/calendar" class="btn-primary">Active and upcoming events</a><a href="/settings#events" class="btn-outline">Event and reward settings</a></div></section>

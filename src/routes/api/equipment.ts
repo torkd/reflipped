@@ -1,14 +1,27 @@
 // Handles the insertion of mana into characters.
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { deletePlayerEquipmentSync, getPlayerEquipmentSync, getPlayerItemSync, getPlayerSync, givePlayerItemSync, playerOwnsEquipmentSync, updatePlayerEquipmentSync, updatePlayerItemSync, updatePlayerPartyGroupSync } from "../../data/wdfpData";
+import { deletePlayerEquipmentSync, getPlayerEquipmentSync, getPlayerItemSync, getPlayerSync, playerOwnsEquipmentSync, updatePlayerEquipmentSync, updatePlayerItemSync, updatePlayerPartyGroupSync } from "../../data/wdfpData";
 import { generateDataHeaders, getServerDate } from "../../utils";
 import { clientSerializeEquipment } from "../../lib/equipment";
 import { getEquipmentMaxLevelSync } from "../../lib/assets";
 import { UserEquipment } from "../../data/types";
 import { arrayOf, boolean, gameBody, integer, object } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
-import { collectionUpdatesSync, MissionPattern, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { missionResourcesSync, resourceMissionUpdatesSync, collectionUpdatesSync, MissionPattern, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { applyAwakeningSync, creditAwakeningCoresSync, meltDuplicatesSync, meltEquipmentSync, OverflowMana, payOverflowManaSync, plannedAwakening, spendWrightpiecesSync } from "../../lib/duplicates";
+
+interface BulkEquipmentBody {
+    equipment_ids: number[]
+    viewer_id: number
+    api_count: number
+}
+
+// equipment/bulk_upgrade and bulk_sell_stack (FT-40): the armaments picked in the list's Bulk Select
+const bulkEquipmentSchema = gameBody({
+    equipment_ids: arrayOf(integer, 2000),
+    api_count: integer
+}, ["equipment_ids"])
 
 interface SetProtectionBody {
     protection: boolean
@@ -79,14 +92,6 @@ const equipmentUpgradeCost = [
     25
 ]
 
-// wrightpiece reward for selling each rank of weapon
-const equipmentSellReward = [
-    0,
-    0,
-    1,
-    5,
-    15
-]
 
 const routes = async (fastify: FastifyInstance) => {
     fastify.post("/sell_equipment", { schema: sellSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
@@ -100,36 +105,22 @@ const routes = async (fastify: FastifyInstance) => {
         })
 
         const playerId = request.viewer.playerId
+        const resourcesBefore = missionResourcesSync(playerId)
 
-        // get wrightpieces
-        let newWrightPieces = 0;
-        const returnItemList: Record<number, number> = {}
-
-        // sell stacks
+        // melt each armament with its duplicates (src/lib/duplicates.ts)
+        const returnItemList: Record<string, number> = {}
+        const overflow: OverflowMana = { mana: 0 }
         for (const toSell of toSellEquipmentList) {
-            const equipmentId = toSell.equipment_id
-            const equipmentRarity = Math.floor(equipmentId / 1000000) - 1
-
-            // get the data for the equipment
-            const playerEquipmentData = getPlayerEquipmentSync(playerId, equipmentId)
-            if (playerEquipmentData === null) return reply.status(400).send({
+            const melted = meltEquipmentSync(playerId, toSell.equipment_id, returnItemList, overflow)
+            if ("refusal" in melted) return reply.status(400).send({
                 "error": "Bad Request",
-                "message": "Player does not own equipment."
-            }) 
-
-            // add wright pieces
-            const stack = playerEquipmentData.stack
-            newWrightPieces += (equipmentSellReward[equipmentRarity] ?? 0) * stack
-
-            // delete equipment
-            deletePlayerEquipmentSync(playerId, equipmentId)
-
-            // give ability soul
-            returnItemList[equipmentId] = givePlayerItemSync(playerId, equipmentId, stack)
+                "message": melted.refusal
+            })
         }
+        // cores and Wrightpieces past their cap, as mana (FT-69)
+        const overflowFields = payOverflowManaSync(playerId, overflow)
 
-        // give wrightpieces
-        returnItemList[wrightpieceItemId] = givePlayerItemSync(playerId, wrightpieceItemId, newWrightPieces)
+        const missionResult = updateMissionsSync(playerId, getServerDate(), [...resourceMissionUpdatesSync(playerId, resourcesBefore), ...collectionUpdatesSync(playerId)])
 
         // respond to client
         reply.header("content-type", "application/x-msgpack")
@@ -139,7 +130,8 @@ const routes = async (fastify: FastifyInstance) => {
             }),
             "data": {
                 "item_list": returnItemList,
-                "mail_arrived": false
+                ...overflowFields,
+                ...missionReplyFields(missionResult)
             }
         })
     }))
@@ -155,47 +147,24 @@ const routes = async (fastify: FastifyInstance) => {
         })
 
         const playerId = request.viewer.playerId
+        const resourcesBefore = missionResourcesSync(playerId)
 
-        // get wrightpieces
-        let newWrightPieces = 0;
-        const returnItemList: Record<number, number> = {}
+        // melt the duplicates (src/lib/duplicates.ts): cores, Wrightpieces and Star Specks by rarity
+        const returnItemList: Record<string, number> = {}
         const returnEquipmentList: Object[] = []
-
-        // sell stacks
+        const overflow: OverflowMana = { mana: 0 }
         for (const toSell of toSellEquipmentList) {
-            const equipmentId = toSell.equipment_id
-            const sellCount = Math.max(1, (toSell as SellStackEquipmentListItem).number)
-            const equipmentRarity = Math.floor(equipmentId / 1000000) - 1
-
-            // get the data for the equipment
-            const playerEquipmentData = getPlayerEquipmentSync(playerId, equipmentId)
-            if (playerEquipmentData === null) return reply.status(400).send({
+            const count = Math.max(1, (toSell as SellStackEquipmentListItem).number)
+            const melted = meltDuplicatesSync(playerId, toSell.equipment_id, count, returnItemList, overflow)
+            if ("refusal" in melted) return reply.status(400).send({
                 "error": "Bad Request",
-                "message": "Player does not own equipment."
+                "message": melted.refusal
             })
-
-            // make sure that we have enough stacks
-            const newStack = playerEquipmentData.stack - sellCount
-            if (0 > newStack) return reply.status(400).send({
-                "error": "Bad Request",
-                "message": "Attempt to sell more stacks than owned."
-            })
-
-            newWrightPieces += (equipmentSellReward[equipmentRarity] ?? 0) * sellCount
-
-            // update eqwuipment
-            playerEquipmentData.stack = newStack
-            updatePlayerEquipmentSync(playerId, equipmentId, {
-                stack: newStack
-            })
-            returnEquipmentList.push(clientSerializeEquipment(equipmentId, playerEquipmentData))
-
-            // give ability sould
-            returnItemList[equipmentId] = givePlayerItemSync(playerId, equipmentId, sellCount)
+            returnEquipmentList.push(melted.equipment)
         }
+        const overflowFields = payOverflowManaSync(playerId, overflow)
 
-        // give wrightpieces
-        returnItemList[wrightpieceItemId] = givePlayerItemSync(playerId, wrightpieceItemId, newWrightPieces)
+        const missionResult = updateMissionsSync(playerId, getServerDate(), [...resourceMissionUpdatesSync(playerId, resourcesBefore), ...collectionUpdatesSync(playerId)])
 
         // respond to client
         reply.header("content-type", "application/x-msgpack")
@@ -206,7 +175,8 @@ const routes = async (fastify: FastifyInstance) => {
             "data": {
                 "equipment_list": returnEquipmentList,
                 "item_list": returnItemList,
-                "mail_arrived": false
+                ...overflowFields,
+                ...missionReplyFields(missionResult)
             }
         })
     }))
@@ -225,6 +195,7 @@ const routes = async (fastify: FastifyInstance) => {
         })
 
         const playerId = request.viewer.playerId
+        const resourcesBefore = missionResourcesSync(playerId)
 
         // get equipment
         const equipment = getPlayerEquipmentSync(playerId, equipmentId)
@@ -289,10 +260,13 @@ const routes = async (fastify: FastifyInstance) => {
             "level": newLevel
         })
 
-        // give ability cores
-        returnItemList[equipmentId] = givePlayerItemSync(playerId, equipmentId, upgradeCount)
+        // give ability cores: those past the cap as mana, as the client's confirmation says (FT-69)
+        const overflow: OverflowMana = { mana: 0 }
+        creditAwakeningCoresSync(playerId, equipmentId, upgradeCount, returnItemList, overflow)
+        const overflowFields = payOverflowManaSync(playerId, overflow)
         const missionResult = updateMissionsSync(playerId, getServerDate(), [
             { pattern: MissionPattern.UPGRADE_EQUIPMENT_COUNT, amount: upgradeCount },
+            ...resourceMissionUpdatesSync(playerId, resourcesBefore),
             ...collectionUpdatesSync(playerId)
         ])
 
@@ -306,6 +280,80 @@ const routes = async (fastify: FastifyInstance) => {
                     clientSerializeEquipment(equipmentId, equipment)
                 ],
                 "item_list": returnItemList,
+                ...overflowFields,
+                ...missionReplyFields(missionResult)
+            }
+        })
+    }))
+
+    // "Awaken All" (FT-40): each picked armament awakens with all the duplicates it can use (no Starsteel Ingots), for
+    // the Wrightpieces of every level; all or nothing
+    fastify.post("/bulk_upgrade", { schema: bulkEquipmentSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as BulkEquipmentBody
+        const viewerId = request.viewer.viewerId
+        const playerId = request.viewer.playerId
+        const resourcesBefore = missionResourcesSync(playerId)
+
+        const ids = [...new Set(body.equipment_ids)]
+        const plans = []
+        for (const equipmentId of ids) {
+            const plan = plannedAwakening(playerId, equipmentId)
+            if ("refusal" in plan) return reply.status(400).send({ "error": "Bad Request", "message": plan.refusal })
+            plans.push({ equipmentId, plan })
+        }
+        const returnItemList: Record<string, number> = {}
+        if (!spendWrightpiecesSync(playerId, plans.reduce((sum, { plan }) => sum + plan.cost, 0), returnItemList)) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "Not enough of wrightpieces."
+        })
+        const overflow: OverflowMana = { mana: 0 }
+        const returnEquipmentList = plans.map(({ equipmentId, plan }) => applyAwakeningSync(playerId, equipmentId, plan, returnItemList, overflow))
+        const overflowFields = payOverflowManaSync(playerId, overflow)
+
+        const missionResult = updateMissionsSync(playerId, getServerDate(), [
+            { pattern: MissionPattern.UPGRADE_EQUIPMENT_COUNT, amount: plans.reduce((sum, { plan }) => sum + plan.levels, 0) },
+            ...resourceMissionUpdatesSync(playerId, resourcesBefore),
+            ...collectionUpdatesSync(playerId)
+        ])
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: viewerId }),
+            "data": {
+                "equipment_list": returnEquipmentList,
+                "item_list": returnItemList,
+                ...overflowFields,
+                ...missionReplyFields(missionResult)
+            }
+        })
+    }))
+
+    // "Melt Down All" (FT-40): every duplicate of each picked armament is melted; locked armaments are refused, as the
+    // client does; all or nothing
+    fastify.post("/bulk_sell_stack", { schema: bulkEquipmentSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as BulkEquipmentBody
+        const viewerId = request.viewer.viewerId
+        const playerId = request.viewer.playerId
+        const resourcesBefore = missionResourcesSync(playerId)
+
+        const returnItemList: Record<string, number> = {}
+        const returnEquipmentList: Object[] = []
+        const overflow: OverflowMana = { mana: 0 }
+        for (const equipmentId of new Set(body.equipment_ids)) {
+            const stack = getPlayerEquipmentSync(playerId, equipmentId)?.stack ?? 0
+            const melted = stack < 1 ? { refusal: "No duplicates to melt down." } : meltDuplicatesSync(playerId, equipmentId, stack, returnItemList, overflow, true)
+            if ("refusal" in melted) return reply.status(400).send({ "error": "Bad Request", "message": melted.refusal })
+            returnEquipmentList.push(melted.equipment)
+        }
+        const overflowFields = payOverflowManaSync(playerId, overflow)
+
+        const missionResult = updateMissionsSync(playerId, getServerDate(), [...resourceMissionUpdatesSync(playerId, resourcesBefore), ...collectionUpdatesSync(playerId)])
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: viewerId }),
+            "data": {
+                "equipment_list": returnEquipmentList,
+                "item_list": returnItemList,
+                ...overflowFields,
                 ...missionReplyFields(missionResult)
             }
         })

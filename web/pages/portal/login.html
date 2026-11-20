@@ -1,0 +1,17 @@
+        <header class="page-header">
+            <h1 class="page-title">Log in</h1>
+            <p class="page-subtitle">{{subtitle}}</p>
+        </header>
+{{notice}}
+        <form class="card" method="post" action="{{action}}">
+            <label class="field">Username
+                <input class="input" name="username" autocomplete="username" required maxlength="{{usernameMax}}" autofocus>
+            </label>
+            <label class="field">Password
+                <input class="input" name="password" type="password" autocomplete="current-password" required maxlength="{{passwordMax}}">
+            </label>
+            <button type="submit" class="btn-primary">Log in</button>
+        </form>
+{{registerLink}}
+{{guestLink}}
+        <p class="card-text">Forgot your password? Ask the person who runs this server to set a new one.</p>

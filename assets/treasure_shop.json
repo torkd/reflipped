@@ -15,7 +15,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200002": {
         "costs": [],
@@ -33,7 +35,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200003": {
         "costs": [],
@@ -51,7 +55,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200004": {
         "costs": [],
@@ -69,7 +75,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200005": {
         "costs": [],
@@ -87,7 +95,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200006": {
         "costs": [],
@@ -105,7 +115,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200007": {
         "costs": [],
@@ -123,7 +135,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200008": {
         "costs": [],
@@ -141,7 +155,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200009": {
         "costs": [],
@@ -159,7 +175,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200010": {
         "costs": [],
@@ -177,7 +195,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200011": {
         "costs": [],
@@ -195,7 +215,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200012": {
         "costs": [],
@@ -213,7 +235,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200013": {
         "costs": [],
@@ -231,7 +255,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200014": {
         "costs": [],
@@ -249,7 +275,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200015": {
         "costs": [],
@@ -267,7 +295,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200016": {
         "costs": [],
@@ -285,7 +315,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200017": {
         "costs": [],
@@ -303,7 +335,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200018": {
         "costs": [],
@@ -321,7 +355,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200019": {
         "costs": [],
@@ -339,7 +375,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200020": {
         "costs": [],
@@ -357,7 +395,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200021": {
         "costs": [],
@@ -375,7 +415,9 @@
         "userCost": {
             "type": 1,
             "amount": 300
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.5
     },
     "200022": {
         "costs": [],
@@ -393,7 +435,9 @@
         "userCost": {
             "type": 1,
             "amount": 1000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.4
     },
     "200023": {
         "costs": [],
@@ -411,7 +455,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200024": {
         "costs": [],
@@ -429,7 +475,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200025": {
         "costs": [],
@@ -446,7 +494,9 @@
         "userCost": {
             "type": 1,
             "amount": 2500
-        }
+        },
+        "lineupWeight": 15,
+        "discountChance": 0.5
     },
     "200026": {
         "costs": [],
@@ -463,7 +513,9 @@
         "userCost": {
             "type": 1,
             "amount": 5000
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200027": {
         "costs": [],
@@ -480,7 +532,9 @@
         "userCost": {
             "type": 1,
             "amount": 7500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.3
     },
     "200028": {
         "costs": [],
@@ -497,7 +551,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 5,
+        "discountChance": 0.2
     },
     "200029": {
         "costs": [],
@@ -514,7 +570,9 @@
         "userCost": {
             "type": 1,
             "amount": 15000
-        }
+        },
+        "lineupWeight": 3,
+        "discountChance": 0.1
     },
     "200030": {
         "costs": [],
@@ -532,7 +590,9 @@
         "userCost": {
             "type": 1,
             "amount": 30000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.2
     },
     "200031": {
         "costs": [],
@@ -550,7 +610,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200032": {
         "costs": [],
@@ -568,7 +630,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200033": {
         "costs": [],
@@ -586,7 +650,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200034": {
         "costs": [],
@@ -604,7 +670,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200035": {
         "costs": [],
@@ -622,7 +690,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200036": {
         "costs": [],
@@ -640,7 +710,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200037": {
         "costs": [],
@@ -658,7 +730,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200038": {
         "costs": [],
@@ -676,7 +750,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200039": {
         "costs": [],
@@ -694,7 +770,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200040": {
         "costs": [],
@@ -712,7 +790,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200041": {
         "costs": [],
@@ -730,7 +810,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200042": {
         "costs": [],
@@ -748,7 +830,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200043": {
         "costs": [],
@@ -766,7 +850,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200044": {
         "costs": [],
@@ -784,7 +870,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200045": {
         "costs": [],
@@ -802,7 +890,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200046": {
         "costs": [],
@@ -820,7 +910,9 @@
         "userCost": {
             "type": 1,
             "amount": 200
-        }
+        },
+        "lineupWeight": 10,
+        "discountChance": 0.4
     },
     "200047": {
         "costs": [],
@@ -838,7 +930,9 @@
         "userCost": {
             "type": 1,
             "amount": 500
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200048": {
         "costs": [],
@@ -856,7 +950,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.1
     },
     "200049": {
         "costs": [],
@@ -873,7 +969,9 @@
         "userCost": {
             "type": 1,
             "amount": 2000
-        }
+        },
+        "lineupWeight": 7,
+        "discountChance": 0.2
     },
     "200050": {
         "costs": [],
@@ -890,7 +988,9 @@
         "userCost": {
             "type": 1,
             "amount": 3000
-        }
+        },
+        "lineupWeight": 4,
+        "discountChance": 0.1
     },
     "200051": {
         "costs": [],
@@ -908,7 +1008,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 1,
+        "discountChance": 0.2
     },
     "200052": {
         "costs": [],
@@ -926,7 +1028,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200053": {
         "costs": [],
@@ -944,7 +1048,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200054": {
         "costs": [],
@@ -962,7 +1068,9 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     },
     "200055": {
         "costs": [],
@@ -980,7 +1088,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200056": {
         "costs": [],
@@ -998,7 +1108,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200057": {
         "costs": [],
@@ -1016,7 +1128,9 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     },
     "200058": {
         "costs": [],
@@ -1034,7 +1148,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200059": {
         "costs": [],
@@ -1052,7 +1168,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200060": {
         "costs": [],
@@ -1070,7 +1188,9 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     },
     "200061": {
         "costs": [],
@@ -1088,7 +1208,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200062": {
         "costs": [],
@@ -1106,7 +1228,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200063": {
         "costs": [],
@@ -1124,7 +1248,9 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     },
     "200064": {
         "costs": [],
@@ -1142,7 +1268,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200065": {
         "costs": [],
@@ -1160,7 +1288,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200066": {
         "costs": [],
@@ -1178,7 +1308,9 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     },
     "200067": {
         "costs": [],
@@ -1196,7 +1328,9 @@
         "userCost": {
             "type": 1,
             "amount": 10000
-        }
+        },
+        "lineupWeight": 20,
+        "discountChance": 0.0
     },
     "200068": {
         "costs": [],
@@ -1214,7 +1348,9 @@
         "userCost": {
             "type": 1,
             "amount": 20000
-        }
+        },
+        "lineupWeight": 14,
+        "discountChance": 0.0
     },
     "200069": {
         "costs": [],
@@ -1232,6 +1368,8 @@
         "userCost": {
             "type": 1,
             "amount": 50000
-        }
+        },
+        "lineupWeight": 2,
+        "discountChance": 0.0
     }
 }

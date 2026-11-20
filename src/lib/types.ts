@@ -88,7 +88,9 @@ export enum ShopType {
     U6,
     BOSS_COIN,
     GENERAL,
-    STAR_GRAIN
+    STAR_GRAIN,
+    /** the augment shop (FT-54, src/lib/augmentShop.ts) */
+    EQUIPMENT_ENHANCEMENT
 }
 
 export enum RushEventFolder {
@@ -177,6 +179,8 @@ export interface RawQuest {
     clearRewardId?: number,
     sPlusRewardId?: number,
     scoreRewardGroup?: number,
+    /** how many times the quest draws its score reward group's fixed items per battle (the master's own column) */
+    scoreRewardRolls?: number | null,
     bRankTime?: number,
     aRankTime?: number,
     sRankTime?: number,
@@ -186,9 +190,37 @@ export interface RawQuest {
     manaReward?: number,
     poolExpReward?: number,
     fixedParty?: number,
+    /** Boss battle master column 107, the client's battle_quest_rank. */
+    questRankId?: number,
     rushEventId?: number
     rushEventFolderId?: number
     rushEventRound?: number
+    /** a battle the player is meant to lose (main quest kind 2, LoseBattle): finished lost, it counts as cleared */
+    loseBattle?: boolean
+    /** the quest's enemy element (0-5), which picks the item of an element or aether reward (FT-26) */
+    enemyElement?: number
+    /** Hanifolk Carnival (FT-11): the quest's boss, its battle time limit and its difficulty's base score */
+    folderId?: number
+    timeLimitMs?: number
+    difficultyScore?: number
+    /** the Haunt (FT-6): the quest's cycle period, master dates (Japan time); the last cycles have no end */
+    start?: string
+    end?: string | null
+    /** Solo Boss Challenges (FT-7) and Chrono Trials (FT-30): the quest's event, whose daily challenge point it spends */
+    eventId?: number
+    /** the quest's own daily challenge point (world story and story event quests, FT-30) */
+    challengePointId?: number
+    /** Solo Boss Challenges (FT-7): the player rank needed to start the quest */
+    playerRank?: number
+    /** the quest to clear first (the client's QuestReferenceIdKind code, multiplied id): expert quests (FT-7), challenge
+     * dungeon quests (FT-8) */
+    needQuest?: { kind: number, questId: number }
+    /** items the quest takes on a clear (FT-8): every clear (`always`, the Treasure Zone's Golden Skull) or the first */
+    useItems?: { always: boolean, items: { id: number, count: number }[] }
+    /** the stamina a start takes (`battle_stamina_cost`, FT-25) */
+    staminaCost?: number
+    /** the quest's enemy level (`battle_enemy_level`): which collect item event drops it gives (FT-2) */
+    enemyLevel?: number
 }
 
 export interface StoryQuest {
@@ -201,6 +233,7 @@ export interface BattleQuest {
     clearReward?: Reward,
     sPlusReward?: Reward,
     scoreRewardGroupId?: number,
+    scoreRewardRolls?: number,
     scoreRewardGroup?: ScoreReward[],
     bRankTime: number,
     aRankTime: number,
@@ -211,9 +244,29 @@ export interface BattleQuest {
     manaReward: number,
     poolExpReward: number,
     fixedParty?: number,
+    /** Boss battle master column 107, the client's battle_quest_rank. */
+    questRankId?: number,
     rushEventId?: number
     rushEventFolderId?: RushEventFolder
     rushEventRound?: number
+    /** a battle the player is meant to lose (main quest kind 2, LoseBattle): finished lost, it counts as cleared */
+    loseBattle?: boolean
+    /** the quest's enemy element (0-5), which picks the item of an element or aether reward (FT-26) */
+    enemyElement?: number
+    /** the quest's event (Solo Boss Challenges, Chrono Trials) and its own daily challenge point (FT-30) */
+    eventId?: number
+    challengePointId?: number
+    /** Hanifolk Carnival (FT-11): the quest's boss, its battle time limit and its difficulty's base score */
+    folderId?: number
+    timeLimitMs?: number
+    difficultyScore?: number
+    /** the quest to clear first (FT-7, FT-8) and the items it takes on a clear (FT-8) */
+    needQuest?: { kind: number, questId: number }
+    useItems?: { always: boolean, items: { id: number, count: number }[] }
+    /** the stamina a start takes (`battle_stamina_cost`, FT-25) */
+    staminaCost?: number
+    /** the quest's enemy level (`battle_enemy_level`): which collect item event drops it gives (FT-2) */
+    enemyLevel?: number
 }
 
 export type RawQuests = Record<string, RawQuest>
@@ -397,6 +450,14 @@ export interface Gacha {
     /** "YYYY-MM-DD HH:MM:SS", Japan time (read with `masterDate()`); open from `startDate` to `endDate`, both included */
     startDate: string,
     endDate: string,
+    /**
+     * The star weights from the portal's master rarity table (`gacha_odds/<rarity>`), by pool key ("1" 5 stars, "2" 4
+     * stars, "3" 3 stars): 5 / 25 / 70 on most portals, 75 / 250 / 675 on festival ones
+     */
+    rankWeights: Record<string, number>,
+    /** how many pulls of a 10-pull are guaranteed (1), and their least stars (4) */
+    guaranteeNumber: number,
+    guaranteeRarity: number,
     pool: Record<string, GachaPoolItem[]>
 }
 

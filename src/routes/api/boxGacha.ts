@@ -1,13 +1,28 @@
 // Handles the insertion of mana into characters.
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { getPlayerBoxGachaDrawnRewardsSync, getPlayerBoxGachaSync, getPlayerItemSync, getPlayerSync, insertPlayerBoxGachaDrawnRewardSync, insertPlayerBoxGachaSync, playerOwnsEquipmentSync, updatePlayerBoxGachaDrawnRewardSync, updatePlayerBoxGachaSync, updatePlayerEquipmentSync, updatePlayerItemSync, updatePlayerPartyGroupSync } from "../../data/wdfpData";
-import { generateDataHeaders, getServerTime } from "../../utils";
+import { deletePlayerBoxGachaDrawnRewardsSync, getPlayerBoxGachaDrawnRewardsSync, getPlayerBoxGachaSync, getPlayerItemSync, getPlayerSync, insertPlayerBoxGachaDrawnRewardSync, insertPlayerBoxGachaSync, playerOwnsEquipmentSync, updatePlayerBoxGachaDrawnRewardSync, updatePlayerBoxGachaSync, updatePlayerEquipmentSync, updatePlayerItemSync, updatePlayerPartyGroupSync } from "../../data/wdfpData";
+import { generateDataHeaders, getServerDate, getServerTime, masterDate } from "../../utils";
+import { isContentPeriodOpen } from "../../lib/eventSchedule";
+import boxResets from "../../../assets/box_gacha_reset.json";
 import { getBoxGachaSync } from "../../lib/assets";
 import { drawBoxGachaSync, rewardPlayerBoxGachaResultSync } from "../../lib/gacha";
 import { BoxGachaBoxes } from "../../lib/types";
 import { boolean, gameBody, integer } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
+
+/** A box's reset rule (assets/box_gacha_reset.json): kind 2 resets once empty; limit null is unlimited. */
+interface BoxReset {
+    kind: number
+    limit: number | null
+    start: string
+    end: string
+}
+
+/** box_gacha/reset outside the box's period (the client's InvalidPeriodError). */
+const BOX_OUT_OF_PERIOD = 4608
+
+const resetSchema = gameBody({ box_gacha_id: integer, box_id: integer }, ["box_gacha_id", "box_id"])
 
 interface GetBoxListBody {
     box_gacha_id: number
@@ -342,6 +357,41 @@ const routes = async (fastify: FastifyInstance) => {
                 },
                 "mail_arrived": false
             }
+        })
+    }))
+
+    // Resetting a box (FT-14): refills it as it was, counting reset_times. The master data's reset rule (box_gacha/box,
+    // assets/box_gacha_reset.json): every gacha's last box resets once it's empty, without limit; the other boxes never
+    // do. Kind 1 (once every required reward is drawn) isn't in the data and is refused. Outside the box's period, 4608
+    // (the client's InvalidPeriodError).
+    fastify.post("/reset", { schema: resetSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const { box_gacha_id: boxGachaId, box_id: boxId } = request.body as { box_gacha_id: number, box_id: number }
+        const { viewerId, playerId } = request.viewer
+        const boxGachaData = getBoxGachaSync(boxGachaId)
+        const rule = (boxResets as Record<string, Record<string, BoxReset>>)[String(boxGachaId)]?.[String(boxId)]
+        if (boxGachaData === null || boxGachaData.boxes[boxId] === undefined || rule === undefined || rule.kind !== 2)
+            return reply.status(400).send({ "error": "Bad Request", "message": "This box can't be reset." })
+        if (!isContentPeriodOpen(masterDate(rule.start).getTime(), masterDate(rule.end).getTime(), getServerDate())) {
+            reply.header("content-type", "application/x-msgpack")
+            return reply.status(200).send({ "data_headers": generateDataHeaders({ viewer_id: viewerId, result_code: BOX_OUT_OF_PERIOD }), "data": [] })
+        }
+        const playerBox = getPlayerBoxGachaSync(playerId, boxGachaId, boxId)
+        if (playerBox === null || playerBox.remainingNumber > 0)
+            return reply.status(400).send({ "error": "Bad Request", "message": "The box isn't empty." })
+        if (rule.limit !== null && playerBox.resetTimes >= rule.limit)
+            return reply.status(400).send({ "error": "Bad Request", "message": "The box's resets are used up." })
+
+        deletePlayerBoxGachaDrawnRewardsSync(playerId, boxGachaId, boxId)
+        updatePlayerBoxGachaSync(playerId, boxGachaId, {
+            boxId,
+            isClosed: false,
+            remainingNumber: boxGachaData.availableCounts[boxId] ?? 0,
+            resetTimes: playerBox.resetTimes + 1
+        })
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: viewerId }),
+            "data": { "all_box_info": getAllBoxList(playerId, boxGachaId, boxGachaData.boxes) }
         })
     }))
 

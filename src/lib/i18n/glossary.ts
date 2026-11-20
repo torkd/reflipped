@@ -79,3 +79,23 @@ export function conflicts(entries: GlossaryEntry[]): Map<string, string[]> {
     }
     return new Map([...byJa].filter(([, ens]) => ens.size > 1).map(([ja, ens]) => [ja, [...ens]]))
 }
+
+/** Keep hand-checked references only when the complete source identity and both names are unchanged. */
+export function preserveGlossaryReferences(entries: GlossaryEntry[], previous: unknown): GlossaryEntry[] {
+    if (!previous || typeof previous !== "object") throw new Error("Invalid existing glossary")
+    const file = previous as { version?: unknown, lang?: unknown, entries?: unknown }
+    if (file.version !== 1 || file.lang !== "en" || !Array.isArray(file.entries)) throw new Error("Invalid existing English glossary")
+    const refs = new Map<string, string | null>()
+    const key = (entry: GlossaryEntry) => JSON.stringify([entry.ja, entry.en, entry.kind, entry.source])
+    for (const candidate of file.entries) {
+        if (!candidate || typeof candidate !== "object") throw new Error("Invalid existing glossary entry")
+        const entry = candidate as GlossaryEntry
+        if (typeof entry.ja !== "string" || typeof entry.en !== "string" || typeof entry.source !== "string" ||
+            !["character", "encyclopedia", "ui_string"].includes(entry.kind) || !(entry.ref === null || typeof entry.ref === "string"))
+            throw new Error("Invalid existing glossary entry")
+        const identity = key(entry)
+        if (refs.has(identity) && refs.get(identity) !== entry.ref) throw new Error("Conflicting references for glossary entry")
+        refs.set(identity, entry.ref)
+    }
+    return entries.map(entry => ({ ...entry, ref: refs.get(key(entry)) ?? entry.ref }))
+}

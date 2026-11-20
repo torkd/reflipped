@@ -1,0 +1,32 @@
+            <header class="page-header">
+                <h1 class="page-title">Users</h1>
+                <p class="page-subtitle">{{userCountText}} Players manage their own account on the portal, <code>/portal</code> at the game server's address; here you help when they are locked out.</p>
+            </header>
+{{notice}}
+            <section class="card p-2 md:p-3 gap-1">
+{{listContent}}
+            </section>
+            <section class="card">
+                <div class="card-header">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Create a user</h2>
+                        <p class="card-text">{{registrationText}}</p>
+                    </div>
+                </div>
+                <form class="flex flex-col gap-4" method="post" action="/api/user/create">
+                    <label class="field">Username
+                        <input class="input" name="username" autocomplete="off" required minlength="{{usernameMin}}" maxlength="{{usernameMax}}" pattern="[A-Za-z0-9_.\-]+">
+                    </label>
+                    <label class="field">Password
+                        <input class="input" name="password" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+                        <span>At least {{passwordMin}} characters. Give it to the player; they can change it on the portal.</span>
+                    </label>
+                    <label class="field">Role
+                        <select class="input" name="role">
+                            <option value="player" selected>Player</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </label>
+                    <button type="submit" class="btn-primary self-start">Create user</button>
+                </form>
+            </section>

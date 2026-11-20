@@ -26,6 +26,9 @@ Environment=DATABASE_DIR=/var/lib/reflipped/database
 Environment=LOG_FILE=
 # Behind a reverse proxy on this host: trust its X-Forwarded-For (docs/hardening.md, SEC-4).
 Environment=TRUST_PROXY=127.0.0.1,::1
+# Only the proxy reaches the game port; players reach the co-op socket (18888) directly.
+Environment=LISTEN_HOST=127.0.0.1
+Environment=COOP_SOCKET_HOST=0.0.0.0
 StateDirectory=reflipped
 StateDirectoryMode=0700
 

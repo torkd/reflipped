@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, renameSync } 
 import { Open } from "unzipper";
 import path from "path";
 import cliProgress, { SingleBar } from "cli-progress";
+import { cdnDir, dataPath } from "./lib/paths";
 
 interface EntityData {
     zipPath: string,
@@ -21,13 +22,12 @@ const validCDNFolders: Record<string, boolean> = {
     "th": true
 }
 
-const tempDir = path.join(__dirname, "..", ".unzip-temp")
+const tempDir = dataPath(".unzip-temp")
 if (!existsSync(tempDir)) {
     mkdirSync(tempDir)
 }
 
-const cdn_dir = process.env.CDN_DIR || ".cdn"
-const output_dir = path.isAbsolute(cdn_dir) ? cdn_dir : path.join(__dirname, "..", cdn_dir)
+const output_dir = cdnDir()
 if (!existsSync(output_dir)) {
     throw new Error(`CDN does not exist at directory '${output_dir}'`)
 }
@@ -195,9 +195,9 @@ async function unzipLanguage(dirPath: string) {
 
 async function unzip() {
     console.log("Unzipping CDN...")
-    for (const fileName of readdirSync(cdn_dir)) {
+    for (const fileName of readdirSync(output_dir)) {
         if (validCDNFolders[fileName] === true) {
-            await unzipLanguage(path.join(cdn_dir, fileName))
+            await unzipLanguage(path.join(output_dir, fileName))
         }
     }
     console.log("Successfully unzipped CDN.")

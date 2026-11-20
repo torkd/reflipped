@@ -12,41 +12,6 @@ import { givePlayerEquipmentSync } from "./equipment";
 import { givePlayerRewardsSync } from "./quest";
 import { BoxGachaBox, BoxGachaDrawResult, BoxGachaIdReward, BoxGachaRewardTier, BoxGachaRewardType, CharacterGacha, CharacterReward, CurrencyReward, EquipmentItemReward, Gacha, GachaCharacterDraw, GachaDrawResult, GachaDraws, GachaMovieSeeds, GachaMovieType, GachaType, PlayerRewardResult, Reward, RewardPlayerGachaDrawResult, RewardType } from "./types";
 
-const characterGachaRankRates = {
-    normal: [
-        75, // 5*
-        250,  // 4*
-        675 // 3*
-    ],
-    multiGuarantee: [
-        75, // 5*
-        925 // 4*
-    ]
-}
-const rateUpCharacterGachaRates = {
-    normal: [
-        50, // 5*
-        250, // 4*,
-        700, // 3*
-    ],
-    multiGuarantee: [
-        50, // 5*
-        950 // 4*
-    ],
-}
-
-const equipmentGachaRankRates = {
-    normal: [
-        50,  // 5*
-        250, // 4*
-        700  // 3*
-    ],
-    multiGuarantee: [
-        50, // 5*
-        950 // 4*
-    ]
-}
-
 const rankMovieRates = [
     [ // 5*
         80,
@@ -99,26 +64,65 @@ export function randomPoolItem(
     return null;
 }
 
+/**
+ * Picks an index of `weights` with the chance weight / sum of the weights (null if they are all 0). Weights are whole
+ * numbers, as the master data gives them.
+ */
+export function randomWeightedIndex(weights: number[]): number | null {
+    const total = weights.reduce((sum, weight) => sum + Math.max(0, weight), 0)
+    if (total <= 0) return null
+    let roll = randomInt(0, total)
+    for (let index = 0; index < weights.length; index++) {
+        roll -= Math.max(0, weights[index])
+        if (roll < 0) return index
+    }
+    return null
+}
+
+/** Pool keys in star order: "1" 5 stars, "2" 4 stars, "3" 3 stars. */
+const RANK_KEYS = ["1", "2", "3"] as const
+const rankStars = (key: string) => 6 - Number(key)
+
+/**
+ * A portal's star weights for one pull, from its master rarity table (`rankWeights`, e.g. 5 / 25 / 70, or 75 / 250 /
+ * 675 on a festival portal). A guaranteed pull drops the ranks under `guaranteeRarity` and adds their weight to that
+ * rank (5 / 95), as the client's odds page (GachaOdds getRarityWeight) shows it.
+ */
+export function gachaRankWeights(gacha: Gacha, guaranteed: boolean): number[] {
+    return RANK_KEYS.map(key => {
+        const stars = rankStars(key)
+        const weight = gacha.rankWeights[key] ?? 0
+        if (!guaranteed) return weight
+        if (stars < gacha.guaranteeRarity) return 0
+        if (stars > gacha.guaranteeRarity) return weight
+        return RANK_KEYS.filter(other => rankStars(other) <= stars).reduce((sum, other) => sum + (gacha.rankWeights[other] ?? 0), 0)
+    })
+}
+
 export function drawGachaSync(
     gacha: Gacha,
-    drawAmount: number
+    drawAmount: number,
+    /** every pull at the guaranteed rates (at least 4 stars): the 4 & 5-Star Portal Ticket (FT-14) */
+    guaranteed: boolean = false
 ): GachaDrawResult {
-    const isCharacterGacha = gacha.type === GachaType.CHARACTER
-    const isRateUp = isCharacterGacha ? (gacha as CharacterGacha).movieName !== "normal" : false
-    const rankRates = isCharacterGacha ? (isRateUp ? rateUpCharacterGachaRates : characterGachaRankRates) : equipmentGachaRankRates
+    const normalWeights = gachaRankWeights(gacha, false)
+    const guaranteedWeights = gachaRankWeights(gacha, true)
+    const guaranteeNumber = Math.max(0, gacha.guaranteeNumber)
 
     const pulls: Map<number, number> = new Map()
 
     for (let drawNumber = 0; drawNumber < drawAmount; drawNumber++) {
-        const drawRankRates = (drawNumber !== 0) && ((drawNumber % 9) === 0) ? rankRates.multiGuarantee : rankRates.normal
-        
-        const ratePool = gacha.pool[(randomPoolItem(0, 1001, drawRankRates) ?? 0) + 1]
+        // the last `guaranteeNumber` pulls (1 on every portal) of each full 10 are guaranteed; a single pull never is
+        const inTen = drawNumber % 10
+        const tenIsFull = drawNumber - inTen + 10 <= drawAmount
+        const weights = guaranteed || (tenIsFull && inTen >= 10 - guaranteeNumber) ? guaranteedWeights : normalWeights
 
-        // pick item from pool
-        const selectedItem = ratePool[randomPoolItem(0, 1001, ratePool.map(item => item.rarity)) ?? 0]
-        const selectedItemId = selectedItem.id
-
-        pulls.set(selectedItemId, (pulls.get(selectedItemId) ?? 0) + 1)
+        // the rank, then a unit of it by the master odds (rate-up units have more)
+        const rank = randomWeightedIndex(weights)
+        const ratePool = rank === null ? undefined : gacha.pool[RANK_KEYS[rank]]
+        if (ratePool === undefined || ratePool.length === 0) throw new Error(`portal pool has no rank ${rank === null ? "?" : RANK_KEYS[rank]}`)
+        const selectedItem = ratePool[randomWeightedIndex(ratePool.map(item => item.odds)) ?? 0]
+        pulls.set(selectedItem.id, (pulls.get(selectedItem.id) ?? 0) + 1)
     }
 
     return pulls

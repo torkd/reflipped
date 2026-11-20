@@ -14,6 +14,7 @@
 import { createHash } from "crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "fs";
 import path from "path";
+import { appPath } from "../lib/paths";
 import { CdnIndex, digestPath, masterAssetPath } from "../lib/cdnIndex";
 import { decodeOrderedMap } from "../lib/orderedmap";
 import { writeZip } from "../lib/zipWriter";
@@ -134,6 +135,8 @@ interface TranslationEntry {
     text?: unknown
     status?: unknown
     note?: unknown
+    /** Column of the same row whose placeholders the text must match, when the source cell's own are wrong. */
+    placeholdersFrom?: unknown
 }
 
 interface ImageEntry {
@@ -249,7 +252,7 @@ export function buildOverlay(options: OverlayBuildOptions): OverlayBuildResult {
     }
 
     // the checker's inputs: the column map, the length limits and the glossary (I18N-2)
-    const repoI18n = path.join(__dirname, "..", "..", "i18n")
+    const repoI18n = appPath("i18n")
     const defaults = (name: string) => [path.join(options.i18nDir, name), path.join(repoI18n, name)]
     const columnsFile = pickFile(options.columnsFile, defaults("columns.json"))
     const limitsFile = pickFile(options.limitsFile, defaults("limits.json"))
@@ -329,8 +332,18 @@ export function buildOverlay(options: OverlayBuildOptions): OverlayBuildResult {
                     report.errors.push({ ...here, reason: "column is not translatable in columns.json" })
                     continue
                 }
+                let placeholderSource: string | undefined
+                if (entry.placeholdersFrom !== undefined) {
+                    placeholderSource = Number.isInteger(entry.placeholdersFrom)
+                        ? getCell(root, table, row, entry.placeholdersFrom as number) : undefined
+                    if (placeholderSource === undefined) {
+                        report.errors.push({ ...here, reason: "placeholdersFrom is not a column of this row" })
+                        continue
+                    }
+                }
                 const issues = checkTranslation(current, entry.text, {
                     kind: kind === "story" ? "scenario" : "text",
+                    placeholderSource,
                     maxLength: kind === "master" ? limits[table]?.[colKey] : undefined,
                     glossary
                 })

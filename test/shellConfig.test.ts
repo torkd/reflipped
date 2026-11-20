@@ -22,12 +22,15 @@ test("/shell/config identifies a Reflipped server without any auth", async () =>
     const response = await fastify.inject({ method: "GET", url: "/shell/config" })
     assert.equal(response.statusCode, 200)
     assert.match(response.headers["content-type"] as string, /application\/json/)
-    assert.deepEqual(response.json(), { reflipped: 1, name: "Reflipped", cdn: null })
+    // Older shells consume these fields; public card metadata is an additive extension.
+    const { reflipped, name, cdn, portal } = response.json()
+    assert.deepEqual({ reflipped, name, cdn, portal }, { reflipped: 1, name: "Reflipped", cdn: null, portal: 1 })
 })
 
 test("/shell/config reports SERVER_NAME and SHELL_CDN", async () => {
     process.env.SERVER_NAME = "My Flipper"
     process.env.SHELL_CDN = "https://cdn.example.org/wf"
     const response = await fastify.inject({ method: "GET", url: "/shell/config" })
-    assert.deepEqual(response.json(), { reflipped: 1, name: "My Flipper", cdn: "https://cdn.example.org/wf" })
+    const { reflipped, name, cdn, portal } = response.json()
+    assert.deepEqual({ reflipped, name, cdn, portal }, { reflipped: 1, name: "My Flipper", cdn: "https://cdn.example.org/wf", portal: 1 })
 })

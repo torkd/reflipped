@@ -20,7 +20,7 @@ services:
       # a proxy in a container (traefik/edge.yaml), add that network's subnet: TRUST_PROXY=<stack>,<proxy>.
       TRUST_PROXY: ${TRUST_PROXY:-${STACK_SUBNET:-172.28.42.0/24}}
     ports:
-      # The admin UI has no login: host loopback only (reach it over SSH or a VPN).
+      # The admin site (login required): host loopback only (reach it over SSH or a VPN).
       - "${ADMIN_BIND:-127.0.0.1}:${ADMIN_PORT:-8001}:8001"
       # Co-op realtime socket, spoken by the game directly (not HTTP, so not through the edge).
       - "${COOP_BIND:-0.0.0.0}:${COOP_PORT:-18888}:18888"

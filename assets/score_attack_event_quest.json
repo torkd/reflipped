@@ -8,7 +8,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 300000
     },
     "1002": {
         "name": "",
@@ -19,7 +21,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1003": {
         "name": "",
@@ -30,7 +34,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1004": {
         "name": "",
@@ -41,7 +47,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 300000
     },
     "1005": {
         "name": "",
@@ -52,7 +60,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1006": {
         "name": "",
@@ -63,7 +73,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 60000
     },
     "1007": {
         "name": "",
@@ -74,7 +86,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1008": {
         "name": "",
@@ -85,7 +99,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1009": {
         "name": "",
@@ -96,7 +112,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1010": {
         "name": "",
@@ -107,7 +125,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 300000
     },
     "1011": {
         "name": "",
@@ -118,7 +138,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1012": {
         "name": "",
@@ -129,7 +151,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1013": {
         "name": "",
@@ -140,7 +164,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 300000
     },
     "1014": {
         "name": "",
@@ -151,7 +177,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1015": {
         "name": "",
@@ -162,7 +190,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1016": {
         "name": "",
@@ -173,7 +203,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 60000
     },
     "1017": {
         "name": "",
@@ -184,7 +216,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1018": {
         "name": "",
@@ -195,7 +229,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1019": {
         "name": "",
@@ -206,7 +242,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1020": {
         "name": "",
@@ -217,7 +255,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1021": {
         "name": "",
@@ -228,7 +268,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 300000
     },
     "1022": {
         "name": "",
@@ -239,7 +281,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1023": {
         "name": "",
@@ -250,7 +294,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1024": {
         "name": "",
@@ -261,7 +307,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 60000
     },
     "1025": {
         "name": "",
@@ -272,7 +320,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1026": {
         "name": "",
@@ -283,7 +333,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 240000
     },
     "1027": {
         "name": "",
@@ -294,7 +346,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1028": {
         "name": "",
@@ -305,7 +359,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1029": {
         "name": "",
@@ -316,7 +372,9 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     },
     "1030": {
         "name": "",
@@ -327,6 +385,8 @@
         "rankPointReward": 0,
         "characterExpReward": 0,
         "manaReward": 0,
-        "poolExpReward": 0
+        "poolExpReward": 0,
+        "staminaCost": 10,
+        "timeLimitMs": 180000
     }
 }

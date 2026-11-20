@@ -23,6 +23,7 @@ build
 .mitmproxy/mitmdump
 .wireguard
 cdn.tar.gz
+cn-cdn.tar.gz
 *.apk
 # AIR SDK / AIR SDK Manager downloads (third-party binaries)
 AIRSDK*.zip
@@ -43,3 +44,6 @@ docker/certs/
 .claude/worktrees/
 # docker compose run --rm backup (BACKUP_DIR default)
 docker/backups/
+
+# Generated schedule masters and immutable client overlays (game data, never committed).
+.cdn-schedule/

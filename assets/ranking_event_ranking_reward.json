@@ -1,0 +1,1321 @@
+{
+    "1": [
+        {
+            "id": 101,
+            "share": 0.03,
+            "reasonId": 10001,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54040
+                },
+                {
+                    "kind": 0,
+                    "number": 50,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 12002
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "share": 0.05,
+            "reasonId": 10002,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54030
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "share": 0.1,
+            "reasonId": 10003,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54030
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "share": 0.2,
+            "reasonId": 10004,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54020
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "share": 0.3,
+            "reasonId": 10005,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54020
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "share": 0.4,
+            "reasonId": 10006,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54010
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 107,
+            "share": 0.5,
+            "reasonId": 10007,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54010
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 108,
+            "share": 0.7,
+            "reasonId": 10008,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54000
+                },
+                {
+                    "kind": 0,
+                    "number": 10,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 300
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 109,
+            "share": 1.0,
+            "reasonId": 10009,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 150
+                }
+            ]
+        }
+    ],
+    "4": [
+        {
+            "id": 401,
+            "share": 0.03,
+            "reasonId": 10029,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54190
+                },
+                {
+                    "kind": 0,
+                    "number": 50,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 12002
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 402,
+            "share": 0.06,
+            "reasonId": 10030,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54180
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 403,
+            "share": 0.1,
+            "reasonId": 10031,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54180
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 404,
+            "share": 0.2,
+            "reasonId": 10032,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54170
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 405,
+            "share": 0.3,
+            "reasonId": 10033,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54170
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 406,
+            "share": 0.4,
+            "reasonId": 10034,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54160
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 407,
+            "share": 0.6,
+            "reasonId": 10035,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54160
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 300
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 408,
+            "share": 0.8,
+            "reasonId": 10036,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54150
+                },
+                {
+                    "kind": 0,
+                    "number": 10,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 150
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                }
+            ]
+        },
+        {
+            "id": 409,
+            "share": 1.0,
+            "reasonId": 10037,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54150
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 49100
+                }
+            ]
+        }
+    ],
+    "2": [
+        {
+            "id": 201,
+            "share": 0.03,
+            "reasonId": 10011,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54090
+                },
+                {
+                    "kind": 0,
+                    "number": 50,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 12002
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 202,
+            "share": 0.06,
+            "reasonId": 10012,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54080
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 203,
+            "share": 0.1,
+            "reasonId": 10013,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54080
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 204,
+            "share": 0.2,
+            "reasonId": 10014,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54070
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "share": 0.3,
+            "reasonId": 10015,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54070
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 206,
+            "share": 0.4,
+            "reasonId": 10016,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54060
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 207,
+            "share": 0.6,
+            "reasonId": 10017,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54060
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 300
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 208,
+            "share": 0.8,
+            "reasonId": 10018,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54050
+                },
+                {
+                    "kind": 0,
+                    "number": 10,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 150
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                }
+            ]
+        },
+        {
+            "id": 209,
+            "share": 1.0,
+            "reasonId": 10019,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54050
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 49100
+                }
+            ]
+        }
+    ],
+    "5": [
+        {
+            "id": 501,
+            "share": 0.03,
+            "reasonId": 10038,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54240
+                },
+                {
+                    "kind": 0,
+                    "number": 50,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 12002
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 502,
+            "share": 0.06,
+            "reasonId": 10039,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54230
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 503,
+            "share": 0.1,
+            "reasonId": 10040,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54230
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 504,
+            "share": 0.2,
+            "reasonId": 10041,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54220
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 505,
+            "share": 0.3,
+            "reasonId": 10042,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54220
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 506,
+            "share": 0.4,
+            "reasonId": 10043,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54210
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 507,
+            "share": 0.6,
+            "reasonId": 10044,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54210
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 300
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 508,
+            "share": 0.8,
+            "reasonId": 10045,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54200
+                },
+                {
+                    "kind": 0,
+                    "number": 10,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 150
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                }
+            ]
+        },
+        {
+            "id": 509,
+            "share": 1.0,
+            "reasonId": 10046,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54200
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 49100
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "id": 301,
+            "share": 0.03,
+            "reasonId": 10020,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54140
+                },
+                {
+                    "kind": 0,
+                    "number": 50,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 12002
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 302,
+            "share": 0.06,
+            "reasonId": 10021,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54130
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999004
+                }
+            ]
+        },
+        {
+            "id": 303,
+            "share": 0.1,
+            "reasonId": 10022,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54130
+                },
+                {
+                    "kind": 0,
+                    "number": 40,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1500
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 304,
+            "share": 0.2,
+            "reasonId": 10023,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54120
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 7,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 305,
+            "share": 0.3,
+            "reasonId": 10024,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54120
+                },
+                {
+                    "kind": 0,
+                    "number": 30,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 1000
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 306,
+            "share": 0.4,
+            "reasonId": 10025,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54110
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 3,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 307,
+            "share": 0.6,
+            "reasonId": 10026,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54110
+                },
+                {
+                    "kind": 0,
+                    "number": 20,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 300
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 999005
+                }
+            ]
+        },
+        {
+            "id": 308,
+            "share": 0.8,
+            "reasonId": 10027,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54100
+                },
+                {
+                    "kind": 0,
+                    "number": 10,
+                    "id": 49100
+                },
+                {
+                    "kind": 2,
+                    "number": 150
+                },
+                {
+                    "kind": 0,
+                    "number": 1,
+                    "id": 13001
+                }
+            ]
+        },
+        {
+            "id": 309,
+            "share": 1.0,
+            "reasonId": 10028,
+            "rewards": [
+                {
+                    "kind": 6,
+                    "number": 1,
+                    "id": 54100
+                },
+                {
+                    "kind": 0,
+                    "number": 5,
+                    "id": 49100
+                }
+            ]
+        }
+    ]
+}

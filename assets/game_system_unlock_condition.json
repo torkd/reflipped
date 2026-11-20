@@ -1,0 +1,247 @@
+{
+    "event": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            }
+        }
+    ],
+    "merchant": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 2009007
+            }
+        }
+    ],
+    "attention": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            }
+        }
+    ],
+    "auto_play": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1001001
+            }
+        }
+    ],
+    "boss_battle": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1004002
+            }
+        }
+    ],
+    "challenge_dungeon": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 4011005
+            }
+        }
+    ],
+    "unison": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1006001
+            }
+        }
+    ],
+    "collect_item_event": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1004002
+            }
+        }
+    ],
+    "tower_dungeon": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 4011005
+            }
+        }
+    ],
+    "expert_single": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            },
+            "playerRank": 80
+        }
+    ],
+    "boss_battle_advent": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            }
+        }
+    ],
+    "solo_time_attack": [
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1002
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1004
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1006
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1008
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1010
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 12,
+                "questId": 1012
+            }
+        }
+    ],
+    "character_election": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 2009007
+            }
+        }
+    ],
+    "single_auto_start": [
+        {
+            "playerRank": 70
+        }
+    ],
+    "equipment_enhancement": [
+        {
+            "playerRank": 90
+        }
+    ],
+    "expert_single_side_story": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            },
+            "playerRank": 90
+        },
+        {
+            "clearedQuest": {
+                "kind": 9,
+                "questId": 400003104
+            }
+        }
+    ],
+    "boss_epuration": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 11010003
+            }
+        }
+    ],
+    "hard_multi_red": [
+        {
+            "playerRank": 120
+        },
+        {
+            "clearedQuest": {
+                "kind": 7,
+                "questId": 1038
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 6,
+                "questId": 200014004
+            }
+        }
+    ],
+    "score_attack_unlock": [
+        {
+            "clearedQuest": {
+                "kind": 0,
+                "questId": 1008004
+            },
+            "playerRank": 100
+        }
+    ],
+    "hard_multi_green": [
+        {
+            "playerRank": 120
+        },
+        {
+            "clearedQuest": {
+                "kind": 7,
+                "questId": 1038
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 6,
+                "questId": 200017004
+            }
+        }
+    ],
+    "hard_multi_blue": [
+        {
+            "playerRank": 120
+        },
+        {
+            "clearedQuest": {
+                "kind": 7,
+                "questId": 1038
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 6,
+                "questId": 200018004
+            }
+        }
+    ],
+    "hard_multi_light": [
+        {
+            "playerRank": 120
+        },
+        {
+            "clearedQuest": {
+                "kind": 7,
+                "questId": 1038
+            }
+        },
+        {
+            "clearedQuest": {
+                "kind": 6,
+                "questId": 200053004
+            }
+        }
+    ]
+}

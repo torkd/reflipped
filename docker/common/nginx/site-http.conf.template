@@ -2,6 +2,15 @@
 # (envsubst); only defined variables (REFLIPPED_UPSTREAM, PUBLIC_HOST, TLS) are substituted.
 # scripts/edge-site.sh removes it when TLS is on.
 
+# The scheme Reflipped is told (X-Forwarded-Proto, in api.inc). Behind a web server that handles HTTPS, this
+# edge only sees plain HTTP, so it keeps that server's "https": the portal and the URLs Reflipped hands out
+# (schedule archives, co-op invitations) then say https. Anything else is this edge's own scheme. A client
+# that talks to this edge directly and sends the header only changes its own replies.
+map $http_x_forwarded_proto $reflipped_proto {
+    default $scheme;
+    https   https;
+}
+
 server {
     listen 8080;
     listen [::]:8080;

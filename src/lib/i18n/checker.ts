@@ -22,6 +22,11 @@ export interface CheckOptions {
     allowKana?: boolean
     /** Glossary entries ({ja, en}) to check for consistency; matching is a plain substring test. */
     glossary?: ReadonlyArray<{ ja: string; en: string }>
+    /**
+     * Check placeholders and `::if::` blocks against this text instead of the source: another column of the same row (an
+     * entry's `placeholdersFrom`), for a source cell whose own placeholders are wrong.
+     */
+    placeholderSource?: string
 }
 
 const DIRECTIVE = /::(?:if\b[^:]*|else|end)::/g
@@ -89,12 +94,13 @@ export function checkTranslation(source: string, translation: string, options: C
     }
 
     // placeholders and conditional blocks
-    const srcPh = placeholdersOf(source)
+    const placeholderSource = options.placeholderSource ?? source
+    const srcPh = placeholdersOf(placeholderSource)
     const trPh = placeholdersOf(translation)
     for (const p of missing(srcPh, trPh)) add("error", "placeholder", `placeholder ${p} is missing`)
     for (const p of missing(trPh, srcPh)) add("error", "placeholder", `placeholder ${p} is not in the source`)
 
-    const srcDir = directivesOf(source)
+    const srcDir = directivesOf(placeholderSource)
     const trDir = directivesOf(translation)
     for (const d of missing(srcDir, trDir)) add("error", "conditional", `${d} is missing`)
     for (const d of missing(trDir, srcDir)) add("error", "conditional", `${d} is not in the source`)

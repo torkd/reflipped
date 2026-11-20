@@ -2,16 +2,16 @@
 // The lounge it shares with co-op (`lounge/*` and its socket) is CO-3.
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { getPlayerItemSync, getPlayerReceivableMailCountSync, getPlayerMultiSpecialExchangeCampaignSync, givePlayerItemSync, updatePlayerItemSync, upsertPlayerMultiSpecialExchangeCampaignSync } from "../../data/wdfpData";
+import { getPlayerItemSync, getPlayerMultiSpecialExchangeLoungeMatesSync, getPlayerReceivableMailCountSync, getPlayerMultiSpecialExchangeCampaignSync, givePlayerItemSync, updatePlayerItemSync, upsertPlayerMultiSpecialExchangeCampaignSync } from "../../data/wdfpData";
 import { serializeMultiSpecialExchangeCampaign } from "../../data/utils";
 import { MailType, PlayerMultiSpecialExchangeCampaign } from "../../data/types";
-import { sendPlayerMailSync } from "../../lib/mail";
+import { InvalidMailError, sendPlayerMailSync } from "../../lib/mail";
 import { mailLimits } from "../../lib/limits";
 import { generateDataHeaders, getServerDate } from "../../utils";
 import { atomicHandler } from "../../lib/atomic";
 import { collectionUpdatesSync, missionReplyFields, updateMissionsSync } from "../../lib/missions";
-import { givePlayerCharacterSync } from "../../lib/character";
-import { bonusUnitMailDescription, bonusUnitMailReasonId, bonusUnitMailSubject, drawBonusCharacterIds, drawTicketItemId, getExchangeCharacterIds, getMultiSpecialExchangeCampaign, isWithinCampaignPeriod, isWithinExchangePeriod, MultiSpecialExchangeResultCode, MultiSpecialExchangeStatus } from "../../lib/multiSpecialExchange";
+import { characterEncyclopediaKey, givePlayerCharacterSync } from "../../lib/character";
+import { bonusUnitMailDescription, bonusUnitMailReasonId, bonusUnitMailSubject, drawBonusCharacterIds, drawTicketItemId, getExchangeCharacterIds, getMultiSpecialExchangeCampaign, isWithinCampaignPeriod, isWithinExchangePeriod, matePickMailReasonId, MultiSpecialExchangeResultCode, MultiSpecialExchangeStatus } from "../../lib/multiSpecialExchange";
 import { gameBody, integer } from "../schemas";
 
 interface DrawTicketBody {
@@ -154,10 +154,28 @@ const routes = async (fastify: FastifyInstance) => {
         const exchanged = { campaignId, status: MultiSpecialExchangeStatus.EXCHANGED, ticketItemId }
         upsertPlayerMultiSpecialExchangeCampaignSync(playerId, exchanged)
 
-        // the two other units arrive in the gift box (see drawBonusCharacterIds; co-op mates' picks are CO-3). A full
-        // gift box doesn't cost the player the exchange: the chosen unit is given and only the mails that fit are sent.
+        // Two more units arrive in the gift box. After a lounge (CO-3) they are the mates' picks: this one goes to each
+        // mate, and theirs come here when they exchange. Alone, two random ones (drawBonusCharacterIds). A full gift box
+        // doesn't cost anyone the exchange: the chosen unit is given and only the mails that fit are sent.
+        const mates = getPlayerMultiSpecialExchangeLoungeMatesSync(playerId, campaignId)
+        for (const matePlayerId of mates) {
+            try {
+                sendPlayerMailSync(matePlayerId, {
+                    type: MailType.CHARACTER,
+                    typeId: characterId,
+                    number: 1,
+                    reasonId: matePickMailReasonId,
+                    subject: bonusUnitMailSubject,
+                    description: bonusUnitMailDescription
+                })
+            } catch (error) {
+                if (!(error instanceof InvalidMailError)) throw error
+                request.log.info({ matePlayerId }, "exchange_character: a lounge mate's gift box is full, its bonus unit is skipped")
+            }
+        }
         const freeMailSlots = mailLimits.pendingMails - getPlayerReceivableMailCountSync(playerId, now)
-        for (const bonusCharacterId of drawBonusCharacterIds(ticketItemId).slice(0, Math.max(0, freeMailSlots))) {
+        const bonusCharacterIds = mates.length > 0 ? [] : drawBonusCharacterIds(ticketItemId)
+        for (const bonusCharacterId of bonusCharacterIds.slice(0, Math.max(0, freeMailSlots))) {
             sendPlayerMailSync(playerId, {
                 type: MailType.CHARACTER,
                 typeId: bonusCharacterId,
@@ -182,7 +200,7 @@ const routes = async (fastify: FastifyInstance) => {
                     isNew ? { ...giveResult.character, "viewer_id": viewerId } : giveResult.character
                 ],
                 "item_list": itemList,
-                "encyclopedia_info": isNew ? { [`1${characterId}01`]: { "read": false } } : [],
+                "encyclopedia_info": isNew ? { [characterEncyclopediaKey(characterId)]: { "read": false } } : [],
                 "mission_info": [], // the multi special exchange missions (pattern 66) aren't counted
                 // lights the gift box badge, as /load does
                 ...missionReplyFields(updateMissionsSync(playerId, now, collectionUpdatesSync(playerId)), getPlayerReceivableMailCountSync(playerId, now) > 0)

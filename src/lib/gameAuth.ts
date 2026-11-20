@@ -9,12 +9,12 @@
 // docs/apk-analysis.md "Request signing"): `PARAM = sha1(UDID + viewer_id + path + raw body)` and
 // `GAME-APP-ID = viewer_id`. The UDID comes from the viewer session, bound at `tool/signup` and `/load`,
 // so a viewer ID alone no longer authenticates. `PARAM_CHECK` picks what a failure does: `enforce` (the
-// default: reject with 403), `log` (let it through with a warning) or `off`.
+// default: reject it with the reply an unknown viewer id gets, a 400), `log` (let it through with a warning) or `off`.
 
 import { createHash, timingSafeEqual } from "crypto";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { Session, SessionType } from "../data/types";
-import { getAccountPlayers, getSession, updateSessionExpirySync, VIEWER_SESSION_TTL_MS, viewerSessionExpiry } from "../data/wdfpData";
+import { getAccountPlayers, getSession, updateSessionAuthenticatedSync, updateSessionExpirySync, VIEWER_SESSION_TTL_MS, viewerSessionExpiry } from "../data/wdfpData";
 
 /** `"viewer"` (the default) requires a live viewer session; `"none"` skips the check. */
 export type GameAuthMode = "viewer" | "none"
@@ -45,10 +45,33 @@ declare module "fastify" {
 /** A session used within this window of its last renewal is not renewed again, to avoid a write per request. */
 const RENEW_AFTER_MS = 60 * 60 * 1000
 
-/** Slides a viewer session's expiry forward if it was last renewed more than an hour ago. */
-export function renewViewerSession(session: Session) {
-    if (session.expires.getTime() - Date.now() > VIEWER_SESSION_TTL_MS - RENEW_AFTER_MS) return
-    session.expires = viewerSessionExpiry()
+/**
+ * How long after the last proof of the account's zat (`/load`, `tool/signup`) game requests can keep a viewer session
+ * alive (SEC-16). Every launch of the game sends `/load`, so only a viewer id and UDID used without the game's own
+ * login, such as a leaked pair, run into it; the next `/load` starts it again.
+ */
+export const VIEWER_SESSION_MAX_MS = 30 * 24 * 60 * 60 * 1000
+
+/**
+ * Renews a viewer session. `authenticated` (the request proved the account's zat: `/load`, `tool/signup`) gives it a
+ * full lifetime and restarts its limit; a game request slides its expiry forward, at most once an hour and never past
+ * VIEWER_SESSION_MAX_MS after the last proof.
+ */
+export function renewViewerSession(session: Session, authenticated: boolean = false) {
+    const now = Date.now()
+    if (authenticated) {
+        session.authenticatedAt = new Date(now)
+        updateSessionAuthenticatedSync(session.token, session.authenticatedAt)
+    } else if (session.authenticatedAt === null || session.authenticatedAt === undefined) {
+        // a session from before the limit: it starts now
+        session.authenticatedAt = new Date(now)
+        updateSessionAuthenticatedSync(session.token, session.authenticatedAt)
+    } else if (session.expires.getTime() - now > VIEWER_SESSION_TTL_MS - RENEW_AFTER_MS) return
+
+    const limit = session.authenticatedAt.getTime() + VIEWER_SESSION_MAX_MS
+    const expires = authenticated ? viewerSessionExpiry() : new Date(Math.min(viewerSessionExpiry().getTime(), limit))
+    if (expires.getTime() === session.expires.getTime()) return
+    session.expires = expires
     updateSessionExpirySync(session.token, session.expires)
 }
 
@@ -96,6 +119,14 @@ export function createGameAuthPreHandler(paramCheck: ParamCheckMode = paramCheck
     return (request: FastifyRequest, reply: FastifyReply) => gameAuthPreHandler(request, reply, paramCheck)
 }
 
+/** The reply to an unknown or expired viewer id and to a failed signature check alike. */
+function invalidViewer(reply: FastifyReply) {
+    return reply.status(400).send({
+        "error": "Bad Request",
+        "message": "Invalid viewer id."
+    })
+}
+
 async function gameAuthPreHandler(request: FastifyRequest, reply: FastifyReply, paramCheck: ParamCheckMode) {
     if (request.routeOptions.config.gameAuth === "none") return
 
@@ -106,19 +137,14 @@ async function gameAuthPreHandler(request: FastifyRequest, reply: FastifyReply, 
     })
 
     const session = await getSession(String(viewerId))
-    if (session === null || session.type !== SessionType.VIEWER) return reply.status(400).send({
-        "error": "Bad Request",
-        "message": "Invalid viewer id."
-    })
+    if (session === null || session.type !== SessionType.VIEWER) return invalidViewer(reply)
 
     if (paramCheck !== "off") {
         const failure = requestSignatureFailure(request, viewerId, session.udid)
         if (failure !== null) {
             request.log.warn({ viewerId, reason: failure }, "game request signature check failed")
-            if (paramCheck === "enforce") return reply.status(403).send({
-                "error": "Forbidden",
-                "message": "Invalid request signature."
-            })
+            // the same reply as an unknown viewer id, so a guessed id can't be told from a live one (SEC-16)
+            if (paramCheck === "enforce") return invalidViewer(reply)
         }
     }
 

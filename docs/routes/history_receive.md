@@ -866,3 +866,12 @@ param: 0c6cca9c7ae952ff58132c8c95c1b1100d3d88c1
 }
 ```
 
+## Notes
+The client's remote is `pinball.remote.history.receive.HistoryReceiveRealRemote`; the screen is `pinball.scene.receiveHistory.ReceiveHistoryScene` (gift box → history).
+
+- Request: `page`, starting at 1. Pages hold 100 entries (the client's list pager). On entry the client loads page 1 and sizes its list from `total_count`, then loads other pages on demand, so `total_count` has to match what the pages hold. 0 shows "Your item log is empty."
+- Entry fields the client reads: `type`, `type_id` (the same rules as `mail/index`: required for types 1, 5, 6, 13, 14 and 15, absent or null for the others, or the client throws), `number`, `reason_id`, `create_time` (Japan time, `YYYY-MM-DD HH:MM:SS`), and `subject` and `description` (optional). It ignores `"null"`, which every captured entry has as `1`; Reflipped sends it too.
+- `create_time` is the receive time: the client uses it as both the creation and receive date, and in the capture mails created at different moments (gacha results, mission rewards) share one time per claim. The capture's newest entry is 4 minutes before the reply's `servertime` in UTC+9.
+- Text: like the gift box, a `reason_id` from the mail reason table shows that row's subject and description; any other reason needs the entry's own `subject` and `description`, or it shows "Auto-Mail". Reflipped's own mail (reason 0) sends its text.
+- Retention: the screen's footer (`receive_history_footer_notice`) says it shows "the latest 500 received within 1 week" (the English text says "Displaying last 500 messages."). Reflipped keeps the 500 mails each player received last (older ones are deleted when a mail is received) and lists those received in the 7 days up to the player's clock (the server clock, or the player's own date when the server owner set one), the last received first. A received mail older than a week stays stored, and in a downloaded save, until 500 newer ones push it out.
+- Order: "last received" means in the order the mails were received, not by their dates, since the server's clock can go back (the event calendar starting over, Reset, a player's own date). When the clock has gone back to an earlier day, the history starts over from there, so mail from the last time round doesn't show as "the last week". A downloaded save keeps that order.

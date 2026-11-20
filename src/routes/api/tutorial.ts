@@ -8,6 +8,11 @@ import { randomInt } from "crypto";
 import { GachaCharacterDraw } from "../../lib/types";
 import { arrayOf, boolean, gameBody, integer, playerText, string } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
+import { applyLoginBonuses } from "../../lib/loginBonus";
+import { characterEncyclopediaKey } from "../../lib/character";
+
+/** The step the tutorial's last request reaches: 16 + 1 in the full tutorial, 5 + 1 + 11 in the shortened one. */
+const FINAL_STEP = 17
 
 interface UpdateStepBody {
     viewer_id: number
@@ -230,7 +235,7 @@ const routes = async (fastify: FastifyInstance) => {
                         }
                     ],
                     "encyclopedia_info": {
-                        [`1${freeTutorialCharacterId}01`]: {
+                        [characterEncyclopediaKey(freeTutorialCharacterId)]: {
                             "read": false
                         }
                     },
@@ -238,8 +243,26 @@ const routes = async (fastify: FastifyInstance) => {
                     "start_time": getServerTime()
                 }
             })
+        } else if (nextStep === FINAL_STEP) {
+            // The last step's reply carries the day's login rewards, and the game shows their calendar right after the
+            // tutorial (`TutorialUpdateStepRealRemote`, CompleteStepToEnd; the captured reply in
+            // docs/routes/tutorial_update_step.md). The /load replies during the tutorial listed them too, but the game
+            // doesn't show the calendar then, and it goes home without another /load. Earning is idempotent per game
+            // day, so this only presents what /load already earned (src/lib/loginBonus.ts).
+            const loginBonuses = applyLoginBonuses(playerId)
+            reply.status(200).send({
+                "data_headers": headers,
+                "data": {
+                    "step": nextStep,
+                    "bonus_index_list": loginBonuses.bonusIndexList,
+                    "login_bonus_received_at": loginBonuses.loginBonusReceivedAt ?? getServerTime(),
+                    "premium_bonus_index_list": [],
+                    "premium_bonus_mailed_item_list": [],
+                    "mail_arrived": true,
+                    "start_time": getServerTime()
+                }
+            })
         } else {
-            
             reply.status(200).send({
                 "data_headers": headers,
                 "data": {

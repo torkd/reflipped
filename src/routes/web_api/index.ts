@@ -1,7 +1,11 @@
 import { FastifyInstance } from "fastify";
+import anticheatApiPlugin from "./anticheat"
 import catalogApiPlugin from "./catalog"
 import playerApiPlugin from "./player"
+import playerClockApiPlugin from "./playerClock"
+import newsApiPlugin from "./news"
 import serverApiPlugin from "./server"
+import userApiPlugin from "./user"
 import { maxSaveFileBytes } from "../../data/saveSchema"
 
 const routes = async (fastify: FastifyInstance) => {
@@ -17,9 +21,13 @@ const routes = async (fastify: FastifyInstance) => {
         }
     })
 
+    fastify.register(anticheatApiPlugin, { prefix: "/anticheat" })
     fastify.register(catalogApiPlugin, { prefix: "/catalog" })
     fastify.register(playerApiPlugin, { prefix: "/player" })
+    fastify.register(playerClockApiPlugin, { prefix: "/player/clock" })
+    fastify.register(newsApiPlugin, { prefix: "/news" })
     fastify.register(serverApiPlugin, { prefix: "/server" })
+    fastify.register(userApiPlugin, { prefix: "/user" })
 }
 
 export default routes;

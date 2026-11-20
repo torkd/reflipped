@@ -1,0 +1,15 @@
+{
+    "1": {
+        "name": "The Start Dash Bundle Promotion",
+        "start": "2022-06-12 14:00:00",
+        "end": null,
+        "days": 7,
+        "ticketItemId": 990007,
+        "price": 1500,
+        "bundleName": "The Start Dash Bundle",
+        "terms": {
+            "0": "2022-06-12 14:00:00"
+        },
+        "excluded": {}
+    }
+}

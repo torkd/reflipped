@@ -1,0 +1,18 @@
+        <header class="page-header">
+            <h1 class="page-title">Create the first admin</h1>
+            <p class="page-subtitle">This server has no admin yet. The account you create here logs in to the admin website, and to the player portal like any other account.</p>
+        </header>
+{{notice}}
+        <form class="card" method="post" action="/setup">
+            <label class="field">Username
+                <input class="input" name="username" autocomplete="username" required minlength="{{usernameMin}}" maxlength="{{usernameMax}}" autofocus>
+            </label>
+            <label class="field">Password
+                <input class="input" name="password" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+            </label>
+            <label class="field">Password again
+                <input class="input" name="confirm" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+            </label>
+            <button type="submit" class="btn-primary">Create admin</button>
+        </form>
+        <p class="card-text">Already have a portal account? Enter its username and password to make it the admin.</p>

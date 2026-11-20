@@ -10,7 +10,7 @@
  * To restore, stop the server, copy one folder's contents into DATABASE_DIR, delete any
  * `wdfp_data.db-wal`/`-shm` there, and start it again.
  */
-import sqlite3 from "better-sqlite3";
+import SqliteDatabase from "./data/sqlite";
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from "fs";
 import path from "path";
 
@@ -60,14 +60,14 @@ function backup(): string {
 
     try {
         // a read-only connection: VACUUM INTO reads one snapshot and leaves the live database alone
-        const db = new sqlite3(source, { readonly: true, fileMustExist: true })
+        const db = new SqliteDatabase(source, { readonly: true, fileMustExist: true })
         try {
             db.prepare("VACUUM INTO ?").run(path.join(partial, DATABASE_FILE))
         } finally {
             db.close()
         }
 
-        const snapshot = new sqlite3(path.join(partial, DATABASE_FILE), { readonly: true })
+        const snapshot = new SqliteDatabase(path.join(partial, DATABASE_FILE), { readonly: true })
         try {
             const result = snapshot.pragma("quick_check", { simple: true })
             if (result !== "ok") throw new Error(`quick_check on the copy failed: ${result}`)

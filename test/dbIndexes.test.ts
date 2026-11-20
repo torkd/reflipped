@@ -1,11 +1,11 @@
 import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
-import type { Database as BetterSqlite3Database } from "better-sqlite3";
+import type { Database as SqliteDatabase } from "../src/data/sqlite";
 import { createTestServer } from "./helpers";
 
 // PERF-1: without an index that starts with player_id, every per-player query scans the rows of all players.
 
-let db: BetterSqlite3Database
+let db: SqliteDatabase
 let cleanup: () => Promise<void>
 
 before(async () => {

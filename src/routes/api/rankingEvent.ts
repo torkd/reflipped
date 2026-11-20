@@ -1,10 +1,9 @@
-// Handles mail.
+// Ranking events (FT-33): the event screen's summary and the rank rewards (src/lib/ranking.ts).
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { getPlayerQuestProgressSync, getPlayerSingleQuestProgressSync } from "../../data/wdfpData";
-import { generateDataHeaders } from "../../utils";
-import { QuestCategory } from "../../lib/types";
-import { PlayerQuestProgress } from "../../data/types";
+import { generateDataHeaders, getServerDate } from "../../utils";
+import { isRankingRewardPeriod, RANKING_OUT_OF_RECEIVABLE_PERIOD, rankingSummarySync, receiveRankingRewardSync } from "../../lib/ranking";
+import { atomicHandler } from "../../lib/atomic";
 import { gameBody, integer } from "../schemas";
 
 interface ReceiveRewardBody {
@@ -17,60 +16,6 @@ interface GetSummaryBody {
     viewer_id: number,
     ranking_event_id: number,
     quest_kind: number
-}
-
-const rankingEventIdQuestMap: Record<number, number> = {
-    [1]: 1001,
-    [2]: 2001,
-    [3]: 3001,
-    [4]: 4001,
-    [5]: 5001
-}
-
-const rankingEventTopTimesMs: Record<number, number> = {
-    [1]: 54410,
-    [2]: 25800,
-    [3]: 18880,
-    [4]: 31720,
-    [5]: 6540
-}
-
-/**
- * Generates a ranking summary for a specific player & ranking event.
- * 
- * @param playerId 
- * @param eventId 
- * @returns 
- */
-function getRankingSummary(
-    playerId: number,
-    eventId: number
-): Object | null {
-    // get quest
-    const questId = rankingEventIdQuestMap[eventId]
-    if (questId === undefined) return null;
-
-    const topTime = rankingEventTopTimesMs[eventId] ?? 0
-
-    // get data for the ranking quest
-    const playerQuestData = getPlayerSingleQuestProgressSync(playerId, QuestCategory.RANKING_EVENT_SINGLE, questId)
-    const isAccomplished = playerQuestData !== null && playerQuestData.bestElapsedTimeMs !== undefined && playerQuestData.bestElapsedTimeMs !== null
-
-    return {
-        "best_record": {
-            "elapsed_time_ms": isAccomplished ? playerQuestData.bestElapsedTimeMs ?? 0 : 0,
-            "is_accomplished": isAccomplished,
-            "score": isAccomplished ? playerQuestData.highScore ?? 0 : 0
-        },
-        "leader_character_evolution_img_level": 1,
-        "leader_character_id": 1,
-        "rank_border_top": {
-            "elapsed_time_ms": topTime,
-            "is_accomplished": true,
-            "score": 1110111
-        },
-        "rank_percentage": isAccomplished ? 1 - (topTime / (playerQuestData.bestElapsedTimeMs ?? 1)) : 100
-    }
 }
 
 const getSummarySchema = gameBody({
@@ -96,12 +41,7 @@ const routes = async (fastify: FastifyInstance) => {
 
         const playerId = request.viewer.playerId
 
-        // get summary
-        const summary = getRankingSummary(playerId, eventId)
-        if (summary === null) return reply.status(400).send({
-            "error": "Bad Request",
-            "message": `Summary could not be generated for '${eventId}' and PlayerId '${playerId}'.`
-        })
+        const summary = rankingSummarySync(playerId, eventId)
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -112,7 +52,7 @@ const routes = async (fastify: FastifyInstance) => {
         })
     })
 
-    fastify.post("/receive_reward", { schema: receiveRewardSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/receive_reward", { schema: receiveRewardSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as ReceiveRewardBody
 
         const viewerId = request.viewer.viewerId
@@ -124,24 +64,27 @@ const routes = async (fastify: FastifyInstance) => {
 
         const playerId = request.viewer.playerId
 
-        // get summary
-        const summary = getRankingSummary(playerId, eventId)
-        if (summary === null) return reply.status(400).send({
-            "error": "Bad Request",
-            "message": `Summary could not be generated for '${eventId}' and PlayerId '${playerId}'.`
-        })
+        // rewards only in the results announcement (the client's OutOfReceivablePeriod)
+        if (!isRankingRewardPeriod(eventId, getServerDate())) {
+            reply.header("content-type", "application/x-msgpack")
+            return reply.status(200).send({
+                "data_headers": generateDataHeaders({ viewer_id: viewerId, result_code: RANKING_OUT_OF_RECEIVABLE_PERIOD }),
+                "data": []
+            })
+        }
 
+        const { status, summary } = receiveRankingRewardSync(playerId, eventId)
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
             "data_headers": generateDataHeaders({
                 viewer_id: viewerId
             }),
             "data": {
-                "status": 1,
-                ...summary
+                "status": status,
+                ...(summary ?? {})
             }
         })
-    })
+    }))
 }
 
 export default routes;

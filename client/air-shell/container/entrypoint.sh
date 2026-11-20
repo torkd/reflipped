@@ -2,7 +2,7 @@
 # Entry point of the AIR shell build container (container/Dockerfile).
 #
 #   /sdk   volume: JDK, Android SDK and AIR SDK, set up on the first run and reused afterwards
-#   /work  your folder: the World Flipper APK and AIRSDK_*.zip in, reflipped-shell.apk and air-shell.p12 out
+#   /work  your folder: the World Flipper APK and AIRSDK_*.zip in, reflipped-shell.apk (+ .sha256) and air-shell.p12 out
 #
 # Extra arguments go to build.py, e.g. --server https://wf.example.org or --arch armv7.
 # APK=<file name in /work> picks the APK when the folder holds more than one.
@@ -48,8 +48,19 @@ fi
 SHELL_KEYSTORE="${SHELL_KEYSTORE:-$WORK/air-shell.p12}"
 export SHELL_KEYSTORE
 
+# the server for playing on the phone: bundled into the image (SERVER_BUNDLE), and the Node runtime kept in the /sdk
+# volume between runs; on a host without them, build.py bundles the repository itself
+REFLIPPED_NODE_CACHE="${REFLIPPED_NODE_CACHE:-$SDK/node-runtime}"
+export REFLIPPED_NODE_CACHE
+# (a --no-assets bundle: with --server-game-data, build.py bundles the repository itself instead)
+case " $* " in
+    *" --server-game-data "*) ;;
+    *) if [ -n "${SERVER_BUNDLE:-}" ] && [ -f "$SERVER_BUNDLE/server.js" ]; then
+           set -- --server-bundle "$SERVER_BUNDLE" "$@"
+       fi ;;
+esac
 python3 -I "$SRC/build.py" --apk "$apk" --out "$WORK/reflipped-shell.apk" "$@"
 # the container runs as root: hand the outputs to whoever owns the folder (a no-op where Docker maps owners itself)
 owner="$(stat -c %u:%g "$WORK")"
-chown "$owner" "$WORK/reflipped-shell.apk" "$SHELL_KEYSTORE" 2>/dev/null || true
-say "done: reflipped-shell.apk is in your folder. Keep air-shell.p12 too: updates must be signed with it."
+chown "$owner" "$WORK/reflipped-shell.apk" "$WORK/reflipped-shell.apk.sha256" "$SHELL_KEYSTORE" 2>/dev/null || true
+say "done: reflipped-shell.apk (and its .sha256) is in your folder. Keep air-shell.p12 too: updates must be signed with it."

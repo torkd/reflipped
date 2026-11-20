@@ -5,6 +5,12 @@
  * (see `socketServer.ts` and docs/coop-research.md). They live only as long as the process.
  */
 import { randomBytes, randomInt } from "crypto"
+import { AsyncLocalStorage } from "async_hooks"
+import type { EventRunContext } from "../eventSchedule"
+import type { FollowBonusRound } from "../follows"
+
+/** The room's fixed event occurrence with an immutable reward-policy snapshot for one round. */
+export type CoopEventContext = Readonly<EventRunContext & { rewardMultiplier: number }>
 
 export interface CoopRoom {
     /** 6-digit string, shown to players and used in every socket handshake */
@@ -18,6 +24,12 @@ export interface CoopRoom {
     /** `category` / `category_id` from the client (quest category) */
     category: number
     hostViewerId: number
+    eventContext?: CoopEventContext
+    /**
+     * The balance epoch the room was created in (FT-47, src/lib/balance.ts): players see units the same way only
+     * within one, so a room from another is not found for anyone else.
+     */
+    balanceEpoch?: number
     /** unix seconds */
     createdAt: number
     roomSequence: number
@@ -29,12 +41,20 @@ export interface CoopRoom {
      * list and invitations meanwhile.
      */
     inBattle: boolean
+    /** how many rounds the room has started (1 in its first battle); tells a Return to Room's rounds apart */
+    round: number
+    /** when the current (or last) round started (Date.now()); none before the first */
+    roundStartedAtMs?: number
     /** players of the current (or last) round: the ones who may Return to Room after it */
     lastRoundViewerIds: number[]
     /** those who reported the round's end over HTTP (finish or abort) */
     roundEndedViewerIds: number[]
+    /** the round's follow bonus (FT-43), worked out at its first `start` so every player gets the same */
+    followBonus?: FollowBonusRound
     /** viewers the HTTP routes let into the room (create, select, restore): the host and every player who joined */
     members: Set<number>
+    /** Players who joined through an invitation this server delivered. */
+    attentionMembers?: Set<number>
     /**
      * Pending socket admissions by viewer id. The socket handshake carries a viewer id the client chooses, so a lobby
      * connection is only accepted for a viewer whose own signed request just admitted it, once (SEC-12).
@@ -88,6 +108,7 @@ export function createRoom(hostViewerId: number, questId: number, category: numb
         roomSequence: nextSequence++,
         shareTypes: [],
         inBattle: false,
+        round: 0,
         lastRoundViewerIds: [],
         roundEndedViewerIds: [],
         members: new Set([hostViewerId]),
@@ -130,9 +151,37 @@ export function roomsHostedBy(viewerId: number): CoopRoom[] {
 
 /** A round's battle starts with these players (the lobby's members at StartBattle). */
 export function startRound(room: CoopRoom, viewerIds: number[]): void {
+    if (!room.inBattle && room.eventContext) {
+        // A reused lobby must follow the current reward rules for future battles. Existing
+        // ActiveQuests retain their previous immutable object until their own finish commits.
+        // Resolve lazily: this registry is also imported before DB configuration by socket tools.
+        const { getRewardPolicy } = require("../rewardPolicy") as typeof import("../rewardPolicy")
+        // every co-op battle is a boss fight: the event ones report a quest category that is not a boss category
+        room.eventContext = Object.freeze({ ...room.eventContext, rewardMultiplier: getRewardPolicy().bossMultiplier })
+    }
+    if (!room.inBattle) {
+        room.round++
+        room.roundStartedAtMs = Date.now()
+    }
     room.inBattle = true
     room.lastRoundViewerIds = [...new Set(viewerIds)]
     room.roundEndedViewerIds = []
+    room.followBonus = undefined
+}
+
+/**
+ * The round `viewerId` is finishing now: a room in battle that started with them, hasn't seen their end yet and plays
+ * the finish's quest. A guest who crashed in one room (still in battle there) and finishes in another can be in several:
+ * the most recently started round wins (SEC-18 review).
+ */
+export function finishingRoundOf(viewerId: number, questId: number, category: number): CoopRoom | undefined {
+    let found: CoopRoom | undefined
+    for (const room of rooms.values()) {
+        if (!room.inBattle || room.questId !== questId || room.category !== category) continue
+        if (!room.lastRoundViewerIds.includes(viewerId) || room.roundEndedViewerIds.includes(viewerId)) continue
+        if (found === undefined || (room.roundStartedAtMs ?? 0) >= (found.roundStartedAtMs ?? 0)) found = room
+    }
+    return found
 }
 
 /** The room is a lobby again, open for its next round. */
@@ -169,6 +218,38 @@ export function getRoomByAccessToken(accessToken: string): CoopRoom | undefined 
 
 export function deleteRoom(roomNumber: string): void {
     rooms.delete(roomNumber)
+}
+
+/** Whether a viewer belongs to an open room for this quest (its host started it: SEC-16's period check). */
+const authorisedCoopStart = new AsyncLocalStorage<{
+    viewerId: number, questId: number, category: number, hostViewerId: number,
+    /** the player joined through an invitation this server delivered (attentionMembers): their start costs no stamina */
+    joinedByInvitation: boolean
+}>()
+
+/** Server-internal proof for the injected single start; no client-supplied body can set this context. */
+export function runOnCoopStart<T>(room: CoopRoom, viewerId: number, fn: () => T): T {
+    return authorisedCoopStart.run({
+        viewerId, questId: room.questId, category: room.category, hostViewerId: room.hostViewerId,
+        joinedByInvitation: room.attentionMembers?.has(viewerId) === true
+    }, fn)
+}
+
+/** The injected single start is authorised only for the exact co-op room quest and viewer. */
+export function isInRoomFor(viewerId: number, questId: number, category: number): boolean {
+    const proof = authorisedCoopStart.getStore()
+    return proof?.viewerId === viewerId && proof.questId === questId && proof.category === category
+}
+
+/** The host of the co-op room whose start is running for this viewer and quest, or null outside one. */
+export function coopStartHostViewerId(viewerId: number, questId: number, category: number): number | null {
+    const proof = authorisedCoopStart.getStore()
+    return proof !== undefined && proof.viewerId === viewerId && proof.questId === questId && proof.category === category ? proof.hostViewerId : null
+}
+
+/** Whether the co-op start running for this viewer and quest is a guest's who joined through an invitation. */
+export function coopStartJoinedByInvitation(viewerId: number, questId: number, category: number): boolean {
+    return coopStartHostViewerId(viewerId, questId, category) !== null && authorisedCoopStart.getStore()!.joinedByInvitation
 }
 
 export function listRooms(): CoopRoom[] {

@@ -5,13 +5,11 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.SocketTimeoutException;
@@ -23,8 +21,6 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 import reflipped.shell.common.StubContext;
 
@@ -39,7 +35,9 @@ import reflipped.shell.common.StubContext;
  *   `a/hash/b/c.hash` and vice versa;
  * - finished archive URLs and the latest `Last-Modified` go to the partial file (JSON, only read
  *   by us; the game just deletes it), so a restarted download skips what's done;
- * - `progress` is throttled; `completed` carries the latest `Last-Modified`.
+ * - `progress` is throttled; `completed` carries the latest `Last-Modified`;
+ * - SH-27: the paths each layer archive (any archive that isn't a base one) writes or deletes go to the
+ *   {@link LayerRecord}, which a fresh full download starts; SH-29: the base originals they replace are kept.
  */
 final class AssetDownloader {
     static final class Archive {
@@ -50,6 +48,11 @@ final class AssetDownloader {
             this.location = location;
             this.size = size;
         }
+    }
+
+    /** Told once when a run ends, on the downloader's thread: completed, or stopped by an error or a cancel. */
+    interface Listener {
+        void ended(boolean completed);
     }
 
     private static final String TAG = StubContext.TAG;
@@ -65,6 +68,8 @@ final class AssetDownloader {
     private final AtomicLong doneBytes = new AtomicLong();
     private final long totalBytes;
     private volatile boolean cancelled;
+    private volatile Listener listener;
+    private ArchiveExtractor extractor;
     private long lastProgressAt;
 
     private final Set<String> downloadedUrls = new LinkedHashSet<>();
@@ -88,6 +93,11 @@ final class AssetDownloader {
         new Thread(this::run, "reflipped-assets").start();
     }
 
+    /** Set before {@link #start()}. */
+    void setListener(Listener listener) {
+        this.listener = listener;
+    }
+
     void cancel() {
         cancelled = true;
     }
@@ -99,6 +109,7 @@ final class AssetDownloader {
     private void run() {
         Log.i(TAG, "assetDownload: " + archives.size() + " archives, " + totalBytes + " bytes into " + assetDir
                 + " (idle timeout " + idleTimeoutMsec + " ms, total timeout " + totalTimeoutMsec + " ms per archive)");
+        boolean completed = false;
         try {
             readPartial();
             long done = 0;
@@ -106,6 +117,14 @@ final class AssetDownloader {
             doneBytes.set(done);
             if (done > 0) Log.i(TAG, "assetDownload: resuming, " + downloadedUrls.size() + " archives already done");
             assetDir.mkdirs();
+            extractor = new ArchiveExtractor(assetDir);
+            if (downloadedUrls.isEmpty()) {
+                for (Archive a : archives) {
+                    if (!LayerRecord.isFullBase(a.location)) continue;
+                    LayerRecord.start(recordRoot());
+                    break;
+                }
+            }
 
             for (Archive archive : archives) {
                 if (cancelled) return;
@@ -118,6 +137,7 @@ final class AssetDownloader {
                 progress(true);
             }
             Log.i(TAG, "assetDownload: completed, latest Last-Modified " + latestModified);
+            completed = true;
             event("completed", latestModified == null ? "" : latestModified);
         } catch (SocketTimeoutException e) {
             fail("timeout", e);
@@ -125,6 +145,15 @@ final class AssetDownloader {
             fail("ioError", e);
         } catch (Exception e) {
             fail("error", e);
+        } finally {
+            Listener l = listener;
+            if (l != null) {
+                try {
+                    l.ended(completed);
+                } catch (RuntimeException e) {
+                    Log.w(TAG, "assetDownload: end listener failed", e);
+                }
+            }
         }
     }
 
@@ -159,7 +188,7 @@ final class AssetDownloader {
             }, totalTimeoutMsec);
         }
         final long base = doneBytes.get();
-        try (ZipInputStream zip = new ZipInputStream(new FilterInputStream(body) {
+        try (InputStream counted = new FilterInputStream(body) {
             private long read;
 
             @Override
@@ -181,26 +210,17 @@ final class AssetDownloader {
                 doneBytes.set(base + Math.min(read, archive.size));
                 progress(false);
             }
-        })) {
-            byte[] buf = new byte[64 * 1024];
-            for (ZipEntry entry; (entry = zip.getNextEntry()) != null; ) {
-                if (cancelled) return false;
-                String name = entry.getName();
-                if (name.equals(".removed.csv")) {
-                    removeFiles(zip);
-                } else if (entry.isDirectory()) {
-                    resolve(name).mkdirs();
-                } else {
-                    File out = resolve(name);
-                    out.getParentFile().mkdirs();
-                    try (OutputStream os = new FileOutputStream(out)) {
-                        for (int n; (n = zip.read(buf)) > 0; ) os.write(buf, 0, n);
-                    }
-                    String twin = isShortened(name) ? shortenedToActual(name) : actualToShortened(name);
-                    if (twin != null) resolve(twin).delete();
-                }
-                zip.closeEntry();
+        }) {
+            LayerRecord.Keeper keeper = LayerRecord.isBase(archive.location) ? null : LayerRecord.keeper(recordRoot());
+            extractor.touch = keeper;
+            try {
+                if (!extractor.extract(counted, () -> cancelled)) return false;
+            } finally {
+                // what a layer changed is recorded even when its extraction stopped half-way
+                extractor.touch = null;
+                if (keeper != null) keeper.close();
             }
+            if (extractor.removed > 0) Log.i(TAG, "assetDownload: .removed.csv deleted " + extractor.removed + " files");
         } finally {
             watchdog.cancel();
             conn.disconnect();
@@ -208,40 +228,19 @@ final class AssetDownloader {
         return !cancelled;
     }
 
-    /** `.removed.csv`: a `rowid,path` header, then one asset path per row. */
-    private void removeFiles(InputStream entry) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(entry, StandardCharsets.UTF_8));
-        int removed = 0;
-        for (String line; (line = reader.readLine()) != null; ) {
-            int comma = line.indexOf(',');
-            String path = (comma >= 0 ? line.substring(comma + 1) : line).trim();
-            if (path.isEmpty() || line.startsWith("rowid,")) continue;
-            if (resolve(path).delete()) removed++;
-        }
-        Log.i(TAG, "assetDownload: .removed.csv deleted " + removed + " files");
+    /** The record sits beside the game's info.json, one level above the extraction folder. */
+    private File recordRoot() {
+        File parent = assetDir.getAbsoluteFile().getParentFile();
+        return parent == null ? assetDir : parent;
     }
 
-    /** Resolves an archive path inside the asset dir, refusing anything that escapes it. */
-    private File resolve(String name) throws IOException {
-        File file = new File(assetDir, name);
-        String root = assetDir.getCanonicalPath() + File.separator;
-        if (!file.getCanonicalPath().startsWith(root)) throw new IOException("archive entry outside asset dir: " + name);
-        return file;
-    }
-
-    // Same rules as the game's own (AS3) and the original ANE's AssetShortenedTools.
-    static boolean isShortened(String path) {
-        return path.endsWith(".hash");
-    }
-
+    // The shortened-twin rules live in ArchiveExtractor; kept here for the desktop test's checks.
     static String shortenedToActual(String path) {
-        String r = path.replaceFirst("^(.*)/hash/([^/]+/[^/]+)\\.hash$", "$1/$2");
-        return r.equals(path) ? null : r;
+        return ArchiveExtractor.shortenedToActual(path);
     }
 
     static String actualToShortened(String path) {
-        String r = path.replaceFirst("^(.*)/([^/]+/[^/]+)$", "$1/hash/$2.hash");
-        return r.equals(path) ? null : r;
+        return ArchiveExtractor.actualToShortened(path);
     }
 
     private void noteLastModified(HttpURLConnection conn) throws IOException {

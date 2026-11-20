@@ -54,7 +54,8 @@ export function readCapturedRoute(name: string): CapturedRoute {
  * and the admin server (`admin`, web UI and `/api/*`).
  * The CDN directory starts empty; tests may write files into `process.env.CDN_DIR`.
  * `options` (e.g. `rateLimit`, `trustProxy`, `paramCheck`) go to both servers; rate limiting is off by default and
- * `PARAM_CHECK` is `log` (most tests send unsigned requests; test/requestSignature.test.ts covers `enforce`).
+ * `PARAM_CHECK` is `log` (most tests send unsigned requests; test/requestSignature.test.ts covers `enforce`), and the
+ * admin site needs no login unless `adminAuth` is true, and new accounts have no hourly cap (`NEW_ACCOUNTS_PER_HOUR`).
  * Must run before anything imports `src/data`, because the database opens at import time.
  */
 export async function createTestServer(options: BuildOptions = {}): Promise<{ fastify: FastifyInstance, admin: FastifyInstance, cleanup: () => Promise<void> }> {
@@ -66,10 +67,23 @@ export async function createTestServer(options: BuildOptions = {}): Promise<{ fa
     process.env.CDN_OVERLAY_DIR ??= path.join(tempDir, "cdn-overlay")
     // exact timestamps in assertions: a frozen server clock unless the test picked one
     process.env.SERVER_CLOCK ??= "frozen"
+    // tests create accounts quickly: no hourly cap on new ones unless the test sets one (SEC-16)
+    process.env.NEW_ACCOUNTS_PER_HOUR ??= "0"
+    // battles play events on dates outside their periods: no period check at quest start unless the test turns it on
+    process.env.QUEST_PERIOD_CHECK ??= "off"
+    // battles one after another on a frozen clock would run out of stamina: free unless the test turns costs on (FT-25)
+    process.env.STAMINA ??= "off"
+
+    // Fixture assertions describe unmodified master rewards. Policy tests explicitly clear this override to check
+    // production's profile defaults; existing route fixtures remain independent of the selected event profile.
+    const { setRewardPolicy } = await import("../src/lib/rewardPolicy")
+    setRewardPolicy({ management: "managed", multiplierOverride: 1 })
+    await useNoFreeCampaigns()
 
     const { buildAdminServer, buildServer } = await import("../src/app")
     const fastify = buildServer({ paramCheck: "log", ...options })
-    const admin = buildAdminServer(options)
+    // the admin login (ACC-5) is off unless the test is about it (test/adminLogin.test.ts)
+    const admin = buildAdminServer({ adminAuth: false, ...options })
     await fastify.ready()
     await admin.ready()
 
@@ -82,6 +96,17 @@ export async function createTestServer(options: BuildOptions = {}): Promise<{ fa
             rmSync(tempDir, { recursive: true, force: true })
         }
     }
+}
+
+/**
+ * Every campaign bundle paid (src/lib/campaignModes.ts), the test server's start: by default the ticket gift promos are
+ * free, and the default server date falls in one, so every /load would mail its ticket and upset mail counts. Tests of
+ * the defaults set them with setCampaignModes({}).
+ */
+export async function useNoFreeCampaigns(): Promise<void> {
+    const { setCampaignModes } = await import("../src/lib/campaignModes")
+    const { listSpecialExchangeCampaigns } = await import("../src/lib/specialExchange")
+    setCampaignModes({ specialExchange: Object.fromEntries(listSpecialExchangeCampaigns().map(([id]) => [id, "paid"])) })
 }
 
 /** Encodes a game API request body the way the client does: base64 msgpack. */

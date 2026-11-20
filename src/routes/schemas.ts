@@ -12,6 +12,11 @@
 export type Schema = Record<string, unknown>
 
 export const integer = { type: "integer" } as const
+/**
+ * A page number of a paged list (`mail/index`, `history/receive`). JSON-schema integers include huge floats such as
+ * 1e300, whose offset SQLite can't take; no list has a millionth page. Handlers treat anything below 1 as 1.
+ */
+export const pageNumber = { type: "integer", maximum: 1_000_000 } as const
 export const number = { type: "number" } as const
 export const string = { type: "string" } as const
 /** A name a player types (shown to others: rankings, co-op): the game allows far shorter ones (SEC-12). */

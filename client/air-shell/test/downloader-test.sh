@@ -30,6 +30,8 @@ rm -rf "$OUT/classes" "$OUT/asset" "$OUT/partial_downloaded.platform"
 javac -source 8 -target 8 -nowarn -d "$OUT/classes" -cp "$JSON_JAR" \
     "$HERE/shim/android/util/Log.java" "$HERE/shim/reflipped/shell/common/StubContext.java" \
     "$HERE/../java/src/reflipped/shell/pinball/AssetDownloader.java" \
+    "$HERE/../java/src/reflipped/shell/pinball/ArchiveExtractor.java" \
+    "$HERE/../java/src/reflipped/shell/pinball/LayerRecord.java" \
     "$HERE/src/reflipped/shell/pinball/DownloaderHarness.java" 2>&1 | grep -v '^warning' || true
 
 ARCHIVES="$(python3 -I - "$REPO/assets/asset_lists/en-android-full.json" "$COUNT" <<'EOF'

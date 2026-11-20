@@ -16,6 +16,11 @@ reflipped.example.com {
 		file_server
 	}
 
+	# Event schedule archives: Reflipped builds them into its database folder and serves them itself.
+	handle /patch/Live/2.0.0/schedule/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+
 	# Asset archives straight from disk (the folder CDN_DIR points at). Without this, the requests
 	# fall through to Reflipped, which serves them too (slower).
 	handle_path /patch/Live/2.0.0/* {

@@ -1,0 +1,6911 @@
+[
+    {
+        "id": "normal",
+        "groupType": "Normal",
+        "startDate": "2018-08-29 05:00:00",
+        "endDate": "2021-08-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "start_dash",
+        "groupType": "Limited",
+        "startDate": "2021-07-24 05:00:00",
+        "endDate": "2021-08-11 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 200
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "xmas22",
+        "groupType": "Limited",
+        "startDate": "2024-05-01 14:00:00",
+        "endDate": "2024-05-17 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "xmas21",
+        "groupType": "Limited",
+        "startDate": "2023-08-14 14:00:00",
+        "endDate": "2023-08-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "valentine21",
+        "groupType": "Limited",
+        "startDate": "2022-10-07 05:00:00",
+        "endDate": "2022-10-14 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ucollab_01",
+        "groupType": "Limited",
+        "startDate": "2024-03-17 14:00:00",
+        "endDate": "2024-04-01 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "spring2021",
+        "groupType": "Limited",
+        "startDate": "2022-11-05 05:00:00",
+        "endDate": "2022-11-21 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "smr_v22",
+        "groupType": "Limited",
+        "startDate": "2024-02-01 14:00:00",
+        "endDate": "2024-03-03 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 31,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "smr_v21_02",
+        "groupType": "Limited",
+        "startDate": "2023-03-25 14:00:00",
+        "endDate": "2023-04-09 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "smr_v21",
+        "groupType": "Limited",
+        "startDate": "2023-02-25 05:00:00",
+        "endDate": "2023-03-12 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "smr_v20",
+        "groupType": "Limited",
+        "startDate": "2022-03-18 05:00:00",
+        "endDate": "2022-04-29 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 31,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 32,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 33,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 34,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 35,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 36,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 37,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 38,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 39,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 40,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 41,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 42,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ny22",
+        "groupType": "Limited",
+        "startDate": "2023-09-13 14:00:00",
+        "endDate": "2023-09-30 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ny21",
+        "groupType": "Limited",
+        "startDate": "2022-08-29 05:00:00",
+        "endDate": "2022-09-08 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "normal_2022",
+        "groupType": "Normal",
+        "startDate": "2024-01-17 05:00:00",
+        "endDate": "2067-08-29 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 6,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1500
+                    },
+                    {
+                        "kind": 4,
+                        "amount": 5000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 25,
+                        "itemId": 100000
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 10001
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "hw_v22",
+        "groupType": "Limited",
+        "startDate": "2024-04-11 14:00:00",
+        "endDate": "2024-04-29 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "hw_v21_02",
+        "groupType": "Limited",
+        "startDate": "2023-06-24 14:00:00",
+        "endDate": "2023-06-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "hw_v21_01",
+        "groupType": "Limited",
+        "startDate": "2023-06-15 14:00:00",
+        "endDate": "2023-06-24 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "gw22",
+        "groupType": "Limited",
+        "startDate": "2023-12-26 14:00:00",
+        "endDate": "2024-01-05 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "gw21",
+        "groupType": "Limited",
+        "startDate": "2022-12-26 05:00:00",
+        "endDate": "2023-01-07 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "goodbye_login",
+        "groupType": "Limited",
+        "startDate": "2024-05-28 14:00:00",
+        "endDate": "2024-07-25 14:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 31,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 32,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 33,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 34,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 35,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 36,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 37,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 38,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 39,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 40,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 41,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 42,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 43,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 44,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 45,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 46,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 47,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 48,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 49,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 50,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 51,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 52,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 53,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 54,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 55,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 56,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 57,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 58,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            },
+            {
+                "index": 59,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 600
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "comebackpresent",
+        "groupType": "ComebackAlways",
+        "startDate": "2023-07-25 05:00:00",
+        "endDate": null,
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 119,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 1000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 999001
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 999004
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 30,
+                        "itemId": 101
+                    },
+                    {
+                        "kind": 4,
+                        "amount": 30000
+                    },
+                    {
+                        "kind": 3,
+                        "amount": 30000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 10003
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "comeback_01",
+        "groupType": "Comeback",
+        "startDate": "2022-12-17 05:00:00",
+        "endDate": "2023-02-20 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": "2022-11-14 05:00:00",
+        "conditionEnd": "2022-11-14 06:00:00",
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": false,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 150
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "chapter10_fin",
+        "groupType": "Limited",
+        "startDate": "2023-06-28 14:00:00",
+        "endDate": "2023-07-09 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv3_present",
+        "groupType": "ActiveUser",
+        "startDate": "2024-04-28 14:00:00",
+        "endDate": "2024-06-04 13:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": "anv3_comeback",
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 6000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 10,
+                        "itemId": 500000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 10003
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 12002
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv3_comeback",
+        "groupType": "Comeback",
+        "startDate": "2024-04-28 14:00:00",
+        "endDate": "2024-06-04 13:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": "2024-03-01 05:00:00",
+        "conditionEnd": "2024-04-20 04:59:59",
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": true,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 4000
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 99
+                    },
+                    {
+                        "kind": 3,
+                        "amount": 800000
+                    },
+                    {
+                        "kind": 4,
+                        "amount": 1000000
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 1500
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 1
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 5
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 9
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 13
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 46
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 500,
+                        "itemId": 42
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 1500
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 2
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 6
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 10
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 14
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 47
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 400,
+                        "itemId": 43
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 1500
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 3
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 7
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 11
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 15
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 48
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 200,
+                        "itemId": 44
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 1500
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 4
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 8
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 12
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 16
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 49
+                    },
+                    {
+                        "kind": 1,
+                        "amount": 50,
+                        "itemId": 45
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv2022",
+        "groupType": "Limited",
+        "startDate": "2024-04-28 14:00:00",
+        "endDate": "2024-05-15 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv2half2",
+        "groupType": "Limited",
+        "startDate": "2024-01-17 14:00:00",
+        "endDate": "2024-02-01 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv2half",
+        "groupType": "Limited",
+        "startDate": "2024-01-02 14:00:00",
+        "endDate": "2024-01-17 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv2021",
+        "groupType": "Limited",
+        "startDate": "2023-07-25 14:00:00",
+        "endDate": "2023-08-14 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv1half",
+        "groupType": "Limited",
+        "startDate": "2023-01-22 05:00:00",
+        "endDate": "2023-02-22 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 31,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "anv2020",
+        "groupType": "Limited",
+        "startDate": "2022-07-25 05:00:00",
+        "endDate": "2022-08-24 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "login_bonus_gw",
+        "groupType": "Limited",
+        "startDate": "2024-10-29 14:00:00",
+        "endDate": null,
+        "annualStart": "04-28 12:00:00",
+        "annualEnd": "05-08 04:59:59",
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "countdown_anv",
+        "groupType": "Limited",
+        "startDate": "2024-11-15 14:00:00",
+        "endDate": null,
+        "annualStart": "05-15 12:00:00",
+        "annualEnd": "05-31 04:59:59",
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "login_bonus_anv",
+        "groupType": "Limited",
+        "startDate": "2024-12-01 14:00:00",
+        "endDate": null,
+        "annualStart": "05-31 12:00:00",
+        "annualEnd": "06-17 04:59:59",
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "zcollab_event",
+        "groupType": "Limited",
+        "startDate": "2022-05-13 05:00:00",
+        "endDate": "2022-05-30 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "rcollab_event",
+        "groupType": "Limited",
+        "startDate": "2021-09-13 05:00:00",
+        "endDate": "2021-09-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "rcollab_re01",
+        "groupType": "Limited",
+        "startDate": "2022-09-13 05:00:00",
+        "endDate": "2022-09-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ny20",
+        "groupType": "Limited",
+        "startDate": "2021-08-28 05:00:00",
+        "endDate": "2021-09-05 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "normal_ny20_jan",
+        "groupType": "Normal",
+        "startDate": "2021-08-28 05:00:00",
+        "endDate": "2021-09-28 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "amount": 1,
+                        "characterId": 333001
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 22,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 23,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 24,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 25,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 26,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 27,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 28,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 29,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 30,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 31,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "normal_2020",
+        "groupType": "Normal",
+        "startDate": "2021-09-28 05:00:00",
+        "endDate": "2024-01-17 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 1,
+                        "itemId": 11001
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 1,
+                        "amount": 5,
+                        "itemId": 101
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 3,
+                        "amount": 1000
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "halfanv2020",
+        "groupType": "Limited",
+        "startDate": "2022-01-22 05:00:00",
+        "endDate": "2022-02-12 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 15,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 16,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 17,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 18,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 19,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 20,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 21,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "gw2020",
+        "groupType": "Limited",
+        "startDate": "2021-12-26 05:00:00",
+        "endDate": "2022-01-09 04:59:59",
+        "annualStart": null,
+        "annualEnd": null,
+        "conditionStart": null,
+        "conditionEnd": null,
+        "reasonId": 55,
+        "comebackGroupId": null,
+        "includeBeginner": null,
+        "days": [
+            {
+                "index": 1,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 2,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 6,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 7,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 8,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 9,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 10,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 11,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 12,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 13,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            },
+            {
+                "index": 14,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    }
+]

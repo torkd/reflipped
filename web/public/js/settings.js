@@ -4,7 +4,7 @@
 // and their input events (which bubble through the page, not the form) are caught on the document.
 const form = document.getElementById("settings-form")
 if (form) {
-    const inputs = [...form.elements].filter(element => element.matches("input[type=number]"))
+    const inputs = [...form.elements].filter(element => element.matches("input[type=number], input[type=text]"))
     const presets = [...document.querySelectorAll("form[data-preset-values]")].map(presetForm => ({
         form: presetForm,
         title: presetForm.dataset.presetTitle,
@@ -45,7 +45,7 @@ if (form) {
             status.textContent = status.dataset.saved
             return
         }
-        const values = Object.fromEntries(inputs.map(input => [input.name, Number(input.value)]))
+        const values = Object.fromEntries(inputs.filter(input => input.type === "number").map(input => [input.name, Number(input.value)]))
         status.textContent = describe(values)
     }
 
@@ -53,6 +53,7 @@ if (form) {
         if (event.target.form === form) update()
     })
     form.addEventListener("submit", () => { leaving = true })
+    document.getElementById("reset-settings")?.addEventListener("submit", () => { leaving = true })
     for (const preset of presets) {
         preset.form.addEventListener("submit", event => {
             const changed = changedInputs().length
@@ -65,6 +66,36 @@ if (form) {
     }
     window.addEventListener("beforeunload", event => {
         if (leaving || changedInputs().length === 0) return
+        event.preventDefault()
+        event.returnValue = ""
+    })
+    update()
+}
+
+// The Server identity tab saves its own form: the same unsaved marks, and a question before leaving with edits.
+const identity = document.getElementById("identity-form")
+if (identity) {
+    const fields = [...identity.elements].filter(element => element.matches("input[type=text], input[type=url]"))
+    const save = document.getElementById("save-identity")
+    const unsaved = document.getElementById("identity-unsaved-status")
+    let leaving = false
+    const changed = () => fields.filter(field => field.value !== field.defaultValue)
+
+    function update() {
+        for (const field of fields) {
+            field.closest(".setting-row")?.querySelector("[data-unsaved]")?.classList.toggle("invisible", field.value === field.defaultValue)
+        }
+        const count = changed().length
+        if (save) save.disabled = count === 0
+        if (unsaved) unsaved.textContent = count ? `${count} unsaved change${count === 1 ? "" : "s"}` : ""
+    }
+
+    document.addEventListener("input", event => {
+        if (event.target.form === identity) update()
+    })
+    identity.addEventListener("submit", () => { leaving = true })
+    window.addEventListener("beforeunload", event => {
+        if (leaving || changed().length === 0) return
         event.preventDefault()
         event.returnValue = ""
     })

@@ -13,8 +13,8 @@ import java.util.Map;
 /**
  * An ANE context whose functions are plain Java lambdas.
  *
- * Every call is logged under the tag {@value #TAG} with its arguments and return value, so a
- * device run (`adb logcat -s ReflippedShell`) shows exactly what the game asks for. Functions
+ * Every call is logged under the tag {@value #TAG} with its argument count and result type.
+ * Payloads are omitted: arguments, async results and GETLASTRESULT can contain credentials. Functions
  * registered with {@link #noop} only log and return null.
  */
 public class StubContext extends FREContext {
@@ -69,7 +69,7 @@ public class StubContext extends FREContext {
     /** Sets {@link #lastResult} and fires the StatusEvent the AS3 wrapper waits for (code = call name). */
     public void complete(String code, String resultJson) {
         lastResult = resultJson;
-        Log.i(TAG, extension + " <- event " + code + " result=" + resultJson);
+        Log.i(TAG, extension + " <- event " + code + " result=<redacted>");
         dispatchStatusEventAsync(code, "");
     }
 
@@ -85,20 +85,24 @@ public class StubContext extends FREContext {
     }
 
     private FREObject invoke(String name, Handler handler, FREObject[] args) {
-        StringBuilder line = new StringBuilder(extension).append('.').append(name).append('(');
-        for (int i = 0; args != null && i < args.length; i++) {
-            if (i > 0) line.append(", ");
-            line.append(Args.describe(args[i]));
-        }
-        line.append(')');
+        String line = extension + "." + name + "(args=" + (args == null ? 0 : args.length) + ")";
         try {
             Object result = handler.call(this, args == null ? new FREObject[0] : args);
-            Log.i(TAG, line + " -> " + (result instanceof String ? "\"" + result + "\"" : result));
+            Log.i(TAG, line + " -> " + resultType(result));
             return Args.toFre(result);
         } catch (Throwable t) {
-            Log.e(TAG, line + " threw", t);
+            // Exception messages/causes may echo a server body or an argument too.
+            Log.e(TAG, line + " threw " + t.getClass().getSimpleName());
             return null;
         }
+    }
+
+    private static String resultType(Object result) {
+        if (result == null) return "null";
+        if (result instanceof String) return "<string>";
+        if (result instanceof Boolean) return "<boolean>";
+        if (result instanceof Number) return "<number>";
+        return "<object>";
     }
 
     @Override

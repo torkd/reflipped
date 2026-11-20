@@ -7,7 +7,7 @@
 #   client/air-shell/setup-sdk.sh --uninstall [--dir DIR]
 #
 # Installs: JDK 17 (Temurin), Android command-line tools, platform-tools (adb) and
-# platforms;android-34, and optionally Node 22 for the repo's tests. The AIR SDK comes from
+# platforms;android-34, and optionally Node 24 for the repo's tests. The AIR SDK comes from
 # airsdk.wxlift.com and is never downloaded by this script: you accept its licence yourself in
 # the AIR SDK Manager (docs/air-licence.md). Pass the Manager zip (--manager-zip,
 # unpacked into DIR/manager), an SDK folder the manager downloaded (--air-dir, linked as DIR/air),
@@ -120,11 +120,11 @@ print("https://dl.google.com/android/repository/" + best[1], best[2], best[1])
 '
 }
 
-# Prints "<url> <sha256> <filename>" for the latest Node 22 linux-x64 tarball.
+# Prints "<url> <sha256> <filename>" for the latest Node 24 linux-x64 tarball.
 resolve_node() {
-    base="https://nodejs.org/dist/latest-v22.x"
+    base="https://nodejs.org/dist/latest-v24.x"
     curl -fsSL "$base/SHASUMS256.txt" |
-        awk -v base="$base" '$2 ~ /^node-v22\.[0-9.]+-linux-x64\.tar\.xz$/ { print base "/" $2, $1, $2; exit }'
+        awk -v base="$base" '$2 ~ /^node-v24\.[0-9.]+-linux-x64\.tar\.xz$/ { print base "/" $2, $1, $2; exit }'
 }
 
 # fetch <url> <checksum> <algo: sha1|sha256> <file>
@@ -146,7 +146,7 @@ if $DRY_RUN; then
     say "dry run: SDK folder would be $SDK_DIR"
     say "JDK:           $(resolve_jdk)"
     say "Android tools: $(resolve_cmdtools)"
-    if $WITH_NODE; then say "Node 22:       $(resolve_node)"; fi
+    if $WITH_NODE; then say "Node 24:       $(resolve_node)"; fi
     exit 0
 fi
 
@@ -335,13 +335,13 @@ else
     say "  then rerun:  $0 --dir $SDK_DIR --manager-zip /path/to/AIRSDKManager_linux_amd64_*.zip"
 fi
 
-# ------------------------------------------------------------------ Node 22 (optional)
+# ------------------------------------------------------------------ Node 24 (optional)
 if $WITH_NODE; then
     if [ -x "$SDK_DIR/node/bin/node" ]; then
         say "Node already installed"
     else
         set -- $(resolve_node)
-        [ $# -eq 3 ] || die "could not resolve the Node 22 download"
+        [ $# -eq 3 ] || die "could not resolve the Node 24 download"
         fetch "$1" "$2" sha256 "$3"
         rm -rf "$SDK_DIR/.tmp-node" && mkdir "$SDK_DIR/.tmp-node"
         tar -xJf "$DL/$3" -C "$SDK_DIR/.tmp-node"

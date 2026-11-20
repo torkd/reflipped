@@ -1,0 +1,21 @@
+# Context of container/Dockerfile (the repository root): only the sources the app and its server bundle need, never
+# game files (.cdn), databases, APKs, SDKs or keys. BuildKit reads this file instead of the root .dockerignore.
+*
+!package.json
+!package-lock.json
+!tsconfig.json
+!tailwind.config.js
+!src
+!assets
+!web
+!scripts/bundle.mjs
+!scripts/build-info.mjs
+!client/air-shell
+client/air-shell/build
+client/air-shell/test
+web/public/tailwind.css
+**/__pycache__
+**/*.apk
+**/*.zip
+**/*.p12
+**/AIRSDK*

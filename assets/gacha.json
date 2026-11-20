@@ -9,6 +9,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-07-24 14:00:00",
         "endDate": "2021-08-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -663,6 +670,13 @@
         "discountCost": 25,
         "startDate": "2018-10-03 15:00:00",
         "endDate": "2021-09-23 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -962,6 +976,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-08-05 14:00:00",
         "endDate": "2021-08-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -1618,6 +1639,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-08-12 14:00:00",
         "endDate": "2021-08-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -2316,6 +2344,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-08-22 14:00:00",
         "endDate": "2021-08-30 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -2986,6 +3021,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-08-27 14:00:00",
         "endDate": "2021-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -3698,6 +3740,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-09-11 14:00:00",
         "endDate": "2021-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -4403,6 +4452,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-09-27 14:00:00",
         "endDate": "2021-10-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -5143,6 +5199,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-09-19 14:00:00",
         "endDate": "2021-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -5848,6 +5911,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-10-02 14:00:00",
         "endDate": "2021-10-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -6588,6 +6658,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-10-12 14:00:00",
         "endDate": "2021-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -7349,6 +7426,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-10-18 14:00:00",
         "endDate": "2021-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -8110,6 +8194,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-10-26 14:00:00",
         "endDate": "2021-10-31 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -8899,6 +8990,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-10-31 14:00:00",
         "endDate": "2021-11-08 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -9688,6 +9786,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-11-08 14:00:00",
         "endDate": "2021-11-14 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -10505,6 +10610,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-11-14 14:00:00",
         "endDate": "2021-11-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -11322,6 +11434,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-11-26 14:00:00",
         "endDate": "2021-12-03 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -12174,6 +12293,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-12-03 14:00:00",
         "endDate": "2021-12-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -13026,6 +13152,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-12-11 14:00:00",
         "endDate": "2021-12-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -13913,6 +14046,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-12-18 14:00:00",
         "endDate": "2021-12-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -14800,6 +14940,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-12-26 14:00:00",
         "endDate": "2022-01-06 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -15722,6 +15869,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-01-06 14:00:00",
         "endDate": "2022-01-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -16644,6 +16798,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-01-10 14:00:00",
         "endDate": "2022-01-20 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -17594,6 +17755,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-01-20 14:00:00",
         "endDate": "2022-01-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -18544,6 +18712,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-01-26 14:00:00",
         "endDate": "2022-02-02 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -19536,6 +19711,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-02-02 14:00:00",
         "endDate": "2022-02-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -20528,6 +20710,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-02-07 14:00:00",
         "endDate": "2022-02-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -21548,6 +21737,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-02-18 14:00:00",
         "endDate": "2022-02-25 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -22568,6 +22764,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-02-25 14:00:00",
         "endDate": "2022-03-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -23623,6 +23826,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-03-05 14:00:00",
         "endDate": "2022-03-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -24650,6 +24860,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-03-10 14:00:00",
         "endDate": "2022-03-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -25712,6 +25929,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-03-18 14:00:00",
         "endDate": "2022-03-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -26767,6 +26991,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-03-28 14:00:00",
         "endDate": "2022-04-04 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -27857,6 +28088,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-04-04 14:00:00",
         "endDate": "2022-04-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -28926,6 +29164,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-04-10 14:00:00",
         "endDate": "2022-04-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -30023,6 +30268,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-04-18 14:00:00",
         "endDate": "2022-04-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -31113,6 +31365,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-04-28 14:00:00",
         "endDate": "2022-05-08 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -32231,6 +32490,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-05-08 14:00:00",
         "endDate": "2022-05-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -33349,6 +33615,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-05-13 14:00:00",
         "endDate": "2022-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -34488,6 +34761,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-05-28 14:00:00",
         "endDate": "2022-06-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -35627,6 +35907,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-06-12 14:00:00",
         "endDate": "2022-06-20 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -36773,6 +37060,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-06-20 14:00:00",
         "endDate": "2022-06-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -37919,6 +38213,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-06-28 14:00:00",
         "endDate": "2022-07-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -39086,6 +39387,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-07-07 14:00:00",
         "endDate": "2022-07-14 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -40253,6 +40561,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-07-14 14:00:00",
         "endDate": "2022-07-25 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -41448,6 +41763,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-07-25 14:00:00",
         "endDate": "2022-07-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -42636,6 +42958,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-07-28 14:00:00",
         "endDate": "2022-08-06 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -43859,6 +44188,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-08-06 14:00:00",
         "endDate": "2022-08-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -45096,6 +45432,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-08-11 14:00:00",
         "endDate": "2022-08-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -46326,6 +46669,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-08-15 14:00:00",
         "endDate": "2022-08-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -47563,6 +47913,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-08-22 14:00:00",
         "endDate": "2022-08-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -48765,6 +49122,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-08-28 14:00:00",
         "endDate": "2022-09-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -49995,6 +50359,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-09-05 14:00:00",
         "endDate": "2022-09-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -51239,6 +51610,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-09-13 14:00:00",
         "endDate": "2022-09-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -52469,6 +52847,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-09-28 14:00:00",
         "endDate": "2022-10-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -53706,6 +54091,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-10-07 14:00:00",
         "endDate": "2022-10-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -54957,6 +55349,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-10-15 14:00:00",
         "endDate": "2022-10-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -56222,6 +56621,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-10-22 14:00:00",
         "endDate": "2022-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -57487,6 +57893,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-10-26 14:00:00",
         "endDate": "2022-11-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -58780,6 +59193,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-11-07 14:00:00",
         "endDate": "2022-11-14 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -60087,6 +60507,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-11-14 14:00:00",
         "endDate": "2022-11-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -61401,6 +61828,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-11-21 14:00:00",
         "endDate": "2022-11-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -62715,6 +63149,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-11-26 14:00:00",
         "endDate": "2022-12-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -64057,6 +64498,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-12-05 14:00:00",
         "endDate": "2022-12-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -65385,6 +65833,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-12-12 14:00:00",
         "endDate": "2022-12-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -66748,6 +67203,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-12-17 14:00:00",
         "endDate": "2022-12-20 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -68104,6 +68566,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-12-20 14:00:00",
         "endDate": "2022-12-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -69474,6 +69943,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-12-26 14:00:00",
         "endDate": "2023-01-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -70837,6 +71313,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-01-07 14:00:00",
         "endDate": "2023-01-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -72228,6 +72711,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-01-16 14:00:00",
         "endDate": "2023-01-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -73647,6 +74137,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-01-22 14:00:00",
         "endDate": "2023-01-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -75073,6 +75570,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-01-26 14:00:00",
         "endDate": "2023-02-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -76527,6 +77031,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-02-09 14:00:00",
         "endDate": "2023-02-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -77967,6 +78478,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-02-09 14:00:00",
         "endDate": "2023-02-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -79407,6 +79925,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-02-13 14:00:00",
         "endDate": "2023-02-20 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -80868,6 +81393,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-02-20 14:00:00",
         "endDate": "2023-02-25 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -82336,6 +82868,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-02-25 14:00:00",
         "endDate": "2023-03-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -83832,6 +84371,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-03-09 14:00:00",
         "endDate": "2023-03-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -85307,6 +85853,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-03-13 14:00:00",
         "endDate": "2023-03-23 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -86810,6 +87363,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-03-23 14:00:00",
         "endDate": "2023-03-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -88306,6 +88866,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-03-28 14:00:00",
         "endDate": "2023-04-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -89837,6 +90404,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-03-28 14:00:00",
         "endDate": "2023-04-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -91368,6 +91942,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-04-09 14:00:00",
         "endDate": "2023-04-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -92878,6 +93459,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-04-13 14:00:00",
         "endDate": "2023-04-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -94654,6 +95242,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-04-28 14:00:00",
         "endDate": "2023-05-08 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -96192,6 +96787,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-05-08 14:00:00",
         "endDate": "2023-05-13 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -97716,6 +98318,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-05-13 14:00:00",
         "endDate": "2023-05-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -99268,6 +99877,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-05-22 14:00:00",
         "endDate": "2023-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -100820,6 +101436,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-05-28 14:00:00",
         "endDate": "2023-06-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -102393,6 +103016,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-06-09 14:00:00",
         "endDate": "2023-06-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -103952,6 +104582,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-06-15 14:00:00",
         "endDate": "2023-06-23 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -105539,6 +106176,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-06-23 14:00:00",
         "endDate": "2023-06-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -107126,6 +107770,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-06-28 14:00:00",
         "endDate": "2023-07-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -108713,6 +109364,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-07-09 14:00:00",
         "endDate": "2023-07-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -110328,6 +110986,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-07-17 14:00:00",
         "endDate": "2023-07-25 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -111964,6 +112629,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-07-25 14:00:00",
         "endDate": "2023-08-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -113600,6 +114272,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-08-07 14:00:00",
         "endDate": "2023-08-14 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -115236,6 +115915,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-08-14 14:00:00",
         "endDate": "2023-08-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -116879,6 +117565,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-08-21 14:00:00",
         "endDate": "2023-09-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -118536,6 +119229,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-09-12 14:00:00",
         "endDate": "2023-09-19 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -120193,6 +120893,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-09-19 14:00:00",
         "endDate": "2023-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -121871,6 +122578,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-09-19 14:00:00",
         "endDate": "2023-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -123535,6 +124249,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-09-19 14:00:00",
         "endDate": "2022-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -125178,6 +125899,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-09-27 14:00:00",
         "endDate": "2023-10-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -126821,6 +127549,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-10-12 14:00:00",
         "endDate": "2023-10-19 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -128485,6 +129220,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-10-19 14:00:00",
         "endDate": "2023-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -130149,6 +130891,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-10-26 14:00:00",
         "endDate": "2023-11-02 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -131820,6 +132569,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-11-02 14:00:00",
         "endDate": "2023-11-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -133519,6 +134275,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-11-09 14:00:00",
         "endDate": "2023-11-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -135211,6 +135974,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-11-26 14:00:00",
         "endDate": "2023-12-04 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -136910,6 +137680,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-11 14:00:00",
         "endDate": "2023-12-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -138623,6 +139400,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-26 14:00:00",
         "endDate": "2024-01-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -140357,6 +141141,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-26 14:00:00",
         "endDate": "2024-01-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -142091,6 +142882,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-01-05 14:00:00",
         "endDate": "2024-01-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -143839,6 +144637,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-01-12 14:00:00",
         "endDate": "2024-01-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -145594,6 +146399,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-01-12 14:00:00",
         "endDate": "2024-01-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -147384,6 +148196,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-01-17 14:00:00",
         "endDate": "2024-01-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -149160,6 +149979,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-01-24 14:00:00",
         "endDate": "2024-02-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -150950,6 +151776,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-03-17 14:00:00",
         "endDate": "2024-04-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -152719,6 +153552,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-01 14:00:00",
         "endDate": "2024-02-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -154509,6 +155349,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2022-02-25 14:00:00",
         "endDate": "2022-03-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -156285,6 +157132,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-07 14:00:00",
         "endDate": "2024-02-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -158089,6 +158943,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-12 14:00:00",
         "endDate": "2024-02-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -159886,6 +160747,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-12 14:00:00",
         "endDate": "2024-02-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -161697,6 +162565,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-17 14:00:00",
         "endDate": "2024-02-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -163487,6 +164362,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-17 14:00:00",
         "endDate": "2024-02-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -165284,6 +166166,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-24 14:00:00",
         "endDate": "2024-02-29 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -167074,6 +167963,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-24 14:00:00",
         "endDate": "2024-02-29 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -168892,6 +169788,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-29 14:00:00",
         "endDate": "2024-03-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -170696,6 +171599,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-02-29 14:00:00",
         "endDate": "2024-03-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -172521,6 +173431,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-03-05 14:00:00",
         "endDate": "2024-03-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -174339,6 +175256,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-03-12 14:00:00",
         "endDate": "2024-03-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -176185,6 +177109,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-01 14:00:00",
         "endDate": "2024-04-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -178024,6 +178955,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-06 14:00:00",
         "endDate": "2024-04-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -179898,6 +180836,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-11 14:00:00",
         "endDate": "2024-04-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -181758,6 +182703,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-11 14:00:00",
         "endDate": "2024-04-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -183625,6 +184577,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-04-11 14:00:00",
         "endDate": "2023-04-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -185401,6 +186360,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-16 14:00:00",
         "endDate": "2024-04-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -187275,6 +188241,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-21 14:00:00",
         "endDate": "2024-04-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -189135,6 +190108,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-04-21 14:00:00",
         "endDate": "2024-04-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -191016,6 +191996,13 @@
         "guaranteeMovieName": "fes_guarantee",
         "startDate": "2024-04-28 14:00:00",
         "endDate": "2024-05-11 13:59:59",
+        "rankWeights": {
+            "1": 75,
+            "2": 250,
+            "3": 675
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -192904,6 +193891,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-05-06 14:00:00",
         "endDate": "2024-05-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -194792,6 +195786,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-05-11 14:00:00",
         "endDate": "2024-05-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -196673,6 +197674,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-05-11 14:00:00",
         "endDate": "2024-05-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -198554,6 +199562,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-05-18 14:00:00",
         "endDate": "2024-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -200414,6 +201429,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-05-18 14:00:00",
         "endDate": "2024-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -202295,6 +203317,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-07-25 15:00:00",
         "endDate": "2024-07-30 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -204176,6 +205205,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-03 14:00:00",
         "endDate": "2024-08-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -206057,6 +207093,13 @@
         "guaranteeMovieName": "fes_guarantee",
         "startDate": "2024-05-28 14:00:00",
         "endDate": "2024-07-25 14:59:59",
+        "rankWeights": {
+            "1": 75,
+            "2": 250,
+            "3": 675
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -208617,6 +209660,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-07-25 15:00:00",
         "endDate": "2024-08-03 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -210505,6 +211555,13 @@
         "guaranteeMovieName": "fes_guarantee",
         "startDate": "2024-05-28 14:00:00",
         "endDate": "2024-07-25 14:59:59",
+        "rankWeights": {
+            "1": 75,
+            "2": 250,
+            "3": 675
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -212456,6 +213513,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-10 14:00:00",
         "endDate": "2024-08-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -214351,6 +215415,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-17 14:00:00",
         "endDate": "2024-08-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -216253,6 +217324,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-17 14:00:00",
         "endDate": "2024-08-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -218141,6 +219219,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-24 14:00:00",
         "endDate": "2024-08-31 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -220050,6 +221135,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-31 14:00:00",
         "endDate": "2024-09-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -221952,6 +223044,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-08-31 14:00:00",
         "endDate": "2024-09-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -223861,6 +224960,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-09-07 14:00:00",
         "endDate": "2024-09-14 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -225791,6 +226897,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-09-14 14:00:00",
         "endDate": "2024-09-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -227714,6 +228827,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-09-22 14:00:00",
         "endDate": "2024-10-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -229658,6 +230778,13 @@
         "guaranteeMovieName": "fes_guarantee",
         "startDate": "2024-10-01 14:00:00",
         "endDate": "2024-10-08 13:59:59",
+        "rankWeights": {
+            "1": 75,
+            "2": 250,
+            "3": 675
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -231637,6 +232764,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-08 14:00:00",
         "endDate": "2024-10-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -233553,6 +234687,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-08 14:00:00",
         "endDate": "2024-10-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -233887,6 +235028,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-15 14:00:00",
         "endDate": "2024-10-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -235810,6 +236958,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-15 14:00:00",
         "endDate": "2024-10-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -237761,6 +238916,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-22 14:00:00",
         "endDate": "2024-10-29 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -239705,6 +240867,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-29 14:00:00",
         "endDate": "2024-11-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -241649,6 +242818,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-10-29 14:00:00",
         "endDate": "2024-11-05 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -242004,6 +243180,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-11-05 14:00:00",
         "endDate": "2024-11-15 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -243969,6 +245152,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-11-15 14:00:00",
         "endDate": "2024-11-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -245920,6 +247110,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-11-15 14:00:00",
         "endDate": "2024-11-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -247899,6 +249096,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-11-22 14:00:00",
         "endDate": "2024-12-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -249892,6 +251096,13 @@
         "guaranteeMovieName": "fes_guarantee",
         "startDate": "2024-12-01 14:00:00",
         "endDate": "2024-12-09 13:59:59",
+        "rankWeights": {
+            "1": 75,
+            "2": 250,
+            "3": 675
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -251934,6 +253145,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-09 14:00:00",
         "endDate": "2024-12-17 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -253913,6 +255131,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-17 14:00:00",
         "endDate": "2024-12-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -255878,6 +257103,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-17 14:00:00",
         "endDate": "2024-12-24 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -257878,6 +259110,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-24 14:00:00",
         "endDate": "2024-12-31 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -259885,6 +261124,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-31 14:00:00",
         "endDate": "2025-01-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -261864,6 +263110,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2024-12-31 14:00:00",
         "endDate": "2025-01-07 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -262198,6 +263451,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-11-17 14:00:00",
         "endDate": "2023-11-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -263911,6 +265171,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-04 14:00:00",
         "endDate": "2023-12-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -265617,6 +266884,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-11 14:00:00",
         "endDate": "2023-12-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -267344,6 +268618,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-12-18 14:00:00",
         "endDate": "2023-12-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -269083,6 +270364,13 @@
         "discountCost": 25,
         "startDate": "2021-09-23 14:00:00",
         "endDate": "2021-10-02 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -269401,6 +270689,13 @@
         "discountCost": 25,
         "startDate": "2021-10-02 14:00:00",
         "endDate": "2021-12-03 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -269719,6 +271014,13 @@
         "discountCost": 25,
         "startDate": "2021-12-03 14:00:00",
         "endDate": "2021-12-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -270058,6 +271360,13 @@
         "discountCost": 25,
         "startDate": "2021-12-11 14:00:00",
         "endDate": "2022-01-06 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -270397,6 +271706,13 @@
         "discountCost": 25,
         "startDate": "2022-01-06 14:00:00",
         "endDate": "2022-01-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -270757,6 +272073,13 @@
         "discountCost": 25,
         "startDate": "2022-01-10 14:00:00",
         "endDate": "2022-02-18 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -271117,6 +272440,13 @@
         "discountCost": 25,
         "startDate": "2022-02-18 14:00:00",
         "endDate": "2022-02-25 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -271498,6 +272828,13 @@
         "discountCost": 25,
         "startDate": "2022-02-25 14:00:00",
         "endDate": "2022-05-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -271879,6 +273216,13 @@
         "discountCost": 25,
         "startDate": "2022-05-21 14:00:00",
         "endDate": "2022-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -272281,6 +273625,13 @@
         "discountCost": 25,
         "startDate": "2022-05-28 14:00:00",
         "endDate": "2022-08-22 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -272683,6 +274034,13 @@
         "discountCost": 25,
         "startDate": "2022-08-22 14:00:00",
         "endDate": "2022-08-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -273106,6 +274464,13 @@
         "discountCost": 25,
         "startDate": "2022-08-28 14:00:00",
         "endDate": "2022-11-21 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -273529,6 +274894,13 @@
         "discountCost": 25,
         "startDate": "2022-11-21 14:00:00",
         "endDate": "2022-11-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -273973,6 +275345,13 @@
         "discountCost": 25,
         "startDate": "2022-11-26 14:00:00",
         "endDate": "2023-06-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -274417,6 +275796,13 @@
         "discountCost": 25,
         "startDate": "2023-06-28 14:00:00",
         "endDate": "2023-07-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -274882,6 +276268,13 @@
         "discountCost": 25,
         "startDate": "2023-07-09 14:00:00",
         "endDate": "2023-08-14 14:00:00",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -275347,6 +276740,13 @@
         "discountCost": 25,
         "startDate": "2023-08-14 14:00:00",
         "endDate": "2023-09-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -275812,6 +277212,13 @@
         "discountCost": 25,
         "startDate": "2023-09-12 14:00:00",
         "endDate": "2023-09-27 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -276298,6 +277705,13 @@
         "discountCost": 25,
         "startDate": "2023-09-27 14:00:00",
         "endDate": "2023-10-12 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -276784,6 +278198,13 @@
         "discountCost": 25,
         "startDate": "2023-10-12 14:00:00",
         "endDate": "2023-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -277270,6 +278691,13 @@
         "discountCost": 25,
         "startDate": "2023-10-12 14:00:00",
         "endDate": "2023-10-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -277756,6 +279184,13 @@
         "discountCost": 25,
         "startDate": "2023-10-26 14:00:00",
         "endDate": "2023-11-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -278242,6 +279677,13 @@
         "discountCost": 25,
         "startDate": "2023-11-09 14:00:00",
         "endDate": "2023-11-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -278728,6 +280170,13 @@
         "discountCost": 25,
         "startDate": "2023-11-26 14:00:00",
         "endDate": "2023-12-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -279235,6 +280684,13 @@
         "discountCost": 25,
         "startDate": "2023-12-11 14:00:00",
         "endDate": "2023-12-26 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -279742,6 +281198,13 @@
         "discountCost": 25,
         "startDate": "2023-12-26 14:00:00",
         "endDate": "2024-02-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -280249,6 +281712,13 @@
         "discountCost": 25,
         "startDate": "2024-02-01 14:00:00",
         "endDate": "2024-02-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -280756,6 +282226,13 @@
         "discountCost": 25,
         "startDate": "2024-02-16 14:00:00",
         "endDate": "2024-03-10 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -281263,6 +282740,13 @@
         "discountCost": 25,
         "startDate": "2024-03-10 14:00:00",
         "endDate": "2024-04-02 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -281770,6 +283254,13 @@
         "discountCost": 25,
         "startDate": "2024-04-02 14:00:00",
         "endDate": "2024-04-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -282277,6 +283768,13 @@
         "discountCost": 25,
         "startDate": "2024-04-16 14:00:00",
         "endDate": "2024-04-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -282784,6 +284282,13 @@
         "discountCost": 25,
         "startDate": "2024-04-28 14:00:00",
         "endDate": "2024-05-09 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -283291,6 +284796,13 @@
         "discountCost": 25,
         "startDate": "2024-05-09 14:00:00",
         "endDate": "2024-05-28 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -283798,6 +285310,13 @@
         "discountCost": 25,
         "startDate": "2024-05-28 14:00:00",
         "endDate": "2024-07-25 14:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -284305,6 +285824,13 @@
         "discountCost": 25,
         "startDate": "2024-08-31 14:00:00",
         "endDate": "2024-10-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -284812,6 +286338,13 @@
         "discountCost": 25,
         "startDate": "2024-10-01 14:00:00",
         "endDate": "2024-10-29 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -285319,6 +286852,13 @@
         "discountCost": 25,
         "startDate": "2024-10-29 14:00:00",
         "endDate": "2024-12-01 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -285826,6 +287366,13 @@
         "discountCost": 25,
         "startDate": "2024-12-01 14:00:00",
         "endDate": "2024-12-31 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -286333,6 +287880,13 @@
         "discountCost": 25,
         "startDate": "2024-12-31 14:00:00",
         "endDate": "2025-01-31 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -286842,6 +288396,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2021-08-27 14:00:00",
         "endDate": "2021-09-11 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {
@@ -287554,6 +289115,13 @@
         "guaranteeMovieName": "normal_guarantee",
         "startDate": "2023-06-15 21:00:00",
         "endDate": "2023-06-16 13:59:59",
+        "rankWeights": {
+            "1": 5,
+            "2": 25,
+            "3": 70
+        },
+        "guaranteeNumber": 1,
+        "guaranteeRarity": 4,
         "pool": {
             "3": [
                 {

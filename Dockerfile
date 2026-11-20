@@ -2,18 +2,25 @@
 #   docker build -t reflipped .
 # The compose flavours in docker/ (stack, api, proxy) build it as the `reflipped` service.
 
-FROM node:22-bookworm AS build
+FROM node:24-bookworm AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
-# better-sqlite3 compiles here if no prebuilt binary matches.
+# No native modules: SQLite and argon2 are Node's own (node:sqlite, crypto.argon2), so nothing compiles here.
 RUN npm ci
 COPY tsconfig.json tailwind.config.js ./
 COPY assets ./assets
 COPY src ./src
 COPY web ./web
-RUN npm run build && npm prune --omit=dev
+COPY scripts/build-info.mjs ./scripts/
+# The build context has no .git folder: pass the commit the server reports (admin site, /shell/config), e.g.
+#   docker build --build-arg REFLIPPED_COMMIT=$(git rev-parse --short=12 HEAD) -t reflipped .
+ARG REFLIPPED_COMMIT=""
+RUN REFLIPPED_COMMIT="$REFLIPPED_COMMIT" npm run build && npm prune --omit=dev
 
-FROM node:22-bookworm-slim
+FROM node:24-bookworm-slim
+# links the image to the public repository on ghcr.io (scripts/release/github-release.sh --image)
+LABEL org.opencontainers.image.source="https://github.com/torkd/reflipped" \
+      org.opencontainers.image.description="Reflipped game server"
 ENV NODE_ENV=production \
     LISTEN_HOST=0.0.0.0 \
     LISTEN_PORT=8000 \

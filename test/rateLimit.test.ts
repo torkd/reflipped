@@ -60,7 +60,7 @@ test("signup has its own stricter limit", async () => {
 test("the global limit applies to ordinary routes", async () => {
     const statuses: number[] = []
     for (let i = 0; i < 14; i++) {
-        statuses.push((await fastify.inject({ method: "GET", url: "/news", remoteAddress: "10.0.0.4" })).statusCode)
+        statuses.push((await fastify.inject({ method: "GET", url: "/game/news", remoteAddress: "10.0.0.4" })).statusCode)
     }
     assert.equal(statuses.slice(0, 12).includes(429), false)
     assert.equal(statuses[13], 429)
@@ -88,7 +88,7 @@ test("mutating admin routes have a stricter limit", async () => {
 test("trustProxy makes X-Forwarded-For the client IP", async () => {
     const proxied = await createTestServer({ rateLimit: { global: 2 }, trustProxy: true })
     try {
-        const get = (forwarded: string) => proxied.fastify.inject({ method: "GET", url: "/news", headers: { "x-forwarded-for": forwarded } })
+        const get = (forwarded: string) => proxied.fastify.inject({ method: "GET", url: "/game/news", headers: { "x-forwarded-for": forwarded } })
         await get("1.1.1.1")
         await get("1.1.1.1")
         assert.equal((await get("1.1.1.1")).statusCode, 429)

@@ -1,69 +1,33 @@
-// Handles the insertion of mana into characters.
-
-import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+// Encyclopedia read history is per player. Availability remains the emulator's existing broad catalogue policy.
+import { FastifyInstance } from "fastify";
 import { generateDataHeaders } from "../../utils";
-import encyclopedia from "../../../assets/encyclopedia.json";
 import { arrayOf, gameBody, integer } from "../schemas";
+import { atomicHandler } from "../../lib/atomic";
+import { getPlayerEncyclopediaSync, isKnownEncyclopediaId, updatePlayerEncyclopediaSync } from "../../data/encyclopedia";
 
-interface IndexBody {
-    api_count: number,
-    viewer_id: number,
-}
-
-interface ReadKeywordBody {
-    encyclopedia_ids: number[],
-    viewer_id: number
-}
-
-const readKeywordSchema = gameBody({
-    encyclopedia_ids: arrayOf(integer)
-}, ["encyclopedia_ids"])
-
+interface KeywordBody { encyclopedia_ids: number[] }
+const keywordSchema = gameBody({ encyclopedia_ids: arrayOf(integer) }, ["encyclopedia_ids"])
 const indexSchema = gameBody({ api_count: integer })
 
 const routes = async (fastify: FastifyInstance) => {
-    fastify.post("/read_keyword", { schema: readKeywordSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
-        const body = request.body as ReadKeywordBody
+    for (const [route, read] of [["read_keyword", true], ["unlock_keyword", false]] as const) {
+        fastify.post(`/${route}`, { schema: keywordSchema }, atomicHandler((request, reply) => {
+            const { encyclopedia_ids: ids } = request.body as KeywordBody
+            // Validate before writing any row: unknown composite IDs can stop the client's master lookup (C8601).
+            if (ids.some(id => !isKnownEncyclopediaId(id)))
+                return reply.status(400).send({ error: "Bad Request", message: "Unknown encyclopedia entry." })
+            const list = updatePlayerEncyclopediaSync(request.viewer.playerId, ids, read)
+            return reply.header("content-type", "application/x-msgpack").status(200).send({
+                data_headers: generateDataHeaders({ viewer_id: request.viewer.viewerId }),
+                data: { encyclopedia_list: list }
+            })
+        }))
+    }
 
-        const viewerId = request.viewer.viewerId
-        const encyclopediaIds = body.encyclopedia_ids
-        if (encyclopediaIds === undefined) return reply.status(400).send({
-            "error": "Bad Request",
-            "message": "Invalid request body."
-        })
-
-        const encyclopediaList: Record<string, object> = {}
-        for (const id of encyclopediaIds) {
-            encyclopediaList[id] = {
-                "read": true
-            }
-        }
-
-        reply.header("content-type", "application/x-msgpack")
-        return reply.status(200).send({
-            "data_headers": generateDataHeaders({
-                viewer_id: viewerId
-            }),
-            "data": {
-                "encyclopedia_list": encyclopediaList
-            }
-        })
-    })
-
-    fastify.post("/index", { schema: indexSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
-        const body = request.body as IndexBody
-
-        const viewerId = request.viewer.viewerId
-
-        reply.header("content-type", "application/x-msgpack")
-        return reply.status(200).send({
-            "data_headers": generateDataHeaders({
-                viewer_id: viewerId
-            }),
-            "data": {
-                "encyclopedia_list": encyclopedia,
-                "mail_arrived": false
-            }
+    fastify.post("/index", { schema: indexSchema }, async (request, reply) => {
+        return reply.header("content-type", "application/x-msgpack").status(200).send({
+            data_headers: generateDataHeaders({ viewer_id: request.viewer.viewerId }),
+            data: { encyclopedia_list: getPlayerEncyclopediaSync(request.viewer.playerId), mail_arrived: false }
         })
     })
 }

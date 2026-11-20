@@ -4,6 +4,7 @@
  *
  * Per device language, in the order the client extracts them (a later archive overwrites a file of an earlier one):
  *  - `restore`: original bytes of every file a translation overlay ever changed (`en` only, see below);
+ *  - `cn-patches`: client files taken from the Chinese version's CDN when the server has it (src/lib/cnPatches.ts);
  *  - mods: every file in `<CDN_DIR>/mods/`, in file name order;
  *  - `overlay`: the translation overlay built by `npm run i18n:build` (`en` only, with `I18N=on`, the default;
  *    nothing is sent until an overlay has been built).
@@ -19,7 +20,11 @@
 import { createHash } from "crypto";
 import { existsSync, readdirSync, readFileSync, statSync } from "fs";
 import path from "path";
-import { getStoredText, setStoredText } from "../data/serverSettings";
+import { cdnDir, dataPath } from "./paths";
+import getDatabase, { Database } from "../data";
+import { getStoredText, setStoredText, setStoredTexts } from "../data/serverSettings";
+import { currentScheduleAssetView, scheduleArchive } from "./scheduleAssets";
+import { CN_PATCH_URL_DIR, prepareCnPatchArchive } from "./cnPatches";
 
 export interface AssetArchive {
     location: string
@@ -36,6 +41,10 @@ export interface AssetLayerState {
     versionString: string
     i18n: I18nMode
     mods: AssetArchive[]
+    /** the archive of files from the Chinese CDN, when the server has it */
+    cnPatches: AssetArchive | null
+    /** what every language gets: the Chinese CDN's files, then the mods (also for languages without their own list) */
+    shared: AssetArchive[]
     /** per device language: restore, mods, overlay */
     layers: Record<string, AssetArchive[]>
     /** the built overlay and restore archives per overlay language (whether sent or not) */
@@ -54,21 +63,18 @@ export const OVERLAY_LANGS = ["en"] as const
 export const OVERLAY_URL_DIR = "overlay"
 
 const VERSION_KEY = "assets.version"
+const VERSION_HIGH_WATER_KEY = "assets.version.high_water"
 const LAYERS_KEY = "assets.layers"
 const servedKey = (lang: string) => `assets.i18n_served.${lang}`
 
-const repoRoot = path.join(__dirname, "..", "..")
-
-/** `CDN_DIR`, relative to the repository root unless absolute. */
+/** `CDN_DIR`, relative to the working directory unless absolute (`src/lib/paths.ts`). */
 export function cdnRoot(): string {
-    const dir = process.env.CDN_DIR || ".cdn"
-    return path.isAbsolute(dir) ? dir : path.join(repoRoot, dir)
+    return cdnDir()
 }
 
-/** `CDN_OVERLAY_DIR` (default `.cdn-overlay`), relative to the repository root unless absolute. */
+/** `CDN_OVERLAY_DIR` (default `.cdn-overlay`), relative to the working directory unless absolute. */
 export function overlayRoot(): string {
-    const dir = process.env.CDN_OVERLAY_DIR || ".cdn-overlay"
-    return path.isAbsolute(dir) ? dir : path.join(repoRoot, dir)
+    return dataPath(process.env.CDN_OVERLAY_DIR || ".cdn-overlay")
 }
 
 /** `I18N`: `on` (the default since the device test, I18N-13) or `off`. */
@@ -141,43 +147,55 @@ export function computeAssetLayers(): AssetLayerState {
     const cdn = cdnRoot()
     const i18n = i18nMode()
     const mods = readMods(cdn)
+    const cnBuilt = prepareCnPatchArchive()
+    const cnPatches: AssetArchive | null = cnBuilt && {
+        location: `{$cdnAddress}/${CN_PATCH_URL_DIR}/${cnBuilt.file}`,
+        size: cnBuilt.data.length,
+        sha256: createHash("sha256").update(cnBuilt.data).digest("base64")
+    }
+    const shared = [...(cnPatches ? [cnPatches] : []), ...mods]
     const layers: Record<string, AssetArchive[]> = {}
     const built: AssetLayerState["built"] = {}
     for (const lang of LAYER_LANGS) {
         if (!(OVERLAY_LANGS as readonly string[]).includes(lang)) {
-            layers[lang] = mods
+            layers[lang] = shared
             continue
         }
         const { overlay, restore } = built[lang] = readOverlay(lang)
         if (i18n === "on" && overlay) setStoredText(servedKey(lang), "1")
         const served = getStoredText(servedKey(lang)) === "1"
         layers[lang] = i18n === "on"
-            ? [...(restore ? [restore] : []), ...mods, ...(overlay ? [overlay] : [])]
-            : [...(restore && served ? [restore] : []), ...mods]
+            ? [...(restore ? [restore] : []), ...shared, ...(overlay ? [overlay] : [])]
+            : [...(restore && served ? [restore] : []), ...shared]
     }
 
     const current = fingerprint(layers)
-    const storedVersion = Number(getStoredText(VERSION_KEY))
-    let version: number
-    let previous: string
-    if (Number.isInteger(storedVersion) && storedVersion > 0) {
-        version = storedVersion
-        previous = getStoredText(LAYERS_KEY) ?? ""
-    } else {
-        // first start with the registry: carry on from metadata.json, or from the asset lists' version
-        const legacy = legacyMetadata(cdn)
-        version = Math.max(legacy?.version ?? BASE_ASSET_VERSION, BASE_ASSET_VERSION)
-        previous = legacy?.fingerprint ?? fingerprint({})
-    }
-    let bumped = false
-    const hasLayers = LAYER_LANGS.some(lang => layers[lang].length > 0)
-    if (current !== previous || (hasLayers && version <= BASE_ASSET_VERSION)) {
-        version += 1
-        bumped = true
-    }
-    setStoredText(VERSION_KEY, String(version))
-    setStoredText(LAYERS_KEY, current)
-    return { version, versionString: `2.1.${version}`, i18n, mods, layers, built, bumped }
+    // Keep high-water allocation and identity publication in one writer transaction, including
+    // when two server processes start against the same database at once.
+    return getDatabase(Database.WDFP_DATA).transaction(() => {
+        const storedVersion = Number(getStoredText(VERSION_KEY))
+        let version: number
+        let previous: string
+        if (Number.isInteger(storedVersion) && storedVersion > 0) {
+            version = storedVersion
+            previous = getStoredText(LAYERS_KEY) ?? ""
+        } else {
+            // first start with the registry: carry on from metadata.json, or from the asset lists' version
+            const legacy = legacyMetadata(cdn)
+            version = Math.max(legacy?.version ?? BASE_ASSET_VERSION, BASE_ASSET_VERSION)
+            previous = legacy?.fingerprint ?? fingerprint({})
+        }
+        let bumped = false
+        const hasLayers = LAYER_LANGS.some(lang => layers[lang].length > 0)
+        if (current !== previous || (hasLayers && version <= BASE_ASSET_VERSION)) {
+            version = Math.max(version, Number(getStoredText(VERSION_HIGH_WATER_KEY)) || 0) + 1
+            bumped = true
+        }
+        setStoredText(VERSION_KEY, String(version))
+        setStoredText(VERSION_HIGH_WATER_KEY, String(Math.max(version, Number(getStoredText(VERSION_HIGH_WATER_KEY)) || 0)))
+        setStoredText(LAYERS_KEY, current)
+        return { version, versionString: `2.1.${version}`, i18n, mods, cnPatches, shared, layers, built, bumped }
+    }).immediate()
 }
 
 let state: AssetLayerState | null = null
@@ -194,11 +212,39 @@ export function resetAssetLayers(): void {
 
 /** The asset version `/load` announces. */
 export function availableAssetVersion(): string {
-    return getAssetLayers().versionString
+    const base = getAssetLayers().versionString
+    const view = currentScheduleAssetView(base)
+    return view ? allocateAssetViewVersion(view.identity) : base
 }
 
-/** The archives a device of this language gets on top of the game's assets (unknown languages: the mods only). */
-export function layersFor(lang: string): AssetArchive[] {
+/**
+ * Unique immutable version for each generated view. The shared high-water mark also reserves these
+ * numbers from later static layer changes. Re-visiting an identical view uses identical archives.
+ */
+export function allocateAssetViewVersion(identity: string): string {
+    const baseVersion = getAssetLayers().version
+    const key = `assets.view.${createHash("sha256").update(identity).digest("hex")}`
+    // Every game request asks for the version: an already allocated view must not take the write lock.
+    const existing = getStoredText(key)
+    if (existing !== null) return existing
+    return getDatabase(Database.WDFP_DATA).transaction(() => {
+        const previous = getStoredText(key)
+        if (previous !== null) return previous
+        const next = Math.max(BASE_ASSET_VERSION, baseVersion,
+            Number(getStoredText(VERSION_HIGH_WATER_KEY)) || 0) + 1
+        if (!Number.isSafeInteger(next) || next > 0x7fffffff) throw new Error("Asset version space exhausted")
+        const version = `2.1.${next}`
+        setStoredTexts([[VERSION_HIGH_WATER_KEY, String(next)], [key, version]])
+        return version
+    }).immediate()
+}
+
+/** The archives a device of this language gets on top of the game's assets (unknown languages: the shared ones). */
+export function layersFor(lang: string, apiOrigin?: string): AssetArchive[] {
     const current = getAssetLayers()
-    return current.layers[lang] ?? current.mods
+    const layers = current.layers[lang] ?? current.shared
+    const view = currentScheduleAssetView(current.versionString)
+    if (!view) return layers
+    if (!apiOrigin) throw new Error("Schedule asset archives require the game API origin")
+    return [...layers, scheduleArchive(view, lang, layers, cdnRoot(), overlayRoot(), apiOrigin)]
 }

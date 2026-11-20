@@ -1,0 +1,17 @@
+        <header class="page-header">
+            <h1 class="page-title">Two-step login</h1>
+            <p class="page-subtitle">Enter the 6-digit code your authenticator app shows for Reflipped.</p>
+        </header>
+{{notice}}
+        <form class="card" method="post" action="{{action}}">
+            <input type="hidden" name="csrf" value="{{csrf}}">
+            <label class="field">Code
+                <input class="input tabular-nums" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9 ]{6,7}" maxlength="7" required autofocus>
+            </label>
+            <button type="submit" class="btn-primary">Continue</button>
+        </form>
+        <form method="post" action="{{logoutAction}}">
+            <input type="hidden" name="csrf" value="{{csrf}}">
+            <button type="submit" class="btn-outline">Cancel</button>
+        </form>
+        <p class="card-text">Lost your authenticator? Ask the person who runs this server to turn two-step login off for you.</p>

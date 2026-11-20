@@ -2,9 +2,25 @@ import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { getPlayerPartyGroupListSync, getPlayerSync, playerOwnsCharacterSync, playerOwnsEquipmentSync, updatePlayerPartySync, updatePlayerSync } from "../../data/wdfpData";
 import { generateDataHeaders, getServerDate } from "../../utils";
 import { PartyCategory, PlayerParty } from "../../data/types";
-import { any, arrayOf, boolean, gameBody, integer, nullable, object, playerText, string } from "../schemas";
+import { ensureProfilePartySync, PROFILE_PARTY_CATEGORY } from "../../lib/profile";
+import { arrayOf, boolean, gameBody, integer, nullable, object, playerText } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
 import { MissionPattern, MissionUpdate, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { battlePartySchema, normaliseBattleParty, PartyCodeBattleParty } from "../../lib/partyCodes";
+import { findPartyCodeSync, publishPartyCodeSync } from "../../data/partyCodes";
+
+/**
+ * The longest party name a player can set: the master's `party/party_config` name_limit (18), which the client's rename
+ * dialog enforces. The client counts with AS3 `String.length`, in UTF-16 units, as JavaScript's `length` does. Longer
+ * names already stored (the server's own "Setting Favorite Units" for the profile party, an imported save) still load
+ * and save unchanged; only a new name is held to it.
+ */
+const PARTY_NAME_MAX_LENGTH = 18
+
+/** Whether a name is one the client's rename dialog could have produced: within the limit, no control characters. */
+function partyNameAllowed(word: string): boolean {
+    return word.length <= PARTY_NAME_MAX_LENGTH && !/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/u.test(word)
+}
 
 interface PartyInfoListItem {
     party_edited: boolean
@@ -364,9 +380,17 @@ interface EditBody {
 */
 interface PublishBody {
     party_name: string,
-    battle_party: {
+    battle_party: PartyCodeBattleParty,
+    viewer_id: number
+}
 
-    },
+interface ReferBody {
+    party_code: string,
+    viewer_id: number
+}
+
+interface CheckWordBody {
+    word: string,
     viewer_id: number
 }
 
@@ -390,28 +414,74 @@ const partySchema = gameBody({
 
 const publishSchema = gameBody({
     party_name: playerText,
-    battle_party: any
-})
+    battle_party: battlePartySchema
+}, ["party_name", "battle_party"])
+
+const referSchema = gameBody({ party_code: { type: "string", maxLength: 64 } }, ["party_code"])
+
+const checkWordSchema = gameBody({ word: { type: "string", maxLength: 1000 } }, ["word"])
+
+/** party/refer's result code for an unknown code: "party code not found" (`PartyReferRemote`, `PartyCodeNotFound`). */
+const PARTY_CODE_NOT_FOUND = 3404
 
 const routes = async (fastify: FastifyInstance) => {
+    // "Show party code" on the party screen: the party is stored and its code shown for other players (FT-41)
     fastify.post("/publish", { schema: publishSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as PublishBody
-
-        const viewerId = request.viewer.viewerId
-
         const playerId = request.viewer.playerId
+        const owned = {
+            ownsCharacter: (id: number) => playerOwnsCharacterSync(playerId, id),
+            ownsEquipment: (id: number) => playerOwnsEquipmentSync(playerId, id)
+        }
+        const code = publishPartyCodeSync(playerId, body.party_name, normaliseBattleParty(body.battle_party, owned), getServerDate())
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
             "data_headers": generateDataHeaders({
-                viewer_id: viewerId
+                viewer_id: request.viewer.viewerId
             }),
             "data": {
-                "party_code": "https://www.howLongCanThisBe?=+-.comhttps://www.howLongCanThisBe?=+-.comhttps://www.howLongCanThisBe?=+-.com"
+                "party_code": code
             }
         })
-
     }))
+
+    // "Enter party code": the party stored under the code; the client sets the units the player owns into the party
+    fastify.post("/refer", { schema: referSchema }, (request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as ReferBody
+        const party = findPartyCodeSync(body.party_code.trim())
+
+        reply.header("content-type", "application/x-msgpack")
+        if (party === null) return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: request.viewer.viewerId, result_code: PARTY_CODE_NOT_FOUND }),
+            "data": []
+        })
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({
+                viewer_id: request.viewer.viewerId
+            }),
+            "data": {
+                "party_name": party.partyName,
+                "battle_party": party.battleParty
+            }
+        })
+    })
+
+    // the party name dialog checks a new name before it is set (partyNameAllowed: the game had a banned-word list,
+    // Reflipped has none). A refused name gets the client's "word can't be used" dialog.
+    fastify.post("/check_word", { schema: checkWordSchema }, (request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as CheckWordBody
+
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({
+                viewer_id: request.viewer.viewerId
+            }),
+            "data": {
+                "check_passed": partyNameAllowed(body.word)
+            }
+        })
+    })
 
     fastify.post("/edit", { schema: partySchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as EditBody
@@ -476,6 +546,19 @@ const routes = async (fastify: FastifyInstance) => {
             after.filter((id, slot) => id !== null && id !== undefined && id !== before?.[slot]).length
         let equipped = 0, unisonSet = 0, soulsSet = 0
 
+        // the profile's favourite units (party category 99, FT-36): made the first time, so an edit has a row to update
+        if (body.party_info_list.some(updateInfo => updateInfo.party_category === PROFILE_PARTY_CATEGORY)) ensureProfilePartySync(playerId)
+
+        // a stored party renamed to a name the client couldn't have set (a modified client) is refused
+        const badRename = body.party_info_list.find(updateInfo => {
+            const before = previousParty(updateInfo.party_category, updateInfo.party_id)
+            return before !== undefined && before.name !== updateInfo.party_name && !partyNameAllowed(updateInfo.party_name)
+        })
+        if (badRename !== undefined) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "Invalid party name."
+        })
+
         for (const updateInfo of body.party_info_list) {
             const before = previousParty(updateInfo.party_category, updateInfo.party_id)
             const unisonCharacterIds = updateInfo.unison_character_ids.map(mapOwnedCharacters)
@@ -503,6 +586,12 @@ const routes = async (fastify: FastifyInstance) => {
         if (equipped > 0) missionUpdates.push({ pattern: MissionPattern.EQUIPPED_FIRST_TIME, value: 1 })
         if (unisonSet > 0) missionUpdates.push({ pattern: MissionPattern.SET_UNISON_FIRST_TIME, value: 1 })
         if (soulsSet > 0) missionUpdates.push({ pattern: MissionPattern.SET_SOUL_SPHERE_COUNT, amount: soulsSet })
+        // raid sets (party category 3, FT-12): each group's parties are Main, Sub 1 and Sub 2 in order (the raid party
+        // table numbers them 1-18 in groups of three); setting one up counts its mission (patterns 76-78)
+        for (const updateInfo of body.party_info_list) {
+            if (updateInfo.party_category !== 3 || !updateInfo.character_ids.some(id => id !== null)) continue
+            missionUpdates.push({ pattern: MissionPattern.RAID_EVENT_SET_MAIN_PARTY + (updateInfo.party_id - 1) % 3, value: 1 })
+        }
         const missionResult = updateMissionsSync(playerId, getServerDate(), missionUpdates)
 
         reply.header("content-type", "application/x-msgpack")

@@ -2,6 +2,15 @@
                 <h1 class="page-title">Players</h1>
                 <p class="page-subtitle">{{playerCountText}}</p>
             </header>
+{{notice}}
+            <form method="get" action="/player" class="flex gap-3 items-end">
+                <label class="field flex-1">Find a player
+                    <input class="input w-full" type="search" name="q" maxlength="100" value="{{query}}" placeholder="Name, player number or PID">
+                </label>
+                <button class="btn-outline" type="submit">Search</button>
+            </form>
             <section class="card p-2 md:p-3 gap-1">
 {{listContent}}
             </section>
+{{deletedSaves}}
+{{sendMailForm}}

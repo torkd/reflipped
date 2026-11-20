@@ -1,3 +1,4 @@
+import { boardHiddenPlayers } from "../../lib/anticheat";
 // Handles mail.
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
@@ -9,8 +10,10 @@ import { generateDataHeaders, getServerDate, getServerTime } from "../../utils";
 import { FinishBody, insertActiveQuest } from "./singleBattleQuest";
 import { getPlayerRushEventEndlessBattleRankingSync, getRushEventEndlessBattleRankPlayedPartyListSync, getSerializedPlayerRushEventPlayedPartiesSync } from "../../lib/rush";
 import { clientSerializeDate } from "../../data/utils";
+import { questStaminaCost, serializeStamina, spendStaminaSync } from "../../lib/stamina";
 import { boolean, gameBody, integer, string } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
+import { eventPartyGroupListSync } from "../../lib/eventParties";
 
 interface SummaryBody {
     event_id: number,
@@ -233,7 +236,8 @@ const routes = async (fastify: FastifyInstance) => {
         const endlessRanking = getPlayerRushEventEndlessBattleRankingSync(playerId, eventId)
 
         // get all rankings for page
-        const rankings = getRushEventEndlessRankingListSync(eventId, page);
+        // developer-mode and restricted players stay off the shared leaderboard (SEC-18)
+        const rankings = getRushEventEndlessRankingListSync(eventId, page, 100, boardHiddenPlayers());
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -305,51 +309,8 @@ const routes = async (fastify: FastifyInstance) => {
 
         const playerId = request.viewer.playerId
 
-        // get parties
-        let playerPartyGroups = getPlayerPartyGroupListSync(playerId, PartyCategory.EVENT)
-        // insert default parties if no parties already exist
-        if (0 >= Object.keys(playerPartyGroups).length) {
-            playerPartyGroups = getPlayerPartyGroupListSync(playerId, PartyCategory.NORMAL)
-
-            // convert party categories
-            for (const group of Object.values(playerPartyGroups)) {
-                for (const party of Object.values(group.list)) {
-                    party.category = PartyCategory.EVENT
-                }
-                group.category = PartyCategory.EVENT
-            }
-
-            insertPlayerPartyGroupListSync(playerId, playerPartyGroups)
-        }
-
-        // convert to proper format
-        const userPartyGroupList: RushPartyGroup[] = []
-
-        for (const [idString, group] of Object.entries(playerPartyGroups)) {
-            const partyList: RushParty[] = []
-
-            // convert parties
-            for (const [partyIdString, party] of Object.entries(group.list)) {
-                partyList.push({
-                    ability_soul_ids: party.abilitySoulIds,
-                    character_ids: party.characterIds,
-                    equipment_ids: party.equipmentIds,
-                    unison_character_ids: party.unisonCharacterIds,
-                    options: {
-                        allow_other_players_to_heal_me: party.options.allowOtherPlayersToHealMe
-                    },
-                    party_edited: party.edited,
-                    party_id: Number(partyIdString),
-                    party_name: party.name
-                })
-            }
-
-            userPartyGroupList.push({
-                "party_group_color_id": group.colorId,
-                "party_group_id": Number(idString),
-                "party_list": partyList
-            })
-        }
+        // the rush event's party sets (category 4), copied from the normal parties the first time
+        const userPartyGroupList = eventPartyGroupListSync(playerId, PartyCategory.EVENT)
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({
@@ -383,13 +344,22 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "Quest doesn't exist."
         })
 
+        // stamina (FT-25)
+        const staminaCost = questStaminaCost(QuestCategory.RUSH_EVENT, questId, questData.staminaCost, getServerDate())
+        const stamina = spendStaminaSync(playerId, staminaCost, getServerDate())
+        if (stamina === null) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "Not enough stamina."
+        })
+
         // insert active quest for '/single_battle_quest/finish' endpoint
         insertActiveQuest(playerId, {
             questId: questId,
             category: QuestCategory.RUSH_EVENT,
             useBoostPoint: false,
             useBossBoostPoint: false,
-            isAutoStartMode: isAutoStartMode
+            isAutoStartMode: isAutoStartMode,
+            staminaCost
         })
 
         const headers = generateDataHeaders({
@@ -401,7 +371,8 @@ const routes = async (fastify: FastifyInstance) => {
             "data_headers": headers,
             "data": {
                 "user_info": {
-                    "last_main_quest_id": body.quest_id
+                    "last_main_quest_id": body.quest_id,
+                    ...serializeStamina(stamina)
                 },
                 "is_multi": "single",
                 "start_time": headers['servertime'],

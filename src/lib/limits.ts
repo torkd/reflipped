@@ -34,7 +34,9 @@ export const mailLimits = {
     subjectLength: 100,
     descriptionLength: 500,
     /** mails a player can have waiting; the client's list pages hold 100 */
-    pendingMails: 1000
+    pendingMails: 1000,
+    /** received mails kept for the gift box history (history/receive shows the newest 500 of the last week) and in a save */
+    historyMails: 500
 }
 
 /** Clamps a count from the database to 0..max, for values sent to the client. */

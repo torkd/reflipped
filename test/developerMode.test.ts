@@ -79,20 +79,26 @@ test("developer mode: on unlocks everything, off restores the player's own progr
     assert.deepEqual([fiveStar.exp, fiveStar.overLimitStep, fiveStar.evolutionLevel], [379988, 4, 1], "max level, over-limit and evolution")
     assert.ok(data.getPlayerCharacterManaNodesSync(playerId, 151165).length > 0, "mana nodes unlocked")
     assert.equal(data.getPlayerCharacterSync(playerId, 999999), null, "no placeholder character")
-    assert.equal(data.getPlayerCharacterSync(playerId, 700000), null, "no 7xxxxx event units")
+    assert.notEqual(data.getPlayerCharacterSync(playerId, 700000), null, "event units with skills are unlocked")
     assert.equal(data.getPlayerCharacterSync(playerId, 700001), null, "none without skills (C8601 in the unit list)")
 
     assert.ok(Object.keys(data.getPlayerEquipmentListSync(playerId)).length > 50, "equipment")
     // every armament at its own maximum level: most go to 5, Durendal (an exchange item) only has level 1
     assert.equal(data.getPlayerEquipmentSync(playerId, 5010004)!.level, 5)
     assert.equal(data.getPlayerEquipmentSync(playerId, 5010005)!.level, 1)
-    assert.ok(data.getPlayerItemSync(playerId, 40000)! >= 9999, "boss coins")
+    // every item of the item table at 30% of its own limit, so rewards and shops still fit on top
+    assert.equal(data.getPlayerItemSync(playerId, 40000), 2999, "boss coins (limit 9999)")
+    assert.equal(data.getPlayerItemSync(playerId, 20001), 2999, "a portal ticket no reward gives")
+    assert.equal(data.getPlayerItemSync(playerId, 14041), 3, "an item limited to 10")
     // score reward pool numbers (score_reward type 1) are not items: granting them broke the unit list (C8601)
     assert.equal(data.getPlayerItemSync(playerId, 2101), null, "no rare pool number granted as an item")
-    assert.ok(data.getPlayerSync(playerId)!.freeVmoney >= 500000, "beads")
-    assert.equal(data.getPlayerSync(playerId)!.rankPoint, 666297, "rank 100")
+    assert.equal(data.getPlayerSync(playerId)!.freeVmoney, 300000, "beads, well under 999999")
+    assert.equal(data.getPlayerSync(playerId)!.stamina, 500, "stamina under the overflow cap")
+    assert.equal(data.getPlayerSync(playerId)!.rankPoint, 1774864, "rank 120")
     assert.equal(data.getPlayerSingleQuestProgressSync(playerId, 2, 1001001)?.finished, true, "boss battle cleared")
     assert.equal(data.getPlayerSingleQuestProgressSync(playerId, 8, 1002)?.clearRank, 5, "advent event quest cleared")
+    const { QuestCategory } = await import("../src/lib/types")
+    assert.equal(data.getPlayerSingleQuestProgressSync(playerId, QuestCategory.TOWER_DUNGEON_EVENT, 1001), null, "the Haunt isn't cleared")
 
     // the page shows the state and enables Revert
     const page = await admin.inject({ method: "GET", url: `/player/${playerId}` })

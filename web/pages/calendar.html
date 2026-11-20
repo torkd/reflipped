@@ -1,0 +1,36 @@
+            <header class="page-header">
+                <h1 class="page-title">Calendar</h1>
+                <p class="page-subtitle">Which dates the server clock runs through. The game works out which events, portals and shops are open from the date, so this is how an event goes live.</p>
+            </header>
+{{notice}}
+            <section class="grid gap-4 grid-cols-2 md:grid-cols-3">
+                <div class="stat">
+                    <span class="stat-label">Clock</span>
+                    <span class="stat-value">{{clockMode}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Server clock (UTC)</span>
+                    <span class="stat-value">{{serverTime}}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Next switch (UTC)</span>
+                    <span class="stat-value">{{nextSwitch}}</span>
+                </div>
+            </section>
+{{mode}}
+            <section class="settings-group">
+                <div class="settings-group-header">
+                    <h2 class="card-title">Rotation</h2>
+                    <p class="card-text">The windows the calendar runs through, in this order. A window is a range of whole game days (05:00 to 05:00 Japan time). Windows may overlap or go back in time; each time the clock goes back, daily and monthly resets and shop stock start over as on a new day. Summoning portals are open from {{contentStart}} to {{contentEnd}} UTC; a window needs one open on all of its days.</p>
+                </div>
+{{rotation}}
+            </section>
+            <section class="settings-group">
+                <div class="settings-group-header">
+                    <h2 class="card-title">Events</h2>
+                    <p class="card-text">The events in the game's data with the portals open during them: those that can be added first, newest first. Add one to put its game days at the end of the rotation, or "Go to" to set the server clock to its opening and test it on its own (this turns the calendar off).</p>
+                </div>
+{{events}}
+            </section>
+
+<script src="/public/js/stepper.js" defer></script>

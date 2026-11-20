@@ -53,15 +53,16 @@
   --md-sys-color-surface-container-highest-light: #d0d5e3;
   --md-sys-color-on-surface-light: #343b58;
   --md-sys-color-surface-variant-light: #d0d5e3;
-  --md-sys-color-on-surface-variant-light: #6172b0;
+  /* Darker light text roles; supported surface/tint pairings are in docs/admin-theme.md. */
+  --md-sys-color-on-surface-variant-light: #4a5788;
   --md-sys-color-inverse-surface-light: #343b58;
   --md-sys-color-inverse-on-surface-light: #e1e2e7;
   --md-sys-color-outline-light: #848cb5;
   --md-sys-color-outline-variant-light: #a8aecb;
   --md-sys-color-shadow-light: #000000;
   --md-sys-color-scrim-light: #000000;
-  --md-sys-color-surface-tint-light: #9854f1;
-  --md-sys-color-primary-light: #9854f1;
+  --md-sys-color-surface-tint-light: #5b239d;
+  --md-sys-color-primary-light: #5b239d;
   --md-sys-color-on-primary-light: #ffffff;
   --md-sys-color-primary-container-light: #e4d4ff;
   --md-sys-color-on-primary-container-light: #2e1065;
@@ -70,11 +71,11 @@
   --md-sys-color-on-secondary-light: #ffffff;
   --md-sys-color-secondary-container-light: #ffd1e6;
   --md-sys-color-on-secondary-container-light: #3d0020;
-  --md-sys-color-tertiary-light: #2e7de9;
+  --md-sys-color-tertiary-light: #174c96;
   --md-sys-color-on-tertiary-light: #ffffff;
   --md-sys-color-tertiary-container-light: #d6e4ff;
   --md-sys-color-on-tertiary-container-light: #0b2a5c;
-  --md-sys-color-error-light: #f52a65;
+  --md-sys-color-error-light: #94123b;
   --md-sys-color-on-error-light: #ffffff;
   --md-sys-color-error-container-light: #ffd6e0;
   --md-sys-color-on-error-container-light: #4a0016;
@@ -184,9 +185,15 @@
   --md-sys-color-scrim: var(--md-sys-color-scrim-light);
 }
 
-/* override light theme with dark theme */
+/* The theme follows the operating system until a page's switch (web/public/js/theme.js) sets data-theme on <html>:
+   "light" or "dark" then wins over the system. The two dark blocks below must stay identical. */
+:root { color-scheme: light dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+/* override light theme with dark theme: the system is dark and the page's switch isn't set to light */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --md-sys-color-primary: var(--md-sys-color-primary-dark);
     --md-sys-color-primary-rgb: var(--md-sys-color-primary-dark-rgb);
     --md-sys-color-on-primary: var(--md-sys-color-on-primary-dark);
@@ -226,8 +233,58 @@
     --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
   }
 }
+
+/* override light theme with dark theme: the page's switch is set to dark */
+:root[data-theme="dark"] {
+  --md-sys-color-primary: var(--md-sys-color-primary-dark);
+  --md-sys-color-primary-rgb: var(--md-sys-color-primary-dark-rgb);
+  --md-sys-color-on-primary: var(--md-sys-color-on-primary-dark);
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-dark);
+  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-dark);
+  --md-sys-color-secondary: var(--md-sys-color-secondary-dark);
+  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-dark);
+  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-dark);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-dark);
+  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-dark);
+  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-dark);
+  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+  --md-sys-color-error: var(--md-sys-color-error-dark);
+  --md-sys-color-on-error: var(--md-sys-color-on-error-dark);
+  --md-sys-color-error-container: var(--md-sys-color-error-container-dark);
+  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-dark);
+  --md-sys-color-outline: var(--md-sys-color-outline-dark);
+  --md-sys-color-background: var(--md-sys-color-background-dark);
+  --md-sys-color-background-rgb: var(--md-sys-color-background-dark-rgb);
+  --md-sys-color-on-background: var(--md-sys-color-on-background-dark);
+  --md-sys-color-surface: var(--md-sys-color-surface-dark);
+  --md-sys-color-surface-container-lowest: var(--md-sys-color-surface-container-lowest-dark);
+  --md-sys-color-surface-container-low: var(--md-sys-color-surface-container-low-dark);
+  --md-sys-color-surface-container: var(--md-sys-color-surface-container-dark);
+  --md-sys-color-surface-container-high: var(--md-sys-color-surface-container-high-dark);
+  --md-sys-color-surface-container-highest: var(--md-sys-color-surface-container-highest-dark);
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-dark);
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-dark);
+  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-dark);
+  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-dark);
+  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-dark);
+  --md-sys-color-shadow: var(--md-sys-color-shadow-dark);
+  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-dark);
+  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-dark);
+  --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
+}
 /* admin panel components (Reflipped) */
 @layer components {
+  /* the light/dark switch (web/public/js/theme.js): in the light theme it offers the dark one and the other way round */
+  [data-theme-toggle][hidden] { display: none !important; }
+  [data-theme-toggle] .theme-sun, [data-theme-toggle] .theme-when-dark { display: none; }
+  :root[data-theme="dark"] [data-theme-toggle] .theme-sun { display: block; }
+  :root[data-theme="dark"] [data-theme-toggle] .theme-moon, :root[data-theme="dark"] [data-theme-toggle] .theme-when-light { display: none; }
+  :root[data-theme="dark"] [data-theme-toggle] .theme-when-dark { display: inline; }
+  @media (max-width: 767px) { .sidebar [data-theme-toggle] svg { display: none; } }
+  .sidebar-theme { @apply cursor-pointer md:mt-auto; }
+  .sidebar-theme + .sidebar-logout { @apply md:mt-0; }
   .app { @apply min-h-screen bg-background text-on-surface md:grid md:grid-cols-[260px_1fr]; }
   .sidebar { @apply flex md:flex-col items-center md:items-stretch gap-1 md:gap-6 px-3 py-3 md:p-6 md:h-screen md:sticky md:top-0 bg-surface-container-low border-b md:border-b-0 md:border-r border-outline-variant overflow-x-auto; scrollbar-width: none; }
   .brand { @apply flex items-center gap-3 mr-2 md:mr-0 shrink-0; }
@@ -236,6 +293,7 @@
   .nav-link { @apply flex items-center gap-2 md:gap-3 px-2.5 py-2 md:px-4 md:py-2.5 rounded-xl text-on-surface-variant font-medium hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap; }
   .nav-link svg { @apply hidden md:block w-5 h-5 fill-current shrink-0; }
   .nav-link-active { @apply text-primary hover:text-primary; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  .sidebar-logout { @apply shrink-0 md:mt-auto; }
   .nav-link-active:hover { background-color: color-mix(in srgb, var(--md-sys-color-primary) 20%, transparent); }
   .main { @apply w-full max-w-5xl mx-auto px-4 py-6 md:px-10 md:py-10 flex flex-col gap-6; }
   .page-header { @apply flex flex-col gap-1; }
@@ -268,11 +326,27 @@
   .settings-section { @apply flex flex-col gap-4 pt-2; }
   .settings-section-header { @apply flex flex-col gap-1; }
   .settings-section-title { @apply text-xl md:text-2xl font-bold text-on-background tracking-tight; }
+  /* the Settings page's tabs (web/public/js/settings-tabs.js): links that also work without the script */
+  .tabs { @apply flex flex-wrap gap-x-1 border-b; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
+  .tab { @apply px-4 py-2.5 -mb-px text-sm font-semibold text-on-surface-variant border-b-2 border-transparent whitespace-nowrap transition-colors hover:text-on-background; }
+  .tab-active { @apply text-primary border-primary; }
+  /* a panel's own display (flex) would otherwise win over the hidden attribute */
+  [data-tab-panel][hidden] { display: none; }
   .preset-card { @apply gap-3; }
+  /* a card that is also a radio choice (the event mode, reward management): the whole tile selects */
+  .choice-tile { @apply card preset-card cursor-pointer transition-colors hover:bg-surface-container-high; }
+  .choice-tile input[type=radio] { @apply sr-only; }
+  .choice-tile:has(input:checked) { border-color: color-mix(in srgb, var(--md-sys-color-primary) 60%, transparent); }
+  .choice-tile:has(input:focus-visible) { @apply ring-2 ring-primary; }
+  /* a setting another choice has made irrelevant: dimmed, its controls disabled (web/public/js/event-settings.js) */
+  .setting-row-locked { @apply opacity-50; }
+  .setting-row-locked .unit-input, .setting-row-locked .check { @apply pointer-events-none; }
+  .check { @apply w-6 h-6 shrink-0 cursor-pointer self-start md:self-center; accent-color: var(--md-sys-color-primary); }
   .preset-card-active { border-color: color-mix(in srgb, var(--md-sys-color-primary) 60%, transparent); }
   /* tags in a chip line: chip geometry, so showing one never changes the line's height */
   .chip-custom { @apply chip font-semibold text-tertiary; background-color: color-mix(in srgb, var(--md-sys-color-tertiary) 15%, transparent); }
   .chip-unsaved { @apply chip font-semibold text-primary; background-color: color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent); }
+  .chip-warning { @apply chip font-semibold text-error; background-color: color-mix(in srgb, var(--md-sys-color-error) 15%, transparent); }
   .unit-input-edited { @apply border-primary; }
   .settings-group { @apply card gap-0 p-0 overflow-hidden; }
   .settings-group-header { @apply flex flex-col gap-2 px-5 py-4 md:px-6 md:py-5 border-b; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
@@ -293,4 +367,10 @@
   .stepper-btn:first-child { @apply border-r border-outline-variant; }
   .stepper-btn:last-child { @apply border-l border-outline-variant; }
   .action-bar { @apply sticky bottom-4 flex flex-wrap items-center justify-end gap-3 px-5 py-3 rounded-2xl bg-surface-container border shadow-lg; border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 60%, transparent); }
+  /* the player portal (ACC-2): one centred column, no sidebar */
+  .portal-main { @apply w-full max-w-xl mx-auto px-4 py-8 md:py-12 flex flex-col gap-6; }
+  .portal-brand { @apply flex items-center gap-3 self-start; }
+  .field { @apply flex flex-col gap-1 text-sm text-on-surface-variant; }
+  .link-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; @apply text-3xl font-bold tracking-widest text-on-background self-center select-all; }
+  .qr-code { @apply w-48 h-48 p-3 rounded-xl bg-white self-center; }
 }

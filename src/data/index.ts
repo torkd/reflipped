@@ -1,12 +1,12 @@
-import sqlite3, { Database as BetterSqlite3Database } from 'better-sqlite3';
+import SqliteDatabase from './sqlite';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from "path";
+import { databaseDir } from "../lib/paths";
+import { configureSqlite } from "../lib/sqliteTuning";
 import { updateBeforeInit as updateWdfpDataBefore, updateAfterInit as updateWdfpDataAfter} from "./updaters/wdfpData";
 import initWdfpData from "./initializers/wdfpData";
 
-const rootDir = process.cwd();
-const envDataDir = process.env.DATABASE_DIR || ".database"
-const dataDir = path.isAbsolute(envDataDir) ? envDataDir : path.join(rootDir, envDataDir)
+const dataDir = databaseDir()
 const versionFileExtension = ".version"
 if (!existsSync(dataDir)) {
     // make the data directory since it doesn't exist
@@ -24,9 +24,9 @@ export const enum Database {
 interface DatabaseMetadata {
     path: string
     latestVersion: number
-    init?: (database: BetterSqlite3Database, exists: boolean) => void
-    updateBefore?: (database: BetterSqlite3Database, currentVersion: number) => void
-    updateAfter?: (database: BetterSqlite3Database, currentVersion: number) => void
+    init?: (database: SqliteDatabase, exists: boolean) => void
+    updateBefore?: (database: SqliteDatabase, currentVersion: number) => void
+    updateAfter?: (database: SqliteDatabase, currentVersion: number) => void
 }
 
 const databasesMetadata: {[key in Database]: DatabaseMetadata} = {
@@ -35,17 +35,17 @@ const databasesMetadata: {[key in Database]: DatabaseMetadata} = {
         init: initWdfpData,
         updateBefore: updateWdfpDataBefore,
         updateAfter: updateWdfpDataAfter,
-        latestVersion: 5
+        latestVersion: 17
     }
 }
 
 const loadedDatabases: {
-    [key in Database]?: BetterSqlite3Database
+    [key in Database]?: SqliteDatabase
 } = {}
 
 export default function getDatabase(
     database: Database
-): BetterSqlite3Database {
+): SqliteDatabase {
     // don't try to load an already-loaded database
     const isLoaded = loadedDatabases[database]
     if (isLoaded) return isLoaded
@@ -68,11 +68,10 @@ export default function getDatabase(
     }
 
     // create new db
-    const db = new sqlite3(absoluteDatabasePath)
+    const db = new SqliteDatabase(absoluteDatabasePath)
 
-    // set pragma
-    db.pragma('journal_mode = WAL')
-    db.pragma('foreign_keys = ON')
+    // Connection tuning (docs/capacity.md); keep schema/version/migrations independent of this policy.
+    configureSqlite(db)
 
     // call init & update function
     const init = metadata.init
@@ -109,4 +108,20 @@ export default function getDatabase(
     loadedDatabases[database] = db
 
     return db
+}
+
+/**
+ * Closes every open database, so SQLite checkpoints its WAL into the file (SH-13: the server on the phone on SIGTERM).
+ * A later getDatabase() opens it again.
+ */
+export function closeDatabases() {
+    for (const key of Object.keys(loadedDatabases)) {
+        const database = Number(key) as Database
+        try {
+            loadedDatabases[database]?.close()
+        } catch (error) {
+            console.error("closing the database failed:", error)
+        }
+        delete loadedDatabases[database]
+    }
 }

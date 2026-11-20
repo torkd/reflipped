@@ -3,7 +3,12 @@
      extension list, without the Kakao/Google/Firebase manifest entries (none of that code ships). -->
 <application xmlns="http://ns.adobe.com/air/application/${NS}">
   <id>${APP_ID}</id>
-  <versionNumber>${VERSION}</versionNumber>
+  <!-- The Reflipped app version (client/air-shell/VERSION, e.g. 0.2.0-beta.1) is the versionLabel, which ADT makes
+       Android's versionName. versionNumber is not that version: build.py writes the triple from which ADT computes
+       the version's Android version code (MAJOR*1000000 + MINOR*1000 + PATCH), e.g. 0.10.99 for 0.1.0 (code 10099);
+       see app_version in build.py. The game reports its own 0.0.81, compiled into the SWF. -->
+  <versionNumber>${VERSION_NUMBER}</versionNumber>
+  <versionLabel>${VERSION}</versionLabel>
   <filename>worldflipper</filename>
   <name>${NAME}</name>
   <icon>
@@ -30,15 +35,29 @@ ${EXTENSIONS}
   <android>
     <manifestAdditions><![CDATA[
 <manifest android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="${TARGET_SDK}"/>
+  <!-- Android 7: the minimum of Node (nodejs-mobile), which every build carries for playing on the phone (SH-13) -->
+  <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="${TARGET_SDK}"/>
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-permission android:name="android.permission.WAKE_LOCK"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+  <!-- SH-7: the asset download goes on in the background (DownloadService, dataSync) -->
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+  <!-- Android 13+: the download's progress, the game's stamina reminders and the local server's notification -->
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <!-- SH-7: scheduled reminders are armed again after a reboot (LocalNotificationReceiver) -->
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <!-- SH-15: install an update the server offers; Android asks the player to allow it and to confirm each install -->
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
   <application android:allowBackup="false" android:usesCleartextTraffic="true" android:resizeableActivity="true">
     <meta-data android:name="android.max_aspect" android:value="2.4"/>
     <meta-data android:name="reflipped.server" android:value="${SERVER}"/>
     <meta-data android:name="reflipped.cdn" android:value="${CDN}"/>
+    <!-- SH-15: the app's own version (also versionLabel above) and build ID, sent to the server and shown in the app -->
+    <meta-data android:name="reflipped.version" android:value="${VERSION}"/>
+    <meta-data android:name="reflipped.build" android:value="${BUILD}"/>
     <activity android:excludeFromRecents="false" android:resizeableActivity="false">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -53,6 +72,23 @@ ${EXTENSIONS}
         <data android:scheme="wdfp"/>
       </intent-filter>
     </activity>
+    <!-- SH-13: the Reflipped server on the phone, Node in its own process (reflipped.shell.service.ServerService).
+         specialUse has no time limit in the background, unlike dataSync. -->
+    <service android:name="reflipped.shell.service.ServerService" android:process=":server" android:exported="false"
+             android:foregroundServiceType="specialUse">
+      <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Runs the game's server on the device for offline single-player play"/>
+    </service>
+    <!-- SH-7: keeps the game's asset download going in the background, in the game's own process -->
+    <service android:name="reflipped.shell.service.DownloadService" android:exported="false"
+             android:foregroundServiceType="dataSync"/>
+    <!-- SH-7: the game's local notifications (stamina full), and re-arming them after a reboot or an update -->
+    <receiver android:name="reflipped.shell.other.LocalNotificationReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
   </application>
 </manifest>
     ]]></manifestAdditions>

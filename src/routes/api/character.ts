@@ -1,13 +1,30 @@
 // Handles the insertion of mana into characters.
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { getPlayerCharacterManaNodesSync, getPlayerCharacterSync, getPlayerCharactersManaNodesSync, getPlayerItemSync, getPlayerSync, givePlayerItemSync, hasPlayerUnlockedCharacterManaNodeSync, insertPlayerCharacterManaNodesSync, updatePlayerCharacterBondTokenSync, updatePlayerCharacterSync, updatePlayerItemSync, updatePlayerSync } from "../../data/wdfpData";
+import { getPlayerCharactersSync, getPlayerCharacterManaNodesSync, getPlayerCharacterSync, getPlayerCharactersManaNodesSync, getPlayerItemSync, getPlayerSync, givePlayerItemSync, hasPlayerUnlockedCharacterManaNodeSync, insertPlayerCharacterManaNodesSync, updatePlayerCharacterBondTokenSync, updatePlayerCharacterSync, updatePlayerItemSync, updatePlayerSync } from "../../data/wdfpData";
+import { board2Available } from "../../lib/balance";
 import { generateDataHeaders, getServerDate } from "../../utils";
 import { getCharacterDataSync, getCharacterManaNodeSync, getCharacterManaNodesSync } from "../../lib/assets";
 import { clientSerializeDate } from "../../data/utils";
-import { arrayOf, boolean, gameBody, integer } from "../schemas";
+import { arrayOf, boolean, gameBody, ignoredBody, integer } from "../schemas";
+
+interface SetCharacterProtectionBody {
+    protect_character_ids: number[]
+    unprotect_character_ids: number[]
+    viewer_id: number
+}
+
+// character/set_protection (FT-40): the units whose lock changed while the unit growth screen was in lock mode
+const setCharacterProtectionSchema = gameBody({
+    protect_character_ids: arrayOf(integer, 5000),
+    unprotect_character_ids: arrayOf(integer, 5000)
+}, ["protect_character_ids", "unprotect_character_ids"])
 import { atomicHandler } from "../../lib/atomic";
 import { collectionUpdatesSync, MissionPattern, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { characterEncyclopediaKey, givePlayerCharacterSync } from "../../lib/character";
+import { townJoinCheckSync } from "../../lib/storyJoin";
+
+const addCharacterFromTownSchema = gameBody({ character_id: integer }, ["character_id"])
 
 interface OverLimitBody {
     viewer_id: number
@@ -141,6 +158,12 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "Character not owned."
         })
 
+        // a second board that isn't out yet on the shared timeline (FT-47, src/lib/balance.ts)
+        const board2Out = board2Available(characterId)
+        if (manaBoardIndex >= 2 && !board2Out) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "This unit's second mana board isn't out yet."
+        })
         const bondTokenReceivable = characterData.bondTokenList[manaBoardIndex - 1]?.status === 1
         if (!bondTokenReceivable) return reply.status(400).send({
             "error": "Bad Request",
@@ -166,7 +189,7 @@ const routes = async (fastify: FastifyInstance) => {
             const entryIndex = entry.manaBoardIndex
             bondTokenList.push({
                 "mana_board_index": entryIndex,
-                "status": entryIndex === manaBoardIndex ? 2 : entry.status
+                "status": entryIndex === manaBoardIndex ? 2 : entryIndex >= 2 && !board2Out ? 0 : entry.status
             })
         }
 
@@ -225,10 +248,17 @@ const routes = async (fastify: FastifyInstance) => {
             "message": "No character asset data found."
         })
 
-        // make sure that the mana board index is valid
-        if (!characterData.bondTokenList[manaBoardIndex - 1]) return reply.status(400).send({
+        // make sure that the mana board index is valid: the unit has nodes on that board (a unit with 3 skills or fewer has
+        // only board 1, though its bond token list names board 2 too)
+        if (!characterData.bondTokenList[manaBoardIndex - 1] || getCharacterManaNodesSync(characterId, manaBoardIndex) === null) return reply.status(400).send({
             "error": "Bad Request",
             "message": `Character does not have mana board with index ${manaBoardIndex}.`
+        })
+
+        // a second board that isn't out yet on the shared timeline (FT-47, src/lib/balance.ts)
+        if (manaBoardIndex >= 2 && !board2Available(characterId)) return reply.status(400).send({
+            "error": "Bad Request",
+            "message": "This unit's second mana board isn't out yet."
         })
 
         // ensure that the mana board can be opened
@@ -301,7 +331,10 @@ const routes = async (fastify: FastifyInstance) => {
         const userCharacterManaNodeListItem: Object[] = []
 
         // get mana node data from assets
-        const currentManaNodeIndex = characterData.manaBoardIndex;
+        // a unit on a second board that is hidden again (the shared timeline went back, FT-47) is on its first board for
+        // the client: only that board's nodes can be learnt
+        const board2Out = board2Available(characterId)
+        const currentManaNodeIndex = board2Out ? characterData.manaBoardIndex : Math.min(characterData.manaBoardIndex, 1);
         const characterManaNodes = getCharacterManaNodesSync(characterId, currentManaNodeIndex)
         if (characterManaNodes === null) return reply.status(400).send({
             "error": "Bad Request",
@@ -403,7 +436,7 @@ const routes = async (fastify: FastifyInstance) => {
                 const entryIndex = entry.manaBoardIndex
                 bondTokenList.push({
                     "mana_board_index": entryIndex,
-                    "status": entryIndex === currentManaNodeIndex ? 1 : entry.status
+                    "status": entryIndex === currentManaNodeIndex ? 1 : entryIndex >= 2 && !board2Out ? 0 : entry.status
                 })
             }
         }
@@ -414,6 +447,7 @@ const routes = async (fastify: FastifyInstance) => {
         // missions (FT-2): nodes learned, a unit evolved by its first node, and the ability nodes unlocked
         const missionResult = updateMissionsSync(playerId, getServerDate(), [
             { pattern: MissionPattern.TOTAL_RELEASED_MANA_NODE_COUNT, amount: toUnlockNodeIds.length },
+            { pattern: MissionPattern.TOTAL_USED_MANA_COUNT, amount: manaCost },
             ...(characterData.evolutionLevel === 0 ? [{ pattern: MissionPattern.EVOLVED_CHARACTER_COUNT, amount: 1 }] : []),
             ...collectionUpdatesSync(playerId)
         ])
@@ -566,6 +600,87 @@ const routes = async (fastify: FastifyInstance) => {
                 "item_list": item_list,
                 ...missionReplyFields(missionResult)
             }
+        })
+    }))
+
+    // "Uncap All" (FT-40): every unit below its highest uncap with duplicates uses them, `min(stack, max - step)` each
+    // (no Astral Gems; locked units too, as the client lists them). The reply lists only the units uncapped: the
+    // client shows their count ("N unit(s) have been uncapped!").
+    fastify.post("/bulk_over_limit", { schema: ignoredBody }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const viewerId = request.viewer.viewerId
+        const playerId = request.viewer.playerId
+        const now = new Date()
+        const characterList: Object[] = []
+        let total = 0
+        for (const [id, character] of Object.entries(getPlayerCharactersSync(playerId))) {
+            const characterId = Number(id)
+            const rarity = getCharacterDataSync(characterId)?.rarity
+            const max = rarity === undefined ? undefined : characterMaxOverLimits[rarity]
+            if (max === undefined || character.stack < 1 || character.overLimitStep >= max) continue
+            const count = Math.min(character.stack, max - character.overLimitStep)
+            const step = character.overLimitStep + count
+            const stack = character.stack - count
+            updatePlayerCharacterSync(playerId, characterId, { overLimitStep: step, stack })
+            total += count
+            characterList.push({
+                "over_limit_step": step,
+                "character_id": characterId,
+                "stack": stack,
+                "create_time": clientSerializeDate(character.joinTime),
+                "update_time": clientSerializeDate(now),
+                "join_time": clientSerializeDate(character.joinTime)
+            })
+        }
+
+        const missionResult = updateMissionsSync(playerId, getServerDate(), total > 0 ? [{ pattern: MissionPattern.OVER_LIMIT_TOTAL_COUNT, amount: total }] : [])
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: viewerId }),
+            "data": {
+                "character_list": characterList,
+                ...missionReplyFields(missionResult)
+            }
+        })
+    }))
+
+    // A unit that waits in the town (FT-16, src/lib/storyJoin.ts): tapping it after its story quest makes it join. The
+    // client asks only while the player doesn't have it; if it already joined, nothing changes.
+    fastify.post("/add_character_from_town", { schema: addCharacterFromTownSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const { character_id: characterId } = request.body as { character_id: number }
+        const { viewerId, playerId } = request.viewer
+        const check = townJoinCheckSync(playerId, characterId)
+        if (check === "not-a-story-character") return reply.status(400).send({ "error": "Bad Request", "message": "This unit doesn't join through the story." })
+        if (check === "story-not-read") return reply.status(400).send({ "error": "Bad Request", "message": "The unit's story isn't read yet." })
+
+        const joined = check === "ok" ? givePlayerCharacterSync(playerId, characterId) : null
+        if (check === "ok" && joined === null) return reply.status(400).send({ "error": "Bad Request", "message": "Could not give player character." })
+        const missionResult = updateMissionsSync(playerId, getServerDate(), joined !== null ? collectionUpdatesSync(playerId) : [])
+
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: viewerId }),
+            "data": {
+                "character_list": joined !== null ? [{ ...joined.character, "viewer_id": viewerId }] : [],
+                "encyclopedia_info": joined !== null ? { [characterEncyclopediaKey(characterId)]: { "read": false } } : [],
+                ...missionReplyFields(missionResult)
+            }
+        })
+    }))
+
+    // Locking units (FT-40): a locked unit's duplicates can't be converted one by one. Unknown ids are skipped, as the
+    // armament lock does.
+    fastify.post("/set_protection", { schema: setCharacterProtectionSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as SetCharacterProtectionBody
+        const playerId = request.viewer.playerId
+        for (const [ids, protection] of [[body.protect_character_ids, true], [body.unprotect_character_ids, false]] as const) {
+            for (const characterId of new Set(ids)) {
+                if (getPlayerCharacterSync(playerId, characterId) !== null) updatePlayerCharacterSync(playerId, characterId, { protection })
+            }
+        }
+        reply.header("content-type", "application/x-msgpack")
+        return reply.status(200).send({
+            "data_headers": generateDataHeaders({ viewer_id: request.viewer.viewerId }),
+            "data": []
         })
     }))
 }

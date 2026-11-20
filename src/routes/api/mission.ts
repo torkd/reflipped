@@ -10,7 +10,9 @@ interface GetMissionProgressBody {
     api_count: number,
     viewer_id: number,
     category_list: {
-        category: number
+        category: number,
+        /** category 4 (collect item event missions) only */
+        event_id?: number
     }[]
 }
 
@@ -25,7 +27,7 @@ interface UpdateMissionProgressBody {
 
 const getMissionProgressSchema = gameBody({
     api_count: integer,
-    category_list: arrayOf(object({ category: integer }, ["category"]))
+    category_list: arrayOf(object({ category: integer, event_id: integer }, ["category"]))
 }, ["category_list"])
 
 const updateMissionProgressSchema = gameBody({
@@ -34,13 +36,14 @@ const updateMissionProgressSchema = gameBody({
 }, ["mission_param_list"])
 
 const routes = async (fastify: FastifyInstance) => {
-    // The mission screen asks for categories 1 (regular), 2 (daily) and 3 (event); the title screen for 5 (degree).
+    // The mission screen asks for categories 1 (regular), 2 (daily) and 3 (event); the title screen for 5 (degree); a
+    // collect item event's screen for 4 with its `event_id`.
     fastify.post("/get_mission_progress", { schema: getMissionProgressSchema }, atomicHandler((request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as GetMissionProgressBody
 
         const viewerId = request.viewer.viewerId
-        const categories = body.category_list.map(entry => entry.category)
-        const progress = getMissionProgressListSync(request.viewer.playerId, categories, getServerDate())
+        const requests = body.category_list.map(entry => ({ category: entry.category, eventId: entry.event_id }))
+        const progress = getMissionProgressListSync(request.viewer.playerId, requests, getServerDate())
 
         reply.header("content-type", "application/x-msgpack")
         return reply.status(200).send({

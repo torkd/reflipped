@@ -1,0 +1,79 @@
+        <header class="page-header">
+            <h1 class="page-title">{{username}}</h1>
+            <p class="page-subtitle">Your Reflipped account.</p>
+        </header>
+{{notice}}
+        <section class="grid gap-4 grid-cols-2">
+            <div class="stat">
+                <span class="stat-label">Created</span>
+                <span class="stat-value text-base">{{created}}</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Logged in on</span>
+                <span class="stat-value text-base">{{sessions}}</span>
+            </div>
+        </section>
+{{profileCard}}
+{{clockCard}}
+{{eventRulesCard}}
+        <section class="card">
+            <div class="card-header">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">Your save</h2>
+                    <p class="card-text">{{saveText}}</p>
+                </div>
+                <span class="{{saveBadge}}">{{saveState}}</span>
+            </div>
+{{saveControls}}
+        </section>
+{{deleteSaveCard}}
+        <section class="card">
+            <div class="card-header">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">Link a device</h2>
+                    <p class="card-text">Play your save on a device that plays without an account: you get a code to type in the game.</p>
+                </div>
+            </div>
+            <form method="post" action="/portal/link">
+                <input type="hidden" name="csrf" value="{{csrf}}">
+                <button type="submit" class="btn-primary self-start">Get a code</button>
+            </form>
+        </section>
+{{modsCard}}
+        <section class="card">
+            <div class="card-header">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">Password</h2>
+                    <p class="card-text">Changing it logs you out everywhere else.</p>
+                </div>
+            </div>
+            <form class="flex flex-col gap-4" method="post" action="/portal/password">
+                <input type="hidden" name="csrf" value="{{csrf}}">
+                <input type="text" name="username" value="{{username}}" autocomplete="username" hidden>
+                <label class="field">Current password
+                    <input class="input" name="current" type="password" autocomplete="current-password" required maxlength="{{passwordMax}}">
+                </label>
+                <label class="field">New password
+                    <input class="input" name="password" type="password" autocomplete="new-password" required minlength="{{passwordMin}}" maxlength="{{passwordMax}}">
+                    <span>At least {{passwordMin}} characters.</span>
+                </label>
+                <label class="field">New password again
+                    <input class="input" name="confirm" type="password" autocomplete="new-password" required maxlength="{{passwordMax}}">
+                </label>
+                <button type="submit" class="btn-primary self-start">Change password</button>
+            </form>
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">Two-step login</h2>
+                    <p class="card-text">Asks for a code from an authenticator app after your password.</p>
+                </div>
+                <span class="{{totpBadge}}">{{totpState}}</span>
+            </div>
+{{totpControls}}
+        </section>
+        <form method="post" action="/portal/logout">
+            <input type="hidden" name="csrf" value="{{csrf}}">
+            <button type="submit" class="btn-outline">Log out</button>
+        </form>

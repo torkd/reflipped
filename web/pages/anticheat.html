@@ -1,0 +1,40 @@
+            <header class="page-header">
+                <h1 class="page-title">Security</h1>
+                <p class="page-subtitle">Anti-cheat for servers with rankings: what the server checks, and the flags it raised about finishes that look wrong. A flag is a hint to look, not a verdict.</p>
+            </header>
+{{notice}}
+{{tabs}}
+            <div class="flex flex-col gap-6" data-tab-panel="anticheat">
+{{modeCard}}
+{{slackCard}}
+            </div>
+            <div class="flex flex-col gap-6" data-tab-panel="review">
+            <section class="card gap-1">
+                <div class="flex items-center justify-between gap-3 flex-wrap">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="card-title">Flags</h2>
+                        <p class="card-text">{{flagCount}}. Newest first. Dismiss one that is nothing; restricting or blocking a player closes their open flags.</p>
+                    </div>
+                    <div class="flex gap-2 flex-wrap items-center">{{filters}}</div>
+                </div>
+                <form method="get" action="/security#review" class="flex gap-3 items-end flex-wrap">
+                    <input type="hidden" name="status" value="{{statusFilter}}" />
+                    <label class="field">Show one player
+                        <input class="input" type="text" inputmode="numeric" pattern="[0-9]+" name="player" maxlength="15" value="{{playerFilter}}" placeholder="Player number">
+                    </label>
+                    <button class="btn-outline" type="submit">Show</button>
+                    {{playerFilterLabel}}
+                </form>
+{{list}}
+            </section>
+{{restrictedCard}}
+            <section class="card gap-1">
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">What the flags mean</h2>
+                    <p class="card-text">Hard flags are things an honest game can't produce. Soft flags are odd but possible. Info flags just record a fact. Rules are added over time, so you may not see all of these yet.</p>
+                </div>
+{{legend}}
+            </section>
+            </div>
+            <script src="/public/js/settings-tabs.js" defer></script>
+            <script src="/public/js/stepper.js" defer></script>

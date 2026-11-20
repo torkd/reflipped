@@ -7,14 +7,40 @@ services:
   reflipped:
     build:
       context: ../..
+      args:
+        # The commit the server reports (the image has no .git): REFLIPPED_COMMIT=$(git rev-parse --short=12 HEAD)
+        REFLIPPED_COMMIT: ${REFLIPPED_COMMIT:-}
     image: reflipped:local
     restart: unless-stopped
     environment:
       PARAM_CHECK: ${PARAM_CHECK:-enforce}
       # Host players reach the co-op socket at; empty = the host they used for the API.
       COOP_PUBLIC_HOST: ${COOP_PUBLIC_HOST:-}
-      # Translation overlay for en devices (docs/i18n.md, "Overlay"): off until the device test passes.
+      # Translation overlay for en devices (docs/i18n.md, "Overlay"): on, once built.
       I18N: ${I18N:-on}
+      # Server settings passed through from the flavour's .env: a name with no value there stays unset in the
+      # container, so Reflipped uses its own default (docker/README.md, "Server settings").
+      SERVER_NAME:
+      SHELL_CDN:
+      SERVER_SUPPORT_URL:
+      SERVER_COMMUNITY_URL:
+      ADMIN_API_TOKEN:
+      ADMIN_ALLOWED_HOSTS:
+      ADMIN_TRUST_PROXY:
+      PORTAL_REGISTRATION:
+      PORTAL_TIME_TRAVEL:
+      RATE_LIMIT:
+      NEW_ACCOUNTS_PER_HOUR:
+      QUEST_PERIOD_CHECK:
+      STAMINA:
+      EVENT_SCHEDULING:
+      REWARD_MANAGEMENT:
+      SERVER_TIME:
+      SQLITE_CACHE_MB:
+      SQLITE_MMAP_MB:
+      SCHEDULE_ASSET_CACHE_BYTES:
+      SCHEDULE_ASSET_BUILDS_PER_MINUTE:
+      LOG_LEVEL:
     healthcheck:
       # The image's check, polled every 2s while starting: Traefik only routes to healthy containers.
       test: ["CMD", "node", "-e", "require('net').connect(8000,'127.0.0.1').on('connect',()=>process.exit(0)).on('error',()=>process.exit(1))"]

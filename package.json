@@ -4,16 +4,21 @@
   "description": "A server reimplementation for the global version of World Flipper",
   "main": "server.ts",
   "scripts": {
-    "build": "tsc && npm run css",
+    "build": "tsc && node scripts/build-info.mjs && npm run css",
     "typecheck": "tsc --noEmit && tsc -p test --noEmit",
     "test": "node --import tsx --test \"test/**/*.test.ts\"",
+    "bundle": "npm run css && node scripts/bundle.mjs",
     "css": "npx tailwindcss -i ./src/input.css -o ./web/public/tailwind.css",
     "css:watch": "npx tailwindcss -i ./src/input.css -o ./web/public/tailwind.css --watch --poll",
     "dev": "npm run build && node --env-file=.env --env-file-if-exists=.env.dev out/server.js",
     "cdn": "tsc && node --env-file=.env out/validate_cdn.js",
     "i18n:extract": "tsc && node --env-file-if-exists=.env out/i18n/extract.js",
     "i18n:build": "tsc && node --env-file-if-exists=.env out/i18n/build.js",
-    "unzip": "tsc && node --env-file=.env out/unzip_cdn.js",
+    "datapack": "tsc && node --env-file-if-exists=.env out/datapack/cli.js",
+    "gamepack": "node scripts/gamepack.mjs",
+    "gamefiles": "tsc && node --env-file-if-exists=.env out/gamepack/cli.js",
+    "cn:patch": "tsc && node --env-file-if-exists=.env out/cnPatchCli.js",
+    "unzip":"tsc && node --env-file=.env out/unzip_cdn.js",
     "backup": "tsc && node --env-file=.env out/backup.js",
     "debug": "npm run css && npm run css:watch & npm run debug:ts-only",
     "i18n:glossary": "tsx src/lib/i18n/cli.ts glossary",
@@ -22,13 +27,14 @@
     "debug:ts-only": "tsnd --inspect -- src/server.ts"
   },
   "author": "",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
-    "@types/better-sqlite3": "^9.6.0",
     "@types/cli-progress": "^3.11.6",
-    "@types/node": "^20.14.2",
+    "@types/node": "^24.19.2",
+    "@types/qrcode": "^1.5.6",
     "@types/readline-sync": "^1.4.8",
     "@types/unzipper": "^0.10.9",
+    "esbuild": "^0.28.2",
     "ts-node-dev": "^2.0.0",
     "tsx": "^4.23.15",
     "typescript": "^5.4.5"
@@ -39,15 +45,15 @@
     "@fastify/rate-limit": "^11.2.1",
     "@fastify/static": "^10.1.7",
     "ajv": "^8.20.0",
-    "better-sqlite3": "^13.0.3",
     "cli-progress": "^3.12.0",
     "fastify": "^5.0.0",
     "msgpackr": "^1.12.1",
+    "qrcode": "^1.5.4",
     "readline-sync": "^1.4.10",
     "tailwindcss": "^3.2.0",
     "unzipper": "^0.12.3"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.7.0"
   }
 }

@@ -1,0 +1,18 @@
+        <header class="page-header">
+            <h1 class="page-title">Link a device</h1>
+            <p class="page-subtitle">Moves your save to a device that plays without an account.</p>
+        </header>
+        <section class="card">
+            <p class="card-text">Your code, valid until {{expires}}:</p>
+            <p class="link-code">{{code}}</p>
+            <ol class="card-text list-decimal pl-5 flex flex-col gap-1">
+                <li>In the game on that device, open your profile and change the comment.</li>
+                <li>Type this code as the comment and save it.</li>
+                <li>Close the game and open it again: it loads your save.</li>
+            </ol>
+            <p class="card-text">If the game says the comment can't be used, the code was mistyped or has expired: make a new one here. Making a new code ends this one.</p>
+        </section>
+        <section class="card">
+            <p class="card-text">Your account has one save, and it plays on one device at a time. The device you link takes it over, and the device that played it before stops. If your account has no save yet, the linked device's own progress becomes your save. Otherwise that progress stays behind on the server, without a device.</p>
+        </section>
+        <a href="/portal" class="btn-outline self-start">Done</a>

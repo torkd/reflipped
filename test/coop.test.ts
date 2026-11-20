@@ -58,6 +58,8 @@ test("co-op room over HTTP and socket", async (t) => {
 
         // abort (a lost battle): same shape as the capture
         const capturedAbort = readCapturedRoute("multi_battle_quest_abort")
+        await gameRequest("multi_battle_quest/select_room", { viewer_id: viewerId, party_id: 11, room_number: roomNumber,
+            quest_id: 1001001, accepted_type: 6, category: 2 })
         await gameRequest("multi_battle_quest/start", { viewer_id: viewerId, quest_id: 1001001, category: 2, party_id: 11, room_number: roomNumber, play_id: "TEST2", use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: true, mate_player_ids: [1, 2] })
         const { category: _ignored, ...abortBody } = capturedAbort.requestBody
         const aborted = await gameRequest("multi_battle_quest/abort", { ...abortBody, viewer_id: viewerId, room_number: roomNumber })
@@ -289,6 +291,9 @@ test("co-op room over HTTP and socket", async (t) => {
             const viewerId = await signUp()
             const created = await gameRequest("multi_battle_quest/create_room", { viewer_id: viewerId, quest_id: questId, party_id: 11, category })
             const roomNumber = created.data.room_number
+            // with the socket server up, a battle begins from the lobby: its round has to be open before the start
+            const rooms = await import("../src/lib/coop/rooms")
+            rooms.startRound(rooms.getRoom(String(roomNumber))!, [viewerId])
             await gameRequest("multi_battle_quest/start", { viewer_id: viewerId, quest_id: questId, category, party_id: 11, room_number: roomNumber, play_id: `EV${category}`, use_boost_point: false, use_boss_boost_point: false, is_auto_start_mode: true, mate_player_ids: [] })
             const finished = await gameRequest("multi_battle_quest/finish", { ...capturedFinish.requestBody, viewer_id: viewerId, quest_id: questId, category })
             assert.equal(finished.data.is_multi, "multi", `category ${category}`)
@@ -441,13 +446,13 @@ test("lobby members are acknowledged on a timer, without sending a Heartbeat", a
     })
 
     await t.test("a member that has not entered gets none", async () => {
-        // it still gets the lobby's member list when the host enters; what it must not get is an AckHeartbeat
+        // nor the member list from the host's entry: a Mates before its own Welcome lacks it, and the client fails on
+        // that (C15202, CO-6; test/bugfixLobbyRace.test.ts)
         const seen: any[] = []
         while (true) {
             try { seen.push(await lurker.next(300)) } catch { break }
         }
-        assert.ok(seen.length > 0, "the member list reaches it")
-        assert.ok(!seen.some(message => message[0] === 1 && message[1][0] === 10), "no AckHeartbeat")
+        assert.deepEqual(seen, [], "nothing before its Welcome, AckHeartbeat included")
     })
 
     await t.test("a member that said Bye gets no more", async () => {

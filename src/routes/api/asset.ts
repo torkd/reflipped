@@ -14,7 +14,7 @@ import { Platform, generateDataHeaders, getRequestPlatformSync } from "../../uti
 import { existsSync } from "fs";
 import path from "path";
 import { integer, object, string } from "../schemas";
-import { cdnRoot, getAssetLayers, layersFor } from "../../lib/assetLayers";
+import { availableAssetVersion, cdnRoot, getAssetLayers, layersFor } from "../../lib/assetLayers";
 
 interface GetPathBody {
     target_asset_version: string,
@@ -84,6 +84,18 @@ const enShortAvailable = existsSync(path.join(cdnDir, "en", "entities", "files")
 const koShortAvailable = existsSync(path.join(cdnDir, "ko", "entities", "files"))
 const thShortAvailable = existsSync(path.join(cdnDir, "th", "entities", "files"))
 
+/**
+ * The language whose game data a device gets (FT-14): its own (DEVICE_LANG: en, ko or th) when the server holds that
+ * language's CDN folder, else English. Most servers only have the English CDN (docs/cdn-download.md); a Korean or
+ * Thai device then downloads the English data, whose master tables carry every language's texts anyway, instead of
+ * failing on missing files.
+ */
+const cdnLanguages = new Set(["en", "ko", "th"].filter(lang => existsSync(path.join(cdnDir, lang))))
+export function servedLanguage(deviceLang: unknown): string {
+    const lang = String(deviceLang ?? "en")
+    return (lang === "ko" || lang === "th") && cdnLanguages.has(lang) ? lang : "en"
+}
+
 const latestMajFirstVersion: string = "2.1.0"
 
 const versionInfoSchema = { body: object({ viewer_id: integer }) }
@@ -97,12 +109,12 @@ const routes = async (fastify: FastifyInstance) => {
     // the archives sent on top of the game's assets (restore, mods, overlay) and their version (src/lib/assetLayers.ts)
     const layers = getAssetLayers()
     const overlays = Object.entries(layers.built).filter(([, b]) => b.overlay || b.restore)
-    fastify.log.info(`assets ${layers.versionString}${layers.bumped ? " (raised)" : ""}: ${layers.mods.length} mods, I18N=${layers.i18n}` +
+    fastify.log.info(`assets ${layers.versionString}${layers.bumped ? " (raised)" : ""}: ${layers.mods.length} mods, ${layers.cnPatches ? "Chinese CDN patches, " : ""}I18N=${layers.i18n}` +
         overlays.map(([lang, b]) => `, ${lang} overlay ${b.overlay ? "built" : "empty"}${b.restore ? " with restore" : ""}`).join(""))
 
     fastify.post("/version_info", { config: { gameAuth: "none" }, schema: versionInfoSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
         const platform = getRequestPlatformSync(request)
-        const deviceLang = request.headers['device_lang'] || 'en'
+        const deviceLang = servedLanguage(request.headers['device_lang'])
 
         let baseUrl = ''
         let filesList = ''
@@ -187,20 +199,21 @@ const routes = async (fastify: FastifyInstance) => {
 
         reply.header("content-type", "application/x-msgpack")
         reply.status(200)
-        const availableAssetVersion = getAssetLayers().versionString
-        if (currentVersionHeader !== undefined && (currentVersionHeader !== availableAssetVersion)) {
+        const targetVersion = availableAssetVersion()
+        const apiOrigin = `${request.protocol}://${request.host}`
+        if (currentVersionHeader !== undefined && (currentVersionHeader !== targetVersion)) {
             // update required, not initial
             const pathList: PathList = {
                 info: {
                     client_asset_version: String(currentVersionHeader),
-                    target_asset_version: availableAssetVersion,
-                    eventual_target_asset_version: availableAssetVersion,
+                    target_asset_version: targetVersion,
+                    eventual_target_asset_version: targetVersion,
                     is_initial: false,
                     latest_maj_first_version: latestMajFirstVersion
                 },
                 full: {
-                    version: availableAssetVersion,
-                    archive: layersFor(String(deviceLang))
+                    version: targetVersion,
+                    archive: layersFor(String(deviceLang), apiOrigin)
                 },
                 diff: [],
                 asset_version_hash: ""
@@ -211,10 +224,21 @@ const routes = async (fastify: FastifyInstance) => {
                 "data": pathList
             })
         } else {
+            const base = getBasePathList(platform, servedLanguage(deviceLang), sendFull)
+            // A new installation must get the rebased dates before its first home screen. Append an
+            // update to the real base chain, rather than pretending the masters alone are a full CDN.
+            const hasScheduleLayer = targetVersion !== getAssetLayers().versionString
+            const pathList = hasScheduleLayer ? {
+                ...base,
+                info: { ...base.info, target_asset_version: targetVersion, eventual_target_asset_version: targetVersion },
+                diff: [...base.diff, { original_version: base.info.target_asset_version,
+                    version: targetVersion, archive: layersFor(String(deviceLang), apiOrigin) }],
+                asset_version_hash: ""
+            } : base
             // send
             return reply.send({
                 "data_headers": headers,
-                "data": getBasePathList(platform, String(deviceLang), sendFull)
+                "data": pathList
             })
         }
     })

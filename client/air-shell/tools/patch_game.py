@@ -4,6 +4,8 @@
     python3 -I patch_game.py <worldflipper_android_release.swf>
 
 What changes (each patch must find exactly one target, or the build stops):
+  shell-ui   Reflipped account/admin/server labels, Sign out and account as full buttons, safe logout and
+             cross-origin cache refresh, dead menu rows and the server-push switch hidden.
   no-plus   The header's "+" buttons for stamina, beads and mana are hidden (and so can't be
             tapped): they led to the shop's paid currency.
   tall-screen   Phones taller than 20:9 got white bars of 115 (top) and 89 (bottom) design pixels.
@@ -14,6 +16,21 @@ What changes (each patch must find exactly one target, or the build stops):
             CDN doesn't have (its manifest and archives are medium only): every asset image was "not found" and
             the game showed "insufficient data". Medium is used on every screen.
   no-package-shop   The Shop tab's "Adventurer's Shop" row (paid packs) is removed.
+  any-beads-portal   The portal draws that took paid beads only (the daily discounted pull, the once-per-account
+            10-pull) take any beads, free ones first: the client's getPaymentType reports them as payment type 1
+            (beads, free first) instead of 2 (paid only), so its cost and shortage checks count both kinds and the
+            request says so. Reflipped charges them free first whichever type the client sends.
+  any-beads-bundles   The Bundle Marketplace's bundles, priced in paid beads, are checked against all the player's beads
+            (the bundle product's isPaidOnly is false, and TradeCostKind 1 reads all beads), and its Shop row shows all
+            beads as owned.
+  any-beads-ticket   The special exchange ticket bundle (Scouting / Dream Armament seasons), sold for paid beads only,
+            is checked against all the player's beads (get_virtualMoney) rather than the paid ones.
+  any-beads-portal-dialog   The confirmation dialog of those portal draws shows free and paid beads, before and after,
+            like a regular pull's, instead of the paid ones only (which read 0 for a player who has only free beads).
+  any-beads-ticket-dialog   The ticket bundle's purchase dialog (Scouting and Dream Armament seasons, the Start Dash
+            bundle) shows all the player's beads, titled "Owned", instead of the paid ones titled "Paid".
+  search-id-length   Search Players' Search button enabled only for IDs of 12 or more characters (a Kakao player
+            ID's length); Reflipped's player IDs are shorter, so it never enabled. Any typed ID enables it.
 
 Opt-in diagnostic (not part of the normal build): with REFLIPPED_TRACE_ASSETS=<base url> in the environment, the
   trace-missing-files patch makes the game request <base url>/fnf?f=<asset name>&p=<paths>&e=<exists>&c=<cached> whenever it
@@ -32,6 +49,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import swf_patch as sp  # noqa: E402
+from patch_shell_ui import patch_shell_ui  # noqa: E402
 
 def I(name, *args, target=None):
     return sp.Instr(name, *args, target=target)
@@ -140,6 +158,146 @@ def patch_no_package_shop(p):
     return True
 
 
+# ------------------------------------------------------------------ paid-only bead costs
+def patch_any_beads_portal(p):
+    """getPaymentType (the portal logic's): draw kinds 5 and 7, payment type 2 (paid beads only), become 1 (beads, free
+    first). The method is a lookupswitch whose branches each return a constant; the one returning 2 returns 1."""
+    hits = [i for i, m in enumerate(p.abc.methods)
+            if m["body"] is not None and (m["owner"] or "").endswith(":int/getPaymentType")]
+    if not hits:
+        return False
+    assert len(hits) == 1, hits
+    ins = p.body(hits[0]).instrs
+    paid = [x for k, x in enumerate(ins) if x.op == "pushbyte" and x.args[0] == 2 and k + 1 < len(ins) and ins[k + 1].op == "returnvalue"]
+    assert len(paid) == 1, "getPaymentType: expected one `return 2`"
+    paid[0].args = [1]
+    return True
+
+
+def patch_any_beads_ticket(p):
+    """The special exchange ticket purchase check (a static method of the bundle's dialog: price minus the paid beads,
+    then the shortage flow or the purchase) reads get_virtualMoney (all beads) instead of get_paidVirtualMoney."""
+    hits = []
+    for i, m in enumerate(p.abc.methods):
+        if m["body"] is None:
+            continue
+        calls = [str(a[0]) for _, op, a in p.abc.disasm(m["body"]) if op == "callproperty"]
+        if "get_paidVirtualMoney" in calls and any(c.endswith("get_productPrice") for c in calls) and "/static " in (m["owner"] or ""):
+            hits.append(i)
+    if not hits:
+        return False
+    assert len(hits) == 1, hits
+    total = p.find_mn("get_virtualMoney")
+    assert total is not None, "no get_virtualMoney multiname"
+    ins = p.body(hits[0]).instrs
+    paid = [x for x in ins if x.op == "callproperty" and p.abc.mn(x.args[0]) == "get_paidVirtualMoney"]
+    assert len(paid) == 1, paid
+    paid[0].args = [total] + list(paid[0].args[1:])
+    return True
+
+
+def patch_any_beads_bundles(p):
+    """The Bundle Marketplace (shop/special_pack_shop, FT-89) prices its bundles in paid beads (TradeCostKind 1): the
+    player data's getNumberByTradeCostKind answers get_paidVirtualMoney for that kind, so the client said "You're short"
+    and offered the bead shop to a player with only free beads. That branch reads get_virtualMoney (all beads), like
+    kind 0; the server takes any beads, free first. The Shop list's "Owned" count on the Bundle Marketplace row
+    (createMenuListData, the read after BuySpecialPack) shows all beads too."""
+    hits = [i for i, m in enumerate(p.abc.methods) if m["body"] is not None and (m["owner"] or "").endswith("/getNumberByTradeCostKind")]
+    if not hits:
+        return False
+    assert len(hits) == 1, hits
+    total = p.find_mn("get_virtualMoney")
+    ins = p.body(hits[0]).instrs
+    paid = [x for x in ins if x.op in ("findproperty", "callproperty") and p.abc.mn(x.args[0]) == "get_paidVirtualMoney"]
+    assert len(paid) == 2, paid
+    for x in paid:
+        x.args = [total] + list(x.args[1:])
+
+    menus = [i for i, m in enumerate(p.abc.methods) if m["body"] is not None and (m["owner"] or "").endswith("/createMenuListData")
+             and any(op == "getproperty" and a[0] == "BuySpecialPack" for _, op, a in p.abc.disasm(m["body"]))]
+    assert len(menus) == 1, menus
+    ins = p.body(menus[0]).instrs
+    row = next(k for k, x in enumerate(ins) if x.op == "getproperty" and p.abc.mn(x.args[0]) == "BuySpecialPack")
+    owned = next(x for x in ins[row:] if x.op == "callproperty" and p.abc.mn(x.args[0]) == "get_paidVirtualMoney")
+    owned.args = [total] + list(owned.args[1:])
+
+    # the bundle product (a shop product subclass) sets isPaidOnly = true in its constructor, which makes canBuy check
+    # the paid beads and the purchase dialog show them only; false, as every other shop product has it
+    ctors = []
+    for i, m in enumerate(p.abc.methods):
+        if m["body"] is None or not (m["owner"] or "").endswith("/<init>"):
+            continue
+        ops = list(p.abc.disasm(m["body"]))
+        if any(ops[k][1] == "pushtrue" and ops[k + 1][1] == "initproperty" and str(ops[k + 1][2][0]).endswith("isPaidOnly")
+               for k in range(len(ops) - 1)):
+            ctors.append(i)
+    assert len(ctors) == 1, ctors
+    ins = p.body(ctors[0]).instrs
+    flag = [k for k in range(len(ins) - 1) if ins[k].op == "pushtrue" and ins[k + 1].op == "initproperty"
+            and p.abc.mn(ins[k + 1].args[0]).endswith("isPaidOnly")]
+    assert len(flag) == 1, flag
+    ins[flag[0]].op = "pushfalse"
+    return True
+
+
+def patch_any_beads_portal_dialog(p):
+    """The portal draw confirmation dialog's cost (GachaDrawCostKind.VirtualMoney(free, freeCost, paid, paidCost,
+    isPaidOnly), built by a static method of the dialog): draw kinds 5 and 7 have their own branch, which passes a free
+    cost of 0 and isPaidOnly = true, so the dialog shows only the paid beads, "before" and "after". That branch gets the
+    regular branch's arguments instead: the free cost from getCostOfFreeVirtualMoney (free first, since any-beads-portal
+    makes their payment type 1) and isPaidOnly = false, so the dialog shows both kinds of beads like a regular pull."""
+    hits = []
+    for i, m in enumerate(p.abc.methods):
+        if m["body"] is None or "/static " not in (m["owner"] or ""):
+            continue
+        calls = [str(a[0]) for _, op, a in p.abc.disasm(m["body"]) if op == "callproperty" and a]
+        if any(c.endswith("getCostOfFreeVirtualMoney") for c in calls) and any(c.endswith("get_onceTicketItemId") for c in calls):
+            hits.append(i)
+    if not hits:
+        return False
+    assert len(hits) == 1, hits
+    b = p.body(hits[0])
+    ins = b.instrs
+
+    def call(x, name, argc):
+        return x.op == "callproperty" and p.abc.mn(x.args[0]).endswith(name) and x.args[1] == argc
+    free_cost = next(x for x in ins if call(x, "getCostOfFreeVirtualMoney", 2))
+    paid_only = [k for k in range(1, len(ins)) if ins[k - 1].op == "pushtrue" and call(ins[k], "VirtualMoney", 5)]
+    assert len(paid_only) == 1, "expected one VirtualMoney(..., true)"
+    k = paid_only[0]
+    # VirtualMoney(player.get_freeVirtualMoney(), 0, player.get_paidVirtualMoney(), paidCost, true)
+    zero = ins[k - 6]
+    assert zero.op == "pushbyte" and zero.args == [0] and call(ins[k - 8], "get_freeVirtualMoney", 0), \
+        [x.op for x in ins[k - 9:k + 1]]
+    ins[k - 1].op = "pushfalse"
+    # 0 becomes this.getCostOfFreeVirtualMoney(player, kind), as the regular branch computes it (same locals)
+    zero.op, zero.args = "getlocal1", []
+    ins[k - 5:k - 5] = [I("getlocal2"), I("getlocal3"), I("callproperty", *free_cost.args), I("convert_i")]
+    b.max_stack += 3
+    return True
+
+
+def patch_any_beads_ticket_dialog(p):
+    """The ticket bundle purchase dialog (Scouting and Dream Armament seasons, the Start Dash bundle) shows the bead
+    balance as "Paid", before and after, from the price helper with isPaidOnly = true. Since any-beads-ticket checks the
+    purchase against all beads, the row shows all of them, titled "Owned" (possession) like the shop's buy dialog."""
+    init = find_by_string(p, "special_exchange_ticket_buy_dialog_character_caution", "<init>")
+    if init is None:
+        return False
+    ins = p.body(init).instrs
+    paid = p.abc.strings.index("paid") if "paid" in p.abc.strings else None
+    titles = [x for x in ins if x.op == "pushstring" and x.args[0] == paid]
+    assert len(titles) == 1, f"expected one \"paid\" title, found {len(titles)}"
+    flags = [k for k in range(len(ins) - 3)
+             if ins[k].op == "pushtrue" and ins[k + 1].op.startswith("getlocal")
+             and ins[k + 2].op == "getproperty" and p.abc.mn(ins[k + 2].args[0]) == "playerLogic"
+             and ins[k + 3].op == "callproperty" and ins[k + 3].args[1] == 3]
+    assert len(flags) == 1, f"expected one balance call with isPaidOnly = true, found {len(flags)}"
+    ins[flags[0]].op = "pushfalse"
+    titles[0].args = [p.string("possession")]
+    return True
+
+
 # ------------------------------------------------------------------ lock events and boss battles
 LOCKED_IN_TUTORIAL = ("event", "boss_battle")   # game system ids (getUnlockIdForSceneKind)
 
@@ -234,6 +392,40 @@ def patch_medium_images(p):
     return True
 
 
+SEARCH_ID_MIN_LENGTH = 12   # the client's minimum: Kakao player IDs had 12 digits ("984521158255")
+
+
+def patch_search_id_length(p):
+    """Search Players (UserSearchTopScene.update, every frame) enables its Search button only when the typed ID has at
+    least 12 characters, the length of a Kakao player ID. The ID the game shows ("Your ID" on the Following/Followers
+    screen, kakaoInfo.playerId) is Reflipped's account number, a few digits long, so the button never enabled. Any
+    typed ID enables it now, as searchInputTextChanged already does; the server answers an unknown ID with "Player
+    not found"."""
+    hits = []
+    for i, m in enumerate(p.abc.methods):
+        if m["body"] is None or not (m["owner"] or "").endswith(":int/update"):
+            continue
+        code = list(p.abc.disasm(m["body"]))
+        names = [str(a[0]) for _, op, a in code if op in ("getproperty", "callpropvoid") and a]
+        if "searchInputText" in names and "setVisualEnabled" in names \
+                and any(op == "pushbyte" and a[0] == SEARCH_ID_MIN_LENGTH for _, op, a in code):
+            hits.append(i)
+    if not hits:
+        return False
+    assert len(hits) == 1, hits
+    ins = p.body(hits[0]).instrs
+    # enabled = 12 <= searchInputText.text.length: pushbyte 12, findproperty, getproperty searchInputText, getproperty
+    # text, getproperty length, lessequals
+    at = [k for k in range(len(ins) - 5)
+          if ins[k].op == "pushbyte" and ins[k].args[0] == SEARCH_ID_MIN_LENGTH
+          and ins[k + 2].op == "getproperty" and p.abc.mn(ins[k + 2].args[0]) == "searchInputText"
+          and ins[k + 4].op == "getproperty" and p.abc.mn(ins[k + 4].args[0]) == "length"
+          and ins[k + 5].op == "lessequals"]
+    assert len(at) == 1, f"expected one `12 <= searchInputText.text.length`, found {len(at)}"
+    ins[at[0]].args = [1]
+    return True
+
+
 def patch_trace_missing_files(p):
     """Diagnostics only (REFLIPPED_TRACE_ASSETS=<server url>, any build): request
     <url>/fnf?f=<name><ext>&p=<resolved paths>&e=<File.exists now>&c=<fileExistsSync, which caches>
@@ -304,9 +496,15 @@ if os.environ.get("REFLIPPED_TRACE_ASSETS"):
 if os.environ.get("REFLIPPED_READY_SECONDS"):
     OPTIONAL["ready-seconds"] = patch_ready_seconds
 
-PATCHES = {"no-plus": patch_no_plus, "tall-screen": patch_tall_screen_margins,
+PATCHES = {"shell-ui": patch_shell_ui, "no-plus": patch_no_plus, "tall-screen": patch_tall_screen_margins,
            "no-package-shop": patch_no_package_shop,
+           "any-beads-portal": patch_any_beads_portal,
+           "any-beads-ticket": patch_any_beads_ticket,
+           "any-beads-bundles": patch_any_beads_bundles,
+           "any-beads-portal-dialog": patch_any_beads_portal_dialog,
+           "any-beads-ticket-dialog": patch_any_beads_ticket_dialog,
            "medium-images": patch_medium_images,
+           "search-id-length": patch_search_id_length,
            "tutorial-locks": patch_tutorial_locks,
            "tutorial-lock-status": patch_tutorial_lock_status}
 

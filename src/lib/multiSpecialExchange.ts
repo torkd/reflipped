@@ -1,3 +1,4 @@
+import { isContentPeriodOpen } from "./eventSchedule";
 // Multi special exchange ("everyone's character choice", FT-13): during a campaign a player gets one exchange
 // ticket, either alone (`single_draw_ticket`) or by clearing a battle with others in the campaign's lounge
 // (CO-3), and trades it for one character from the ticket's list (`exchange_character`).
@@ -11,7 +12,7 @@ import campaigns from "../../assets/multi_special_exchange_campaign.json";
 import campaignCharacters from "../../assets/multi_special_exchange_campaign_character.json";
 import { MultiSpecialExchangeStatus, UserMultiSpecialExchangeCampaignList } from "../data/types";
 import { serializeMultiSpecialExchangeCampaign } from "../data/utils";
-import { getPlayerMultiSpecialExchangeCampaignsSync } from "../data/wdfpData";
+import { getPlayerMultiSpecialExchangeCampaignSync, getPlayerMultiSpecialExchangeCampaignsSync, runInTransactionSync, setPlayerMultiSpecialExchangeLoungeMatesSync, upsertPlayerMultiSpecialExchangeCampaignSync } from "../data/wdfpData";
 import { masterDate } from "../utils";
 
 export { MultiSpecialExchangeStatus }
@@ -46,12 +47,12 @@ export function getMultiSpecialExchangeCampaign(campaignId: number): MultiSpecia
 
 /** Whether tickets can be drawn (and the lounge used) at a date. */
 export function isWithinCampaignPeriod(campaign: MultiSpecialExchangeCampaign, date: Date): boolean {
-    return masterDate(campaign.startDate) <= date && date <= masterDate(campaign.endDate)
+    return isContentPeriodOpen(masterDate(campaign.startDate).getTime(), masterDate(campaign.endDate).getTime(), date)
 }
 
 /** Whether a drawn ticket can be exchanged at a date. */
 export function isWithinExchangePeriod(campaign: MultiSpecialExchangeCampaign, date: Date): boolean {
-    return masterDate(campaign.startDate) <= date && date <= masterDate(campaign.exchangeEndDate)
+    return isContentPeriodOpen(masterDate(campaign.startDate).getTime(), masterDate(campaign.exchangeEndDate).getTime(), date)
 }
 
 /** The characters a ticket can be exchanged for. */
@@ -68,6 +69,8 @@ export const bonusUnitCount = 2
  * uses 30002 for the random units and leaves 30001 to the co-op mates' picks (CO-3).
  */
 export const bonusUnitMailReasonId = 30002
+/** Mail reason of the unit a lounge mate picked (CO-3); see bonusUnitMailReasonId. */
+export const matePickMailReasonId = 30001
 /** The mail's own text, used by the client only if the reason id is missing from its table. */
 export const bonusUnitMailSubject = "People's Choice Bonus"
 export const bonusUnitMailDescription = "A bonus selected from the People's Choice Reward."
@@ -112,4 +115,26 @@ export function getClientMultiSpecialExchangeCampaignList(playerId: number, date
             list.push({ campaignId, status: MultiSpecialExchangeStatus.NOT_PARTICIPATED, ticketItemId: null })
     }
     return list.sort((a, b) => a.campaignId - b.campaignId).map(serializeMultiSpecialExchangeCampaign)
+}
+
+/**
+ * The lounge's Go (CO-3): every member's ticket is decided (status 2, which `multi_draw_ticket` then hands over), each
+ * with its own ticket set (the first campaign has three; the original rule is unknown, so random), and the members are
+ * recorded as each other's mates so that each one's pick reaches the others (`exchange_character`). All or nothing:
+ * false, changing nothing, outside the campaign period or when a member already took part (a solo draw since joining).
+ */
+export function decideLoungeTicketsSync(campaignId: number, playerIds: number[], date: Date): boolean {
+    const campaign = getMultiSpecialExchangeCampaign(campaignId)
+    if (campaign === null || !isWithinCampaignPeriod(campaign, date)) return false
+    return runInTransactionSync(() => {
+        for (const playerId of playerIds) {
+            const current = getPlayerMultiSpecialExchangeCampaignSync(playerId, campaignId)
+            if (current !== null && current.status !== MultiSpecialExchangeStatus.NOT_PARTICIPATED) return false
+            upsertPlayerMultiSpecialExchangeCampaignSync(playerId, {
+                campaignId, status: MultiSpecialExchangeStatus.TICKET_DECIDED, ticketItemId: drawTicketItemId(campaign)
+            })
+            setPlayerMultiSpecialExchangeLoungeMatesSync(playerId, campaignId, playerIds.filter(id => id !== playerId))
+        }
+        return true
+    }, decided => !decided)
 }

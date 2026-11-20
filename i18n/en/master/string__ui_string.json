@@ -13,6 +13,15 @@
       "status": "machine"
     }
   },
+  "equipment_list_sold_complete_message": {
+    "2": {
+      "srcHash": "sha256:565e0cf0c3a2adf21cfdfdb31769d90b7bc787f6e649e8a14296a65bdf2037af",
+      "text": "::name:: x::number:: has been melted down. You have obtained ::mana:: Wrightpieces.",
+      "status": "machine",
+      "placeholdersFrom": 0,
+      "note": "source slip: the English text uses ::number:: (the copies melted) where every other language uses ::mana::, which the client fills with the Wrightpieces gained (EquipmentSellResultDialog: craft points after minus before), so melting one 2★ armament read \"obtained 1 Wrightpieces\"; placeholders checked against the Japanese column (0)"
+    }
+  },
   "equipment_select_now_equipping_by_other_dialog_description": {
     "2": {
       "srcHash": "sha256:b6e406f9eaac5c4cbf1f8860a2e90eafc70ed5567e6f00874fd92481070b2255",
@@ -218,6 +227,24 @@
       "srcHash": "sha256:a6f4e4b8abec82ecd9380134dfd6146ada9e2095dedba0d1bf12a03acdcaabf3",
       "text": "Infinite Exhibition unlocks\nafter reaching player rank\n::need_player_rank::.",
       "status": "machine"
+    }
+  },
+  "ability_description_target_total_of_ally_constraint_during": {
+    "2": {
+      "srcHash": "sha256:93d5f55d5583ab6388ef7936abc3c18837232fa0c8ce5cd6940f6b66c5798801",
+      "text": "All ::constraint:: party members",
+      "status": "machine",
+      "placeholdersFrom": 0,
+      "note": "English source misspells ::constraint:: as ::contstraint::; validate the corrected placeholder against the Japanese column (0)."
+    }
+  },
+  "active_ability_dialog_inactive_reason_party": {
+    "2": {
+      "srcHash": "sha256:49ee5d29d4c53898170de6160d1e1d4961efcb4ed087aa6c17e179a51b0f545f",
+      "text": "Unable to activate (::trigger:: is not full)",
+      "status": "machine",
+      "placeholdersFrom": 0,
+      "note": "English source misspells ::trigger:: as ::triger::; validate the corrected placeholder against the Japanese column (0)."
     }
   }
 }

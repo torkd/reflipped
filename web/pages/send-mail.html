@@ -1,0 +1,56 @@
+            <form id="send-mail" class="card" data-player-id="{{mailTarget}}" data-reward-locked="{{rewardActionLocked}}"{{mailConfirm}}>
+                <div class="flex flex-col gap-1">
+                    <h2 class="card-title">{{mailTitle}}</h2>
+                    <p class="card-text">{{mailHelp}}</p>
+                </div>
+                {{rewardPolicyNotice}}
+                <fieldset {{rewardActionDisabled}} class="flex flex-col gap-4 min-w-0 border-0 p-0 m-0">
+                <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))">
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Contents
+                        <select name="type" class="input">
+                            <option value="FREE_VMONEY">Free beads</option>
+                            <option value="PAID_VMONEY">Paid beads</option>
+                            <option value="FREE_MANA">Mana</option>
+                            <option value="EXP_POOL">Pooled exp</option>
+                            <option value="STAR_CRUMB">Star crumbs</option>
+                            <option value="BOND_TOKEN">Bond tokens</option>
+                            <option value="BOOST_POINT">Boost points</option>
+                            <option value="BOSS_BOOST_POINT">Boss boost points</option>
+                            <option value="ITEM">Item</option>
+                            <option value="EQUIPMENT">Armament</option>
+                            <option value="CHARACTER">Unit</option>
+                            <option value="DEGREE">Title</option>
+                            <option value="DAILY_CHALLENGE_POINT">Challenge and quest attempts</option>
+                            <option value="PERIODIC_REWARD_POINT">Daily reward count (co-op)</option>
+                        </select>
+                    </label>
+                    <label id="mail-type-id-label" class="flex flex-col gap-1 text-sm text-on-surface-variant">ID (pick below or type it)
+                        <input name="typeId" type="number" min="1" class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Amount
+                        <input name="number" type="number" min="1" value="1" required class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Expires (UTC, optional)
+                        <input name="rewardLimitTime" type="datetime-local" class="input" />
+                    </label>
+                </div>
+                <div id="mail-picker" class="flex flex-col gap-3">
+                    <input id="mail-picker-search" type="search" placeholder="Search by name or ID" class="input w-full" />
+                    <div id="mail-picker-unit-filters" class="flex flex-wrap gap-2"></div>
+                    <p id="mail-picker-summary" class="text-xs text-on-surface-variant"></p>
+                    <div id="mail-picker-grid" class="grid gap-2 overflow-y-auto pr-1" style="grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); max-height: 22rem"></div>
+                    <p id="mail-picker-selection" class="text-sm font-semibold"></p>
+                </div>
+                <div class="grid gap-3">
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Subject
+                        <input name="subject" type="text" required maxlength="100" value="A gift from Reflipped" class="input" />
+                    </label>
+                    <label class="flex flex-col gap-1 text-sm text-on-surface-variant">Message
+                        <input name="description" type="text" required maxlength="500" value="Thank you for playing!" class="input" />
+                    </label>
+                </div>
+                <p id="send-mail-status" class="text-sm font-semibold"></p>
+                <button type="submit" class="btn-primary w-fit">{{mailButton}}</button>
+                </fieldset>
+            </form>
+            <script src="/public/js/mail-picker.js"></script>

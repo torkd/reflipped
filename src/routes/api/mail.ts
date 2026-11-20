@@ -2,11 +2,11 @@
 
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { getPlayerReceivableMailCountSync, getPlayerReceivableMailListSync } from "../../data/wdfpData";
-import { clientSerializeMail, mailPageSize, receivePlayerMailsSync } from "../../lib/mail";
+import { clientSerializeMail, mailPageSize, receivePlayerMailsSync, rewardPointReplyFields } from "../../lib/mail";
 import { generateDataHeaders, getServerDate } from "../../utils";
-import { arrayOf, gameBody, integer } from "../schemas";
+import { arrayOf, gameBody, integer, pageNumber } from "../schemas";
 import { atomicHandler } from "../../lib/atomic";
-import { collectionUpdatesSync, missionReplyFields, updateMissionsSync } from "../../lib/missions";
+import { missionResourcesSync, resourceMissionUpdatesSync, collectionUpdatesSync, missionReplyFields, updateMissionsSync } from "../../lib/missions";
 
 interface IndexBody {
     api_count: number,
@@ -30,7 +30,7 @@ interface ReceiveAllBody {
 
 const indexSchema = gameBody({
     api_count: integer,
-    current_page: integer
+    current_page: pageNumber
 })
 
 const receiveSchema = gameBody({
@@ -80,6 +80,7 @@ const routes = async (fastify: FastifyInstance) => {
 
         const playerId = request.viewer.playerId
 
+        const resourcesBefore = missionResourcesSync(playerId)
         const result = receivePlayerMailsSync(playerId, [mailId])
         if (result === null) return reply.status(500).send({
             "error": "Internal Server Error",
@@ -87,7 +88,7 @@ const routes = async (fastify: FastifyInstance) => {
         })
 
         // missions (FT-2): units and armaments received count; rewards they clear arrive as new mail
-        const missionResult = updateMissionsSync(playerId, getServerDate(), result.receivedMailIds.length > 0 ? collectionUpdatesSync(playerId) : [])
+        const missionResult = updateMissionsSync(playerId, getServerDate(), result.receivedMailIds.length > 0 ? [...resourceMissionUpdatesSync(playerId, resourcesBefore), ...collectionUpdatesSync(playerId)] : [])
         const remainingCount = getPlayerReceivableMailCountSync(playerId, getServerDate())
 
         // The original server answered a missing, already received or expired mail with result codes
@@ -107,6 +108,7 @@ const routes = async (fastify: FastifyInstance) => {
                 "character_list": result.characterList,
                 "equipment_list": result.equipmentList,
                 "item_list": result.itemList,
+                ...rewardPointReplyFields(result),
                 "dispose_expired_mail": false,
                 "auto_sale_expired_mail": false,
                 "total_count": remainingCount,
@@ -127,6 +129,7 @@ const routes = async (fastify: FastifyInstance) => {
 
         const playerId = request.viewer.playerId
 
+        const resourcesBefore = missionResourcesSync(playerId)
         const result = receivePlayerMailsSync(playerId, mailIds)
         if (result === null) return reply.status(500).send({
             "error": "Internal Server Error",
@@ -134,7 +137,7 @@ const routes = async (fastify: FastifyInstance) => {
         })
 
         // missions (FT-2): units and armaments received count; rewards they clear arrive as new mail
-        const missionResult = updateMissionsSync(playerId, getServerDate(), result.receivedMailIds.length > 0 ? collectionUpdatesSync(playerId) : [])
+        const missionResult = updateMissionsSync(playerId, getServerDate(), result.receivedMailIds.length > 0 ? [...resourceMissionUpdatesSync(playerId, resourcesBefore), ...collectionUpdatesSync(playerId)] : [])
         const remainingCount = getPlayerReceivableMailCountSync(playerId, getServerDate())
 
         reply.header("content-type", "application/x-msgpack")
@@ -147,6 +150,7 @@ const routes = async (fastify: FastifyInstance) => {
                 "character_list": result.characterList,
                 "equipment_list": result.equipmentList,
                 "item_list": result.itemList,
+                ...rewardPointReplyFields(result),
                 "mail_ids": result.receivedMailIds,
                 "deleted_mail_count": result.deletedMailCount,
                 "already_mail_count": result.alreadyMailCount,

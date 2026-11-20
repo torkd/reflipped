@@ -1,7 +1,7 @@
 #!/bin/sh
 # Publishes `main` to the public GitHub mirror without its history.
 #
-#   sh scripts/release/publish.sh [--push] [--tag NAME] [-m MESSAGE] [SOURCE]
+#   sh scripts/release/publish.sh [--push] [--tag NAME [--release] [--image] [--notes-file FILE]] [-m MESSAGE] [SOURCE]
 #
 # The history of `main` still holds every internal file and the contributors' emails, so it is never
 # pushed. Instead each release is one new commit on the public `main`: its tree is SOURCE's tree
@@ -9,7 +9,11 @@
 # identity. The public history is one commit per release and only moves forward, so clones just pull.
 #
 # Without `--push` it is a dry run: it checks SOURCE, builds the commit locally and shows what changed
-# since the last public release. `--tag NAME` also tags the release on the mirror.
+# since the last public release. `--tag NAME` also tags the release on the mirror. With the tag, `--release` then
+# copies the forge's release of that name (the app's APK and .sha256) to a GitHub release, and `--image` the server's
+# image to ghcr.io, through scripts/release/github-release.sh (its header has what they need: GITHUB_TOKEN,
+# FORGE_TOKEN, registry logins); `--notes-file` gives the release notes. In a dry run they show their plan too. If
+# the push worked but the release step didn't, run github-release.sh --push on its own to finish.
 #
 # Environment:
 #   PUBLISH_REMOTE   mirror URL (default git@github.com:torkd/reflipped.git); a local bare repo works for a test
@@ -26,6 +30,9 @@ name="${PUBLISH_NAME:-Reflipped}"
 email="${PUBLISH_EMAIL:-webmaster@torkd.space}"
 push=0
 tag=""
+release=0
+image=0
+notes_file=""
 message="Release $(date -u +%Y-%m-%d)"
 source=origin/main
 
@@ -33,12 +40,25 @@ while [ $# -gt 0 ]; do
     case "$1" in
         --push) push=1 ;;
         --tag) tag="${2:?--tag needs a name}"; shift ;;
+        --release) release=1 ;;
+        --image) image=1 ;;
+        --notes-file) notes_file="${2:?--notes-file needs a file}"; shift ;;
         -m) message="${2:?-m needs a message}"; shift ;;
-        -*) echo "usage: sh $0 [--push] [--tag NAME] [-m MESSAGE] [SOURCE]" >&2; exit 2 ;;
+        -*) echo "usage: sh $0 [--push] [--tag NAME [--release] [--image] [--notes-file FILE]] [-m MESSAGE] [SOURCE]" >&2; exit 2 ;;
         *) source="$1" ;;
     esac
     shift
 done
+if { [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; } && [ -z "$tag" ]; then
+    echo "--release and --image need --tag" >&2
+    exit 2
+fi
+# github-release.sh's options: the image only goes with the release, since the release step checks the tag first
+github_release() {
+    set -- "$@" ${notes_file:+--notes-file "$notes_file"}
+    if [ "$image" -eq 1 ]; then set -- "$@" --image; fi
+    sh scripts/release/github-release.sh "$@" "$tag"
+}
 
 if [ "$source" = origin/main ]; then
     git fetch -q origin main
@@ -66,7 +86,7 @@ fi
 # public tree. One path per word; a folder takes everything in it.
 forge_only=".gitea"
 GIT_INDEX_FILE="$work/index" git read-tree "$source_commit"
-GIT_INDEX_FILE="$work/index" git rm -r -q --cached --ignore-unmatch -- $forge_only
+GIT_INDEX_FILE="$work/index" git rm -r -q -f --cached --ignore-unmatch -- $forge_only
 tree=$(GIT_INDEX_FILE="$work/index" git write-tree)
 
 # The previous public release, if the mirror has one.
@@ -82,6 +102,9 @@ if [ "$status" -eq 0 ]; then
     parent=$(git rev-parse "refs/publish/$branch")
     if [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
         echo "the mirror's $branch already has $source's tree; nothing to publish"
+        if [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; then
+            echo "to (re)make the GitHub release of a tag that is already there: sh scripts/release/github-release.sh [--push] [--image] $tag"
+        fi
         exit 0
     fi
 fi
@@ -100,6 +123,10 @@ else
 fi
 
 if [ "$push" -eq 0 ]; then
+    if [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; then
+        echo "the GitHub release, as it would be made after the push:"
+        github_release
+    fi
     echo "dry run; add --push to publish to $remote ($branch)"
     exit 0
 fi
@@ -114,3 +141,6 @@ if [ -n "$tag" ]; then
 fi
 git update-ref "refs/publish/$branch" "$commit"
 echo "published $source as $commit"
+if [ "$release" -eq 1 ] || [ "$image" -eq 1 ]; then
+    github_release --push
+fi

@@ -74,7 +74,11 @@ test("atomicHandler commits a 2xx reply and rolls back an error reply or a throw
 })
 
 async function buy(apiCount: number, retryCount?: number) {
-    const body: Record<string, unknown> = { shop_type: 2, api_count: apiCount, shop_item_id: 200032, number: 1, viewer_id: player.viewerId }
+    // a product of the player's Trove lineup for the day (FT-9)
+    const { troveLineup } = await import("../src/lib/trove")
+    const { getServerDate } = await import("../src/utils")
+    const shopItemId = troveLineup(playerId, getServerDate())[0].shopItemId
+    const body: Record<string, unknown> = { shop_type: 2, api_count: apiCount, shop_item_id: shopItemId, number: 1, viewer_id: player.viewerId }
     if (retryCount !== undefined) body.retry_count = retryCount
     const response = await fastify.inject({
         method: "POST",

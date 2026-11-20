@@ -89,9 +89,9 @@ add_node_repo() {
     ensure_root 'Please run as root before setting up NodeJS repo'
     #Perma-link to ensure it's the same version of this file always.
     log -i Configuring Nodesource Distribution repository....
-    wget -O "$DEPLOYMENT_DIRECTORY/Nodesource_LICENSE.md" "https://raw.githubusercontent.com/nodesource/distributions/f80a2491c9c5b261952687cf19a7d47c7e498bb6/LICENSE.md"
-    wget -O "$DEPLOYMENT_DIRECTORY/Nodesource_node_repo_setup_script.sh" "https://raw.githubusercontent.com/nodesource/distributions/f80a2491c9c5b261952687cf19a7d47c7e498bb6/scripts/deb/setup_22.x"
-    echo "18786ceb671201381f1b48c295a7ef6c31d2b56c8ab699425b1272a39173f2271d9343f1ee67fbb9b3e04749f4e7ad62f90884d10e18bea3816e926fbe6f8b69" "$DEPLOYMENT_DIRECTORY/Nodesource_node_repo_setup_script.sh"\
+    wget -O "$DEPLOYMENT_DIRECTORY/Nodesource_LICENSE.md" "https://raw.githubusercontent.com/nodesource/distributions/42da07fa46a3e9649f47416743a5563f9f19028f/LICENSE.md"
+    wget -O "$DEPLOYMENT_DIRECTORY/Nodesource_node_repo_setup_script.sh" "https://raw.githubusercontent.com/nodesource/distributions/42da07fa46a3e9649f47416743a5563f9f19028f/scripts/deb/setup_24.x"
+    echo "1779af26f84dd5948f5f11dc60a92d9b2583998c228fbab9652022cac06ef9fb1242d5bb44fe651f1f59aabdd532f565d0ab73e834d3f4eeb994412b567be7aa" "$DEPLOYMENT_DIRECTORY/Nodesource_node_repo_setup_script.sh"\
       | sha512sum --check --status || on_step_fail $? "Acquired Nodesource install script does not match expected hash!" || return $?
     log Temporarily downloaded Nodesource repository setup script to $DEPLOYMENT_DIRECTORY/Nodesource_node_repo_setup_script.sh, along with its license. Please examine during the duration of this step.
     if [ "$INSTALL_AUTO_RUN" = false ] && ! prompt_yes_no "Add Nodesource repository to apt-get keyring? If not, will have to exit just in case...." ; then exit 0; fi
@@ -106,7 +106,7 @@ add_node_repo() {
 
 #Requires apt package manager
 install_node() {
-    : ${NODE_VERSION:="22.x"}
+    : ${NODE_VERSION:="24.x"}
     if [ "$AUTO_INSTALL_PACKAGES" = true ]; then
         apt-get install nodejs -y
     else
@@ -115,17 +115,17 @@ install_node() {
 }
 
 ensure_node_installed(){
-    echo 'Checking for node version 22 or greater....'
+    echo 'Checking for node version 24 or greater....'
     node_version="$(node -v)"
     if [ "$?" -ne 0  ]; then
-        export NODE_VERSION="22.x"
+        export NODE_VERSION="24.x"
         add_node_repo || return $?
         install_node
         return $?
     fi
     node_version=${node_version%.*.*}
     node_version=${node_version#v*}
-    if [ $node_version -lt 22 ] && [ "$INSTALL_AUTO_RUN" = true ] || prompt_yes_no "NodeJS is version $node_version, but a minimum of 22 is required. Install node version 22.x?" ; then
+    if [ $node_version -lt 24 ] && [ "$INSTALL_AUTO_RUN" = true ] || prompt_yes_no "NodeJS is version $node_version, but a minimum of 24 is required. Install node version 24.x?" ; then
         add_node_repo || return $?
         install_node
         return $?
@@ -240,7 +240,7 @@ print_help() {
 Install Reflipped on a Linux system. Currently, only debian-based distributions are supported at this time.
 This script will install the following dependencies for Reflipped:
 
-- NodeJS >= v22.x
+- NodeJS >= v24.x
 
 This script allows configuring the following dependencies for a script:
 
@@ -291,7 +291,7 @@ Reflipped version: $REFLIPPED_VERSION
 Reflipped run directory: $REFLIPPED_ROOT/out
 Deployment configuration directory: $DEPLOYMENT_DIRECTORY
 Overwrite existing configuration files: $FORCE_CONFIGURE_DEPENDENCIES
-Node version: 22.x+
+Node version: 24.x+
 Reverse Proxy: NGINX
 DNS: dnsmasq
 Expected Proxy IP: $PROXY_IP

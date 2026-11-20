@@ -1,15 +1,21 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import { randomUUID } from "crypto";
 import { SessionType } from "../data/types";
 import { accountHasDeviceSecretHashSync, deleteAccountSessionsOfType, getAccountsFromDeviceSecretHashSync, getSession, insertAccount, insertSession, revokeAccountSessionsSync, setAccountDeviceSecretHashSync, updateAccount, ZAT_TTL_MS, ZRT_TTL_MS } from "../data/wdfpData";
-import { deviceSecretFromBody, generatePublicIdpId, hashDeviceSecret } from "../lib/deviceSecret";
+import { deviceSecretFromBody, generatePublicIdpId, hashDeviceSecret, isDeviceToken } from "../lib/deviceSecret";
 import { generateIdpAlias } from "../utils";
-import { ignoredBody, jsonBody, string, stringOrInteger } from "./schemas";
+import { ignoredBody, jsonBody, object, string, stringOrInteger } from "./schemas";
+import { newAccountAllowedSync } from "../lib/accountLimits";
+import { reportedApp } from "../lib/appVersion";
+import { recordAccountAppSync } from "../data/appVersions";
 
 // SEC-6: the fields the handlers read; the Kakao SDK and the AIR shell send many more, which are allowed.
 // Requiring a field here only moves the handler's own "Invalid request body." 400 earlier.
 const zatLoginSchema = jsonBody({ zat: string, playerId: stringOrInteger, whiteKey: string, deviceId: string, lang: string }, ["zat"])
 const loginAgreementSchema = jsonBody({ appId: string, country: string, idpCode: string, lang: string })
 const loginDeviceSchema = jsonBody({ appId: string, deviceId: string, serialNo: string, whiteKey: string }, ["appId", "deviceId", "serialNo"])
+const startingPopupsSchema = jsonBody({ appId: string, playerId: stringOrInteger })
+const agreementSetSchema = jsonBody({ agreement: object({}) })
 
 interface CreateDeviceAccessTokenBody {
     adid: string
@@ -271,6 +277,41 @@ const routes = async (fastify: FastifyInstance) => {
         reply.status(200).send({})
     })
 
+    // FT-18: Kakao SDK requests that only the original APK sends (the DNS-redirect fallback); the AIR shell's SDK stub
+    // calls none of them. They store nothing and answer what the original sent for a player with no promotions. Only
+    // agreement/set and getStartingPopups read their bodies; none is logged (writeSdkBasicLog carries a login token).
+
+    // The SDK reports the policy agreements the player accepted; getForLogin already says every one is accepted, so
+    // it sends an empty agreement. The original refused that with this 400 (the capture), and the SDK carried on, so
+    // the same reply is kept rather than a success whose handling no capture shows.
+    fastify.post("/v3/agreement/set", { schema: agreementSetSchema }, (request: FastifyRequest, reply: FastifyReply) => {
+        const { agreement } = request.body as { agreement?: Record<string, unknown> }
+        if (agreement === undefined || Object.keys(agreement).length === 0) return reply.status(400).send({
+            "desc": "Invalid request parameter : agreement is empty"
+        })
+        reply.status(200).send({})
+    })
+
+    // The SDK's analytics: a finished game round, and its own errors. The original answered with the stored log's id.
+    fastify.post("/v3/log/writeRoundLog", { schema: ignoredBody }, (_, reply: FastifyReply) => {
+        reply.status(200).send({ "logId": randomUUID() })
+    })
+    fastify.post("/v3/log/writeSdkBasicLog", { schema: ignoredBody }, (_, reply: FastifyReply) => {
+        reply.status(200).send({ "logId": randomUUID() })
+    })
+
+    // Promotions: an install referrer reward, and the popups shown at start. Reflipped runs none.
+    fastify.post("/v3/promotion/checkUrlPromotion", { schema: ignoredBody }, (_, reply: FastifyReply) => {
+        reply.status(200).send({ "result": "NO_PROMOTION" })
+    })
+    fastify.post("/v3/promotion/getStartingPopups", { schema: startingPopupsSchema }, (request: FastifyRequest, reply: FastifyReply) => {
+        const body = request.body as { appId?: string, playerId?: string | number }
+        reply.status(200).send({ "promotions": [], "appId": body.appId ?? "", "playerId": String(body.playerId ?? "") })
+    })
+    fastify.post("/v3/promotion/popup/getList", { schema: ignoredBody }, (_, reply: FastifyReply) => {
+        reply.status(200).send({ "popups": [] })
+    })
+
     fastify.post("/v4/auth/loginDevice", { schema: loginDeviceSchema }, async (request: FastifyRequest, reply: FastifyReply) => {
         const body = request.body as AuthLoginDeviceBody
 
@@ -299,11 +340,25 @@ const routes = async (fastify: FastifyInstance) => {
         const idpAlias = generateIdpAlias(appId, deviceId, serialNo)
 
         const matches = getAccountsFromDeviceSecretHashSync(secretHash)
+        // ACC-3: a device token comes from a portal sign-in in the shell. One that matches no account was replaced by a
+        // sign-in on another device: the shell asks the player to sign in again rather than starting a guest.
+        if (matches.length === 0 && isDeviceToken(secret)) return reply.status(401).send({
+            "error": "Unauthorized",
+            "code": "signed-out",
+            "message": "This account is now played on another device."
+        })
         const existingAccount = matches.find(match => match.id === headerAccountId) ?? matches[0] ?? null
         if (!isNaN(headerAccountId) && existingAccount?.id !== headerAccountId)
             request.log.info({ playerId: headerAccountId, accountId: existingAccount?.id ?? null }, "loginDevice: playerid header does not match the device secret; ignored")
 
-        // an unknown device gets a new account
+        // an unknown device gets a new account, unless too many were created in the last hour (SEC-16)
+        if (existingAccount === null && !newAccountAllowedSync()) {
+            request.log.warn("loginDevice: the hourly cap on new accounts (NEW_ACCOUNTS_PER_HOUR) is reached; a new device was refused")
+            return reply.status(503).send({
+                "error": "Service Unavailable",
+                "message": "Too many new accounts right now. Try again later."
+            })
+        }
         const account = existingAccount ?? await insertAccount({
             appId: body.appId,
             idpAlias: idpAlias,
@@ -315,6 +370,9 @@ const routes = async (fastify: FastifyInstance) => {
 
         // SEC-8: rotate the openapi tokens; earlier zat/zrt of the account stop working
         revokeAccountSessionsSync(account.id)
+
+        // SH-15: the Reflipped app names its version and build in headers; the admin Players page shows them
+        recordAccountAppSync(account.id, reportedApp(request.headers))
 
         if (account.idpAlias !== idpAlias) {
             await updateAccount({

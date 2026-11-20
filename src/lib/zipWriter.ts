@@ -38,8 +38,11 @@ export function crc32(data: Buffer): number {
     return (crc ^ 0xffffffff) >>> 0
 }
 
-/** Writes a zip of the given files. Throws on duplicate names or sizes beyond plain (non-zip64) zip limits. */
-export function writeZip(files: readonly ZipFile[]): Buffer {
+/**
+ * Writes a zip of the given files. Throws on duplicate names or sizes beyond plain (non-zip64) zip limits. `level` is
+ * the deflate level (9 by default; a reply built per request uses a faster one).
+ */
+export function writeZip(files: readonly ZipFile[], level = 9): Buffer {
     const sorted = [...files].sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))
     for (let i = 1; i < sorted.length; i++) {
         if (sorted[i].name === sorted[i - 1].name) throw new Error(`duplicate zip entry ${sorted[i].name}`)
@@ -50,7 +53,7 @@ export function writeZip(files: readonly ZipFile[]): Buffer {
     let offset = 0
     for (const file of sorted) {
         const name = Buffer.from(file.name, "utf8")
-        const deflated = deflateRawSync(file.data, { level: 9 })
+        const deflated = deflateRawSync(file.data, { level })
         const stored = deflated.length >= file.data.length
         const body = stored ? file.data : deflated
         const method = stored ? 0 : 8

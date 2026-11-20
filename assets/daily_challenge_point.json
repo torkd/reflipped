@@ -1,0 +1,2198 @@
+{
+    "points": {
+        "1": {
+            "max": 9,
+            "daily": 2,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts",
+            "start": "2021-08-22 14:00:00",
+            "end": null
+        },
+        "2": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Painted Dragon Adv.",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-06-11 20:59:59"
+        },
+        "3": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Painted Dragon Godly",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-06-11 20:59:59"
+        },
+        "4": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Ogre Bros Godly",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-06-11 20:59:59"
+        },
+        "5": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Ogre Bros Godly+",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-06-11 20:59:59"
+        },
+        "6": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Conductor Godly",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-07-14 20:59:59"
+        },
+        "7": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Mother Love Godly+",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-07-14 20:59:59"
+        },
+        "8": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-15 14:00:00",
+            "end": "2022-07-16 13:59:59"
+        },
+        "9": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-16 14:00:00",
+            "end": "2022-07-17 13:59:59"
+        },
+        "10": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-17 14:00:00",
+            "end": "2022-07-18 13:59:59"
+        },
+        "11": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-18 14:00:00",
+            "end": "2022-07-19 13:59:59"
+        },
+        "12": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-19 14:00:00",
+            "end": "2022-07-20 13:59:59"
+        },
+        "13": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-20 14:00:00",
+            "end": "2022-07-21 13:59:59"
+        },
+        "14": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-21 14:00:00",
+            "end": "2022-07-22 13:59:59"
+        },
+        "15": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-22 14:00:00",
+            "end": "2022-07-23 13:59:59"
+        },
+        "16": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-23 14:00:00",
+            "end": "2022-07-24 13:59:59"
+        },
+        "17": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1 Year Flipperversary Countdown Quest Attempts",
+            "start": "2022-07-24 14:00:00",
+            "end": "2022-07-25 13:59:59"
+        },
+        "28": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Black Dragon Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-08-11 20:59:59"
+        },
+        "29": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Morphed Procheon Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2021-08-22 14:00:00",
+            "end": "2022-08-11 20:59:59"
+        },
+        "58": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Poppet Sergeant Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2022-11-14 14:00:00",
+            "end": "2022-11-21 20:59:59"
+        },
+        "59": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Cair Oblivion Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2022-11-14 14:00:00",
+            "end": "2022-11-21 20:59:59"
+        },
+        "60": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Haridal Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2022-11-26 14:00:00",
+            "end": "2022-12-07 20:59:59"
+        },
+        "61": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Star Destroyer Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2022-11-26 14:00:00",
+            "end": "2022-12-07 20:59:59"
+        },
+        "72": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Genome Dragon Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2022-12-12 14:00:00",
+            "end": "2022-12-22 20:59:59"
+        },
+        "73": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Ascended Zegra Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2022-12-12 14:00:00",
+            "end": "2022-12-22 20:59:59"
+        },
+        "74": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "SecMk2 Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2023-01-26 14:00:00",
+            "end": "2023-02-09 20:59:59"
+        },
+        "75": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Unification AI Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-01-26 14:00:00",
+            "end": "2023-02-09 20:59:59"
+        },
+        "76": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Painted Dragon Godly",
+            "start": "2023-03-13 14:00:00",
+            "end": "2023-03-23 20:59:59"
+        },
+        "77": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Solo Boss Challenge Attempts · Boss: Ogre Bros Godly+",
+            "start": "2023-03-13 14:00:00",
+            "end": "2023-03-23 20:59:59"
+        },
+        "78": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Darling 2.0 Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2023-03-28 14:00:00",
+            "end": "2023-04-09 13:59:59"
+        },
+        "79": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Deo the Devoured Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-03-28 14:00:00",
+            "end": "2023-04-09 13:59:59"
+        },
+        "80": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Magnos Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-05-28 14:00:00",
+            "end": "2023-06-16 20:59:59"
+        },
+        "131": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Black Dragon Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2023-07-09 14:00:00",
+            "end": "2023-07-17 20:59:59"
+        },
+        "132": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Morphed Procheon Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-07-09 14:00:00",
+            "end": "2023-07-17 20:59:59"
+        },
+        "133": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-15 14:00:00",
+            "end": "2023-07-16 13:59:59"
+        },
+        "134": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-16 14:00:00",
+            "end": "2023-07-17 13:59:59"
+        },
+        "135": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-17 14:00:00",
+            "end": "2023-07-18 13:59:59"
+        },
+        "136": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-18 14:00:00",
+            "end": "2023-07-19 13:59:59"
+        },
+        "137": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-19 14:00:00",
+            "end": "2023-07-20 13:59:59"
+        },
+        "138": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-20 14:00:00",
+            "end": "2023-07-21 13:59:59"
+        },
+        "139": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-21 14:00:00",
+            "end": "2023-07-22 13:59:59"
+        },
+        "140": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-22 14:00:00",
+            "end": "2023-07-23 13:59:59"
+        },
+        "141": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-23 14:00:00",
+            "end": "2023-07-24 13:59:59"
+        },
+        "142": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Countdown Quests · Quest Attempt(s)",
+            "start": "2023-07-24 14:00:00",
+            "end": "2023-07-25 13:59:59"
+        },
+        "143": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Dragon Eater Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-08-13 20:59:59"
+        },
+        "221": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Haridal Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2023-09-23 14:00:00",
+            "end": "2023-10-06 20:59:59"
+        },
+        "222": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Star Destroyer Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-09-23 14:00:00",
+            "end": "2023-10-06 20:59:59"
+        },
+        "223": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Big Baaad Golem Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-10-12 14:00:00",
+            "end": "2023-10-26 20:59:59"
+        },
+        "224": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "SecMk2 Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-12-11 20:59:59"
+        },
+        "225": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Unification AI Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-12-11 20:59:59"
+        },
+        "226": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Darling 2.0 Godly · Solo Boss Challenge Attempt(s)",
+            "start": "2024-01-01 14:00:00",
+            "end": "2024-01-12 20:59:59"
+        },
+        "227": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Deo the Devoured Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-01-01 14:00:00",
+            "end": "2024-01-12 20:59:59"
+        },
+        "228": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Il Freed Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-01-17 14:00:00",
+            "end": "2024-02-01 20:59:59"
+        },
+        "251": {
+            "max": 9,
+            "daily": 2,
+            "recovers": true,
+            "name": "Nostalgia Trials Clear Attempt(s)",
+            "start": "2024-01-26 14:00:00",
+            "end": null
+        },
+        "30": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Clear Attempts: · Nimbus the White-Tailed Reindeer",
+            "start": "2022-08-11 14:00:00",
+            "end": "2022-08-25 13:59:59"
+        },
+        "31": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Clear Attempts: · Challua's Holiday Cheer",
+            "start": "2022-08-18 14:00:00",
+            "end": "2022-08-25 13:59:59"
+        },
+        "10007": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Big Baaad Golem Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-08-10 14:00:00",
+            "end": "2024-08-24 20:59:59"
+        },
+        "51": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 1",
+            "start": "2022-10-07 14:00:00",
+            "end": "2022-10-08 13:59:59"
+        },
+        "52": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 2",
+            "start": "2022-10-08 14:00:00",
+            "end": "2022-10-09 13:59:59"
+        },
+        "53": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 3",
+            "start": "2022-10-09 14:00:00",
+            "end": "2022-10-10 13:59:59"
+        },
+        "54": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 4",
+            "start": "2022-10-10 14:00:00",
+            "end": "2022-10-11 13:59:59"
+        },
+        "55": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 5",
+            "start": "2022-10-11 14:00:00",
+            "end": "2022-10-12 13:59:59"
+        },
+        "56": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 6",
+            "start": "2022-10-12 14:00:00",
+            "end": "2022-10-13 13:59:59"
+        },
+        "57": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Valentine's Antics Day 7",
+            "start": "2022-10-13 14:00:00",
+            "end": "2022-10-14 13:59:59"
+        },
+        "239": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "STM-Paradeath Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-02-17 14:00:00",
+            "end": "2024-03-03 20:59:59"
+        },
+        "5001": {
+            "max": 99,
+            "daily": 10,
+            "recovers": true,
+            "name": "Chrono Trial Clear Attempts",
+            "start": "2023-11-09 14:00:00",
+            "end": null
+        },
+        "229": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 1 · Quest Attempt(s)",
+            "start": "2024-02-27 14:00:00",
+            "end": "2024-02-28 13:59:59"
+        },
+        "230": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 2 · Quest Attempt(s)",
+            "start": "2024-02-28 14:00:00",
+            "end": "2024-02-29 13:59:59"
+        },
+        "231": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 3 · Quest Attempt(s)",
+            "start": "2024-02-29 14:00:00",
+            "end": "2024-03-01 13:59:59"
+        },
+        "232": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 4 · Quest Attempt(s)",
+            "start": "2024-03-01 14:00:00",
+            "end": "2024-03-02 13:59:59"
+        },
+        "233": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 5 · Quest Attempt(s)",
+            "start": "2024-03-02 14:00:00",
+            "end": "2024-03-03 13:59:59"
+        },
+        "234": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 6 · Quest Attempt(s)",
+            "start": "2024-03-03 14:00:00",
+            "end": "2024-03-04 13:59:59"
+        },
+        "235": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 7 · Quest Attempt(s)",
+            "start": "2024-03-04 14:00:00",
+            "end": "2024-03-05 13:59:59"
+        },
+        "236": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 8 · Quest Attempt(s)",
+            "start": "2024-03-05 14:00:00",
+            "end": "2024-03-06 13:59:59"
+        },
+        "237": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 9 · Quest Attempt(s)",
+            "start": "2024-03-06 14:00:00",
+            "end": "2024-03-07 13:59:59"
+        },
+        "238": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "950-Day Celebration Day 10 · Quest Attempt(s)",
+            "start": "2024-03-07 14:00:00",
+            "end": "2024-03-08 13:59:59"
+        },
+        "184": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 1 · Quest Attempt(s)",
+            "start": "2024-01-12 14:00:00",
+            "end": "2024-01-13 13:59:59"
+        },
+        "185": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 2 · Quest Attempt(s)",
+            "start": "2024-01-13 14:00:00",
+            "end": "2024-01-14 13:59:59"
+        },
+        "186": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 3 · Quest Attempt(s)",
+            "start": "2024-01-14 14:00:00",
+            "end": "2024-01-15 13:59:59"
+        },
+        "187": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 4 · Quest Attempt(s)",
+            "start": "2024-01-15 14:00:00",
+            "end": "2024-01-16 13:59:59"
+        },
+        "188": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 5 · Quest Attempt(s)",
+            "start": "2024-01-16 14:00:00",
+            "end": "2024-01-17 13:59:59"
+        },
+        "189": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 6 · Quest Attempt(s)",
+            "start": "2024-01-17 14:00:00",
+            "end": "2024-01-18 13:59:59"
+        },
+        "190": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 7 · Quest Attempt(s)",
+            "start": "2024-01-18 14:00:00",
+            "end": "2024-01-19 13:59:59"
+        },
+        "191": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 8 · Quest Attempt(s)",
+            "start": "2024-01-19 14:00:00",
+            "end": "2024-01-20 13:59:59"
+        },
+        "192": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 9 · Quest Attempt(s)",
+            "start": "2024-01-20 14:00:00",
+            "end": "2024-01-21 13:59:59"
+        },
+        "193": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 9: Rise of Shroombo - Day 10 · Quest Attempt(s)",
+            "start": "2024-01-21 14:00:00",
+            "end": "2024-01-22 13:59:59"
+        },
+        "174": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 1 · Quest Attempt(s)",
+            "start": "2023-11-20 14:00:00",
+            "end": "2023-11-21 13:59:59"
+        },
+        "175": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 2 · Quest Attempt(s)",
+            "start": "2023-11-21 14:00:00",
+            "end": "2023-11-22 13:59:59"
+        },
+        "176": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 3 · Quest Attempt(s)",
+            "start": "2023-11-22 14:00:00",
+            "end": "2023-11-23 13:59:59"
+        },
+        "177": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 4 · Quest Attempt(s)",
+            "start": "2023-11-23 14:00:00",
+            "end": "2023-11-24 13:59:59"
+        },
+        "178": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 5 · Quest Attempt(s)",
+            "start": "2023-11-24 14:00:00",
+            "end": "2023-11-25 13:59:59"
+        },
+        "179": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 6 · Quest Attempt(s)",
+            "start": "2023-11-25 14:00:00",
+            "end": "2023-11-26 13:59:59"
+        },
+        "180": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 7 · Quest Attempt(s)",
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-11-27 13:59:59"
+        },
+        "181": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 8 · Quest Attempt(s)",
+            "start": "2023-11-27 14:00:00",
+            "end": "2023-11-28 13:59:59"
+        },
+        "182": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 9 · Quest Attempt(s)",
+            "start": "2023-11-28 14:00:00",
+            "end": "2023-11-29 13:59:59"
+        },
+        "183": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 10 · Quest Attempt(s)",
+            "start": "2023-11-29 14:00:00",
+            "end": "2023-11-30 13:59:59"
+        },
+        "164": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 1 · Quest Attempt(s)",
+            "start": "2023-10-15 14:00:00",
+            "end": "2023-10-16 13:59:59"
+        },
+        "165": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 2 · Quest Attempt(s)",
+            "start": "2023-10-16 14:00:00",
+            "end": "2023-10-17 13:59:59"
+        },
+        "166": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 3 · Quest Attempt(s)",
+            "start": "2023-10-17 14:00:00",
+            "end": "2023-10-18 13:59:59"
+        },
+        "167": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 4 · Quest Attempt(s)",
+            "start": "2023-10-18 14:00:00",
+            "end": "2023-10-19 13:59:59"
+        },
+        "168": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 5 · Quest Attempt(s)",
+            "start": "2023-10-19 14:00:00",
+            "end": "2023-10-20 13:59:59"
+        },
+        "169": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 6 · Quest Attempt(s)",
+            "start": "2023-10-20 14:00:00",
+            "end": "2023-10-21 13:59:59"
+        },
+        "170": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 7 · Quest Attempt(s)",
+            "start": "2023-10-21 14:00:00",
+            "end": "2023-10-22 13:59:59"
+        },
+        "171": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 8 · Quest Attempt(s)",
+            "start": "2023-10-22 14:00:00",
+            "end": "2023-10-23 13:59:59"
+        },
+        "172": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 9 · Quest Attempt(s)",
+            "start": "2023-10-23 14:00:00",
+            "end": "2023-10-24 13:59:59"
+        },
+        "173": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 7: Shroombo Awakens - Day 10 · Quest Attempt(s)",
+            "start": "2023-10-24 14:00:00",
+            "end": "2023-10-25 13:59:59"
+        },
+        "144": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 1 · Quest Attempt(s)",
+            "start": "2023-08-12 14:00:00",
+            "end": "2023-08-13 13:59:59"
+        },
+        "145": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 2 · Quest Attempt(s)",
+            "start": "2023-08-13 14:00:00",
+            "end": "2023-08-14 13:59:59"
+        },
+        "146": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 3 · Quest Attempt(s)",
+            "start": "2023-08-14 14:00:00",
+            "end": "2023-08-15 13:59:59"
+        },
+        "147": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 4 · Quest Attempt(s)",
+            "start": "2023-08-15 14:00:00",
+            "end": "2023-08-16 13:59:59"
+        },
+        "148": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 5 · Quest Attempt(s)",
+            "start": "2023-08-16 14:00:00",
+            "end": "2023-08-17 13:59:59"
+        },
+        "149": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 6 · Quest Attempt(s)",
+            "start": "2023-08-17 14:00:00",
+            "end": "2023-08-18 13:59:59"
+        },
+        "150": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 7 · Quest Attempt(s)",
+            "start": "2023-08-18 14:00:00",
+            "end": "2023-08-19 13:59:59"
+        },
+        "151": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 8 · Quest Attempt(s)",
+            "start": "2023-08-19 14:00:00",
+            "end": "2023-08-20 13:59:59"
+        },
+        "152": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 9 · Quest Attempt(s)",
+            "start": "2023-08-20 14:00:00",
+            "end": "2023-08-21 13:59:59"
+        },
+        "153": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 6: Return of the Shroombo - Day 10 · Quest Attempt(s)",
+            "start": "2023-08-21 14:00:00",
+            "end": "2023-08-22 13:59:59"
+        },
+        "121": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 1 · Quest Attempt(s)",
+            "start": "2023-06-22 14:00:00",
+            "end": "2023-06-23 13:59:59"
+        },
+        "122": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 2 · Quest Attempt(s)",
+            "start": "2023-06-23 14:00:00",
+            "end": "2023-06-24 13:59:59"
+        },
+        "123": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 3 · Quest Attempt(s)",
+            "start": "2023-06-24 14:00:00",
+            "end": "2023-06-25 13:59:59"
+        },
+        "124": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 4 · Quest Attempt(s)",
+            "start": "2023-06-25 14:00:00",
+            "end": "2023-06-26 13:59:59"
+        },
+        "125": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 5 · Quest Attempt(s)",
+            "start": "2023-06-26 14:00:00",
+            "end": "2023-06-27 13:59:59"
+        },
+        "126": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 6 · Quest Attempt(s)",
+            "start": "2023-06-27 14:00:00",
+            "end": "2023-06-28 13:59:59"
+        },
+        "127": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 7 · Quest Attempt(s)",
+            "start": "2023-06-28 14:00:00",
+            "end": "2023-06-29 13:59:59"
+        },
+        "128": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 8 · Quest Attempt(s)",
+            "start": "2023-06-29 14:00:00",
+            "end": "2023-06-30 13:59:59"
+        },
+        "129": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 9 · Quest Attempt(s)",
+            "start": "2023-06-30 14:00:00",
+            "end": "2023-07-01 13:59:59"
+        },
+        "130": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 5: Shroombo Retribution - Day 10 · Quest Attempt(s)",
+            "start": "2023-07-01 14:00:00",
+            "end": "2023-07-02 13:59:59"
+        },
+        "111": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 1 · Quest Attempt(s)",
+            "start": "2023-05-04 14:00:00",
+            "end": "2023-05-05 13:59:59"
+        },
+        "112": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 2 · Quest Attempt(s)",
+            "start": "2023-05-05 14:00:00",
+            "end": "2023-05-06 13:59:59"
+        },
+        "113": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 3 · Quest Attempt(s)",
+            "start": "2023-05-06 14:00:00",
+            "end": "2023-05-07 13:59:59"
+        },
+        "114": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 4 · Quest Attempt(s)",
+            "start": "2023-05-07 14:00:00",
+            "end": "2023-05-08 13:59:59"
+        },
+        "115": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 5 · Quest Attempt(s)",
+            "start": "2023-05-08 14:00:00",
+            "end": "2023-05-09 13:59:59"
+        },
+        "116": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 6 · Quest Attempt(s)",
+            "start": "2023-05-09 14:00:00",
+            "end": "2023-05-10 13:59:59"
+        },
+        "117": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 7 · Quest Attempt(s)",
+            "start": "2023-05-10 14:00:00",
+            "end": "2023-05-11 13:59:59"
+        },
+        "118": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 8 · Quest Attempt(s)",
+            "start": "2023-05-11 14:00:00",
+            "end": "2023-05-12 13:59:59"
+        },
+        "119": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 9 · Quest Attempt(s)",
+            "start": "2023-05-12 14:00:00",
+            "end": "2023-05-13 13:59:59"
+        },
+        "120": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 4: Shroombo Forever After - Day 10 · Quest Attempt(s)",
+            "start": "2023-05-13 14:00:00",
+            "end": "2023-05-14 13:59:59"
+        },
+        "101": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 1 · Quest Attempt(s)",
+            "start": "2023-03-15 14:00:00",
+            "end": "2023-03-16 13:59:59"
+        },
+        "102": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 2 · Quest Attempt(s)",
+            "start": "2023-03-16 14:00:00",
+            "end": "2023-03-17 13:59:59"
+        },
+        "103": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 3 · Quest Attempt(s)",
+            "start": "2023-03-17 14:00:00",
+            "end": "2023-03-18 13:59:59"
+        },
+        "104": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 4 · Quest Attempt(s)",
+            "start": "2023-03-18 14:00:00",
+            "end": "2023-03-19 13:59:59"
+        },
+        "105": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 5 · Quest Attempt(s)",
+            "start": "2023-03-19 14:00:00",
+            "end": "2023-03-20 13:59:59"
+        },
+        "106": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 6 · Quest Attempt(s)",
+            "start": "2023-03-20 14:00:00",
+            "end": "2023-03-21 13:59:59"
+        },
+        "107": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 7 · Quest Attempt(s)",
+            "start": "2023-03-21 14:00:00",
+            "end": "2023-03-22 13:59:59"
+        },
+        "108": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 8 · Quest Attempt(s)",
+            "start": "2023-03-22 14:00:00",
+            "end": "2023-03-23 13:59:59"
+        },
+        "109": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 9 · Quest Attempt(s)",
+            "start": "2023-03-23 14:00:00",
+            "end": "2023-03-24 13:59:59"
+        },
+        "110": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 3: Day of the Shroombo - Day 10 · Quest Attempt(s)",
+            "start": "2023-03-24 14:00:00",
+            "end": "2023-03-25 13:59:59"
+        },
+        "62": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 1 · Quest Attempt(s)",
+            "start": "2022-12-05 14:00:00",
+            "end": "2022-12-06 13:59:59"
+        },
+        "63": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 2 · Quest Attempt(s)",
+            "start": "2022-12-06 14:00:00",
+            "end": "2022-12-07 13:59:59"
+        },
+        "64": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 3 · Quest Attempt(s)",
+            "start": "2022-12-07 14:00:00",
+            "end": "2022-12-08 13:59:59"
+        },
+        "65": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 4 · Quest Attempt(s)",
+            "start": "2022-12-08 14:00:00",
+            "end": "2022-12-09 13:59:59"
+        },
+        "66": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 5 · Quest Attempt(s)",
+            "start": "2022-12-09 14:00:00",
+            "end": "2022-12-10 13:59:59"
+        },
+        "67": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 6 · Quest Attempt(s)",
+            "start": "2022-12-10 14:00:00",
+            "end": "2022-12-11 13:59:59"
+        },
+        "68": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 7 · Quest Attempt(s)",
+            "start": "2022-12-11 14:00:00",
+            "end": "2022-12-12 13:59:59"
+        },
+        "69": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 8 · Quest Attempt(s)",
+            "start": "2022-12-12 14:00:00",
+            "end": "2022-12-13 13:59:59"
+        },
+        "70": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 9 · Quest Attempt(s)",
+            "start": "2022-12-13 14:00:00",
+            "end": "2022-12-14 13:59:59"
+        },
+        "71": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Mushroom Madness 2: Shroombo Boogaloo - Day 10 · Quest Attempt(s)",
+            "start": "2022-12-14 14:00:00",
+            "end": "2022-12-15 14:00:00"
+        },
+        "240": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 1 · Quest Attempt(s)",
+            "start": "2025-04-18 14:00:00",
+            "end": "2025-04-19 13:59:59"
+        },
+        "241": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 2 · Quest Attempt(s)",
+            "start": "2025-04-19 14:00:00",
+            "end": "2025-04-20 13:59:59"
+        },
+        "242": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 3 · Quest Attempt(s)",
+            "start": "2025-04-20 14:00:00",
+            "end": "2025-04-21 13:59:59"
+        },
+        "243": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 4 · Quest Attempt(s)",
+            "start": "2025-04-21 14:00:00",
+            "end": "2025-04-22 13:59:59"
+        },
+        "244": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 5 · Quest Attempt(s)",
+            "start": "2025-04-22 14:00:00",
+            "end": "2025-04-23 13:59:59"
+        },
+        "245": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 6 · Quest Attempt(s)",
+            "start": "2025-04-23 14:00:00",
+            "end": "2025-04-24 13:59:59"
+        },
+        "246": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 7 · Quest Attempt(s)",
+            "start": "2025-04-24 14:00:00",
+            "end": "2025-04-25 13:59:59"
+        },
+        "247": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 8 · Quest Attempt(s)",
+            "start": "2025-04-25 14:00:00",
+            "end": "2025-04-26 13:59:59"
+        },
+        "248": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 9 · Quest Attempt(s)",
+            "start": "2025-04-26 14:00:00",
+            "end": "2025-04-27 13:59:59"
+        },
+        "249": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1,000-Day Celebration Day 10 · Quest Attempt(s)",
+            "start": "2025-04-27 14:00:00",
+            "end": "2025-04-28 13:59:59"
+        },
+        "154": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 1",
+            "start": "2023-09-12 14:00:00",
+            "end": "2023-09-13 13:59:59"
+        },
+        "155": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 2",
+            "start": "2023-09-13 14:00:00",
+            "end": "2023-09-14 13:59:59"
+        },
+        "156": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 3",
+            "start": "2023-09-14 14:00:00",
+            "end": "2023-09-15 13:59:59"
+        },
+        "157": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 4",
+            "start": "2023-09-15 14:00:00",
+            "end": "2023-09-16 13:59:59"
+        },
+        "158": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 5",
+            "start": "2023-09-16 14:00:00",
+            "end": "2023-09-17 13:59:59"
+        },
+        "159": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 6",
+            "start": "2023-09-17 14:00:00",
+            "end": "2023-09-18 13:59:59"
+        },
+        "160": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 7",
+            "start": "2023-09-18 14:00:00",
+            "end": "2023-09-19 13:59:59"
+        },
+        "161": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 8",
+            "start": "2023-09-19 14:00:00",
+            "end": "2023-09-20 13:59:59"
+        },
+        "162": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 9",
+            "start": "2023-09-20 14:00:00",
+            "end": "2023-09-21 13:59:59"
+        },
+        "163": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Autumnal Event Quests Day 10",
+            "start": "2023-09-21 14:00:00",
+            "end": "2023-09-22 13:59:59"
+        },
+        "40": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Happy Mew Year!",
+            "start": "2022-08-29 14:00:00",
+            "end": "2022-09-08 13:59:59"
+        },
+        "41": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 1",
+            "start": "2022-08-29 14:00:00",
+            "end": "2022-08-30 13:59:59"
+        },
+        "42": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 2",
+            "start": "2022-08-30 14:00:00",
+            "end": "2022-08-31 13:59:59"
+        },
+        "43": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 3",
+            "start": "2022-08-31 14:00:00",
+            "end": "2022-09-01 13:59:59"
+        },
+        "44": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 4",
+            "start": "2022-09-01 14:00:00",
+            "end": "2022-09-02 13:59:59"
+        },
+        "45": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 5",
+            "start": "2022-09-02 14:00:00",
+            "end": "2022-09-03 13:59:59"
+        },
+        "46": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 6",
+            "start": "2022-09-03 14:00:00",
+            "end": "2022-09-04 13:59:59"
+        },
+        "47": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 7",
+            "start": "2022-09-04 14:00:00",
+            "end": "2022-09-05 13:59:59"
+        },
+        "48": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 8",
+            "start": "2022-09-05 14:00:00",
+            "end": "2022-09-06 13:59:59"
+        },
+        "49": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 9",
+            "start": "2022-09-06 14:00:00",
+            "end": "2022-09-07 13:59:59"
+        },
+        "50": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "Quest Attempts: · Greeting the New Year Day 10",
+            "start": "2022-09-07 14:00:00",
+            "end": "2022-09-08 13:59:59"
+        },
+        "250": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Magnos Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-02-29 14:00:00",
+            "end": "2024-03-10 20:59:59"
+        },
+        "10008": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Tharros Ultimate ∞ Godly+ Solo Boss Challenge Attempt(s)",
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        "301": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-04-29 13:59:59"
+        },
+        "302": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-04-29 14:00:00",
+            "end": "2024-04-30 13:59:59"
+        },
+        "303": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-04-30 14:00:00",
+            "end": "2024-05-01 13:59:59"
+        },
+        "304": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-01 14:00:00",
+            "end": "2024-05-02 13:59:59"
+        },
+        "305": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-02 14:00:00",
+            "end": "2024-05-03 13:59:59"
+        },
+        "306": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-03 14:00:00",
+            "end": "2024-05-04 13:59:59"
+        },
+        "307": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-04 14:00:00",
+            "end": "2024-05-05 13:59:59"
+        },
+        "308": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-05 14:00:00",
+            "end": "2024-05-06 13:59:59"
+        },
+        "309": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-06 14:00:00",
+            "end": "2024-05-07 13:59:59"
+        },
+        "310": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-07 14:00:00",
+            "end": "2024-05-08 13:59:59"
+        },
+        "311": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-08 14:00:00",
+            "end": "2024-05-09 13:59:59"
+        },
+        "312": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-09 14:00:00",
+            "end": "2024-05-10 13:59:59"
+        },
+        "313": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-10 14:00:00",
+            "end": "2024-05-11 13:59:59"
+        },
+        "314": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-11 14:00:00",
+            "end": "2024-05-12 13:59:59"
+        },
+        "315": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-12 14:00:00",
+            "end": "2024-05-13 13:59:59"
+        },
+        "316": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-13 14:00:00",
+            "end": "2024-05-14 13:59:59"
+        },
+        "317": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "3rd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2024-05-14 14:00:00",
+            "end": "2024-05-15 13:59:59"
+        },
+        "10004": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Abyssal Parasite Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-05-15 20:59:59"
+        },
+        "201": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-07-26 13:59:59"
+        },
+        "202": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-26 14:00:00",
+            "end": "2023-07-27 13:59:59"
+        },
+        "203": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-27 14:00:00",
+            "end": "2023-07-28 13:59:59"
+        },
+        "204": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-28 14:00:00",
+            "end": "2023-07-29 13:59:59"
+        },
+        "205": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-29 14:00:00",
+            "end": "2023-07-30 13:59:59"
+        },
+        "206": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-30 14:00:00",
+            "end": "2023-07-31 13:59:59"
+        },
+        "207": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-07-31 14:00:00",
+            "end": "2023-08-01 13:59:59"
+        },
+        "208": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-01 14:00:00",
+            "end": "2023-08-02 13:59:59"
+        },
+        "209": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-02 14:00:00",
+            "end": "2023-08-03 13:59:59"
+        },
+        "210": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-03 14:00:00",
+            "end": "2023-08-04 13:59:59"
+        },
+        "211": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-04 14:00:00",
+            "end": "2023-08-05 13:59:59"
+        },
+        "212": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-05 14:00:00",
+            "end": "2023-08-06 13:59:59"
+        },
+        "213": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-06 14:00:00",
+            "end": "2023-08-07 13:59:59"
+        },
+        "214": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-07 14:00:00",
+            "end": "2023-08-08 13:59:59"
+        },
+        "215": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-08 14:00:00",
+            "end": "2023-08-09 13:59:59"
+        },
+        "216": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-09 14:00:00",
+            "end": "2023-08-10 13:59:59"
+        },
+        "217": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-10 14:00:00",
+            "end": "2023-08-11 13:59:59"
+        },
+        "218": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-11 14:00:00",
+            "end": "2023-08-12 13:59:59"
+        },
+        "219": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-12 14:00:00",
+            "end": "2023-08-13 13:59:59"
+        },
+        "220": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "2nd Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-08-13 14:00:00",
+            "end": "2023-08-14 13:59:59"
+        },
+        "10005": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Dragon Eater Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-03-06 14:00:00",
+            "end": "2024-03-12 20:59:59"
+        },
+        "81": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-12 14:00:00",
+            "end": "2023-01-13 13:59:59"
+        },
+        "82": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-13 14:00:00",
+            "end": "2023-01-14 13:59:59"
+        },
+        "83": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-14 14:00:00",
+            "end": "2023-01-15 13:59:59"
+        },
+        "84": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-15 14:00:00",
+            "end": "2023-01-16 13:59:59"
+        },
+        "85": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-16 14:00:00",
+            "end": "2023-01-17 13:59:59"
+        },
+        "86": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-17 14:00:00",
+            "end": "2023-01-18 13:59:59"
+        },
+        "87": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-18 14:00:00",
+            "end": "2023-01-19 13:59:59"
+        },
+        "88": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-19 14:00:00",
+            "end": "2023-01-20 13:59:59"
+        },
+        "89": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-20 14:00:00",
+            "end": "2023-01-21 13:59:59"
+        },
+        "90": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-21 14:00:00",
+            "end": "2023-01-22 13:59:59"
+        },
+        "91": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-22 14:00:00",
+            "end": "2023-01-23 13:59:59"
+        },
+        "92": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-23 14:00:00",
+            "end": "2023-01-24 13:59:59"
+        },
+        "93": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-24 14:00:00",
+            "end": "2023-01-25 13:59:59"
+        },
+        "94": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-25 14:00:00",
+            "end": "2023-01-26 13:59:59"
+        },
+        "95": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-26 14:00:00",
+            "end": "2023-01-27 13:59:59"
+        },
+        "96": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-27 14:00:00",
+            "end": "2023-01-28 13:59:59"
+        },
+        "97": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-28 14:00:00",
+            "end": "2023-01-29 13:59:59"
+        },
+        "98": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-29 14:00:00",
+            "end": "2023-01-30 13:59:59"
+        },
+        "99": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-30 14:00:00",
+            "end": "2023-01-31 13:59:59"
+        },
+        "100": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1.5 Flipperversary Celebration Quests · Quest Attempt(s)",
+            "start": "2023-01-31 14:00:00",
+            "end": "2023-02-01 13:59:59"
+        },
+        "18": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-25 14:00:00",
+            "end": "2022-07-26 13:59:59"
+        },
+        "19": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-26 14:00:00",
+            "end": "2022-07-27 13:59:59"
+        },
+        "20": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-27 14:00:00",
+            "end": "2022-07-28 13:59:59"
+        },
+        "21": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-28 14:00:00",
+            "end": "2022-07-29 13:59:59"
+        },
+        "22": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-29 14:00:00",
+            "end": "2022-07-30 13:59:59"
+        },
+        "23": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-30 14:00:00",
+            "end": "2022-07-31 13:59:59"
+        },
+        "24": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-07-31 14:00:00",
+            "end": "2022-08-01 13:59:59"
+        },
+        "25": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-08-01 14:00:00",
+            "end": "2022-08-02 13:59:59"
+        },
+        "26": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-08-02 14:00:00",
+            "end": "2022-08-03 13:59:59"
+        },
+        "27": {
+            "max": 1,
+            "daily": 1,
+            "recovers": false,
+            "name": "1st Flipperversary Celebration · Quest Attempt(s)",
+            "start": "2022-08-03 14:00:00",
+            "end": "2022-08-04 13:59:59"
+        },
+        "10009": {
+            "max": 1,
+            "daily": 1,
+            "recovers": true,
+            "name": "Il Freed Godly+ · Solo Boss Challenge Attempt(s)",
+            "start": "2024-11-05 14:00:00",
+            "end": "2024-11-19 20:59:59"
+        }
+    },
+    "campaigns": {
+        "1": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2022-05-08 14:00:00",
+            "end": "2022-05-13 13:59:59"
+        },
+        "10000001": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-10-29 14:00:00",
+            "end": "2024-11-07 20:59:59"
+        },
+        "10000000": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-10-01 14:00:00",
+            "end": "2024-10-15 20:59:59"
+        },
+        "2023013101": {
+            "point_id": 1,
+            "additional": 2,
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        "2023013102": {
+            "point_id": 251,
+            "additional": 2,
+            "start": "2024-05-28 14:00:00",
+            "end": "2024-07-25 14:59:59"
+        },
+        "2022123001": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-05-18 14:00:00",
+            "end": "2024-05-28 13:59:59"
+        },
+        "2022112801": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-04-28 14:00:00",
+            "end": "2024-05-15 13:59:59"
+        },
+        "2022103101": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-04-16 14:00:00",
+            "end": "2024-04-28 13:59:59"
+        },
+        "2022083101": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-02-29 14:00:00",
+            "end": "2024-03-10 20:59:59"
+        },
+        "2022071501": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2024-02-01 14:00:00",
+            "end": "2024-02-11 20:59:59"
+        },
+        "2022042901": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-12-26 14:00:00",
+            "end": "2024-01-05 20:59:59"
+        },
+        "2022033101": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-11-26 14:00:00",
+            "end": "2023-12-11 20:59:59"
+        },
+        "2021112701": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-07-25 14:00:00",
+            "end": "2023-08-13 20:59:59"
+        },
+        "6": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-01-22 14:00:00",
+            "end": "2023-02-08 20:59:59"
+        },
+        "5": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2022-12-26 14:00:00",
+            "end": "2023-01-06 20:59:59"
+        },
+        "3": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2022-08-28 14:00:00",
+            "end": "2022-09-13 13:59:59"
+        },
+        "2": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2022-06-28 14:00:00",
+            "end": "2022-07-07 13:59:59"
+        },
+        "2022013101": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-09-27 14:00:00",
+            "end": "2023-10-10 20:59:59"
+        },
+        "8": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-05-28 14:00:00",
+            "end": "2023-06-14 20:59:59"
+        },
+        "7": {
+            "point_id": 1,
+            "additional": 1,
+            "start": "2023-04-09 14:00:00",
+            "end": "2023-04-27 20:59:59"
+        }
+    }
+}

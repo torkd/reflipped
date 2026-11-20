@@ -1,0 +1,717 @@
+{
+    "1": {
+        "tiers": [
+            {
+                "id": 1,
+                "reasonId": 13014,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 5,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 500
+                    }
+                ],
+                "kills": 1
+            },
+            {
+                "id": 2,
+                "reasonId": 13015,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 10003
+                    }
+                ],
+                "kills": 2
+            },
+            {
+                "id": 3,
+                "reasonId": 13016,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 15,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 1000
+                    }
+                ],
+                "kills": 3
+            },
+            {
+                "id": 4,
+                "reasonId": 13017,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 12002
+                    }
+                ],
+                "kills": 5
+            }
+        ],
+        "perKill": null
+    },
+    "2": {
+        "tiers": [
+            {
+                "id": 5,
+                "reasonId": 13014,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 5,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 500
+                    }
+                ],
+                "kills": 1
+            },
+            {
+                "id": 6,
+                "reasonId": 13015,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 10003
+                    }
+                ],
+                "kills": 2
+            },
+            {
+                "id": 7,
+                "reasonId": 13016,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 15,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 1000
+                    }
+                ],
+                "kills": 3
+            },
+            {
+                "id": 8,
+                "reasonId": 13017,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 12002
+                    }
+                ],
+                "kills": 5
+            },
+            {
+                "id": 9,
+                "reasonId": 13018,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 6
+            },
+            {
+                "id": 10,
+                "reasonId": 13019,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 7
+            },
+            {
+                "id": 11,
+                "reasonId": 13020,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 8
+            },
+            {
+                "id": 12,
+                "reasonId": 13021,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 9
+            },
+            {
+                "id": 13,
+                "reasonId": 13022,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 10
+            }
+        ],
+        "perKill": null
+    },
+    "3": {
+        "tiers": [
+            {
+                "id": 14,
+                "reasonId": 13014,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 5,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 500
+                    }
+                ],
+                "kills": 1
+            },
+            {
+                "id": 15,
+                "reasonId": 13015,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 10003
+                    }
+                ],
+                "kills": 2
+            },
+            {
+                "id": 16,
+                "reasonId": 13016,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 15,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 2,
+                        "number": 1000
+                    }
+                ],
+                "kills": 3
+            },
+            {
+                "id": 17,
+                "reasonId": 13017,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 12002
+                    }
+                ],
+                "kills": 5
+            },
+            {
+                "id": 18,
+                "reasonId": 13018,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 6
+            },
+            {
+                "id": 19,
+                "reasonId": 13019,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 7
+            },
+            {
+                "id": 20,
+                "reasonId": 13020,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 8
+            },
+            {
+                "id": 21,
+                "reasonId": 13021,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 9
+            },
+            {
+                "id": 22,
+                "reasonId": 13022,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 10
+            }
+        ],
+        "perKill": null
+    },
+    "5": {
+        "tiers": [
+            {
+                "id": 38,
+                "reasonId": 13014,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 5,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 10003
+                    }
+                ],
+                "kills": 50
+            },
+            {
+                "id": 39,
+                "reasonId": 13015,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 100
+            },
+            {
+                "id": 40,
+                "reasonId": 13016,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 150
+            },
+            {
+                "id": 41,
+                "reasonId": 13017,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 500
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 200
+            },
+            {
+                "id": 42,
+                "reasonId": 13018,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 15,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 12002
+                    }
+                ],
+                "kills": 250
+            },
+            {
+                "id": 43,
+                "reasonId": 13019,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 1000
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 300
+            },
+            {
+                "id": 44,
+                "reasonId": 13020,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 400
+            },
+            {
+                "id": 45,
+                "reasonId": 13021,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 500
+            },
+            {
+                "id": 46,
+                "reasonId": 13022,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 600
+            },
+            {
+                "id": 47,
+                "reasonId": 13023,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 700
+            },
+            {
+                "id": 48,
+                "reasonId": 13024,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 800
+            },
+            {
+                "id": 49,
+                "reasonId": 13025,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 900
+            },
+            {
+                "id": 50,
+                "reasonId": 13026,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 1000
+            }
+        ],
+        "perKill": {
+            "id": 37,
+            "reasonId": 13027,
+            "rewards": [
+                {
+                    "kind": 3,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 25,
+                    "id": 100000
+                }
+            ]
+        }
+    },
+    "4": {
+        "tiers": [
+            {
+                "id": 24,
+                "reasonId": 13014,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 5,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 10003
+                    }
+                ],
+                "kills": 50
+            },
+            {
+                "id": 25,
+                "reasonId": 13015,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 100
+            },
+            {
+                "id": 26,
+                "reasonId": 13016,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 10,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 150
+            },
+            {
+                "id": 27,
+                "reasonId": 13017,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 500
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 200
+            },
+            {
+                "id": 28,
+                "reasonId": 13018,
+                "rewards": [
+                    {
+                        "kind": 0,
+                        "number": 15,
+                        "id": 49100
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 12002
+                    }
+                ],
+                "kills": 250
+            },
+            {
+                "id": 29,
+                "reasonId": 13019,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 1000
+                    },
+                    {
+                        "kind": 0,
+                        "number": 1,
+                        "id": 14040
+                    }
+                ],
+                "kills": 300
+            },
+            {
+                "id": 30,
+                "reasonId": 13020,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 400
+            },
+            {
+                "id": 31,
+                "reasonId": 13021,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 500
+            },
+            {
+                "id": 32,
+                "reasonId": 13022,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 600
+            },
+            {
+                "id": 33,
+                "reasonId": 13023,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 700
+            },
+            {
+                "id": 34,
+                "reasonId": 13024,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 800
+            },
+            {
+                "id": 35,
+                "reasonId": 13025,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 900
+            },
+            {
+                "id": 36,
+                "reasonId": 13026,
+                "rewards": [
+                    {
+                        "kind": 2,
+                        "number": 300
+                    }
+                ],
+                "kills": 1000
+            }
+        ],
+        "perKill": {
+            "id": 23,
+            "reasonId": 13027,
+            "rewards": [
+                {
+                    "kind": 3,
+                    "number": 500
+                },
+                {
+                    "kind": 0,
+                    "number": 25,
+                    "id": 100000
+                }
+            ]
+        }
+    }
+}

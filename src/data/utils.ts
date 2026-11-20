@@ -1,11 +1,14 @@
-import { clampEquipmentLevel, getCharacterDataSync } from "../lib/assets"
-import { clampCount, getItemMaxCountSync, playerLimits } from "../lib/limits"
-import { formatUtcDateTime, getDateFromServerTime, getServerTime } from "../utils"
+import { clampEquipmentLevel, getCharacterDataSync, playerRankSync } from "../lib/assets"
+import { currentStamina, serializeStamina } from "../lib/stamina"
+import { clampCount, getItemMaxCountSync, mailLimits, playerLimits } from "../lib/limits"
+import { rewardMailFingerprint } from "./rewardMailIdentity"
+import { DEFAULT_DEGREE_ID } from "../lib/degrees"
+import { formatUtcDateTime, getDateFromServerTime, getServerDate, getServerTime } from "../utils"
 import { attentionConfig } from "../lib/coop/attentionConfig"
-import { ClientPlayerData, DailyChallengePointListEntry, MergedPlayerData, PartyCategory, Player, PlayerBoxGacha, PlayerCharacter, PlayerCharacterBondToken, PlayerDrawnQuest, PlayerEquipment, PlayerGachaCampaign, PlayerGachaInfo, MultiSpecialExchangeStatus, PlayerMultiSpecialExchangeCampaign, UserMultiSpecialExchangeCampaignList, PlayerParty, PlayerPartyGroup, PlayerQuestProgress, PlayerRushEvent, PlayerRushEventPlayedParty, PlayerStartDashExchangeCampaign, RushEventBattleType, UserBoxGacha, UserCharacter, UserCharacterBondTokenStatus, UserEquipment, UserGachaCampaign, UserPartyGroup, UserPartyGroupTeam, UserQuestProgress, UserRushEvent, UserRushEventPlayedParty, UserRushEventPlayedPartyList, UserTutorial } from "./types"
+import { ClientPlayerData, DailyChallengePointListEntry, MergedPlayerData, PlayerMail, SaveMail, PartyCategory, Player, PlayerBoxGacha, PlayerCharacter, PlayerCharacterBondToken, PlayerDrawnQuest, PlayerEquipment, PlayerGachaCampaign, PlayerGachaInfo, MultiSpecialExchangeStatus, PlayerMultiSpecialExchangeCampaign, UserMultiSpecialExchangeCampaignList, PlayerParty, PlayerPartyGroup, PlayerQuestProgress, PlayerRushEvent, PlayerRushEventPlayedParty, PlayerStartDashExchangeCampaign, RushEventBattleType, UserBoxGacha, UserCharacter, UserCharacterBondTokenStatus, UserEquipment, UserGachaCampaign, UserPartyGroup, UserPartyGroupTeam, UserQuestProgress, UserRushEvent, UserRushEventPlayedParty, UserRushEventPlayedPartyList, UserTutorial } from "./types"
 
 import { availableAssetVersion } from "../lib/assetLayers"
-import { deserializePlayerRushEventPlayedParty, deserializeRushEvent, getPlayerActiveMissionsSync, getPlayerBoxGachasSync, getPlayerCharactersManaNodesSync, getPlayerCharactersSync, getPlayerClearedRegularMissionListSync, getPlayerDailyChallengePointListSync, getPlayerDrawnQuestsSync, getPlayerEquipmentListSync, getPlayerGachaCampaignListSync, getPlayerGachaInfoListSync, getPlayerItemsSync, getPlayerMultiSpecialExchangeCampaignsSync, getPlayerOptionsSync, getPlayerPartyGroupListSync, getPlayerPeriodicRewardPointsSync, getPlayerQuestProgressSync, getPlayerRushEventListClearedFoldersSync, getPlayerRushEventListPlayedPartiesSync, getPlayerRushEventListSync, getPlayerStartDashExchangeCampaignsSync, getPlayerSync, getPlayerTriggeredTutorialsSync, serializePlayerRushEventPlayedParty } from "./wdfpData"
+import { deserializePlayerRushEventPlayedParty, deserializeRushEvent, getPlayerActiveMissionsSync, getPlayerBoxGachasSync, getPlayerCharactersManaNodesSync, getPlayerCharactersSync, getPlayerClearedCollectItemEventMissionListSync, getPlayerClearedRegularMissionListSync, getPlayerDailyChallengePointListSync, getPlayerDegreesSync, getPlayerSaveMailListSync, getPlayerDrawnQuestsSync, getPlayerEquipmentListSync, getPlayerGachaCampaignListSync, getPlayerGachaInfoListSync, getPlayerItemsSync, getPlayerMultiSpecialExchangeCampaignsSync, getPlayerOptionsSync, getPlayerPartyGroupListSync, getPlayerPeriodicRewardPointsSync, getPlayerQuestProgressSync, getPlayerRushEventListClearedFoldersSync, getPlayerRushEventListPlayedPartiesSync, getPlayerRushEventListSync, getPlayerStartDashExchangeCampaignsSync, getPlayerSync, getPlayerTriggeredTutorialsSync, serializePlayerRushEventPlayedParty } from "./wdfpData"
 
 /** The tutorial step stored once the player has finished the last one (the client reports step 16, the server stores 17). */
 export const tutorialFinalStep = 17
@@ -22,6 +25,7 @@ export const tutorialFinishedTriggerId = 12
 export interface SerializePlayerDataOptions {
     viewerId?: number
     serializeRushEventData?: boolean // should rush event data be serialized?
+    serializeSaveData?: boolean // a save file: add the gift box and titles, which /load doesn't send
 }
 
 /**
@@ -279,8 +283,8 @@ export function serializePlayerData(
 
     const clientData: ClientPlayerData = {
         "user_info": {
-            "stamina": playerData.stamina,
-            "stamina_heal_time": getServerTime(playerData.staminaHealTime),
+            // the stamina recovered by now, with the moment it was exact (FT-25)
+            ...serializeStamina(currentStamina({ stamina: playerData.stamina, healTime: playerData.staminaHealTime }, playerRankSync(playerData.rankPoint), getServerDate())),
             "boost_point": clampCount(playerData.boostPoint, playerLimits.boostPoint),
             "boss_boost_point": clampCount(playerData.bossBoostPoint, playerLimits.bossBoostPoint),
             "transition_state": playerData.transitionState,
@@ -356,7 +360,8 @@ export function serializePlayerData(
         "mail_arrived": false,
         "user_periodic_reward_point_list": toSerialize.periodicRewardPointList,
         "all_active_mission_list": toSerialize.allActiveMissionList,
-        "cleared_collect_item_event_mission_list": [],
+        // an empty list as the captures have it, else {mission_id: stage}
+        "cleared_collect_item_event_mission_list": Object.keys(toSerialize.clearedCollectItemEventMissionList ?? {}).length === 0 ? [] : toSerialize.clearedCollectItemEventMissionList!,
         "box_gacha_list": userBoxGachaList,
         "gacha_campaign_list": toSerialize.gachaCampaignList.map(campaign => serializeGachaCampaign(campaign)),
         "purchased_times_list": {
@@ -375,8 +380,10 @@ export function serializePlayerData(
             return {
                 "campaign_id": campaign.campaignId,
                 "gacha_id": campaign.gachaId,
-                "period_start_time": getServerTime(campaign.periodStartTime),
-                "period_end_time": getServerTime(campaign.periodEndTime),
+                // the stored period itself, in epoch seconds (getServerTime(date) gives the clock's now on the historical
+                // clock, which lost the period; FT-44)
+                "period_start_time": Math.floor(campaign.periodStartTime.getTime() / 1000),
+                "period_end_time": Math.floor(campaign.periodEndTime.getTime() / 1000),
                 "status": campaign.status,
                 "term_index": campaign.termIndex
             }
@@ -426,7 +433,65 @@ export function serializePlayerData(
         }
     }
 
+    if (toSerialize.mailList !== undefined) clientData.user_mail_list = toSerialize.mailList.map(serializeSaveMail)
+    if (toSerialize.degreeList !== undefined) clientData.user_degree_list = toSerialize.degreeList
+
     return clientData
+}
+
+/** A gift box mail as a save file holds it (`SaveMail`); its ID isn't kept, since an import may go to another server. */
+function serializeSaveMail(mail: Omit<PlayerMail, 'id'>): SaveMail {
+    return {
+        "type": mail.type,
+        "type_id": mail.typeId,
+        "number": mail.number,
+        "reason_id": mail.reasonId,
+        "subject": mail.subject,
+        "description": mail.description,
+        "create_time": clientSerializeDate(mail.createTime),
+        "receive_time": mail.receiveTime === null ? null : clientSerializeDate(mail.receiveTime),
+        "reward_limit_time": mail.rewardLimitTime === null ? null : clientSerializeDate(mail.rewardLimitTime),
+        ...(mail.rewardSourceKey === undefined ? {} : { reward_source_key: mail.rewardSourceKey })
+    }
+}
+
+/** A save file's mail back as a gift box mail (the file is checked by `validateSaveData()` first). */
+function deserializeSaveMail(mail: SaveMail): Omit<PlayerMail, 'id'> {
+    const result: Omit<PlayerMail, 'id'> = {
+        type: mail.type,
+        typeId: mail.type_id,
+        number: mail.number,
+        reasonId: mail.reason_id,
+        subject: mail.subject,
+        description: mail.description,
+        createTime: deserializeClientDate(mail.create_time),
+        receiveTime: mail.receive_time === null ? null : deserializeClientDate(mail.receive_time),
+        rewardLimitTime: mail.reward_limit_time === null ? null : deserializeClientDate(mail.reward_limit_time),
+        ...(mail.reward_source_key === undefined ? {} : { rewardSourceKey: mail.reward_source_key.toLowerCase() })
+    }
+    // Legacy matching uses the save's original timestamp, before deserializeSaveMailList moves future mail back.
+    if (result.rewardSourceKey === undefined) result.rewardImportFingerprint = rewardMailFingerprint(result)
+    return result
+}
+
+/**
+ * A save file's gift box, its received mail in the order received (the file's order), brought onto `now`, the
+ * importing player's clock. A save made on a clock ahead of this one holds mail received "in the future", and the
+ * history would stop at it (`listMailHistorySync()` in src/lib/mail.ts) and hide everything received before. So the
+ * mails received last that are dated after `now` come in as received now; walking back, the first one dated up to
+ * `now` ends that: a later date further back marks a jump back of the clock, which the history keeps starting over at.
+ * Waiting mail created after `now` is dated `now` as well.
+ */
+function deserializeSaveMailList(list: SaveMail[], now: Date): Omit<PlayerMail, 'id'>[] {
+    const mails = list.map(deserializeSaveMail)
+    const atMost = (date: Date) => date.getTime() > now.getTime() ? new Date(now) : date
+    for (let index = mails.length - 1; index >= 0; index--) {
+        const mail = mails[index]
+        if (mail.receiveTime === null) continue
+        if (mail.receiveTime.getTime() <= now.getTime()) break
+        mails[index] = { ...mail, createTime: atMost(mail.createTime), receiveTime: new Date(now) }
+    }
+    return mails.map(mail => mail.receiveTime === null ? { ...mail, createTime: atMost(mail.createTime) } : mail)
 }
 
 /**
@@ -466,7 +531,8 @@ export function getDefaultPlayerData(): Omit<Player, 'id'> {
 }
 
 /**
- * Deserializes client player data into data that can be processed by the server.
+ * Deserializes client player data into data that can be processed by the server. Run it on the player's clock
+ * (`runOnPlayerClockSync`): the gift box's times are checked against the player's "now".
  * 
  * @param toDeserialize The client player data to be deserialized
  */
@@ -594,6 +660,12 @@ export function deserializePlayerData(
 
             // validan length of bond token list
             if (bondTokenList.length > 2) throw new Error(`Invalid bond_token_list length for character with id "${characterId}".`);
+            // every unit has entries for boards 1 and 2 (FIX-7); a save or developer mode backup from before that may
+            // carry only board 1's for a unit with one board
+            for (const board of [1, 2]) {
+                if (!converted_character.bondTokenList.some(token => token.manaBoardIndex === board))
+                    converted_character.bondTokenList.push({ manaBoardIndex: board, status: 0 })
+            }
 
             const exBoost = character['ex_boost']
             if (exBoost !== undefined) {
@@ -906,7 +978,10 @@ export function deserializePlayerData(
             userOption: userOption,
             rushEventList: rushEventList.length === 0 ? undefined : rushEventList,
             rushEventClearedFolderList: toDeserialize['user_rush_event_cleared_folder_list'],
-            rushEventPlayedPartyList: rushEventPlayedPartyList
+            rushEventPlayedPartyList: rushEventPlayedPartyList,
+            // absent in a save from before these were saved: the player keeps their own (replacePlayerDataSync)
+            mailList: toDeserialize['user_mail_list'] === undefined ? undefined : deserializeSaveMailList(toDeserialize['user_mail_list'], getServerDate()),
+            degreeList: toDeserialize['user_degree_list']?.filter(degreeId => degreeId !== DEFAULT_DEGREE_ID)
         }
 
     } catch (error: Error | any) {
@@ -944,6 +1019,19 @@ export function clientSerializeDate(
     return formatUtcDateTime(date)
 }
 
+const JAPAN_OFFSET_MS = 9 * 60 * 60 * 1000
+
+/**
+ * Serializes a date in Japan time, as the client reads gift box and history times (unlike the other dates it is sent,
+ * which are UTC): a mail sent "now" in UTC showed as "9 hours ago" in the gift box, and its expiry 9 hours early
+ * (checked on a device). Master table dates are Japan time the same way (`masterDate()` in src/utils.ts).
+ */
+export function clientSerializeJapanDate(
+    date: Date
+): string {
+    return formatUtcDateTime(new Date(date.getTime() + JAPAN_OFFSET_MS))
+}
+
 /**
  * Deserializes a date from a format expected by the client into a Date.
  * Format: YYYY-MM-DD HH:MM:SS
@@ -979,6 +1067,7 @@ export function getClientSerializedData(
         dailyChallengePointList: getPlayerDailyChallengePointListSync(playerId),
         triggeredTutorial: getPlayerTriggeredTutorialsSync(playerId),
         clearedRegularMissionList: getPlayerClearedRegularMissionListSync(playerId),
+        clearedCollectItemEventMissionList: getPlayerClearedCollectItemEventMissionListSync(playerId),
         characterList: getPlayerCharactersSync(playerId),
         characterManaNodeList: getPlayerCharactersManaNodesSync(playerId),
         partyGroupList: getPlayerPartyGroupListSync(playerId),
@@ -997,6 +1086,8 @@ export function getClientSerializedData(
         userOption: getPlayerOptionsSync(playerId),
         rushEventList: doSerializeRushEventData ? getPlayerRushEventListSync(playerId) : undefined,
         rushEventClearedFolderList: doSerializeRushEventData ? getPlayerRushEventListClearedFoldersSync(playerId) : undefined,
-        rushEventPlayedPartyList: doSerializeRushEventData ? getPlayerRushEventListPlayedPartiesSync(playerId) : undefined
+        rushEventPlayedPartyList: doSerializeRushEventData ? getPlayerRushEventListPlayedPartiesSync(playerId) : undefined,
+        mailList: options.serializeSaveData ? getPlayerSaveMailListSync(playerId, getServerDate(), mailLimits.pendingMails, mailLimits.historyMails) : undefined,
+        degreeList: options.serializeSaveData ? getPlayerDegreesSync(playerId) : undefined
     }, options)
 }

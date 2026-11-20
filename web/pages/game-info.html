@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"{{themeAttr}}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>{{title}} · {{serverName}}</title>
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <link rel="stylesheet" href="/public/css/shell-pages.css">
+    <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
+</head>
+<body class="shell-page max-w-screen-md mx-auto min-h-screen flex flex-col">
+    <header class="page-header"><p class="page-server">{{serverName}}</p><h1 class="page-title">{{title}}</h1></header>
+    <nav aria-label="Game information" class="page-nav">
+        <a href="/game/news">News</a><a href="/game/odds">Summon odds</a><a href="/game/events">Events</a><a href="/game/support">Help</a><a href="/game/community">Community</a>
+        {{themeSwitch}}
+    </nav>
+    <main class="flex flex-col">{{content}}</main>
+</body>
+</html>
